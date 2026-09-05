@@ -1,0 +1,7 @@
+﻿Title,Column 1,Column 2,Column 3,Column 4,Column 5,Column 6,Column 7,Column 8
+Trip,住宿類型,住宿地址,晚數,價錢/晚,通勤時間,原始評分,備註,名稱(如有)
+奧地利,Airbnb,"Gaisbergstrasse 59, 5020 Salzburg",2,€46.72,25min,1/1/0.25/0.25/0.25/0.25/0.25 : 3.25,臨時找，較高價\\鑰匙很難開,
+,Hostel,"Paracelsusstraße 9, 5020 Salzburg",1,€31,10min,1/0/0/0.5/0/0/-0.25: 1.25,怪室友→快逃,YoHo Youth Hostel
+倫敦,Airport,,1,0,0,0.5/0/0/0/0.5: 1,客運站快冷死,STN Airport
+,Airbnb,"4 Robert Burns Mews, London SE24 0AT, UK",2,€40.74,45min,1/1/0.25/0.25/0.25/0.5/0.25: 3.5,,
+漢堡回家行,Hotel,"Leupoldsgrüner Str. 1, 95152 Selbitz-Stegenwaldhaus, 德國",1,€32.5,20min,1/1/0.5/0.5/0.5/0.5/0.25: 4.25,荒涼車站,Gasthof Pension Leupold

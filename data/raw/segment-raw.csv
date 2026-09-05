@@ -1,0 +1,75 @@
+﻿Title,Column 1,Column 2,Column 3,Column 4,Column 5,Column 6,Column 7,Column 8,Column 9,Column 10
+Trip,起點,終點,日期,價錢,接駁(出發),接駁(到達),交通工具,品牌,備註,Transit Point
+奧地利,M. Hbf.,Salzburg Hbf.,"9 October, 2025",0,0,0,火車,DB,//,
+,Salzburg Hbf.,Königssee,"10 October, 2025",€3.4,0,0,公車,RVO,//,
+,Königssee,Salzburg Hbf.,"10 October, 2025",€3.4,0,0,公車,RVO,//,"Berchtesgaden "
+,Salzburg Hbf.,M. Hbf.,"12 October, 2025",0,0,0,火車,DB,//,
+倫敦,NUE Flug.,STN Flug.,"25 October, 2025",€20.27,0,€10.88,飛機,RyanAir,//National Express,
+,STN Flug.,NUE Flug.,"28 October, 2025",€16.99,€10.87,0,飛機,RyanAir,/National Express/,
+漢堡回家行,M. ZOB,Hamburg ZOB,"6 November, 2025",€27.98,0,0,客運,Flixbus,10% OFF//,
+,Hamburg Hbf.,Bremen Hbf.,"7 November, 2025",0,0,0,火車,DB,//,
+,Bremen Hbf.,Hamburg Hbf.,"7 November, 2025",0,0,0,"火車 ",DB,//,
+,Hamburg Hbf.,Berlin Hbf.,"9 November, 2025",0,0,0,火車,DB,//,Lübeck Hbf.
+,Berlin Hbf.,Hof Hbf.,"11 November, 2025",0,0,0,火車,DB,//,Leipzig Hbf
+,Hof Hbf.,M. Hbf.,"12 November, 2025",0,0,0,火車,DB,//,
+西班牙,STR Flug.,BCN Flug.,"26 November, 2025",€27.99,€7.78,0,飛機,Vueling,"/Flixbus, 20% OFF/",
+,"BCN Nord ",Andorra,"28 November, 2025",€26.35,0,0,客運,Alsa,//,
+,Andorra,BCN Nord,"29 November, 2025",€5,0,0,客運,Alsa,//,
+,BCN Flug.,STR Flug.,"3 December, 2025",€27.98,0,0,飛機,Vueling,//,
+波蘭&米蘭,FMM Flug.,KRK Flug.,"11 December, 2025",€17.99,0,0,飛機,RyanAir,10% OFF//,
+,KRK Flug.,BGY Flug.,"13 December, 2025",€15.53,0,€4.5,飛機,RyanAir,10% OFF//Terravision,
+,MXP Flug.,MUC Flug.,"16 December, 2025",€17.78,€7.6,0,飛機,EasyJet,"/Trenord, Cardona FN→Busto Arsizio→MXP/",
+聖誕德法遊,M. Hbf.,Freiberg Hbf.,"18 December, 2025",0,0,0,火車,DB,//,"Donaueschingen, Triberg, Gengenbach"
+,Freiberg Hbf.,Colmar Hbf.,"19 December, 2025",€4,0,0,公車,SVF,在 Breisach 轉公車//,
+,Colmar Hbf.,Strasbourg Hbf.,"19 December, 2025",€15.6,0,0,火車,SNCF,//,
+,Strasbourg Hbf.,Karlsruhe Hbf.,"20 December, 2025",0,0,0,火車,DB,//,"Karlsruhe Hbf, Heidelberg Hbf., Mannheim Hbf., "
+,Karlsruhe Hbf.,Frankfurt Hbf.,"21 December, 2025",0,0,0,火車,DB,//,"Baden-Baden Hbf., Mainz Hbf"
+,Frankfurt Hbf.,Frankfurt Hbf.,"22 Decmber, 2025",0,0,0,火車,DB,//,"Bad Camberg Bf., Idstein Bf., Weisbaden Hbf., Speyer Hbf."
+,"Frankfurt Hbf. ",M. Hbf.,"23 December, 2025",0,0,0,火車,DB,//,"Würzburg Hbf., Nürnberg Hbf."
+匈捷,M. Hbf.,Berlin Hbf.,"31 December, 2025",€19.99,0,0,高鐵,DB,//,
+,BER Flug.,BUD Flug.,"1 January, 2026",€17.99,0,0,飛機,RyanAir,//,
+,Budapest,Karlovy Vary,"3 January, 2026",€40.9,0,0,客運,RejioJet,ISIC//,
+,Karlovy Vary,Prague,"4 January, 2026",€4.6,0,0,客運,RejioJet,ISIC//,
+,Praha h.n.,M. Hbf.,"6 January, 2026",€7.82,0,0,火車,cd.cz,Furth im Wald→RE25//,
+立陶宛&挪威,NUE Flug.,VNO Flug.,"16 January, 2026",€17,0,€0.9,飛機,RyanAir,"//LTG Link, 50% OFF",
+,VNO Flug.,OSL Flug.,"17 January, 2026",€16.99,€1.25,€11.4,飛機,RyanAir,"/市區公車60分票/vy, RE25",
+,TRP Flug.,FMM Flug.,"20 January, 2026",€28.6,€12.86,0,飛機,Wizz Air,SKP 轉機/RE10 Moss→渡輪到 Horten→公車到 Torp→TRF/,
+羅馬/尼亞,FMM Flug.,BBU Flug.,"29 January, 2026",€21.63,0,€0.6,飛機,Wizz Air,"//STB, 公車",
+,OTP Flug.,CIA Flug.,"30 January, 2026",€18.39,0,€1.5,飛機,RyanAir,"//ATAM, 公車",
+,FCO Flug.,MUC Flug.,"2 February, 2026",€27.49,€2.2,0,飛機,EasyJet,"/Cortal, EUR Magliana→FCO/",
+DB 金牌旅(一),M. Hbf.,Dresden Hbf.,"9 February, 2026",€3.33,0,0,"高鐵 ",DB,金牌票//,Erfurt Hbf.
+,Dresden Hbf.,M. Hbf.,"9 February, 2026",€3.33,0,0,高鐵,DB,金牌票//,Bamberg Hbf.
+DB 金牌旅(二),M. Hbf.,Ulm Hbf.,"10 February, 2026",€3.33,0,0,高鐵,DB,金牌票//,
+,"Ulm Hbf. ",Lindau-Insel,"10 February, 2026",0,0,0,火車,DB,//,Friedrichshafen Stadt Bf.
+,Lindau-Insel,M. Hbf.,"10 February, 2026",€3.33,0,0,火車,SBB,金牌票(EC)//,
+土耳其,MUC Flug.,ASR Flug.,"12 February, 2026",€73.38,0,€8.5,飛機,Pegasus,SAW 轉機//共享接送,
+,NAV Flug.,SAW Flug.,"14 February, 2026",€20.6,€7.2,€1.3,飛機,AJet,/共享接送/M4→Marmaray,
+,SAW Flug.,STR Flug.,"17 February, 2026",€29,€0.82,0,"飛機 ",Pegasus,/M4/,
+DB 金牌旅(三),M. Hbf.,Heidelberg Hbf.,"21 February, 2026",€3.33,0,0,高鐵,DB,金牌票//,
+,Heidelberg Hbf.,Mannheim Hbf.,"21 February, 2026",0,0,0,火車,DB,//,
+,Mannheim Hbf.,M. Hbf.,"21 February, 2026",€3.33,0,0,高鐵,DB,金牌票//,
+南法遊輪行,SXB Flug.,NCE Flug.,"26 February, 2026",€32.49,€3.2,0,"飛機 ",Volotea,"/SNCF, 火車/",
+,Nice,Monaco,"27 February, 2026",€2.5,0,0,公車,ZOU!,100號公車//,
+,Monaco,Menton,"27 February, 2026",€2.5,0,0,公車,ZOU!,100號公車//,
+,Menton,Nice,"27 February, 2026",€2.5,0,0,公車,ZOU!,100號公車//,
+,Nice Flug.,Marseille – Gare Saint-Charles,"28 February, 2026",€9.99,€1.7,0,客運,Blablacar,中途跳車/輕軌/,
+,Marseille,Barcelona,"1 March, 2026",€54,€1.7,€2.25,郵輪,Costa,"含單人內艙&三餐/ZOU!, 公車/T3-PortBus, 公車",
+,Barcelona,Naples,"3 March, 2026",€54,€2.25,0,郵輪,Costa,"含單人內艙&三餐/T3-PortBus, 公車/",
+,"Naples ",Palermo,"4 March, 2026",€54,0,0,郵輪,Costa,含單人內艙&三餐//,
+,PMO Flug.,NUE Flug.,"6 March, 2026",€19.99,€6,0,飛機,RyanAir,"/Prestia e Comandè, 客運/",
+荷比法,M. ZOB.,Utrecht,"8 March, 2026",€15,0,€3,"客運 ",Flixbus,"通票//NS, 火車",
+,Utrecht Central,Zaandijk,"9 March, 2026",€12.9,0,0,火車,NS,//,
+,Zanndijk,Amsterdam Cental,"9 March, 2026",€4.2,0,0,火車,NS,//,
+,Amsterdam Sloterdijk,Den Haag,"11 March, 2026",€1.5,0,0,客運,Flixbus,xhs €2.5 折扣碼//,
+,Den Haag,Rotterdam,"11 March, 2026",€5.5,0,0,火車,RET,//,
+,Rotterdam,"Brussel ","11 March, 2026",€6,0,0,客運,Flixbus,xhs €2.5 折扣碼//,
+,Brussel,Brugge,"12 March, 2026",€7.5,0,0,火車,SNCB,Train+ 分攤 €2//,
+,Brugge,Gent,"13 March, 2026",€5,0,0,火車,SNCB,Train+ 分攤 €2//,
+,Gent,Paris,"13 March, 2026",€5.81,0,0,客運,Flixbus,xhs 優惠碼//,
+,Paris,M. ZOB.,"16 March, 2026",€15,0,0,客運,Flixbus,通票//,
+北德兩英行,M. ZOB.,Düsseldorf,"19 March, 2026",€15,0,0,客運,Flixbus,通票//,
+,Wuppertal Hbf.,Wuppertal Hbf.,"20 March, 2026",0,0,0,火車,DB,//,"Essen Hbf., Dortmund Hbf., Bochum Hbf., Aachen Hbf."
+,Wuppertal Hbf.,Koblenz Hbf.,"21 March, 2026",0,0,0,火車,DB,//,"Duisburg Hbf., Köln Hbf"
+,HHN Flug.,DUB. Flug.,"21 March, 2026",€14.99,0,0,飛機,RyanAir,//,
+,DUB Flug.,LTN Flug.,"23 March, 2026",€15,0,€11.6,飛機,RyanAir,"//arriva, GreenLine 757",
+,LGW Flug.,MUC Flug.,"26 March, 2026",€45,€19.24,0,飛機,easyjet,"/National Rail, 火車/",
