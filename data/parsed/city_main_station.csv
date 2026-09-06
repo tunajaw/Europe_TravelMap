@@ -1,0 +1,75 @@
+canonical_city,country,proposed_reference_point,reference_point_type,review_status,notes
+Aachen,Germany,Aachen Hbf,railway_station,approved,
+Amsterdam,Netherlands,Amsterdam Centraal,railway_station,approved,
+Andorra,Andorra,Andorra la Vella Bus Station,bus_station,approved,Raw label does not identify a municipality and Andorra has no railway
+Baden-Baden,Germany,Baden-Baden,railway_station,approved,Raw Transit label uses Baden-Baden Hbf
+Bamberg,Germany,Bamberg,railway_station,approved,
+Barcelona,Spain,Barcelona Sants,railway_station,approved,
+Berlin,Germany,Berlin Hbf,railway_station,approved,
+Berchtesgaden,Germany,Berchtesgaden Hbf,railway_station,approved,
+Bochum,Germany,Bochum Hbf,railway_station,approved,
+Bremen,Germany,Bremen Hbf,railway_station,approved,
+Brugge,Belgium,Brugge,railway_station,approved,
+Brussels,Belgium,Bruxelles-Midi / Brussel-Zuid,railway_station,approved,Owner-selected center-point station
+Bucharest,Romania,București Nord,railway_station,approved,
+Budapest,Hungary,Budapest-Keleti,railway_station,approved,Budapest has multiple main terminals
+Colmar,France,Gare de Colmar,railway_station,approved,
+Cologne,Germany,Köln Hbf,railway_station,approved,Canonical form for raw Köln
+Den Haag,Netherlands,Den Haag Centraal,railway_station,approved,
+Donaueschingen,Germany,Donaueschingen,railway_station,approved,
+Dortmund,Germany,Dortmund Hbf,railway_station,approved,
+Dresden,Germany,Dresden Hbf,railway_station,approved,
+Dublin,Ireland,Dublin Connolly,railway_station,approved,Owner-selected center-point station
+Duisburg,Germany,Duisburg Hbf,railway_station,approved,
+Düsseldorf,Germany,Düsseldorf Hbf,railway_station,approved,
+Erfurt,Germany,Erfurt Hbf,railway_station,approved,
+Essen,Germany,Essen Hbf,railway_station,approved,
+Frankfurt,Germany,Frankfurt (Main) Hbf,railway_station,approved,
+Freiburg,Germany,Freiburg (Breisgau) Hbf,railway_station,approved,Corrected canonical form for Accommodation raw Freiberg
+Friedrichshafen,Germany,Friedrichshafen Stadt,railway_station,approved,
+Gengenbach,Germany,Gengenbach,railway_station,approved,
+Gent,Belgium,Gent-Sint-Pieters,railway_station,approved,
+Göreme,Turkey,Göreme Otobüs Terminali,bus_station,approved,Göreme has no railway station; proposed fallback is the central bus station
+Hamburg,Germany,Hamburg Hbf,railway_station,approved,
+Heidelberg,Germany,Heidelberg Hbf,railway_station,approved,
+Hof,Germany,Hof Hbf,railway_station,approved,
+Idstein,Germany,Idstein (Taunus),railway_station,approved,
+Istanbul,Turkey,Sirkeci Garı,railway_station,approved,Owner-selected center-point station
+Karlovy Vary,Czechia,Karlovy Vary,railway_station,approved,Confirm main station rather than Karlovy Vary dolní nádraží
+Karlsruhe,Germany,Karlsruhe Hbf,railway_station,approved,Corrected canonical form for Accommodation raw Karlshure
+Koblenz,Germany,Koblenz Hbf,railway_station,approved,
+Königssee,Germany,Berchtesgaden Hbf,fallback_station,approved,Königssee is not a City and has no railway station; confirm City or POI treatment
+Kraków,Poland,Kraków Główny,railway_station,approved,Canonical form for raw Krakow
+Leipzig,Germany,Leipzig Hbf,railway_station,approved,
+Lindau,Germany,Lindau-Insel,railway_station,approved,
+London,United Kingdom,London Waterloo,railway_station,approved,Owner-selected center-point station
+Lübeck,Germany,Lübeck Hbf,railway_station,approved,
+Mainz,Germany,Mainz Hbf,railway_station,approved,
+Mannheim,Germany,Mannheim Hbf,railway_station,approved,
+Marseille,France,Marseille-Saint-Charles,railway_station,approved,
+Menton,France,Menton,railway_station,approved,
+Milan,Italy,Milano Centrale,railway_station,approved,BGY Airport overnight maps to Milan
+Monaco,Monaco,Monaco-Monte-Carlo,railway_station,approved,
+Munich,Germany,München Hbf,railway_station,approved,Canonical City for raw M. Hbf and M. ZOB; FMM airport endpoints map to Munich
+Naples,Italy,Napoli Centrale,railway_station,approved,
+Nice,France,Nice-Ville,railway_station,approved,
+Nürnberg,Germany,Nürnberg Hbf,railway_station,approved,
+Oslo,Norway,Oslo S,railway_station,approved,TRF airport endpoints map to Oslo
+Palermo,Italy,Palermo Centrale,railway_station,approved,
+Paris,France,Gare du Nord,railway_station,approved,Owner-selected center-point station
+Prague,Czechia,Praha hlavní nádraží,railway_station,approved,
+Rome,Italy,Roma Termini,railway_station,approved,
+Rotterdam,Netherlands,Rotterdam Centraal,railway_station,approved,
+Salzburg,Austria,Salzburg Hbf,railway_station,approved,
+Skopje,North Macedonia,Skopje railway station,railway_station,approved,
+Speyer,Germany,Speyer Hbf,railway_station,approved,
+Strasbourg,France,Gare de Strasbourg,railway_station,approved,
+Stuttgart,Germany,Stuttgart Hbf,railway_station,approved,Corrected canonical form for Accommodation raw Stuttagrt
+Triberg,Germany,Triberg,railway_station,approved,
+Ulm,Germany,Ulm Hbf,railway_station,approved,
+Utrecht,Netherlands,Utrecht Centraal,railway_station,approved,
+Vilnius,Lithuania,Vilnius railway station,railway_station,approved,
+Wiesbaden,Germany,Wiesbaden Hbf,railway_station,approved,Corrected candidate for raw Transit value Weisbaden Hbf
+Wuppertal,Germany,Wuppertal Hbf,railway_station,approved,
+Würzburg,Germany,Würzburg Hbf,railway_station,approved,
+Zaandijk,Netherlands,Zaandijk Zaanse Schans,railway_station,approved,

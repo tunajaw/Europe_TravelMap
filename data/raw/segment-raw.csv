@@ -19,12 +19,12 @@ Trip,起點,終點,日期,價錢,接駁(出發),接駁(到達),交通工具,品�
 波蘭&米蘭,FMM Flug.,KRK Flug.,"11 December, 2025",€17.99,0,0,飛機,RyanAir,10% OFF//,
 ,KRK Flug.,BGY Flug.,"13 December, 2025",€15.53,0,€4.5,飛機,RyanAir,10% OFF//Terravision,
 ,MXP Flug.,MUC Flug.,"16 December, 2025",€17.78,€7.6,0,飛機,EasyJet,"/Trenord, Cardona FN→Busto Arsizio→MXP/",
-聖誕德法遊,M. Hbf.,Freiberg Hbf.,"18 December, 2025",0,0,0,火車,DB,//,"Donaueschingen, Triberg, Gengenbach"
-,Freiberg Hbf.,Colmar Hbf.,"19 December, 2025",€4,0,0,公車,SVF,在 Breisach 轉公車//,
+聖誕德法遊,M. Hbf.,Freiburg Hbf.,"18 December, 2025",0,0,0,火車,DB,//,"Donaueschingen, Triberg, Gengenbach"
+,Freiburg Hbf.,Colmar Hbf.,"19 December, 2025",€4,0,0,公車,SVF,在 Breisach 轉公車//,
 ,Colmar Hbf.,Strasbourg Hbf.,"19 December, 2025",€15.6,0,0,火車,SNCF,//,
-,Strasbourg Hbf.,Karlsruhe Hbf.,"20 December, 2025",0,0,0,火車,DB,//,"Karlsruhe Hbf, Heidelberg Hbf., Mannheim Hbf., "
+,Strasbourg Hbf.,Karlsruhe Hbf.,"20 December, 2025",0,0,0,火車,DB,//,"Heidelberg Hbf., Mannheim Hbf., "
 ,Karlsruhe Hbf.,Frankfurt Hbf.,"21 December, 2025",0,0,0,火車,DB,//,"Baden-Baden Hbf., Mainz Hbf"
-,Frankfurt Hbf.,Frankfurt Hbf.,"22 Decmber, 2025",0,0,0,火車,DB,//,"Bad Camberg Bf., Idstein Bf., Weisbaden Hbf., Speyer Hbf."
+,Frankfurt Hbf.,Frankfurt Hbf.,"22 December, 2025",0,0,0,火車,DB,//,"Bad Camberg Bf., Idstein Bf., Wiesbaden Hbf., Speyer Hbf."
 ,"Frankfurt Hbf. ",M. Hbf.,"23 December, 2025",0,0,0,火車,DB,//,"Würzburg Hbf., Nürnberg Hbf."
 匈捷,M. Hbf.,Berlin Hbf.,"31 December, 2025",€19.99,0,0,高鐵,DB,//,
 ,BER Flug.,BUD Flug.,"1 January, 2026",€17.99,0,0,飛機,RyanAir,//,
@@ -33,7 +33,7 @@ Trip,起點,終點,日期,價錢,接駁(出發),接駁(到達),交通工具,品�
 ,Praha h.n.,M. Hbf.,"6 January, 2026",€7.82,0,0,火車,cd.cz,Furth im Wald→RE25//,
 立陶宛&挪威,NUE Flug.,VNO Flug.,"16 January, 2026",€17,0,€0.9,飛機,RyanAir,"//LTG Link, 50% OFF",
 ,VNO Flug.,OSL Flug.,"17 January, 2026",€16.99,€1.25,€11.4,飛機,RyanAir,"/市區公車60分票/vy, RE25",
-,TRP Flug.,FMM Flug.,"20 January, 2026",€28.6,€12.86,0,飛機,Wizz Air,SKP 轉機/RE10 Moss→渡輪到 Horten→公車到 Torp→TRF/,
+,TRF Flug.,FMM Flug.,"20 January, 2026",€28.6,€12.86,0,飛機,Wizz Air,SKP 轉機/RE10 Moss→渡輪到 Horten→公車到 Torp→TRF/,
 羅馬/尼亞,FMM Flug.,BBU Flug.,"29 January, 2026",€21.63,0,€0.6,飛機,Wizz Air,"//STB, 公車",
 ,OTP Flug.,CIA Flug.,"30 January, 2026",€18.39,0,€1.5,飛機,RyanAir,"//ATAM, 公車",
 ,FCO Flug.,MUC Flug.,"2 February, 2026",€27.49,€2.2,0,飛機,EasyJet,"/Cortal, EUR Magliana→FCO/",
@@ -59,7 +59,7 @@ DB 金牌旅(三),M. Hbf.,Heidelberg Hbf.,"21 February, 2026",€3.33,0,0,高鐵
 ,PMO Flug.,NUE Flug.,"6 March, 2026",€19.99,€6,0,飛機,RyanAir,"/Prestia e Comandè, 客運/",
 荷比法,M. ZOB.,Utrecht,"8 March, 2026",€15,0,€3,"客運 ",Flixbus,"通票//NS, 火車",
 ,Utrecht Central,Zaandijk,"9 March, 2026",€12.9,0,0,火車,NS,//,
-,Zanndijk,Amsterdam Cental,"9 March, 2026",€4.2,0,0,火車,NS,//,
+,Zaandijk,Amsterdam Central,"9 March, 2026",€4.2,0,0,火車,NS,//,
 ,Amsterdam Sloterdijk,Den Haag,"11 March, 2026",€1.5,0,0,客運,Flixbus,xhs €2.5 折扣碼//,
 ,Den Haag,Rotterdam,"11 March, 2026",€5.5,0,0,火車,RET,//,
 ,Rotterdam,"Brussel ","11 March, 2026",€6,0,0,客運,Flixbus,xhs €2.5 折扣碼//,

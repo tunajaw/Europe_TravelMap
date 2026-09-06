@@ -26,6 +26,16 @@ Examples:
 
 A City may be visited multiple times across different Trips.
 
+Raw Segment endpoints may contain a city name, railway station, coach station,
+airport abbreviation, or another location label. These source labels are not
+City identities. Data preprocessing maps them to a canonical City before the
+data is used by the application. For example, `M. Hbf.` and `M. ZOB.` both use
+`M.` to mean Munich.
+
+A City has a reference point used for distance calculations. This is normally
+the main railway station, but a reviewed fallback reference point is required
+for cities that have no single main station or no railway station.
+
 ---
 
 ### Trip
@@ -39,6 +49,11 @@ A Trip normally starts and ends at the exchange base city.
 A Trip may contain multiple Segments.
 
 Trip is a backend/domain concept and does not necessarily correspond directly to a visible UI element in MVP.
+
+In the raw CSV, the Trip value is written on the first Segment row and inherited
+by subsequent blank rows through fill-down. Raw row order is the authoritative
+Segment time order. Preprocessing may generate stable Trip and Segment IDs, but
+the Trip title remains the user-facing name.
 
 ---
 
@@ -76,8 +91,12 @@ A Segment has:
 * transportation company
 * notes
 * optional Airport Transfers
+* an exact transportation subtype
+* a normalized transportation category
 
 A Segment is the primary unit for travel-path visualization and transportation expense analysis.
+
+All Segments currently present in the source data are included in the MVP map.
 
 ---
 
@@ -102,6 +121,10 @@ Airport Transfers may have:
 * notes
 * distance
 
+The city endpoint of an Airport Transfer uses the City's reviewed reference
+point. The airport endpoint is identified by the airport label in the Segment
+source data.
+
 ---
 
 ### Accommodation
@@ -112,6 +135,7 @@ Examples:
 
 * Airbnb
 * Hotel
+* Hostel
 * Airport overnight stay
 
 A Visit may contain multiple Accommodations.
@@ -246,11 +270,20 @@ Short-distance and city trips may behave differently in future MVP+ functionalit
 
 A continuous stay in the same City is one Visit.
 
+When the traveler temporarily leaves a base/stay City for an excursion of one
+or two days and then returns to the same base, the excursion does not split the
+base City into two Visits.
+
 Special case:
 
 Barcelona → Andorra → Barcelona may still represent one Barcelona Visit when Barcelona is the continuous base of the trip.
 
 A Visit may contain multiple Accommodation records.
+
+The MVP does not need to materialize the Accommodation-to-Visit association.
+Trip and canonical accommodation City are sufficient for the MVP's map and
+expense views. Exact Visit assignment remains part of the domain model and may
+be materialized later when a Trip contains ambiguous repeated stays.
 
 ---
 
@@ -258,11 +291,25 @@ A Visit may contain multiple Accommodation records.
 
 A Segment represents a major movement that is meaningful for travel visualization and/or transportation expense analysis.
 
-A short movement may not become a Segment if:
+All movements already recorded as Segments are in MVP scope, including
+short-distance and zero-cost Segments. Airport Transfer cost is not used to
+decide whether a movement is a Segment.
 
-* it is short
-* it produces no additional travel expense
-* it is better represented as a POI
+When a Segment starts and ends in the same City, its ordered Transit Points
+define the non-zero route between the shared endpoints.
+
+### Transportation Classification
+
+The application uses six normalized categories for map styling, filters, and
+both Segment-level and Country-level aggregate analysis. The source subtype is
+also retained in metadata:
+
+* `High-speed Rail`: 高鐵; red
+* `Train`: 火車; pink
+* `City Bus`: 公車; light green
+* `InterCity Bus`: 客運; green
+* `Plane`: 飛機; dark blue
+* `Ferry / Cruise`: 郵輪; light blue
 
 ---
 
@@ -270,11 +317,19 @@ A short movement may not become a Segment if:
 
 A transit point is a City occurring inside a long-distance movement.
 
+Transit Points are stored in travel order in the raw text field. Every listed
+Transit Point is an actual visit. Pure transfer-only locations are excluded
+from visual analysis and must not be promoted to Transit Points.
+
+A sufficiently distant Transit Point may receive a navigable City Map in MVP+.
+The current threshold is greater than 35 km from the reviewed center-point
+station of the canonical City to which that Transit Point belongs.
+
 A transit point may remain inside one Segment rather than becoming two Segments when:
 
 * the journey is effectively one continuous movement
 * there is no separate travel/accommodation expense
-* the intermediate city is mainly a transit location
+* the intermediate City has no separate travel or accommodation expense
 
 Example:
 
@@ -282,7 +337,9 @@ Hamburg → Lübeck → Berlin
 
 Lübeck may be treated as a transit point within a Segment if the journey is otherwise continuous.
 
-However, Lübeck may still be represented as a City for geographic/map purposes if its travel significance warrants it.
+If a location has a separate travel or accommodation expense, the movement is
+split into separate Segments instead of keeping that location only as a Transit
+Point.
 
 ---
 
@@ -296,17 +353,33 @@ Whether it contributes to transportation expense analysis is controlled by the A
 
 If the Airport Transfer cost is zero, it contributes neither cost nor distance to the transportation metric.
 
+In the raw Segment data, the notes field contains exactly three slash-delimited
+positions:
+
+1. Segment notes
+2. departure Airport Transfer notes
+3. arrival Airport Transfer notes
+
+The departure and arrival notes may include the transfer mode and company. When
+present, that text is included in Airport Transfer metadata. The MVP does not
+require a separately entered transfer date or distance. Transfer distance used
+by analysis is derived during preprocessing.
+
+A raw transfer cost of zero covers all of these source-data cases: no transfer,
+a free transfer, or a transfer already included in another price. The MVP does
+not distinguish those reasons.
+
 ---
 
 ## Transportation Distance
 
 Base Segment distance is the straight-line distance between:
 
-Origin City Hbf → Destination City Hbf.
+Origin City reference point → Destination City reference point.
 
 If a non-zero Airport Transfer is included in analysis:
 
-Hbf → Airport distance is added to the Segment distance.
+City reference point → Airport distance is added to the Segment distance.
 
 ---
 
@@ -327,6 +400,28 @@ Airport overnight stays:
 * have zero accommodation cost
 * contribute to accommodation-night calculations when enabled
 * do not contribute to commute-time calculations
+
+Raw commute time for an Airport overnight stay may be stored as `0`, but
+preprocessing converts it to not-applicable for commute-time analysis.
+
+Accommodation price excludes additional handling fees, taxes, refunds, and
+cost-sharing adjustments. Check-in and check-out dates are not required for the
+MVP.
+
+Accommodation types are `Airbnb`, `Hostel`, `Hotel`, and `Airport`. `Hostel` is
+an independent type.
+
+Country-level Accommodation aggregation uses the Country of the normalized
+accommodation City. Airport overnight stays remain included in their assigned
+Country when the Airport overnight filter is enabled, even when the airport is
+outside the administrative boundary of the associated City.
+
+---
+
+## Country Aggregation
+
+For transportation country-level analysis, a Segment belongs to its origin
+Country. Cross-border Segments are not duplicated into the destination Country.
 
 ---
 

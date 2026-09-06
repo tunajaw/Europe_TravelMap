@@ -10,6 +10,9 @@ coverage/
 data/processed/
 data/generated/
 
+# Private source data
+data/private/
+
 # Local environment files
 .env
 .env.*
