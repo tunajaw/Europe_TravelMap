@@ -1,7 +1,7 @@
 # Data Preprocessing Decisions
 
 This document records confirmed source-data conventions and preprocessing
-rules. Raw files remain unchanged by preprocessing.
+rules. Tabular raw files remain unchanged by preprocessing.
 
 ## Segment Source Conventions
 
@@ -110,6 +110,26 @@ the reviewed City and, when explicitly approved, a coarse public location label.
 The preprocessing pipeline must treat the private source as a local input and
 must never copy exact addresses into tracked files, build artifacts, logs, test
 fixtures, or application metadata.
+
+## Country Image Preparation
+
+The 19 MVP Countries each have exactly three landscape source photos under
+`data/raw/img/<country>/`. These high-resolution JPEG sources are local inputs
+and are excluded from Git.
+
+Before web-image generation, source photos are converted from Samsung Motion
+Photos to single-frame JPEGs and stripped of EXIF, GPS, device, and Motion Photo
+metadata. Recoverable original Motion Photos remain under the ignored
+`data/private/` boundary.
+
+Application-ready images are written to
+`public/images/countries/<country>/<descriptive-name>.webp` with these rules:
+
+* preserve the source aspect ratio;
+* resize to a maximum width of 1,920 pixels without upscaling;
+* encode as WebP at quality 82 with metadata excluded;
+* use lowercase kebab-case Country directories and descriptive file names;
+* retain exactly three images for every MVP Country.
 
 ## Resolved Data Review Items
 

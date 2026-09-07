@@ -10,6 +10,9 @@ coverage/
 data/processed/
 data/generated/
 
+# Local high-resolution image sources
+data/raw/img/
+
 # Private source data
 data/private/
 
