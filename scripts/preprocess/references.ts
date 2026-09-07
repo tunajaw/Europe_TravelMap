@@ -23,6 +23,12 @@ type AirportRow = {
 type AliasRow = {
   raw_location: string; airport_code: string; canonical_city: string; review_status: string;
 };
+type LocalTransferRow = {
+  transfer_id: string; segment_id: string; side: string;
+  start_name: string; start_latitude: string; start_longitude: string;
+  end_name: string; end_latitude: string; end_longitude: string;
+  review_status: string;
+};
 
 export interface LoadedReferences {
   index: ReferenceIndex;
@@ -39,12 +45,13 @@ function requireApproved(status: string, label: string): void {
 
 export async function loadReferences(root: string): Promise<LoadedReferences> {
   const parsed = join(root, 'data', 'parsed');
-  const [countryRows, cityRows, stationRows, airportRows, aliasRows] = await Promise.all([
+  const [countryRows, cityRows, stationRows, airportRows, aliasRows, localTransferRows] = await Promise.all([
     readCsv<CountryRow>(join(parsed, 'country_reference.csv')),
     readCsv<CityGeoRow>(join(parsed, 'city_reference_geocoding.csv')),
     readCsv<CityStationRow>(join(parsed, 'city_main_station.csv')),
     readCsv<AirportRow>(join(parsed, 'airport_reference.csv')),
     readCsv<AliasRow>(join(parsed, 'location_alias.csv')),
+    readCsv<LocalTransferRow>(join(parsed, 'local_transfer_reference.csv')),
   ]);
 
   const countryIdByName = new Map<string, string>();
@@ -113,6 +120,31 @@ export async function loadReferences(root: string): Promise<LoadedReferences> {
     });
   }
 
+  const localTransfers = new Map(localTransferRows.map((row) => {
+    requireApproved(row.review_status, `Local Transfer ${row.transfer_id}`);
+    if (row.transfer_id !== `transfer-${row.segment_id.slice('segment-'.length)}-${row.side}`) {
+      throw new Error(`Local Transfer identity mismatch: ${row.transfer_id}`);
+    }
+    if (row.side !== 'departure' && row.side !== 'arrival') {
+      throw new Error(`Invalid Local Transfer side: ${row.transfer_id}`);
+    }
+    return [row.transfer_id, {
+      start: {
+        name: row.start_name,
+        latitude: Number(row.start_latitude),
+        longitude: Number(row.start_longitude),
+      },
+      end: {
+        name: row.end_name,
+        latitude: Number(row.end_latitude),
+        longitude: Number(row.end_longitude),
+      },
+    }];
+  }));
+  if (localTransfers.size !== localTransferRows.length) {
+    throw new Error('Duplicate Local Transfer reference ID');
+  }
+
   return {
     countries,
     cities,
@@ -133,6 +165,7 @@ export async function loadReferences(root: string): Promise<LoadedReferences> {
         latitude: airport.location.latitude,
         longitude: airport.location.longitude,
       }])),
+      localTransfers,
     },
   };
 }

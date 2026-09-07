@@ -42,13 +42,13 @@ Segment metadata.
 | Plane | dark blue |
 | Ferry / Cruise | light blue |
 
-## Airport Transfer Parsing
+## Endpoint Transfer Parsing
 
 The raw Segment notes field has three slash-delimited positions:
 
 1. Segment notes
-2. departure Airport Transfer notes
-3. arrival Airport Transfer notes
+2. departure Endpoint Transfer notes
+3. arrival Endpoint Transfer notes
 
 Empty positions are meaningful and must be retained while parsing. Transfer
 notes may contain the mode and company and are displayed verbatim in metadata.
@@ -65,11 +65,18 @@ these cases.
 The current source also contains four non-airport endpoint transfers: the two
 ends of the Marseille → Barcelona ferry, the Barcelona departure for the
 Barcelona → Naples ferry, and the Utrecht arrival from Munich. Preprocessing
-preserves these records with `endpointKind: local` and a `null` distance so the
-source information is not discarded or falsely treated as an Airport Transfer.
-They are not included by the MVP Airport Transfer checkbox. Whether a future
-generic endpoint-transfer filter should include their cost requires a separate
-domain decision before that expense behavior is implemented.
+preserves these records with `endpointKind: local`. Their cost and straight-line
+distance are always included in the parent Segment's transportation metrics;
+they are not controlled by the Airport Transfer checkbox and do not become
+independent Segments or transportation-category aggregation units.
+
+`data/parsed/local_transfer_reference.csv` stores the four owner-approved route
+endpoint pairs. They use Marseille-Saint-Charles → Marseille Provence Cruise
+Terminal, Terminal D Palacruceros ↔ Barcelona Nord, and Utrecht Leidsche Rijn →
+Utrecht Centraal. The Barcelona terminal is Terminal D because the source
+Segment operator is Costa and the terminal is the Costa-associated
+Palacruceros facility. Preprocessing derives each distance from the two reviewed
+GPS points rather than storing a manually calculated distance.
 
 Confirmed airport-to-domain-City mappings include:
 

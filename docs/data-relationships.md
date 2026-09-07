@@ -18,15 +18,16 @@ preprocessing rules.
 | Segment has destination Country | many-to-one, derived | Destination City | Use the Country of the canonical destination City | Needed for map endpoints; not used for Country expense attribution |
 | Segment has ordered Transit Points | one-to-many, ordered | Comma-delimited Transit Point field | Split, trim, preserve text order, then resolve each label through `location_alias.csv` | Approved |
 | Segment uses a transportation category | many-to-one | Raw transportation subtype | Map to one of the six confirmed categories while retaining the raw subtype | Rule confirmed |
-| Segment has departure Airport Transfer | zero-or-one | Departure transfer price and second notes slot | Parse the departure position; create only when source semantics require a transfer record | Zero-value source semantics remain intentionally collapsed for MVP |
-| Segment has arrival Airport Transfer | zero-or-one | Arrival transfer price and third notes slot | Parse the arrival position; create only when source semantics require a transfer record | Zero-value source semantics remain intentionally collapsed for MVP |
+| Segment has departure Endpoint Transfer | zero-or-one | Departure transfer price and second notes slot | Parse the departure position; create only when source semantics require a transfer record | Zero-value source semantics remain intentionally collapsed for MVP |
+| Segment has arrival Endpoint Transfer | zero-or-one | Arrival transfer price and third notes slot | Parse the arrival position; create only when source semantics require a transfer record | Zero-value source semantics remain intentionally collapsed for MVP |
 | Airport Transfer uses Airport | many-to-one | Airport endpoint label plus `airport_reference.csv` | Normalize raw airport labels to IATA code and reviewed airport reference | Approved |
 | Airport Transfer uses City endpoint | many-to-one | Segment direction, canonical City, and City reference point | Use the reviewed reference point of the associated domain City | Approved |
+| Local Endpoint Transfer uses route endpoints | two reviewed points | `local_transfer_reference.csv` | Resolve by generated Transfer ID and derive straight-line distance from the approved GPS pair | Approved |
 | Accommodation belongs to Trip | many-to-one | Private Accommodation Trip field | Normalize or fill down Trip title and resolve it to generated Trip ID | Source Trip values currently align; transformed output still required |
 | Accommodation belongs to City | many-to-one | Private Accommodation City field | Resolve the source City through the same canonical City vocabulary | Mapping output must exclude the exact address |
 | Accommodation belongs to Country | many-to-one, derived | Accommodation City | Use the Country of the canonical Accommodation City | Rule confirmed |
 | Transportation expense belongs to Segment | one-to-one value for MVP | Segment price | Store the normalized Segment transportation amount on its Segment | Standalone Expense records are not required for MVP |
-| Airport-transfer expense belongs to Airport Transfer | one-to-one value for MVP | Departure or arrival transfer price | Store the normalized amount on the parsed transfer | Standalone Expense records are not required for MVP |
+| Endpoint-transfer expense belongs to Endpoint Transfer | one-to-one value for MVP | Departure or arrival transfer price | Always include paid local transfers in the parent Segment; include paid Airport Transfers only when its filter is enabled | Standalone Expense records are not required for MVP |
 | Accommodation expense belongs to Accommodation | one-to-one value for MVP | Accommodation price | Store the normalized amount on the sanitized Accommodation output | Standalone Expense records are not required for MVP |
 | Country transportation aggregation contains Segment | one-to-many, derived | Segment origin Country | Attribute each Segment to its origin Country only | Rule confirmed |
 | Country accommodation aggregation contains Accommodation | one-to-many, derived | Accommodation City Country | Attribute each Accommodation to its normalized City Country | Rule confirmed |
@@ -52,6 +53,8 @@ preprocessing rules.
 * `data/parsed/city_main_station.csv` records reviewed City reference points.
 * `data/parsed/city_reference_geocoding.csv` holds coordinate candidates for
   those reference points.
+* `data/parsed/local_transfer_reference.csv` records the reviewed endpoint pairs
+  for non-airport transfers.
 * `data/parsed/airport_reference.csv` links every current airport spelling to an
   IATA code, airport candidate, and associated domain City.
 * `data/parsed/country_reference.csv` records Country map candidates and the

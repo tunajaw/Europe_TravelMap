@@ -2,6 +2,8 @@ import { z } from 'zod';
 
 const id = z.string().min(1);
 const coordinate = z.object({ latitude: z.number().gte(-90).lte(90), longitude: z.number().gte(-180).lte(180) }).strict();
+const transferPoint = coordinate.extend({ name: z.string().min(1) }).strict();
+const localTransferRoute = z.object({ start: transferPoint, end: transferPoint }).strict();
 
 export const TravelDataSchema = z.object({
   schemaVersion: z.literal('1.0.0'),
@@ -33,8 +35,9 @@ export const TravelDataSchema = z.object({
   }).strict()),
   transfers: z.array(z.object({
     id, segmentId: id, side: z.enum(['departure', 'arrival']), endpointKind: z.enum(['airport', 'local']),
-    endpointCityId: id, airportId: id.nullable(), costEur: z.number().nonnegative(),
-    distanceKm: z.number().nonnegative().nullable(), notes: z.string().nullable(),
+    endpointCityId: id, airportId: id.nullable(), expenseInclusion: z.enum(['always', 'airport-filter']),
+    costEur: z.number().nonnegative(), distanceKm: z.number().nonnegative(),
+    localRoute: localTransferRoute.nullable(), notes: z.string().nullable(),
   }).strict()),
   accommodations: z.array(z.object({
     id, tripId: id, sequence: z.number().int().positive(), cityId: id, countryId: id,
@@ -96,11 +99,13 @@ export function assertReferentialIntegrity(data: TravelData): void {
     requireId(segments, transfer.segmentId, 'Transfer Segment');
     requireId(cities, transfer.endpointCityId, 'Transfer City');
     if (transfer.airportId) requireId(airports, transfer.airportId, 'Transfer Airport');
-    if (transfer.endpointKind === 'airport' && (!transfer.airportId || transfer.distanceKm === null)) {
+    if (transfer.endpointKind === 'airport'
+      && (!transfer.airportId || transfer.localRoute !== null || transfer.expenseInclusion !== 'airport-filter')) {
       throw new Error(`Airport Transfer lacks Airport geometry: ${transfer.id}`);
     }
-    if (transfer.endpointKind === 'local' && (transfer.airportId !== null || transfer.distanceKm !== null)) {
-      throw new Error(`Local Transfer must not claim Airport geometry: ${transfer.id}`);
+    if (transfer.endpointKind === 'local'
+      && (transfer.airportId !== null || transfer.localRoute === null || transfer.expenseInclusion !== 'always')) {
+      throw new Error(`Local Transfer lacks reviewed route geometry: ${transfer.id}`);
     }
     const segment = data.segments.find(({ id }) => id === transfer.segmentId);
     const expectedCity = transfer.side === 'departure' ? segment?.originCityId : segment?.destinationCityId;

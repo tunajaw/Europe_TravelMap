@@ -100,7 +100,7 @@ A Segment has:
 * transportation cost
 * transportation company
 * notes
-* optional Airport Transfers
+* optional Endpoint Transfers
 * an exact transportation subtype
 * a normalized transportation category
 
@@ -109,6 +109,21 @@ A Segment is the primary unit for travel-path visualization and transportation e
 All Segments currently present in the source data are included in the MVP map.
 
 ---
+
+### Endpoint Transfer
+
+Transportation between a Segment endpoint and the terminal or station used by
+the primary Segment movement. An Endpoint Transfer belongs to a parent Segment
+and is not itself a Segment.
+
+Endpoint Transfers have a departure or arrival side, price, notes, distance,
+and reviewed route endpoints. They inherit the parent Segment's transportation
+category and Country attribution rather than becoming independent aggregation
+units.
+
+A paid local Endpoint Transfer, such as a railway-station-to-cruise-terminal
+movement, is always included in its parent Segment's transportation expense and
+distance. A zero-cost Endpoint Transfer contributes neither cost nor distance.
 
 ### Airport Transfer
 
@@ -120,7 +135,7 @@ Examples:
 * BGY → Milan
 * STN → London
 
-Airport Transfer is NOT a Segment.
+Airport Transfer is an Endpoint Transfer subtype and is NOT a Segment.
 
 It may be associated with a Segment and may optionally be included in transportation expense analysis.
 
@@ -240,13 +255,18 @@ Trip's country/city participation can be derived from its Visits and Segments.
 * Segment belongs to Trip
 * Segment belongs to/from City
 * Segment belongs to/from Country
-* Segment may contain Airport Transfer
+* Segment may contain Endpoint Transfer
 * Segment may reference Expense
+
+### Endpoint Transfer
+
+* Endpoint Transfer belongs to Segment
+* Endpoint Transfer may reference Expense
 
 ### Airport Transfer
 
-* Airport Transfer belongs to Segment
-* Airport Transfer may reference Expense
+* Airport Transfer is an Endpoint Transfer subtype
+* Airport Transfer references an Airport
 
 ### Accommodation
 
@@ -360,6 +380,17 @@ Point.
 
 ---
 
+## Endpoint Transfer
+
+Endpoint Transfer is not a Segment. Paid local Endpoint Transfers always
+contribute their cost and reviewed endpoint-to-endpoint straight-line distance
+to the parent Segment. They do not have independent map paths, transportation
+categories, or Country aggregation.
+
+The current local routes are Marseille-Saint-Charles → Marseille Provence
+Cruise Terminal, Terminal D Palacruceros ↔ Barcelona Nord, and Utrecht Leidsche
+Rijn → Utrecht Centraal.
+
 ## Airport Transfer
 
 Airport Transfer is not a Segment.
@@ -374,11 +405,11 @@ In the raw Segment data, the notes field contains exactly three slash-delimited
 positions:
 
 1. Segment notes
-2. departure Airport Transfer notes
-3. arrival Airport Transfer notes
+2. departure Endpoint Transfer notes
+3. arrival Endpoint Transfer notes
 
 The departure and arrival notes may include the transfer mode and company. When
-present, that text is included in Airport Transfer metadata. The MVP does not
+present, that text is included in Endpoint Transfer metadata. The MVP does not
 require a separately entered transfer date or distance. Transfer distance used
 by analysis is derived during preprocessing.
 
@@ -393,6 +424,9 @@ not distinguish those reasons.
 Base Segment distance is the straight-line distance between:
 
 Origin City reference point → Destination City reference point.
+
+Each paid local Endpoint Transfer adds the straight-line distance between its
+two reviewed GPS endpoints.
 
 If a non-zero Airport Transfer is included in analysis:
 

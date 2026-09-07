@@ -44,6 +44,17 @@ export interface CityReference {
   countryId: string;
 }
 
+export interface TransferPointReference {
+  name: string;
+  latitude: number;
+  longitude: number;
+}
+
+export interface LocalTransferReference {
+  start: TransferPointReference;
+  end: TransferPointReference;
+}
+
 export interface AirportReference extends CityReference {
   code: string;
   associatedCityId: string;
@@ -53,6 +64,7 @@ export interface ReferenceIndex {
   aliases: Map<string, AliasReference>;
   cities: Map<string, CityReference>;
   airports: Map<string, AirportReference>;
+  localTransfers: Map<string, LocalTransferReference>;
 }
 
 export interface TripRecord {
@@ -93,8 +105,10 @@ export interface TransferRecord {
   endpointKind: 'airport' | 'local';
   endpointCityId: string;
   airportId: string | null;
+  expenseInclusion: 'always' | 'airport-filter';
   costEur: number;
-  distanceKm: number | null;
+  distanceKm: number;
+  localRoute: LocalTransferReference | null;
   notes: string | null;
 }
 

@@ -15,6 +15,7 @@ const references: ReferenceIndex = {
     ['city-konigssee', { latitude: 47.5922, longitude: 12.9875, countryId: 'country-germany' }],
   ]),
   airports: new Map(),
+  localTransfers: new Map(),
 };
 
 describe('Segment preprocessing', () => {
@@ -58,5 +59,27 @@ describe('Segment preprocessing', () => {
         'Transit Point': '',
       },
     ], references)).toThrow(/Trip/i);
+  });
+
+  it('derives an always-included local Transfer distance from reviewed route endpoints', () => {
+    const localReferences: ReferenceIndex = {
+      ...references,
+      localTransfers: new Map([['transfer-001-departure', {
+        start: { name: 'Munich Central', latitude: 48.1407, longitude: 11.5569 },
+        end: { name: 'Munich Coach Station', latitude: 48.1426, longitude: 11.5481 },
+      }]]),
+    };
+    const result = preprocessSegments([{
+      Trip: 'Local transfer', 起點: 'M. Hbf.', 終點: 'Salzburg Hbf.', 日期: '9 October, 2025',
+      價錢: '€10', '接駁(出發)': '€2', '接駁(到達)': '0', 交通工具: '客運', 品牌: 'Example',
+      備註: '/Local bus/', 'Transit Point': '',
+    }], localReferences);
+
+    expect(result.transfers[0]).toEqual(expect.objectContaining({
+      endpointKind: 'local',
+      expenseInclusion: 'always',
+      distanceKm: expect.any(Number),
+      localRoute: localReferences.localTransfers.get('transfer-001-departure'),
+    }));
   });
 });

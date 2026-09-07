@@ -86,6 +86,8 @@ export function preprocessSegments(
       const airport = endpoint.airportId ? references.airports.get(endpoint.airportId) : undefined;
       if (endpoint.airportId && !airport) throw new Error(`Unknown Airport reference: ${endpoint.airportId}`);
       const transferId = `transfer-${segmentId.slice('segment-'.length)}-${side}`;
+      const localRoute = airport ? null : references.localTransfers.get(transferId);
+      if (!airport && !localRoute) throw new Error(`Missing Local Transfer reference: ${transferId}`);
       transfers.push({
         id: transferId,
         segmentId,
@@ -93,8 +95,12 @@ export function preprocessSegments(
         endpointKind: airport ? 'airport' : 'local',
         endpointCityId: endpoint.cityId,
         airportId: endpoint.airportId,
+        expenseInclusion: airport ? 'airport-filter' : 'always',
         costEur,
-        distanceKm: airport ? roundedKm(haversineKm(cityFor(airport.associatedCityId), airport)) : null,
+        distanceKm: roundedKm(airport
+          ? haversineKm(cityFor(airport.associatedCityId), airport)
+          : haversineKm(localRoute!.start, localRoute!.end)),
+        localRoute: localRoute ?? null,
         notes: transferNotes,
       });
       return transferId;

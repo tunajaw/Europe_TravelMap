@@ -60,10 +60,11 @@ Ferry / Cruise: ...
 畫面左下方右側有 heatmap，畫出歐洲地圖。
 
 FR-EXP-03 (Transporatation Data Calculation):
-* Airport Transfer 不是 Segment。
+* Endpoint Transfer（Airport 或 local 港口／車站接駁）不是 Segment，而是依附於 parent Segment。
 * Segment 距離為起點 City reference point 到終點 City reference point 的直線距離。City reference point 通常是中央火車站；沒有單一主要車站或沒有鐵路的城市必須使用經人工確認的替代點。
+* 非 0 元的 local Endpoint Transfer 永遠把費用及其兩個已確認 GPS 端點間的直線距離加入 parent Segment；它不建立獨立 Segment，也不建立自己的交通類別或 Country aggregation，而是繼承 parent Segment。
 * checkbox "考慮市區到機場接駁" 決定 Airport Transfer 是否納入 Transportation 統計。啟用時，只有非 0 元的單程接駁會把費用及 City reference point → Airport 的直線距離加入對應 Segment。
-* Airport Transfer 不需在 raw data 手動填寫日期或距離；分析距離由 preprocessing 根據已確認的地點座標推導。
+* Endpoint Transfer 不需在 raw data 手動填寫日期或距離；分析距離由 preprocessing 根據已確認的地點座標推導。
 
 FR-EXP-03-01 (Zero-Cost Segment Filter)
 
@@ -71,14 +72,14 @@ Transportation analysis 提供 Include 0-Cost Segments checkbox，預設為開�
 當 checkbox 開啟時，0 元 Segment 納入 Transportation 的 barplot、heatmap 與統計計算。
 當 checkbox 關閉時，0 元 Segment 不納入上述分析。
 
-Segment 是否為 0 元，應以套用 Airport Transfer 計算規則後的最終 Segment cost 判定。
+Segment 是否為 0 元，應以固定納入 local Endpoint Transfer，並套用目前 Airport Transfer checkbox 後的最終 Segment cost 判定。
 
 FR-EXP-04 (Transportation Filter):
 交通類別按鈕如果按下，代表納入分析，呈現在下方的視覺圖中。沒按下則不納入分析。
 barplot 與 heatmap 的視覺化資料由交通類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-05 (Transportation Barplot Render):
-橫向 barplot，列出所有篩選過後的 Segment，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值，Bar 顯示合併機場接駁 (如有勾選 checkbox) 的費用。bar 與 Map Segment 使用相同六類色彩：High-speed Rail（紅色）、Train（粉紅色）、City Bus（淺綠色）、InterCity Bus（綠色）、Plane（深藍色）、Ferry / Cruise（淺藍色）。
+橫向 barplot，列出所有篩選過後的 Segment，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值；Bar 固定合併 local Endpoint Transfer，並在 checkbox 開啟時合併 Airport Transfer。bar 與 Map Segment 使用相同六類色彩：High-speed Rail（紅色）、Train（粉紅色）、City Bus（淺綠色）、InterCity Bus（綠色）、Plane（深藍色）、Ferry / Cruise（淺藍色）。
 
 FR-EXP-06 (Transportation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。

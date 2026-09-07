@@ -9,5 +9,6 @@ describe('reviewed reference data', () => {
     expect(references.cities).toHaveLength(76);
     expect(references.airports).toHaveLength(28);
     expect(references.index.aliases.size).toBe(101);
+    expect(references.index.localTransfers.size).toBe(4);
   });
 });

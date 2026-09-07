@@ -20,6 +20,13 @@ export async function buildDataset(root: string): Promise<TravelData> {
   );
   const photoRows = await readCsv<PhotoRow>(join(root, 'data', 'parsed', 'photo_manifest.csv'));
   const { trips, segments, transfers } = preprocessSegments(segmentRows, references.index);
+  const localTransferIds = new Set(
+    transfers.filter(({ endpointKind }) => endpointKind === 'local').map(({ id }) => id),
+  );
+  if (localTransferIds.size !== references.index.localTransfers.size
+    || [...references.index.localTransfers.keys()].some((id) => !localTransferIds.has(id))) {
+    throw new Error('Local Transfer reference coverage does not match the source Transfers');
+  }
   const tripIds = new Map(trips.map((trip) => [trip.title, trip.id]));
   const airportCodesByCity = new Map<string, string[]>();
   for (const airport of references.airports) {

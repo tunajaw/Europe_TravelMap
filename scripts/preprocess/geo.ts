@@ -1,8 +1,8 @@
-import type { CityReference } from './types.ts';
-
 const EARTH_RADIUS_KM = 6_371.0088;
 
-export function haversineKm(a: CityReference, b: CityReference): number {
+type Coordinate = { latitude: number; longitude: number };
+
+export function haversineKm(a: Coordinate, b: Coordinate): number {
   const radians = (degrees: number): number => degrees * Math.PI / 180;
   const latitudeDelta = radians(b.latitude - a.latitude);
   const longitudeDelta = radians(b.longitude - a.longitude);
