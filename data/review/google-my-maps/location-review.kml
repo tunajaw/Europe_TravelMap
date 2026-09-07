@@ -1,0 +1,1367 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+  <name>Europe Travel Map location review</name>
+  <Style id="country"><IconStyle><scale>1.2</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/red-stars.png</href></Icon></IconStyle></Style>
+  <Style id="city"><IconStyle><scale>1.0</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href></Icon></IconStyle></Style>
+  <Style id="airport"><IconStyle><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon></IconStyle></Style>
+  <Style id="alias"><IconStyle><scale>0.8</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href></Icon></IconStyle></Style>
+    <Folder><name>01 Country markers (red stars)</name>
+      <Placemark>
+        <name>Country marker - Andorra</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Andorra la Vella; MarkerBasis: capital_city; CandidateLabel: Andorra la Vella, AD500, Andorra; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>1.5032264,42.4979185,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Austria</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Vienna; MarkerBasis: capital_city; CandidateLabel: Vienna, Austria; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>16.3725042,48.2083537,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Belgium</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Brussels; MarkerBasis: capital_city; CandidateLabel: Brussels, Brussels-Capital, Belgium; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.3524930,50.8467372,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Czechia</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Prague; MarkerBasis: capital_city; CandidateLabel: Prague, Czechia; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>14.4212535,50.0874654,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - France</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Paris; MarkerBasis: capital_city; CandidateLabel: Paris, Ile-de-France, Metropolitan France, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>2.3200410,48.8588897,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Germany</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Berlin; MarkerBasis: capital_city; CandidateLabel: Berlin, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.3951309,52.5173885,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Hungary</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Budapest; MarkerBasis: capital_city; CandidateLabel: Budapest, Central Hungary, Hungary; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>19.1449053,47.4818490,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Ireland</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Dublin; MarkerBasis: capital_city; CandidateLabel: Dublin, County Dublin, Leinster, Ireland; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-6.2605593,53.3493795,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Italy</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Rome; MarkerBasis: capital_city; CandidateLabel: Rome, Roma Capitale, Lazio, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.4829321,41.8933203,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Lithuania</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Vilnius; MarkerBasis: capital_city; CandidateLabel: Vilnius, Vilnius city municipality, Vilnius County, Lithuania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>25.2829111,54.6870458,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Monaco</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Monaco; MarkerBasis: capital_city; CandidateLabel: Monaco; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.4248152,43.7309697,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Netherlands</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Amsterdam; MarkerBasis: capital_city; CandidateLabel: Amsterdam, North Holland, Netherlands; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.8924534,52.3730796,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - North Macedonia</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Skopje; MarkerBasis: capital_city; CandidateLabel: Skopje, City of Skopje, North Macedonia; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>21.4318935,41.9962164,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Norway</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Oslo; MarkerBasis: capital_city; CandidateLabel: Oslo, Norway; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.7389701,59.9133301,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Poland</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Warsaw; MarkerBasis: capital_city; CandidateLabel: Warsaw, Masovian Voivodeship, Poland; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>21.0711489,52.2333742,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Romania</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Bucharest; MarkerBasis: capital_city; CandidateLabel: Bucharest, Romania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>26.1026840,44.4361414,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Spain</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Madrid; MarkerBasis: capital_city; CandidateLabel: Madrid, Community of Madrid, Spain; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-3.7035070,40.4167820,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Turkey</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Ankara; MarkerBasis: capital_city; CandidateLabel: Ankara, Çankaya, Ankara, Central Anatolia Region, 06420, Turkey; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>32.8540497,39.9207759,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - United Kingdom</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: London; MarkerBasis: capital_city; CandidateLabel: Greater London, England, United Kingdom; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-0.1277653,51.5074456,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Country marker - Vatican City</name>
+        <styleUrl>#country</styleUrl>
+        <description>MarkerType: Country marker candidate; CapitalCity: Vatican City; MarkerBasis: capital_city; CandidateLabel: Vatican City, 00120, Vatican City; ReviewStatus: approved; Source: OpenStreetMap Nominatim; Notes: Owner-approved MVP Country; no Segment required</description>
+        <Point><coordinates>12.4528349,41.9034912,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder><name>02 City GPS candidates (blue circles)</name>
+      <Placemark>
+        <name>City GPS - Aachen</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Aachen Hbf; CandidateLabel: Aachen Central Train Station, 2a, Bahnhofstraße, Kaiserplatz, Burtscheid, Aachen-Mitte, Aachen, Aachen (district), North Rhine-Westphalia, 52064, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>6.0913818,50.7677663,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Amsterdam</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Netherlands; ReferencePoint: Amsterdam Centraal; CandidateLabel: Amsterdam Central Station, Middentunnel, Centrum, Amsterdam, North Holland, Netherlands, 1012 AB, Netherlands; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.9005805,52.3789010,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Andorra</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Andorra; ReferencePoint: Andorra la Vella Bus Station; CandidateLabel: 5556 Estació Nacional d&amp;apos;Autobusos, Avinguda de Tarragona, Centre històric, La Comella, Andorra la Vella, AD500, Andorra; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>1.5199166,42.5037286,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Bad Camberg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Bad Camberg Bf.; CandidateLabel: Bad Camberg, Caspar-Hofmann-Platz, Bad Camberg-Kernstadt, Bad Camberg, Landkreis Limburg-Weilburg, Hesse, 65520, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.2550751,50.2964521,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Baden-Baden</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Baden-Baden; CandidateLabel: Baden-Baden, B 3, Weststadt, Oos, Baden-Baden, Baden-Württemberg, 76532, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.1910627,48.7904421,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Bamberg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Bamberg; CandidateLabel: Bamberg, Ludwigstraße, Gärtnerstadt, Bamberg, Bavaria, 96052, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.8997336,49.9006357,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Barcelona</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Spain; ReferencePoint: Barcelona Sants; CandidateLabel: Barcelona - Sants, 1-7, Plaça dels Països Catalans, Sants, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalonia, 08014, Spain; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>2.1400042,41.3790068,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Berlin</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Berlin Hbf; CandidateLabel: Berlin Hauptbahnhof (tief), 1, Europaplatz, Europacity, Moabit, Mitte, Berlin, 10557, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.3698610,52.5246361,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Berchtesgaden</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Berchtesgaden Hbf; CandidateLabel: Berchtesgaden Hauptbahnhof, Bahnhofplatz, Untersalzberg II, Mitterbach, Berchtesgaden, Landkreis Berchtesgadener Land, Bavaria, 83471, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.9997241,47.6267170,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Bochum</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Bochum Hbf; CandidateLabel: Bochum Hauptbahnhof, Kurt-Schumacher-Platz, Gerberviertel, Mosaikviertel, Innenstadt, Bochum-Mitte, Bochum, North Rhine-Westphalia, 44787, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.2232341,51.4785335,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Bremen</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Bremen Hbf; CandidateLabel: Bremen Hauptbahnhof, 15, 16, Bahnhofsplatz, Bahnhofsvorstadt, Mitte, Bremen-Mitte, Bremen, 28195, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.8135421,53.0831456,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Brugge</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Belgium; ReferencePoint: Brugge; CandidateLabel: Station Brugge, Hendrik Brugmansstraat, Sint-Michiels, Bruges, Brugge, West Flanders, Flanders, 8200, Belgium; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>3.2175232,51.1974079,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Brussels</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Belgium; ReferencePoint: Bruxelles-Midi / Brussel-Zuid; CandidateLabel: Brussels-Midi, Galerie M - M-galerij, Saint-Gilles - Sint-Gillis, Brussels-Capital, 1060, Belgium; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.3360541,50.8357755,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Bucharest</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Romania; ReferencePoint: București Nord; CandidateLabel: Gara de Nord, 1-3, Piața Gării de Nord, Matache, Gara de Nord, Sector 1, Bucharest, 010741, Romania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>26.0738428,44.4467388,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Budapest</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Hungary; ReferencePoint: Budapest-Keleti; CandidateLabel: Budapest Keleti Station, 1, Baross tér, Kerepesdűlő, 8th district, Budapest, Central Hungary, 1087, Hungary; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>19.0839800,47.5004120,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Colmar</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: France; ReferencePoint: Gare de Colmar; CandidateLabel: Gare de Colmar, Place de la Gare, Colmar, Colmar-Ribeauvillé, Haut-Rhin, European Collectivity of Alsace, Grand Est, Metropolitan France, 68000, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.3469271,48.0724689,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Cologne</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Köln Hbf; CandidateLabel: Köln Hauptbahnhof, 11, Trankgasse, Martinsviertel, Altstadt-Nord, Innenstadt, Cologne, North Rhine-Westphalia, 50667, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>6.9590705,50.9427839,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Den Haag</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Netherlands; ReferencePoint: Den Haag Centraal; CandidateLabel: Den Haag Centraal, Prins Willem-Alexanderhof, Bezuidenhout, Haagse Hout, The Hague, South Holland, Netherlands, 2595 DH, Netherlands; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.3255311,52.0807633,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Donaueschingen</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Donaueschingen; CandidateLabel: Donaueschingen, Bahnhofstraße, Allmendshofen, Donaueschingen (Kernstadt), Aufen, Donaueschingen, GVV Donaueschingen, Schwarzwald-Baar-Kreis, Baden-Württemberg, 78166, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.4987559,47.9479723,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Dortmund</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Dortmund Hbf; CandidateLabel: Dortmund Hbf, Paul-Winzen-Straße, Innenstadt Nord, Dortmund, North Rhine-Westphalia, 44147, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.4592831,51.5178935,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Dresden</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Dresden Hbf; CandidateLabel: Dresden Hbf, 4, Wiener Platz, Seevorstadt-Ost/Großer Garten, Seevorstadt, Altstadt, Dresden, Saxony, 01069, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.7320768,51.0402452,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Dublin</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Ireland; ReferencePoint: Dublin Connolly; CandidateLabel: Dublin Connolly, Amiens Street, North Dock C ED, Dublin, County Dublin, Leinster, D01 V6V6, Ireland; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-6.2471357,53.3527247,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Duisburg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Duisburg Hbf; CandidateLabel: Duisburg Hauptbahnhof, Bahnhofspassage, Dellviertel, Duisburg-Mitte, Duisburg, North Rhine-Westphalia, 47051, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>6.7761771,51.4296701,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Düsseldorf</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Düsseldorf Hbf; CandidateLabel: Düsseldorf Central Station, Weg Gleis 12, Stadtmitte, Stadtbezirk 1, Dusseldorf, North Rhine-Westphalia, 40210, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>6.7943015,51.2197340,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Erfurt</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Erfurt Hbf; CandidateLabel: Erfurt Hauptbahnhof, 12, Willy-Brandt-Platz, Altstadt, Erfurt, Thuringia, 99084, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.0378865,50.9727731,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Essen</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Essen Hbf; CandidateLabel: Essen Hauptbahnhof, Am Hauptbahnhof, Stadtkern, Stadtbezirk I, Essen, North Rhine-Westphalia, 45127, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.0144679,51.4514769,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Frankfurt</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Frankfurt (Main) Hbf; CandidateLabel: Frankfurt (Main) Hauptbahnhof, Mannheimer Straße, Gallus, Innenstadt 1, Frankfurt, Hesse, 60329, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.6625808,50.1066539,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Freiburg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Freiburg (Breisgau) Hbf; CandidateLabel: Freiburg (Breisgau) Hauptbahnhof, 5-7, Bismarckallee, Altstadt-Ring, Old Town, Freiburg im Breisgau, Baden-Württemberg, 79098, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.8412948,47.9977308,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Friedrichshafen</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Friedrichshafen Stadt; CandidateLabel: Friedrichshafen Stadt, Fußgängerunterführung Stadtbahnhof, Hofen, Friedrichshafen, VVG der Stadt Friedrichshafen, Lake Constance district, Baden-Württemberg, 88045, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.4737004,47.6532337,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Gengenbach</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Gengenbach; CandidateLabel: Gengenbach, Bahnhofstraße, Gengenbach, VVG der Stadt Gengenbach, Ortenaukreis, Baden-Württemberg, 77723, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.0101727,48.4045788,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Gent</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Belgium; ReferencePoint: Gent-Sint-Pieters; CandidateLabel: Gent-Sint-Pieters, 1, Koningin Maria Hendrikaplein, Stationsbuurt Noord, Ghent, Gent, East Flanders, Flanders, 9000, Belgium; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>3.7108051,51.0360946,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Göreme</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Turkey; ReferencePoint: Göreme Otobüs Terminali; CandidateLabel: Göreme Bus Station, Turgut Özal Meydanı, Göreme, Nevşehir, Central Anatolia Region, 50180, Turkey; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>34.8296130,38.6435271,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Hamburg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Hamburg Hbf; CandidateLabel: Hamburg Hauptbahnhof, Südsteg, St. Georg, Hamburg-Mitte, Hamburg, 20099, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.0075644,53.5526959,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Heidelberg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Heidelberg Hbf; CandidateLabel: Heidelberg Hauptbahnhof, 5, Willy-Brandt-Platz, Weststadt, Heidelberg, Baden-Württemberg, 69115, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.6754223,49.4034737,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Hof</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Hof Hbf; CandidateLabel: Hof Hauptbahnhof, Bahnhofsplatz, Bahnhofsviertel, Alsenberg, Hof, Bavaria, 95028, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.9233140,50.3080628,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Idstein</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Idstein (Taunus); CandidateLabel: Idstein (Taunus), Am Bahndamm, Idstein, Rheingau-Taunus-Kreis, Hesse, 65510, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.2575508,50.2159384,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Istanbul</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Turkey; ReferencePoint: Sirkeci Garı; CandidateLabel: Sirkeci, İstasyon Arkası Sokağı, Cağaloğlu, Hocapaşa Mahallesi, Istanbul, Fatih, Istanbul, Marmara Region, 34110, Turkey; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>28.9779620,41.0150174,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Karlovy Vary</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Czechia; ReferencePoint: Karlovy Vary; CandidateLabel: Karlovy Vary, Nákladní, Sedlec, Karlovy Vary, okres Karlovy Vary, Karlovy Vary Region, 913 34, Czechia; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.8667221,50.2354590,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Karlsruhe</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Karlsruhe Hbf; CandidateLabel: Karlsruhe Hauptbahnhof, Bahnhofplatz, Südweststadt Östlicher Teil, Südweststadt, Karlsruhe, Baden-Württemberg, 76137, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.4016492,48.9940078,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Koblenz</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Koblenz Hbf; CandidateLabel: Koblenz Hbf, Bahnhofplatz, Mitte, Koblenz, Rhineland-Palatinate, 56068, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.5892636,50.3508227,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Königssee</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Tourist-Information am Parkplatz Königssee; CandidateLabel: Tourist-Information am Parkplatz Königssee (same-building coordinate candidate); ReviewStatus: approved; Source: OpenStreetMap nearby-point candidate; Notes: Exact named point was not returned by Nominatim; visually confirm the same-building coordinate</description>
+        <Point><coordinates>12.9875030,47.5921790,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Kraków</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Poland; ReferencePoint: Kraków Główny; CandidateLabel: Krakow Main Station, Świętego Rafała Kalinowskiego, Wesoła, Stare Miasto, Old Town, Krakow, Lesser Poland Voivodeship, 31-154, Poland; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>19.9478862,50.0684238,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Leipzig</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Leipzig Hbf; CandidateLabel: Leipzig Hauptbahnhof, 5, Willy-Brandt-Platz, Centre East, Mitte, Leipzig, Saxony, 04109, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.3830858,51.3465518,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Lindau</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Lindau-Insel; CandidateLabel: Lindau-Insel, Alfred-Nobel-Platz, Insel, Lindau (Bodensee), Landkreis Lindau, Bavaria, 88131, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.6808298,47.5442020,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - London</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: United Kingdom; ReferencePoint: London Waterloo; CandidateLabel: London Waterloo, The Balcony, South Bank, Waterloo, London Borough of Lambeth, Greater London, England, SE1 8SW, United Kingdom; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-0.1128010,51.5028379,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Lübeck</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Lübeck Hbf; CandidateLabel: Lübeck Hauptbahnhof, 2-6, Am Bahnhof, Sankt Lorenz Süd, Lübeck, Schleswig-Holstein, 23558, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.6704782,53.8671234,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Mainz</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Mainz Hbf; CandidateLabel: Mainz Hbf, Bahnhofplatz, Neustadt, Mainz, Rhineland-Palatinate, 55116, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.2586022,50.0013856,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Mannheim</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Mannheim Hbf; CandidateLabel: Mannheim Hauptbahnhof, 17, Willy-Brandt-Platz, Schwetzingerstadt, Schwetzingerstadt/Oststadt, Mannheim, Baden-Württemberg, 68161, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.4698178,49.4796632,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Marseille</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: France; ReferencePoint: Marseille-Saint-Charles; CandidateLabel: Marseille Saint-Charles, Square Narvik, Saint-Charles, 1st Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d&amp;apos;Azur, Metropolitan France, 13001, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>5.3811927,43.3032635,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Menton</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: France; ReferencePoint: Menton; CandidateLabel: Menton, Rue des Soeurs Munet, Garavan, Menton, Nice, Maritime Alps, Provence-Alpes-Côte d&amp;apos;Azur, Metropolitan France, 06500, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.4931157,43.7747030,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Milan</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Italy; ReferencePoint: Milano Centrale; CandidateLabel: Milano Centrale, Piazza Duca d&amp;apos;Aosta, Centrale, Municipio 2, Milan, Rodano, Milan, Lombardy, 20124, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.2042617,45.4858786,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Monaco</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Monaco; ReferencePoint: Monaco-Monte-Carlo; CandidateLabel: Monaco - Monte Carlo, Pont Sainte-Dévote, Ravin de Sainte-Dévote, Monaco, 98020, Monaco; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.4194983,43.7382624,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Munich</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: München Hbf; CandidateLabel: Munich Central Station, Paul-Heyse-Unterführung, Klinikviertel, Ludwigsvorstadt, Ludwigsvorstadt-Isarvorstadt, Munich, Bavaria, 80335, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.5569426,48.1407253,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Naples</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Italy; ReferencePoint: Napoli Centrale; CandidateLabel: Naples, Corso Meridionale, Rione Vasto, Vicaria, Municipalità 4, Naples, Campania, 80142, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>14.2731399,40.8530238,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Nice</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: France; ReferencePoint: Nice-Ville; CandidateLabel: Nice-Ville, Parvis de la Gare, Vernier, Thiers, La Buffa, Nice, Maritime Alps, Provence-Alpes-Côte d&amp;apos;Azur, Metropolitan France, 06000, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.2617286,43.7048972,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Nürnberg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Nürnberg Hbf; CandidateLabel: Nürnberg Hauptbahnhof, Mitteltunnel, Tafelhof, Altstadt und engere Innenstadt, Nuremberg, Bavaria, 90443, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.0823089,49.4451991,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Oslo</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Norway; ReferencePoint: Oslo S; CandidateLabel: Oslo Central Station, Main Station Hallway, Sjøtomta, Vaterland, Sentrum, Oslo, 0050, Norway; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.7531379,59.9110251,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Palermo</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Italy; ReferencePoint: Palermo Centrale; CandidateLabel: Palermo Centrale, Via Tommaso Fazello, III Circoscrizione, Palermo, Sicily, 90127, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.3674799,38.1092571,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Paris</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: France; ReferencePoint: Gare du Nord; CandidateLabel: Paris Gare du Nord, Paris, France; ReviewStatus: approved; Source: OpenStreetMap reviewed object candidate</description>
+        <Point><coordinates>2.3549733,48.8804003,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Prague</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Czechia; ReferencePoint: Praha hlavní nádraží; CandidateLabel: Prague Main Station, Wilsonova, New Town, obvod Praha 1, Prague, 116 47, Czechia; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>14.4360939,50.0829628,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Rome</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Italy; ReferencePoint: Roma Termini; CandidateLabel: Roma Termini, Piazza dei Cinquecento, Esquilino, Municipio Roma I, Rome, Roma Capitale, Lazio, 00185, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.5016713,41.9011950,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Rotterdam</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Netherlands; ReferencePoint: Rotterdam Centraal; CandidateLabel: Rotterdam Centraal, Provenierstunnel, CS-Kwartier, Centrum, Rotterdam, South Holland, Netherlands, 3013 EA, Netherlands; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.4687190,51.9253937,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Salzburg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Austria; ReferencePoint: Salzburg Hbf; CandidateLabel: Salzburg Hauptbahnhof, 1, Südtiroler Platz, Elisabeth-Vorstadt, Salzburg, 5020, Austria; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.0458530,47.8130618,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Skopje</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: North Macedonia; ReferencePoint: Skopje railway station; CandidateLabel: Skopje Railway Station, Bulevar Kuzman Josifovski Pitu, Mičurin, Aerodrom, Municipality of Centar, Skopje, Municipality of Aerodrom, City of Skopje, 1000, North Macedonia; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>21.4459867,41.9909014,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Speyer</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Speyer Hbf; CandidateLabel: Speyer Hauptbahnhof, 43, Bahnhofstraße, Kernstadt-Nord, Speyer, Rhineland-Palatinate, 67346, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.4283506,49.3241568,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Strasbourg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: France; ReferencePoint: Gare de Strasbourg; CandidateLabel: Strasbourg, Place de la Gare, Tribunal-Gare-Porte de Schirmeck, Strasbourg, Bas-Rhin, European Collectivity of Alsace, Grand Est, Metropolitan France, 67000, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.7339249,48.5852933,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Stuttgart</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Stuttgart Hbf; CandidateLabel: Stuttgart Main Station, 2, Arnulf-Klett-Platz, Hauptbahnhof, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70173, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.1833959,48.7856099,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Triberg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Triberg; CandidateLabel: Triberg, Bahnhofstraße, Triberg (Kernstadt), Triberg im Schwarzwald, GVV Raumschaft Triberg, Schwarzwald-Baar-Kreis, Baden-Württemberg, 78098, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.2368619,48.1403719,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Ulm</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Ulm Hbf; CandidateLabel: Ulm Hauptbahnhof, 1, Bahnhofplatz, Fischerviertel, Mitte, Ulm, Baden-Württemberg, 89073, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.9826024,48.3994159,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Utrecht</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Netherlands; ReferencePoint: Utrecht Centraal; CandidateLabel: Utrecht Centraal, 12, Stationshal, Hoog Catharijne, Ns, Jaarbeurs, Binnenstad City- En Winkelgebied, Binnenstad, Utrecht, Netherlands, 3511 CE, Netherlands; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>5.1096021,52.0893825,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Vatican City</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Vatican City; ReferencePoint: Vatican City; CandidateLabel: Vatican City, Observatory Road, Vatican City, 00120, Vatican City; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.4509301,41.9008795,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Vilnius</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Lithuania; ReferencePoint: Vilnius railway station; CandidateLabel: Vilnius, Geležinkelio g., New Town, Naujamiestis eldership, Vilnius, Vilnius city municipality, Vilnius County, 01047, Lithuania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>25.2847579,54.6698774,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Wiesbaden</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Wiesbaden Hbf; CandidateLabel: Wiesbaden Hauptbahnhof, 1, Bahnhofsplatz, Südost, Wiesbaden, Hesse, 65189, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.2439848,50.0698313,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Wuppertal</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Wuppertal Hbf; CandidateLabel: Wuppertal Hauptbahnhof, Distelbeck, Südstadt, Gemarkung Elberfeld, Elberfeld, Wuppertal, North Rhine-Westphalia, 42119, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.1500364,51.2543138,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Würzburg</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Germany; ReferencePoint: Würzburg Hbf; CandidateLabel: Würzburg Hauptbahnhof, 4, Bahnhofplatz, Innenstadt, Würzburg Altstadt, Würzburg, Bavaria, 97070, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.9359849,49.8015215,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>City GPS - Zaandijk</name>
+        <styleUrl>#city</styleUrl>
+        <description>MarkerType: City GPS candidate; Country: Netherlands; ReferencePoint: Zaandijk Zaanse Schans; CandidateLabel: Zaandijk Zaanse Schans, Kogertunnel, Koog aan de Zaan, Zaanstad, North Holland, Netherlands, 1541 LK, Netherlands; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>4.8051566,52.4692791,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder><name>03 Airport GPS candidates (airplane icons)</name>
+      <Placemark>
+        <name>Airport GPS - ASR - Kayseri Erkilet Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Göreme; Country: Turkey; CandidateLabel: Kayseri Erkilet Airport, 338, Mustafa Kemal Paşa Bulvarı, Hilal Mahallesi, Kocasinan, Kayseri, Central Anatolia Region, 38100, Turkey; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>35.4946849,38.7734753,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - BBU - Aurel Vlaicu International Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Bucharest; Country: Romania; CandidateLabel: Aurel Vlaicu International Airport, 40, Șoseaua București-Ploiești, Băneasa, Sector 1, Bucharest, 013695, Romania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>26.0902283,44.5002921,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - BCN - Barcelona-El Prat Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Barcelona; Country: Spain; CandidateLabel: Barcelona El Prat Josep Tarradellas Airport, Carrer d&amp;apos;Antoine de Saint-Exupéry, el Prat de Llobregat, Baix Llobregat, Barcelona, Catalonia, 08820, Spain; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>2.0790474,41.2969440,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - BER - Berlin Brandenburg Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Berlin; Country: Germany; CandidateLabel: Berlin Brandenburg Airport &amp;quot;Willy Brandt&amp;quot;, Melli-Beese-Ring, Schönefeld, Schenkendorf-Krummensee, Dahme-Spreewald, Brandenburg, 12529, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.4888906,52.3657974,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - BGY - Milan Bergamo Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Milan; Country: Italy; CandidateLabel: Bergamo Orio al Serio Airport, 13, Via Aeroporto, Betosca, Orio al Serio, Bergamo, Lombardy, 24050, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.6987542,45.6708936,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - BUD - Budapest Ferenc Liszt International Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Budapest; Country: Hungary; CandidateLabel: Budapest Liszt Ferenc International Airport, Nagy-Hangács köz, Nagyhangács, Rákoshegy, 17th district, Budapest, Central Hungary, 1174, Hungary; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>19.2535106,47.4352730,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - CIA - Rome Ciampino Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Rome; Country: Italy; CandidateLabel: Rome Ciampino Airport, Via dei Laghi, Ciampino, Roma Capitale, Lazio, 00043, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.5912711,41.7995470,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - DUB - Dublin Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Dublin; Country: Ireland; CandidateLabel: Dublin Airport, Swords Road, Airport ED, Dublin, Fingal, County Dublin, Leinster, K67 P957, Ireland; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-6.2472741,53.4282916,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - FCO - Leonardo da Vinci Fiumicino Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Rome; Country: Italy; CandidateLabel: Rome–Fiumicino Airport, Via Leonardo da Vinci, Fiumicino, Roma Capitale, Lazio, 00054, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>12.2264848,41.8153911,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - FMM - Memmingen Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Munich; Country: Germany; CandidateLabel: Memmingen Airport, 35, Am Flughafen, Künersberg, Memmingerberg, Landkreis Unterallgäu, Bavaria, 87766, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.2350723,47.9888241,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - HHN - Frankfurt-Hahn Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Koblenz; Country: Germany; CandidateLabel: Hahn Airport, L 193, Hahn, Kirchberg (Hunsrück), Rhein-Hunsrück-Kreis, Rhineland-Palatinate, 56850, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.2612103,49.9446334,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - KRK - Kraków John Paul II International Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Kraków; Country: Poland; CandidateLabel: John Paul II International Airport Kraków-Balice, 1, Kapitana Mieczysława Medweckiego, Werychów, Balice, gmina Zabierzów, Kraków County, Lesser Poland Voivodeship, 32-083, Poland; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>19.7862538,50.0782553,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - LGW - London Gatwick Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: London; Country: United Kingdom; CandidateLabel: London Gatwick Airport, Charlwood Road, Charlwood, Hookwood, Mole Valley, Surrey, England, RH6 0AQ, United Kingdom; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-0.1823226,51.1540772,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - LTN - London Luton Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: London; Country: United Kingdom; CandidateLabel: London Luton Airport, New Airport Way, Hart Hill, Luton, Borough of Luton, England, LU2 9LY, United Kingdom; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>-0.3664255,51.8781015,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - MUC - Munich Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Munich; Country: Germany; CandidateLabel: Munich International Airport, An der Goldach, Lohmühle, Attaching, Freising, Landkreis Freising, Bavaria, 85356, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.7785925,48.3539625,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - MXP - Milan Malpensa Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Milan; Country: Italy; CandidateLabel: Milan-Malpensa International Airport, Via Cipriano Facchinetti, Malpensa, Case Nuove, Somma Lombardo, Varese, Lombardy, 21019, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>8.7235475,45.6296273,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - NAV - Nevşehir Kapadokya Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Göreme; Country: Turkey; CandidateLabel: Nevşehir Kapadokya Airport, Gülşehir havaalanı yolu, Tuzköyü Mahallesi, Gülşehir, Nevşehir, Central Anatolia Region, 50900, Turkey; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>34.5273468,38.7724585,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - NCE - Nice Côte d&apos;Azur Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Nice; Country: France; CandidateLabel: Nice Côte d&amp;apos;Azur Airport, Rue Costes et Bellonte, Les Moulins, Caucade, Nice, Maritime Alps, Provence-Alpes-Côte d&amp;apos;Azur, Metropolitan France, 06206, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.2137460,43.6598152,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - NUE - Nuremberg Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Nürnberg; Country: Germany; CandidateLabel: Albrecht Dürer Airport Nuremberg, Walleräcker, Flughafen, Nordöstliche Außenstadt, Kraftshof, Nuremberg, Bavaria, 90427, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.0781063,49.4982685,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - OSL - Oslo Airport Gardermoen</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Oslo; Country: Norway; CandidateLabel: Oslo Airport, Gardermoen, Jessheimvegen, Sand, Ullensaker, Akershus, 2067, Norway; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>11.0996754,60.1978654,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - OTP - Henri Coandă International Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Bucharest; Country: Romania; CandidateLabel: Henri Coandă International Airport (OTP), Strada Ioan Slavici, Tunari, Ilfov, 077180, Romania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>26.1025536,44.5683390,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - PMO - Falcone Borsellino Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Palermo; Country: Italy; CandidateLabel: Palermo International Airport, Via Palazzolo, Cinisi, Palermo, Sicily, 90045, Italy; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>13.0916430,38.1765169,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - SAW - Istanbul Sabiha Gökçen International Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Istanbul; Country: Turkey; CandidateLabel: Sabiha Gökçen International Airport, Aydınlı Yolu Caddesi, Orhanlı, Orhanlı Mahallesi, Tuzla, Istanbul, Marmara Region, 34912, Turkey; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>29.3118058,40.8943341,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - STN - London Stansted Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: London; Country: United Kingdom; CandidateLabel: London Stansted Airport, Belmer Road, Tye Green, Elsenham, Uttlesford, Essex, England, CM24 8UL, United Kingdom; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>0.2441929,51.8869652,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - STR - Stuttgart Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Stuttgart; Country: Germany; CandidateLabel: Manfred Rommel Airport Stuttgart, Langwiesen, Plieningen, Stuttgart, Baden-Württemberg, 70599, Germany; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>9.2053925,48.6884220,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - SXB - Strasbourg Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Strasbourg; Country: France; CandidateLabel: Strasbourg-Entzheim Airport, Chemin d&amp;apos;Exploitation, Duppigheim, Molsheim, Bas-Rhin, European Collectivity of Alsace, Grand Est, Metropolitan France, 67120, France; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>7.6254457,48.5388709,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - TRF - Sandefjord Airport Torp</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Oslo; Country: Norway; CandidateLabel: Sandefjord Airport, Torpveien, Torp, Sandefjord, Vestfold, 3239, Norway; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>10.2585603,59.1846890,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport GPS - VNO - Vilnius Airport</name>
+        <styleUrl>#airport</styleUrl>
+        <description>MarkerType: Airport GPS candidate; AssociatedCity: Vilnius; Country: Lithuania; CandidateLabel: Vilnius International Airport, F. Vaitkaus g., Naujininkų seniūnija, Vilnius, Vilnius city municipality, Vilnius County, 02188, Lithuania; ReviewStatus: approved; Source: OpenStreetMap Nominatim</description>
+        <Point><coordinates>25.2905319,54.6349686,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder><name>04 Location aliases (yellow diamonds)</name>
+      <Placemark>
+        <name>Alias - Aachen Hbf. to Aachen</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Aachen Hbf.; CanonicalTarget: Aachen; CanonicalCity: Aachen; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>6.0913818,50.7677663,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Amsterdam Central to Amsterdam</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Amsterdam Central; CanonicalTarget: Amsterdam; CanonicalCity: Amsterdam; Country: Netherlands; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>4.9005805,52.3789010,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Amsterdam Sloterdijk to Amsterdam</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Amsterdam Sloterdijk; CanonicalTarget: Amsterdam; CanonicalCity: Amsterdam; Country: Netherlands; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>4.9005805,52.3789010,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Andorra to Andorra</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Andorra; CanonicalTarget: Andorra; CanonicalCity: Andorra; Country: Andorra; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>1.5199166,42.5037286,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - ASR Flug. to ASR / Kayseri Erkilet Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: ASR Flug.; CanonicalTarget: ASR / Kayseri Erkilet Airport; CanonicalCity: Göreme; Country: Turkey; MappingBasis: airport_code; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker. Owner-confirmed airport-to-domain-City mapping</description>
+        <Point><coordinates>35.4946849,38.7734753,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Bad Camberg Bf. to Bad Camberg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Bad Camberg Bf.; CanonicalTarget: Bad Camberg; CanonicalCity: Bad Camberg; Country: Germany; MappingBasis: reference_point_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.2550751,50.2964521,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Baden-Baden Hbf. to Baden-Baden</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Baden-Baden Hbf.; CanonicalTarget: Baden-Baden; CanonicalCity: Baden-Baden; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.1910627,48.7904421,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Bamberg Hbf. to Bamberg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Bamberg Hbf.; CanonicalTarget: Bamberg; CanonicalCity: Bamberg; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>10.8997336,49.9006357,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Barcelona to Barcelona</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Barcelona; CanonicalTarget: Barcelona; CanonicalCity: Barcelona; Country: Spain; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>2.1400042,41.3790068,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - BBU Flug. to BBU / Aurel Vlaicu International Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: BBU Flug.; CanonicalTarget: BBU / Aurel Vlaicu International Airport; CanonicalCity: Bucharest; Country: Romania; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>26.0902283,44.5002921,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - BCN Flug. to BCN / Barcelona-El Prat Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: BCN Flug.; CanonicalTarget: BCN / Barcelona-El Prat Airport; CanonicalCity: Barcelona; Country: Spain; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>2.0790474,41.2969440,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - BCN Nord to Barcelona</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: BCN Nord; CanonicalTarget: Barcelona; CanonicalCity: Barcelona; Country: Spain; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>2.1400042,41.3790068,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - BER Flug. to BER / Berlin Brandenburg Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: BER Flug.; CanonicalTarget: BER / Berlin Brandenburg Airport; CanonicalCity: Berlin; Country: Germany; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>13.4888906,52.3657974,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Berchtesgaden to Berchtesgaden</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Berchtesgaden; CanonicalTarget: Berchtesgaden; CanonicalCity: Berchtesgaden; Country: Germany; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>12.9997241,47.6267170,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Berlin Hbf. to Berlin</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Berlin Hbf.; CanonicalTarget: Berlin; CanonicalCity: Berlin; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>13.3698610,52.5246361,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - BGY Flug. to BGY / Milan Bergamo Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: BGY Flug.; CanonicalTarget: BGY / Milan Bergamo Airport; CanonicalCity: Milan; Country: Italy; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>9.6987542,45.6708936,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Bochum Hbf. to Bochum</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Bochum Hbf.; CanonicalTarget: Bochum; CanonicalCity: Bochum; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.2232341,51.4785335,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Bremen Hbf. to Bremen</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Bremen Hbf.; CanonicalTarget: Bremen; CanonicalCity: Bremen; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.8135421,53.0831456,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Brugge to Brugge</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Brugge; CanonicalTarget: Brugge; CanonicalCity: Brugge; Country: Belgium; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>3.2175232,51.1974079,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Brussel to Brussels</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Brussel; CanonicalTarget: Brussels; CanonicalCity: Brussels; Country: Belgium; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>4.3360541,50.8357755,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - BUD Flug. to BUD / Budapest Ferenc Liszt International Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: BUD Flug.; CanonicalTarget: BUD / Budapest Ferenc Liszt International Airport; CanonicalCity: Budapest; Country: Hungary; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>19.2535106,47.4352730,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Budapest to Budapest</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Budapest; CanonicalTarget: Budapest; CanonicalCity: Budapest; Country: Hungary; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>19.0839800,47.5004120,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - CIA Flug. to CIA / Rome Ciampino Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: CIA Flug.; CanonicalTarget: CIA / Rome Ciampino Airport; CanonicalCity: Rome; Country: Italy; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>12.5912711,41.7995470,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Colmar Hbf. to Colmar</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Colmar Hbf.; CanonicalTarget: Colmar; CanonicalCity: Colmar; Country: France; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.3469271,48.0724689,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Den Haag to Den Haag</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Den Haag; CanonicalTarget: Den Haag; CanonicalCity: Den Haag; Country: Netherlands; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>4.3255311,52.0807633,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Donaueschingen to Donaueschingen</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Donaueschingen; CanonicalTarget: Donaueschingen; CanonicalCity: Donaueschingen; Country: Germany; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.4987559,47.9479723,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Dortmund Hbf. to Dortmund</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Dortmund Hbf.; CanonicalTarget: Dortmund; CanonicalCity: Dortmund; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.4592831,51.5178935,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Dresden Hbf. to Dresden</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Dresden Hbf.; CanonicalTarget: Dresden; CanonicalCity: Dresden; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>13.7320768,51.0402452,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - DUB Flug. to DUB / Dublin Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: DUB Flug.; CanonicalTarget: DUB / Dublin Airport; CanonicalCity: Dublin; Country: Ireland; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>-6.2472741,53.4282916,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - DUB. Flug. to DUB / Dublin Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: DUB. Flug.; CanonicalTarget: DUB / Dublin Airport; CanonicalCity: Dublin; Country: Ireland; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>-6.2472741,53.4282916,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Duisburg Hbf. to Duisburg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Duisburg Hbf.; CanonicalTarget: Duisburg; CanonicalCity: Duisburg; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>6.7761771,51.4296701,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Düsseldorf to Düsseldorf</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Düsseldorf; CanonicalTarget: Düsseldorf; CanonicalCity: Düsseldorf; Country: Germany; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>6.7943015,51.2197340,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Erfurt Hbf. to Erfurt</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Erfurt Hbf.; CanonicalTarget: Erfurt; CanonicalCity: Erfurt; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.0378865,50.9727731,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Essen Hbf. to Essen</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Essen Hbf.; CanonicalTarget: Essen; CanonicalCity: Essen; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.0144679,51.4514769,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - FCO Flug. to FCO / Leonardo da Vinci Fiumicino Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: FCO Flug.; CanonicalTarget: FCO / Leonardo da Vinci Fiumicino Airport; CanonicalCity: Rome; Country: Italy; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>12.2264848,41.8153911,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - FMM Flug. to FMM / Memmingen Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: FMM Flug.; CanonicalTarget: FMM / Memmingen Airport; CanonicalCity: Munich; Country: Germany; MappingBasis: airport_code; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker. Owner-confirmed airport-to-domain-City mapping</description>
+        <Point><coordinates>10.2350723,47.9888241,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Frankfurt Hbf. to Frankfurt</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Frankfurt Hbf.; CanonicalTarget: Frankfurt; CanonicalCity: Frankfurt; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.6625808,50.1066539,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Freiburg Hbf. to Freiburg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Freiburg Hbf.; CanonicalTarget: Freiburg; CanonicalCity: Freiburg; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.8412948,47.9977308,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Friedrichshafen Stadt Bf. to Friedrichshafen</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Friedrichshafen Stadt Bf.; CanonicalTarget: Friedrichshafen; CanonicalCity: Friedrichshafen; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>9.4737004,47.6532337,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Gengenbach to Gengenbach</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Gengenbach; CanonicalTarget: Gengenbach; CanonicalCity: Gengenbach; Country: Germany; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.0101727,48.4045788,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Gent to Gent</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Gent; CanonicalTarget: Gent; CanonicalCity: Gent; Country: Belgium; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>3.7108051,51.0360946,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Hamburg Hbf. to Hamburg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Hamburg Hbf.; CanonicalTarget: Hamburg; CanonicalCity: Hamburg; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>10.0075644,53.5526959,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Hamburg ZOB to Hamburg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Hamburg ZOB; CanonicalTarget: Hamburg; CanonicalCity: Hamburg; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>10.0075644,53.5526959,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Heidelberg Hbf. to Heidelberg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Heidelberg Hbf.; CanonicalTarget: Heidelberg; CanonicalCity: Heidelberg; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.6754223,49.4034737,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - HHN Flug. to HHN / Frankfurt-Hahn Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: HHN Flug.; CanonicalTarget: HHN / Frankfurt-Hahn Airport; CanonicalCity: Koblenz; Country: Germany; MappingBasis: airport_code; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker. Owner-confirmed mapping to the last City before the airport in its Trip</description>
+        <Point><coordinates>7.2612103,49.9446334,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Hof Hbf. to Hof</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Hof Hbf.; CanonicalTarget: Hof; CanonicalCity: Hof; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.9233140,50.3080628,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Idstein Bf. to Idstein</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Idstein Bf.; CanonicalTarget: Idstein; CanonicalCity: Idstein; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.2575508,50.2159384,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Karlovy Vary to Karlovy Vary</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Karlovy Vary; CanonicalTarget: Karlovy Vary; CanonicalCity: Karlovy Vary; Country: Czechia; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>12.8667221,50.2354590,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Karlsruhe Hbf. to Karlsruhe</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Karlsruhe Hbf.; CanonicalTarget: Karlsruhe; CanonicalCity: Karlsruhe; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.4016492,48.9940078,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Koblenz Hbf. to Koblenz</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Koblenz Hbf.; CanonicalTarget: Koblenz; CanonicalCity: Koblenz; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.5892636,50.3508227,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Köln Hbf to Cologne</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Köln Hbf; CanonicalTarget: Cologne; CanonicalCity: Cologne; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>6.9590705,50.9427839,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Königssee to Königssee</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Königssee; CanonicalTarget: Königssee; CanonicalCity: Königssee; Country: Germany; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker. Owner-approved City-like Location exception</description>
+        <Point><coordinates>12.9875030,47.5921790,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - KRK Flug. to KRK / Kraków John Paul II International Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: KRK Flug.; CanonicalTarget: KRK / Kraków John Paul II International Airport; CanonicalCity: Kraków; Country: Poland; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>19.7862538,50.0782553,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Leipzig Hbf to Leipzig</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Leipzig Hbf; CanonicalTarget: Leipzig; CanonicalCity: Leipzig; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>12.3830858,51.3465518,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - LGW Flug. to LGW / London Gatwick Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: LGW Flug.; CanonicalTarget: LGW / London Gatwick Airport; CanonicalCity: London; Country: United Kingdom; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>-0.1823226,51.1540772,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Lindau-Insel to Lindau</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Lindau-Insel; CanonicalTarget: Lindau; CanonicalCity: Lindau; Country: Germany; MappingBasis: reference_point_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>9.6808298,47.5442020,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - LTN Flug. to LTN / London Luton Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: LTN Flug.; CanonicalTarget: LTN / London Luton Airport; CanonicalCity: London; Country: United Kingdom; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>-0.3664255,51.8781015,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Lübeck Hbf. to Lübeck</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Lübeck Hbf.; CanonicalTarget: Lübeck; CanonicalCity: Lübeck; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>10.6704782,53.8671234,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - M. Hbf. to Munich</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: M. Hbf.; CanonicalTarget: Munich; CanonicalCity: Munich; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.5569426,48.1407253,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - M. ZOB to Munich</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: M. ZOB; CanonicalTarget: Munich; CanonicalCity: Munich; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.5569426,48.1407253,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - M. ZOB. to Munich</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: M. ZOB.; CanonicalTarget: Munich; CanonicalCity: Munich; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.5569426,48.1407253,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Mainz Hbf to Mainz</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Mainz Hbf; CanonicalTarget: Mainz; CanonicalCity: Mainz; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.2586022,50.0013856,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Mannheim Hbf. to Mannheim</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Mannheim Hbf.; CanonicalTarget: Mannheim; CanonicalCity: Mannheim; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.4698178,49.4796632,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Marseille to Marseille</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Marseille; CanonicalTarget: Marseille; CanonicalCity: Marseille; Country: France; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>5.3811927,43.3032635,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Marseille – Gare Saint-Charles to Marseille</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Marseille – Gare Saint-Charles; CanonicalTarget: Marseille; CanonicalCity: Marseille; Country: France; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>5.3811927,43.3032635,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Menton to Menton</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Menton; CanonicalTarget: Menton; CanonicalCity: Menton; Country: France; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.4931157,43.7747030,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Monaco to Monaco</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Monaco; CanonicalTarget: Monaco; CanonicalCity: Monaco; Country: Monaco; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.4194983,43.7382624,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - MUC Flug. to MUC / Munich Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: MUC Flug.; CanonicalTarget: MUC / Munich Airport; CanonicalCity: Munich; Country: Germany; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.7785925,48.3539625,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - MXP Flug. to MXP / Milan Malpensa Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: MXP Flug.; CanonicalTarget: MXP / Milan Malpensa Airport; CanonicalCity: Milan; Country: Italy; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.7235475,45.6296273,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Naples to Naples</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Naples; CanonicalTarget: Naples; CanonicalCity: Naples; Country: Italy; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>14.2731399,40.8530238,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - NAV Flug. to NAV / Nevşehir Kapadokya Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: NAV Flug.; CanonicalTarget: NAV / Nevşehir Kapadokya Airport; CanonicalCity: Göreme; Country: Turkey; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>34.5273468,38.7724585,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - NCE Flug. to NCE / Nice Côte d&apos;Azur Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: NCE Flug.; CanonicalTarget: NCE / Nice Côte d&amp;apos;Azur Airport; CanonicalCity: Nice; Country: France; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.2137460,43.6598152,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Nice to Nice</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Nice; CanonicalTarget: Nice; CanonicalCity: Nice; Country: France; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.2617286,43.7048972,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Nice Flug. to NCE / Nice Côte d&apos;Azur Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Nice Flug.; CanonicalTarget: NCE / Nice Côte d&amp;apos;Azur Airport; CanonicalCity: Nice; Country: France; MappingBasis: confirmed_airport_alias; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.2137460,43.6598152,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - NUE Flug. to NUE / Nuremberg Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: NUE Flug.; CanonicalTarget: NUE / Nuremberg Airport; CanonicalCity: Nürnberg; Country: Germany; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.0781063,49.4982685,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Nürnberg Hbf. to Nürnberg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Nürnberg Hbf.; CanonicalTarget: Nürnberg; CanonicalCity: Nürnberg; Country: Germany; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.0823089,49.4451991,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - OSL Flug. to OSL / Oslo Airport Gardermoen</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: OSL Flug.; CanonicalTarget: OSL / Oslo Airport Gardermoen; CanonicalCity: Oslo; Country: Norway; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>11.0996754,60.1978654,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - OTP Flug. to OTP / Henri Coandă International Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: OTP Flug.; CanonicalTarget: OTP / Henri Coandă International Airport; CanonicalCity: Bucharest; Country: Romania; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>26.1025536,44.5683390,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Palermo to Palermo</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Palermo; CanonicalTarget: Palermo; CanonicalCity: Palermo; Country: Italy; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>13.3674799,38.1092571,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Paris to Paris</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Paris; CanonicalTarget: Paris; CanonicalCity: Paris; Country: France; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>2.3549733,48.8804003,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - PMO Flug. to PMO / Falcone Borsellino Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: PMO Flug.; CanonicalTarget: PMO / Falcone Borsellino Airport; CanonicalCity: Palermo; Country: Italy; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>13.0916430,38.1765169,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Prague to Prague</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Prague; CanonicalTarget: Prague; CanonicalCity: Prague; Country: Czechia; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>14.4360939,50.0829628,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Praha h.n. to Prague</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Praha h.n.; CanonicalTarget: Prague; CanonicalCity: Prague; Country: Czechia; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>14.4360939,50.0829628,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Rotterdam to Rotterdam</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Rotterdam; CanonicalTarget: Rotterdam; CanonicalCity: Rotterdam; Country: Netherlands; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>4.4687190,51.9253937,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Salzburg Hbf. to Salzburg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Salzburg Hbf.; CanonicalTarget: Salzburg; CanonicalCity: Salzburg; Country: Austria; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>13.0458530,47.8130618,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - SAW Flug. to SAW / Istanbul Sabiha Gökçen International Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: SAW Flug.; CanonicalTarget: SAW / Istanbul Sabiha Gökçen International Airport; CanonicalCity: Istanbul; Country: Turkey; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>29.3118058,40.8943341,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Speyer Hbf. to Speyer</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Speyer Hbf.; CanonicalTarget: Speyer; CanonicalCity: Speyer; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.4283506,49.3241568,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - STN Flug. to STN / London Stansted Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: STN Flug.; CanonicalTarget: STN / London Stansted Airport; CanonicalCity: London; Country: United Kingdom; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>0.2441929,51.8869652,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - STR Flug. to STR / Stuttgart Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: STR Flug.; CanonicalTarget: STR / Stuttgart Airport; CanonicalCity: Stuttgart; Country: Germany; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>9.2053925,48.6884220,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Strasbourg Hbf. to Strasbourg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Strasbourg Hbf.; CanonicalTarget: Strasbourg; CanonicalCity: Strasbourg; Country: France; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.7339249,48.5852933,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - SXB Flug. to SXB / Strasbourg Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: SXB Flug.; CanonicalTarget: SXB / Strasbourg Airport; CanonicalCity: Strasbourg; Country: France; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.6254457,48.5388709,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - TRF Flug. to TRF / Sandefjord Airport Torp</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: TRF Flug.; CanonicalTarget: TRF / Sandefjord Airport Torp; CanonicalCity: Oslo; Country: Norway; MappingBasis: airport_code; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker. Owner-confirmed airport-to-domain-City mapping</description>
+        <Point><coordinates>10.2585603,59.1846890,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Triberg to Triberg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Triberg; CanonicalTarget: Triberg; CanonicalCity: Triberg; Country: Germany; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.2368619,48.1403719,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Ulm Hbf. to Ulm</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Ulm Hbf.; CanonicalTarget: Ulm; CanonicalCity: Ulm; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>9.9826024,48.3994159,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Utrecht to Utrecht</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Utrecht; CanonicalTarget: Utrecht; CanonicalCity: Utrecht; Country: Netherlands; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>5.1096021,52.0893825,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Utrecht Central to Utrecht</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Utrecht Central; CanonicalTarget: Utrecht; CanonicalCity: Utrecht; Country: Netherlands; MappingBasis: explicit_alias_rule; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>5.1096021,52.0893825,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - VNO Flug. to VNO / Vilnius Airport</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: VNO Flug.; CanonicalTarget: VNO / Vilnius Airport; CanonicalCity: Vilnius; Country: Lithuania; MappingBasis: airport_code; Confidence: medium; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>25.2905319,54.6349686,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Wiesbaden Hbf. to Wiesbaden</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Wiesbaden Hbf.; CanonicalTarget: Wiesbaden; CanonicalCity: Wiesbaden; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>8.2439848,50.0698313,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Wuppertal Hbf. to Wuppertal</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Wuppertal Hbf.; CanonicalTarget: Wuppertal; CanonicalCity: Wuppertal; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>7.1500364,51.2543138,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Würzburg Hbf. to Würzburg</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Würzburg Hbf.; CanonicalTarget: Würzburg; CanonicalCity: Würzburg; Country: Germany; MappingBasis: station_suffix_removed; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>9.9359849,49.8015215,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alias - Zaandijk to Zaandijk</name>
+        <styleUrl>#alias</styleUrl>
+        <description>MarkerType: Location alias mapping; RawLocation: Zaandijk; CanonicalTarget: Zaandijk; CanonicalCity: Zaandijk; Country: Netherlands; MappingBasis: canonical_name_match; Confidence: high; ReviewStatus: approved; Notes: Displayed at the canonical target coordinate; this is a relationship review marker.</description>
+        <Point><coordinates>4.8051566,52.4692791,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+</Document></kml>
+

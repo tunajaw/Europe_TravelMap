@@ -67,6 +67,8 @@ Confirmed airport-to-domain-City mappings include:
 * `FMM` → Munich
 * `TRF` → Oslo
 * `BGY` Airport overnight → Milan
+* `HHN` → Koblenz, based on the last City before the airport in its Trip
+* `ASR` → Göreme; the airport candidate is the confirmed Kayseri Airport
 
 ## Transit Point Parsing
 
@@ -84,6 +86,8 @@ Confirmed airport-to-domain-City mappings include:
 ## Accommodation Source Conventions
 
 * Blank Trip cells are filled down.
+* Accommodation City values are trimmed; source `Krakow` maps to canonical
+  `Kraków`, and trailing whitespace such as `Milan ` is removed.
 * Prices and commute durations are converted from unit-bearing text to typed
   numeric values.
 * Accommodation types are Airbnb, Hostel, Hotel, and Airport. Hostel remains an
@@ -113,9 +117,9 @@ fixtures, or application metadata.
 
 ## Country Image Preparation
 
-The 19 MVP Countries each have exactly three landscape source photos under
-`data/raw/img/<country>/`. These high-resolution JPEG sources are local inputs
-and are excluded from Git.
+The MVP contains 20 Countries, each with exactly three landscape source photos
+under `data/raw/img/<country>/`. These 60 high-resolution JPEG sources are local
+inputs and are excluded from Git.
 
 Before web-image generation, source photos are converted from Samsung Motion
 Photos to single-frame JPEGs and stripped of EXIF, GPS, device, and Motion Photo
@@ -130,6 +134,40 @@ Application-ready images are written to
 * encode as WebP at quality 82 with metadata excluded;
 * use lowercase kebab-case Country directories and descriptive file names;
 * retain exactly three images for every MVP Country.
+
+`data/parsed/photo_manifest.csv` inventories the current application assets.
+`display_order` follows capture chronology within each Country, reconstructed
+from private source timestamps without exposing those timestamps publicly. The
+current alternative text is tentatively owner-approved and remains unchanged.
+`candidate_city` is advisory relationship-review data rather than an MVP display
+requirement. Andorra photos intentionally have no City relationship.
+
+## Reviewable Reference Data
+
+Preprocessing must consume reviewed reference data rather than embedding
+one-off location guesses in application code:
+
+* `city_main_station.csv` defines the selected reference point for every
+  canonical City. Bad Camberg uses the owner-confirmed `Bad Camberg Bf.`.
+  Königssee is an explicit exception and uses
+  `Tourist-Information am Parkplatz Königssee` instead of a railway station.
+* `location_alias.csv` provides an explicit mapping for every distinct Segment
+  origin, destination, and Transit Point label currently present in raw data.
+* `city_reference_geocoding.csv`, `airport_reference.csv`, and
+  `country_reference.csv` preserve the external geocoding candidates and their
+  approval state. Only rows whose review status is `approved` may be used as
+  authoritative preprocessing input.
+
+The one-time candidate lookup is designed for OpenStreetMap Nominatim. It must
+be single-threaded, remain at or below one request per second, identify the
+application with a custom User-Agent, and cache responses. The public API is a
+data-preparation dependency only and must not be called by the website at
+runtime.
+
+The current lookup produced candidates for all 76 City reference points, all
+28 Airports, and 20 confirmed MVP Country records. The owner has visually
+reviewed and approved all of these coordinates. Country markers use each
+Country's capital-City coordinate, following the owner-approved MVP rule.
 
 ## Resolved Data Review Items
 

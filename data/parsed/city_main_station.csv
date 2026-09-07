@@ -2,6 +2,7 @@ canonical_city,country,proposed_reference_point,reference_point_type,review_stat
 Aachen,Germany,Aachen Hbf,railway_station,approved,
 Amsterdam,Netherlands,Amsterdam Centraal,railway_station,approved,
 Andorra,Andorra,Andorra la Vella Bus Station,bus_station,approved,Raw label does not identify a municipality and Andorra has no railway
+Bad Camberg,Germany,Bad Camberg Bf.,railway_station,approved,Owner-confirmed center-point station
 Baden-Baden,Germany,Baden-Baden,railway_station,approved,Raw Transit label uses Baden-Baden Hbf
 Bamberg,Germany,Bamberg,railway_station,approved,
 Barcelona,Spain,Barcelona Sants,railway_station,approved,
@@ -35,10 +36,10 @@ Heidelberg,Germany,Heidelberg Hbf,railway_station,approved,
 Hof,Germany,Hof Hbf,railway_station,approved,
 Idstein,Germany,Idstein (Taunus),railway_station,approved,
 Istanbul,Turkey,Sirkeci Garı,railway_station,approved,Owner-selected center-point station
-Karlovy Vary,Czechia,Karlovy Vary,railway_station,approved,Confirm main station rather than Karlovy Vary dolní nádraží
+Karlovy Vary,Czechia,Karlovy Vary,railway_station,approved,
 Karlsruhe,Germany,Karlsruhe Hbf,railway_station,approved,Corrected canonical form for Accommodation raw Karlshure
 Koblenz,Germany,Koblenz Hbf,railway_station,approved,
-Königssee,Germany,Berchtesgaden Hbf,fallback_station,approved,Königssee is not a City and has no railway station; confirm City or POI treatment
+Königssee,Germany,Tourist-Information am Parkplatz Königssee,tourist_information,approved,Owner-approved exception to the main-station reference-point rule
 Kraków,Poland,Kraków Główny,railway_station,approved,Canonical form for raw Krakow
 Leipzig,Germany,Leipzig Hbf,railway_station,approved,
 Lindau,Germany,Lindau-Insel,railway_station,approved,
@@ -68,6 +69,7 @@ Stuttgart,Germany,Stuttgart Hbf,railway_station,approved,Corrected canonical for
 Triberg,Germany,Triberg,railway_station,approved,
 Ulm,Germany,Ulm Hbf,railway_station,approved,
 Utrecht,Netherlands,Utrecht Centraal,railway_station,approved,
+Vatican City,Vatican City,Vatican City,country_city_point,approved,Microstate Country and canonical City; no Segment required
 Vilnius,Lithuania,Vilnius railway station,railway_station,approved,
 Wiesbaden,Germany,Wiesbaden Hbf,railway_station,approved,Corrected candidate for raw Transit value Weisbaden Hbf
 Wuppertal,Germany,Wuppertal Hbf,railway_station,approved,

@@ -11,6 +11,12 @@ Examples:
 * France
 * Germany
 * Italy
+* Vatican City
+
+A visited Country may exist without a Segment. Country inclusion is based on
+reviewed visit evidence, not on whether the transportation graph reaches it.
+Vatican City is an MVP example: it has a Country marker and Photos but no
+Rome-to-Vatican Segment.
 
 ---
 
@@ -35,6 +41,10 @@ data is used by the application. For example, `M. Hbf.` and `M. ZOB.` both use
 A City has a reference point used for distance calculations. This is normally
 the main railway station, but a reviewed fallback reference point is required
 for cities that have no single main station or no railway station.
+
+Königssee is an owner-approved City-like Location exception for MVP. It uses
+`Tourist-Information am Parkplatz Königssee` as its reference point even though
+it is not modeled as a conventional municipality.
 
 ---
 
@@ -158,7 +168,8 @@ A place visited within a City.
 Examples:
 
 * Eiffel Tower
-* Vatican City
+* Vatican Museums
+* St. Peter's Basilica
 * museums
 * attractions
 
@@ -172,6 +183,7 @@ A travel photo or photo group.
 
 Photos may be associated with:
 
+* Country
 * City
 * POI
 
@@ -198,7 +210,7 @@ Expense is currently primarily used as supporting data for analysis rather than 
 ### Country
 
 * Country contains City
-* Country contains Segment
+* Country may contain Segment
 * Country contains Photo
 
 ### City
@@ -294,6 +306,11 @@ A Segment represents a major movement that is meaningful for travel visualizatio
 All movements already recorded as Segments are in MVP scope, including
 short-distance and zero-cost Segments. Airport Transfer cost is not used to
 decide whether a movement is a Segment.
+
+Zero cost alone does not disqualify a movement from being a Segment. However,
+an unrecorded local movement is not promoted to a Segment merely to connect a
+visited Country to the route graph. The local Rome-to-Vatican movement is not a
+Segment in the current dataset.
 
 When a Segment starts and ends in the same City, its ordered Transit Points
 define the non-zero route between the shared endpoints.
@@ -422,6 +439,10 @@ outside the administrative boundary of the associated City.
 
 For transportation country-level analysis, a Segment belongs to its origin
 Country. Cross-border Segments are not duplicated into the destination Country.
+
+A visited Country with no Segment has no transportation metric. The UI must
+present that state as unavailable or no data rather than as a zero-cost
+Segment.
 
 ---
 

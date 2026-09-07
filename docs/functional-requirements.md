@@ -2,6 +2,8 @@ FR-MAP-01(Europe map)：進入 Travel Map 時顯示 Europe map，我去過的國
 
 FR-MAP-02 (Country selection): 當我的滑鼠移到點上時，該國家的國界線變粗加黑，文字變黑色，點稍微放大一點點且變黑以顯示不同之處。移開則恢復原狀。左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、國家旅遊圖片集錦與"Enter"。則 zoom-in 該國家地圖，開啟 Country Map，按到 小 box 以外的地方則回到 Europe Map，縮回 小 box，取消國家"鎖定"狀態。如果點擊 marker (即使不是現在的鎖定國家)本身，切換到該 marker 代表國家的鎖定"狀態，該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、國家旅遊圖片集錦與"Enter"。
 
+造訪國家不必具有 Segment。Vatican City 在 MVP 顯示為袖珍國家 marker，浮動 box 可顯示國家名稱及圖片；因為沒有 Segment，marker interaction 不 highlight 路線，Transportation 統計顯示無資料而不是 0。
+
 FR-MAP-03 (City selection): 在國家地圖正中間標示該國家的名稱，淺灰色半透明。我去過的城市都有一個點，點上方以深灰色標示該城市名稱。當我的滑鼠移到點上時，文字變黑色，點稍微放大一點點以顯示不同之處。
 
 FR-MAP-03+ (City selection) [MVP+]: 左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示城市名稱、城市旅遊圖片集錦與"Enter"。則 zoom-in 該城市地圖，開啟 City Map，按到 小 box 以外的地方則回到 Country Map，縮回 小 box，取消城市"鎖定"狀態。如果點擊 marker (即使不是現在的鎖定城市)本身，切換到該 marker 代表城市的鎖定"狀態，該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示城市名稱、城市旅遊圖片集錦與"Enter"。
@@ -139,7 +141,7 @@ FR-EXP-11 (Accommodation Filter)
 barplot 與 heatmap 的視覺化資料由住宿類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-12 (Accommodation Barplot Render):
-橫向 barplot，列出所有篩選過後的 Accommodation，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值。一個 Accommodation = 一個 bar。Airbnb、Hostel、Hotel 為三個獨立類型；如果勾選"考慮機場過夜"，Airport 使用黃色，但因為價錢為 0，不會出現在價格 bar。Hostel 的確切顏色另行決定。
+橫向 barplot，列出所有篩選過後的 Accommodation，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值。一個 Accommodation = 一個 bar。Airbnb、Hostel、Hotel 為三個獨立類型，顏色依序為淡紅色、淺綠色、藍色；如果勾選"考慮機場過夜"，Airport 使用黃色，但因為價錢為 0，不會出現在價格 bar。
 
 FR-EXP-13 (Accommodation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
