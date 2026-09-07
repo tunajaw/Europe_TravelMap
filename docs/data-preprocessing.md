@@ -62,6 +62,15 @@ Raw transfer cost `0` represents no transfer, a free transfer, or a transfer
 whose price is included elsewhere. The MVP intentionally does not distinguish
 these cases.
 
+The current source also contains four non-airport endpoint transfers: the two
+ends of the Marseille → Barcelona ferry, the Barcelona departure for the
+Barcelona → Naples ferry, and the Utrecht arrival from Munich. Preprocessing
+preserves these records with `endpointKind: local` and a `null` distance so the
+source information is not discarded or falsely treated as an Airport Transfer.
+They are not included by the MVP Airport Transfer checkbox. Whether a future
+generic endpoint-transfer filter should include their cost requires a separate
+domain decision before that expense behavior is implemented.
+
 Confirmed airport-to-domain-City mappings include:
 
 * `FMM` → Munich
@@ -114,6 +123,22 @@ the reviewed City and, when explicitly approved, a coarse public location label.
 The preprocessing pipeline must treat the private source as a local input and
 must never copy exact addresses into tracked files, build artifacts, logs, test
 fixtures, or application metadata.
+
+The application-ready Accommodation record deliberately uses a generic label
+such as `Hostel in Salzburg`; the private source name is excluded together with
+the exact address.
+
+## Application-ready Dataset
+
+Run `npm run data:build` locally to combine the tracked Segment and reviewed
+reference CSVs with the ignored private Accommodation CSV. The command writes
+`public/data/travel-data.json`, validates its runtime schema and relationships,
+checks every photo asset, and rejects private Accommodation fields in the
+serialized output.
+
+CI runs `npm run data:validate` against the committed output without access to
+the private source. The browser consumes only this JSON and never parses source
+CSVs or calls a geocoder.
 
 ## Country Image Preparation
 

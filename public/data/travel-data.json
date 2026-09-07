@@ -1,0 +1,5413 @@
+{
+  "schemaVersion": "1.0.0",
+  "travelPeriod": {
+    "start": "2025-09-30",
+    "end": "2026-04-30"
+  },
+  "countries": [
+    {
+      "id": "andorra",
+      "name": "Andorra",
+      "slug": "andorra",
+      "capitalCity": "Andorra la Vella",
+      "isMicrostate": true,
+      "marker": {
+        "latitude": 42.4979185,
+        "longitude": 1.5032264
+      },
+      "photoIds": [
+        "country-andorra-02",
+        "country-andorra-03",
+        "country-andorra-01"
+      ]
+    },
+    {
+      "id": "austria",
+      "name": "Austria",
+      "slug": "austria",
+      "capitalCity": "Vienna",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 48.2083537,
+        "longitude": 16.3725042
+      },
+      "photoIds": [
+        "country-austria-01",
+        "country-austria-02",
+        "country-austria-03"
+      ]
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "slug": "belgium",
+      "capitalCity": "Brussels",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 50.8467372,
+        "longitude": 4.352493
+      },
+      "photoIds": [
+        "country-belgium-01",
+        "country-belgium-02",
+        "country-belgium-03"
+      ]
+    },
+    {
+      "id": "czechia",
+      "name": "Czechia",
+      "slug": "czechia",
+      "capitalCity": "Prague",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 50.0874654,
+        "longitude": 14.4212535
+      },
+      "photoIds": [
+        "country-czechia-02",
+        "country-czechia-01",
+        "country-czechia-03"
+      ]
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "slug": "france",
+      "capitalCity": "Paris",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 48.8588897,
+        "longitude": 2.320041
+      },
+      "photoIds": [
+        "country-france-02",
+        "country-france-03",
+        "country-france-01"
+      ]
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "slug": "germany",
+      "capitalCity": "Berlin",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 52.5173885,
+        "longitude": 13.3951309
+      },
+      "photoIds": [
+        "country-germany-02",
+        "country-germany-01",
+        "country-germany-03"
+      ]
+    },
+    {
+      "id": "hungary",
+      "name": "Hungary",
+      "slug": "hungary",
+      "capitalCity": "Budapest",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 47.481849,
+        "longitude": 19.1449053
+      },
+      "photoIds": [
+        "country-hungary-02",
+        "country-hungary-01",
+        "country-hungary-03"
+      ]
+    },
+    {
+      "id": "ireland",
+      "name": "Ireland",
+      "slug": "ireland",
+      "capitalCity": "Dublin",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 53.3493795,
+        "longitude": -6.2605593
+      },
+      "photoIds": [
+        "country-ireland-01",
+        "country-ireland-03",
+        "country-ireland-02"
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "slug": "italy",
+      "capitalCity": "Rome",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 41.8933203,
+        "longitude": 12.4829321
+      },
+      "photoIds": [
+        "country-italy-01",
+        "country-italy-02",
+        "country-italy-03"
+      ]
+    },
+    {
+      "id": "lithuania",
+      "name": "Lithuania",
+      "slug": "lithuania",
+      "capitalCity": "Vilnius",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 54.6870458,
+        "longitude": 25.2829111
+      },
+      "photoIds": [
+        "country-lithuania-01",
+        "country-lithuania-02",
+        "country-lithuania-03"
+      ]
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "slug": "monaco",
+      "capitalCity": "Monaco",
+      "isMicrostate": true,
+      "marker": {
+        "latitude": 43.7309697,
+        "longitude": 7.4248152
+      },
+      "photoIds": [
+        "country-monaco-01",
+        "country-monaco-03",
+        "country-monaco-02"
+      ]
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "capitalCity": "Amsterdam",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 52.3730796,
+        "longitude": 4.8924534
+      },
+      "photoIds": [
+        "country-netherlands-01",
+        "country-netherlands-02",
+        "country-netherlands-03"
+      ]
+    },
+    {
+      "id": "north-macedonia",
+      "name": "North Macedonia",
+      "slug": "north-macedonia",
+      "capitalCity": "Skopje",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 41.9962164,
+        "longitude": 21.4318935
+      },
+      "photoIds": [
+        "country-north-macedonia-01",
+        "country-north-macedonia-02",
+        "country-north-macedonia-03"
+      ]
+    },
+    {
+      "id": "norway",
+      "name": "Norway",
+      "slug": "norway",
+      "capitalCity": "Oslo",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 59.9133301,
+        "longitude": 10.7389701
+      },
+      "photoIds": [
+        "country-norway-02",
+        "country-norway-01",
+        "country-norway-03"
+      ]
+    },
+    {
+      "id": "poland",
+      "name": "Poland",
+      "slug": "poland",
+      "capitalCity": "Warsaw",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 52.2333742,
+        "longitude": 21.0711489
+      },
+      "photoIds": [
+        "country-poland-01",
+        "country-poland-03",
+        "country-poland-02"
+      ]
+    },
+    {
+      "id": "romania",
+      "name": "Romania",
+      "slug": "romania",
+      "capitalCity": "Bucharest",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 44.4361414,
+        "longitude": 26.102684
+      },
+      "photoIds": [
+        "country-romania-03",
+        "country-romania-02",
+        "country-romania-01"
+      ]
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "slug": "spain",
+      "capitalCity": "Madrid",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 40.416782,
+        "longitude": -3.703507
+      },
+      "photoIds": [
+        "country-spain-01",
+        "country-spain-02",
+        "country-spain-03"
+      ]
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "slug": "turkey",
+      "capitalCity": "Ankara",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 39.9207759,
+        "longitude": 32.8540497
+      },
+      "photoIds": [
+        "country-turkey-01",
+        "country-turkey-03",
+        "country-turkey-02"
+      ]
+    },
+    {
+      "id": "united-kingdom",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "capitalCity": "London",
+      "isMicrostate": false,
+      "marker": {
+        "latitude": 51.5074456,
+        "longitude": -0.1277653
+      },
+      "photoIds": [
+        "country-united-kingdom-01",
+        "country-united-kingdom-03",
+        "country-united-kingdom-02"
+      ]
+    },
+    {
+      "id": "vatican-city",
+      "name": "Vatican City",
+      "slug": "vatican-city",
+      "capitalCity": "Vatican City",
+      "isMicrostate": true,
+      "marker": {
+        "latitude": 41.9034912,
+        "longitude": 12.4528349
+      },
+      "photoIds": [
+        "country-vatican-city-01",
+        "country-vatican-city-02",
+        "country-vatican-city-03"
+      ]
+    }
+  ],
+  "cities": [
+    {
+      "id": "city-aachen",
+      "name": "Aachen",
+      "countryId": "germany",
+      "referencePointName": "Aachen Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.7677663,
+        "longitude": 6.0913818
+      }
+    },
+    {
+      "id": "city-amsterdam",
+      "name": "Amsterdam",
+      "countryId": "netherlands",
+      "referencePointName": "Amsterdam Centraal",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 52.378901,
+        "longitude": 4.9005805
+      }
+    },
+    {
+      "id": "city-andorra",
+      "name": "Andorra",
+      "countryId": "andorra",
+      "referencePointName": "Andorra la Vella Bus Station",
+      "referencePointType": "bus_station",
+      "location": {
+        "latitude": 42.5037286,
+        "longitude": 1.5199166
+      }
+    },
+    {
+      "id": "city-bad-camberg",
+      "name": "Bad Camberg",
+      "countryId": "germany",
+      "referencePointName": "Bad Camberg Bf.",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.2964521,
+        "longitude": 8.2550751
+      }
+    },
+    {
+      "id": "city-baden-baden",
+      "name": "Baden-Baden",
+      "countryId": "germany",
+      "referencePointName": "Baden-Baden",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.7904421,
+        "longitude": 8.1910627
+      }
+    },
+    {
+      "id": "city-bamberg",
+      "name": "Bamberg",
+      "countryId": "germany",
+      "referencePointName": "Bamberg",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 49.9006357,
+        "longitude": 10.8997336
+      }
+    },
+    {
+      "id": "city-barcelona",
+      "name": "Barcelona",
+      "countryId": "spain",
+      "referencePointName": "Barcelona Sants",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 41.3790068,
+        "longitude": 2.1400042
+      }
+    },
+    {
+      "id": "city-berlin",
+      "name": "Berlin",
+      "countryId": "germany",
+      "referencePointName": "Berlin Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 52.5246361,
+        "longitude": 13.369861
+      }
+    },
+    {
+      "id": "city-berchtesgaden",
+      "name": "Berchtesgaden",
+      "countryId": "germany",
+      "referencePointName": "Berchtesgaden Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.626717,
+        "longitude": 12.9997241
+      }
+    },
+    {
+      "id": "city-bochum",
+      "name": "Bochum",
+      "countryId": "germany",
+      "referencePointName": "Bochum Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.4785335,
+        "longitude": 7.2232341
+      }
+    },
+    {
+      "id": "city-bremen",
+      "name": "Bremen",
+      "countryId": "germany",
+      "referencePointName": "Bremen Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 53.0831456,
+        "longitude": 8.8135421
+      }
+    },
+    {
+      "id": "city-brugge",
+      "name": "Brugge",
+      "countryId": "belgium",
+      "referencePointName": "Brugge",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.1974079,
+        "longitude": 3.2175232
+      }
+    },
+    {
+      "id": "city-brussels",
+      "name": "Brussels",
+      "countryId": "belgium",
+      "referencePointName": "Bruxelles-Midi / Brussel-Zuid",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.8357755,
+        "longitude": 4.3360541
+      }
+    },
+    {
+      "id": "city-bucharest",
+      "name": "Bucharest",
+      "countryId": "romania",
+      "referencePointName": "București Nord",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 44.4467388,
+        "longitude": 26.0738428
+      }
+    },
+    {
+      "id": "city-budapest",
+      "name": "Budapest",
+      "countryId": "hungary",
+      "referencePointName": "Budapest-Keleti",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.500412,
+        "longitude": 19.08398
+      }
+    },
+    {
+      "id": "city-colmar",
+      "name": "Colmar",
+      "countryId": "france",
+      "referencePointName": "Gare de Colmar",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.0724689,
+        "longitude": 7.3469271
+      }
+    },
+    {
+      "id": "city-cologne",
+      "name": "Cologne",
+      "countryId": "germany",
+      "referencePointName": "Köln Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.9427839,
+        "longitude": 6.9590705
+      }
+    },
+    {
+      "id": "city-den-haag",
+      "name": "Den Haag",
+      "countryId": "netherlands",
+      "referencePointName": "Den Haag Centraal",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 52.0807633,
+        "longitude": 4.3255311
+      }
+    },
+    {
+      "id": "city-donaueschingen",
+      "name": "Donaueschingen",
+      "countryId": "germany",
+      "referencePointName": "Donaueschingen",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.9479723,
+        "longitude": 8.4987559
+      }
+    },
+    {
+      "id": "city-dortmund",
+      "name": "Dortmund",
+      "countryId": "germany",
+      "referencePointName": "Dortmund Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.5178935,
+        "longitude": 7.4592831
+      }
+    },
+    {
+      "id": "city-dresden",
+      "name": "Dresden",
+      "countryId": "germany",
+      "referencePointName": "Dresden Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.0402452,
+        "longitude": 13.7320768
+      }
+    },
+    {
+      "id": "city-dublin",
+      "name": "Dublin",
+      "countryId": "ireland",
+      "referencePointName": "Dublin Connolly",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 53.3527247,
+        "longitude": -6.2471357
+      }
+    },
+    {
+      "id": "city-duisburg",
+      "name": "Duisburg",
+      "countryId": "germany",
+      "referencePointName": "Duisburg Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.4296701,
+        "longitude": 6.7761771
+      }
+    },
+    {
+      "id": "city-dusseldorf",
+      "name": "Düsseldorf",
+      "countryId": "germany",
+      "referencePointName": "Düsseldorf Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.219734,
+        "longitude": 6.7943015
+      }
+    },
+    {
+      "id": "city-erfurt",
+      "name": "Erfurt",
+      "countryId": "germany",
+      "referencePointName": "Erfurt Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.9727731,
+        "longitude": 11.0378865
+      }
+    },
+    {
+      "id": "city-essen",
+      "name": "Essen",
+      "countryId": "germany",
+      "referencePointName": "Essen Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.4514769,
+        "longitude": 7.0144679
+      }
+    },
+    {
+      "id": "city-frankfurt",
+      "name": "Frankfurt",
+      "countryId": "germany",
+      "referencePointName": "Frankfurt (Main) Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.1066539,
+        "longitude": 8.6625808
+      }
+    },
+    {
+      "id": "city-freiburg",
+      "name": "Freiburg",
+      "countryId": "germany",
+      "referencePointName": "Freiburg (Breisgau) Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.9977308,
+        "longitude": 7.8412948
+      }
+    },
+    {
+      "id": "city-friedrichshafen",
+      "name": "Friedrichshafen",
+      "countryId": "germany",
+      "referencePointName": "Friedrichshafen Stadt",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.6532337,
+        "longitude": 9.4737004
+      }
+    },
+    {
+      "id": "city-gengenbach",
+      "name": "Gengenbach",
+      "countryId": "germany",
+      "referencePointName": "Gengenbach",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.4045788,
+        "longitude": 8.0101727
+      }
+    },
+    {
+      "id": "city-gent",
+      "name": "Gent",
+      "countryId": "belgium",
+      "referencePointName": "Gent-Sint-Pieters",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.0360946,
+        "longitude": 3.7108051
+      }
+    },
+    {
+      "id": "city-goreme",
+      "name": "Göreme",
+      "countryId": "turkey",
+      "referencePointName": "Göreme Otobüs Terminali",
+      "referencePointType": "bus_station",
+      "location": {
+        "latitude": 38.6435271,
+        "longitude": 34.829613
+      }
+    },
+    {
+      "id": "city-hamburg",
+      "name": "Hamburg",
+      "countryId": "germany",
+      "referencePointName": "Hamburg Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 53.5526959,
+        "longitude": 10.0075644
+      }
+    },
+    {
+      "id": "city-heidelberg",
+      "name": "Heidelberg",
+      "countryId": "germany",
+      "referencePointName": "Heidelberg Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 49.4034737,
+        "longitude": 8.6754223
+      }
+    },
+    {
+      "id": "city-hof",
+      "name": "Hof",
+      "countryId": "germany",
+      "referencePointName": "Hof Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.3080628,
+        "longitude": 11.923314
+      }
+    },
+    {
+      "id": "city-idstein",
+      "name": "Idstein",
+      "countryId": "germany",
+      "referencePointName": "Idstein (Taunus)",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.2159384,
+        "longitude": 8.2575508
+      }
+    },
+    {
+      "id": "city-istanbul",
+      "name": "Istanbul",
+      "countryId": "turkey",
+      "referencePointName": "Sirkeci Garı",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 41.0150174,
+        "longitude": 28.977962
+      }
+    },
+    {
+      "id": "city-karlovy-vary",
+      "name": "Karlovy Vary",
+      "countryId": "czechia",
+      "referencePointName": "Karlovy Vary",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.235459,
+        "longitude": 12.8667221
+      }
+    },
+    {
+      "id": "city-karlsruhe",
+      "name": "Karlsruhe",
+      "countryId": "germany",
+      "referencePointName": "Karlsruhe Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.9940078,
+        "longitude": 8.4016492
+      }
+    },
+    {
+      "id": "city-koblenz",
+      "name": "Koblenz",
+      "countryId": "germany",
+      "referencePointName": "Koblenz Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.3508227,
+        "longitude": 7.5892636
+      }
+    },
+    {
+      "id": "city-konigssee",
+      "name": "Königssee",
+      "countryId": "germany",
+      "referencePointName": "Tourist-Information am Parkplatz Königssee",
+      "referencePointType": "tourist_information",
+      "location": {
+        "latitude": 47.592179,
+        "longitude": 12.987503
+      }
+    },
+    {
+      "id": "city-krakow",
+      "name": "Kraków",
+      "countryId": "poland",
+      "referencePointName": "Kraków Główny",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.0684238,
+        "longitude": 19.9478862
+      }
+    },
+    {
+      "id": "city-leipzig",
+      "name": "Leipzig",
+      "countryId": "germany",
+      "referencePointName": "Leipzig Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.3465518,
+        "longitude": 12.3830858
+      }
+    },
+    {
+      "id": "city-lindau",
+      "name": "Lindau",
+      "countryId": "germany",
+      "referencePointName": "Lindau-Insel",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.544202,
+        "longitude": 9.6808298
+      }
+    },
+    {
+      "id": "city-london",
+      "name": "London",
+      "countryId": "united-kingdom",
+      "referencePointName": "London Waterloo",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.5028379,
+        "longitude": -0.112801
+      }
+    },
+    {
+      "id": "city-lubeck",
+      "name": "Lübeck",
+      "countryId": "germany",
+      "referencePointName": "Lübeck Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 53.8671234,
+        "longitude": 10.6704782
+      }
+    },
+    {
+      "id": "city-mainz",
+      "name": "Mainz",
+      "countryId": "germany",
+      "referencePointName": "Mainz Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.0013856,
+        "longitude": 8.2586022
+      }
+    },
+    {
+      "id": "city-mannheim",
+      "name": "Mannheim",
+      "countryId": "germany",
+      "referencePointName": "Mannheim Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 49.4796632,
+        "longitude": 8.4698178
+      }
+    },
+    {
+      "id": "city-marseille",
+      "name": "Marseille",
+      "countryId": "france",
+      "referencePointName": "Marseille-Saint-Charles",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 43.3032635,
+        "longitude": 5.3811927
+      }
+    },
+    {
+      "id": "city-menton",
+      "name": "Menton",
+      "countryId": "france",
+      "referencePointName": "Menton",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 43.774703,
+        "longitude": 7.4931157
+      }
+    },
+    {
+      "id": "city-milan",
+      "name": "Milan",
+      "countryId": "italy",
+      "referencePointName": "Milano Centrale",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 45.4858786,
+        "longitude": 9.2042617
+      }
+    },
+    {
+      "id": "city-monaco",
+      "name": "Monaco",
+      "countryId": "monaco",
+      "referencePointName": "Monaco-Monte-Carlo",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 43.7382624,
+        "longitude": 7.4194983
+      }
+    },
+    {
+      "id": "city-munich",
+      "name": "Munich",
+      "countryId": "germany",
+      "referencePointName": "München Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.1407253,
+        "longitude": 11.5569426
+      }
+    },
+    {
+      "id": "city-naples",
+      "name": "Naples",
+      "countryId": "italy",
+      "referencePointName": "Napoli Centrale",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 40.8530238,
+        "longitude": 14.2731399
+      }
+    },
+    {
+      "id": "city-nice",
+      "name": "Nice",
+      "countryId": "france",
+      "referencePointName": "Nice-Ville",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 43.7048972,
+        "longitude": 7.2617286
+      }
+    },
+    {
+      "id": "city-nurnberg",
+      "name": "Nürnberg",
+      "countryId": "germany",
+      "referencePointName": "Nürnberg Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 49.4451991,
+        "longitude": 11.0823089
+      }
+    },
+    {
+      "id": "city-oslo",
+      "name": "Oslo",
+      "countryId": "norway",
+      "referencePointName": "Oslo S",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 59.9110251,
+        "longitude": 10.7531379
+      }
+    },
+    {
+      "id": "city-palermo",
+      "name": "Palermo",
+      "countryId": "italy",
+      "referencePointName": "Palermo Centrale",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 38.1092571,
+        "longitude": 13.3674799
+      }
+    },
+    {
+      "id": "city-paris",
+      "name": "Paris",
+      "countryId": "france",
+      "referencePointName": "Gare du Nord",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.8804003,
+        "longitude": 2.3549733
+      }
+    },
+    {
+      "id": "city-prague",
+      "name": "Prague",
+      "countryId": "czechia",
+      "referencePointName": "Praha hlavní nádraží",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.0829628,
+        "longitude": 14.4360939
+      }
+    },
+    {
+      "id": "city-rome",
+      "name": "Rome",
+      "countryId": "italy",
+      "referencePointName": "Roma Termini",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 41.901195,
+        "longitude": 12.5016713
+      }
+    },
+    {
+      "id": "city-rotterdam",
+      "name": "Rotterdam",
+      "countryId": "netherlands",
+      "referencePointName": "Rotterdam Centraal",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.9253937,
+        "longitude": 4.468719
+      }
+    },
+    {
+      "id": "city-salzburg",
+      "name": "Salzburg",
+      "countryId": "austria",
+      "referencePointName": "Salzburg Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 47.8130618,
+        "longitude": 13.045853
+      }
+    },
+    {
+      "id": "city-skopje",
+      "name": "Skopje",
+      "countryId": "north-macedonia",
+      "referencePointName": "Skopje railway station",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 41.9909014,
+        "longitude": 21.4459867
+      }
+    },
+    {
+      "id": "city-speyer",
+      "name": "Speyer",
+      "countryId": "germany",
+      "referencePointName": "Speyer Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 49.3241568,
+        "longitude": 8.4283506
+      }
+    },
+    {
+      "id": "city-strasbourg",
+      "name": "Strasbourg",
+      "countryId": "france",
+      "referencePointName": "Gare de Strasbourg",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.5852933,
+        "longitude": 7.7339249
+      }
+    },
+    {
+      "id": "city-stuttgart",
+      "name": "Stuttgart",
+      "countryId": "germany",
+      "referencePointName": "Stuttgart Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.7856099,
+        "longitude": 9.1833959
+      }
+    },
+    {
+      "id": "city-triberg",
+      "name": "Triberg",
+      "countryId": "germany",
+      "referencePointName": "Triberg",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.1403719,
+        "longitude": 8.2368619
+      }
+    },
+    {
+      "id": "city-ulm",
+      "name": "Ulm",
+      "countryId": "germany",
+      "referencePointName": "Ulm Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 48.3994159,
+        "longitude": 9.9826024
+      }
+    },
+    {
+      "id": "city-utrecht",
+      "name": "Utrecht",
+      "countryId": "netherlands",
+      "referencePointName": "Utrecht Centraal",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 52.0893825,
+        "longitude": 5.1096021
+      }
+    },
+    {
+      "id": "city-vatican-city",
+      "name": "Vatican City",
+      "countryId": "vatican-city",
+      "referencePointName": "Vatican City",
+      "referencePointType": "country_city_point",
+      "location": {
+        "latitude": 41.9008795,
+        "longitude": 12.4509301
+      }
+    },
+    {
+      "id": "city-vilnius",
+      "name": "Vilnius",
+      "countryId": "lithuania",
+      "referencePointName": "Vilnius railway station",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 54.6698774,
+        "longitude": 25.2847579
+      }
+    },
+    {
+      "id": "city-wiesbaden",
+      "name": "Wiesbaden",
+      "countryId": "germany",
+      "referencePointName": "Wiesbaden Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 50.0698313,
+        "longitude": 8.2439848
+      }
+    },
+    {
+      "id": "city-wuppertal",
+      "name": "Wuppertal",
+      "countryId": "germany",
+      "referencePointName": "Wuppertal Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 51.2543138,
+        "longitude": 7.1500364
+      }
+    },
+    {
+      "id": "city-wurzburg",
+      "name": "Würzburg",
+      "countryId": "germany",
+      "referencePointName": "Würzburg Hbf",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 49.8015215,
+        "longitude": 9.9359849
+      }
+    },
+    {
+      "id": "city-zaandijk",
+      "name": "Zaandijk",
+      "countryId": "netherlands",
+      "referencePointName": "Zaandijk Zaanse Schans",
+      "referencePointType": "railway_station",
+      "location": {
+        "latitude": 52.4692791,
+        "longitude": 4.8051566
+      }
+    }
+  ],
+  "airports": [
+    {
+      "id": "airport-asr",
+      "code": "ASR",
+      "name": "Kayseri Erkilet Airport",
+      "countryId": "turkey",
+      "associatedCityId": "city-goreme",
+      "location": {
+        "latitude": 38.7734753,
+        "longitude": 35.4946849
+      }
+    },
+    {
+      "id": "airport-bbu",
+      "code": "BBU",
+      "name": "Aurel Vlaicu International Airport",
+      "countryId": "romania",
+      "associatedCityId": "city-bucharest",
+      "location": {
+        "latitude": 44.5002921,
+        "longitude": 26.0902283
+      }
+    },
+    {
+      "id": "airport-bcn",
+      "code": "BCN",
+      "name": "Barcelona-El Prat Airport",
+      "countryId": "spain",
+      "associatedCityId": "city-barcelona",
+      "location": {
+        "latitude": 41.296944,
+        "longitude": 2.0790474
+      }
+    },
+    {
+      "id": "airport-ber",
+      "code": "BER",
+      "name": "Berlin Brandenburg Airport",
+      "countryId": "germany",
+      "associatedCityId": "city-berlin",
+      "location": {
+        "latitude": 52.3657974,
+        "longitude": 13.4888906
+      }
+    },
+    {
+      "id": "airport-bgy",
+      "code": "BGY",
+      "name": "Milan Bergamo Airport",
+      "countryId": "italy",
+      "associatedCityId": "city-milan",
+      "location": {
+        "latitude": 45.6708936,
+        "longitude": 9.6987542
+      }
+    },
+    {
+      "id": "airport-bud",
+      "code": "BUD",
+      "name": "Budapest Ferenc Liszt International Airport",
+      "countryId": "hungary",
+      "associatedCityId": "city-budapest",
+      "location": {
+        "latitude": 47.435273,
+        "longitude": 19.2535106
+      }
+    },
+    {
+      "id": "airport-cia",
+      "code": "CIA",
+      "name": "Rome Ciampino Airport",
+      "countryId": "italy",
+      "associatedCityId": "city-rome",
+      "location": {
+        "latitude": 41.799547,
+        "longitude": 12.5912711
+      }
+    },
+    {
+      "id": "airport-dub",
+      "code": "DUB",
+      "name": "Dublin Airport",
+      "countryId": "ireland",
+      "associatedCityId": "city-dublin",
+      "location": {
+        "latitude": 53.4282916,
+        "longitude": -6.2472741
+      }
+    },
+    {
+      "id": "airport-fco",
+      "code": "FCO",
+      "name": "Leonardo da Vinci Fiumicino Airport",
+      "countryId": "italy",
+      "associatedCityId": "city-rome",
+      "location": {
+        "latitude": 41.8153911,
+        "longitude": 12.2264848
+      }
+    },
+    {
+      "id": "airport-fmm",
+      "code": "FMM",
+      "name": "Memmingen Airport",
+      "countryId": "germany",
+      "associatedCityId": "city-munich",
+      "location": {
+        "latitude": 47.9888241,
+        "longitude": 10.2350723
+      }
+    },
+    {
+      "id": "airport-hhn",
+      "code": "HHN",
+      "name": "Frankfurt-Hahn Airport",
+      "countryId": "germany",
+      "associatedCityId": "city-koblenz",
+      "location": {
+        "latitude": 49.9446334,
+        "longitude": 7.2612103
+      }
+    },
+    {
+      "id": "airport-krk",
+      "code": "KRK",
+      "name": "Kraków John Paul II International Airport",
+      "countryId": "poland",
+      "associatedCityId": "city-krakow",
+      "location": {
+        "latitude": 50.0782553,
+        "longitude": 19.7862538
+      }
+    },
+    {
+      "id": "airport-lgw",
+      "code": "LGW",
+      "name": "London Gatwick Airport",
+      "countryId": "united-kingdom",
+      "associatedCityId": "city-london",
+      "location": {
+        "latitude": 51.1540772,
+        "longitude": -0.1823226
+      }
+    },
+    {
+      "id": "airport-ltn",
+      "code": "LTN",
+      "name": "London Luton Airport",
+      "countryId": "united-kingdom",
+      "associatedCityId": "city-london",
+      "location": {
+        "latitude": 51.8781015,
+        "longitude": -0.3664255
+      }
+    },
+    {
+      "id": "airport-muc",
+      "code": "MUC",
+      "name": "Munich Airport",
+      "countryId": "germany",
+      "associatedCityId": "city-munich",
+      "location": {
+        "latitude": 48.3539625,
+        "longitude": 11.7785925
+      }
+    },
+    {
+      "id": "airport-mxp",
+      "code": "MXP",
+      "name": "Milan Malpensa Airport",
+      "countryId": "italy",
+      "associatedCityId": "city-milan",
+      "location": {
+        "latitude": 45.6296273,
+        "longitude": 8.7235475
+      }
+    },
+    {
+      "id": "airport-nav",
+      "code": "NAV",
+      "name": "Nevşehir Kapadokya Airport",
+      "countryId": "turkey",
+      "associatedCityId": "city-goreme",
+      "location": {
+        "latitude": 38.7724585,
+        "longitude": 34.5273468
+      }
+    },
+    {
+      "id": "airport-nce",
+      "code": "NCE",
+      "name": "Nice Côte d'Azur Airport",
+      "countryId": "france",
+      "associatedCityId": "city-nice",
+      "location": {
+        "latitude": 43.6598152,
+        "longitude": 7.213746
+      }
+    },
+    {
+      "id": "airport-nue",
+      "code": "NUE",
+      "name": "Nuremberg Airport",
+      "countryId": "germany",
+      "associatedCityId": "city-nurnberg",
+      "location": {
+        "latitude": 49.4982685,
+        "longitude": 11.0781063
+      }
+    },
+    {
+      "id": "airport-osl",
+      "code": "OSL",
+      "name": "Oslo Airport Gardermoen",
+      "countryId": "norway",
+      "associatedCityId": "city-oslo",
+      "location": {
+        "latitude": 60.1978654,
+        "longitude": 11.0996754
+      }
+    },
+    {
+      "id": "airport-otp",
+      "code": "OTP",
+      "name": "Henri Coandă International Airport",
+      "countryId": "romania",
+      "associatedCityId": "city-bucharest",
+      "location": {
+        "latitude": 44.568339,
+        "longitude": 26.1025536
+      }
+    },
+    {
+      "id": "airport-pmo",
+      "code": "PMO",
+      "name": "Falcone Borsellino Airport",
+      "countryId": "italy",
+      "associatedCityId": "city-palermo",
+      "location": {
+        "latitude": 38.1765169,
+        "longitude": 13.091643
+      }
+    },
+    {
+      "id": "airport-saw",
+      "code": "SAW",
+      "name": "Istanbul Sabiha Gökçen International Airport",
+      "countryId": "turkey",
+      "associatedCityId": "city-istanbul",
+      "location": {
+        "latitude": 40.8943341,
+        "longitude": 29.3118058
+      }
+    },
+    {
+      "id": "airport-stn",
+      "code": "STN",
+      "name": "London Stansted Airport",
+      "countryId": "united-kingdom",
+      "associatedCityId": "city-london",
+      "location": {
+        "latitude": 51.8869652,
+        "longitude": 0.2441929
+      }
+    },
+    {
+      "id": "airport-str",
+      "code": "STR",
+      "name": "Stuttgart Airport",
+      "countryId": "germany",
+      "associatedCityId": "city-stuttgart",
+      "location": {
+        "latitude": 48.688422,
+        "longitude": 9.2053925
+      }
+    },
+    {
+      "id": "airport-sxb",
+      "code": "SXB",
+      "name": "Strasbourg Airport",
+      "countryId": "france",
+      "associatedCityId": "city-strasbourg",
+      "location": {
+        "latitude": 48.5388709,
+        "longitude": 7.6254457
+      }
+    },
+    {
+      "id": "airport-trf",
+      "code": "TRF",
+      "name": "Sandefjord Airport Torp",
+      "countryId": "norway",
+      "associatedCityId": "city-oslo",
+      "location": {
+        "latitude": 59.184689,
+        "longitude": 10.2585603
+      }
+    },
+    {
+      "id": "airport-vno",
+      "code": "VNO",
+      "name": "Vilnius Airport",
+      "countryId": "lithuania",
+      "associatedCityId": "city-vilnius",
+      "location": {
+        "latitude": 54.6349686,
+        "longitude": 25.2905319
+      }
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip-001",
+      "title": "奧地利",
+      "sequence": 1,
+      "firstDate": "2025-10-09",
+      "lastDate": "2025-10-12",
+      "segmentIds": [
+        "segment-001",
+        "segment-002",
+        "segment-003",
+        "segment-004"
+      ]
+    },
+    {
+      "id": "trip-002",
+      "title": "倫敦",
+      "sequence": 2,
+      "firstDate": "2025-10-25",
+      "lastDate": "2025-10-28",
+      "segmentIds": [
+        "segment-005",
+        "segment-006"
+      ]
+    },
+    {
+      "id": "trip-003",
+      "title": "漢堡回家行",
+      "sequence": 3,
+      "firstDate": "2025-11-06",
+      "lastDate": "2025-11-12",
+      "segmentIds": [
+        "segment-007",
+        "segment-008",
+        "segment-009",
+        "segment-010",
+        "segment-011",
+        "segment-012"
+      ]
+    },
+    {
+      "id": "trip-004",
+      "title": "西班牙",
+      "sequence": 4,
+      "firstDate": "2025-11-26",
+      "lastDate": "2025-12-03",
+      "segmentIds": [
+        "segment-013",
+        "segment-014",
+        "segment-015",
+        "segment-016"
+      ]
+    },
+    {
+      "id": "trip-005",
+      "title": "波蘭&米蘭",
+      "sequence": 5,
+      "firstDate": "2025-12-11",
+      "lastDate": "2025-12-16",
+      "segmentIds": [
+        "segment-017",
+        "segment-018",
+        "segment-019"
+      ]
+    },
+    {
+      "id": "trip-006",
+      "title": "聖誕德法遊",
+      "sequence": 6,
+      "firstDate": "2025-12-18",
+      "lastDate": "2025-12-23",
+      "segmentIds": [
+        "segment-020",
+        "segment-021",
+        "segment-022",
+        "segment-023",
+        "segment-024",
+        "segment-025",
+        "segment-026"
+      ]
+    },
+    {
+      "id": "trip-007",
+      "title": "匈捷",
+      "sequence": 7,
+      "firstDate": "2025-12-31",
+      "lastDate": "2026-01-06",
+      "segmentIds": [
+        "segment-027",
+        "segment-028",
+        "segment-029",
+        "segment-030",
+        "segment-031"
+      ]
+    },
+    {
+      "id": "trip-008",
+      "title": "立陶宛&挪威",
+      "sequence": 8,
+      "firstDate": "2026-01-16",
+      "lastDate": "2026-01-20",
+      "segmentIds": [
+        "segment-032",
+        "segment-033",
+        "segment-034"
+      ]
+    },
+    {
+      "id": "trip-009",
+      "title": "羅馬/尼亞",
+      "sequence": 9,
+      "firstDate": "2026-01-29",
+      "lastDate": "2026-02-02",
+      "segmentIds": [
+        "segment-035",
+        "segment-036",
+        "segment-037"
+      ]
+    },
+    {
+      "id": "trip-010",
+      "title": "DB 金牌旅(一)",
+      "sequence": 10,
+      "firstDate": "2026-02-09",
+      "lastDate": "2026-02-09",
+      "segmentIds": [
+        "segment-038",
+        "segment-039"
+      ]
+    },
+    {
+      "id": "trip-011",
+      "title": "DB 金牌旅(二)",
+      "sequence": 11,
+      "firstDate": "2026-02-10",
+      "lastDate": "2026-02-10",
+      "segmentIds": [
+        "segment-040",
+        "segment-041",
+        "segment-042"
+      ]
+    },
+    {
+      "id": "trip-012",
+      "title": "土耳其",
+      "sequence": 12,
+      "firstDate": "2026-02-12",
+      "lastDate": "2026-02-17",
+      "segmentIds": [
+        "segment-043",
+        "segment-044",
+        "segment-045"
+      ]
+    },
+    {
+      "id": "trip-013",
+      "title": "DB 金牌旅(三)",
+      "sequence": 13,
+      "firstDate": "2026-02-21",
+      "lastDate": "2026-02-21",
+      "segmentIds": [
+        "segment-046",
+        "segment-047",
+        "segment-048"
+      ]
+    },
+    {
+      "id": "trip-014",
+      "title": "南法遊輪行",
+      "sequence": 14,
+      "firstDate": "2026-02-26",
+      "lastDate": "2026-03-06",
+      "segmentIds": [
+        "segment-049",
+        "segment-050",
+        "segment-051",
+        "segment-052",
+        "segment-053",
+        "segment-054",
+        "segment-055",
+        "segment-056",
+        "segment-057"
+      ]
+    },
+    {
+      "id": "trip-015",
+      "title": "荷比法",
+      "sequence": 15,
+      "firstDate": "2026-03-08",
+      "lastDate": "2026-03-16",
+      "segmentIds": [
+        "segment-058",
+        "segment-059",
+        "segment-060",
+        "segment-061",
+        "segment-062",
+        "segment-063",
+        "segment-064",
+        "segment-065",
+        "segment-066",
+        "segment-067"
+      ]
+    },
+    {
+      "id": "trip-016",
+      "title": "北德兩英行",
+      "sequence": 16,
+      "firstDate": "2026-03-19",
+      "lastDate": "2026-03-26",
+      "segmentIds": [
+        "segment-068",
+        "segment-069",
+        "segment-070",
+        "segment-071",
+        "segment-072",
+        "segment-073"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "segment-001",
+      "tripId": "trip-001",
+      "sequence": 1,
+      "globalSequence": 1,
+      "date": "2025-10-09",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-salzburg",
+      "originCountryId": "germany",
+      "destinationCountryId": "austria",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-salzburg"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 116.7,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-002",
+      "tripId": "trip-001",
+      "sequence": 2,
+      "globalSequence": 2,
+      "date": "2025-10-10",
+      "originCityId": "city-salzburg",
+      "destinationCityId": "city-konigssee",
+      "originCountryId": "austria",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-salzburg",
+        "city-konigssee"
+      ],
+      "transportationSubtype": "公車",
+      "transportationCategory": "City Bus",
+      "company": "RVO",
+      "baseCostEur": 3.4,
+      "baseDistanceKm": 24.9,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-003",
+      "tripId": "trip-001",
+      "sequence": 3,
+      "globalSequence": 3,
+      "date": "2025-10-10",
+      "originCityId": "city-konigssee",
+      "destinationCityId": "city-salzburg",
+      "originCountryId": "germany",
+      "destinationCountryId": "austria",
+      "transitCityIds": [
+        "city-berchtesgaden"
+      ],
+      "pathCityIds": [
+        "city-konigssee",
+        "city-berchtesgaden",
+        "city-salzburg"
+      ],
+      "transportationSubtype": "公車",
+      "transportationCategory": "City Bus",
+      "company": "RVO",
+      "baseCostEur": 3.4,
+      "baseDistanceKm": 24.9,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-004",
+      "tripId": "trip-001",
+      "sequence": 4,
+      "globalSequence": 4,
+      "date": "2025-10-12",
+      "originCityId": "city-salzburg",
+      "destinationCityId": "city-munich",
+      "originCountryId": "austria",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-salzburg",
+        "city-munich"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 116.7,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-005",
+      "tripId": "trip-002",
+      "sequence": 1,
+      "globalSequence": 5,
+      "date": "2025-10-25",
+      "originCityId": "city-nurnberg",
+      "destinationCityId": "city-london",
+      "originCountryId": "germany",
+      "destinationCountryId": "united-kingdom",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-nurnberg",
+        "city-london"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 20.27,
+      "baseDistanceKm": 823.7,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-005-arrival"
+    },
+    {
+      "id": "segment-006",
+      "tripId": "trip-002",
+      "sequence": 2,
+      "globalSequence": 6,
+      "date": "2025-10-28",
+      "originCityId": "city-london",
+      "destinationCityId": "city-nurnberg",
+      "originCountryId": "united-kingdom",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-london",
+        "city-nurnberg"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 16.99,
+      "baseDistanceKm": 823.7,
+      "notes": null,
+      "departureTransferId": "transfer-006-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-007",
+      "tripId": "trip-003",
+      "sequence": 1,
+      "globalSequence": 7,
+      "date": "2025-11-06",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-hamburg",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-hamburg"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 27.98,
+      "baseDistanceKm": 611.5,
+      "notes": "10% OFF",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-008",
+      "tripId": "trip-003",
+      "sequence": 2,
+      "globalSequence": 8,
+      "date": "2025-11-07",
+      "originCityId": "city-hamburg",
+      "destinationCityId": "city-bremen",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-hamburg",
+        "city-bremen"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 95,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-009",
+      "tripId": "trip-003",
+      "sequence": 3,
+      "globalSequence": 9,
+      "date": "2025-11-07",
+      "originCityId": "city-bremen",
+      "destinationCityId": "city-hamburg",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-bremen",
+        "city-hamburg"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 95,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-010",
+      "tripId": "trip-003",
+      "sequence": 4,
+      "globalSequence": 10,
+      "date": "2025-11-09",
+      "originCityId": "city-hamburg",
+      "destinationCityId": "city-berlin",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-lubeck"
+      ],
+      "pathCityIds": [
+        "city-hamburg",
+        "city-lubeck",
+        "city-berlin"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 252.2,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-011",
+      "tripId": "trip-003",
+      "sequence": 5,
+      "globalSequence": 11,
+      "date": "2025-11-11",
+      "originCityId": "city-berlin",
+      "destinationCityId": "city-hof",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-leipzig"
+      ],
+      "pathCityIds": [
+        "city-berlin",
+        "city-leipzig",
+        "city-hof"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 266.1,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-012",
+      "tripId": "trip-003",
+      "sequence": 6,
+      "globalSequence": 12,
+      "date": "2025-11-12",
+      "originCityId": "city-hof",
+      "destinationCityId": "city-munich",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-hof",
+        "city-munich"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 242.5,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-013",
+      "tripId": "trip-004",
+      "sequence": 1,
+      "globalSequence": 13,
+      "date": "2025-11-26",
+      "originCityId": "city-stuttgart",
+      "destinationCityId": "city-barcelona",
+      "originCountryId": "germany",
+      "destinationCountryId": "spain",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-stuttgart",
+        "city-barcelona"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Vueling",
+      "baseCostEur": 27.99,
+      "baseDistanceKm": 991.1,
+      "notes": null,
+      "departureTransferId": "transfer-013-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-014",
+      "tripId": "trip-004",
+      "sequence": 2,
+      "globalSequence": 14,
+      "date": "2025-11-28",
+      "originCityId": "city-barcelona",
+      "destinationCityId": "city-andorra",
+      "originCountryId": "spain",
+      "destinationCountryId": "andorra",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-barcelona",
+        "city-andorra"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Alsa",
+      "baseCostEur": 26.35,
+      "baseDistanceKm": 135.2,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-015",
+      "tripId": "trip-004",
+      "sequence": 3,
+      "globalSequence": 15,
+      "date": "2025-11-29",
+      "originCityId": "city-andorra",
+      "destinationCityId": "city-barcelona",
+      "originCountryId": "andorra",
+      "destinationCountryId": "spain",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-andorra",
+        "city-barcelona"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Alsa",
+      "baseCostEur": 5,
+      "baseDistanceKm": 135.2,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-016",
+      "tripId": "trip-004",
+      "sequence": 4,
+      "globalSequence": 16,
+      "date": "2025-12-03",
+      "originCityId": "city-barcelona",
+      "destinationCityId": "city-stuttgart",
+      "originCountryId": "spain",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-barcelona",
+        "city-stuttgart"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Vueling",
+      "baseCostEur": 27.98,
+      "baseDistanceKm": 991.1,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-017",
+      "tripId": "trip-005",
+      "sequence": 1,
+      "globalSequence": 17,
+      "date": "2025-12-11",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-krakow",
+      "originCountryId": "germany",
+      "destinationCountryId": "poland",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-krakow"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 17.99,
+      "baseDistanceKm": 646.9,
+      "notes": "10% OFF",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-018",
+      "tripId": "trip-005",
+      "sequence": 2,
+      "globalSequence": 18,
+      "date": "2025-12-13",
+      "originCityId": "city-krakow",
+      "destinationCityId": "city-milan",
+      "originCountryId": "poland",
+      "destinationCountryId": "italy",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-krakow",
+        "city-milan"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 15.53,
+      "baseDistanceKm": 949.5,
+      "notes": "10% OFF",
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-018-arrival"
+    },
+    {
+      "id": "segment-019",
+      "tripId": "trip-005",
+      "sequence": 3,
+      "globalSequence": 19,
+      "date": "2025-12-16",
+      "originCityId": "city-milan",
+      "destinationCityId": "city-munich",
+      "originCountryId": "italy",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-milan",
+        "city-munich"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "EasyJet",
+      "baseCostEur": 17.78,
+      "baseDistanceKm": 345.2,
+      "notes": null,
+      "departureTransferId": "transfer-019-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-020",
+      "tripId": "trip-006",
+      "sequence": 1,
+      "globalSequence": 20,
+      "date": "2025-12-18",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-freiburg",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-donaueschingen",
+        "city-triberg",
+        "city-gengenbach"
+      ],
+      "pathCityIds": [
+        "city-munich",
+        "city-donaueschingen",
+        "city-triberg",
+        "city-gengenbach",
+        "city-freiburg"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 276.5,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-021",
+      "tripId": "trip-006",
+      "sequence": 2,
+      "globalSequence": 21,
+      "date": "2025-12-19",
+      "originCityId": "city-freiburg",
+      "destinationCityId": "city-colmar",
+      "originCountryId": "germany",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-freiburg",
+        "city-colmar"
+      ],
+      "transportationSubtype": "公車",
+      "transportationCategory": "City Bus",
+      "company": "SVF",
+      "baseCostEur": 4,
+      "baseDistanceKm": 37.7,
+      "notes": "在 Breisach 轉公車",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-022",
+      "tripId": "trip-006",
+      "sequence": 3,
+      "globalSequence": 22,
+      "date": "2025-12-19",
+      "originCityId": "city-colmar",
+      "destinationCityId": "city-strasbourg",
+      "originCountryId": "france",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-colmar",
+        "city-strasbourg"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "SNCF",
+      "baseCostEur": 15.6,
+      "baseDistanceKm": 63.8,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-023",
+      "tripId": "trip-006",
+      "sequence": 4,
+      "globalSequence": 23,
+      "date": "2025-12-20",
+      "originCityId": "city-strasbourg",
+      "destinationCityId": "city-karlsruhe",
+      "originCountryId": "france",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-heidelberg",
+        "city-mannheim"
+      ],
+      "pathCityIds": [
+        "city-strasbourg",
+        "city-heidelberg",
+        "city-mannheim",
+        "city-karlsruhe"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 66.8,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-024",
+      "tripId": "trip-006",
+      "sequence": 5,
+      "globalSequence": 24,
+      "date": "2025-12-21",
+      "originCityId": "city-karlsruhe",
+      "destinationCityId": "city-frankfurt",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-baden-baden",
+        "city-mainz"
+      ],
+      "pathCityIds": [
+        "city-karlsruhe",
+        "city-baden-baden",
+        "city-mainz",
+        "city-frankfurt"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 125.1,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-025",
+      "tripId": "trip-006",
+      "sequence": 6,
+      "globalSequence": 25,
+      "date": "2025-12-22",
+      "originCityId": "city-frankfurt",
+      "destinationCityId": "city-frankfurt",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-bad-camberg",
+        "city-idstein",
+        "city-wiesbaden",
+        "city-speyer"
+      ],
+      "pathCityIds": [
+        "city-frankfurt",
+        "city-bad-camberg",
+        "city-idstein",
+        "city-wiesbaden",
+        "city-speyer",
+        "city-frankfurt"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 233.7,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-026",
+      "tripId": "trip-006",
+      "sequence": 7,
+      "globalSequence": 26,
+      "date": "2025-12-23",
+      "originCityId": "city-frankfurt",
+      "destinationCityId": "city-munich",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-wurzburg",
+        "city-nurnberg"
+      ],
+      "pathCityIds": [
+        "city-frankfurt",
+        "city-wurzburg",
+        "city-nurnberg",
+        "city-munich"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 303.5,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-027",
+      "tripId": "trip-007",
+      "sequence": 1,
+      "globalSequence": 27,
+      "date": "2025-12-31",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-berlin",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-berlin"
+      ],
+      "transportationSubtype": "高鐵",
+      "transportationCategory": "High-speed Rail",
+      "company": "DB",
+      "baseCostEur": 19.99,
+      "baseDistanceKm": 504.1,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-028",
+      "tripId": "trip-007",
+      "sequence": 2,
+      "globalSequence": 28,
+      "date": "2026-01-01",
+      "originCityId": "city-berlin",
+      "destinationCityId": "city-budapest",
+      "originCountryId": "germany",
+      "destinationCountryId": "hungary",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-berlin",
+        "city-budapest"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 17.99,
+      "baseDistanceKm": 691.5,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-029",
+      "tripId": "trip-007",
+      "sequence": 3,
+      "globalSequence": 29,
+      "date": "2026-01-03",
+      "originCityId": "city-budapest",
+      "destinationCityId": "city-karlovy-vary",
+      "originCountryId": "hungary",
+      "destinationCountryId": "czechia",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-budapest",
+        "city-karlovy-vary"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "RejioJet",
+      "baseCostEur": 40.9,
+      "baseDistanceKm": 546.8,
+      "notes": "ISIC",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-030",
+      "tripId": "trip-007",
+      "sequence": 4,
+      "globalSequence": 30,
+      "date": "2026-01-04",
+      "originCityId": "city-karlovy-vary",
+      "destinationCityId": "city-prague",
+      "originCountryId": "czechia",
+      "destinationCountryId": "czechia",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-karlovy-vary",
+        "city-prague"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "RejioJet",
+      "baseCostEur": 4.6,
+      "baseDistanceKm": 113.1,
+      "notes": "ISIC",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-031",
+      "tripId": "trip-007",
+      "sequence": 5,
+      "globalSequence": 31,
+      "date": "2026-01-06",
+      "originCityId": "city-prague",
+      "destinationCityId": "city-munich",
+      "originCountryId": "czechia",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-prague",
+        "city-munich"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "cd.cz",
+      "baseCostEur": 7.82,
+      "baseDistanceKm": 300.9,
+      "notes": "Furth im Wald→RE25",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-032",
+      "tripId": "trip-008",
+      "sequence": 1,
+      "globalSequence": 32,
+      "date": "2026-01-16",
+      "originCityId": "city-nurnberg",
+      "destinationCityId": "city-vilnius",
+      "originCountryId": "germany",
+      "destinationCountryId": "lithuania",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-nurnberg",
+        "city-vilnius"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 17,
+      "baseDistanceKm": 1128.5,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-032-arrival"
+    },
+    {
+      "id": "segment-033",
+      "tripId": "trip-008",
+      "sequence": 2,
+      "globalSequence": 33,
+      "date": "2026-01-17",
+      "originCityId": "city-vilnius",
+      "destinationCityId": "city-oslo",
+      "originCountryId": "lithuania",
+      "destinationCountryId": "norway",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-vilnius",
+        "city-oslo"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 16.99,
+      "baseDistanceKm": 1046.3,
+      "notes": null,
+      "departureTransferId": "transfer-033-departure",
+      "arrivalTransferId": "transfer-033-arrival"
+    },
+    {
+      "id": "segment-034",
+      "tripId": "trip-008",
+      "sequence": 3,
+      "globalSequence": 34,
+      "date": "2026-01-20",
+      "originCityId": "city-oslo",
+      "destinationCityId": "city-munich",
+      "originCountryId": "norway",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-oslo",
+        "city-munich"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Wizz Air",
+      "baseCostEur": 28.6,
+      "baseDistanceKm": 1309.8,
+      "notes": "SKP 轉機",
+      "departureTransferId": "transfer-034-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-035",
+      "tripId": "trip-009",
+      "sequence": 1,
+      "globalSequence": 35,
+      "date": "2026-01-29",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-bucharest",
+      "originCountryId": "germany",
+      "destinationCountryId": "romania",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-bucharest"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Wizz Air",
+      "baseCostEur": 21.63,
+      "baseDistanceKm": 1186.3,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-035-arrival"
+    },
+    {
+      "id": "segment-036",
+      "tripId": "trip-009",
+      "sequence": 2,
+      "globalSequence": 36,
+      "date": "2026-01-30",
+      "originCityId": "city-bucharest",
+      "destinationCityId": "city-rome",
+      "originCountryId": "romania",
+      "destinationCountryId": "italy",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-bucharest",
+        "city-rome"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 18.39,
+      "baseDistanceKm": 1134.9,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-036-arrival"
+    },
+    {
+      "id": "segment-037",
+      "tripId": "trip-009",
+      "sequence": 3,
+      "globalSequence": 37,
+      "date": "2026-02-02",
+      "originCityId": "city-rome",
+      "destinationCityId": "city-munich",
+      "originCountryId": "italy",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-rome",
+        "city-munich"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "EasyJet",
+      "baseCostEur": 27.49,
+      "baseDistanceKm": 697.8,
+      "notes": null,
+      "departureTransferId": "transfer-037-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-038",
+      "tripId": "trip-010",
+      "sequence": 1,
+      "globalSequence": 38,
+      "date": "2026-02-09",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-dresden",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-erfurt"
+      ],
+      "pathCityIds": [
+        "city-munich",
+        "city-erfurt",
+        "city-dresden"
+      ],
+      "transportationSubtype": "高鐵",
+      "transportationCategory": "High-speed Rail",
+      "company": "DB",
+      "baseCostEur": 3.33,
+      "baseDistanceKm": 358.5,
+      "notes": "金牌票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-039",
+      "tripId": "trip-010",
+      "sequence": 2,
+      "globalSequence": 39,
+      "date": "2026-02-09",
+      "originCityId": "city-dresden",
+      "destinationCityId": "city-munich",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-bamberg"
+      ],
+      "pathCityIds": [
+        "city-dresden",
+        "city-bamberg",
+        "city-munich"
+      ],
+      "transportationSubtype": "高鐵",
+      "transportationCategory": "High-speed Rail",
+      "company": "DB",
+      "baseCostEur": 3.33,
+      "baseDistanceKm": 358.5,
+      "notes": "金牌票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-040",
+      "tripId": "trip-011",
+      "sequence": 1,
+      "globalSequence": 40,
+      "date": "2026-02-10",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-ulm",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-ulm"
+      ],
+      "transportationSubtype": "高鐵",
+      "transportationCategory": "High-speed Rail",
+      "company": "DB",
+      "baseCostEur": 3.33,
+      "baseDistanceKm": 120,
+      "notes": "金牌票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-041",
+      "tripId": "trip-011",
+      "sequence": 2,
+      "globalSequence": 41,
+      "date": "2026-02-10",
+      "originCityId": "city-ulm",
+      "destinationCityId": "city-lindau",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-friedrichshafen"
+      ],
+      "pathCityIds": [
+        "city-ulm",
+        "city-friedrichshafen",
+        "city-lindau"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 97.7,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-042",
+      "tripId": "trip-011",
+      "sequence": 3,
+      "globalSequence": 42,
+      "date": "2026-02-10",
+      "originCityId": "city-lindau",
+      "destinationCityId": "city-munich",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-lindau",
+        "city-munich"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "SBB",
+      "baseCostEur": 3.33,
+      "baseDistanceKm": 154.9,
+      "notes": "金牌票(EC)",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-043",
+      "tripId": "trip-012",
+      "sequence": 1,
+      "globalSequence": 43,
+      "date": "2026-02-12",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-goreme",
+      "originCountryId": "germany",
+      "destinationCountryId": "turkey",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-goreme"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Pegasus",
+      "baseCostEur": 73.38,
+      "baseDistanceKm": 2144.4,
+      "notes": "SAW 轉機",
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-043-arrival"
+    },
+    {
+      "id": "segment-044",
+      "tripId": "trip-012",
+      "sequence": 2,
+      "globalSequence": 44,
+      "date": "2026-02-14",
+      "originCityId": "city-goreme",
+      "destinationCityId": "city-istanbul",
+      "originCountryId": "turkey",
+      "destinationCountryId": "turkey",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-goreme",
+        "city-istanbul"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "AJet",
+      "baseCostEur": 20.6,
+      "baseDistanceKm": 564.8,
+      "notes": null,
+      "departureTransferId": "transfer-044-departure",
+      "arrivalTransferId": "transfer-044-arrival"
+    },
+    {
+      "id": "segment-045",
+      "tripId": "trip-012",
+      "sequence": 3,
+      "globalSequence": 45,
+      "date": "2026-02-17",
+      "originCityId": "city-istanbul",
+      "destinationCityId": "city-stuttgart",
+      "originCountryId": "turkey",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-istanbul",
+        "city-stuttgart"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Pegasus",
+      "baseCostEur": 29,
+      "baseDistanceKm": 1774.9,
+      "notes": null,
+      "departureTransferId": "transfer-045-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-046",
+      "tripId": "trip-013",
+      "sequence": 1,
+      "globalSequence": 46,
+      "date": "2026-02-21",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-heidelberg",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-heidelberg"
+      ],
+      "transportationSubtype": "高鐵",
+      "transportationCategory": "High-speed Rail",
+      "company": "DB",
+      "baseCostEur": 3.33,
+      "baseDistanceKm": 253.6,
+      "notes": "金牌票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-047",
+      "tripId": "trip-013",
+      "sequence": 2,
+      "globalSequence": 47,
+      "date": "2026-02-21",
+      "originCityId": "city-heidelberg",
+      "destinationCityId": "city-mannheim",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-heidelberg",
+        "city-mannheim"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 17.1,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-048",
+      "tripId": "trip-013",
+      "sequence": 3,
+      "globalSequence": 48,
+      "date": "2026-02-21",
+      "originCityId": "city-mannheim",
+      "destinationCityId": "city-munich",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-mannheim",
+        "city-munich"
+      ],
+      "transportationSubtype": "高鐵",
+      "transportationCategory": "High-speed Rail",
+      "company": "DB",
+      "baseCostEur": 3.33,
+      "baseDistanceKm": 270.7,
+      "notes": "金牌票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-049",
+      "tripId": "trip-014",
+      "sequence": 1,
+      "globalSequence": 49,
+      "date": "2026-02-26",
+      "originCityId": "city-strasbourg",
+      "destinationCityId": "city-nice",
+      "originCountryId": "france",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-strasbourg",
+        "city-nice"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "Volotea",
+      "baseCostEur": 32.49,
+      "baseDistanceKm": 543.9,
+      "notes": null,
+      "departureTransferId": "transfer-049-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-050",
+      "tripId": "trip-014",
+      "sequence": 2,
+      "globalSequence": 50,
+      "date": "2026-02-27",
+      "originCityId": "city-nice",
+      "destinationCityId": "city-monaco",
+      "originCountryId": "france",
+      "destinationCountryId": "monaco",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-nice",
+        "city-monaco"
+      ],
+      "transportationSubtype": "公車",
+      "transportationCategory": "City Bus",
+      "company": "ZOU!",
+      "baseCostEur": 2.5,
+      "baseDistanceKm": 13.2,
+      "notes": "100號公車",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-051",
+      "tripId": "trip-014",
+      "sequence": 3,
+      "globalSequence": 51,
+      "date": "2026-02-27",
+      "originCityId": "city-monaco",
+      "destinationCityId": "city-menton",
+      "originCountryId": "monaco",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-monaco",
+        "city-menton"
+      ],
+      "transportationSubtype": "公車",
+      "transportationCategory": "City Bus",
+      "company": "ZOU!",
+      "baseCostEur": 2.5,
+      "baseDistanceKm": 7.2,
+      "notes": "100號公車",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-052",
+      "tripId": "trip-014",
+      "sequence": 4,
+      "globalSequence": 52,
+      "date": "2026-02-27",
+      "originCityId": "city-menton",
+      "destinationCityId": "city-nice",
+      "originCountryId": "france",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-menton",
+        "city-nice"
+      ],
+      "transportationSubtype": "公車",
+      "transportationCategory": "City Bus",
+      "company": "ZOU!",
+      "baseCostEur": 2.5,
+      "baseDistanceKm": 20.1,
+      "notes": "100號公車",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-053",
+      "tripId": "trip-014",
+      "sequence": 5,
+      "globalSequence": 53,
+      "date": "2026-02-28",
+      "originCityId": "city-nice",
+      "destinationCityId": "city-marseille",
+      "originCountryId": "france",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-nice",
+        "city-marseille"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Blablacar",
+      "baseCostEur": 9.99,
+      "baseDistanceKm": 158.1,
+      "notes": "中途跳車",
+      "departureTransferId": "transfer-053-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-054",
+      "tripId": "trip-014",
+      "sequence": 6,
+      "globalSequence": 54,
+      "date": "2026-03-01",
+      "originCityId": "city-marseille",
+      "destinationCityId": "city-barcelona",
+      "originCountryId": "france",
+      "destinationCountryId": "spain",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-marseille",
+        "city-barcelona"
+      ],
+      "transportationSubtype": "郵輪",
+      "transportationCategory": "Ferry / Cruise",
+      "company": "Costa",
+      "baseCostEur": 54,
+      "baseDistanceKm": 341.6,
+      "notes": "含單人內艙&三餐",
+      "departureTransferId": "transfer-054-departure",
+      "arrivalTransferId": "transfer-054-arrival"
+    },
+    {
+      "id": "segment-055",
+      "tripId": "trip-014",
+      "sequence": 7,
+      "globalSequence": 55,
+      "date": "2026-03-03",
+      "originCityId": "city-barcelona",
+      "destinationCityId": "city-naples",
+      "originCountryId": "spain",
+      "destinationCountryId": "italy",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-barcelona",
+        "city-naples"
+      ],
+      "transportationSubtype": "郵輪",
+      "transportationCategory": "Ferry / Cruise",
+      "company": "Costa",
+      "baseCostEur": 54,
+      "baseDistanceKm": 1017.3,
+      "notes": "含單人內艙&三餐",
+      "departureTransferId": "transfer-055-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-056",
+      "tripId": "trip-014",
+      "sequence": 8,
+      "globalSequence": 56,
+      "date": "2026-03-04",
+      "originCityId": "city-naples",
+      "destinationCityId": "city-palermo",
+      "originCountryId": "italy",
+      "destinationCountryId": "italy",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-naples",
+        "city-palermo"
+      ],
+      "transportationSubtype": "郵輪",
+      "transportationCategory": "Ferry / Cruise",
+      "company": "Costa",
+      "baseCostEur": 54,
+      "baseDistanceKm": 314.8,
+      "notes": "含單人內艙&三餐",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-057",
+      "tripId": "trip-014",
+      "sequence": 9,
+      "globalSequence": 57,
+      "date": "2026-03-06",
+      "originCityId": "city-palermo",
+      "destinationCityId": "city-nurnberg",
+      "originCountryId": "italy",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-palermo",
+        "city-nurnberg"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 19.99,
+      "baseDistanceKm": 1273.6,
+      "notes": null,
+      "departureTransferId": "transfer-057-departure",
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-058",
+      "tripId": "trip-015",
+      "sequence": 1,
+      "globalSequence": 58,
+      "date": "2026-03-08",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-utrecht",
+      "originCountryId": "germany",
+      "destinationCountryId": "netherlands",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-utrecht"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 15,
+      "baseDistanceKm": 635.3,
+      "notes": "通票",
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-058-arrival"
+    },
+    {
+      "id": "segment-059",
+      "tripId": "trip-015",
+      "sequence": 2,
+      "globalSequence": 59,
+      "date": "2026-03-09",
+      "originCityId": "city-utrecht",
+      "destinationCityId": "city-zaandijk",
+      "originCountryId": "netherlands",
+      "destinationCountryId": "netherlands",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-utrecht",
+        "city-zaandijk"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "NS",
+      "baseCostEur": 12.9,
+      "baseDistanceKm": 47,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-060",
+      "tripId": "trip-015",
+      "sequence": 3,
+      "globalSequence": 60,
+      "date": "2026-03-09",
+      "originCityId": "city-zaandijk",
+      "destinationCityId": "city-amsterdam",
+      "originCountryId": "netherlands",
+      "destinationCountryId": "netherlands",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-zaandijk",
+        "city-amsterdam"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "NS",
+      "baseCostEur": 4.2,
+      "baseDistanceKm": 12,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-061",
+      "tripId": "trip-015",
+      "sequence": 4,
+      "globalSequence": 61,
+      "date": "2026-03-11",
+      "originCityId": "city-amsterdam",
+      "destinationCityId": "city-den-haag",
+      "originCountryId": "netherlands",
+      "destinationCountryId": "netherlands",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-amsterdam",
+        "city-den-haag"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 1.5,
+      "baseDistanceKm": 51.3,
+      "notes": "xhs €2.5 折扣碼",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-062",
+      "tripId": "trip-015",
+      "sequence": 5,
+      "globalSequence": 62,
+      "date": "2026-03-11",
+      "originCityId": "city-den-haag",
+      "destinationCityId": "city-rotterdam",
+      "originCountryId": "netherlands",
+      "destinationCountryId": "netherlands",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-den-haag",
+        "city-rotterdam"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "RET",
+      "baseCostEur": 5.5,
+      "baseDistanceKm": 19.9,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-063",
+      "tripId": "trip-015",
+      "sequence": 6,
+      "globalSequence": 63,
+      "date": "2026-03-11",
+      "originCityId": "city-rotterdam",
+      "destinationCityId": "city-brussels",
+      "originCountryId": "netherlands",
+      "destinationCountryId": "belgium",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-rotterdam",
+        "city-brussels"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 6,
+      "baseDistanceKm": 121.5,
+      "notes": "xhs €2.5 折扣碼",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-064",
+      "tripId": "trip-015",
+      "sequence": 7,
+      "globalSequence": 64,
+      "date": "2026-03-12",
+      "originCityId": "city-brussels",
+      "destinationCityId": "city-brugge",
+      "originCountryId": "belgium",
+      "destinationCountryId": "belgium",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-brussels",
+        "city-brugge"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "SNCB",
+      "baseCostEur": 7.5,
+      "baseDistanceKm": 88,
+      "notes": "Train+ 分攤 €2",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-065",
+      "tripId": "trip-015",
+      "sequence": 8,
+      "globalSequence": 65,
+      "date": "2026-03-13",
+      "originCityId": "city-brugge",
+      "destinationCityId": "city-gent",
+      "originCountryId": "belgium",
+      "destinationCountryId": "belgium",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-brugge",
+        "city-gent"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "SNCB",
+      "baseCostEur": 5,
+      "baseDistanceKm": 38.8,
+      "notes": "Train+ 分攤 €2",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-066",
+      "tripId": "trip-015",
+      "sequence": 9,
+      "globalSequence": 66,
+      "date": "2026-03-13",
+      "originCityId": "city-gent",
+      "destinationCityId": "city-paris",
+      "originCountryId": "belgium",
+      "destinationCountryId": "france",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-gent",
+        "city-paris"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 5.81,
+      "baseDistanceKm": 258.6,
+      "notes": "xhs 優惠碼",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-067",
+      "tripId": "trip-015",
+      "sequence": 10,
+      "globalSequence": 67,
+      "date": "2026-03-16",
+      "originCityId": "city-paris",
+      "destinationCityId": "city-munich",
+      "originCountryId": "france",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-paris",
+        "city-munich"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 15,
+      "baseDistanceKm": 682.4,
+      "notes": "通票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-068",
+      "tripId": "trip-016",
+      "sequence": 1,
+      "globalSequence": 68,
+      "date": "2026-03-19",
+      "originCityId": "city-munich",
+      "destinationCityId": "city-dusseldorf",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-munich",
+        "city-dusseldorf"
+      ],
+      "transportationSubtype": "客運",
+      "transportationCategory": "InterCity Bus",
+      "company": "Flixbus",
+      "baseCostEur": 15,
+      "baseDistanceKm": 484.2,
+      "notes": "通票",
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-069",
+      "tripId": "trip-016",
+      "sequence": 2,
+      "globalSequence": 69,
+      "date": "2026-03-20",
+      "originCityId": "city-wuppertal",
+      "destinationCityId": "city-wuppertal",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-essen",
+        "city-dortmund",
+        "city-bochum",
+        "city-aachen"
+      ],
+      "pathCityIds": [
+        "city-wuppertal",
+        "city-essen",
+        "city-dortmund",
+        "city-bochum",
+        "city-aachen",
+        "city-wuppertal"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 275.9,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-070",
+      "tripId": "trip-016",
+      "sequence": 3,
+      "globalSequence": 70,
+      "date": "2026-03-21",
+      "originCityId": "city-wuppertal",
+      "destinationCityId": "city-koblenz",
+      "originCountryId": "germany",
+      "destinationCountryId": "germany",
+      "transitCityIds": [
+        "city-duisburg",
+        "city-cologne"
+      ],
+      "pathCityIds": [
+        "city-wuppertal",
+        "city-duisburg",
+        "city-cologne",
+        "city-koblenz"
+      ],
+      "transportationSubtype": "火車",
+      "transportationCategory": "Train",
+      "company": "DB",
+      "baseCostEur": 0,
+      "baseDistanceKm": 105.1,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-071",
+      "tripId": "trip-016",
+      "sequence": 4,
+      "globalSequence": 71,
+      "date": "2026-03-21",
+      "originCityId": "city-koblenz",
+      "destinationCityId": "city-dublin",
+      "originCountryId": "germany",
+      "destinationCountryId": "ireland",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-koblenz",
+        "city-dublin"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 14.99,
+      "baseDistanceKm": 1005.3,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": null
+    },
+    {
+      "id": "segment-072",
+      "tripId": "trip-016",
+      "sequence": 5,
+      "globalSequence": 72,
+      "date": "2026-03-23",
+      "originCityId": "city-dublin",
+      "destinationCityId": "city-london",
+      "originCountryId": "ireland",
+      "destinationCountryId": "united-kingdom",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-dublin",
+        "city-london"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "RyanAir",
+      "baseCostEur": 15,
+      "baseDistanceKm": 463.8,
+      "notes": null,
+      "departureTransferId": null,
+      "arrivalTransferId": "transfer-072-arrival"
+    },
+    {
+      "id": "segment-073",
+      "tripId": "trip-016",
+      "sequence": 6,
+      "globalSequence": 73,
+      "date": "2026-03-26",
+      "originCityId": "city-london",
+      "destinationCityId": "city-munich",
+      "originCountryId": "united-kingdom",
+      "destinationCountryId": "germany",
+      "transitCityIds": [],
+      "pathCityIds": [
+        "city-london",
+        "city-munich"
+      ],
+      "transportationSubtype": "飛機",
+      "transportationCategory": "Plane",
+      "company": "easyjet",
+      "baseCostEur": 45,
+      "baseDistanceKm": 915.5,
+      "notes": null,
+      "departureTransferId": "transfer-073-departure",
+      "arrivalTransferId": null
+    }
+  ],
+  "transfers": [
+    {
+      "id": "transfer-005-arrival",
+      "segmentId": "segment-005",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-london",
+      "airportId": "airport-stn",
+      "costEur": 10.88,
+      "distanceKm": 49.3,
+      "notes": "National Express"
+    },
+    {
+      "id": "transfer-006-departure",
+      "segmentId": "segment-006",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-london",
+      "airportId": "airport-stn",
+      "costEur": 10.87,
+      "distanceKm": 49.3,
+      "notes": "National Express"
+    },
+    {
+      "id": "transfer-013-departure",
+      "segmentId": "segment-013",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-stuttgart",
+      "airportId": "airport-str",
+      "costEur": 7.78,
+      "distanceKm": 10.9,
+      "notes": "Flixbus, 20% OFF"
+    },
+    {
+      "id": "transfer-018-arrival",
+      "segmentId": "segment-018",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-milan",
+      "airportId": "airport-bgy",
+      "costEur": 4.5,
+      "distanceKm": 43.6,
+      "notes": "Terravision"
+    },
+    {
+      "id": "transfer-019-departure",
+      "segmentId": "segment-019",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-milan",
+      "airportId": "airport-mxp",
+      "costEur": 7.6,
+      "distanceKm": 40.7,
+      "notes": "Trenord, Cardona FN→Busto Arsizio→MXP"
+    },
+    {
+      "id": "transfer-032-arrival",
+      "segmentId": "segment-032",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-vilnius",
+      "airportId": "airport-vno",
+      "costEur": 0.9,
+      "distanceKm": 3.9,
+      "notes": "LTG Link, 50% OFF"
+    },
+    {
+      "id": "transfer-033-departure",
+      "segmentId": "segment-033",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-vilnius",
+      "airportId": "airport-vno",
+      "costEur": 1.25,
+      "distanceKm": 3.9,
+      "notes": "市區公車60分票"
+    },
+    {
+      "id": "transfer-033-arrival",
+      "segmentId": "segment-033",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-oslo",
+      "airportId": "airport-osl",
+      "costEur": 11.4,
+      "distanceKm": 37.2,
+      "notes": "vy, RE25"
+    },
+    {
+      "id": "transfer-034-departure",
+      "segmentId": "segment-034",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-oslo",
+      "airportId": "airport-trf",
+      "costEur": 12.86,
+      "distanceKm": 85.4,
+      "notes": "RE10 Moss→渡輪到 Horten→公車到 Torp→TRF"
+    },
+    {
+      "id": "transfer-035-arrival",
+      "segmentId": "segment-035",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-bucharest",
+      "airportId": "airport-bbu",
+      "costEur": 0.6,
+      "distanceKm": 6.1,
+      "notes": "STB, 公車"
+    },
+    {
+      "id": "transfer-036-arrival",
+      "segmentId": "segment-036",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-rome",
+      "airportId": "airport-cia",
+      "costEur": 1.5,
+      "distanceKm": 13.5,
+      "notes": "ATAM, 公車"
+    },
+    {
+      "id": "transfer-037-departure",
+      "segmentId": "segment-037",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-rome",
+      "airportId": "airport-fco",
+      "costEur": 2.2,
+      "distanceKm": 24.7,
+      "notes": "Cortal, EUR Magliana→FCO"
+    },
+    {
+      "id": "transfer-043-arrival",
+      "segmentId": "segment-043",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-goreme",
+      "airportId": "airport-asr",
+      "costEur": 8.5,
+      "distanceKm": 59.5,
+      "notes": "共享接送"
+    },
+    {
+      "id": "transfer-044-departure",
+      "segmentId": "segment-044",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-goreme",
+      "airportId": "airport-nav",
+      "costEur": 7.2,
+      "distanceKm": 29.9,
+      "notes": "共享接送"
+    },
+    {
+      "id": "transfer-044-arrival",
+      "segmentId": "segment-044",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-istanbul",
+      "airportId": "airport-saw",
+      "costEur": 1.3,
+      "distanceKm": 31.1,
+      "notes": "M4→Marmaray"
+    },
+    {
+      "id": "transfer-045-departure",
+      "segmentId": "segment-045",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-istanbul",
+      "airportId": "airport-saw",
+      "costEur": 0.82,
+      "distanceKm": 31.1,
+      "notes": "M4"
+    },
+    {
+      "id": "transfer-049-departure",
+      "segmentId": "segment-049",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-strasbourg",
+      "airportId": "airport-sxb",
+      "costEur": 3.2,
+      "distanceKm": 9.5,
+      "notes": "SNCF, 火車"
+    },
+    {
+      "id": "transfer-053-departure",
+      "segmentId": "segment-053",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-nice",
+      "airportId": "airport-nce",
+      "costEur": 1.7,
+      "distanceKm": 6.3,
+      "notes": "輕軌"
+    },
+    {
+      "id": "transfer-054-departure",
+      "segmentId": "segment-054",
+      "side": "departure",
+      "endpointKind": "local",
+      "endpointCityId": "city-marseille",
+      "airportId": null,
+      "costEur": 1.7,
+      "distanceKm": null,
+      "notes": "ZOU!, 公車"
+    },
+    {
+      "id": "transfer-054-arrival",
+      "segmentId": "segment-054",
+      "side": "arrival",
+      "endpointKind": "local",
+      "endpointCityId": "city-barcelona",
+      "airportId": null,
+      "costEur": 2.25,
+      "distanceKm": null,
+      "notes": "T3-PortBus, 公車"
+    },
+    {
+      "id": "transfer-055-departure",
+      "segmentId": "segment-055",
+      "side": "departure",
+      "endpointKind": "local",
+      "endpointCityId": "city-barcelona",
+      "airportId": null,
+      "costEur": 2.25,
+      "distanceKm": null,
+      "notes": "T3-PortBus, 公車"
+    },
+    {
+      "id": "transfer-057-departure",
+      "segmentId": "segment-057",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-palermo",
+      "airportId": "airport-pmo",
+      "costEur": 6,
+      "distanceKm": 25.3,
+      "notes": "Prestia e Comandè, 客運"
+    },
+    {
+      "id": "transfer-058-arrival",
+      "segmentId": "segment-058",
+      "side": "arrival",
+      "endpointKind": "local",
+      "endpointCityId": "city-utrecht",
+      "airportId": null,
+      "costEur": 3,
+      "distanceKm": null,
+      "notes": "NS, 火車"
+    },
+    {
+      "id": "transfer-072-arrival",
+      "segmentId": "segment-072",
+      "side": "arrival",
+      "endpointKind": "airport",
+      "endpointCityId": "city-london",
+      "airportId": "airport-ltn",
+      "costEur": 11.6,
+      "distanceKm": 45.2,
+      "notes": "arriva, GreenLine 757"
+    },
+    {
+      "id": "transfer-073-departure",
+      "segmentId": "segment-073",
+      "side": "departure",
+      "endpointKind": "airport",
+      "endpointCityId": "city-london",
+      "airportId": "airport-lgw",
+      "costEur": 19.24,
+      "distanceKm": 39.1,
+      "notes": "National Rail, 火車"
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "accommodation-001",
+      "tripId": "trip-001",
+      "sequence": 1,
+      "cityId": "city-salzburg",
+      "countryId": "austria",
+      "type": "Airbnb",
+      "label": "Airbnb in Salzburg",
+      "notes": "臨時找，較高價/鑰匙很難開/含簡單早餐",
+      "pricePerNightEur": 46.72,
+      "nights": 2,
+      "totalCostEur": 93.44,
+      "commuteMinutes": 25,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 3.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-002",
+      "tripId": "trip-001",
+      "sequence": 2,
+      "cityId": "city-salzburg",
+      "countryId": "austria",
+      "type": "Hostel",
+      "label": "Hostel in Salzburg",
+      "notes": "怪室友→快逃",
+      "pricePerNightEur": 31,
+      "nights": 1,
+      "totalCostEur": 31,
+      "commuteMinutes": 10,
+      "rating": {
+        "components": [
+          1,
+          0,
+          0.5,
+          0.5,
+          0,
+          0,
+          -0.5
+        ],
+        "total": 1.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-003",
+      "tripId": "trip-002",
+      "sequence": 3,
+      "cityId": "city-london",
+      "countryId": "united-kingdom",
+      "type": "Airport",
+      "label": "Airport in London",
+      "notes": "客運站快冷死",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          0.5,
+          0,
+          0,
+          0,
+          0.5
+        ],
+        "total": 1
+      },
+      "airportCode": "STN"
+    },
+    {
+      "id": "accommodation-004",
+      "tripId": "trip-002",
+      "sequence": 4,
+      "cityId": "city-london",
+      "countryId": "united-kingdom",
+      "type": "Airbnb",
+      "label": "Airbnb in London",
+      "notes": null,
+      "pricePerNightEur": 40.74,
+      "nights": 2,
+      "totalCostEur": 81.48,
+      "commuteMinutes": 45,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.25,
+          0.25,
+          0.25,
+          0.5,
+          0.25
+        ],
+        "total": 3.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-005",
+      "tripId": "trip-002",
+      "sequence": 5,
+      "cityId": "city-nurnberg",
+      "countryId": "germany",
+      "type": "Hostel",
+      "label": "Hostel in Nürnberg",
+      "notes": null,
+      "pricePerNightEur": 17.74,
+      "nights": 1,
+      "totalCostEur": 17.74,
+      "commuteMinutes": 5,
+      "rating": {
+        "components": [
+          1,
+          0.5,
+          1,
+          0.5,
+          0.25,
+          0,
+          0
+        ],
+        "total": 3.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-006",
+      "tripId": "trip-003",
+      "sequence": 6,
+      "cityId": "city-hamburg",
+      "countryId": "germany",
+      "type": "Airbnb",
+      "label": "Airbnb in Hamburg",
+      "notes": null,
+      "pricePerNightEur": 39.71,
+      "nights": 2,
+      "totalCostEur": 79.42,
+      "commuteMinutes": 30,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 3.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-007",
+      "tripId": "trip-003",
+      "sequence": 7,
+      "cityId": "city-berlin",
+      "countryId": "germany",
+      "type": "Airbnb",
+      "label": "Airbnb in Berlin",
+      "notes": "電動床",
+      "pricePerNightEur": 34.4,
+      "nights": 2,
+      "totalCostEur": 68.8,
+      "commuteMinutes": 40,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0.25,
+          0.5,
+          0.5,
+          0.25
+        ],
+        "total": 4
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-008",
+      "tripId": "trip-003",
+      "sequence": 8,
+      "cityId": "city-hof",
+      "countryId": "germany",
+      "type": "Hotel",
+      "label": "Hotel in Hof",
+      "notes": "荒涼車站",
+      "pricePerNightEur": 32.5,
+      "nights": 1,
+      "totalCostEur": 32.5,
+      "commuteMinutes": 20,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.25
+        ],
+        "total": 4.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-009",
+      "tripId": "trip-004",
+      "sequence": 9,
+      "cityId": "city-barcelona",
+      "countryId": "spain",
+      "type": "Airport",
+      "label": "Airport in Barcelona",
+      "notes": null,
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          0,
+          0,
+          0,
+          0,
+          0.5
+        ],
+        "total": 0.5
+      },
+      "airportCode": "BCN"
+    },
+    {
+      "id": "accommodation-010",
+      "tripId": "trip-004",
+      "sequence": 10,
+      "cityId": "city-barcelona",
+      "countryId": "spain",
+      "type": "Airbnb",
+      "label": "Airbnb in Barcelona",
+      "notes": null,
+      "pricePerNightEur": 31.06,
+      "nights": 1,
+      "totalCostEur": 31.06,
+      "commuteMinutes": 15,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0.5,
+          0.25,
+          0.25,
+          0
+        ],
+        "total": 3.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-011",
+      "tripId": "trip-004",
+      "sequence": 11,
+      "cityId": "city-andorra",
+      "countryId": "andorra",
+      "type": "Hotel",
+      "label": "Hotel in Andorra",
+      "notes": "升等三人房/含早餐",
+      "pricePerNightEur": 35.3,
+      "nights": 1,
+      "totalCostEur": 35.3,
+      "commuteMinutes": 30,
+      "rating": {
+        "components": [
+          1,
+          0.5,
+          0.25,
+          0.25,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "total": 3.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-012",
+      "tripId": "trip-004",
+      "sequence": 12,
+      "cityId": "city-barcelona",
+      "countryId": "spain",
+      "type": "Airbnb",
+      "label": "Airbnb in Barcelona",
+      "notes": "隔音世紀爛",
+      "pricePerNightEur": 30.3,
+      "nights": 3,
+      "totalCostEur": 90.9,
+      "commuteMinutes": 15,
+      "rating": {
+        "components": [
+          1,
+          0,
+          0.5,
+          0.25,
+          0.25,
+          0.25,
+          0
+        ],
+        "total": 2.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-013",
+      "tripId": "trip-004",
+      "sequence": 13,
+      "cityId": "city-barcelona",
+      "countryId": "spain",
+      "type": "Airport",
+      "label": "Airport in Barcelona",
+      "notes": "躺最上面樓層的木地坂",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "total": 3
+      },
+      "airportCode": "BCN"
+    },
+    {
+      "id": "accommodation-014",
+      "tripId": "trip-005",
+      "sequence": 14,
+      "cityId": "city-krakow",
+      "countryId": "poland",
+      "type": "Hotel",
+      "label": "Hotel in Kraków",
+      "notes": null,
+      "pricePerNightEur": 29.78,
+      "nights": 2,
+      "totalCostEur": 59.56,
+      "commuteMinutes": 30,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.75,
+          0.25,
+          0.5,
+          0.5,
+          0.25
+        ],
+        "total": 4.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-015",
+      "tripId": "trip-005",
+      "sequence": 15,
+      "cityId": "city-milan",
+      "countryId": "italy",
+      "type": "Airport",
+      "label": "Airport in Milan",
+      "notes": "彎曲椅",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          0.5,
+          0.5,
+          1,
+          0,
+          0.5
+        ],
+        "total": 2.5
+      },
+      "airportCode": "BGY"
+    },
+    {
+      "id": "accommodation-016",
+      "tripId": "trip-005",
+      "sequence": 16,
+      "cityId": "city-milan",
+      "countryId": "italy",
+      "type": "Hostel",
+      "label": "Hostel in Milan",
+      "notes": "膠囊旅館",
+      "pricePerNightEur": 22.2,
+      "nights": 2,
+      "totalCostEur": 44.4,
+      "commuteMinutes": 15,
+      "rating": {
+        "components": [
+          1,
+          0,
+          1,
+          0.5,
+          0,
+          0.25,
+          0.25
+        ],
+        "total": 3
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-017",
+      "tripId": "trip-006",
+      "sequence": 17,
+      "cityId": "city-freiburg",
+      "countryId": "germany",
+      "type": "Airbnb",
+      "label": "Airbnb in Freiburg",
+      "notes": "木屋",
+      "pricePerNightEur": 33.3,
+      "nights": 1,
+      "totalCostEur": 33.3,
+      "commuteMinutes": 50,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0,
+          0,
+          0.5,
+          0
+        ],
+        "total": 3
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-018",
+      "tripId": "trip-006",
+      "sequence": 18,
+      "cityId": "city-strasbourg",
+      "countryId": "france",
+      "type": "Airbnb",
+      "label": "Airbnb in Strasbourg",
+      "notes": "地下室",
+      "pricePerNightEur": 34.86,
+      "nights": 1,
+      "totalCostEur": 34.86,
+      "commuteMinutes": 40,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0,
+          0.25,
+          0.25,
+          0
+        ],
+        "total": 3
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-019",
+      "tripId": "trip-006",
+      "sequence": 19,
+      "cityId": "city-karlsruhe",
+      "countryId": "germany",
+      "type": "Airbnb",
+      "label": "Airbnb in Karlsruhe",
+      "notes": "溫馨",
+      "pricePerNightEur": 31.06,
+      "nights": 1,
+      "totalCostEur": 31.06,
+      "commuteMinutes": 35,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0.25,
+          0.5,
+          0.25,
+          0.25
+        ],
+        "total": 3.75
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-020",
+      "tripId": "trip-006",
+      "sequence": 20,
+      "cityId": "city-frankfurt",
+      "countryId": "germany",
+      "type": "Airbnb",
+      "label": "Airbnb in Frankfurt",
+      "notes": "把我的私人物品丟到垃圾桶了! 賠了 €53",
+      "pricePerNightEur": 32.07,
+      "nights": 2,
+      "totalCostEur": 64.14,
+      "commuteMinutes": 35,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0,
+          0.25,
+          0.25,
+          -1
+        ],
+        "total": 2
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-021",
+      "tripId": "trip-007",
+      "sequence": 21,
+      "cityId": "city-berlin",
+      "countryId": "germany",
+      "type": "Airport",
+      "label": "Airport in Berlin",
+      "notes": "關燈的空航廈/4點才能入安檢區!",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0.5,
+          0
+        ],
+        "total": 3.5
+      },
+      "airportCode": "BER"
+    },
+    {
+      "id": "accommodation-022",
+      "tripId": "trip-007",
+      "sequence": 22,
+      "cityId": "city-budapest",
+      "countryId": "hungary",
+      "type": "Airbnb",
+      "label": "Airbnb in Budapest",
+      "notes": "木屋，溫馨",
+      "pricePerNightEur": 28.32,
+      "nights": 2,
+      "totalCostEur": 56.64,
+      "commuteMinutes": 50,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.75,
+          0,
+          0.5,
+          0.5,
+          0.25
+        ],
+        "total": 4
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-023",
+      "tripId": "trip-007",
+      "sequence": 23,
+      "cityId": "city-prague",
+      "countryId": "czechia",
+      "type": "Hotel",
+      "label": "Hotel in Prague",
+      "notes": null,
+      "pricePerNightEur": 25.88,
+      "nights": 2,
+      "totalCostEur": 51.76,
+      "commuteMinutes": 25,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.75,
+          0.25,
+          0.5,
+          0.5,
+          0.25
+        ],
+        "total": 4.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-024",
+      "tripId": "trip-008",
+      "sequence": 24,
+      "cityId": "city-nurnberg",
+      "countryId": "germany",
+      "type": "Airport",
+      "label": "Airport in Nürnberg",
+      "notes": "沒有扶手椅子",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1.5,
+          1,
+          1,
+          0.5,
+          0
+        ],
+        "total": 4
+      },
+      "airportCode": "NUE"
+    },
+    {
+      "id": "accommodation-025",
+      "tripId": "trip-008",
+      "sequence": 25,
+      "cityId": "city-vilnius",
+      "countryId": "lithuania",
+      "type": "Hostel",
+      "label": "Hostel in Vilnius",
+      "notes": "窗戶冷風一直灌",
+      "pricePerNightEur": 27.54,
+      "nights": 1,
+      "totalCostEur": 27.54,
+      "commuteMinutes": 5,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.75,
+          0.5,
+          0,
+          0.25,
+          -0.25
+        ],
+        "total": 3.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-026",
+      "tripId": "trip-008",
+      "sequence": 26,
+      "cityId": "city-oslo",
+      "countryId": "norway",
+      "type": "Airport",
+      "label": "Airport in Oslo",
+      "notes": null,
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1.5,
+          1,
+          1,
+          0.5,
+          0.5
+        ],
+        "total": 4.5
+      },
+      "airportCode": "OSL"
+    },
+    {
+      "id": "accommodation-027",
+      "tripId": "trip-008",
+      "sequence": 27,
+      "cityId": "city-oslo",
+      "countryId": "norway",
+      "type": "Airbnb",
+      "label": "Airbnb in Oslo",
+      "notes": "借餐具",
+      "pricePerNightEur": 34.92,
+      "nights": 2,
+      "totalCostEur": 69.84,
+      "commuteMinutes": 30,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 3.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-028",
+      "tripId": "trip-008",
+      "sequence": 28,
+      "cityId": "city-skopje",
+      "countryId": "north-macedonia",
+      "type": "Airport",
+      "label": "Airport in Skopje",
+      "notes": "吃了 Borek : D",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1,
+          0.5,
+          1,
+          0,
+          0
+        ],
+        "total": 2.5
+      },
+      "airportCode": "SKP"
+    },
+    {
+      "id": "accommodation-029",
+      "tripId": "trip-009",
+      "sequence": 29,
+      "cityId": "city-bucharest",
+      "countryId": "romania",
+      "type": "Hotel",
+      "label": "Hotel in Bucharest",
+      "notes": null,
+      "pricePerNightEur": 20.07,
+      "nights": 1,
+      "totalCostEur": 20.07,
+      "commuteMinutes": 15,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0.5,
+          0.25,
+          0.5,
+          0
+        ],
+        "total": 4.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-030",
+      "tripId": "trip-009",
+      "sequence": 30,
+      "cityId": "city-rome",
+      "countryId": "italy",
+      "type": "Airbnb",
+      "label": "Airbnb in Rome",
+      "notes": "房客素質差/CO時沒法沖馬桶賠 €1.2",
+      "pricePerNightEur": 24.93,
+      "nights": 3,
+      "totalCostEur": 74.79,
+      "commuteMinutes": 35,
+      "rating": {
+        "components": [
+          1,
+          0.5,
+          1,
+          0.25,
+          0.25,
+          0.25,
+          -0.25
+        ],
+        "total": 3
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-031",
+      "tripId": "trip-012",
+      "sequence": 31,
+      "cityId": "city-goreme",
+      "countryId": "turkey",
+      "type": "Hotel",
+      "label": "Hotel in Göreme",
+      "notes": "洞穴飯店/貓貓讚 OwOb/含早餐",
+      "pricePerNightEur": 32.85,
+      "nights": 2,
+      "totalCostEur": 65.7,
+      "commuteMinutes": 10,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "total": 4.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-032",
+      "tripId": "trip-012",
+      "sequence": 32,
+      "cityId": "city-istanbul",
+      "countryId": "turkey",
+      "type": "Hotel",
+      "label": "Hotel in Istanbul",
+      "notes": "煙味/含簡單早餐",
+      "pricePerNightEur": 14.54,
+      "nights": 3,
+      "totalCostEur": 43.62,
+      "commuteMinutes": 30,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0.25,
+          0.5,
+          0.5,
+          0
+        ],
+        "total": 4.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-033",
+      "tripId": "trip-014",
+      "sequence": 33,
+      "cityId": "city-stuttgart",
+      "countryId": "germany",
+      "type": "Airport",
+      "label": "Airport in Stuttgart",
+      "notes": "裝修很吵",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1,
+          0.5,
+          0,
+          0.5,
+          0
+        ],
+        "total": 2
+      },
+      "airportCode": "STR"
+    },
+    {
+      "id": "accommodation-034",
+      "tripId": "trip-014",
+      "sequence": 34,
+      "cityId": "city-nice",
+      "countryId": "france",
+      "type": "Airbnb",
+      "label": "Airbnb in Nice",
+      "notes": null,
+      "pricePerNightEur": 37.89,
+      "nights": 2,
+      "totalCostEur": 75.78,
+      "commuteMinutes": 25,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0
+        ],
+        "total": 3
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-035",
+      "tripId": "trip-014",
+      "sequence": 35,
+      "cityId": "city-marseille",
+      "countryId": "france",
+      "type": "Airbnb",
+      "label": "Airbnb in Marseille",
+      "notes": "房東真的很愛聊天",
+      "pricePerNightEur": 25.62,
+      "nights": 1,
+      "totalCostEur": 25.62,
+      "commuteMinutes": 25,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.75,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 3.75
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-036",
+      "tripId": "trip-014",
+      "sequence": 36,
+      "cityId": "city-palermo",
+      "countryId": "italy",
+      "type": "Airport",
+      "label": "Airport in Palermo",
+      "notes": "原本的地方被保安趕出來",
+      "pricePerNightEur": 0,
+      "nights": 1,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          1,
+          0,
+          1,
+          0.5,
+          0
+        ],
+        "total": 2.5
+      },
+      "airportCode": "PMO"
+    },
+    {
+      "id": "accommodation-037",
+      "tripId": "trip-015",
+      "sequence": 37,
+      "cityId": "city-amsterdam",
+      "countryId": "netherlands",
+      "type": "Hostel",
+      "label": "Hostel in Amsterdam",
+      "notes": "船艙/臭氣熏天/附簡單早餐",
+      "pricePerNightEur": 40,
+      "nights": 2,
+      "totalCostEur": 80,
+      "commuteMinutes": 15,
+      "rating": {
+        "components": [
+          1,
+          0.5,
+          0.25,
+          0.5,
+          0,
+          0.25,
+          -0.25
+        ],
+        "total": 2.25
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-038",
+      "tripId": "trip-015",
+      "sequence": 38,
+      "cityId": "city-brussels",
+      "countryId": "belgium",
+      "type": "Airbnb",
+      "label": "Airbnb in Brussels",
+      "notes": "附簡單早餐/消夜",
+      "pricePerNightEur": 36.15,
+      "nights": 1,
+      "totalCostEur": 36.15,
+      "commuteMinutes": 20,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.25,
+          0.25,
+          0.5,
+          0.25,
+          0.5
+        ],
+        "total": 3.75
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-039",
+      "tripId": "trip-015",
+      "sequence": 39,
+      "cityId": "city-brugge",
+      "countryId": "belgium",
+      "type": "Airbnb",
+      "label": "Airbnb in Brugge",
+      "notes": "閣樓房",
+      "pricePerNightEur": 24.65,
+      "nights": 1,
+      "totalCostEur": 24.65,
+      "commuteMinutes": 20,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0.25,
+          0.25,
+          0.5,
+          0
+        ],
+        "total": 4
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-040",
+      "tripId": "trip-015",
+      "sequence": 40,
+      "cityId": "city-paris",
+      "countryId": "france",
+      "type": "Airbnb",
+      "label": "Airbnb in Paris",
+      "notes": "調酒/很愛聊天",
+      "pricePerNightEur": 24.28,
+      "nights": 3,
+      "totalCostEur": 72.84,
+      "commuteMinutes": 60,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0,
+          0.5,
+          0.25,
+          -0.25
+        ],
+        "total": 3.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-041",
+      "tripId": "trip-016",
+      "sequence": 41,
+      "cityId": "city-wuppertal",
+      "countryId": "germany",
+      "type": "Hotel",
+      "label": "Hotel in Wuppertal",
+      "notes": "優惠券/沒人給我CI!",
+      "pricePerNightEur": 19,
+      "nights": 2,
+      "totalCostEur": 38,
+      "commuteMinutes": 10,
+      "rating": {
+        "components": [
+          1,
+          1,
+          1,
+          0.25,
+          0.25,
+          0.5,
+          -0.25
+        ],
+        "total": 3.75
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-042",
+      "tripId": "trip-016",
+      "sequence": 42,
+      "cityId": "city-london",
+      "countryId": "united-kingdom",
+      "type": "Airbnb",
+      "label": "Airbnb in London",
+      "notes": null,
+      "pricePerNightEur": 28.83,
+      "nights": 3,
+      "totalCostEur": 86.49,
+      "commuteMinutes": 25,
+      "rating": {
+        "components": [
+          1,
+          1,
+          0.75,
+          0.25,
+          0.25,
+          0.25,
+          0
+        ],
+        "total": 3.5
+      },
+      "airportCode": null
+    },
+    {
+      "id": "accommodation-043",
+      "tripId": "trip-016",
+      "sequence": 43,
+      "cityId": "city-dublin",
+      "countryId": "ireland",
+      "type": "Airport",
+      "label": "Airport in Dublin",
+      "notes": null,
+      "pricePerNightEur": 0,
+      "nights": 2,
+      "totalCostEur": 0,
+      "commuteMinutes": null,
+      "rating": {
+        "components": [
+          0.5,
+          0,
+          1,
+          0,
+          0
+        ],
+        "total": 1.5
+      },
+      "airportCode": "DUB"
+    }
+  ],
+  "photos": [
+    {
+      "id": "country-andorra-02",
+      "countryId": "andorra",
+      "path": "images/countries/andorra/andorra-old-stone-bridge.webp",
+      "displayOrder": 1,
+      "candidateCityId": null,
+      "altText": "An old stone bridge in Andorra."
+    },
+    {
+      "id": "country-andorra-03",
+      "countryId": "andorra",
+      "path": "images/countries/andorra/andorra-christmas-lights.webp",
+      "displayOrder": 2,
+      "candidateCityId": null,
+      "altText": "Christmas lights in Andorra la Vella."
+    },
+    {
+      "id": "country-andorra-01",
+      "countryId": "andorra",
+      "path": "images/countries/andorra/canillo-suspension-bridge.webp",
+      "displayOrder": 3,
+      "candidateCityId": null,
+      "altText": "A suspension bridge above the mountains in Canillo."
+    },
+    {
+      "id": "country-austria-01",
+      "countryId": "austria",
+      "path": "images/countries/austria/austrian-alps-panorama.webp",
+      "displayOrder": 1,
+      "candidateCityId": null,
+      "altText": "A panoramic view of the Austrian Alps."
+    },
+    {
+      "id": "country-austria-02",
+      "countryId": "austria",
+      "path": "images/countries/austria/salzburg-cityscape.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-salzburg",
+      "altText": "The Salzburg cityscape and surrounding mountains."
+    },
+    {
+      "id": "country-austria-03",
+      "countryId": "austria",
+      "path": "images/countries/austria/salzburg-residenzplatz.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-salzburg",
+      "altText": "Residenzplatz in Salzburg."
+    },
+    {
+      "id": "country-belgium-01",
+      "countryId": "belgium",
+      "path": "images/countries/belgium/brussels-grand-place.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-brussels",
+      "altText": "Grand-Place in Brussels."
+    },
+    {
+      "id": "country-belgium-02",
+      "countryId": "belgium",
+      "path": "images/countries/belgium/ghent-historic-center.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-gent",
+      "altText": "The historic center of Ghent."
+    },
+    {
+      "id": "country-belgium-03",
+      "countryId": "belgium",
+      "path": "images/countries/belgium/bruges-market-square.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-brugge",
+      "altText": "The historic market square in Bruges."
+    },
+    {
+      "id": "country-czechia-02",
+      "countryId": "czechia",
+      "path": "images/countries/czechia/karlovy-vary-winter-square.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-karlovy-vary",
+      "altText": "A snow-covered square in Karlovy Vary."
+    },
+    {
+      "id": "country-czechia-01",
+      "countryId": "czechia",
+      "path": "images/countries/czechia/prague-st-vitus-cathedral.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-prague",
+      "altText": "St. Vitus Cathedral in Prague."
+    },
+    {
+      "id": "country-czechia-03",
+      "countryId": "czechia",
+      "path": "images/countries/czechia/prague-national-museum-night.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-prague",
+      "altText": "The National Museum in Prague at night."
+    },
+    {
+      "id": "country-france-02",
+      "countryId": "france",
+      "path": "images/countries/france/colmar-petite-venise.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-colmar",
+      "altText": "The Petite Venise district in Colmar."
+    },
+    {
+      "id": "country-france-03",
+      "countryId": "france",
+      "path": "images/countries/france/nice-carnival-parade.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-nice",
+      "altText": "A carnival parade in Nice."
+    },
+    {
+      "id": "country-france-01",
+      "countryId": "france",
+      "path": "images/countries/france/paris-louvre-pyramid-night.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-paris",
+      "altText": "The Louvre Pyramid in Paris at night."
+    },
+    {
+      "id": "country-germany-02",
+      "countryId": "germany",
+      "path": "images/countries/germany/konigssee-lake.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-konigssee",
+      "altText": "Königssee lake in the Bavarian Alps."
+    },
+    {
+      "id": "country-germany-01",
+      "countryId": "germany",
+      "path": "images/countries/germany/berlin-brandenburg-gate.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-berlin",
+      "altText": "The Brandenburg Gate in Berlin."
+    },
+    {
+      "id": "country-germany-03",
+      "countryId": "germany",
+      "path": "images/countries/germany/bavarian-alpine-lake-winter.webp",
+      "displayOrder": 3,
+      "candidateCityId": null,
+      "altText": "A Bavarian alpine lake in winter."
+    },
+    {
+      "id": "country-hungary-02",
+      "countryId": "hungary",
+      "path": "images/countries/hungary/budapest-heritage-train.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-budapest",
+      "altText": "A heritage train in Budapest."
+    },
+    {
+      "id": "country-hungary-01",
+      "countryId": "hungary",
+      "path": "images/countries/hungary/budapest-parliament-night.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-budapest",
+      "altText": "The Hungarian Parliament Building in Budapest at night."
+    },
+    {
+      "id": "country-hungary-03",
+      "countryId": "hungary",
+      "path": "images/countries/hungary/budapest-yellow-trams.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-budapest",
+      "altText": "Yellow trams on a Budapest street."
+    },
+    {
+      "id": "country-ireland-01",
+      "countryId": "ireland",
+      "path": "images/countries/ireland/dublin-trinity-college.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-dublin",
+      "altText": "The campus of Trinity College Dublin."
+    },
+    {
+      "id": "country-ireland-03",
+      "countryId": "ireland",
+      "path": "images/countries/ireland/dublin-luas-tram.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-dublin",
+      "altText": "A Luas tram in Dublin."
+    },
+    {
+      "id": "country-ireland-02",
+      "countryId": "ireland",
+      "path": "images/countries/ireland/dublin-temple-bar-night.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-dublin",
+      "altText": "Temple Bar in Dublin at night."
+    },
+    {
+      "id": "country-italy-01",
+      "countryId": "italy",
+      "path": "images/countries/italy/rome-colosseum.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-rome",
+      "altText": "The Colosseum in Rome."
+    },
+    {
+      "id": "country-italy-02",
+      "countryId": "italy",
+      "path": "images/countries/italy/pompeii-ruins.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-naples",
+      "altText": "The archaeological ruins of Pompeii."
+    },
+    {
+      "id": "country-italy-03",
+      "countryId": "italy",
+      "path": "images/countries/italy/naples-market-street.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-naples",
+      "altText": "A market street in Naples."
+    },
+    {
+      "id": "country-lithuania-01",
+      "countryId": "lithuania",
+      "path": "images/countries/lithuania/vilnius-uzupis-republic.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-vilnius",
+      "altText": "A street scene in the Užupis district of Vilnius."
+    },
+    {
+      "id": "country-lithuania-02",
+      "countryId": "lithuania",
+      "path": "images/countries/lithuania/vilnius-bernardine-church.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-vilnius",
+      "altText": "Bernardine Church in Vilnius."
+    },
+    {
+      "id": "country-lithuania-03",
+      "countryId": "lithuania",
+      "path": "images/countries/lithuania/vilnius-shopping-district.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-vilnius",
+      "altText": "A shopping district in Vilnius."
+    },
+    {
+      "id": "country-monaco-01",
+      "countryId": "monaco",
+      "path": "images/countries/monaco/monaco-coastline.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-monaco",
+      "altText": "The coastline and harbor of Monaco."
+    },
+    {
+      "id": "country-monaco-03",
+      "countryId": "monaco",
+      "path": "images/countries/monaco/monte-carlo-casino-lobby.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-monaco",
+      "altText": "The lobby of the Monte Carlo Casino."
+    },
+    {
+      "id": "country-monaco-02",
+      "countryId": "monaco",
+      "path": "images/countries/monaco/monte-carlo-casino-hall.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-monaco",
+      "altText": "An interior hall at the Monte Carlo Casino."
+    },
+    {
+      "id": "country-netherlands-01",
+      "countryId": "netherlands",
+      "path": "images/countries/netherlands/utrecht-canal.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-utrecht",
+      "altText": "A canal in Utrecht."
+    },
+    {
+      "id": "country-netherlands-02",
+      "countryId": "netherlands",
+      "path": "images/countries/netherlands/amsterdam-canal-district-night.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-amsterdam",
+      "altText": "The Amsterdam canal district at night."
+    },
+    {
+      "id": "country-netherlands-03",
+      "countryId": "netherlands",
+      "path": "images/countries/netherlands/rotterdam-street-art.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-rotterdam",
+      "altText": "Street art in Rotterdam."
+    },
+    {
+      "id": "country-north-macedonia-01",
+      "countryId": "north-macedonia",
+      "path": "images/countries/north-macedonia/skopje-airport-terminal.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-skopje",
+      "altText": "The terminal at Skopje International Airport."
+    },
+    {
+      "id": "country-north-macedonia-02",
+      "countryId": "north-macedonia",
+      "path": "images/countries/north-macedonia/north-macedonian-burek.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-skopje",
+      "altText": "Burek during an airport overnight stay in North Macedonia."
+    },
+    {
+      "id": "country-north-macedonia-03",
+      "countryId": "north-macedonia",
+      "path": "images/countries/north-macedonia/skopje-airport-gate.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-skopje",
+      "altText": "A departure gate at Skopje International Airport."
+    },
+    {
+      "id": "country-norway-02",
+      "countryId": "norway",
+      "path": "images/countries/norway/oslo-fram-museum.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-oslo",
+      "altText": "The Fram Museum in Oslo."
+    },
+    {
+      "id": "country-norway-01",
+      "countryId": "norway",
+      "path": "images/countries/norway/oslo-munch-museum.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-oslo",
+      "altText": "The MUNCH museum in Oslo."
+    },
+    {
+      "id": "country-norway-03",
+      "countryId": "norway",
+      "path": "images/countries/norway/norway-winter-cabin.webp",
+      "displayOrder": 3,
+      "candidateCityId": null,
+      "altText": "A cabin in a snowy Norwegian landscape."
+    },
+    {
+      "id": "country-poland-01",
+      "countryId": "poland",
+      "path": "images/countries/poland/wieliczka-salt-mine.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-krakow",
+      "altText": "An underground chamber in the Wieliczka Salt Mine."
+    },
+    {
+      "id": "country-poland-03",
+      "countryId": "poland",
+      "path": "images/countries/poland/wieliczka-market-square.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-krakow",
+      "altText": "The market square in Wieliczka."
+    },
+    {
+      "id": "country-poland-02",
+      "countryId": "poland",
+      "path": "images/countries/poland/krakow-christmas-market.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-krakow",
+      "altText": "The Christmas market in Kraków."
+    },
+    {
+      "id": "country-romania-03",
+      "countryId": "romania",
+      "path": "images/countries/romania/bucharest-civic-building.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-bucharest",
+      "altText": "A civic building in Bucharest."
+    },
+    {
+      "id": "country-romania-02",
+      "countryId": "romania",
+      "path": "images/countries/romania/bucharest-night-street.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-bucharest",
+      "altText": "A street in Bucharest at night."
+    },
+    {
+      "id": "country-romania-01",
+      "countryId": "romania",
+      "path": "images/countries/romania/bucharest-therme.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-bucharest",
+      "altText": "The Therme Bucharest complex."
+    },
+    {
+      "id": "country-spain-01",
+      "countryId": "spain",
+      "path": "images/countries/spain/barcelona-sagrada-familia.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-barcelona",
+      "altText": "The Sagrada Família in Barcelona."
+    },
+    {
+      "id": "country-spain-02",
+      "countryId": "spain",
+      "path": "images/countries/spain/barcelona-beachfront.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-barcelona",
+      "altText": "The beachfront in Barcelona."
+    },
+    {
+      "id": "country-spain-03",
+      "countryId": "spain",
+      "path": "images/countries/spain/barcelona-flamenco-show.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-barcelona",
+      "altText": "A flamenco performance in Barcelona."
+    },
+    {
+      "id": "country-turkey-01",
+      "countryId": "turkey",
+      "path": "images/countries/turkey/cappadocia-rock-formations.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-goreme",
+      "altText": "Rock formations in Cappadocia."
+    },
+    {
+      "id": "country-turkey-03",
+      "countryId": "turkey",
+      "path": "images/countries/turkey/istanbul-galata-bridge.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-istanbul",
+      "altText": "Galata Bridge in Istanbul."
+    },
+    {
+      "id": "country-turkey-02",
+      "countryId": "turkey",
+      "path": "images/countries/turkey/istanbul-spice-bazaar.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-istanbul",
+      "altText": "The Spice Bazaar in Istanbul."
+    },
+    {
+      "id": "country-united-kingdom-01",
+      "countryId": "united-kingdom",
+      "path": "images/countries/united-kingdom/london-big-ben.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-london",
+      "altText": "Big Ben and the Palace of Westminster in London."
+    },
+    {
+      "id": "country-united-kingdom-03",
+      "countryId": "united-kingdom",
+      "path": "images/countries/united-kingdom/london-underground.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-london",
+      "altText": "A London Underground station."
+    },
+    {
+      "id": "country-united-kingdom-02",
+      "countryId": "united-kingdom",
+      "path": "images/countries/united-kingdom/london-natural-history-museum.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-london",
+      "altText": "The Natural History Museum in London."
+    },
+    {
+      "id": "country-vatican-city-01",
+      "countryId": "vatican-city",
+      "path": "images/countries/vatican-city/st-peters-square-and-basilica.webp",
+      "displayOrder": 1,
+      "candidateCityId": "city-vatican-city",
+      "altText": "St. Peter's Square and Basilica in Vatican City."
+    },
+    {
+      "id": "country-vatican-city-02",
+      "countryId": "vatican-city",
+      "path": "images/countries/vatican-city/vatican-museums-gallery-of-maps.webp",
+      "displayOrder": 2,
+      "candidateCityId": "city-vatican-city",
+      "altText": "Ornate frescoes in the Gallery of Maps at the Vatican Museums."
+    },
+    {
+      "id": "country-vatican-city-03",
+      "countryId": "vatican-city",
+      "path": "images/countries/vatican-city/vatican-museums-fresco-hall.webp",
+      "displayOrder": 3,
+      "candidateCityId": "city-vatican-city",
+      "altText": "A fresco-covered hall in the Vatican Museums."
+    }
+  ]
+}
