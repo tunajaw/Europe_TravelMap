@@ -1,0 +1,61 @@
+.europe-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.map-sphere {
+  fill: #eaf0f7;
+}
+
+.map-graticule {
+  fill: none;
+  stroke: rgba(68, 91, 84, 0.12);
+  stroke-width: 0.7;
+}
+
+.country-boundary {
+  fill: #f7f9fc;
+  stroke: #bfc6d2;
+  stroke-width: 0.65;
+  vector-effect: non-scaling-stroke;
+}
+
+.country-boundary--visited {
+  fill: #d9e3f0;
+  stroke: #8b96a7;
+  stroke-width: 1.65;
+}
+
+.country-marker circle {
+  fill: #64748b;
+  stroke: #f8faff;
+  stroke-width: 2;
+}
+
+.country-marker__leader {
+  stroke: rgba(85, 84, 79, 0.58);
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.country-marker text {
+  fill: #475569;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 650;
+  paint-order: stroke;
+  stroke: #f8faff;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
+
+.country-marker[role=button] { cursor: pointer; }
+.country-marker[role=button] text, .country-marker[role=button] .country-marker__leader { pointer-events: none; }
+.country-marker .country-marker__hit { fill: transparent; stroke: none; }
+.country-marker--active circle:not(.country-marker__hit), .country-marker--active text { fill: #111827; }
+.country-boundary--active { stroke: #111827; stroke-width: 2.6; }
+.country-marker:focus { outline: none; }
+.country-marker:focus-visible .country-marker__hit { stroke: #3569c8; stroke-width: 2; }
+.country-border-overlay { fill: none; stroke: #111827; stroke-width: 2.8; vector-effect: non-scaling-stroke; stroke-linejoin: round; }

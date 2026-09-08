@@ -23,6 +23,7 @@ type AirportRow = {
 type AliasRow = {
   raw_location: string; airport_code: string; canonical_city: string; review_status: string;
 };
+type BoundaryRow = { country_slug: string; boundary_id: string; review_status: string };
 type LocalTransferRow = {
   transfer_id: string; segment_id: string; side: string;
   start_name: string; start_latitude: string; start_longitude: string;
@@ -45,30 +46,43 @@ function requireApproved(status: string, label: string): void {
 
 export async function loadReferences(root: string): Promise<LoadedReferences> {
   const parsed = join(root, 'data', 'parsed');
-  const [countryRows, cityRows, stationRows, airportRows, aliasRows, localTransferRows] = await Promise.all([
+  const [countryRows, cityRows, stationRows, airportRows, aliasRows, localTransferRows, boundaryRows] = await Promise.all([
     readCsv<CountryRow>(join(parsed, 'country_reference.csv')),
     readCsv<CityGeoRow>(join(parsed, 'city_reference_geocoding.csv')),
     readCsv<CityStationRow>(join(parsed, 'city_main_station.csv')),
     readCsv<AirportRow>(join(parsed, 'airport_reference.csv')),
     readCsv<AliasRow>(join(parsed, 'location_alias.csv')),
     readCsv<LocalTransferRow>(join(parsed, 'local_transfer_reference.csv')),
+    readCsv<BoundaryRow>(join(parsed, 'country_boundary_reference.csv')),
   ]);
+
+  const boundaryByCountry = new Map(boundaryRows.map((row) => {
+    requireApproved(row.review_status, `Country boundary ${row.country_slug}`);
+    return [row.country_slug, row.boundary_id];
+  }));
+  if (boundaryByCountry.size !== boundaryRows.length) throw new Error('Duplicate Country boundary reference');
 
   const countryIdByName = new Map<string, string>();
   const countries = countryRows.filter((row) => row.include_in_mvp === 'true').map((row) => {
     requireApproved(row.inclusion_status, `Country inclusion ${row.country}`);
     requireApproved(row.geocode_review_status, `Country coordinates ${row.country}`);
+    const boundaryId = boundaryByCountry.get(row.country_slug);
+    if (!boundaryId) throw new Error(`Missing Country boundary reference: ${row.country}`);
     countryIdByName.set(row.country, row.country_slug);
     return {
       id: row.country_slug,
       name: row.country,
       slug: row.country_slug,
+      boundaryId,
       capitalCity: row.capital_city,
       isMicrostate: row.is_microstate === 'true',
       marker: { latitude: Number(row.candidate_latitude), longitude: Number(row.candidate_longitude) },
       photoIds: [] as string[],
     };
   });
+  if (boundaryByCountry.size !== countries.length) {
+    throw new Error('Country boundary references do not exactly cover MVP Countries');
+  }
 
   const stationByCity = new Map(stationRows.map((row) => [row.canonical_city, row]));
   const cityIdByName = new Map<string, { id: string; countryId: string }>();

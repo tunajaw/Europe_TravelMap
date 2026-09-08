@@ -29,7 +29,7 @@ describe('public application-data contract', () => {
       schemaVersion: '1.0.0',
       travelPeriod: { start: '2025-09-30', end: '2026-04-30' },
       countries: [{
-        id: 'country-a', name: 'A', slug: 'a', capitalCity: 'A', isMicrostate: false,
+        id: 'country-a', name: 'A', slug: 'a', boundaryId: '001', capitalCity: 'A', isMicrostate: false,
         marker: { latitude: 0, longitude: 0 }, photoIds: ['p1', 'p2', 'p3'],
       }],
       cities: [

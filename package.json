@@ -7,12 +7,15 @@
     "node": ">=24"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "data:build": "node scripts/preprocess/build.ts",
     "data:validate": "node scripts/preprocess/validate-output.ts",
-    "check": "npm run typecheck && npm test && npm run data:validate"
+    "check": "npm run typecheck && npm test && npm run data:validate && npm run build"
   },
   "dependencies": {
     "csv-parse": "^7.0.2",
@@ -23,6 +26,7 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "topojson-client": "^3.1.0",
+    "world-atlas": "2.0.2",
     "zod": "^4.5.4"
   },
   "devDependencies": {

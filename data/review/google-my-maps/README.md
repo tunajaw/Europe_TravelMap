@@ -13,7 +13,8 @@ Maps reports a field-name validation error.
 
 Apply these layer styles:
 
-1. `01-country-markers.csv`: red star; each marker uses the capital-City rule.
+1. `01-country-markers.csv`: red star; markers use the capital-City rule except
+   for the owner-selected Italy marker at Milan.
 2. `02-city-gps.csv`: blue circle; each marker is a City reference-point candidate.
 3. `03-airport-gps.csv`: airplane icon; each marker is an airport candidate.
 4. `04-location-aliases.csv`: yellow diamond; each marker shows a raw label to

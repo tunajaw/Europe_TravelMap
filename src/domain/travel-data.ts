@@ -9,7 +9,7 @@ export const TravelDataSchema = z.object({
   schemaVersion: z.literal('1.0.0'),
   travelPeriod: z.object({ start: z.iso.date(), end: z.iso.date() }).strict(),
   countries: z.array(z.object({
-    id, name: z.string().min(1), slug: z.string().min(1), capitalCity: z.string().min(1),
+    id, name: z.string().min(1), slug: z.string().min(1), boundaryId: z.string().regex(/^\d{3}$/), capitalCity: z.string().min(1),
     isMicrostate: z.boolean(), marker: coordinate, photoIds: z.array(id),
   }).strict()),
   cities: z.array(z.object({

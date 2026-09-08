@@ -7,7 +7,7 @@
 "Germany","germany","Berlin","capital_city","false","true","52.5173885","13.3951309","Berlin, Germany","relation","62422","OpenStreetMap Nominatim","approved","approved",""
 "Hungary","hungary","Budapest","capital_city","false","true","47.4818490","19.1449053","Budapest, Central Hungary, Hungary","relation","37244","OpenStreetMap Nominatim","approved","approved",""
 "Ireland","ireland","Dublin","capital_city","false","true","53.3493795","-6.2605593","Dublin, County Dublin, Leinster, Ireland","relation","1109531","OpenStreetMap Nominatim","approved","approved",""
-"Italy","italy","Rome","capital_city","false","true","41.8933203","12.4829321","Rome, Roma Capitale, Lazio, Italy","relation","41485","OpenStreetMap Nominatim","approved","approved",""
+"Italy","italy","Rome","owner_selected_city_reference_point","false","true","45.4858786","9.2042617","Milano Centrale, Piazza Duca d'Aosta, Centrale, Municipio 2, Milan, Rodano, Milan, Lombardy, 20124, Italy","node","6067258870","OpenStreetMap Nominatim","approved","approved","Owner-selected Milan reference point avoids overlap with Vatican City; Rome remains the capital"
 "Lithuania","lithuania","Vilnius","capital_city","false","true","54.6870458","25.2829111","Vilnius, Vilnius city municipality, Vilnius County, Lithuania","relation","1529146","OpenStreetMap Nominatim","approved","approved",""
 "Monaco","monaco","Monaco","capital_city","true","true","43.7309697","7.4248152","Monaco","relation","2220322","OpenStreetMap Nominatim","approved","approved",""
 "Netherlands","netherlands","Amsterdam","capital_city","false","true","52.3730796","4.8924534","Amsterdam, North Holland, Netherlands","relation","271110","OpenStreetMap Nominatim","approved","approved",""

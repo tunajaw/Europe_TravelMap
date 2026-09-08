@@ -7,7 +7,7 @@ Title,Latitude,Longitude,MarkerType,CapitalCity,MarkerBasis,CandidateLabel,Revie
 "Country marker - Germany","52.5173885","13.3951309","Country marker candidate","Berlin","capital_city","Berlin, Germany","approved","OpenStreetMap Nominatim",""
 "Country marker - Hungary","47.4818490","19.1449053","Country marker candidate","Budapest","capital_city","Budapest, Central Hungary, Hungary","approved","OpenStreetMap Nominatim",""
 "Country marker - Ireland","53.3493795","-6.2605593","Country marker candidate","Dublin","capital_city","Dublin, County Dublin, Leinster, Ireland","approved","OpenStreetMap Nominatim",""
-"Country marker - Italy","41.8933203","12.4829321","Country marker candidate","Rome","capital_city","Rome, Roma Capitale, Lazio, Italy","approved","OpenStreetMap Nominatim",""
+"Country marker - Italy","45.4858786","9.2042617","Country marker candidate","Rome","owner_selected_city_reference_point","Milano Centrale, Piazza Duca d'Aosta, Centrale, Municipio 2, Milan, Rodano, Milan, Lombardy, 20124, Italy","approved","OpenStreetMap Nominatim","Owner-selected Milan reference point avoids overlap with Vatican City; Rome remains the capital"
 "Country marker - Lithuania","54.6870458","25.2829111","Country marker candidate","Vilnius","capital_city","Vilnius, Vilnius city municipality, Vilnius County, Lithuania","approved","OpenStreetMap Nominatim",""
 "Country marker - Monaco","43.7309697","7.4248152","Country marker candidate","Monaco","capital_city","Monaco","approved","OpenStreetMap Nominatim",""
 "Country marker - Netherlands","52.3730796","4.8924534","Country marker candidate","Amsterdam","capital_city","Amsterdam, North Holland, Netherlands","approved","OpenStreetMap Nominatim",""

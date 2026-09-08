@@ -1,0 +1,21 @@
+country_slug,boundary_id,source,review_status
+andorra,020,ISO 3166-1 numeric,approved
+austria,040,ISO 3166-1 numeric,approved
+belgium,056,ISO 3166-1 numeric,approved
+czechia,203,ISO 3166-1 numeric,approved
+france,250,ISO 3166-1 numeric,approved
+germany,276,ISO 3166-1 numeric,approved
+hungary,348,ISO 3166-1 numeric,approved
+ireland,372,ISO 3166-1 numeric,approved
+italy,380,ISO 3166-1 numeric,approved
+lithuania,440,ISO 3166-1 numeric,approved
+monaco,492,ISO 3166-1 numeric,approved
+netherlands,528,ISO 3166-1 numeric,approved
+north-macedonia,807,ISO 3166-1 numeric,approved
+norway,578,ISO 3166-1 numeric,approved
+poland,616,ISO 3166-1 numeric,approved
+romania,642,ISO 3166-1 numeric,approved
+spain,724,ISO 3166-1 numeric,approved
+turkey,792,ISO 3166-1 numeric,approved
+united-kingdom,826,ISO 3166-1 numeric,approved
+vatican-city,336,ISO 3166-1 numeric,approved

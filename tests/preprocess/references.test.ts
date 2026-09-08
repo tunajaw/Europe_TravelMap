@@ -10,5 +10,10 @@ describe('reviewed reference data', () => {
     expect(references.airports).toHaveLength(28);
     expect(references.index.aliases.size).toBe(101);
     expect(references.index.localTransfers.size).toBe(4);
+
+    const italy = references.countries.find(({ id }) => id === 'italy');
+    const milan = references.cities.find(({ id }) => id === 'city-milan');
+    expect(italy?.capitalCity).toBe('Rome');
+    expect(italy?.marker).toEqual(milan?.location);
   });
 });

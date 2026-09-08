@@ -9,6 +9,7 @@
       "id": "andorra",
       "name": "Andorra",
       "slug": "andorra",
+      "boundaryId": "020",
       "capitalCity": "Andorra la Vella",
       "isMicrostate": true,
       "marker": {
@@ -25,6 +26,7 @@
       "id": "austria",
       "name": "Austria",
       "slug": "austria",
+      "boundaryId": "040",
       "capitalCity": "Vienna",
       "isMicrostate": false,
       "marker": {
@@ -41,6 +43,7 @@
       "id": "belgium",
       "name": "Belgium",
       "slug": "belgium",
+      "boundaryId": "056",
       "capitalCity": "Brussels",
       "isMicrostate": false,
       "marker": {
@@ -57,6 +60,7 @@
       "id": "czechia",
       "name": "Czechia",
       "slug": "czechia",
+      "boundaryId": "203",
       "capitalCity": "Prague",
       "isMicrostate": false,
       "marker": {
@@ -73,6 +77,7 @@
       "id": "france",
       "name": "France",
       "slug": "france",
+      "boundaryId": "250",
       "capitalCity": "Paris",
       "isMicrostate": false,
       "marker": {
@@ -89,6 +94,7 @@
       "id": "germany",
       "name": "Germany",
       "slug": "germany",
+      "boundaryId": "276",
       "capitalCity": "Berlin",
       "isMicrostate": false,
       "marker": {
@@ -105,6 +111,7 @@
       "id": "hungary",
       "name": "Hungary",
       "slug": "hungary",
+      "boundaryId": "348",
       "capitalCity": "Budapest",
       "isMicrostate": false,
       "marker": {
@@ -121,6 +128,7 @@
       "id": "ireland",
       "name": "Ireland",
       "slug": "ireland",
+      "boundaryId": "372",
       "capitalCity": "Dublin",
       "isMicrostate": false,
       "marker": {
@@ -137,11 +145,12 @@
       "id": "italy",
       "name": "Italy",
       "slug": "italy",
+      "boundaryId": "380",
       "capitalCity": "Rome",
       "isMicrostate": false,
       "marker": {
-        "latitude": 41.8933203,
-        "longitude": 12.4829321
+        "latitude": 45.4858786,
+        "longitude": 9.2042617
       },
       "photoIds": [
         "country-italy-01",
@@ -153,6 +162,7 @@
       "id": "lithuania",
       "name": "Lithuania",
       "slug": "lithuania",
+      "boundaryId": "440",
       "capitalCity": "Vilnius",
       "isMicrostate": false,
       "marker": {
@@ -169,6 +179,7 @@
       "id": "monaco",
       "name": "Monaco",
       "slug": "monaco",
+      "boundaryId": "492",
       "capitalCity": "Monaco",
       "isMicrostate": true,
       "marker": {
@@ -185,6 +196,7 @@
       "id": "netherlands",
       "name": "Netherlands",
       "slug": "netherlands",
+      "boundaryId": "528",
       "capitalCity": "Amsterdam",
       "isMicrostate": false,
       "marker": {
@@ -201,6 +213,7 @@
       "id": "north-macedonia",
       "name": "North Macedonia",
       "slug": "north-macedonia",
+      "boundaryId": "807",
       "capitalCity": "Skopje",
       "isMicrostate": false,
       "marker": {
@@ -217,6 +230,7 @@
       "id": "norway",
       "name": "Norway",
       "slug": "norway",
+      "boundaryId": "578",
       "capitalCity": "Oslo",
       "isMicrostate": false,
       "marker": {
@@ -233,6 +247,7 @@
       "id": "poland",
       "name": "Poland",
       "slug": "poland",
+      "boundaryId": "616",
       "capitalCity": "Warsaw",
       "isMicrostate": false,
       "marker": {
@@ -249,6 +264,7 @@
       "id": "romania",
       "name": "Romania",
       "slug": "romania",
+      "boundaryId": "642",
       "capitalCity": "Bucharest",
       "isMicrostate": false,
       "marker": {
@@ -265,6 +281,7 @@
       "id": "spain",
       "name": "Spain",
       "slug": "spain",
+      "boundaryId": "724",
       "capitalCity": "Madrid",
       "isMicrostate": false,
       "marker": {
@@ -281,6 +298,7 @@
       "id": "turkey",
       "name": "Turkey",
       "slug": "turkey",
+      "boundaryId": "792",
       "capitalCity": "Ankara",
       "isMicrostate": false,
       "marker": {
@@ -297,6 +315,7 @@
       "id": "united-kingdom",
       "name": "United Kingdom",
       "slug": "united-kingdom",
+      "boundaryId": "826",
       "capitalCity": "London",
       "isMicrostate": false,
       "marker": {
@@ -313,6 +332,7 @@
       "id": "vatican-city",
       "name": "Vatican City",
       "slug": "vatican-city",
+      "boundaryId": "336",
       "capitalCity": "Vatican City",
       "isMicrostate": true,
       "marker": {

@@ -198,8 +198,10 @@ runtime.
 
 The current lookup produced candidates for all 76 City reference points, all
 28 Airports, and 20 confirmed MVP Country records. The owner has visually
-reviewed and approved all of these coordinates. Country markers use each
-Country's capital-City coordinate, following the owner-approved MVP rule.
+reviewed and approved all of these coordinates. Country markers normally use
+each Country's capital-City coordinate. Italy is an owner-approved display
+exception: its Country marker uses the reviewed Milano Centrale reference
+point to separate it from Vatican City, while Rome remains Italy's capital.
 
 ## Resolved Data Review Items
 
