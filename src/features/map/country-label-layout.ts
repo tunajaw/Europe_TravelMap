@@ -1,7 +1,7 @@
 import { geoMercator, type GeoProjection } from 'd3-geo';
 import type { TravelData } from '../../domain/travel-data.ts';
 
-type Country = TravelData['countries'][number];
+type Country = Pick<TravelData['countries'][number], 'id' | 'name' | 'marker'>;
 
 export const MAP_WIDTH = 1200;
 export const MAP_HEIGHT = 700;
@@ -9,7 +9,7 @@ export const MAP_HEIGHT = 700;
 const LABEL_HEIGHT = 16;
 const LABEL_PADDING = 4;
 const MARKER_CLEARANCE = 9;
-const RING_OFFSETS = [0, 10, 22, 38, 58] as const;
+const RING_OFFSETS = [0, 10, 22, 38, 58, 82, 110, 142, 178, 218, 262] as const;
 
 export interface LabelBox {
   left: number;

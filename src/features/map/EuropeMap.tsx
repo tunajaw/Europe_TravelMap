@@ -1,5 +1,5 @@
 import { geoGraticule10, geoPath } from 'd3-geo';
-import { useId } from 'react';
+import { useId, useMemo } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import {
   MAP_HEIGHT,
@@ -9,6 +9,10 @@ import {
 } from './country-label-layout.ts';
 import { worldCountries } from './world-geography.ts';
 import { countryViewport } from './country-viewport.ts';
+import { CityLayer } from './CityLayer.tsx';
+import { SegmentLayer } from './SegmentLayer.tsx';
+import { buildSegmentRoutes } from './segment-geometry.ts';
+import { useViewportTransition } from './use-viewport-transition.ts';
 import './europe-map.css';
 
 type Country = TravelData['countries'][number];
@@ -17,18 +21,34 @@ const path = geoPath(europeProjection);
 
 interface EuropeMapProps {
   countries: Country[];
+  cities?: TravelData['cities'];
+  segments?: TravelData['segments'];
+  showRoutes?: boolean;
+  domesticOnly?: boolean;
   selectedId?: string | null;
   hoveredId?: string | null;
   focusedId?: string | null;
   onSelect?: (id: string) => void;
+  onEnter?: (id: string) => void;
   onHover?: (id: string | null) => void;
 }
 
-export function EuropeMap({ countries, selectedId, hoveredId, focusedId, onSelect, onHover }: EuropeMapProps) {
+export function EuropeMap({ countries, cities = [], segments = [], showRoutes = true, domesticOnly = false, selectedId, hoveredId, focusedId, onSelect, onEnter, onHover }: EuropeMapProps) {
   const shadowId = useId();
   const focused = countries.find((country) => country.id === focusedId);
-  const viewport = countryViewport(focused);
+  const visibleSegments = useMemo(() => focused && domesticOnly
+    ? segments.filter((segment) => segment.originCountryId === focused.id && segment.destinationCountryId === focused.id)
+    : segments, [segments, focused, domesticOnly]);
+  const visibleCities = useMemo(() => {
+    if (!focused) return [];
+    const own = new Set(cities.filter((city) => city.countryId === focused.id).map((city) => city.id));
+    const connected = new Set(visibleSegments.filter((segment) => segment.pathCityIds.some((id) => own.has(id))).flatMap((segment) => segment.pathCityIds));
+    return cities.filter((city) => own.has(city.id) || connected.has(city.id));
+  }, [cities, visibleSegments, focused]);
+  const viewport = countryViewport(focused, visibleCities);
+  const displayedViewport = useViewportTransition(viewport);
   const markerScale = viewport[2] / MAP_WIDTH;
+  const routes = useMemo(() => buildSegmentRoutes({ countries, cities, segments: visibleSegments }, focusedId ?? null, markerScale), [countries, cities, visibleSegments, focusedId, markerScale]);
   const countryByBoundary = new Map(countries.map((country) => [country.boundaryId, country]));
   const labelByCountry = new Map(
     layoutCountryLabels(countries, europeProjection).map((placement) => [placement.countryId, placement]),
@@ -39,7 +59,7 @@ export function EuropeMap({ countries, selectedId, hoveredId, focusedId, onSelec
       aria-label={focused ? `${focused.name} country map` : 'Europe travel map'}
       className="europe-map"
       role={onSelect ? 'group' : 'img'}
-      viewBox={viewport.join(' ')}
+      viewBox={displayedViewport.join(' ')}
     >
       <defs>
         <filter id={shadowId} x="-80%" y="-80%" width="260%" height="260%">
@@ -57,7 +77,7 @@ export function EuropeMap({ countries, selectedId, hoveredId, focusedId, onSelec
               className={`country-boundary${country ? ' country-boundary--visited' : ''}${country && (country.id === hoveredId || country.id === selectedId) ? ' country-boundary--active' : ''}`}
               d={path(boundary) ?? undefined}
               data-boundary-country={country?.id}
-              key={boundaryId}
+              key={boundary.id ?? boundary.properties.name}
             />
           );
         })}
@@ -66,12 +86,15 @@ export function EuropeMap({ countries, selectedId, hoveredId, focusedId, onSelec
         {worldCountries.features.filter((boundary) => {
           const country = countryByBoundary.get(String(boundary.id).padStart(3, '0'));
           return country && (country.id === selectedId || country.id === hoveredId);
-        }).map((boundary) => <path key={String(boundary.id)} className="country-border-overlay"
+        }).map((boundary) => <path key={boundary.id ?? boundary.properties.name} className="country-border-overlay"
           d={path(boundary) ?? undefined} />)}
       </g>
+      {focused && <text className="country-map-name" x={viewport[0] + viewport[2] / 2} y={viewport[1] + viewport[3] / 2}
+        textAnchor="middle" dominantBaseline="middle" fontSize={viewport[2] * 0.09} pointerEvents="none">{focused.name}</text>}
+      {showRoutes && <SegmentLayer key={`routes-${focusedId ?? 'europe'}-${domesticOnly}`} routes={routes} />}
       <g aria-label="Visited Countries">
         {countries.map((country) => {
-          if (focused && country.id !== focused.id) return null;
+          if (focused) return null;
           const placement = labelByCountry.get(country.id);
           if (!placement) return null;
           return (
@@ -85,6 +108,7 @@ export function EuropeMap({ countries, selectedId, hoveredId, focusedId, onSelec
               onMouseEnter={() => onHover?.(country.id)} onMouseLeave={() => onHover?.(null)}
               onFocus={() => onHover?.(country.id)} onBlur={() => onHover?.(null)}
               onClick={(event) => { if (onSelect) { event.stopPropagation(); onSelect(country.id); } }}
+              onDoubleClick={(event) => { if (onEnter) { event.stopPropagation(); onEnter(country.id); } }}
               onKeyDown={(event) => { if (onSelect && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); onSelect(country.id); } }}>
               {onSelect && <circle className="country-marker__hit" cx={placement.markerX} cy={placement.markerY}
                 r={hoveredId === country.id ? 40 : 32} />}
@@ -116,6 +140,7 @@ export function EuropeMap({ countries, selectedId, hoveredId, focusedId, onSelec
           );
         })}
       </g>
+      {focused && <CityLayer key={`cities-${focused.id}`} cities={visibleCities} viewport={viewport} />}
     </svg>
   );
 }

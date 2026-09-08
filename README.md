@@ -37,7 +37,15 @@ The main view uses the approved Modern Cartographic design. Select a country
 marker (mouse, touch, or keyboard) to open its photos, then choose Enter to frame
 the Country Map. Click outside the card or press Escape to return to Europe.
 Country links such as `/Europe_TravelMap/#country/italy` restore the view directly.
-City markers are the next FR-MAP-03 increment.
+Country Maps show visited City markers and a translucent country name. Use the
+top-left Back to Europe button to zoom out. Show travel routes toggles Segment
+visibility and keeps its setting across navigation. Hover or click a route to
+expand overlapping routes; press Escape or click outside to clear the selection.
+FR-MAP-01 through FR-MAP-06 are implemented. Linked-marker highlighting and
+Segment metadata are the next increments (FR-MAP-07 onward).
+
+CI runs type checking, domain tests (`npm run test:domain`), preprocessing tests (`npm run test:preprocess`), UI/map
+tests (`npm run test:ui`), public-data validation, and a production build.
 
 For the three visual design studies, open
 `http://127.0.0.1:4173/Europe_TravelMap/?view=mockups` after starting the preview.

@@ -79,6 +79,24 @@ origin, Transit Points, and destination. Parallel Segments receive stable curve
 offsets so overlapping routes can fan out on interaction. These curves are a
 visual encoding, not claims about the actual road, rail, sea, or flight path.
 
+FR-MAP-06 uses Country marker coordinates in Europe and City reference coordinates
+in Country Maps, retaining ordered Transit Points at the appropriate level.
+Country Maps display Segments touching that country through any path City,
+including their connected foreign City markers. The viewport includes these
+Cities so cross-border endpoints remain visible, even for long-distance links.
+Europe permanently hides Segments whose origin and destination Country IDs match;
+these remain available in Country Maps and all statistics. Country Maps offer an
+unchecked-by-default Only show domestic routes filter: both endpoint Countries
+must match the focused country. City visibility and framing follow the filtered
+routes, retaining their Transit Points and all visited Cities of the focused
+country. The preference persists across navigation but does not filter Europe
+or dashboard statistics. Transfers are not additional
+Segment routes. Stable sequence-based
+offsets separate repeated routes, with bounded fan-out on hover or click.
+The map and dashboard share one six-category color palette, with High-speed Rail
+in deep red (#780d25) and Train in darker pink (#c65c82). Route strokes use 1.6px
+normally and 2.5px when expanded, independent of map zoom.
+
 Metric distance uses the haversine distance between reviewed reference points.
 For a same-origin-and-destination Segment, the ordered Transit Points form the
 distance legs so the result is not incorrectly zero.
@@ -101,6 +119,8 @@ SPA fallback routing.
 FR-MAP-02 uses `#europe`, `#europe/<country-id>` (selected preview), and
 `#country/<country-id>` (entered Country Map). Browser history and direct links
 restore these states; unrecognized country IDs fall back to Europe. Selecting
+via a country marker double-click enters that Country Map directly, equivalent
+to its preview's Enter control. Selecting
 another country resets its photo to the first chronological image. Escape,
 the close button, and the Back to Europe control dismiss the selection; keyboard
 dismissal restores focus to the marker. Clicking outside the preview also clears
@@ -108,10 +128,13 @@ selection, except on country-selection controls.
 
 Country framing uses visible European boundary coordinates and a minimum extent
 around a microstate marker when no polygon exists. Markers keep their screen
-size when zoomed. FR-MAP-03 will add City markers to the entered Country Map.
+size when zoomed. FR-MAP-03 shows visited City markers and a translucent country
+name in the entered Country Map. City markers respond to hover and keyboard
+focus; City Map drill-down remains MVP+. FR-MAP-04 animates viewport changes
+and provides a top-left Back to Europe control. Reduced-motion users receive
+immediate viewport changes. FR-MAP-05 keeps route visibility across navigation.
 The photo card occupies a reserved area below the geographic viewport so it
-does not cover markers. Segment-aware floating placement remains to be verified
-when FR-MAP-06 introduces routes. The sidebar currently reports Segment counts
+does not cover markers or routes. The sidebar currently reports Segment counts
 (selected-country counts use origin Country), not Expense metrics; a country
 without transportation records displays an empty state.
 
@@ -131,6 +154,14 @@ future image-export work must bake these corrections before removing the UI rule
    integrity rules.
 3. React Testing Library covers filters, selections, metadata, and navigation.
 4. Playwright covers only critical cross-view flows on the production build.
+
+Current automated coverage uses Vitest and React Testing Library; browser-level
+Playwright coverage is planned, not yet implemented. CI explicitly separates
+domain, preprocessing, and UI/map tests, then validates public data and builds the app.
+FR-MAP-03 through FR-MAP-06 tests cover all 20 Country Maps, navigation, persistent
+route visibility, route endpoints and ordered Transit Points, stable overlapping
+geometry, and hover/click expansion. FR-MAP-07 linked-marker interactions and
+FR-MAP-08/09 metadata are not included in this increment.
 
 Tests must not contain exact accommodation addresses or copy private source
 rows. Sanitized synthetic fixtures cover privacy-sensitive transformations.

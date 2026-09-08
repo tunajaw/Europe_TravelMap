@@ -2,14 +2,15 @@ import { useEffect, useReducer, useRef, useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { EuropeMap } from './EuropeMap.tsx';
 import { CountryPhoto } from './CountryPhoto.tsx';
+import { TRANSPORT_MODES } from './transport-colors.ts';
 import './country-explorer.css';
 
 type Navigation = { selectedId: string | null; focusedId: string | null };
-type Action = { type: 'select'; id: string } | { type: 'enter' } | { type: 'clear' } | { type: 'restore'; state: Navigation };
+type Action = { type: 'select'; id: string } | { type: 'enter'; id?: string } | { type: 'clear' } | { type: 'restore'; state: Navigation };
 function reducer(state: Navigation, action: Action): Navigation {
   switch (action.type) {
     case 'select': return { selectedId: action.id, focusedId: null };
-    case 'enter': return { ...state, focusedId: state.selectedId };
+    case 'enter': return { selectedId: action.id ?? state.selectedId, focusedId: action.id ?? state.selectedId };
     case 'clear': return { selectedId: null, focusedId: null };
     case 'restore': return action.state;
   }
@@ -21,11 +22,6 @@ function readNavigation(data: TravelData): Navigation {
   if (!id || !data.countries.some((country) => country.id === id)) return { selectedId: null, focusedId: null };
   return { selectedId: id, focusedId: match?.[1] === 'country' ? id : null };
 }
-
-const modes = [
-  ['High-speed Rail', '#d94b64'], ['Train', '#eb9fb4'], ['City Bus', '#a2d9b0'],
-  ['InterCity Bus', '#34855b'], ['Plane', '#254e85'], ['Ferry / Cruise', '#8bc8e5'],
-] as const;
 
 function CountryCard({ country, photos, entered, onEnter, onClose }: {
   country: TravelData['countries'][number]; photos: TravelData['photos']; entered: boolean;
@@ -57,6 +53,8 @@ function CountryCard({ country, photos, entered, onEnter, onClose }: {
 export function CountryExplorer({ data }: { data: TravelData }) {
   const [navigation, dispatch] = useReducer(reducer, data, readNavigation);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [showRoutes, setShowRoutes] = useState(true);
+  const [domesticOnly, setDomesticOnly] = useState(false);
   const root = useRef<HTMLDivElement>(null);
   const selected = data.countries.find((country) => country.id === navigation.selectedId);
   const photos = data.photos.filter((photo) => photo.countryId === selected?.id).sort((a, b) => a.displayOrder - b.displayOrder);
@@ -85,7 +83,7 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       // The clicked arrow may unmount at the first/last photo. The original
       // event path retains its card ancestor even after that DOM update.
       const inside = event.composedPath().some((node) => node instanceof Element
-        && node.matches('.country-card, [data-country-id], .country-switcher, .map-back'));
+        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .country-switcher, .map-toolbar'));
       if (!inside) close();
     };
     const key = (event: KeyboardEvent) => { if (event.key === 'Escape') { event.preventDefault(); close(true); } };
@@ -95,18 +93,22 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   });
 
   const segments = selected ? data.segments.filter((segment) => segment.originCountryId === selected.id) : data.segments;
-  const counts = modes.map(([name, color]) => ({ name, color, count: segments.filter((segment) => segment.transportationCategory === name).length }));
+  const counts = TRANSPORT_MODES.map(([name, color]) => ({ name, color, count: segments.filter((segment) => segment.transportationCategory === name).length }));
   const maximum = Math.max(1, ...counts.map(({ count }) => count));
 
   return <div className="travel-workspace" ref={root}>
     <section className="map-panel" aria-labelledby="map-heading">
       <header className="map-panel-heading"><div><p className="eyebrow">The journey so far</p>
         <h2 id="map-heading">{navigation.focusedId ? `${selected?.name} / Country Map` : 'Europe overview'}</h2></div>
-        {navigation.focusedId && <button className="map-back" onClick={() => close(true)}>Back to Europe</button>}
       </header>
+      <div className="map-toolbar">
+        {navigation.focusedId && <button className="map-back" onClick={() => close(true)}>Back to Europe</button>}
+        <label className="route-toggle"><input type="checkbox" checked={showRoutes} onChange={(event) => setShowRoutes(event.target.checked)} /> Show travel routes</label>
+        {navigation.focusedId && <label className="route-toggle"><input type="checkbox" checked={domesticOnly} onChange={(event) => setDomesticOnly(event.target.checked)} /> Only show domestic routes</label>}
+      </div>
       <div className="map-canvas">
-        <EuropeMap countries={data.countries} selectedId={navigation.selectedId} hoveredId={hoveredId}
-          focusedId={navigation.focusedId} onSelect={(id) => navigate({ type: 'select', id })} onHover={setHoveredId} />
+        <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments} showRoutes={showRoutes} domesticOnly={domesticOnly} selectedId={navigation.selectedId} hoveredId={hoveredId}
+          focusedId={navigation.focusedId} onSelect={(id) => navigate({ type: 'select', id })} onEnter={(id) => navigate({ type: 'enter', id })} onHover={setHoveredId} />
       </div>
       <div className="country-card-dock">
         {selected ? <CountryCard key={selected.id} country={selected} photos={photos} entered={Boolean(navigation.focusedId)}

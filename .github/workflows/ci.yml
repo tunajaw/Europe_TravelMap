@@ -18,4 +18,15 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run check
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Preprocessing tests
+        run: npm run test:preprocess
+      - name: Domain tests
+        run: npm run test:domain
+      - name: UI and map behavior tests
+        run: npm run test:ui
+      - name: Validate public dataset
+        run: npm run data:validate
+      - name: Production build
+        run: npm run build

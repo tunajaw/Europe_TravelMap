@@ -161,3 +161,12 @@ FR-EXP-15 (Accommodation Heatmap Interaction):
 * 幾晚上
 * 平均數值 (+-標準差)
 * 排名
+## Reviewed map refinements (2026-09-08)
+
+These refinements take precedence over the corresponding original descriptions below.
+
+- FR-MAP-02: Double-clicking a Country marker enters its Country Map, equivalent to clicking Enter.
+- FR-MAP-03: Country Maps also show foreign Cities on Segments connected to the selected country. Frame these Cities with the country so Segment endpoints coincide with visible City markers. City labels use darker gray (#273449).
+- FR-MAP-05: Country Maps offer Only show domestic routes (unchecked by default). Keep only Segments whose origin and destination Countries both match the selected country. Retain the setting across navigation; it has no effect in Europe or on statistics. Reframe using the remaining routes and their City markers, retaining Transit Points.
+- FR-MAP-06: Europe permanently hides Segments with identical origin and destination Country IDs, including domestic inter-city travel and round trips with Transit Points. Country Maps and statistics retain them.
+- FR-MAP-06: High-speed Rail uses deep red (#780d25); Train uses darker pink (#c65c82), shared with the dashboard. Normal Segment strokes are 1.6px and expanded strokes are 2.5px.

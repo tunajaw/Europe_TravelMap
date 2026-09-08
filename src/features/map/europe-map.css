@@ -59,3 +59,19 @@
 .country-marker:focus { outline: none; }
 .country-marker:focus-visible .country-marker__hit { stroke: #3569c8; stroke-width: 2; }
 .country-border-overlay { fill: none; stroke: #111827; stroke-width: 2.8; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+
+.country-map-name { fill: #66758a; opacity: .18; font-weight: 500; }
+.city-marker circle { fill: #64748b; stroke: #f8faff; stroke-width: 1.5; }
+.city-marker text { fill: #273449; font-size: 11px; font-weight: 600; paint-order: stroke; stroke: #f8faff; stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.city-marker .city-marker-hit { fill: transparent; stroke: none; }
+.city-marker--active circle:not(.city-marker-hit), .city-marker--active text { fill: #111827; }
+.city-marker-leader { stroke: #94a3b8; stroke-width: .7; pointer-events: none; }
+.city-marker:focus { outline: none; }
+.city-marker:focus-visible .city-marker-hit { stroke: #3569c8; }
+
+.segment-route { cursor: pointer; }
+.segment-route-line { fill: none; stroke: currentColor; stroke-width: 1.6; opacity: .24; vector-effect: non-scaling-stroke; }
+.segment-route-hit { fill: none; stroke: transparent; stroke-width: 9; pointer-events: stroke; vector-effect: non-scaling-stroke; }
+.segment-route--expanded .segment-route-line { stroke-width: 2.5; opacity: .8; }
+.segment-route:focus { outline: none; }
+.segment-route:focus-visible .segment-route-line { stroke-width: 3; opacity: 1; }

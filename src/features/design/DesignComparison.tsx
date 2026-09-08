@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { EuropeMap } from '../map/EuropeMap.tsx';
 import { CountryPhoto } from '../map/CountryPhoto.tsx';
+import { TRANSPORT_MODES } from '../map/transport-colors.ts';
 import './design-comparison.css';
 
 const concepts = [
@@ -10,18 +11,13 @@ const concepts = [
   { id: 'rose', letter: 'C', name: 'Soft White / Bold Pink', note: '粉白底 · 桃紅重點 · 參考圖方向', detail: '粗黑標題、圓角卡片、清楚的桃紅按鈕；照片與地圖各有呼吸空間。' },
 ] as const;
 
-const modes = [
-  ['High-speed Rail', '#d94b64'], ['Train', '#eb9fb4'], ['City Bus', '#a2d9b0'],
-  ['InterCity Bus', '#34855b'], ['Plane', '#254e85'], ['Ferry / Cruise', '#8bc8e5'],
-] as const;
-
 export function DesignComparison({ data }: { data: TravelData }) {
   const [focus, setFocus] = useState('all');
   const [photoIndex, setPhotoIndex] = useState(0);
   const photos = data.photos.filter((photo) => photo.countryId === 'italy')
     .sort((a, b) => a.displayOrder - b.displayOrder);
   const photo = photos[photoIndex];
-  const counts = modes.map(([name, color]) => ({ name, color,
+  const counts = TRANSPORT_MODES.map(([name, color]) => ({ name, color,
     count: data.segments.filter((segment) => segment.transportationCategory === name).length }));
   const maximum = Math.max(1, ...counts.map(({ count }) => count));
 
