@@ -40,10 +40,50 @@
   background: #fff;
 }
 
+.transportation-categories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.transportation-category {
+  display: grid;
+  gap: 8px;
+  min-height: 126px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--category-color);
+  border-radius: 10px;
+  color: var(--muted);
+  background: #f8faff;
+  text-align: left;
+}
+
+.transportation-category-name {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.transportation-category span:not(.transportation-category-name) {
+  font-size: 12px;
+}
+
 @media (max-width: 520px) {
   .expense-view-tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+  }
+
+  .transportation-categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 900px) {
+  .transportation-categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

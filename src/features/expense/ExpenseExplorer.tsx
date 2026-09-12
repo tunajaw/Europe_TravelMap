@@ -1,4 +1,7 @@
-import { useState, type KeyboardEvent } from 'react';
+import { useState, type CSSProperties, type KeyboardEvent } from 'react';
+import type { TravelData } from '../../domain/travel-data.ts';
+import { calculateSegmentTotals } from '../../domain/transportation-metrics.ts';
+import { TRANSPORT_MODES } from '../map/transport-colors.ts';
 import './expense-explorer.css';
 
 type ExpenseView = 'transportation' | 'accommodation';
@@ -8,9 +11,25 @@ const VIEWS: ReadonlyArray<{ id: ExpenseView; label: string }> = [
   { id: 'accommodation', label: 'Accommodation' },
 ];
 
-export function ExpenseExplorer() {
+type ExpenseData = Pick<TravelData, 'segments' | 'transfers'>;
+
+export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [view, setView] = useState<ExpenseView>('transportation');
   const activeLabel = VIEWS.find(({ id }) => id === view)?.label ?? 'Transportation';
+  const categorySummaries = TRANSPORT_MODES.map(([category, color]) => {
+    const segments = data.segments.filter((segment) => segment.transportationCategory === category);
+    const totalCostEur = segments.reduce((total, segment) => total + calculateSegmentTotals(
+      segment,
+      data.transfers,
+      { includeAirportTransfers: true },
+    ).costEur, 0);
+    return {
+      category,
+      color,
+      totalCostEur,
+      averageCostEur: segments.length ? totalCostEur / segments.length : 0,
+    };
+  });
 
   function handleTabKey(event: KeyboardEvent<HTMLButtonElement>, currentIndex: number) {
     let nextIndex: number | undefined;
@@ -60,6 +79,23 @@ export function ExpenseExplorer() {
         role="tabpanel"
       >
         <h2>{activeLabel}</h2>
+        {view === 'transportation' && (
+          <div className="transportation-categories" role="group" aria-label="Transportation categories">
+            {categorySummaries.map(({ category, color, totalCostEur, averageCostEur }) => (
+              <button
+                aria-pressed="true"
+                className="transportation-category"
+                key={category}
+                style={{ '--category-color': color } as CSSProperties}
+                type="button"
+              >
+                <span className="transportation-category-name">{category}</span>
+                <span>Total EUR {totalCostEur.toFixed(2)}</span>
+                <span>Avg. EUR {averageCostEur.toFixed(2)}</span>
+              </button>
+            ))}
+          </div>
+        )}
       </section>
     </section>
   );

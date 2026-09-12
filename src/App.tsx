@@ -59,7 +59,11 @@ export function App() {
         )}
       </section>}
 
-      {requestedView === 'expense' ? <ExpenseExplorer /> : <section aria-label="Travel exploration">
+      {requestedView === 'expense' ? <section aria-label="Expense exploration">
+        {state.status === 'loading' && <p className="status-message">Loading expenses…</p>}
+        {state.status === 'error' && <p className="status-message status-message--error">{state.message}</p>}
+        {state.status === 'ready' && <ExpenseExplorer data={state.data} />}
+      </section> : <section aria-label="Travel exploration">
         {state.status === 'loading' && <p className="status-message">Loading the journey…</p>}
         {state.status === 'error' && <p className="status-message status-message--error">{state.message}</p>}
         {state.status === 'ready' && <CountryExplorer data={state.data} />}
