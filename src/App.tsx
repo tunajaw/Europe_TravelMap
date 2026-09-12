@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { TravelData } from './domain/travel-data.ts';
 import { loadTravelData } from './data/travel-data-client.ts';
 import { CountryExplorer } from './features/map/CountryExplorer.tsx';
+import { ExpenseExplorer } from './features/expense/ExpenseExplorer.tsx';
 import './styles/app.css';
 import { DesignComparison } from './features/design/DesignComparison.tsx';
 
@@ -12,6 +13,7 @@ type LoadState =
 
 export function App() {
   const [state, setState] = useState<LoadState>({ status: 'loading' });
+  const requestedView = new URLSearchParams(window.location.search).get('view');
 
   useEffect(() => {
     let active = true;
@@ -24,7 +26,7 @@ export function App() {
     return () => { active = false; };
   }, []);
 
-  if (new URLSearchParams(window.location.search).get('view') === 'mockups') {
+  if (requestedView === 'mockups') {
     return state.status === 'ready'
       ? <DesignComparison data={state.data} />
       : <p className="status-message">{state.status === 'error' ? state.message : 'Loading design previews…'}</p>;
@@ -40,7 +42,7 @@ export function App() {
         <p className="travel-period">30 Sep 2025 — 30 Apr 2026</p>
       </header>
 
-      <section className="hero">
+      {requestedView !== 'expense' && <section className="hero">
         <div>
           <p className="eyebrow">Exchange travel journal</p>
           <h1>Your places,<br />in perspective.</h1>
@@ -55,13 +57,13 @@ export function App() {
             <div><dt>Days</dt><dd>213</dd></div>
           </dl>
         )}
-      </section>
+      </section>}
 
-      <section aria-label="Travel exploration">
+      {requestedView === 'expense' ? <ExpenseExplorer /> : <section aria-label="Travel exploration">
         {state.status === 'loading' && <p className="status-message">Loading the journey…</p>}
         {state.status === 'error' && <p className="status-message status-message--error">{state.message}</p>}
         {state.status === 'ready' && <CountryExplorer data={state.data} />}
-      </section>
+      </section>}
     </main>
   );
 }

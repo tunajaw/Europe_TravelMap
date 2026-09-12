@@ -1,0 +1,49 @@
+.expense-workspace {
+  padding: 44px 0;
+}
+
+.expense-workspace > h1 {
+  margin-bottom: 28px;
+}
+
+.expense-view-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #eef3fa;
+}
+
+.expense-view-tab {
+  min-height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--muted);
+  background: transparent;
+  font-weight: 600;
+}
+
+.expense-view-tab[aria-selected='true'] {
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 2px 10px rgb(37 78 133 / 10%);
+}
+
+.expense-view-panel {
+  min-height: 420px;
+  margin-top: 20px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+@media (max-width: 520px) {
+  .expense-view-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
