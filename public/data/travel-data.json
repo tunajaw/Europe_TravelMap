@@ -1784,7 +1784,7 @@
       "transportationCategory": "City Bus",
       "company": "RVO",
       "baseCostEur": 3.4,
-      "baseDistanceKm": 24.9,
+      "baseDistanceKm": 25,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -1955,7 +1955,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 252.2,
+      "baseDistanceKm": 289.6,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -1982,7 +1982,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 266.1,
+      "baseDistanceKm": 267.3,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2205,7 +2205,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 276.5,
+      "baseDistanceKm": 338,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2282,7 +2282,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 66.8,
+      "baseDistanceKm": 185.3,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2311,7 +2311,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 125.1,
+      "baseDistanceKm": 193.2,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2373,7 +2373,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 303.5,
+      "baseDistanceKm": 338,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2556,16 +2556,19 @@
       "destinationCityId": "city-munich",
       "originCountryId": "norway",
       "destinationCountryId": "germany",
-      "transitCityIds": [],
+      "transitCityIds": [
+        "city-skopje"
+      ],
       "pathCityIds": [
         "city-oslo",
+        "city-skopje",
         "city-munich"
       ],
       "transportationSubtype": "飛機",
       "transportationCategory": "Plane",
       "company": "Wizz Air",
       "baseCostEur": 28.6,
-      "baseDistanceKm": 1309.8,
+      "baseDistanceKm": 3155.8,
       "notes": "SKP 轉機",
       "departureTransferId": "transfer-034-departure",
       "arrivalTransferId": null
@@ -2664,7 +2667,7 @@
       "transportationCategory": "High-speed Rail",
       "company": "DB",
       "baseCostEur": 3.33,
-      "baseDistanceKm": 358.5,
+      "baseDistanceKm": 505.8,
       "notes": "金牌票",
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2691,7 +2694,7 @@
       "transportationCategory": "High-speed Rail",
       "company": "DB",
       "baseCostEur": 3.33,
-      "baseDistanceKm": 358.5,
+      "baseDistanceKm": 438.6,
       "notes": "金牌票",
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -2742,7 +2745,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 97.7,
+      "baseDistanceKm": 110.9,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null
@@ -3452,7 +3455,7 @@
       "transportationCategory": "Train",
       "company": "DB",
       "baseCostEur": 0,
-      "baseDistanceKm": 105.1,
+      "baseDistanceKm": 167.5,
       "notes": null,
       "departureTransferId": null,
       "arrivalTransferId": null

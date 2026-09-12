@@ -33,7 +33,7 @@ Trip,起點,終點,日期,價錢,接駁(出發),接駁(到達),交通工具,品�
 ,Praha h.n.,M. Hbf.,"6 January, 2026",€7.82,0,0,火車,cd.cz,Furth im Wald→RE25//,
 立陶宛&挪威,NUE Flug.,VNO Flug.,"16 January, 2026",€17,0,€0.9,飛機,RyanAir,"//LTG Link, 50% OFF",
 ,VNO Flug.,OSL Flug.,"17 January, 2026",€16.99,€1.25,€11.4,飛機,RyanAir,"/市區公車60分票/vy, RE25",
-,TRF Flug.,FMM Flug.,"20 January, 2026",€28.6,€12.86,0,飛機,Wizz Air,SKP 轉機/RE10 Moss→渡輪到 Horten→公車到 Torp→TRF/,
+,TRF Flug.,FMM Flug.,"20 January, 2026",€28.6,€12.86,0,飛機,Wizz Air,SKP 轉機/RE10 Moss→渡輪到 Horten→公車到 Torp→TRF/,Skopje
 羅馬/尼亞,FMM Flug.,BBU Flug.,"29 January, 2026",€21.63,0,€0.6,飛機,Wizz Air,"//STB, 公車",
 ,OTP Flug.,CIA Flug.,"30 January, 2026",€18.39,0,€1.5,飛機,RyanAir,"//ATAM, 公車",
 ,FCO Flug.,MUC Flug.,"2 February, 2026",€27.49,€2.2,0,飛機,EasyJet,"/Cortal, EUR Magliana→FCO/",

@@ -98,8 +98,9 @@ in deep red (#780d25) and Train in darker pink (#c65c82). Route strokes use 1.6p
 normally and 2.5px when expanded, independent of map zoom.
 
 Metric distance uses the haversine distance between reviewed reference points.
-For a same-origin-and-destination Segment, the ordered Transit Points form the
-distance legs so the result is not incorrectly zero.
+For every Segment, ordered Transit Points form the distance legs, including
+different-endpoint journeys and same-city round trips. The owner confirmed
+this uniform rule when adding Skopje to the 2026-01-20 Oslo-to-Munich Segment.
 
 ## State and Navigation
 
@@ -160,8 +161,44 @@ Playwright coverage is planned, not yet implemented. CI explicitly separates
 domain, preprocessing, and UI/map tests, then validates public data and builds the app.
 FR-MAP-03 through FR-MAP-06 tests cover all 20 Country Maps, navigation, persistent
 route visibility, route endpoints and ordered Transit Points, stable overlapping
-geometry, and hover/click expansion. FR-MAP-07 linked-marker interactions and
-FR-MAP-08/09 metadata are not included in this increment.
+geometry, and hover/click expansion. FR-MAP-07/08 tests cover opposite-endpoint
+highlighting, hover restoration, persistent Country/City locks, keyboard use,
+and filter cleanup. FR-MAP-09 tests cover individual Segment metadata, zero fares,
+missing optional fields, and closing details without exiting the Country Map.
+
+## Marker and Segment Interaction (FR-MAP-07 through FR-MAP-09)
+
+EuropeMap derives linked endpoints and highlighted routes from currently visible
+Segments only. Europe uses endpoint Country IDs; Country Maps use endpoint City
+IDs. Hover and locked-marker relationships are combined, so leaving a marker
+does not remove its locked highlights. Every ordered path City, including
+Transit Points, participates in marker-to-route relationships. Europe maps these
+Cities to Countries. Hovering or pinning a Segment emphasizes all its waypoint
+labels in bold, including its origin and destination.
+Hidden routes and unrelated microstates do not create linked-marker highlights.
+
+Country selection remains URL-backed. City selection is local and opens a name
+card with an unlock control, not the MVP+ Photo gallery or City Map. Navigation
+and route-filter changes clear transient City and Segment interaction state.
+SegmentLayer tracks the individual hovered/pinned Segment separately from its
+expanded route bundle. Hover/focus shows that Segment's metadata; click or
+Enter/Space pins it. A short hover-leave delay allows movement between expanded
+lanes. Escape dismisses route interaction first, then City selection, then
+Country navigation. Close controls do not trigger the outside-click handler.
+
+The details card sits below the SVG, without covering route geometry. It shows
+City endpoints, date, base fare in EUR explicitly excluding Transfers, original
+subtype, analysis category, company, ordered Transit Points, and notes. Null
+optional fields use explicit missing-data labels; zero fares remain EUR 0.00.
+Rendering uses plain React text rather than HTML from data. No private sources
+or additional geocoding are accessed by these interactions.
+
+Company text is followed by a locally stored website icon when available,
+excluding only City Bus (not InterCity Bus). Download provenance is recorded in
+public/images/companies/sources.json. Icon acquisition is manual and separate
+from CI/build; visitors do not contact company sites or a favicon service.
+Missing icons and image-load failures retain company text. Raw company spelling
+is unchanged; only presentation lookup trims whitespace and ignores case.
 
 Tests must not contain exact accommodation addresses or copy private source
 rows. Sanitized synthetic fixtures cover privacy-sensitive transformations.

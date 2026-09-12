@@ -358,6 +358,11 @@ Transit Points are stored in travel order in the raw text field. Every listed
 Transit Point is an actual visit. Pure transfer-only locations are excluded
 from visual analysis and must not be promoted to Transit Points.
 
+Owner-confirmed exception: the SKP airport overnight on 2026-01-20 is represented
+as the formal Skopje Transit Point in the Oslo → Munich Segment. It is not
+inferred merely from a transfer note; other unconfirmed airport connections
+remain excluded. Transit Point markers participate in Segment interactions.
+
 A sufficiently distant Transit Point may receive a navigable City Map in MVP+.
 The current threshold is greater than 35 km from the reviewed center-point
 station of the canonical City to which that Transit Point belongs.
@@ -421,9 +426,13 @@ not distinguish those reasons.
 
 ## Transportation Distance
 
-Base Segment distance is the straight-line distance between:
+Base Segment distance is the sum of straight-line (haversine) legs through all
+ordered, formally recorded Transit Points:
 
-Origin City reference point → Destination City reference point.
+Origin City reference point → Transit Point reference points → Destination City
+reference point. With no Transit Points this is the direct endpoint distance.
+The owner confirmed this rule for both different-endpoint journeys and same-city
+round trips; it does not change Segment fares or Expense allocation.
 
 Each paid local Endpoint Transfer adds the straight-line distance between its
 two reviewed GPS endpoints.

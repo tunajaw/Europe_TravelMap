@@ -95,6 +95,13 @@ Confirmed airport-to-domain-City mappings include:
   it does, the source movement is represented as multiple Segments.
 * A same-origin-and-destination Segment uses its ordered Transit Points to
   construct a non-zero route.
+* Owner-confirmed update: all Segments sum haversine distances over their ordered
+  origin, Transit Points, and destination, not only same-city round trips.
+* The owner confirmed Skopje (SKP overnight, 2026-01-20 TRF to FMM) as a formal
+  Transit Point. The raw Transit Point cell and approved location alias record
+  now represent it explicitly; notes alone are not automatically parsed into
+  visits. This explicitly confirmed airport overnight is an exception to the
+  no-separate-accommodation Transit Point convention above.
 * A Transit Point more than 35 km from the reviewed center-point station of the
   canonical City to which that Transit Point belongs may receive a navigable
   City Map in MVP+.

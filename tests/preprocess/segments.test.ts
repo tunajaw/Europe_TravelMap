@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { preprocessSegments } from '../../scripts/preprocess/segments.ts';
+import { haversineKm, roundedKm } from '../../scripts/preprocess/geo.ts';
 import type { ReferenceIndex } from '../../scripts/preprocess/types.ts';
 
 const references: ReferenceIndex = {
@@ -19,6 +20,17 @@ const references: ReferenceIndex = {
 };
 
 describe('Segment preprocessing', () => {
+  it('sums ordered Transit Point legs even when origin and destination differ', () => {
+    const result = preprocessSegments([{
+      Trip: 'Transit test', 起點: 'M. Hbf.', 終點: 'Salzburg Hbf.', 日期: '9 October, 2025',
+      價錢: '€10', '接駁(出發)': '0', '接駁(到達)': '0', 交通工具: '火車', 品牌: 'DB', 備註: '//',
+      'Transit Point': 'Königssee',
+    }], references);
+    expect(result.segments[0]!.baseDistanceKm).toBe(roundedKm(
+      haversineKm(references.cities.get('city-munich')!, references.cities.get('city-konigssee')!)
+      + haversineKm(references.cities.get('city-konigssee')!, references.cities.get('city-salzburg')!),
+    ));
+  });
   it('fills down Trip, preserves sequence, maps locations, and splits Transit Points', () => {
     const result = preprocessSegments(
       [

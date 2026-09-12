@@ -75,3 +75,21 @@
 .segment-route--expanded .segment-route-line { stroke-width: 2.5; opacity: .8; }
 .segment-route:focus { outline: none; }
 .segment-route:focus-visible .segment-route-line { stroke-width: 3; opacity: 1; }
+.segment-route--highlighted .segment-route-line { stroke-width: 3; opacity: 1; }
+.country-marker--linked:not(.country-marker--active) circle:not(.country-marker__hit),
+.country-marker--linked:not(.country-marker--active) text { fill: #334155; }
+.city-marker--linked:not(.city-marker--active) circle:not(.city-marker-hit),
+.city-marker--linked:not(.city-marker--active) text { fill: #182537; }
+.city-marker { cursor: pointer; }
+.marker--route-emphasis text { font-weight: 800; fill: #111827; }
+.segment-company { display: flex; align-items: center; gap: 8px; }
+.company-icon { object-fit: contain; flex-shrink: 0; }
+.segment-details, .city-selection { margin: 12px 20px; padding: 16px; background: var(--paper, #f8faff); border: 1px solid var(--line, #d9e3f0); border-radius: 12px; color: var(--ink, #182537); }
+.segment-details header, .city-selection { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.segment-details h3 { margin: 0; font-size: 18px; }
+.segment-details button, .city-selection button { padding: 8px 12px; background: transparent; border: 1px solid var(--line, #d9e3f0); border-radius: 6px; color: inherit; cursor: pointer; }
+.segment-details dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; font-size: 13px; }
+.segment-details dt { color: var(--muted, #475569); font-size: 11px; margin-bottom: 5px; }
+.segment-details dd { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.segment-notes { grid-column: 1 / -1; }
+@media (max-width: 550px) { .segment-details dl { grid-template-columns: 1fr; } }

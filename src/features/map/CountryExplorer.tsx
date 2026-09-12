@@ -83,10 +83,10 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       // The clicked arrow may unmount at the first/last photo. The original
       // event path retains its card ancestor even after that DOM update.
       const inside = event.composedPath().some((node) => node instanceof Element
-        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .country-switcher, .map-toolbar'));
+        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .segment-details, .city-selection, .country-switcher, .map-toolbar'));
       if (!inside) close();
     };
-    const key = (event: KeyboardEvent) => { if (event.key === 'Escape') { event.preventDefault(); close(true); } };
+    const key = (event: KeyboardEvent) => { if (event.key === 'Escape' && !event.defaultPrevented) { event.preventDefault(); close(true); } };
     document.addEventListener('click', click);
     document.addEventListener('keydown', key);
     return () => { document.removeEventListener('click', click); document.removeEventListener('keydown', key); };

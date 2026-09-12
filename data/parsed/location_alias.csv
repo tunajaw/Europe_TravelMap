@@ -1,5 +1,6 @@
 ﻿"raw_location","source_contexts","occurrence_count","location_kind","airport_code","canonical_city","country","canonical_reference_point","mapping_basis","confidence","review_status","notes"
 "Aachen Hbf.","transit_point","1","station_or_terminal","","Aachen","Germany","Aachen Hbf","station_suffix_removed","high","approved",""
+"Skopje","transit_point","1","city_or_place","","Skopje","North Macedonia","Skopje railway station","owner_confirmed","high","approved","Owner confirmed SKP overnight as formal Transit Point for 2026-01-20 TRF to FMM."
 "Amsterdam Central","destination","1","station_or_terminal","","Amsterdam","Netherlands","Amsterdam Centraal","explicit_alias_rule","high","approved",""
 "Amsterdam Sloterdijk","origin","1","city_or_place","","Amsterdam","Netherlands","Amsterdam Centraal","explicit_alias_rule","high","approved",""
 "Andorra","destination|origin","2","city_or_place","","Andorra","Andorra","Andorra la Vella Bus Station","canonical_name_match","high","approved",""

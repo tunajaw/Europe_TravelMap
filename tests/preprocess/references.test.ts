@@ -8,7 +8,8 @@ describe('reviewed reference data', () => {
     expect(references.countries).toHaveLength(20);
     expect(references.cities).toHaveLength(76);
     expect(references.airports).toHaveLength(28);
-    expect(references.index.aliases.size).toBe(101);
+    expect(references.index.aliases.size).toBe(102);
+    expect(references.index.aliases.get('Skopje')?.cityId).toBe('city-skopje');
     expect(references.index.localTransfers.size).toBe(4);
 
     const italy = references.countries.find(({ id }) => id === 'italy');

@@ -67,7 +67,7 @@ export function preprocessSegments(
     const category = CATEGORIES[row.交通工具.trim()];
     if (!category) throw new Error(`Unknown transportation subtype: ${row.交通工具}`);
 
-    const distance = origin.cityId === destination.cityId && transitCityIds.length > 0
+    const distance = transitCityIds.length > 0
       ? pathCityIds.slice(1).reduce((total, cityId, index) => {
           const priorId = pathCityIds[index];
           if (!priorId) throw new Error(`Invalid Segment path: ${segmentId}`);

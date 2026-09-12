@@ -1,0 +1,86 @@
+{
+  "ajet": {
+    "path": "images/companies/ajet.png",
+    "website": "https://ajet.com/",
+    "source": "https://ajet.com/favicon/apple-touch-icon.png",
+    "retrieved": "2026-09-08"
+  },
+  "alsa": {
+    "path": "images/companies/alsa.ico",
+    "website": "https://www.alsa.com/",
+    "source": "https://www.alsa.com/o/Alsa-main-theme/images/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "blablacar": {
+    "path": "images/companies/blablacar.ico",
+    "website": "https://www.blablacar.com/",
+    "source": "https://cdn.blablacar.com/k/a/images/favicon-69df5f97119f5b13.ico",
+    "retrieved": "2026-09-08"
+  },
+  "cd.cz": {
+    "path": "images/companies/cd-cz.ico",
+    "website": "https://www.cd.cz/",
+    "source": "https://www.cd.cz/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "costa": {
+    "path": "images/companies/costa.ico",
+    "website": "https://www.costacruises.com/",
+    "source": "https://www.costacruises.com/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "db": {
+    "path": "images/companies/db.ico",
+    "website": "https://www.bahn.de/",
+    "source": "https://www.bahn.de/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "easyjet": {
+    "path": "images/companies/easyjet.ico",
+    "website": "https://www.easyjet.com/",
+    "source": "https://www.easyjet.com/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "flixbus": {
+    "path": "images/companies/flixbus.png",
+    "website": "https://www.flixbus.de/",
+    "source": "https://cdn-cf.cms.flixbus.com/drupal-assets/favicon/flixbus/apple-icon-57x57.png",
+    "retrieved": "2026-09-08"
+  },
+  "ns": {
+    "path": "images/companies/ns.png",
+    "website": "https://www.ns.nl/",
+    "source": "https://www.ns.nl/fe-platform-static/favicons/2253263/apple-touch/apple-touch-icon-57x57.png",
+    "retrieved": "2026-09-08"
+  },
+  "pegasus": {
+    "path": "images/companies/pegasus.ico",
+    "website": "https://www.flypgs.com/",
+    "source": "https://www.flypgs.com/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "ret": {
+    "path": "images/companies/ret.ico",
+    "website": "https://www.ret.nl/",
+    "source": "https://www.ret.nl/assets/images/favicon/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "ryanair": {
+    "path": "images/companies/ryanair.png",
+    "website": "https://www.ryanair.com/ie/en",
+    "source": "https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-57x57.png",
+    "retrieved": "2026-09-08"
+  },
+  "sncf": {
+    "path": "images/companies/sncf.ico",
+    "website": "https://www.sncf-connect.com/",
+    "source": "https://www.sncf-connect.com/favicon.ico",
+    "retrieved": "2026-09-08"
+  },
+  "vueling": {
+    "path": "images/companies/vueling.png",
+    "website": "https://www.vueling.com/",
+    "source": "https://static.vueling.com/corporativeCMS/media/images/vueling.ico",
+    "retrieved": "2026-09-08"
+  }
+}

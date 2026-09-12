@@ -41,8 +41,12 @@ Country Maps show visited City markers and a translucent country name. Use the
 top-left Back to Europe button to zoom out. Show travel routes toggles Segment
 visibility and keeps its setting across navigation. Hover or click a route to
 expand overlapping routes; press Escape or click outside to clear the selection.
-FR-MAP-01 through FR-MAP-06 are implemented. Linked-marker highlighting and
-Segment metadata are the next increments (FR-MAP-07 onward).
+FR-MAP-01 through FR-MAP-09 are implemented. Hover or select a Country/City
+marker to highlight related routes and their opposite endpoints. Click a City
+to lock it; its name card has an Unlock city control (City Map navigation remains
+MVP+). Hover or focus a route to inspect its metadata; click or press Enter/Space
+to keep it open. Escape dismisses the route details before the City selection
+and Country navigation. Route filters do not change dashboard statistics.
 
 CI runs type checking, domain tests (`npm run test:domain`), preprocessing tests (`npm run test:preprocess`), UI/map
 tests (`npm run test:ui`), public-data validation, and a production build.

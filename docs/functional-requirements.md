@@ -165,6 +165,10 @@ FR-EXP-15 (Accommodation Heatmap Interaction):
 
 These refinements take precedence over the corresponding original descriptions below.
 
+- FR-MAP-07/08 implementation scope: City locking opens a name/unlock card only; City photos and City Map navigation remain MVP+. All path Cities (origin, Transit Points, destination) participate in visible Segment highlighting, combining hovered and locked markers. Hovering/pinning a Segment makes all its City labels bold (corresponding Country labels in Europe). Filtering clears City/Segment locks, without changing statistics.
+- FR-MAP-09: Append an available company website icon after the company name, excluding only City Bus. InterCity Bus is included. Use local assets and preserve text when an icon is unavailable.
+- FR-MAP-09: The displayed fare is the Segment base fare in EUR, explicitly excluding Transfers. Hover/focus previews individual metadata, and click/Enter/Space pins it for reading. Escape dismisses route details before City selection or Country navigation.
+
 - FR-MAP-02: Double-clicking a Country marker enters its Country Map, equivalent to clicking Enter.
 - FR-MAP-03: Country Maps also show foreign Cities on Segments connected to the selected country. Frame these Cities with the country so Segment endpoints coincide with visible City markers. City labels use darker gray (#273449).
 - FR-MAP-05: Country Maps offer Only show domestic routes (unchecked by default). Keep only Segments whose origin and destination Countries both match the selected country. Retain the setting across navigation; it has no effect in Europe or on statistics. Reframe using the remaining routes and their City markers, retaining Transit Points.
