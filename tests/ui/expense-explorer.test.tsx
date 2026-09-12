@@ -12,11 +12,14 @@ const expenseData = {
   segments: [
     { id: 'plane-1', transportationCategory: 'Plane', baseCostEur: 10, baseDistanceKm: 100 },
     { id: 'plane-2', transportationCategory: 'Plane', baseCostEur: 30, baseDistanceKm: 200 },
+    { id: 'plane-free', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 50 },
+    { id: 'plane-airport-only', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 60 },
     { id: 'train-1', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80 },
   ] as TravelData['segments'],
   transfers: [
     { segmentId: 'plane-1', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 10 },
     { segmentId: 'plane-2', expenseInclusion: 'always', costEur: 2, distanceKm: 3 },
+    { segmentId: 'plane-airport-only', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 8 },
   ] as TravelData['transfers'],
 };
 
@@ -66,9 +69,39 @@ describe('FR-EXP-01 Expense page selection', () => {
     expect(categories).toHaveTextContent('Ferry / Cruise');
 
     const plane = screen.getByRole('button', { name: /Plane/ });
-    expect(plane).toHaveTextContent('Total EUR 47.00');
-    expect(plane).toHaveTextContent('Avg. EUR 23.50');
+    expect(plane).toHaveTextContent('Total EUR 52.00');
+    expect(plane).toHaveTextContent('Avg. EUR 13.00');
     expect(screen.getByRole('button', { name: /Train/ })).toHaveTextContent('Total EUR 12.00');
     expect(screen.getByRole('button', { name: /High-speed Rail/ })).toHaveTextContent('Total EUR 0.00');
+  });
+
+  it('includes Airport Transfers by default and recalculates when they are excluded', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+
+    const airportTransfers = screen.getByRole('checkbox', { name: 'Include airport transfers' });
+    expect(airportTransfers).toBeChecked();
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 52.00');
+
+    await user.click(airportTransfers);
+
+    expect(airportTransfers).not.toBeChecked();
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 42.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 10.50');
+  });
+
+  it('classifies zero-cost Segments after applying the Airport Transfer option', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+
+    const zeroCost = screen.getByRole('checkbox', { name: 'Include 0-Cost Segments' });
+    expect(zeroCost).toBeChecked();
+    await user.click(zeroCost);
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 52.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 17.33');
+
+    await user.click(screen.getByRole('checkbox', { name: 'Include airport transfers' }));
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 42.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 21.00');
   });
 });

@@ -15,19 +15,24 @@ type ExpenseData = Pick<TravelData, 'segments' | 'transfers'>;
 
 export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [view, setView] = useState<ExpenseView>('transportation');
+  const [includeAirportTransfers, setIncludeAirportTransfers] = useState(true);
+  const [includeZeroCostSegments, setIncludeZeroCostSegments] = useState(true);
   const activeLabel = VIEWS.find(({ id }) => id === view)?.label ?? 'Transportation';
   const categorySummaries = TRANSPORT_MODES.map(([category, color]) => {
-    const segments = data.segments.filter((segment) => segment.transportationCategory === category);
-    const totalCostEur = segments.reduce((total, segment) => total + calculateSegmentTotals(
-      segment,
-      data.transfers,
-      { includeAirportTransfers: true },
-    ).costEur, 0);
+    const segmentCosts = data.segments
+      .filter((segment) => segment.transportationCategory === category)
+      .map((segment) => calculateSegmentTotals(
+        segment,
+        data.transfers,
+        { includeAirportTransfers },
+      ).costEur)
+      .filter((costEur) => includeZeroCostSegments || costEur !== 0);
+    const totalCostEur = segmentCosts.reduce((total, costEur) => total + costEur, 0);
     return {
       category,
       color,
       totalCostEur,
-      averageCostEur: segments.length ? totalCostEur / segments.length : 0,
+      averageCostEur: segmentCosts.length ? totalCostEur / segmentCosts.length : 0,
     };
   });
 
@@ -94,6 +99,26 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 <span>Avg. EUR {averageCostEur.toFixed(2)}</span>
               </button>
             ))}
+          </div>
+        )}
+        {view === 'transportation' && (
+          <div className="expense-filters" aria-label="Transportation options">
+            <label>
+              <input
+                checked={includeAirportTransfers}
+                onChange={(event) => setIncludeAirportTransfers(event.target.checked)}
+                type="checkbox"
+              />
+              Include airport transfers
+            </label>
+            <label>
+              <input
+                checked={includeZeroCostSegments}
+                onChange={(event) => setIncludeZeroCostSegments(event.target.checked)}
+                type="checkbox"
+              />
+              Include 0-Cost Segments
+            </label>
           </div>
         )}
       </section>
