@@ -35,12 +35,12 @@ Segment metadata.
 
 | Analysis category | Color |
 | --- | --- |
-| High-speed Rail | red |
-| Train | pink |
-| City Bus | light green |
-| InterCity Bus | green |
-| Plane | dark blue |
-| Ferry / Cruise | light blue |
+| High-speed Rail | deep red (`#780d25`) |
+| Train | dark pink (`#c65c82`) |
+| City Bus | light green (`#a2d9b0`) |
+| InterCity Bus | green (`#34855b`) |
+| Plane | dark blue (`#254e85`) |
+| Ferry / Cruise | light blue (`#8bc8e5`) |
 
 ## Endpoint Transfer Parsing
 
@@ -93,15 +93,14 @@ Confirmed airport-to-domain-City mappings include:
 * Pure transfer-only locations are excluded from visual analysis.
 * A Transit Point has no separate transportation or accommodation expense. If
   it does, the source movement is represented as multiple Segments.
-* A same-origin-and-destination Segment uses its ordered Transit Points to
-  construct a non-zero route.
-* Owner-confirmed update: all Segments sum haversine distances over their ordered
-  origin, Transit Points, and destination, not only same-city round trips.
-* The owner confirmed Skopje (SKP overnight, 2026-01-20 TRF to FMM) as a formal
-  Transit Point. The raw Transit Point cell and approved location alias record
-  now represent it explicitly; notes alone are not automatically parsed into
-  visits. This explicitly confirmed airport overnight is an exception to the
-  no-separate-accommodation Transit Point convention above.
+* All Segments sum haversine distances over their ordered origin, Transit Points,
+  and destination. Without Transit Points, use the direct endpoint distance.
+  This also gives same-origin-and-destination Segments a non-zero route when
+  ordered Transit Points exist.
+* Skopje (SKP overnight, 2026-01-20 TRF to FMM) is a formal Transit Point. The
+  raw Transit Point cell and approved location alias record represent it
+  explicitly; notes alone are not automatically parsed into visits. This airport
+  overnight is an exception to the no-separate-accommodation convention above.
 * A Transit Point more than 35 km from the reviewed center-point station of the
   canonical City to which that Transit Point belongs may receive a navigable
   City Map in MVP+.
@@ -128,6 +127,9 @@ Confirmed airport-to-domain-City mappings include:
   malformed or inconsistent score.
 
 ## Privacy Boundary
+
+The repository is public. Private raw information must not be committed or
+pushed; tracked Accommodation data must be deliberately sanitized.
 
 Exact accommodation addresses are private source data. The complete source file
 is stored at `data/private/accommodation-raw.csv`, which is excluded from Git.
@@ -190,6 +192,8 @@ one-off location guesses in application code:
   canonical City. Bad Camberg uses the owner-confirmed `Bad Camberg Bf.`.
   Königssee is an explicit exception and uses
   `Tourist-Information am Parkplatz Königssee` instead of a railway station.
+  Other selected reference points are London Waterloo, Paris Gare du Nord,
+  Dublin Connolly, Istanbul Sirkeci Garı, and Brussels-Midi/Brussel-Zuid.
 * `location_alias.csv` provides an explicit mapping for every distinct Segment
   origin, destination, and Transit Point label currently present in raw data.
 * `city_reference_geocoding.csv`, `airport_reference.csv`, and
@@ -203,30 +207,8 @@ application with a custom User-Agent, and cache responses. The public API is a
 data-preparation dependency only and must not be called by the website at
 runtime.
 
-The current lookup produced candidates for all 76 City reference points, all
-28 Airports, and 20 confirmed MVP Country records. The owner has visually
-reviewed and approved all of these coordinates. Country markers normally use
+The dataset contains approved coordinates for all 76 City reference points,
+28 Airports, and 20 MVP Country records. Country markers normally use
 each Country's capital-City coordinate. Italy is an owner-approved display
 exception: its Country marker uses the reviewed Milano Centrale reference
 point to separate it from Vatican City, while Rome remains Italy's capital.
-
-## Resolved Data Review Items
-
-The owner has corrected the previously identified missing Accommodation types,
-missing Accommodation Cities, rating format and total differences, City
-spelling errors, Transit Point spelling error, and the duplicated Segment
-destination in the Strasbourg → Karlsruhe Transit Point list.
-
-The City reference-point list has been manually reviewed. The selected special
-reference points are London Waterloo, Paris Gare du Nord, Dublin Connolly,
-Istanbul Sirkeci Garı, and Brussels-Midi/Brussel-Zuid.
-
-`City Map` in this rule means the navigable MVP+ City Map.
-
-## Public Repository Rule
-
-The repository is public. New exact accommodation addresses or other private
-raw information must not be committed or pushed. The complete Accommodation
-source is stored under the ignored `data/private/` directory. Any tracked
-Accommodation dataset must be a deliberately sanitized, application-ready
-output that excludes exact addresses and other private fields.

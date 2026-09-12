@@ -106,7 +106,9 @@ A Segment has:
 
 A Segment is the primary unit for travel-path visualization and transportation expense analysis.
 
-All Segments currently present in the source data are included in the MVP map.
+All Segments currently present in the source data are included in MVP scope.
+Map-level visibility rules and filters determine which are rendered; they do not
+delete Segments or change expenses.
 
 ---
 
@@ -280,7 +282,8 @@ Trip's country/city participation can be derived from its Visits and Segments.
 
 ### Photo
 
-* Photo belongs to City or POI
+* Photo belongs to Country in MVP
+* Photo may have an advisory City association; City or POI relationships are MVP+
 
 ---
 
@@ -294,7 +297,8 @@ A normal long-distance Trip:
 * contains at least one Segment
 * is represented primarily through its Segments in the current dataset
 
-Short-distance and city trips may behave differently in future MVP+ functionality.
+Additional local or city-trip modeling may be introduced in MVP+. Short-distance
+movements already recorded as Segments remain in MVP scope.
 
 ---
 
@@ -335,6 +339,10 @@ Segment in the current dataset.
 When a Segment starts and ends in the same City, its ordered Transit Points
 define the non-zero route between the shared endpoints.
 
+Europe Map hides Segments whose origin and destination Countries match. Country
+Maps retain them and may filter to domestic routes. Map visibility does not
+control Expense aggregation.
+
 ### Transportation Classification
 
 The application uses six normalized categories for map styling, filters, and
@@ -358,7 +366,7 @@ Transit Points are stored in travel order in the raw text field. Every listed
 Transit Point is an actual visit. Pure transfer-only locations are excluded
 from visual analysis and must not be promoted to Transit Points.
 
-Owner-confirmed exception: the SKP airport overnight on 2026-01-20 is represented
+The approved exception is that the SKP airport overnight on 2026-01-20 is represented
 as the formal Skopje Transit Point in the Oslo → Munich Segment. It is not
 inferred merely from a transfer note; other unconfirmed airport connections
 remain excluded. Transit Point markers participate in Segment interactions.
@@ -400,7 +408,7 @@ Rijn → Utrecht Centraal.
 
 Airport Transfer is not a Segment.
 
-It may be rendered on the map when sufficiently geographically significant.
+It does not have an independent map path in MVP.
 
 Whether it contributes to transportation expense analysis is controlled by the Airport Transfer filter.
 
@@ -431,8 +439,7 @@ ordered, formally recorded Transit Points:
 
 Origin City reference point → Transit Point reference points → Destination City
 reference point. With no Transit Points this is the direct endpoint distance.
-The owner confirmed this rule for both different-endpoint journeys and same-city
-round trips; it does not change Segment fares or Expense allocation.
+This rule applies to both different-endpoint journeys and same-city round trips; it does not change Segment fares or Expense allocation.
 
 Each paid local Endpoint Transfer adds the straight-line distance between its
 two reviewed GPS endpoints.

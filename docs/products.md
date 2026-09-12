@@ -13,7 +13,7 @@ The primary goals are:
 
   * Europe
   * Country
-  * City
+  * City (MVP+ navigation; City markers and locking are MVP)
   * POI (MVP+)
 * Visualize travel routes between countries and cities.
 * Present transportation and accommodation expenses associated with individual trips as map metadata.
@@ -123,9 +123,15 @@ The MVP includes:
 * Visited-city markers
 * Back-to-previous-level navigation
 * Segment visibility toggle
+* Country-level domestic-route filter
 * Segment rendering
 * Segment interaction
 * Segment metadata
+
+All already-recorded Segments, including short-distance and zero-cost movements,
+are MVP data. Europe hides same-Country endpoint routes; Country Maps and Expense
+analysis retain them according to their own filters. Display filtering does not
+remove source records.
 
 ### Expense Dashboard
 
@@ -152,7 +158,7 @@ Potential future features include:
 * POI display
 * POI-level photos
 * Google Maps Timeline-based location reconstruction
-* Short-distance trips on the map
+* Additional short-distance/local-trip modeling beyond the recorded Segments
 * Trip filtering
 * More detailed timeline exploration
 

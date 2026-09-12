@@ -99,8 +99,8 @@ normally and 2.5px when expanded, independent of map zoom.
 
 Metric distance uses the haversine distance between reviewed reference points.
 For every Segment, ordered Transit Points form the distance legs, including
-different-endpoint journeys and same-city round trips. The owner confirmed
-this uniform rule when adding Skopje to the 2026-01-20 Oslo-to-Munich Segment.
+different-endpoint journeys and same-city round trips. This uniform rule applies
+to every formally recorded Transit Point.
 
 ## State and Navigation
 
@@ -161,16 +161,15 @@ Playwright coverage is planned, not yet implemented. CI explicitly separates
 domain, preprocessing, and UI/map tests, then validates public data and builds the app.
 FR-MAP-03 through FR-MAP-06 tests cover all 20 Country Maps, navigation, persistent
 route visibility, route endpoints and ordered Transit Points, stable overlapping
-geometry, and hover/click expansion. FR-MAP-07/08 tests cover opposite-endpoint
+geometry, and hover/click expansion. FR-MAP-07/08 tests cover endpoint and Transit Point
 highlighting, hover restoration, persistent Country/City locks, keyboard use,
 and filter cleanup. FR-MAP-09 tests cover individual Segment metadata, zero fares,
 missing optional fields, and closing details without exiting the Country Map.
 
 ## Marker and Segment Interaction (FR-MAP-07 through FR-MAP-09)
 
-EuropeMap derives linked endpoints and highlighted routes from currently visible
-Segments only. Europe uses endpoint Country IDs; Country Maps use endpoint City
-IDs. Hover and locked-marker relationships are combined, so leaving a marker
+EuropeMap derives linked markers and highlighted routes from currently visible
+Segments only. Europe uses path Country IDs; Country Maps use path City IDs. Hover and locked-marker relationships are combined, so leaving a marker
 does not remove its locked highlights. Every ordered path City, including
 Transit Points, participates in marker-to-route relationships. Europe maps these
 Cities to Countries. Hovering or pinning a Segment emphasizes all its waypoint

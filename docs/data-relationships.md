@@ -23,7 +23,7 @@ preprocessing rules.
 | Airport Transfer uses Airport | many-to-one | Airport endpoint label plus `airport_reference.csv` | Normalize raw airport labels to IATA code and reviewed airport reference | Approved |
 | Airport Transfer uses City endpoint | many-to-one | Segment direction, canonical City, and City reference point | Use the reviewed reference point of the associated domain City | Approved |
 | Local Endpoint Transfer uses route endpoints | two reviewed points | `local_transfer_reference.csv` | Resolve by generated Transfer ID and derive straight-line distance from the approved GPS pair | Approved |
-| Accommodation belongs to Trip | many-to-one | Private Accommodation Trip field | Normalize or fill down Trip title and resolve it to generated Trip ID | Source Trip values currently align; transformed output still required |
+| Accommodation belongs to Trip | many-to-one | Private Accommodation Trip field | Normalize or fill down Trip title and resolve it to generated Trip ID | Materialized and validated in the public dataset |
 | Accommodation belongs to City | many-to-one | Private Accommodation City field | Resolve the source City through the same canonical City vocabulary | Mapping output must exclude the exact address |
 | Accommodation belongs to Country | many-to-one, derived | Accommodation City | Use the Country of the canonical Accommodation City | Rule confirmed |
 | Transportation expense belongs to Segment | one-to-one value for MVP | Segment price | Store the normalized Segment transportation amount on its Segment | Standalone Expense records are not required for MVP |
@@ -60,7 +60,8 @@ preprocessing rules.
 * `data/parsed/country_reference.csv` records Country map candidates and the
   current microstate flag.
 * `data/parsed/photo_manifest.csv` links application-ready images to Countries
-  and proposes display order, City, and alternative text.
+  with chronological display order and tentatively approved alternative text;
+  candidate City relationships remain advisory.
 
 ## Confirmed Vatican City Special Case
 

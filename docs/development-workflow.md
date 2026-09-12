@@ -157,6 +157,11 @@ Avoid large commits combining:
 
 ## Review Principle
 
+Specifications under `docs/` describe the current source of truth. Confirmed
+changes are integrated into the corresponding existing section, while replaced
+rules are removed. Git records ordinary change history; a decision log or ADR
+is reserved for durable rationale and meaningful trade-offs.
+
 A feature is not complete when:
 
 "It works on my machine."

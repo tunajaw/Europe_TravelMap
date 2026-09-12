@@ -1,36 +1,37 @@
-FR-MAP-01(Europe map)：進入 Travel Map 時顯示 Europe map，我去過的國家的首都地理位置都有一個灰點代標該國家，該國家的國界線變粗，點上方以深灰色標示該國家名稱。
+FR-MAP-01(Europe map)：進入 Travel Map 時顯示 Europe map，我去過的國家的首都地理位置都有一個灰點代標該國家，該國家的國界線變粗，點上方以深灰色標示該國家名稱。Italy 為避免與 Vatican City 重疊，顯示點使用 Milano Centrale 的已審核座標，但 Rome 仍為 Italy 的首都。
 
-FR-MAP-02 (Country selection): 當我的滑鼠移到點上時，該國家的國界線變粗加黑，文字變黑色，點稍微放大一點點且變黑以顯示不同之處。移開則恢復原狀。左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、國家旅遊圖片集錦與"Enter"。則 zoom-in 該國家地圖，開啟 Country Map，按到 小 box 以外的地方則回到 Europe Map，縮回 小 box，取消國家"鎖定"狀態。如果點擊 marker (即使不是現在的鎖定國家)本身，切換到該 marker 代表國家的鎖定"狀態，該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、國家旅遊圖片集錦與"Enter"。
+FR-MAP-02 (Country selection): 當我的滑鼠移到點附近時，該國家的所有國界線（包含與其他國家重疊的邊界）變粗加黑，文字變黑色，點稍微放大一點點且變黑以顯示不同之處。靠近點時應容易觸發，移開後不應容易閃爍；移開則恢復原狀。滑鼠操作不顯示點周圍的加粗方框，但鍵盤 focus indicator 必須保留。左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、依時間排序的三張國家旅遊圖片集錦與"Enter"。按下 "Enter" 或連點兩下該國家 marker，則 zoom-in 該國家地圖，開啟 Country Map。按到小 box 以外的地方則回到 Europe Map，縮回小 box，取消國家"鎖定"狀態；marker、Segment、metadata card 與地圖控制項不視為 box 外部。如果點擊 marker (即使不是現在的鎖定國家)本身，切換到該 marker 代表國家的鎖定狀態及圖片。圖片左右兩側提供上一張／下一張按鈕，第一張只顯示下一張，最後一張只顯示上一張；圖片切換使用滑動效果，按鈕為較小的半透明正方形且文字置中。切換國家時，右側 bar 使用滑動填滿效果。動畫需遵守 reduced-motion 設定。Europe Map、國家預覽與 Country Map 狀態需由 URL hash 支援直接開啟及瀏覽器上一頁／下一頁。
 
 造訪國家不必具有 Segment。Vatican City 在 MVP 顯示為袖珍國家 marker，浮動 box 可顯示國家名稱及圖片；因為沒有 Segment，marker interaction 不 highlight 路線，Transportation 統計顯示無資料而不是 0。
 
-FR-MAP-03 (City selection): 在國家地圖正中間標示該國家的名稱，淺灰色半透明。我去過的城市都有一個點，點上方以深灰色標示該城市名稱。當我的滑鼠移到點上時，文字變黑色，點稍微放大一點點以顯示不同之處。
+FR-MAP-03 (City selection): 在國家地圖正中間標示該國家的名稱，淺灰色半透明。我去過的城市都有一個點，點上方以較深灰色（#273449）標示該城市名稱。Country Map 也需顯示與該國可見 Segment 相連的鄰國城市及 Transit Point，並調整地圖範圍，使 Segment 端點對應到可見的 City marker。當我的滑鼠移到點上時，文字變黑色，點稍微放大一點點以顯示不同之處。MVP 點擊 City marker 或按 Enter／Space 時，鎖定該 City、保留相關 Segment highlight，並顯示只有城市名稱與 "Unlock city" 的小卡；城市照片與 City Map 導覽仍屬於 FR-MAP-03+。
 
 FR-MAP-03+ (City selection) [MVP+]: 左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示城市名稱、城市旅遊圖片集錦與"Enter"。則 zoom-in 該城市地圖，開啟 City Map，按到 小 box 以外的地方則回到 Country Map，縮回 小 box，取消城市"鎖定"狀態。如果點擊 marker (即使不是現在的鎖定城市)本身，切換到該 marker 代表城市的鎖定"狀態，該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示城市名稱、城市旅遊圖片集錦與"Enter"。
 
+FR-MAP-04 (Back to previous level): 地圖左上角有一個按鈕，按下去會依照 (City Map -> ) Country Map -> Europe Map 的層級 zoom out。MVP 的 Country Map 提供 "Back to Europe"；City Map -> Country Map 屬於 MVP+。地圖層級切換使用動畫，reduced-motion 時直接切換。
 
-FR-MAP-04 (Back to previous level): 地圖左上角有一個按鈕，按下去會依照 (City Map -> ) Country Map -> Europe Map 的層級 zoom out。
+FR-MAP-05 (Toggle segment visibility): 地圖的左上角有一個 [Checkbox] "Show travel routes"，預設是打開軌跡的狀態，按下會顯示/隱藏旅行軌跡。Country Map 另有一個預設關閉的 [Checkbox] "Only show domestic routes"；開啟後只顯示起點與終點 Country 都是目前國家的 Segment，並依保留的 Segment 與 Transit Point 重新調整地圖範圍，同時保留目前國家的所有 visited City。保留 Segment 的外國 Transit Point 不會被移除。兩個 checkbox 的狀態在地圖層級切換後仍保留；"Only show domestic routes" 在 Europe Map 不生效，也不影響 dashboard、Expense 統計、raw data 或 Segment 定義。切換篩選時清除 City／Segment 鎖定。
 
-FR-MAP-05 (Toggle segment visibility): 地圖的左上角有一個 [Checkbox]顯示旅行軌跡，預設是打開軌跡的狀態。按下會顯示/隱藏旅行軌跡。
+FR-MAP-06 (Segment rendering): 如果是打開軌跡的狀態，顯示旅行軌跡，用很淡偏細的半透明拋物線繪製。Europe Map 永久隱藏起點與終點為同一 Country 的 Segment；Country Map 與統計仍保留這些 Segment。Country Map 顯示其 path 中任何 City（包含 Transit Point）屬於目前國家的 Segment，並套用 FR-MAP-05 的篩選。Endpoint Transfer 不繪製為獨立 Segment。兩段 Segment 即使起/終點相同也不要重疊，在 hover/click 之前雖然會畫多條但不展開，以很小的曲度差異疊加 (視覺上加粗)，但 hover / click 後展開呈明顯多條的 Segment。
+。無論真實出發的城市為何，在 Europe Map 中一律以地圖上的 Country 顯示點為端點；在 Country Map 中以 City 顯示點依 origin、Transit Point、destination 順序繪製；在 City Map 中不顯示 Segment。一般線寬為 1.6px，展開時為 2.5px，且不隨 zoom 改變。地圖與 dashboard 使用相同六類：High-speed Rail（深紅色 #780d25）、Train（深粉紅色 #c65c82）、City Bus（淺綠色 #a2d9b0）、InterCity Bus（綠色 #34855b）、Plane（深藍色 #254e85）、Ferry / Cruise（淺藍色 #8bc8e5）。確切 raw subtype 仍保留於 metadata。
 
-FR-MAP-06 (Segment rendering): 如果是打開軌跡的狀態，顯示所有的旅行軌跡，用很淡偏細的半透明拋物線繪製，兩段 Segment 即使起/終點相同也不要重疊，在 hover/click 之前雖然會畫多條但不展開，以很小的曲度差異疊加 (視覺上加粗)，但 hover / click 後展開呈明顯多條的 Segment。
-。無論真實出發的城市為何，在 Europe Map 中一律以地圖上的顯示點為端點；在 Country Map 中以城市上的顯示點為端點；在 City Map 中不顯示 Segment。地圖與 dashboard 使用相同六類：High-speed Rail（紅色）、Train（粉紅色）、City Bus（淺綠色）、InterCity Bus（綠色）、Plane（深藍色）、Ferry / Cruise（淺藍色）。確切 raw subtype 仍保留於 metadata。
-
-FR-MAP-07 (Marker Interaction): 當在 Europe Map 時，當我的滑鼠移到點上時，相對應  Segment 另一頭的國家文字變深灰色，也變深灰點，移開則恢復原狀。左鍵滑鼠點下該點開啟該點的浮動小 box，相對應  Segment 另一頭的國家文字變深灰色，也變深灰點。當在 Country Map 時，當我的滑鼠移到點上時，相對應  Segment 另一頭的城市文字變深灰色，也變深灰點，移開則恢復原狀。左鍵滑鼠點下該點開啟該點的浮動小 box，相對應 Segment 另一頭的城市文字變深灰色，也變深灰點。
+FR-MAP-07 (Marker Interaction): 當在 Europe Map 時，當我的滑鼠 hover/focus 或鎖定某一 Country marker，所有可見 Segment path 中包含該 Country 的 Segment 維持 highlight，path 中其他 Country 的文字與點變深；移開時取消暫時狀態，但保留已鎖定 marker 的狀態。當在 Country Map 時，當我的滑鼠 hover/focus 或鎖定某一 City marker，所有可見 Segment path 中包含該 City 的 Segment 維持 highlight，path 中其他 City 的文字與點變深。origin、destination 與 Transit Point 都參與互動；Europe Map 將 City 對應為 Country。隱藏的 Segment 與沒有相關 Segment 的 Country 不產生 highlight。
 
 FR-MAP-08 (Segment Interaction): 
 * Europe Map：
-	* 當滑鼠 hover 任一 Segment 時，該 Segment 加粗並切換為對應交通方式的彩色，同時顯示該 Segment 的詳細 metadata。
+	* 當滑鼠 hover/focus 任一 Segment 時，該 Segment 加粗並切換為對應交通方式的彩色，同時顯示該 Segment 的詳細 metadata。
 	* 當滑鼠移開 Segment 時，恢復該 Segment 原本的顯示狀態。
 	* 當某一國家處於「鎖定」狀態時，滑鼠 hover 該國家所對應的 Segment，該 Segment 加粗並切換為對應交通方式的彩色，同時顯示該 Segment 的詳細 metadata。
 	* 當某一國家處於「鎖定」狀態時，該國家所對應的 Segment 維持 highlight 狀態，不因滑鼠移開 marker 而恢復。
 * Country Map：
-	* 當滑鼠 hover 任一 Segment 時，該 Segment 加粗並切換為對應交通方式的彩色，同時顯示該 Segment 的詳細 metadata。
+	* 當滑鼠 hover/focus 任一 Segment 時，該 Segment 加粗並切換為對應交通方式的彩色，同時顯示該 Segment 的詳細 metadata。
 	* 當滑鼠移開 Segment 時，恢復該 Segment 原本的顯示狀態。
 	* 當某一城市處於「鎖定」狀態時，滑鼠 hover 該城市所對應的 Segment，該 Segment 加粗並切換為對應交通方式的彩色，同時顯示該 Segment 的詳細 metadata。
 	* 當某一城市處於「鎖定」狀態時，該城市所對應的 Segment 維持 highlight 狀態，不因滑鼠移開 marker 而恢復。
 
-FR-MAP-09 (Segment Path metadata): 包含出發點-抵達點，日期，價錢，確切原始交通分類、分析交通類別與備註。
+當滑鼠 hover/focus Segment 時，該 Segment 的 origin、destination 與所有 Transit Point 標籤變為粗體（Europe Map 顯示對應 Country，Country Map 顯示 City）。相同端點的一組 Segment 可以一起展開，但 metadata 必須對應目前 hover/focus 或鎖定的單一 Segment。左鍵點擊 Segment 或按 Enter／Space 可鎖定該筆 metadata；Close 只關閉 metadata，不退出 Country Map。Escape 依序解除 Segment interaction、City selection、Country navigation。切換地圖層級或 route filter 時，清除暫時與鎖定的 City／Segment interaction 狀態。
+
+FR-MAP-09 (Segment Path metadata): 包含出發點-抵達點、日期、Segment base fare（EUR，明確標示不包含 Transfers）、確切原始交通分類、分析交通類別、公司、依序排列的 Transit Point 與備註。0 元顯示為 EUR 0.00；缺少的 optional field 應明確顯示未記錄。metadata 顯示在 SVG 下方，不遮住路線。除 City Bus 外，公司名稱最後端在有本機 icon 時顯示各自公司的網站 icon；InterCity Bus 仍顯示 icon。若找不到或載入失敗則保留文字，不可在 runtime 向第三方服務請求 icon。
 
 FR-EXP-01 (Expense Page Selection): Expense 畫面最左上方兩個互斥按鍵: Transportation / Accommodation 代表現在 Show 的頁面是交通還是住宿相關的資訊，預設是 Transportation
 
@@ -61,7 +62,7 @@ Ferry / Cruise: ...
 
 FR-EXP-03 (Transporatation Data Calculation):
 * Endpoint Transfer（Airport 或 local 港口／車站接駁）不是 Segment，而是依附於 parent Segment。
-* Segment 距離為起點 City reference point 到終點 City reference point 的直線距離。City reference point 通常是中央火車站；沒有單一主要車站或沒有鐵路的城市必須使用經人工確認的替代點。
+* Segment 距離為依序連接起點 City reference point、所有正式 Transit Point reference point 與終點 City reference point 的各段直線距離（haversine）總和。沒有 Transit Point 時，即為起點到終點的直線距離；此規則同時適用於不同端點與相同 City 起終點的 Segment。City reference point 通常是中央火車站；沒有單一主要車站或沒有鐵路的城市必須使用經人工確認的替代點。
 * 非 0 元的 local Endpoint Transfer 永遠把費用及其兩個已確認 GPS 端點間的直線距離加入 parent Segment；它不建立獨立 Segment，也不建立自己的交通類別或 Country aggregation，而是繼承 parent Segment。
 * checkbox "考慮市區到機場接駁" 決定 Airport Transfer 是否納入 Transportation 統計。啟用時，只有非 0 元的單程接駁會把費用及 City reference point → Airport 的直線距離加入對應 Segment。
 * Endpoint Transfer 不需在 raw data 手動填寫日期或距離；分析距離由 preprocessing 根據已確認的地點座標推導。
@@ -79,7 +80,7 @@ FR-EXP-04 (Transportation Filter):
 barplot 與 heatmap 的視覺化資料由交通類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-05 (Transportation Barplot Render):
-橫向 barplot，列出所有篩選過後的 Segment，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值；Bar 固定合併 local Endpoint Transfer，並在 checkbox 開啟時合併 Airport Transfer。bar 與 Map Segment 使用相同六類色彩：High-speed Rail（紅色）、Train（粉紅色）、City Bus（淺綠色）、InterCity Bus（綠色）、Plane（深藍色）、Ferry / Cruise（淺藍色）。
+橫向 barplot，列出所有篩選過後的 Segment，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值；Bar 固定合併 local Endpoint Transfer，並在 checkbox 開啟時合併 Airport Transfer。bar 與 Map Segment 使用 FR-MAP-06 定義的相同六類色彩。
 
 FR-EXP-06 (Transportation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
@@ -161,16 +162,3 @@ FR-EXP-15 (Accommodation Heatmap Interaction):
 * 幾晚上
 * 平均數值 (+-標準差)
 * 排名
-## Reviewed map refinements (2026-09-08)
-
-These refinements take precedence over the corresponding original descriptions below.
-
-- FR-MAP-07/08 implementation scope: City locking opens a name/unlock card only; City photos and City Map navigation remain MVP+. All path Cities (origin, Transit Points, destination) participate in visible Segment highlighting, combining hovered and locked markers. Hovering/pinning a Segment makes all its City labels bold (corresponding Country labels in Europe). Filtering clears City/Segment locks, without changing statistics.
-- FR-MAP-09: Append an available company website icon after the company name, excluding only City Bus. InterCity Bus is included. Use local assets and preserve text when an icon is unavailable.
-- FR-MAP-09: The displayed fare is the Segment base fare in EUR, explicitly excluding Transfers. Hover/focus previews individual metadata, and click/Enter/Space pins it for reading. Escape dismisses route details before City selection or Country navigation.
-
-- FR-MAP-02: Double-clicking a Country marker enters its Country Map, equivalent to clicking Enter.
-- FR-MAP-03: Country Maps also show foreign Cities on Segments connected to the selected country. Frame these Cities with the country so Segment endpoints coincide with visible City markers. City labels use darker gray (#273449).
-- FR-MAP-05: Country Maps offer Only show domestic routes (unchecked by default). Keep only Segments whose origin and destination Countries both match the selected country. Retain the setting across navigation; it has no effect in Europe or on statistics. Reframe using the remaining routes and their City markers, retaining Transit Points.
-- FR-MAP-06: Europe permanently hides Segments with identical origin and destination Country IDs, including domestic inter-city travel and round trips with Transit Points. Country Maps and statistics retain them.
-- FR-MAP-06: High-speed Rail uses deep red (#780d25); Train uses darker pink (#c65c82), shared with the dashboard. Normal Segment strokes are 1.6px and expanded strokes are 2.5px.

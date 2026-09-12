@@ -159,19 +159,27 @@ Production-quality does not mean enterprise-scale complexity.
 
 ---
 
+## Specification Maintenance
+
+Documents under `docs/` represent the current source of truth, not development
+history.
+
+* Integrate confirmed changes into the original corresponding section and retain
+  that document's existing language and paragraph structure whenever practical.
+* Replace or remove superseded rules instead of appending amendment or update
+  sections that leave conflicting versions in the same document.
+* Check related documents for contradictions and preserve requirement IDs.
+* Keep unresolved questions and MVP+ scope explicit; do not invent decisions.
+* Record ordinary change history in Git. Use a decision log or ADR only for
+  durable design rationale and meaningful trade-offs.
+
+---
+
 ## Current Development Phase
 
-The project is currently transitioning from:
-
-Requirements / Domain Modeling
-
-to:
-
-Data Audit / Data Modeling / Architecture.
-
-The first coding task should NOT be implementation of the website.
-
-The first task should be repository and data exploration.
+The project is currently in incremental MVP implementation and validation.
+Data preprocessing and Travel Map requirements through FR-MAP-09 have been
+implemented; remaining requirements continue through TDD.
 
 ---
 
