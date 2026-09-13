@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import '@testing-library/jest-dom/vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it } from 'vitest';
 import type { TravelData } from '../../src/domain/travel-data.ts';
@@ -10,20 +10,25 @@ afterEach(cleanup);
 
 const expenseData = {
   segments: [
-    { id: 'plane-1', transportationCategory: 'Plane', baseCostEur: 10, baseDistanceKm: 100 },
-    { id: 'plane-2', transportationCategory: 'Plane', baseCostEur: 30, baseDistanceKm: 200 },
-    { id: 'plane-free', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 50 },
-    { id: 'plane-airport-only', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 60 },
-    { id: 'train-1', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80 },
+    { id: 'plane-1', date: '2026-01-01', globalSequence: 1, originCityId: 'alpha', destinationCityId: 'beta', transportationCategory: 'Plane', baseCostEur: 10, baseDistanceKm: 100 },
+    { id: 'plane-2', date: '2026-01-02', globalSequence: 2, originCityId: 'beta', destinationCityId: 'gamma', transportationCategory: 'Plane', baseCostEur: 30, baseDistanceKm: 200 },
+    { id: 'plane-free', date: '2026-01-03', globalSequence: 3, originCityId: 'gamma', destinationCityId: 'alpha', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 50 },
+    { id: 'plane-airport-only', date: '2026-01-04', globalSequence: 4, originCityId: 'alpha', destinationCityId: 'gamma', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 60 },
+    { id: 'train-1', date: '2026-01-05', globalSequence: 5, originCityId: 'gamma', destinationCityId: 'beta', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80 },
   ] as TravelData['segments'],
   transfers: [
     { segmentId: 'plane-1', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 10 },
     { segmentId: 'plane-2', expenseInclusion: 'always', costEur: 2, distanceKm: 3 },
     { segmentId: 'plane-airport-only', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 8 },
   ] as TravelData['transfers'],
+  cities: [
+    { id: 'alpha', name: 'Alpha' },
+    { id: 'beta', name: 'Beta' },
+    { id: 'gamma', name: 'Gamma' },
+  ] as TravelData['cities'],
 };
 
-describe('FR-EXP-01 Expense page selection', () => {
+describe('Expense explorer (FR-EXP-01 through FR-EXP-05)', () => {
   it('defaults to Transportation and switches between mutually exclusive views', async () => {
     const user = userEvent.setup();
     render(<ExpenseExplorer data={expenseData} />);
@@ -127,5 +132,34 @@ describe('FR-EXP-01 Expense page selection', () => {
     await user.selectOptions(sortOrder, 'chronological');
 
     expect(sortOrder).toHaveValue('chronological');
+  });
+
+  it('renders one horizontal bar per included Segment in the selected order', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+
+    const chart = screen.getByRole('list', { name: 'Transportation barplot' });
+    const initialRows = within(chart).getAllByRole('listitem');
+    expect(initialRows).toHaveLength(5);
+    expect(initialRows[0]).toHaveTextContent('Beta → Gamma');
+    expect(initialRows[0]).toHaveTextContent('EUR 32.00');
+
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Sort order' }), 'chronological');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('Alpha → Beta');
+
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Display metric' }), 'cost-per-100-km');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('EUR 13.64 / 100 km');
+  });
+
+  it('uses the category buttons to filter the barplot', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+
+    await user.click(screen.getByRole('button', { name: /Plane/ }));
+
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveAttribute('aria-pressed', 'false');
+    const rows = within(screen.getByRole('list', { name: 'Transportation barplot' })).getAllByRole('listitem');
+    expect(rows).toHaveLength(1);
+    expect(rows[0]).toHaveTextContent('Gamma → Beta');
   });
 });

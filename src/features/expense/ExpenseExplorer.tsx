@@ -2,18 +2,23 @@ import { useState, type CSSProperties, type KeyboardEvent } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { calculateSegmentTotals } from '../../domain/transportation-metrics.ts';
 import { TRANSPORT_MODES } from '../map/transport-colors.ts';
+import { TransportationBarplot } from './TransportationBarplot.tsx';
+import {
+  buildTransportationBarRows,
+  type TransportationCategory,
+  type TransportationMetric,
+  type TransportationSort,
+} from './transportation-bar-data.ts';
 import './expense-explorer.css';
 
 type ExpenseView = 'transportation' | 'accommodation';
-type TransportationMetric = 'total-cost' | 'cost-per-100-km';
-type TransportationSort = 'descending' | 'ascending' | 'chronological';
 
 const VIEWS: ReadonlyArray<{ id: ExpenseView; label: string }> = [
   { id: 'transportation', label: 'Transportation' },
   { id: 'accommodation', label: 'Accommodation' },
 ];
 
-type ExpenseData = Pick<TravelData, 'segments' | 'transfers'>;
+type ExpenseData = Pick<TravelData, 'cities' | 'segments' | 'transfers'>;
 
 export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [view, setView] = useState<ExpenseView>('transportation');
@@ -21,6 +26,9 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [includeZeroCostSegments, setIncludeZeroCostSegments] = useState(true);
   const [transportationMetric, setTransportationMetric] = useState<TransportationMetric>('total-cost');
   const [transportationSort, setTransportationSort] = useState<TransportationSort>('descending');
+  const [selectedCategories, setSelectedCategories] = useState<TransportationCategory[]>(
+    () => TRANSPORT_MODES.map(([category]) => category),
+  );
   const activeLabel = VIEWS.find(({ id }) => id === view)?.label ?? 'Transportation';
   const categorySummaries = TRANSPORT_MODES.map(([category, color]) => {
     const segmentCosts = data.segments
@@ -39,6 +47,19 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
       averageCostEur: segmentCosts.length ? totalCostEur / segmentCosts.length : 0,
     };
   });
+  const barRows = buildTransportationBarRows(data.segments, data.transfers, {
+    categories: selectedCategories,
+    includeAirportTransfers,
+    includeZeroCostSegments,
+    metric: transportationMetric,
+    sort: transportationSort,
+  });
+
+  function toggleCategory(category: TransportationCategory) {
+    setSelectedCategories((current) => current.includes(category)
+      ? current.filter((selected) => selected !== category)
+      : [...current, category]);
+  }
 
   function handleTabKey(event: KeyboardEvent<HTMLButtonElement>, currentIndex: number) {
     let nextIndex: number | undefined;
@@ -92,9 +113,10 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
           <div className="transportation-categories" role="group" aria-label="Transportation categories">
             {categorySummaries.map(({ category, color, totalCostEur, averageCostEur }) => (
               <button
-                aria-pressed="true"
+                aria-pressed={selectedCategories.includes(category)}
                 className="transportation-category"
                 key={category}
+                onClick={() => toggleCategory(category)}
                 style={{ '--category-color': color } as CSSProperties}
                 type="button"
               >
@@ -151,6 +173,9 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
               </select>
             </label>
           </div>
+        )}
+        {view === 'transportation' && (
+          <TransportationBarplot cities={data.cities} metric={transportationMetric} rows={barRows} />
         )}
       </section>
     </section>
