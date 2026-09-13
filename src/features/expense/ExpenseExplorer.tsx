@@ -175,7 +175,14 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
           </div>
         )}
         {view === 'transportation' && (
-          <TransportationBarplot cities={data.cities} metric={transportationMetric} rows={barRows} />
+          <TransportationBarplot
+            cities={data.cities}
+            includeAirportTransfers={includeAirportTransfers}
+            metric={transportationMetric}
+            rows={barRows}
+            segments={data.segments}
+            transfers={data.transfers}
+          />
         )}
       </section>
     </section>

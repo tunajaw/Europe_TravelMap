@@ -150,11 +150,46 @@
   list-style: none;
 }
 
+.transportation-bar-item {
+  min-width: 0;
+  animation: transportation-row-enter 320ms cubic-bezier(.22, .8, .36, 1) both;
+  animation-delay: var(--bar-delay);
+}
+
 .transportation-bar-row {
   display: grid;
   grid-template-columns: minmax(150px, 1.2fr) minmax(180px, 4fr) minmax(122px, auto);
   align-items: center;
   gap: 14px;
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  outline: none;
+  text-align: left;
+  transition: background-color 160ms ease;
+}
+
+.transportation-bar-row:hover,
+.transportation-bar-row:focus-visible {
+  background: #f1f6fc;
+}
+
+.transportation-bar-row:focus-visible {
+  box-shadow: inset 0 0 0 2px #7fa2cc;
+}
+
+.transportation-bar-row[aria-pressed='true'] {
+  background: #d9e7f6;
+  box-shadow: inset 3px 0 0 #416f9f;
+}
+
+.transportation-bar-row[aria-pressed='true']:hover,
+.transportation-bar-row[aria-pressed='true']:focus-visible {
+  background: #cedff1;
 }
 
 .transportation-bar-copy {
@@ -177,6 +212,102 @@
   font-size: 11px;
 }
 
+.transportation-bar-details-slot {
+  box-sizing: border-box;
+  height: 262px;
+  margin-top: 20px;
+  overflow-y: auto;
+  padding: 18px;
+  border: 1px solid #cbd9e9;
+  border-radius: 12px;
+  background: #f7faff;
+}
+
+.transportation-bar-details {
+  min-height: 100%;
+  animation: transportation-details-enter 180ms ease-out both;
+}
+
+.transportation-bar-details-placeholder {
+  display: grid;
+  min-height: 100%;
+  margin: 0;
+  place-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.transportation-bar-details-heading h3 {
+  margin: 3px 0 0;
+  font-size: 16px;
+}
+
+.transportation-bar-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.transportation-bar-detail-card {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #fff;
+}
+
+.transportation-bar-detail-card h4,
+.transportation-bar-detail-card p {
+  margin: 0;
+}
+
+.transportation-bar-detail-card h4 {
+  margin-bottom: 11px;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.transportation-bar-detail-card p,
+.transportation-bar-detail-card dl {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.transportation-bar-detail-card dl {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+}
+
+.transportation-bar-detail-card dl > div {
+  display: grid;
+  gap: 2px;
+}
+
+.transportation-bar-detail-card dt {
+  font-weight: 650;
+}
+
+.transportation-bar-detail-card dd {
+  margin: 0;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.transportation-bar-company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transportation-bar-company .company-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .transportation-bar-track {
   height: 18px;
   overflow: hidden;
@@ -190,12 +321,40 @@
   min-width: 0;
   border-radius: inherit;
   background: var(--bar-color);
+  transform-origin: left center;
+  animation: transportation-bar-grow 420ms cubic-bezier(.22, .8, .36, 1) both;
+  animation-delay: var(--bar-delay);
+  transition: width 420ms cubic-bezier(.22, .8, .36, 1), background-color 180ms ease;
 }
 
 .transportation-bar-row output {
   color: var(--ink);
   font-variant-numeric: tabular-nums;
   text-align: right;
+}
+
+@keyframes transportation-row-enter {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes transportation-bar-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes transportation-details-enter {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transportation-bar-item,
+  .transportation-bar-fill,
+  .transportation-bar-details {
+    animation: none;
+    transition: none;
+  }
 }
 
 @media (max-width: 520px) {
@@ -217,10 +376,22 @@
     grid-column: 1 / -1;
     grid-row: 2;
   }
+
+  .transportation-bar-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transportation-bar-details-slot {
+    height: 520px;
+  }
 }
 
 @media (min-width: 521px) and (max-width: 900px) {
   .transportation-categories {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .transportation-bar-detail-grid {
+    grid-template-columns: 1fr;
   }
 }

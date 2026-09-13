@@ -80,11 +80,11 @@ FR-EXP-04 (Transportation Filter):
 barplot 與 heatmap 的視覺化資料由交通類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-05 (Transportation Barplot Render):
-橫向 barplot，列出所有篩選過後的 Segment，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值；Bar 固定合併 local Endpoint Transfer，並在 checkbox 開啟時合併 Airport Transfer。bar 與 Map Segment 使用 FR-MAP-06 定義的相同六類色彩。
+橫向 barplot，列出所有篩選過後的 Segment，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值；Bar 固定合併 local Endpoint Transfer，並在 checkbox 開啟時合併 Airport Transfer。bar 與 Map Segment 使用 FR-MAP-06 定義的相同六類色彩。bar 初次顯示及篩選或 metric 改變時使用平滑動畫；使用者偏好 reduced motion 時停用動畫。
 
 FR-EXP-06 (Transportation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
-滑鼠移到 bar 上列出該 Segment 的 metadata，Hover metadata 可以拆出 Base Segment / Departure Transfer / Arrival Transfer，包含以下架構:
+滑鼠移到 bar 上時暫時列出該 Segment 的 metadata；滑鼠離開 barplot 後，metadata 回復為目前鎖定的 Segment。點擊 bar 可鎖定該 Segment，其 bar 持續顯示較深底色；點擊其他 bar 會改鎖定該 Segment，再次點擊已鎖定的 bar 可解除鎖定。Hover 或鎖定顯示的 metadata 可以拆出 Base Segment / Departure Transfer / Arrival Transfer，包含以下架構:
 * Segment 
 	* 交通公司
 	* 備註 (如有)
@@ -98,6 +98,8 @@ FR-EXP-06 (Transportation Barplot Interaction):
 	* 備註 (如有)
 
 Raw 備註依 `Segment 備註/出發接駁備註/抵達接駁備註` 三個位置解析。接駁交通方式與公司若存在於對應備註中，必須顯示於該接駁 metadata；空白位置不可在 parsing 時省略。
+
+Base Segment 的公司名稱沿用 FR-MAP-09 的本機 company icon 規則；City Bus 不顯示 icon，找不到或載入失敗時保留公司文字。
 
 FR-EXP-07 (Transportation Heatmap Render):
 Heatmap 畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。
