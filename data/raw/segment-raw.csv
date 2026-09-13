@@ -28,8 +28,8 @@ Trip,起點,終點,日期,價錢,接駁(出發),接駁(到達),交通工具,品�
 ,"Frankfurt Hbf. ",M. Hbf.,"23 December, 2025",0,0,0,火車,DB,//,"Würzburg Hbf., Nürnberg Hbf."
 匈捷,M. Hbf.,Berlin Hbf.,"31 December, 2025",€19.99,0,0,高鐵,DB,//,
 ,BER Flug.,BUD Flug.,"1 January, 2026",€17.99,0,0,飛機,RyanAir,//,
-,Budapest,Karlovy Vary,"3 January, 2026",€40.9,0,0,客運,RejioJet,ISIC//,
-,Karlovy Vary,Prague,"4 January, 2026",€4.6,0,0,客運,RejioJet,ISIC//,
+,Budapest,Karlovy Vary,"3 January, 2026",€40.9,0,0,客運,RegioJet,ISIC//,
+,Karlovy Vary,Prague,"4 January, 2026",€4.6,0,0,客運,RegioJet,ISIC//,
 ,Praha h.n.,M. Hbf.,"6 January, 2026",€7.82,0,0,火車,cd.cz,Furth im Wald→RE25//,
 立陶宛&挪威,NUE Flug.,VNO Flug.,"16 January, 2026",€17,0,€0.9,飛機,RyanAir,"//LTG Link, 50% OFF",
 ,VNO Flug.,OSL Flug.,"17 January, 2026",€16.99,€1.25,€11.4,飛機,RyanAir,"/市區公車60分票/vy, RE25",

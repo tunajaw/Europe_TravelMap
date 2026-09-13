@@ -1,14 +1,16 @@
-import { useState, type CSSProperties, type KeyboardEvent } from 'react';
+import { useMemo, useState, type CSSProperties, type KeyboardEvent } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { calculateSegmentTotals } from '../../domain/transportation-metrics.ts';
 import { TRANSPORT_MODES } from '../map/transport-colors.ts';
 import { TransportationBarplot } from './TransportationBarplot.tsx';
+import { TransportationHeatmap } from './TransportationHeatmap.tsx';
 import {
   buildTransportationBarRows,
   type TransportationCategory,
   type TransportationMetric,
   type TransportationSort,
 } from './transportation-bar-data.ts';
+import { buildTransportationHeatmapScaleMaximum } from './transportation-heatmap-data.ts';
 import './expense-explorer.css';
 
 type ExpenseView = 'transportation' | 'accommodation';
@@ -18,7 +20,7 @@ const VIEWS: ReadonlyArray<{ id: ExpenseView; label: string }> = [
   { id: 'accommodation', label: 'Accommodation' },
 ];
 
-type ExpenseData = Pick<TravelData, 'cities' | 'segments' | 'transfers'>;
+type ExpenseData = Pick<TravelData, 'cities' | 'countries' | 'segments' | 'transfers'>;
 
 export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [view, setView] = useState<ExpenseView>('transportation');
@@ -54,6 +56,10 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
     metric: transportationMetric,
     sort: transportationSort,
   });
+  const heatmapScaleMaximum = useMemo(
+    () => buildTransportationHeatmapScaleMaximum(data.segments, data.transfers, transportationMetric),
+    [data.segments, data.transfers, transportationMetric],
+  );
 
   function toggleCategory(category: TransportationCategory) {
     setSelectedCategories((current) => current.includes(category)
@@ -175,14 +181,22 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
           </div>
         )}
         {view === 'transportation' && (
-          <TransportationBarplot
-            cities={data.cities}
-            includeAirportTransfers={includeAirportTransfers}
-            metric={transportationMetric}
-            rows={barRows}
-            segments={data.segments}
-            transfers={data.transfers}
-          />
+          <div className="expense-visualizations">
+            <TransportationBarplot
+              cities={data.cities}
+              includeAirportTransfers={includeAirportTransfers}
+              metric={transportationMetric}
+              rows={barRows}
+              segments={data.segments}
+              transfers={data.transfers}
+            />
+            <TransportationHeatmap
+              countries={data.countries}
+              metric={transportationMetric}
+              scaleMaximum={heatmapScaleMaximum}
+              segmentRows={barRows}
+            />
+          </div>
         )}
       </section>
     </section>

@@ -102,13 +102,13 @@ Raw 備註依 `Segment 備註/出發接駁備註/抵達接駁備註` 三個位�
 Base Segment 的公司名稱沿用 FR-MAP-09 的本機 company icon 規則；City Bus 不顯示 icon，找不到或載入失敗時保留公司文字。
 
 FR-EXP-07 (Transportation Heatmap Render):
-Heatmap 畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。
+Heatmap 畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。No data 使用中性灰色，與有資料但 metric 為 0 的淺藍色明確區隔。所有 Country boundary 使用一致的較粗線寬；hover、focus 或選取 Country 時不可顯示矩形 outline。
 
 跨國 Segment 一律歸屬至出發地 Country，不重複計入目的地 Country。
 
 FR-EXP-08 (Transportation Heatmap Interaction):
 地圖可以用滾輪縮放。
-滑鼠移到 heatmap 上列出該國家的 metadata，包含以下架構:
+滑鼠移到 heatmap 上暫時列出該國家的 metadata；點擊 Country 可鎖定該國家與 metadata，並在最上層加粗顯示該國完整 boundary。Hover 其他 Country 時暫時切換 metadata，滑鼠離開後恢復鎖定的 Country；再次點擊已鎖定的 Country 可解除鎖定。metadata 包含以下架構:
 * 國家名稱
 * 幾段 Segment
 * 平均數值 (+-標準差)

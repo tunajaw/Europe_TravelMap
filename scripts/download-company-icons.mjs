@@ -9,7 +9,7 @@ const companies = {
   pegasus: 'https://www.flypgs.com/', ajet: 'https://ajet.com/',
   volotea: 'https://www.volotea.com/', blablacar: 'https://www.blablacar.com/',
   costa: 'https://www.costacruises.com/', ns: 'https://www.ns.nl/',
-  ret: 'https://www.ret.nl/', sncb: 'https://www.belgiantrain.be/',
+  regiojet: 'https://regiojet.com/', ret: 'https://www.ret.nl/', sncb: 'https://www.belgiantrain.be/',
 };
 const output = new URL('../public/images/companies/', import.meta.url);
 await mkdir(output, { recursive: true });

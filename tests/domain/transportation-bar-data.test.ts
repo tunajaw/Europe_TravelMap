@@ -5,15 +5,15 @@ import { buildTransportationBarRows } from '../../src/features/expense/transport
 const segments = [
   {
     id: 'plane-later', date: '2026-01-03', globalSequence: 3,
-    transportationCategory: 'Plane', baseCostEur: 10, baseDistanceKm: 100,
+    originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 10, baseDistanceKm: 100,
   },
   {
     id: 'plane-airport-only', date: '2026-01-01', globalSequence: 1,
-    transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 100,
+    originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 100,
   },
   {
     id: 'train-earlier', date: '2026-01-02', globalSequence: 2,
-    transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80,
+    originCountryId: 'country-b', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80,
   },
 ] as TravelData['segments'];
 

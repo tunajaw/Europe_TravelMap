@@ -42,6 +42,16 @@ describe('FR-MAP-07 through FR-MAP-09', () => {
     expect(screen.getByText('Segment fare (excluding transfers)')).toBeInTheDocument();
   });
 
+  it('renders the corrected RegioJet company name with its local icon', () => {
+    const segment = data.segments.find(({ company }) => company === 'RegioJet');
+    expect(segment).toBeDefined();
+    render(<SegmentDetails segment={segment!} cities={data.cities} onClose={() => {}} />);
+
+    expect(screen.getByText('RegioJet')).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'RegioJet icon' }))
+      .toHaveAttribute('src', '/images/companies/regiojet.ico');
+  });
+
   it('switches individual route details on focus, clears transient hover, and removes hidden metadata', async () => {
     const user = userEvent.setup();
     const { container } = render(<CountryExplorer data={data} />);

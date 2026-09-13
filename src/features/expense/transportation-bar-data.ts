@@ -21,6 +21,7 @@ export interface TransportationBarRow {
   globalSequence: number;
   originCityId: string;
   destinationCityId: string;
+  originCountryId: string;
   category: TransportationCategory;
   costEur: number;
   distanceKm: number;
@@ -43,6 +44,7 @@ export function buildTransportationBarRows(
         globalSequence: segment.globalSequence,
         originCityId: segment.originCityId,
         destinationCityId: segment.destinationCityId,
+        originCountryId: segment.originCountryId,
         category: segment.transportationCategory,
         costEur: totals.costEur,
         distanceKm: totals.distanceKm,

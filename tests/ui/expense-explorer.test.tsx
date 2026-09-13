@@ -10,11 +10,11 @@ afterEach(cleanup);
 
 const expenseData = {
   segments: [
-    { id: 'plane-1', date: '2026-01-01', globalSequence: 1, originCityId: 'alpha', destinationCityId: 'beta', transportationCategory: 'Plane', company: 'Ryanair', notes: 'Base note', baseCostEur: 10, baseDistanceKm: 100 },
-    { id: 'plane-2', date: '2026-01-02', globalSequence: 2, originCityId: 'beta', destinationCityId: 'gamma', transportationCategory: 'Plane', baseCostEur: 30, baseDistanceKm: 200 },
-    { id: 'plane-free', date: '2026-01-03', globalSequence: 3, originCityId: 'gamma', destinationCityId: 'alpha', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 50 },
-    { id: 'plane-airport-only', date: '2026-01-04', globalSequence: 4, originCityId: 'alpha', destinationCityId: 'gamma', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 60 },
-    { id: 'train-1', date: '2026-01-05', globalSequence: 5, originCityId: 'gamma', destinationCityId: 'beta', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80 },
+    { id: 'plane-1', date: '2026-01-01', globalSequence: 1, originCityId: 'alpha', destinationCityId: 'beta', originCountryId: 'country-a', transportationCategory: 'Plane', company: 'Ryanair', notes: 'Base note', baseCostEur: 10, baseDistanceKm: 100 },
+    { id: 'plane-2', date: '2026-01-02', globalSequence: 2, originCityId: 'beta', destinationCityId: 'gamma', originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 30, baseDistanceKm: 200 },
+    { id: 'plane-free', date: '2026-01-03', globalSequence: 3, originCityId: 'gamma', destinationCityId: 'alpha', originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 50 },
+    { id: 'plane-airport-only', date: '2026-01-04', globalSequence: 4, originCityId: 'alpha', destinationCityId: 'gamma', originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 60 },
+    { id: 'train-1', date: '2026-01-05', globalSequence: 5, originCityId: 'gamma', destinationCityId: 'beta', originCountryId: 'country-b', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80 },
   ] as TravelData['segments'],
   transfers: [
     { id: 'transfer-plane-1', segmentId: 'plane-1', side: 'departure', endpointKind: 'airport', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 10, notes: 'Airport coach' },
@@ -26,6 +26,10 @@ const expenseData = {
     { id: 'beta', name: 'Beta' },
     { id: 'gamma', name: 'Gamma' },
   ] as TravelData['cities'],
+  countries: [
+    { id: 'country-a', name: 'France', boundaryId: '250', isMicrostate: false, marker: { longitude: 2.35, latitude: 48.86 } },
+    { id: 'country-b', name: 'Germany', boundaryId: '276', isMicrostate: false, marker: { longitude: 13.4, latitude: 52.52 } },
+  ] as TravelData['countries'],
 };
 
 describe('Expense explorer (FR-EXP-01 through FR-EXP-06)', () => {
@@ -161,6 +165,22 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-06)', () => {
     const rows = within(screen.getByRole('list', { name: 'Transportation barplot' })).getAllByRole('listitem');
     expect(rows).toHaveLength(1);
     expect(rows[0]).toHaveTextContent('Gamma → Beta');
+  });
+
+  it('applies category filters to both the barplot and Country heatmap', async () => {
+    const user = userEvent.setup();
+    const { container } = render(<ExpenseExplorer data={expenseData} />);
+    const scaleBeforeFiltering = screen.getByLabelText('Heatmap scale').textContent;
+    expect(container.querySelector('[data-heatmap-country="country-a"]'))
+      .toHaveClass('transportation-heatmap-country--data');
+
+    await user.click(screen.getByRole('button', { name: /Plane/ }));
+
+    expect(container.querySelector('[data-heatmap-country="country-a"]'))
+      .not.toHaveClass('transportation-heatmap-country--data');
+    expect(container.querySelector('[data-heatmap-country="country-b"]'))
+      .toHaveClass('transportation-heatmap-country--data');
+    expect(screen.getByLabelText('Heatmap scale')).toHaveTextContent(scaleBeforeFiltering ?? '');
   });
 
   it('shows Segment and Transfer metadata when a bar is hovered or focused', async () => {

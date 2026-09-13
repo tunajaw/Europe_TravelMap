@@ -114,10 +114,185 @@
   background: #fff;
 }
 
+.expense-visualizations {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(410px, .88fr);
+  align-items: start;
+  gap: 24px;
+}
+
 .transportation-chart {
   margin-top: 30px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
+}
+
+.transportation-heatmap {
+  min-width: 0;
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.transportation-heatmap-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.transportation-heatmap-heading h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.transportation-heatmap-heading button {
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--ink);
+  background: #fff;
+  font-size: 11px;
+}
+
+.transportation-heatmap-heading button:disabled {
+  opacity: .4;
+}
+
+.transportation-heatmap-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #cbd9e9;
+  border-radius: 10px;
+  background: #eaf2f8;
+}
+
+.transportation-heatmap-sea {
+  fill: #eaf2f8;
+}
+
+.transportation-heatmap-country {
+  fill: #f7f9fc;
+  stroke: #bdc8d6;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  outline: none;
+  transition: fill 280ms ease, stroke 160ms ease;
+}
+
+.transportation-heatmap-country--visited:not(.transportation-heatmap-country--data) {
+  fill: #d4d8de;
+}
+
+.transportation-heatmap-country--visited {
+  cursor: pointer;
+}
+
+.transportation-heatmap-country--visited:hover,
+.transportation-heatmap-country--visited:focus-visible {
+  stroke: #102f53;
+  outline: none;
+}
+
+.transportation-heatmap-border-overlay {
+  fill: none;
+  stroke: #102f53;
+  stroke-width: 3.4;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.transportation-heatmap-microstate {
+  fill: #d4d8de;
+  stroke: #fff;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  outline: none;
+  transition: fill 280ms ease, r 160ms ease;
+}
+
+.transportation-heatmap-microstate:hover,
+.transportation-heatmap-microstate:focus-visible,
+.transportation-heatmap-microstate--active {
+  r: 9px;
+  stroke: #102f53;
+  outline: none;
+}
+
+.transportation-heatmap-legend {
+  display: grid;
+  grid-template-columns: auto minmax(70px, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.transportation-heatmap-legend > span[aria-hidden='true'] {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b8d9ee, #173f6d);
+}
+
+.transportation-heatmap-details-slot {
+  box-sizing: border-box;
+  min-height: 132px;
+  margin-top: 14px;
+  padding: 15px;
+  border: 1px solid #cbd9e9;
+  border-radius: 10px;
+  background: #f7faff;
+}
+
+.transportation-heatmap-details-slot > p {
+  display: grid;
+  min-height: 100px;
+  margin: 0;
+  place-items: center;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+.transportation-heatmap-details {
+  animation: transportation-details-enter 180ms ease-out both;
+}
+
+.transportation-heatmap-details h4 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.transportation-heatmap-details dl {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.transportation-heatmap-details dl > div {
+  display: grid;
+  grid-template-columns: minmax(80px, auto) 1fr;
+  gap: 10px;
+}
+
+.transportation-heatmap-details dt {
+  font-weight: 650;
+}
+
+.transportation-heatmap-details dd {
+  margin: 0;
+  color: var(--ink);
+  text-align: right;
 }
 
 .transportation-chart-heading {
@@ -351,9 +526,18 @@
 @media (prefers-reduced-motion: reduce) {
   .transportation-bar-item,
   .transportation-bar-fill,
-  .transportation-bar-details {
+  .transportation-bar-details,
+  .transportation-heatmap-country,
+  .transportation-heatmap-microstate,
+  .transportation-heatmap-details {
     animation: none;
     transition: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .expense-visualizations {
+    grid-template-columns: 1fr;
   }
 }
 

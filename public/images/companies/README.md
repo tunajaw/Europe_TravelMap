@@ -10,8 +10,8 @@ implied. Do not reuse them as this project's identity.
 The app loads these files locally, never through a third-party favicon service.
 Only City Bus is excluded. Unknown companies and unavailable/failed images keep
 their text without a fabricated logo. Name lookup is case-insensitive; the raw
-company label is not rewritten. RejioJet remains text-only because its spelling
-has not been confirmed. The SNCF source is its official SNCF Connect website.
+company label is not rewritten. The SNCF source is its official SNCF Connect
+website.
 
 Refreshing icons is a manual network operation using
 `node scripts/download-company-icons.mjs`; it is not run by CI or deployment.
