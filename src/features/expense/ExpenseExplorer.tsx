@@ -5,6 +5,8 @@ import { TRANSPORT_MODES } from '../map/transport-colors.ts';
 import './expense-explorer.css';
 
 type ExpenseView = 'transportation' | 'accommodation';
+type TransportationMetric = 'total-cost' | 'cost-per-100-km';
+type TransportationSort = 'descending' | 'ascending' | 'chronological';
 
 const VIEWS: ReadonlyArray<{ id: ExpenseView; label: string }> = [
   { id: 'transportation', label: 'Transportation' },
@@ -17,6 +19,8 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [view, setView] = useState<ExpenseView>('transportation');
   const [includeAirportTransfers, setIncludeAirportTransfers] = useState(true);
   const [includeZeroCostSegments, setIncludeZeroCostSegments] = useState(true);
+  const [transportationMetric, setTransportationMetric] = useState<TransportationMetric>('total-cost');
+  const [transportationSort, setTransportationSort] = useState<TransportationSort>('descending');
   const activeLabel = VIEWS.find(({ id }) => id === view)?.label ?? 'Transportation';
   const categorySummaries = TRANSPORT_MODES.map(([category, color]) => {
     const segmentCosts = data.segments
@@ -118,6 +122,33 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 type="checkbox"
               />
               Include 0-Cost Segments
+            </label>
+          </div>
+        )}
+        {view === 'transportation' && (
+          <div className="expense-analysis-controls">
+            <label>
+              <span>Display</span>
+              <select
+                aria-label="Display metric"
+                onChange={(event) => setTransportationMetric(event.target.value as TransportationMetric)}
+                value={transportationMetric}
+              >
+                <option value="total-cost">Total cost</option>
+                <option value="cost-per-100-km">Cost per 100 km</option>
+              </select>
+            </label>
+            <label>
+              <span>Sort</span>
+              <select
+                aria-label="Sort order"
+                onChange={(event) => setTransportationSort(event.target.value as TransportationSort)}
+                value={transportationSort}
+              >
+                <option value="descending">Highest to lowest</option>
+                <option value="ascending">Lowest to highest</option>
+                <option value="chronological">Chronological</option>
+              </select>
             </label>
           </div>
         )}

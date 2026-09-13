@@ -104,4 +104,28 @@ describe('FR-EXP-01 Expense page selection', () => {
     expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 42.00');
     expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 21.00');
   });
+
+  it('defaults to total cost and allows selecting cost per 100 km', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+
+    const metric = screen.getByRole('combobox', { name: 'Display metric' });
+    expect(metric).toHaveValue('total-cost');
+
+    await user.selectOptions(metric, 'cost-per-100-km');
+
+    expect(metric).toHaveValue('cost-per-100-km');
+  });
+
+  it('defaults to descending order and allows chronological sorting', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+
+    const sortOrder = screen.getByRole('combobox', { name: 'Sort order' });
+    expect(sortOrder).toHaveValue('descending');
+
+    await user.selectOptions(sortOrder, 'chronological');
+
+    expect(sortOrder).toHaveValue('chronological');
+  });
 });
