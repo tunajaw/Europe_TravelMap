@@ -19,7 +19,7 @@ describe('Accommodation barplot (FR-EXP-12 and FR-EXP-13)', () => {
   it('renders one colored horizontal bar per Accommodation', () => {
     render(<AccommodationBarplot cities={cities} metric="nightly-price" rows={rows} />);
     expect(screen.getAllByRole('listitem')).toHaveLength(2);
-    expect(screen.getByRole('button', { name: /Select Salzburg · Airbnb/ })).toHaveTextContent('EUR 30.00 / night');
+    expect(screen.getByRole('button', { name: /Select Salzburg · Airbnb/ })).toHaveTextContent('€ 30.00 / night');
   });
 
   it('previews metadata, locks it on click, and shows the other metric', async () => {
@@ -83,7 +83,7 @@ describe('Accommodation barplot (FR-EXP-12 and FR-EXP-13)', () => {
     const london = [{ id: 'london', name: 'London' }] as TravelData['cities'];
     render(<AccommodationBarplot cities={london} metric="nightly-price" rows={airport} />);
 
-    const fill = screen.getByRole('button', { name: /Select London · Airport, EUR 0.00/ })
+    const fill = screen.getByRole('button', { name: /Select London · Airport, € 0.00/ })
       .querySelector<HTMLElement>('.accommodation-bar-fill')!;
     expect(fill.style.minWidth).toBe('8px');
     expect(fill.style.backgroundColor).toBe('rgb(228, 191, 98)');

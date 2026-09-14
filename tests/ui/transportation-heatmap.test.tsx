@@ -41,7 +41,7 @@ describe('Transportation heatmap (FR-EXP-07 and FR-EXP-08)', () => {
     await user.hover(container.querySelector('[data-heatmap-country="france"]')!);
     const details = screen.getByRole('region', { name: 'France heatmap details' });
     expect(details).toHaveTextContent('Segments2');
-    expect(details).toHaveTextContent('EUR 20.00 ± EUR 10.00');
+    expect(details).toHaveTextContent('€ 20.00 ± € 10.00');
     expect(details).toHaveTextContent('#1');
   });
 
@@ -50,8 +50,8 @@ describe('Transportation heatmap (FR-EXP-07 and FR-EXP-08)', () => {
     const { container } = render(
       <TransportationHeatmap countries={countries} metric="total-cost" scaleMaximum={20} segmentRows={segmentRows} />,
     );
-    const france = screen.getByRole('button', { name: /France: EUR 20.00/ });
-    const germany = screen.getByRole('button', { name: /Germany: EUR 10.00/ });
+    const france = screen.getByRole('button', { name: /France: € 20.00/ });
+    const germany = screen.getByRole('button', { name: /Germany: € 10.00/ });
 
     await user.click(france);
     await user.unhover(france);

@@ -15,13 +15,13 @@ describe('Accommodation heatmap (FR-EXP-14 and FR-EXP-15)', () => {
       marker: { longitude: 2.35, latitude: 48.86 } }] as TravelData['countries'];
     const { container } = render(<AccommodationHeatmap countries={countries} metric="nightly-price" scaleMaximum={60}
       data={[{ countryId: 'france', nights: 3, average: 40, standardDeviation: 14.14, rank: 1 }]} />);
-    const france = screen.getByRole('button', { name: /France: EUR 40.00 \/ night/ });
+    const france = screen.getByRole('button', { name: /France: € 40.00 \/ night/ });
 
     await user.click(france);
     await user.unhover(france);
     const details = screen.getByRole('region', { name: 'France heatmap details' });
     expect(details).toHaveTextContent('Nights3');
-    expect(details).toHaveTextContent('EUR 40.00 / night ± EUR 14.14 / night');
+    expect(details).toHaveTextContent('€ 40.00 / night ± € 14.14 / night');
     expect(details).toHaveTextContent('#1');
     expect(container.querySelector('[data-heatmap-border-overlay="france"]')).toBeInTheDocument();
   });

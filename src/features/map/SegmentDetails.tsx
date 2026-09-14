@@ -11,7 +11,7 @@ export function SegmentDetails({ segment, cities, onClose }: {
       <button type="button" onClick={onClose} aria-label="Close segment details">Close</button></header>
     <dl>
       <div><dt>Date</dt><dd>{segment.date}</dd></div>
-      <div><dt>Segment fare (excluding transfers)</dt><dd>EUR {segment.baseCostEur.toFixed(2)}</dd></div>
+      <div><dt>Segment fare (excluding transfers)</dt><dd>€ {segment.baseCostEur.toFixed(2)}</dd></div>
       <div><dt>Original transport type</dt><dd>{segment.transportationSubtype}</dd></div>
       <div><dt>Analysis category</dt><dd>{segment.transportationCategory}</dd></div>
       <div><dt>Company</dt><dd className="segment-company">{segment.company ?? 'Not recorded'}<CompanyIcon company={segment.company} category={segment.transportationCategory} /></dd></div>

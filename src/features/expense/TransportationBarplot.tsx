@@ -43,7 +43,7 @@ export function TransportationBarplot({
         <h4>{heading}</h4>
         {transfer ? (
           <dl>
-            <div><dt>Cost</dt><dd>EUR {transfer.costEur.toFixed(2)}</dd></div>
+            <div><dt>Cost</dt><dd>€ {transfer.costEur.toFixed(2)}</dd></div>
             <div>
               <dt>Type</dt>
               <dd>{transfer.endpointKind === 'airport' ? 'Airport transfer' : 'Local transfer'}</dd>
@@ -84,8 +84,8 @@ export function TransportationBarplot({
           {rows.map((row, index) => {
             const route = `${cityNames.get(row.originCityId) ?? row.originCityId} → ${cityNames.get(row.destinationCityId) ?? row.destinationCityId}`;
             const valueLabel = metric === 'total-cost'
-              ? `EUR ${row.value.toFixed(2)}`
-              : `EUR ${row.value.toFixed(2)} / 100 km`;
+              ? `€ ${row.value.toFixed(2)}`
+              : `€ ${row.value.toFixed(2)} / 100 km`;
             return (
               <li
                 aria-label={`${cityNames.get(row.originCityId) ?? row.originCityId} to ${cityNames.get(row.destinationCityId) ?? row.destinationCityId}, ${row.date}, ${valueLabel}`}
@@ -141,7 +141,7 @@ export function TransportationBarplot({
               <section className="transportation-bar-detail-card">
                 <h4>Base Segment</h4>
                 <dl>
-                  <div><dt>Fare</dt><dd>EUR {activeSegment.baseCostEur.toFixed(2)}</dd></div>
+                  <div><dt>Fare</dt><dd>€ {activeSegment.baseCostEur.toFixed(2)}</dd></div>
                   <div>
                     <dt>Company</dt>
                     <dd className="transportation-bar-company">

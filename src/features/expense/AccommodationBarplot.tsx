@@ -25,7 +25,7 @@ export function AccommodationBarplot({
   const maximum = Math.max(0, ...rows.map(({ value }) => value));
 
   const formatValue = (value: number) => metric === 'nightly-price'
-    ? `EUR ${value.toFixed(2)} / night`
+    ? `€ ${value.toFixed(2)} / night`
     : `${value.toFixed(0)} min`;
 
   return (
@@ -93,7 +93,7 @@ export function AccommodationBarplot({
                 <dt>{metric === 'nightly-price' ? 'Commute' : 'Nightly price'}</dt>
                 <dd>{metric === 'nightly-price'
                   ? active.commuteMinutes === null ? 'Not applicable' : `${active.commuteMinutes} min`
-                  : `EUR ${active.pricePerNightEur.toFixed(2)} / night`}</dd>
+                  : `€ ${active.pricePerNightEur.toFixed(2)} / night`}</dd>
               </div>
               <div><dt>Nearest station</dt><dd>{active.nearestStationName ?? '-'}</dd></div>
               <div className="accommodation-rating-detail"><dt>Personal rating</dt><dd><AccommodationRating rating={active.rating} type={active.type} /></dd></div>

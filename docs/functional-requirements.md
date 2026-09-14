@@ -33,7 +33,7 @@ FR-MAP-08 (Segment Interaction):
 
 當滑鼠 hover/focus Segment 時，該 Segment 的 origin、destination 與所有 Transit Point 標籤變為粗體（Europe Map 顯示對應 Country，Country Map 顯示 City）。相同端點的一組 Segment 可以一起展開，但 metadata 必須對應目前 hover/focus 或鎖定的單一 Segment。左鍵點擊 Segment 或按 Enter／Space 可鎖定該筆 metadata；Close 只關閉 metadata，不退出 Country Map。Escape 依序解除 Segment interaction、City selection、Country navigation。切換地圖層級或 route filter 時，清除暫時與鎖定的 City／Segment interaction 狀態。
 
-FR-MAP-09 (Segment Path metadata): 包含出發點-抵達點、日期、Segment base fare（EUR，明確標示不包含 Transfers）、確切原始交通分類、分析交通類別、公司、依序排列的 Transit Point 與備註。0 元顯示為 EUR 0.00；缺少的 optional field 應明確顯示未記錄。metadata 顯示在 SVG 下方，不遮住路線。除 City Bus 外，公司名稱最後端在有本機 icon 時顯示各自公司的網站 icon；InterCity Bus 仍顯示 icon。若找不到或載入失敗則保留文字，不可在 runtime 向第三方服務請求 icon。
+FR-MAP-09 (Segment Path metadata): 包含出發點-抵達點、日期、Segment base fare（€，明確標示不包含 Transfers）、確切原始交通分類、分析交通類別、公司、依序排列的 Transit Point 與備註。0 元顯示為 € 0.00；缺少的 optional field 應明確顯示未記錄。metadata 顯示在 SVG 下方，不遮住路線。除 City Bus 外，公司名稱最後端在有本機 icon 時顯示各自公司的網站 icon；InterCity Bus 仍顯示 icon。若找不到或載入失敗則保留文字，不可在 runtime 向第三方服務請求 icon。
 
 FR-EXP-01 (Expense Page Selection): Expense 畫面最左上方兩個互斥按鍵: Transportation / Accommodation 代表現在 Show 的頁面是交通還是住宿相關的資訊，預設是 Transportation
 

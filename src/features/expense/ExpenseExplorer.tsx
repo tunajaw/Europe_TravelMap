@@ -168,8 +168,8 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 type="button"
               >
                 <span className="transportation-category-name">{category}</span>
-                <span>Total EUR {totalCostEur.toFixed(2)}</span>
-                <span>Avg. EUR {averageCostEur.toFixed(2)}</span>
+                <span>Total € {totalCostEur.toFixed(2)}</span>
+                <span>Avg. € {averageCostEur.toFixed(2)}</span>
               </button>
             ))}
           </div>
@@ -186,8 +186,8 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 type="button"
               >
                 <span className="transportation-category-name">{summary.category}</span>
-                <span>Total EUR {summary.totalCostEur.toFixed(2)}</span>
-                <span>Avg. EUR {summary.averageNightlyCostEur.toFixed(2)} / night</span>
+                <span>Total € {summary.totalCostEur.toFixed(2)}</span>
+                <span>Avg. € {summary.averageNightlyCostEur.toFixed(2)} / night</span>
                 <span>Avg. commute {summary.averageCommuteMinutes === null
                   ? 'Not applicable'
                   : `${summary.averageCommuteMinutes.toFixed(2)} min`}</span>

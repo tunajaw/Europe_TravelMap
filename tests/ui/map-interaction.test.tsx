@@ -36,7 +36,7 @@ describe('FR-MAP-07 through FR-MAP-09', () => {
   });
   it('renders zero fares and missing optional metadata without inventing values', () => {
     render(<SegmentDetails segment={{ ...data.segments[0]!, baseCostEur: 0, notes: null, company: null }} cities={data.cities} onClose={() => {}} />);
-    expect(screen.getByText('EUR 0.00')).toBeInTheDocument();
+    expect(screen.getByText('€ 0.00')).toBeInTheDocument();
     expect(screen.getByText('No notes recorded')).toBeInTheDocument();
     expect(screen.getByText('Not recorded')).toBeInTheDocument();
     expect(screen.getByText('Segment fare (excluding transfers)')).toBeInTheDocument();
@@ -102,7 +102,7 @@ describe('FR-MAP-07 through FR-MAP-09', () => {
     expect(within(details).getByText(segment.transportationSubtype)).toBeInTheDocument();
     expect(within(details).getByText(segment.transportationCategory)).toBeInTheDocument();
     expect(within(details).getByText(segment.notes!)).toBeInTheDocument();
-    expect(within(details).getByText(`EUR ${segment.baseCostEur.toFixed(2)}`)).toBeInTheDocument();
+    expect(within(details).getByText(`€ ${segment.baseCostEur.toFixed(2)}`)).toBeInTheDocument();
     await user.click(route);
     await user.unhover(route);
     expect(screen.getByRole('region', { name: 'Segment details' })).toBeInTheDocument();

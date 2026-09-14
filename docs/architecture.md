@@ -186,9 +186,9 @@ lanes. Escape dismisses route interaction first, then City selection, then
 Country navigation. Close controls do not trigger the outside-click handler.
 
 The details card sits below the SVG, without covering route geometry. It shows
-City endpoints, date, base fare in EUR explicitly excluding Transfers, original
+City endpoints, date, base fare in € explicitly excluding Transfers, original
 subtype, analysis category, company, ordered Transit Points, and notes. Null
-optional fields use explicit missing-data labels; zero fares remain EUR 0.00.
+optional fields use explicit missing-data labels; zero fares remain € 0.00.
 Rendering uses plain React text rather than HTML from data. No private sources
 or additional geocoding are accessed by these interactions.
 

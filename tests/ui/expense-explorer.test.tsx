@@ -79,8 +79,8 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
 
     const categories = screen.getByRole('group', { name: 'Accommodation categories' });
     const airbnb = within(categories).getByRole('button', { name: /Airbnb/ });
-    expect(airbnb).toHaveTextContent('Total EUR 60.00');
-    expect(airbnb).toHaveTextContent('Avg. EUR 30.00 / night');
+    expect(airbnb).toHaveTextContent('Total € 60.00');
+    expect(airbnb).toHaveTextContent('Avg. € 30.00 / night');
     expect(airbnb).toHaveTextContent('Avg. commute 10.00 min');
     const airport = within(categories).getByRole('button', { name: /Airport/ });
     expect(within(categories).getAllByRole('button')).toHaveLength(4);
@@ -102,11 +102,11 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     expect(within(chart).getAllByRole('listitem')).toHaveLength(2);
     await user.click(within(categories).getByRole('button', { name: /Airport/ }));
     expect(within(chart).getAllByRole('listitem')).toHaveLength(3);
-    expect(within(chart).getByRole('button', { name: /Select Gamma · Airport, EUR 0.00/ })).toBeVisible();
+    expect(within(chart).getByRole('button', { name: /Select Gamma · Airport, € 0.00/ })).toBeVisible();
 
     await user.hover(container.querySelector('[data-heatmap-country="country-b"]')!);
     expect(screen.getByRole('region', { name: 'Germany heatmap details' }))
-      .toHaveTextContent('EUR 25.00 / night');
+      .toHaveTextContent('€ 25.00 / night');
   });
 
   it('switches Accommodation metrics and sorts bars chronologically', async () => {
@@ -143,10 +143,10 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     expect(categories).toHaveTextContent('Ferry / Cruise');
 
     const plane = screen.getByRole('button', { name: /Plane/ });
-    expect(plane).toHaveTextContent('Total EUR 52.00');
-    expect(plane).toHaveTextContent('Avg. EUR 13.00');
-    expect(screen.getByRole('button', { name: /Train/ })).toHaveTextContent('Total EUR 12.00');
-    expect(screen.getByRole('button', { name: /High-speed Rail/ })).toHaveTextContent('Total EUR 0.00');
+    expect(plane).toHaveTextContent('Total € 52.00');
+    expect(plane).toHaveTextContent('Avg. € 13.00');
+    expect(screen.getByRole('button', { name: /Train/ })).toHaveTextContent('Total € 12.00');
+    expect(screen.getByRole('button', { name: /High-speed Rail/ })).toHaveTextContent('Total € 0.00');
   });
 
   it('includes Airport Transfers by default and recalculates when they are excluded', async () => {
@@ -155,13 +155,13 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
 
     const airportTransfers = screen.getByRole('checkbox', { name: 'Include airport transfers' });
     expect(airportTransfers).toBeChecked();
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 52.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total € 52.00');
 
     await user.click(airportTransfers);
 
     expect(airportTransfers).not.toBeChecked();
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 42.00');
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 10.50');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total € 42.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. € 10.50');
   });
 
   it('classifies zero-cost Segments after applying the Airport Transfer option', async () => {
@@ -171,12 +171,12 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     const zeroCost = screen.getByRole('checkbox', { name: 'Include 0-Cost Segments' });
     expect(zeroCost).toBeChecked();
     await user.click(zeroCost);
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 52.00');
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 17.33');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total € 52.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. € 17.33');
 
     await user.click(screen.getByRole('checkbox', { name: 'Include airport transfers' }));
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total EUR 42.00');
-    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. EUR 21.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Total € 42.00');
+    expect(screen.getByRole('button', { name: /Plane/ })).toHaveTextContent('Avg. € 21.00');
   });
 
   it('defaults to total cost and allows selecting cost per 100 km', async () => {
@@ -211,13 +211,13 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     const initialRows = within(chart).getAllByRole('listitem');
     expect(initialRows).toHaveLength(5);
     expect(initialRows[0]).toHaveTextContent('Beta → Gamma');
-    expect(initialRows[0]).toHaveTextContent('EUR 32.00');
+    expect(initialRows[0]).toHaveTextContent('€ 32.00');
 
     await user.selectOptions(screen.getByRole('combobox', { name: 'Sort order' }), 'chronological');
     expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('Alpha → Beta');
 
     await user.selectOptions(screen.getByRole('combobox', { name: 'Display metric' }), 'cost-per-100-km');
-    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('EUR 13.64 / 100 km');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('€ 13.64 / 100 km');
   });
 
   it('uses the category buttons to filter the barplot', async () => {
@@ -267,7 +267,7 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     expect(within(details).getByText('Base note')).toBeVisible();
     expect(within(details).getByText('Seat reserved')).toBeVisible();
     expect(details).toHaveTextContent('Departure Transfer');
-    expect(details).toHaveTextContent('EUR 5.00');
+    expect(details).toHaveTextContent('€ 5.00');
     expect(details).toHaveTextContent('Airport coach');
     expect(within(details).getByText('Airport coach')).toBeVisible();
     expect(within(details).getByText('Early shuttle')).toBeVisible();

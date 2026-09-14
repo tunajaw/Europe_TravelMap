@@ -10,8 +10,8 @@ export function TransportationHeatmap({ countries, metric, scaleMaximum, segment
   segmentRows: Parameters<typeof buildTransportationHeatmapRows>[0];
 }) {
   const formatMetric = (value: number) => metric === 'total-cost'
-    ? `EUR ${value.toFixed(2)}`
-    : `EUR ${value.toFixed(2)} / 100 km`;
+    ? `€ ${value.toFixed(2)}`
+    : `€ ${value.toFixed(2)} / 100 km`;
   const data = buildTransportationHeatmapRows(segmentRows).map((row) => ({
     countryId: row.countryId,
     count: row.segmentCount,
