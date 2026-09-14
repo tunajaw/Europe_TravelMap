@@ -125,6 +125,23 @@ Confirmed airport-to-domain-City mappings include:
 * The scoring components and total are validated against
   `data/raw/accommodation_rubic.md`; preprocessing must not silently correct a
   malformed or inconsistent score.
+* Nearest-station enrichment is a separate, local review step using the private
+  address. `scripts/review-accommodation-stations.mjs` queries Photon with a
+  1.5-second minimum request interval and caches results under
+  `data/private/station-lookup/`. `scripts/summarize-accommodation-stations.mjs`
+  produces the local review table. Neither command runs in CI or the browser.
+* Station lookup candidates use approximate straight-line distances, not the
+  existing main-station commute duration. Street and complete house-number
+  matches are required; unresolved addresses remain unresolved. Review must
+  confirm the geocoded building, station type, and accessibility before any
+  candidate becomes public metadata. Query limits and incomplete map coverage
+  mean the returned candidate is not guaranteed to be the absolute nearest stop.
+  Airport overnight retains its airport identity instead of a street-address lookup.
+* After owner review, the public station name is copied by Accommodation ID to
+  `data/parsed/accommodation_station_reference.json`. The reference must exactly
+  cover every Accommodation: non-Airport stays have a non-empty station name,
+  while Airport overnight stays use `null`. No private address, geocoder match,
+  distance, or station candidate history enters the public dataset.
 
 ## Privacy Boundary
 
@@ -147,7 +164,7 @@ the exact address.
 ## Application-ready Dataset
 
 Run `npm run data:build` locally to combine the tracked Segment and reviewed
-reference CSVs with the ignored private Accommodation CSV. The command writes
+reference files with the ignored private Accommodation CSV. The command writes
 `public/data/travel-data.json`, validates its runtime schema and relationships,
 checks every photo asset, and rejects private Accommodation fields in the
 serialized output.

@@ -172,6 +172,7 @@ Accommodation may have:
 * price
 * number of nights
 * commute time to main railway station
+* owner-approved nearest public transport station name
 * rating
 * type
 * notes
@@ -482,6 +483,10 @@ Country-level Accommodation aggregation uses the Country of the normalized
 accommodation City. Airport overnight stays remain included in their assigned
 Country when the Airport overnight filter is enabled, even when the airport is
 outside the administrative boundary of the associated City.
+
+Non-Airport Accommodation records include an owner-approved nearest public
+transport station name. Airport overnight stays use their Airport identity and
+therefore have no nearest-station value.
 
 ---
 

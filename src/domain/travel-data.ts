@@ -46,6 +46,7 @@ export const TravelDataSchema = z.object({
     totalCostEur: z.number().nonnegative(), commuteMinutes: z.number().int().nonnegative().nullable(),
     rating: z.object({ components: z.array(z.number()), total: z.number() }).strict(),
     airportCode: z.string().regex(/^[A-Z]{3}$/).nullable(),
+    nearestStationName: z.string().min(1).nullable(),
   }).strict()),
   photos: z.array(z.object({
     id, countryId: id, path: z.string().min(1).refine((value) => !value.startsWith('/'), 'Photo path must be base-relative'),
@@ -115,6 +116,11 @@ export function assertReferentialIntegrity(data: TravelData): void {
     requireId(trips, accommodation.tripId, 'Accommodation Trip');
     requireId(cities, accommodation.cityId, 'Accommodation City');
     requireId(countries, accommodation.countryId, 'Accommodation Country');
+    if (accommodation.type === 'Airport'
+      ? accommodation.nearestStationName !== null
+      : accommodation.nearestStationName === null) {
+      throw new Error(`Accommodation station applicability mismatch: ${accommodation.id}`);
+    }
   }
   for (const photo of data.photos) {
     requireId(countries, photo.countryId, 'Photo Country');

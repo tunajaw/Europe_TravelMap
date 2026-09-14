@@ -17,6 +17,12 @@ button, select { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: default; }
 button:focus-visible, a:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.subpage-topbar { color: #fff; background: #111318; }
+.subpage-topbar__inner { display: flex; width: min(1600px, 100%); min-height: 48px; margin: auto; padding: 0 clamp(16px, 4vw, 64px); align-items: stretch; gap: 8px; }
+.subpage-topbar__inner a { display: flex; min-width: 104px; padding: 0 16px; align-items: center; justify-content: center; border-bottom: 3px solid transparent; color: #ffffffb8; font-size: 13px; font-weight: 600; letter-spacing: .01em; text-decoration: none; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
+.subpage-topbar__inner a:hover { color: #fff; background: #ffffff0d; }
+.subpage-topbar__inner a[aria-current="page"] { color: #fff; border-bottom-color: #fff; }
+.subpage-topbar__inner a:focus-visible { outline-color: #fff; outline-offset: -4px; }
 .app-shell { width: min(1600px, 100%); margin: auto; padding: 0 clamp(16px, 4vw, 64px) 48px; }
 .site-header { display: flex; align-items: center; justify-content: space-between; min-height: 76px; border-bottom: 1px solid var(--line); }
 .brand { display: flex; gap: 12px; align-items: center; font-weight: 650; text-decoration: none; }
@@ -37,6 +43,8 @@ h2 { font-size: 22px; font-weight: 600; letter-spacing: -.025em; }
 .status-message { padding: 80px 20px; text-align: center; }
 .status-message--error { color: #a33148; }
 @media (max-width: 760px) {
+  .subpage-topbar__inner { padding-inline: 8px; }
+  .subpage-topbar__inner a { flex: 1; }
   .hero { align-items: start; flex-direction: column; }
   .travel-period { display: none; }
   .map-panel-heading { padding: 16px; }

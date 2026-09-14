@@ -10,15 +10,15 @@ afterEach(cleanup);
 
 const expenseData = {
   segments: [
-    { id: 'plane-1', date: '2026-01-01', globalSequence: 1, originCityId: 'alpha', destinationCityId: 'beta', originCountryId: 'country-a', transportationCategory: 'Plane', company: 'Ryanair', notes: 'Base note', baseCostEur: 10, baseDistanceKm: 100 },
+    { id: 'plane-1', date: '2026-01-01', globalSequence: 1, originCityId: 'alpha', destinationCityId: 'beta', originCountryId: 'country-a', transportationCategory: 'Plane', company: 'Ryanair', notes: 'Base note / Seat reserved', baseCostEur: 10, baseDistanceKm: 100 },
     { id: 'plane-2', date: '2026-01-02', globalSequence: 2, originCityId: 'beta', destinationCityId: 'gamma', originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 30, baseDistanceKm: 200 },
     { id: 'plane-free', date: '2026-01-03', globalSequence: 3, originCityId: 'gamma', destinationCityId: 'alpha', originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 50 },
     { id: 'plane-airport-only', date: '2026-01-04', globalSequence: 4, originCityId: 'alpha', destinationCityId: 'gamma', originCountryId: 'country-a', transportationCategory: 'Plane', baseCostEur: 0, baseDistanceKm: 60 },
     { id: 'train-1', date: '2026-01-05', globalSequence: 5, originCityId: 'gamma', destinationCityId: 'beta', originCountryId: 'country-b', transportationCategory: 'Train', baseCostEur: 12, baseDistanceKm: 80 },
   ] as TravelData['segments'],
   transfers: [
-    { id: 'transfer-plane-1', segmentId: 'plane-1', side: 'departure', endpointKind: 'airport', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 10, notes: 'Airport coach' },
-    { id: 'transfer-plane-2', segmentId: 'plane-2', side: 'arrival', endpointKind: 'local', expenseInclusion: 'always', costEur: 2, distanceKm: 3, notes: 'Port shuttle' },
+    { id: 'transfer-plane-1', segmentId: 'plane-1', side: 'departure', endpointKind: 'airport', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 10, notes: 'Airport coach / Early shuttle' },
+    { id: 'transfer-plane-2', segmentId: 'plane-2', side: 'arrival', endpointKind: 'local', expenseInclusion: 'always', costEur: 2, distanceKm: 3, notes: 'Port shuttle / Walk' },
     { id: 'transfer-airport-only', segmentId: 'plane-airport-only', side: 'arrival', endpointKind: 'airport', expenseInclusion: 'airport-filter', costEur: 5, distanceKm: 8, notes: null },
   ] as TravelData['transfers'],
   cities: [
@@ -30,9 +30,15 @@ const expenseData = {
     { id: 'country-a', name: 'France', boundaryId: '250', isMicrostate: false, marker: { longitude: 2.35, latitude: 48.86 } },
     { id: 'country-b', name: 'Germany', boundaryId: '276', isMicrostate: false, marker: { longitude: 13.4, latitude: 52.52 } },
   ] as TravelData['countries'],
+  accommodations: [
+    { id: 'stay-a', sequence: 1, cityId: 'alpha', countryId: 'country-a', type: 'Airbnb', label: 'Airbnb in Alpha', nights: 2, pricePerNightEur: 30, totalCostEur: 60, commuteMinutes: 10, rating: { components: [1, 1, .5, .5, .5, .5, 0], total: 4 }, notes: 'A note', nearestStationName: 'Alpha Station' },
+    { id: 'stay-h', sequence: 2, cityId: 'beta', countryId: 'country-a', type: 'Hostel', label: 'Hostel in Beta', nights: 1, pricePerNightEur: 20, totalCostEur: 20, commuteMinutes: 20, rating: { components: [1, 1, 1, .5, .5, .5, .5], total: 5 }, notes: null, nearestStationName: 'Beta Station' },
+    { id: 'stay-hotel', sequence: 3, cityId: 'gamma', countryId: 'country-b', type: 'Hotel', label: 'Hotel in Gamma', nights: 1, pricePerNightEur: 50, totalCostEur: 50, commuteMinutes: 15, rating: { components: [1, .5, 0, .5, .5, .5, 0], total: 3 }, notes: null, nearestStationName: 'Gamma Station' },
+    { id: 'stay-airport', sequence: 4, cityId: 'gamma', countryId: 'country-b', type: 'Airport', label: 'Airport in Gamma', nights: 1, pricePerNightEur: 0, totalCostEur: 0, commuteMinutes: null, rating: { components: [1, 1, 1, .5, .5], total: 4 }, notes: null, nearestStationName: null },
+  ] as TravelData['accommodations'],
 };
 
-describe('Expense explorer (FR-EXP-01 through FR-EXP-06)', () => {
+describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
   it('defaults to Transportation and switches between mutually exclusive views', async () => {
     const user = userEvent.setup();
     render(<ExpenseExplorer data={expenseData} />);
@@ -64,6 +70,61 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-06)', () => {
     expect(accommodation).toHaveFocus();
     expect(accommodation).toHaveAttribute('aria-selected', 'true');
     expect(screen.getByRole('tabpanel', { name: 'Accommodation' })).toBeVisible();
+  });
+
+  it('renders the complete Accommodation analysis with weighted summaries and Airport control', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+    await user.click(screen.getByRole('tab', { name: 'Accommodation' }));
+
+    const categories = screen.getByRole('group', { name: 'Accommodation categories' });
+    const airbnb = within(categories).getByRole('button', { name: /Airbnb/ });
+    expect(airbnb).toHaveTextContent('Total EUR 60.00');
+    expect(airbnb).toHaveTextContent('Avg. EUR 30.00 / night');
+    expect(airbnb).toHaveTextContent('Avg. commute 10.00 min');
+    expect(screen.getByRole('checkbox', { name: 'Include airport overnight stays' })).not.toBeChecked();
+    expect(screen.getByRole('list', { name: 'Accommodation barplot' })).toBeVisible();
+    expect(screen.getByRole('group', { name: 'Accommodation expense heatmap' })).toBeVisible();
+  });
+
+  it('filters Accommodation bars and updates Airport-weighted heatmap data', async () => {
+    const user = userEvent.setup();
+    const { container } = render(<ExpenseExplorer data={expenseData} />);
+    await user.click(screen.getByRole('tab', { name: 'Accommodation' }));
+
+    const categories = screen.getByRole('group', { name: 'Accommodation categories' });
+    const chart = screen.getByRole('list', { name: 'Accommodation barplot' });
+    await user.click(within(categories).getByRole('button', { name: /Hostel/ }));
+    expect(within(chart).getAllByRole('listitem')).toHaveLength(2);
+    await user.click(screen.getByRole('checkbox', { name: 'Include airport overnight stays' }));
+    expect(within(chart).getAllByRole('listitem')).toHaveLength(3);
+    expect(within(chart).getByRole('button', { name: /Select Gamma · Airport, EUR 0.00/ })).toBeVisible();
+
+    await user.hover(container.querySelector('[data-heatmap-country="country-b"]')!);
+    expect(screen.getByRole('region', { name: 'Germany heatmap details' }))
+      .toHaveTextContent('EUR 25.00 / night');
+  });
+
+  it('switches Accommodation metrics and sorts bars chronologically', async () => {
+    const user = userEvent.setup();
+    render(<ExpenseExplorer data={expenseData} />);
+    await user.click(screen.getByRole('tab', { name: 'Accommodation' }));
+
+    const metric = screen.getByRole('combobox', { name: 'Accommodation display metric' });
+    const sort = screen.getByRole('combobox', { name: 'Accommodation sort order' });
+    const chart = screen.getByRole('list', { name: 'Accommodation barplot' });
+    expect(metric).toHaveValue('nightly-price');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('Gamma · Hotel');
+
+    await user.selectOptions(metric, 'commute');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('Beta · Hostel');
+
+    await user.selectOptions(sort, 'chronological');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('Alpha · Airbnb');
+
+    await user.selectOptions(sort, 'rating');
+    expect(sort).toHaveValue('rating');
+    expect(within(chart).getAllByRole('listitem')[0]).toHaveTextContent('Beta · Hostel');
   });
 
   it('shows all six transportation categories with total and per-Segment average cost', () => {
@@ -199,9 +260,13 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-06)', () => {
       '/images/companies/ryanair.png',
     );
     expect(details).toHaveTextContent('Base note');
+    expect(within(details).getByText('Base note')).toBeVisible();
+    expect(within(details).getByText('Seat reserved')).toBeVisible();
     expect(details).toHaveTextContent('Departure Transfer');
     expect(details).toHaveTextContent('EUR 5.00');
     expect(details).toHaveTextContent('Airport coach');
+    expect(within(details).getByText('Airport coach')).toBeVisible();
+    expect(within(details).getByText('Early shuttle')).toBeVisible();
     expect(details).toHaveTextContent('Included in current value');
 
     await user.unhover(row);
@@ -217,6 +282,8 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-06)', () => {
     expect(localTransferDetails).toHaveTextContent('Arrival Transfer');
     expect(localTransferDetails).toHaveTextContent('Local transfer');
     expect(localTransferDetails).toHaveTextContent('Port shuttle');
+    expect(within(localTransferDetails).getByText('Port shuttle')).toBeVisible();
+    expect(within(localTransferDetails).getByText('Walk')).toBeVisible();
   });
 
   it('marks an Airport Transfer excluded when its checkbox is off', async () => {

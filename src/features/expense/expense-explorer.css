@@ -213,7 +213,7 @@
   vector-effect: non-scaling-stroke;
   cursor: pointer;
   outline: none;
-  transition: fill 280ms ease, r 160ms ease;
+  transition: fill 280ms ease, r 160ms ease, stroke-width 160ms ease;
 }
 
 .transportation-heatmap-microstate:hover,
@@ -221,6 +221,7 @@
 .transportation-heatmap-microstate--active {
   r: 9px;
   stroke: #102f53;
+  stroke-width: 3.5;
   outline: none;
 }
 
@@ -578,4 +579,249 @@
   .transportation-bar-detail-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.accommodation-chart {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.accommodation-chart-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.accommodation-chart-heading h3,
+.accommodation-details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.accommodation-chart-heading > p,
+.accommodation-chart-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.accommodation-bars-list {
+  display: grid;
+  gap: 12px;
+  max-height: 560px;
+  margin: 0;
+  padding: 4px 8px 4px 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.accommodation-bar-item {
+  min-width: 0;
+  animation: transportation-row-enter 320ms cubic-bezier(.22, .8, .36, 1) both;
+  animation-delay: var(--bar-delay);
+}
+
+.accommodation-bar-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1.2fr) minmax(150px, 4fr) minmax(125px, auto);
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  outline: none;
+  text-align: left;
+  transition: background-color 160ms ease;
+}
+
+.accommodation-bar-row:hover,
+.accommodation-bar-row:focus-visible { background: #f1f6fc; }
+.accommodation-bar-row:focus-visible { box-shadow: inset 0 0 0 2px #7fa2cc; }
+.accommodation-bar-row[aria-pressed='true'] { background: #d9e7f6; box-shadow: inset 3px 0 0 #416f9f; }
+
+.accommodation-bar-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.accommodation-bar-copy strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accommodation-bar-copy span,
+.accommodation-bar-row output { color: var(--muted); font-size: 11px; }
+.accommodation-bar-row output { color: var(--ink); font-variant-numeric: tabular-nums; text-align: right; }
+
+.accommodation-bar-track {
+  height: 18px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #eef3fa;
+}
+
+.accommodation-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  transform-origin: left center;
+  animation: transportation-bar-grow 420ms cubic-bezier(.22, .8, .36, 1) both;
+  animation-delay: var(--bar-delay);
+  transition: width 420ms cubic-bezier(.22, .8, .36, 1);
+}
+
+.accommodation-details-slot {
+  box-sizing: border-box;
+  height: 230px;
+  margin-top: 20px;
+  overflow-y: auto;
+  padding: 18px;
+  border: 1px solid #cbd9e9;
+  border-radius: 12px;
+  background: #f7faff;
+}
+
+.accommodation-details-slot > p {
+  display: grid;
+  min-height: 190px;
+  margin: 0;
+  place-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.accommodation-details { animation: transportation-details-enter 180ms ease-out both; }
+.accommodation-details > div { margin-bottom: 14px; }
+.accommodation-details dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; font-size: 11px; }
+.accommodation-details dl > div { display: grid; gap: 3px; }
+.accommodation-details dt { color: var(--muted); font-weight: 650; }
+.accommodation-details dd { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+
+.accommodation-rating-detail {
+  grid-column: 1 / -1;
+}
+
+.accommodation-rating {
+  margin-top: 3px;
+}
+
+.accommodation-rating-total {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.accommodation-rating-stars {
+  position: relative;
+  display: inline-block;
+  color: #d8dee8;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.accommodation-rating-stars-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--star-width);
+  overflow: hidden;
+  color: #e2ad35;
+  white-space: nowrap;
+}
+
+.accommodation-rating-components {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accommodation-rating-components li {
+  display: grid;
+  grid-template-columns: minmax(108px, 1fr) minmax(84px, 1.4fr) 32px;
+  align-items: center;
+  gap: 7px;
+}
+
+.accommodation-rating-label {
+  color: var(--muted);
+}
+
+.accommodation-rating-meter {
+  display: flex;
+  gap: 3px;
+  min-width: 0;
+}
+
+.accommodation-rating-meter > span {
+  flex: 1 1 0;
+  min-width: 5px;
+  height: 8px;
+  border: 1px solid #b9c8d8;
+  border-radius: 2px;
+  background: #edf2f7;
+}
+
+.accommodation-rating-meter > span.is-positive-filled {
+  border-color: #477aa9;
+  background: #5f8fba;
+}
+
+.accommodation-rating-meter > span.is-negative-filled {
+  border-color: #bd6b64;
+  background: #d98279;
+}
+
+.accommodation-rating-meter > i {
+  width: 1px;
+  align-self: stretch;
+  background: #708298;
+}
+
+.accommodation-rating-components output {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.metadata-notes {
+  display: grid;
+  gap: 3px;
+  margin: 0;
+  padding-left: 16px;
+  list-style: disc;
+}
+
+.metadata-notes li,
+.metadata-notes-empty {
+  white-space: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accommodation-bar-item,
+  .accommodation-bar-fill,
+  .accommodation-details { animation: none; transition: none; }
+}
+
+@media (max-width: 520px) {
+  .accommodation-bar-row { grid-template-columns: 1fr auto; }
+  .accommodation-bar-track { grid-column: 1 / -1; grid-row: 2; }
+  .accommodation-details-slot { height: 360px; }
+  .accommodation-details dl { grid-template-columns: 1fr; }
+  .accommodation-rating-components { grid-template-columns: 1fr; }
 }

@@ -1,3 +1,4 @@
+import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readCsv } from './csv.ts';
 import { slugify } from './slug.ts';
@@ -38,6 +39,7 @@ export interface LoadedReferences {
   airports: TravelData['airports'];
   countryIdByName: Map<string, string>;
   cityIdByName: Map<string, { id: string; countryId: string }>;
+  accommodationStations: Map<string, string | null>;
 }
 
 function requireApproved(status: string, label: string): void {
@@ -46,7 +48,7 @@ function requireApproved(status: string, label: string): void {
 
 export async function loadReferences(root: string): Promise<LoadedReferences> {
   const parsed = join(root, 'data', 'parsed');
-  const [countryRows, cityRows, stationRows, airportRows, aliasRows, localTransferRows, boundaryRows] = await Promise.all([
+  const [countryRows, cityRows, stationRows, airportRows, aliasRows, localTransferRows, boundaryRows, accommodationStationJson] = await Promise.all([
     readCsv<CountryRow>(join(parsed, 'country_reference.csv')),
     readCsv<CityGeoRow>(join(parsed, 'city_reference_geocoding.csv')),
     readCsv<CityStationRow>(join(parsed, 'city_main_station.csv')),
@@ -54,7 +56,20 @@ export async function loadReferences(root: string): Promise<LoadedReferences> {
     readCsv<AliasRow>(join(parsed, 'location_alias.csv')),
     readCsv<LocalTransferRow>(join(parsed, 'local_transfer_reference.csv')),
     readCsv<BoundaryRow>(join(parsed, 'country_boundary_reference.csv')),
+    readFile(join(parsed, 'accommodation_station_reference.json'), 'utf8'),
   ]);
+
+  const accommodationStationRecord = JSON.parse(accommodationStationJson) as Record<string, unknown>;
+  const accommodationStations = new Map<string, string | null>();
+  for (const [accommodationId, stationName] of Object.entries(accommodationStationRecord)) {
+    if (!/^accommodation-\d{3}$/.test(accommodationId)) {
+      throw new Error(`Invalid Accommodation station reference ID: ${accommodationId}`);
+    }
+    if (stationName !== null && (typeof stationName !== 'string' || !stationName.trim())) {
+      throw new Error(`Invalid Accommodation station reference: ${accommodationId}`);
+    }
+    accommodationStations.set(accommodationId, stationName === null ? null : stationName.trim());
+  }
 
   const boundaryByCountry = new Map(boundaryRows.map((row) => {
     requireApproved(row.review_status, `Country boundary ${row.country_slug}`);
@@ -165,6 +180,7 @@ export async function loadReferences(root: string): Promise<LoadedReferences> {
     airports,
     countryIdByName,
     cityIdByName,
+    accommodationStations,
     index: {
       aliases,
       cities: new Map(cities.map((city) => [city.id, {

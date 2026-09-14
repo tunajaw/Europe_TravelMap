@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type MouseEvent } from 'react';
 import type { TravelData } from './domain/travel-data.ts';
 import { loadTravelData } from './data/travel-data-client.ts';
 import { CountryExplorer } from './features/map/CountryExplorer.tsx';
@@ -13,7 +13,7 @@ type LoadState =
 
 export function App() {
   const [state, setState] = useState<LoadState>({ status: 'loading' });
-  const requestedView = new URLSearchParams(window.location.search).get('view');
+  const [requestedView, setRequestedView] = useState(() => readRequestedView());
 
   useEffect(() => {
     let active = true;
@@ -26,13 +26,42 @@ export function App() {
     return () => { active = false; };
   }, []);
 
+  useEffect(() => {
+    const restoreView = () => setRequestedView(readRequestedView());
+    window.addEventListener('popstate', restoreView);
+    return () => window.removeEventListener('popstate', restoreView);
+  }, []);
+
+  function navigate(event: MouseEvent<HTMLAnchorElement>, view: 'travel-map' | 'expense') {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const url = new URL(window.location.href);
+    if (view === 'expense') url.searchParams.set('view', 'expense');
+    else url.searchParams.delete('view');
+    window.history.pushState({}, '', `${url.pathname}${url.search}${url.hash}`);
+    setRequestedView(view === 'expense' ? 'expense' : null);
+  }
+
   if (requestedView === 'mockups') {
     return state.status === 'ready'
       ? <DesignComparison data={state.data} />
       : <p className="status-message">{state.status === 'error' ? state.message : 'Loading design previews…'}</p>;
   }
 
-  return (
+  const expenseActive = requestedView === 'expense';
+  const travelMapHref = subpageHref('travel-map');
+  const expenseHref = subpageHref('expense');
+
+  return <>
+    <div className="subpage-topbar">
+      <nav aria-label="Primary" className="subpage-topbar__inner">
+        <a aria-current={expenseActive ? undefined : 'page'} href={travelMapHref}
+          onClick={(event) => navigate(event, 'travel-map')}>Travel Map</a>
+        <a aria-current={expenseActive ? 'page' : undefined} href={expenseHref}
+          onClick={(event) => navigate(event, 'expense')}>Expense</a>
+      </nav>
+    </div>
+
     <main className="app-shell">
       <header className="site-header">
         <a className="brand" href={import.meta.env.BASE_URL}>
@@ -69,5 +98,16 @@ export function App() {
         {state.status === 'ready' && <CountryExplorer data={state.data} />}
       </section>}
     </main>
-  );
+  </>;
+}
+
+function readRequestedView(): string | null {
+  return new URLSearchParams(window.location.search).get('view');
+}
+
+function subpageHref(view: 'travel-map' | 'expense'): string {
+  const url = new URL(import.meta.env.BASE_URL, window.location.origin);
+  if (view === 'expense') url.searchParams.set('view', 'expense');
+  url.hash = window.location.hash;
+  return `${url.pathname}${url.search}${url.hash}`;
 }

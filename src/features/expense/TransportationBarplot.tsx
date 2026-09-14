@@ -2,6 +2,7 @@ import { useState, type CSSProperties } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { CompanyIcon } from '../map/CompanyIcon.tsx';
 import { TRANSPORT_COLORS } from '../map/transport-colors.ts';
+import { MetadataNotes } from './MetadataNotes.tsx';
 import type { TransportationBarRow, TransportationMetric } from './transportation-bar-data.ts';
 
 export function TransportationBarplot({
@@ -53,7 +54,7 @@ export function TransportationBarplot({
                 <dd>{transfer.localRoute.start.name} → {transfer.localRoute.end.name}</dd>
               </div>
             )}
-            <div><dt>Company / mode details</dt><dd>{transfer.notes ?? 'Not recorded'}</dd></div>
+            <div><dt>Company / mode details</dt><dd><MetadataNotes notes={transfer.notes} /></dd></div>
             <div>
               <dt>Expense status</dt>
               <dd>
@@ -151,7 +152,7 @@ export function TransportationBarplot({
                       />
                     </dd>
                   </div>
-                  <div><dt>Notes</dt><dd>{activeSegment.notes ?? 'Not recorded'}</dd></div>
+                  <div><dt>Notes</dt><dd><MetadataNotes notes={activeSegment.notes} /></dd></div>
                 </dl>
               </section>
               {transferDetails('departure')}

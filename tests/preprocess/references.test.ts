@@ -11,6 +11,10 @@ describe('reviewed reference data', () => {
     expect(references.index.aliases.size).toBe(102);
     expect(references.index.aliases.get('Skopje')?.cityId).toBe('city-skopje');
     expect(references.index.localTransfers.size).toBe(4);
+    expect(references.accommodationStations.size).toBe(43);
+    expect(references.accommodationStations.get('accommodation-001'))
+      .toBe('Salzburg Ludwig-Schmederer-Platz');
+    expect(references.accommodationStations.get('accommodation-003')).toBeNull();
 
     const italy = references.countries.find(({ id }) => id === 'italy');
     const milan = references.cities.find(({ id }) => id === 'city-milan');

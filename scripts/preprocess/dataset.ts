@@ -39,6 +39,7 @@ export async function buildDataset(root: string): Promise<TravelData> {
     tripIds,
     references.cityIdByName,
     airportCodesByCity,
+    references.accommodationStations,
   );
 
   const photos = photoRows.map((row) => {

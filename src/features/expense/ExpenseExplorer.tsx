@@ -2,6 +2,19 @@ import { useMemo, useState, type CSSProperties, type KeyboardEvent } from 'react
 import type { TravelData } from '../../domain/travel-data.ts';
 import { calculateSegmentTotals } from '../../domain/transportation-metrics.ts';
 import { TRANSPORT_MODES } from '../map/transport-colors.ts';
+import { AccommodationBarplot } from './AccommodationBarplot.tsx';
+import { AccommodationHeatmap } from './AccommodationHeatmap.tsx';
+import {
+  ACCOMMODATION_CATEGORIES,
+  ACCOMMODATION_COLORS,
+  accommodationScaleMaximum,
+  buildAccommodationBarRows,
+  buildAccommodationCategorySummaries,
+  buildAccommodationHeatmapRows,
+  type AccommodationCategory,
+  type AccommodationMetric,
+  type AccommodationSort,
+} from './accommodation-data.ts';
 import { TransportationBarplot } from './TransportationBarplot.tsx';
 import { TransportationHeatmap } from './TransportationHeatmap.tsx';
 import {
@@ -20,7 +33,7 @@ const VIEWS: ReadonlyArray<{ id: ExpenseView; label: string }> = [
   { id: 'accommodation', label: 'Accommodation' },
 ];
 
-type ExpenseData = Pick<TravelData, 'cities' | 'countries' | 'segments' | 'transfers'>;
+type ExpenseData = Pick<TravelData, 'accommodations' | 'cities' | 'countries' | 'segments' | 'transfers'>;
 
 export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [view, setView] = useState<ExpenseView>('transportation');
@@ -30,6 +43,12 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [transportationSort, setTransportationSort] = useState<TransportationSort>('descending');
   const [selectedCategories, setSelectedCategories] = useState<TransportationCategory[]>(
     () => TRANSPORT_MODES.map(([category]) => category),
+  );
+  const [includeAirport, setIncludeAirport] = useState(false);
+  const [accommodationMetric, setAccommodationMetric] = useState<AccommodationMetric>('nightly-price');
+  const [accommodationSort, setAccommodationSort] = useState<AccommodationSort>('descending');
+  const [selectedAccommodationCategories, setSelectedAccommodationCategories] = useState<AccommodationCategory[]>(
+    () => [...ACCOMMODATION_CATEGORIES],
   );
   const activeLabel = VIEWS.find(({ id }) => id === view)?.label ?? 'Transportation';
   const categorySummaries = TRANSPORT_MODES.map(([category, color]) => {
@@ -60,9 +79,34 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
     () => buildTransportationHeatmapScaleMaximum(data.segments, data.transfers, transportationMetric),
     [data.segments, data.transfers, transportationMetric],
   );
+  const accommodationSummaries = useMemo(
+    () => buildAccommodationCategorySummaries(data.accommodations),
+    [data.accommodations],
+  );
+  const accommodationBarRows = buildAccommodationBarRows(data.accommodations, {
+    categories: selectedAccommodationCategories,
+    includeAirport,
+    metric: accommodationMetric,
+    sort: accommodationSort,
+  });
+  const accommodationHeatmapRows = buildAccommodationHeatmapRows(data.accommodations, {
+    categories: selectedAccommodationCategories,
+    includeAirport,
+    metric: accommodationMetric,
+  });
+  const accommodationHeatmapMaximum = useMemo(
+    () => accommodationScaleMaximum(data.accommodations, accommodationMetric),
+    [data.accommodations, accommodationMetric],
+  );
 
   function toggleCategory(category: TransportationCategory) {
     setSelectedCategories((current) => current.includes(category)
+      ? current.filter((selected) => selected !== category)
+      : [...current, category]);
+  }
+
+  function toggleAccommodationCategory(category: AccommodationCategory) {
+    setSelectedAccommodationCategories((current) => current.includes(category)
       ? current.filter((selected) => selected !== category)
       : [...current, category]);
   }
@@ -133,6 +177,25 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
             ))}
           </div>
         )}
+        {view === 'accommodation' && (
+          <div className="transportation-categories" role="group" aria-label="Accommodation categories">
+            {accommodationSummaries.map((summary) => (
+              <button
+                aria-pressed={selectedAccommodationCategories.includes(summary.category)}
+                className="transportation-category"
+                key={summary.category}
+                onClick={() => toggleAccommodationCategory(summary.category)}
+                style={{ '--category-color': ACCOMMODATION_COLORS[summary.category] } as CSSProperties}
+                type="button"
+              >
+                <span className="transportation-category-name">{summary.category}</span>
+                <span>Total EUR {summary.totalCostEur.toFixed(2)}</span>
+                <span>Avg. EUR {summary.averageNightlyCostEur.toFixed(2)} / night</span>
+                <span>Avg. commute {summary.averageCommuteMinutes.toFixed(2)} min</span>
+              </button>
+            ))}
+          </div>
+        )}
         {view === 'transportation' && (
           <div className="expense-filters" aria-label="Transportation options">
             <label>
@@ -150,6 +213,14 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 type="checkbox"
               />
               Include 0-Cost Segments
+            </label>
+          </div>
+        )}
+        {view === 'accommodation' && (
+          <div className="expense-filters" aria-label="Accommodation options">
+            <label>
+              <input checked={includeAirport} onChange={(event) => setIncludeAirport(event.target.checked)} type="checkbox" />
+              Include airport overnight stays
             </label>
           </div>
         )}
@@ -180,6 +251,24 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
             </label>
           </div>
         )}
+        {view === 'accommodation' && (
+          <div className="expense-analysis-controls">
+            <label><span>Display</span>
+              <select aria-label="Accommodation display metric" onChange={(event) => setAccommodationMetric(event.target.value as AccommodationMetric)} value={accommodationMetric}>
+                <option value="nightly-price">Average nightly price</option>
+                <option value="commute">Commute to main station</option>
+              </select>
+            </label>
+            <label><span>Sort</span>
+              <select aria-label="Accommodation sort order" onChange={(event) => setAccommodationSort(event.target.value as AccommodationSort)} value={accommodationSort}>
+                <option value="descending">Highest to lowest</option>
+                <option value="ascending">Lowest to highest</option>
+                <option value="chronological">Chronological</option>
+                <option value="rating">Rating (highest first)</option>
+              </select>
+            </label>
+          </div>
+        )}
         {view === 'transportation' && (
           <div className="expense-visualizations">
             <TransportationBarplot
@@ -196,6 +285,13 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
               scaleMaximum={heatmapScaleMaximum}
               segmentRows={barRows}
             />
+          </div>
+        )}
+        {view === 'accommodation' && (
+          <div className="expense-visualizations">
+            <AccommodationBarplot cities={data.cities} metric={accommodationMetric} rows={accommodationBarRows} />
+            <AccommodationHeatmap countries={data.countries} data={accommodationHeatmapRows}
+              metric={accommodationMetric} scaleMaximum={accommodationHeatmapMaximum} />
           </div>
         )}
       </section>

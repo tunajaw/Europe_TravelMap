@@ -3930,7 +3930,8 @@
         ],
         "total": 3.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Salzburg Ludwig-Schmederer-Platz"
     },
     {
       "id": "accommodation-002",
@@ -3957,7 +3958,8 @@
         ],
         "total": 1.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Salzburg Hauptbahnhof"
     },
     {
       "id": "accommodation-003",
@@ -3982,7 +3984,8 @@
         ],
         "total": 1
       },
-      "airportCode": "STN"
+      "airportCode": "STN",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-004",
@@ -4009,7 +4012,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Herne Hill"
     },
     {
       "id": "accommodation-005",
@@ -4036,7 +4040,8 @@
         ],
         "total": 3.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Nürnberg Hbf"
     },
     {
       "id": "accommodation-006",
@@ -4063,7 +4068,8 @@
         ],
         "total": 3.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Harburg Rathaus"
     },
     {
       "id": "accommodation-007",
@@ -4090,7 +4096,8 @@
         ],
         "total": 4
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Buckower Chaussee"
     },
     {
       "id": "accommodation-008",
@@ -4117,7 +4124,8 @@
         ],
         "total": 4.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Stegenwaldhaus"
     },
     {
       "id": "accommodation-009",
@@ -4142,7 +4150,8 @@
         ],
         "total": 0.5
       },
-      "airportCode": "BCN"
+      "airportCode": "BCN",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-010",
@@ -4169,7 +4178,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Jaume I"
     },
     {
       "id": "accommodation-011",
@@ -4196,7 +4206,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "620 Riu d’Aubinyà"
     },
     {
       "id": "accommodation-012",
@@ -4223,7 +4234,8 @@
         ],
         "total": 2.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Florida"
     },
     {
       "id": "accommodation-013",
@@ -4248,7 +4260,8 @@
         ],
         "total": 3
       },
-      "airportCode": "BCN"
+      "airportCode": "BCN",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-014",
@@ -4275,7 +4288,8 @@
         ],
         "total": 4.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Sułkowskiego"
     },
     {
       "id": "accommodation-015",
@@ -4300,7 +4314,8 @@
         ],
         "total": 2.5
       },
-      "airportCode": "BGY"
+      "airportCode": "BGY",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-016",
@@ -4327,7 +4342,8 @@
         ],
         "total": 3
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Milano Porta Venezia"
     },
     {
       "id": "accommodation-017",
@@ -4354,7 +4370,8 @@
         ],
         "total": 3
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Niederwinden"
     },
     {
       "id": "accommodation-018",
@@ -4381,7 +4398,8 @@
         ],
         "total": 3
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Aristide Briand"
     },
     {
       "id": "accommodation-019",
@@ -4408,7 +4426,8 @@
         ],
         "total": 3.75
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Eggenstein Spöcker Weg"
     },
     {
       "id": "accommodation-020",
@@ -4435,7 +4454,8 @@
         ],
         "total": 2
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Kelsterbach"
     },
     {
       "id": "accommodation-021",
@@ -4460,7 +4480,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": "BER"
+      "airportCode": "BER",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-022",
@@ -4487,7 +4508,8 @@
         ],
         "total": 4
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Pilisvörösvár"
     },
     {
       "id": "accommodation-023",
@@ -4514,7 +4536,8 @@
         ],
         "total": 4.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Horky"
     },
     {
       "id": "accommodation-024",
@@ -4539,7 +4562,8 @@
         ],
         "total": 4
       },
-      "airportCode": "NUE"
+      "airportCode": "NUE",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-025",
@@ -4566,7 +4590,8 @@
         ],
         "total": 3.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Vilnius Central Train Station"
     },
     {
       "id": "accommodation-026",
@@ -4591,7 +4616,8 @@
         ],
         "total": 4.5
       },
-      "airportCode": "OSL"
+      "airportCode": "OSL",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-027",
@@ -4618,7 +4644,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Ullern"
     },
     {
       "id": "accommodation-028",
@@ -4643,7 +4670,8 @@
         ],
         "total": 2.5
       },
-      "airportCode": "SKP"
+      "airportCode": "SKP",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-029",
@@ -4670,7 +4698,8 @@
         ],
         "total": 4.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Piața Sfânta Vineri"
     },
     {
       "id": "accommodation-030",
@@ -4697,7 +4726,8 @@
         ],
         "total": 3
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Serenissima"
     },
     {
       "id": "accommodation-031",
@@ -4724,7 +4754,8 @@
         ],
         "total": 4.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Göreme Otobüs Terminali"
     },
     {
       "id": "accommodation-032",
@@ -4751,7 +4782,8 @@
         ],
         "total": 4.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Fetihkapı"
     },
     {
       "id": "accommodation-033",
@@ -4776,7 +4808,8 @@
         ],
         "total": 2
       },
-      "airportCode": "STR"
+      "airportCode": "STR",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-034",
@@ -4803,7 +4836,8 @@
         ],
         "total": 3
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Vauban"
     },
     {
       "id": "accommodation-035",
@@ -4830,7 +4864,8 @@
         ],
         "total": 3.75
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Place Burel"
     },
     {
       "id": "accommodation-036",
@@ -4855,7 +4890,8 @@
         ],
         "total": 2.5
       },
-      "airportCode": "PMO"
+      "airportCode": "PMO",
+      "nearestStationName": null
     },
     {
       "id": "accommodation-037",
@@ -4882,7 +4918,8 @@
         ],
         "total": 2.25
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "IJTunnel"
     },
     {
       "id": "accommodation-038",
@@ -4909,7 +4946,8 @@
         ],
         "total": 3.75
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Étangs Noirs"
     },
     {
       "id": "accommodation-039",
@@ -4936,7 +4974,8 @@
         ],
         "total": 4
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Brugge Beenhouwersstraat"
     },
     {
       "id": "accommodation-040",
@@ -4963,7 +5002,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Évry-Courcouronnes T12"
     },
     {
       "id": "accommodation-041",
@@ -4990,7 +5030,8 @@
         ],
         "total": 3.75
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "Alter Markt"
     },
     {
       "id": "accommodation-042",
@@ -5017,7 +5058,8 @@
         ],
         "total": 3.5
       },
-      "airportCode": null
+      "airportCode": null,
+      "nearestStationName": "South Bermondsey"
     },
     {
       "id": "accommodation-043",
@@ -5042,7 +5084,8 @@
         ],
         "total": 1.5
       },
-      "airportCode": "DUB"
+      "airportCode": "DUB",
+      "nearestStationName": null
     }
   ],
   "photos": [

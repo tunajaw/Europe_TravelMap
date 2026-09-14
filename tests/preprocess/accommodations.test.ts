@@ -7,6 +7,7 @@ const cityIds = new Map([
   ['Kraków', { id: 'city-krakow', countryId: 'country-poland' }],
   ['Milan', { id: 'city-milan', countryId: 'country-italy' }],
 ]);
+const stationNames = new Map<string, string | null>([['accommodation-001', 'Kraków Główny']]);
 
 describe('Accommodation preprocessing', () => {
   it('normalizes City, typed values, and excludes source addresses', () => {
@@ -23,7 +24,7 @@ describe('Accommodation preprocessing', () => {
         晚數: '2',
         通勤時間: '15 min',
       },
-    ], tripIds, cityIds);
+    ], tripIds, cityIds, new Map(), stationNames);
 
     expect(result).toEqual(expect.objectContaining({
       tripId: 'trip-001',
@@ -33,6 +34,7 @@ describe('Accommodation preprocessing', () => {
       nights: 2,
       totalCostEur: 61,
       commuteMinutes: 15,
+      nearestStationName: 'Kraków Główny',
     }));
     expect(JSON.stringify(result)).not.toContain('private fixture address');
   });
@@ -44,9 +46,25 @@ describe('Accommodation preprocessing', () => {
         住宿類型: 'Airport', 備註: '', '價錢/晚': '0', 原始評分: '1/1/1/0/0: 3',
         '名稱(如有)': 'BGY Airport', 晚數: '1', 通勤時間: '0',
       },
-    ], tripIds, cityIds);
+    ], tripIds, cityIds, new Map([['city-milan', ['BGY']]]), new Map([['accommodation-001', null]]));
 
     expect(result?.cityId).toBe('city-milan');
     expect(result?.commuteMinutes).toBeNull();
+    expect(result?.nearestStationName).toBeNull();
+  });
+
+  it('requires exactly one reviewed station result per source Accommodation', () => {
+    const row = {
+      Trip: 'Poland and Milan', 住宿地址: 'private fixture address', 住宿城市: 'Krakow',
+      住宿類型: 'Hotel', 備註: '', '價錢/晚': '€30', 原始評分: '1/1/0.5/0.5/0.5/0.5/0.25: 4.25',
+      '名稱(如有)': '', 晚數: '1', 通勤時間: '15 min',
+    };
+
+    expect(() => preprocessAccommodations([row], tripIds, cityIds)).toThrow(
+      'Missing Accommodation station reference: accommodation-001',
+    );
+    expect(() => preprocessAccommodations(
+      [row], tripIds, cityIds, new Map(), new Map([['accommodation-001', null]]),
+    )).toThrow('Accommodation station applicability mismatch: accommodation-001');
   });
 });

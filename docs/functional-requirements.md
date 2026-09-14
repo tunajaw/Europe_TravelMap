@@ -1,3 +1,5 @@
+FR-NAV-01 (Primary Subpage Navigation)：Travel Map 與 Expense subpage 上方皆顯示黑底白字 topbar，提供 Travel Map／Expense 兩個連結自由切換。目前所在 subpage 必須有明確的選取狀態，並同步反映在 URL；瀏覽器上一頁／下一頁需能還原 subpage。鍵盤操作與 focus indicator 必須保留。
+
 FR-MAP-01(Europe map)：進入 Travel Map 時顯示 Europe map，我去過的國家的首都地理位置都有一個灰點代標該國家，該國家的國界線變粗，點上方以深灰色標示該國家名稱。Italy 為避免與 Vatican City 重疊，顯示點使用 Milano Centrale 的已審核座標，但 Rome 仍為 Italy 的首都。
 
 FR-MAP-02 (Country selection): 當我的滑鼠移到點附近時，該國家的所有國界線（包含與其他國家重疊的邊界）變粗加黑，文字變黑色，點稍微放大一點點且變黑以顯示不同之處。靠近點時應容易觸發，移開後不應容易閃爍；移開則恢復原狀。滑鼠操作不顯示點周圍的加粗方框，但鍵盤 focus indicator 必須保留。左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、依時間排序的三張國家旅遊圖片集錦與"Enter"。按下 "Enter" 或連點兩下該國家 marker，則 zoom-in 該國家地圖，開啟 Country Map。按到小 box 以外的地方則回到 Europe Map，縮回小 box，取消國家"鎖定"狀態；marker、Segment、metadata card 與地圖控制項不視為 box 外部。如果點擊 marker (即使不是現在的鎖定國家)本身，切換到該 marker 代表國家的鎖定狀態及圖片。圖片左右兩側提供上一張／下一張按鈕，第一張只顯示下一張，最後一張只顯示上一張；圖片切換使用滑動效果，按鈕為較小的半透明正方形且文字置中。切換國家時，右側 bar 使用滑動填滿效果。動畫需遵守 reduced-motion 設定。Europe Map、國家預覽與 Country Map 狀態需由 URL hash 支援直接開啟及瀏覽器上一頁／下一頁。
@@ -98,6 +100,7 @@ FR-EXP-06 (Transportation Barplot Interaction):
 	* 備註 (如有)
 
 Raw 備註依 `Segment 備註/出發接駁備註/抵達接駁備註` 三個位置解析。接駁交通方式與公司若存在於對應備註中，必須顯示於該接駁 metadata；空白位置不可在 parsing 時省略。
+Base Segment、Departure Transfer 與 Arrival Transfer 的 Notes 使用相同顯示規則：未記錄時顯示 `-`；有內容時以 `/` 作為換行分隔符，去除各段前後空白，並以 Markdown `*` 對應的 unordered-list 圓點樣式呈現，不顯示字面上的 `*`。
 
 Base Segment 的公司名稱沿用 FR-MAP-09 的本機 company icon 規則；City Bus 不顯示 icon，找不到或載入失敗時保留公司文字。
 
@@ -125,7 +128,7 @@ Hotel: Total Cost 1000/Avg. Cost 30/Avg. Commute 40min
 
 畫面中間左側，有兩種選單:
 顯示: 每晚平均價錢、到主火車站通勤時間
-排列: 由大到小、由小到大、按時間排列
+排列: 由大到小、由小到大、按時間排列、按評級排列。按評級排列時，以個人評價總分由高至低排序；總分相同時，以時間較早者優先。
 
 畫面右側有橫向 barplot，畫出被篩選 Accommodation 數值。
 
@@ -145,20 +148,24 @@ FR-EXP-11 (Accommodation Filter)
 barplot 與 heatmap 的視覺化資料由住宿類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-12 (Accommodation Barplot Render):
-橫向 barplot，列出所有篩選過後的 Accommodation，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值。一個 Accommodation = 一個 bar。Airbnb、Hostel、Hotel 為三個獨立類型，顏色依序為淡紅色、淺綠色、藍色；如果勾選"考慮機場過夜"，Airport 使用黃色，但因為價錢為 0，不會出現在價格 bar。
+橫向 barplot，列出所有篩選過後的 Accommodation，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值。一個 Accommodation = 一個 bar。Airbnb、Hostel、Hotel 為三個獨立類型，顏色依序為淡紅色、淺綠色、藍色；如果勾選"考慮機場過夜"，Airport 在價格 barplot 中以黃色最小寬度標記呈現，數值顯示為 0。Airport commute 為不適用，仍不出現在通勤時間 barplot。
 
 FR-EXP-13 (Accommodation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
 滑鼠移到 bar 上列出該 Accommodation 的 metadata，包含以下架構:
 * 另一項資訊 (如現在顯示價錢的話 metadata 就顯示通勤時間)
-* 個人評價
+* 最近的大眾運輸站名；Airport 過夜顯示 `-`
+* 個人評價：總分以五星制顯示；個別評分須顯示 rubric 項目名稱，並依該項目的 scale 畫出離散長方形格。例如價錢的 0.0～1.0 scale 以四格呈現，0.75 填滿三格。含負值的「其他加分」以零為中心，負分與正分使用不同方向及顏色呈現。
 * 備註 (如有)
 
+Accommodation Notes 未記錄時顯示 `-`；有內容時以 `/` 作為換行分隔符，去除各段前後空白，並以 Markdown `*` 對應的 unordered-list 圓點樣式呈現，不顯示字面上的 `*`。
+
 FR-EXP-14 (Accommodation Heatmap Render):
-Heatmap 畫出歐洲地圖，以篩選後的 Accommodation 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。
+Heatmap 畫出歐洲地圖，以篩選後的 Accommodation 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上設一個點代表該國；點的底色必須使用該國實際平均 metric 對應的 heatmap 顏色。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。
 
 FR-EXP-15 (Accommodation Heatmap Interaction):
 地圖可以用滾輪縮放。
+滑鼠移到或鎖定迷你袖珍小國的點時，只放大點並加粗邊界，不得覆蓋代表 expense 的底色。
 滑鼠移到 heatmap 上的國家區域時，列出該國家的 metadata，包含以下架構:
 * 國家名稱
 * 幾晚上

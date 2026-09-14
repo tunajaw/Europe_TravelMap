@@ -8,9 +8,11 @@ export function preprocessAccommodations(
   tripIds: Map<string, string>,
   cityIds: Map<string, { id: string; countryId: string }>,
   airportCodesByCity: Map<string, string[]> = new Map(),
+  stationNamesByAccommodation: Map<string, string | null> = new Map(),
 ): AccommodationRecord[] {
   let currentTripTitle = '';
-  return rows.map((row, index) => {
+  const accommodations = rows.map((row, index) => {
+    const id = numberedAccommodationId(index + 1);
     currentTripTitle = row.Trip.trim() || currentTripTitle;
     const tripId = tripIds.get(currentTripTitle);
     if (!tripId) throw new Error(`Unknown or missing Accommodation Trip: ${currentTripTitle}`);
@@ -37,9 +39,16 @@ export function preprocessAccommodations(
     const airportCode = typedType === 'Airport'
       ? namedAirportCode ?? (cityAirportCodes.length === 1 ? cityAirportCodes[0] ?? null : null)
       : null;
+    if (!stationNamesByAccommodation.has(id)) {
+      throw new Error(`Missing Accommodation station reference: ${id}`);
+    }
+    const nearestStationName = stationNamesByAccommodation.get(id) ?? null;
+    if (typedType === 'Airport' ? nearestStationName !== null : nearestStationName === null) {
+      throw new Error(`Accommodation station applicability mismatch: ${id}`);
+    }
 
     return {
-      id: numberedAccommodationId(index + 1),
+      id,
       tripId,
       sequence: index + 1,
       cityId: city.id,
@@ -53,8 +62,13 @@ export function preprocessAccommodations(
       commuteMinutes: typedType === 'Airport' ? null : parseDurationMinutes(row.通勤時間),
       rating,
       airportCode,
+      nearestStationName,
     };
   });
+  if (stationNamesByAccommodation.size !== accommodations.length) {
+    throw new Error('Accommodation station references do not exactly cover source Accommodations');
+  }
+  return accommodations;
 }
 
 function numberedAccommodationId(value: number): string {

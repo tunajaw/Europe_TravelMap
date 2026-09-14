@@ -127,4 +127,5 @@ export interface AccommodationRecord {
   commuteMinutes: number | null;
   rating: { components: number[]; total: number };
   airportCode: string | null;
+  nearestStationName: string | null;
 }
