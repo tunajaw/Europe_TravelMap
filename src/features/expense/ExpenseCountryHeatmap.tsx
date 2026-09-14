@@ -24,7 +24,11 @@ export function ExpenseCountryHeatmap({ ariaLabel, countLabel, countries, data, 
   const datumByCountry = new Map(data.map((datum) => [datum.countryId, datum]));
   const activeDatum = activeCountry ? datumByCountry.get(activeCountry.id) : undefined;
   const countryByBoundary = new Map(countries.map((country) => [country.boundaryId, country]));
-  const color = scaleLinear<string>().domain([0, Math.max(scaleMaximum, 1)]).range(['#b8d9ee', '#173f6d']).clamp(true);
+  const maximum = Math.max(scaleMaximum, 1);
+  const color = scaleLinear<string>()
+    .domain([0, maximum / 2, maximum])
+    .range(['#b8d9ee', '#477ead', '#061a33'])
+    .clamp(true);
   const toggleCountry = (countryId: string) => setLockedCountryId((current) => current === countryId ? null : countryId);
 
   function handleWheel(event: WheelEvent<SVGSVGElement>) {

@@ -17,33 +17,37 @@ const accommodations = [
 
 describe('Accommodation expense data', () => {
   it('calculates category summaries using nights as weights', () => {
-    const airbnb = buildAccommodationCategorySummaries(accommodations)[0]!;
+    const summaries = buildAccommodationCategorySummaries(accommodations);
+    const airbnb = summaries[0]!;
     expect(airbnb).toMatchObject({
       category: 'Airbnb', totalCostEur: 120, averageNightlyCostEur: 40, averageCommuteMinutes: 20,
+    });
+    expect(summaries[3]).toMatchObject({
+      category: 'Airport', totalCostEur: 0, averageNightlyCostEur: 0, averageCommuteMinutes: null,
     });
   });
 
   it('renders one row per applicable Accommodation and never treats Airport commute as zero', () => {
     const priceRows = buildAccommodationBarRows(accommodations, {
-      categories: ['Airbnb', 'Hotel'], includeAirport: true, metric: 'nightly-price', sort: 'ascending',
+      categories: ['Airbnb', 'Hotel', 'Airport'], metric: 'nightly-price', sort: 'ascending',
     });
     expect(priceRows.map(({ accommodationId, value }) => [accommodationId, value]))
       .toEqual([['airport', 0], ['a-1', 30], ['h-1', 40], ['a-2', 60]]);
 
     const commuteRows = buildAccommodationBarRows(accommodations, {
-      categories: ['Airbnb', 'Hotel'], includeAirport: true, metric: 'commute', sort: 'chronological',
+      categories: ['Airbnb', 'Hotel', 'Airport'], metric: 'commute', sort: 'chronological',
     });
     expect(commuteRows.map(({ accommodationId }) => accommodationId)).toEqual(['a-1', 'a-2', 'h-1']);
   });
 
   it('includes Airport nights in price aggregation but excludes them from commute aggregation', () => {
     const price = buildAccommodationHeatmapRows(accommodations, {
-      categories: ['Airbnb', 'Hotel'], includeAirport: true, metric: 'nightly-price',
+      categories: ['Airbnb', 'Hotel', 'Airport'], metric: 'nightly-price',
     });
     expect(price.find(({ countryId }) => countryId === 'b')).toMatchObject({ nights: 2, average: 20 });
 
     const commute = buildAccommodationHeatmapRows(accommodations, {
-      categories: ['Airbnb', 'Hotel'], includeAirport: true, metric: 'commute',
+      categories: ['Airbnb', 'Hotel', 'Airport'], metric: 'commute',
     });
     expect(commute.find(({ countryId }) => countryId === 'b')).toMatchObject({ nights: 1, average: 20 });
   });
@@ -59,7 +63,7 @@ describe('Accommodation expense data', () => {
       rating: { ...row.rating, total: [3, 4, 4, 1][index]! },
     })) as TravelData['accommodations'];
     const rows = buildAccommodationBarRows(rated, {
-      categories: ['Airbnb', 'Hotel'], includeAirport: false, metric: 'nightly-price', sort: 'rating',
+      categories: ['Airbnb', 'Hotel'], metric: 'nightly-price', sort: 'rating',
     });
 
     expect(rows.map(({ accommodationId }) => accommodationId)).toEqual(['a-2', 'h-1', 'a-1']);

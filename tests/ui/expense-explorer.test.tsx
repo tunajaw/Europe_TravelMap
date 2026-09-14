@@ -82,7 +82,11 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     expect(airbnb).toHaveTextContent('Total EUR 60.00');
     expect(airbnb).toHaveTextContent('Avg. EUR 30.00 / night');
     expect(airbnb).toHaveTextContent('Avg. commute 10.00 min');
-    expect(screen.getByRole('checkbox', { name: 'Include airport overnight stays' })).not.toBeChecked();
+    const airport = within(categories).getByRole('button', { name: /Airport/ });
+    expect(within(categories).getAllByRole('button')).toHaveLength(4);
+    expect(airport).toHaveAttribute('aria-pressed', 'false');
+    expect(airport).toHaveTextContent('Avg. commute Not applicable');
+    expect(screen.queryByRole('checkbox', { name: 'Include airport overnight stays' })).not.toBeInTheDocument();
     expect(screen.getByRole('list', { name: 'Accommodation barplot' })).toBeVisible();
     expect(screen.getByRole('group', { name: 'Accommodation expense heatmap' })).toBeVisible();
   });
@@ -96,7 +100,7 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     const chart = screen.getByRole('list', { name: 'Accommodation barplot' });
     await user.click(within(categories).getByRole('button', { name: /Hostel/ }));
     expect(within(chart).getAllByRole('listitem')).toHaveLength(2);
-    await user.click(screen.getByRole('checkbox', { name: 'Include airport overnight stays' }));
+    await user.click(within(categories).getByRole('button', { name: /Airport/ }));
     expect(within(chart).getAllByRole('listitem')).toHaveLength(3);
     expect(within(chart).getByRole('button', { name: /Select Gamma · Airport, EUR 0.00/ })).toBeVisible();
 

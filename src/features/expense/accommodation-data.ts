@@ -1,11 +1,11 @@
 import type { TravelData } from '../../domain/travel-data.ts';
 
 type Accommodation = TravelData['accommodations'][number];
-export type AccommodationCategory = Exclude<Accommodation['type'], 'Airport'>;
+export type AccommodationCategory = Accommodation['type'];
 export type AccommodationMetric = 'nightly-price' | 'commute';
 export type AccommodationSort = 'descending' | 'ascending' | 'chronological' | 'rating';
 
-export const ACCOMMODATION_CATEGORIES: readonly AccommodationCategory[] = ['Airbnb', 'Hostel', 'Hotel'];
+export const ACCOMMODATION_CATEGORIES: readonly AccommodationCategory[] = ['Airbnb', 'Hostel', 'Hotel', 'Airport'];
 export const ACCOMMODATION_COLORS: Record<Accommodation['type'], string> = {
   Airbnb: '#e9a5a9',
   Hostel: '#9ed6b1',
@@ -15,7 +15,6 @@ export const ACCOMMODATION_COLORS: Record<Accommodation['type'], string> = {
 
 export interface AccommodationOptions {
   categories: AccommodationCategory[];
-  includeAirport: boolean;
   metric: AccommodationMetric;
   sort: AccommodationSort;
 }
@@ -40,7 +39,7 @@ export interface AccommodationCategorySummary {
   category: AccommodationCategory;
   totalCostEur: number;
   averageNightlyCostEur: number;
-  averageCommuteMinutes: number;
+  averageCommuteMinutes: number | null;
 }
 
 export interface AccommodationHeatmapRow {
@@ -65,9 +64,9 @@ export function buildAccommodationCategorySummaries(
       averageNightlyCostEur: round(nights
         ? rows.reduce((sum, row) => sum + row.totalCostEur, 0) / nights
         : 0),
-      averageCommuteMinutes: round(commuteNights
-        ? rows.reduce((sum, row) => sum + (row.commuteMinutes ?? 0) * row.nights, 0) / commuteNights
-        : 0),
+      averageCommuteMinutes: commuteNights
+        ? round(rows.reduce((sum, row) => sum + (row.commuteMinutes ?? 0) * row.nights, 0) / commuteNights)
+        : null,
     };
   });
 }
@@ -78,7 +77,7 @@ export function buildAccommodationBarRows(
 ): AccommodationBarRow[] {
   const selected = new Set(options.categories);
   return accommodations
-    .filter((row) => row.type === 'Airport' ? options.includeAirport : selected.has(row.type))
+    .filter((row) => selected.has(row.type))
     .filter((row) => options.metric === 'nightly-price' || row.commuteMinutes !== null)
     .map((row) => ({
       accommodationId: row.id,
@@ -108,11 +107,11 @@ export function buildAccommodationBarRows(
 
 export function buildAccommodationHeatmapRows(
   accommodations: TravelData['accommodations'],
-  options: Pick<AccommodationOptions, 'categories' | 'includeAirport' | 'metric'>,
+  options: Pick<AccommodationOptions, 'categories' | 'metric'>,
 ): AccommodationHeatmapRow[] {
   const selected = new Set(options.categories);
   const included = accommodations
-    .filter((row) => row.type === 'Airport' ? options.includeAirport : selected.has(row.type))
+    .filter((row) => selected.has(row.type))
     .filter((row) => options.metric === 'nightly-price' || row.commuteMinutes !== null);
   const byCountry = new Map<string, Accommodation[]>();
   for (const row of included) byCountry.set(row.countryId, [...(byCountry.get(row.countryId) ?? []), row]);

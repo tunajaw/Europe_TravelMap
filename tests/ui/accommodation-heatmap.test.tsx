@@ -43,4 +43,14 @@ describe('Accommodation heatmap (FR-EXP-14 and FR-EXP-15)', () => {
 
     expect(marker.style.fill).not.toBe(lowExpenseColor);
   });
+
+  it('uses the darkest sequential color at the scale maximum', () => {
+    const countries = [{ id: 'france', name: 'France', boundaryId: '250', isMicrostate: false,
+      marker: { longitude: 2.35, latitude: 48.86 } }] as TravelData['countries'];
+    const { container } = render(<AccommodationHeatmap countries={countries} metric="nightly-price" scaleMaximum={60}
+      data={[{ countryId: 'france', nights: 1, average: 60, standardDeviation: 0, rank: 1 }]} />);
+
+    expect(container.querySelector<SVGPathElement>('[data-heatmap-country="france"]')?.style.fill)
+      .toBe('rgb(6, 26, 51)');
+  });
 });

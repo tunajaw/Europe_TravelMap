@@ -44,11 +44,10 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   const [selectedCategories, setSelectedCategories] = useState<TransportationCategory[]>(
     () => TRANSPORT_MODES.map(([category]) => category),
   );
-  const [includeAirport, setIncludeAirport] = useState(false);
   const [accommodationMetric, setAccommodationMetric] = useState<AccommodationMetric>('nightly-price');
   const [accommodationSort, setAccommodationSort] = useState<AccommodationSort>('descending');
   const [selectedAccommodationCategories, setSelectedAccommodationCategories] = useState<AccommodationCategory[]>(
-    () => [...ACCOMMODATION_CATEGORIES],
+    () => ACCOMMODATION_CATEGORIES.filter((category) => category !== 'Airport'),
   );
   const activeLabel = VIEWS.find(({ id }) => id === view)?.label ?? 'Transportation';
   const categorySummaries = TRANSPORT_MODES.map(([category, color]) => {
@@ -85,13 +84,11 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
   );
   const accommodationBarRows = buildAccommodationBarRows(data.accommodations, {
     categories: selectedAccommodationCategories,
-    includeAirport,
     metric: accommodationMetric,
     sort: accommodationSort,
   });
   const accommodationHeatmapRows = buildAccommodationHeatmapRows(data.accommodations, {
     categories: selectedAccommodationCategories,
-    includeAirport,
     metric: accommodationMetric,
   });
   const accommodationHeatmapMaximum = useMemo(
@@ -178,7 +175,7 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
           </div>
         )}
         {view === 'accommodation' && (
-          <div className="transportation-categories" role="group" aria-label="Accommodation categories">
+          <div className="transportation-categories accommodation-categories" role="group" aria-label="Accommodation categories">
             {accommodationSummaries.map((summary) => (
               <button
                 aria-pressed={selectedAccommodationCategories.includes(summary.category)}
@@ -191,7 +188,9 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 <span className="transportation-category-name">{summary.category}</span>
                 <span>Total EUR {summary.totalCostEur.toFixed(2)}</span>
                 <span>Avg. EUR {summary.averageNightlyCostEur.toFixed(2)} / night</span>
-                <span>Avg. commute {summary.averageCommuteMinutes.toFixed(2)} min</span>
+                <span>Avg. commute {summary.averageCommuteMinutes === null
+                  ? 'Not applicable'
+                  : `${summary.averageCommuteMinutes.toFixed(2)} min`}</span>
               </button>
             ))}
           </div>
@@ -213,14 +212,6 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 type="checkbox"
               />
               Include 0-Cost Segments
-            </label>
-          </div>
-        )}
-        {view === 'accommodation' && (
-          <div className="expense-filters" aria-label="Accommodation options">
-            <label>
-              <input checked={includeAirport} onChange={(event) => setIncludeAirport(event.target.checked)} type="checkbox" />
-              Include airport overnight stays
             </label>
           </div>
         )}

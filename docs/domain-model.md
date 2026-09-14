@@ -481,8 +481,8 @@ an independent type.
 
 Country-level Accommodation aggregation uses the Country of the normalized
 accommodation City. Airport overnight stays remain included in their assigned
-Country when the Airport overnight filter is enabled, even when the airport is
-outside the administrative boundary of the associated City.
+Country when the Airport Accommodation category is selected, even when the
+airport is outside the administrative boundary of the associated City.
 
 Non-Airport Accommodation records include an owner-approved nearest public
 transport station name. Airport overnight stays use their Airport identity and

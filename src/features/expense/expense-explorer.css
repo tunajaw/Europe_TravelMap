@@ -47,6 +47,10 @@
   margin-top: 22px;
 }
 
+.accommodation-categories {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .transportation-category {
   display: grid;
   gap: 8px;
@@ -239,7 +243,7 @@
 .transportation-heatmap-legend > span[aria-hidden='true'] {
   height: 8px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #b8d9ee, #173f6d);
+  background: linear-gradient(90deg, #b8d9ee, #477ead 50%, #061a33);
 }
 
 .transportation-heatmap-details-slot {

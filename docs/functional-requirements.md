@@ -105,7 +105,7 @@ Base Segment、Departure Transfer 與 Arrival Transfer 的 Notes 使用相同顯
 Base Segment 的公司名稱沿用 FR-MAP-09 的本機 company icon 規則；City Bus 不顯示 icon，找不到或載入失敗時保留公司文字。
 
 FR-EXP-07 (Transportation Heatmap Render):
-Heatmap 畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。No data 使用中性灰色，與有資料但 metric 為 0 的淺藍色明確區隔。所有 Country boundary 使用一致的較粗線寬；hover、focus 或選取 Country 時不可顯示矩形 outline。
+Heatmap 畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。No data 使用中性灰色，與有資料但 metric 為 0 的淺藍色明確區隔。費用色階使用低值淺藍、中值藍、高值深海軍藍的三段式 sequential scale。所有 Country boundary 使用一致的較粗線寬；hover、focus 或選取 Country 時不可顯示矩形 outline。
 
 跨國 Segment 一律歸屬至出發地 Country，不重複計入目的地 Country。
 
@@ -118,12 +118,13 @@ FR-EXP-08 (Transportation Heatmap Interaction):
 * 排名
 
 FR-EXP-09 (Accommodation Element Component):
-畫面左上方有三種住宿類別的按鈕(類別 div 本體是按鈕):
+畫面左上方有四種住宿類別的按鈕(類別 div 本體是按鈕):
 Airbnb: Total Cost 550/Avg. Cost 20/Avg. Commute 60min
 Hostel: ...
 Hotel: Total Cost 1000/Avg. Cost 30/Avg. Commute 40min
+Airport: Total Cost 0/Avg. Cost 0/Avg. Commute Not applicable
 
-接續的是一個 checkbox: 考慮機場過夜。
+Airport 按鈕預設未選取，以延續原本不納入機場過夜的預設行為；不另外顯示「考慮機場過夜」checkbox。
 
 
 畫面中間左側，有兩種選單:
@@ -137,10 +138,10 @@ Hotel: Total Cost 1000/Avg. Cost 30/Avg. Commute 40min
 FR-EXP-10 (Accommodation Data Calculation):
 * 以住宿晚數計算加權平均，如Σ(commute time × nights) / Σ(nights)。
 * 同一 Visit 有多個 Accommodation 時，分別顯示。
-* 如果選擇 "考慮機場過夜"，國家住宿平均價格的計算，以該國篩選後 Accommodation 的住宿晚數與總住宿費用計算。機場過夜一定是0元，但通勤時間不考慮機場過夜的天數。
+* 如果選擇 Airport 類別，國家住宿平均價格的計算，以該國篩選後 Accommodation 的住宿晚數與總住宿費用計算。機場過夜一定是0元，但通勤時間不考慮機場過夜的天數。
 * Raw Airport commute 可記為 0，但 preprocessing 必須轉成不適用，不得納入 commute 平均。
 * MVP 不另外計算手續費、稅、退款或分攤。
-* Accommodation 的 Country 由 preprocessing 後的住宿 City 推導。啟用機場過夜時，即使機場不在關聯 City 的行政範圍內，仍計入其指定 Country。
+* Accommodation 的 Country 由 preprocessing 後的住宿 City 推導。選擇 Airport 類別時，即使機場不在關聯 City 的行政範圍內，仍計入其指定 Country。
 
 
 FR-EXP-11 (Accommodation Filter)
@@ -148,7 +149,7 @@ FR-EXP-11 (Accommodation Filter)
 barplot 與 heatmap 的視覺化資料由住宿類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-12 (Accommodation Barplot Render):
-橫向 barplot，列出所有篩選過後的 Accommodation，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值。一個 Accommodation = 一個 bar。Airbnb、Hostel、Hotel 為三個獨立類型，顏色依序為淡紅色、淺綠色、藍色；如果勾選"考慮機場過夜"，Airport 在價格 barplot 中以黃色最小寬度標記呈現，數值顯示為 0。Airport commute 為不適用，仍不出現在通勤時間 barplot。
+橫向 barplot，列出所有篩選過後的 Accommodation，如果數值相同以時間排序前面者優先。每個 bar 最右邊顯示數值。一個 Accommodation = 一個 bar。Airbnb、Hostel、Hotel、Airport 為四個獨立類型，顏色依序為淡紅色、淺綠色、藍色、黃色；選擇 Airport 類別時，Airport 在價格 barplot 中以黃色最小寬度標記呈現，數值顯示為 0。Airport commute 為不適用，仍不出現在通勤時間 barplot。
 
 FR-EXP-13 (Accommodation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
@@ -161,7 +162,7 @@ FR-EXP-13 (Accommodation Barplot Interaction):
 Accommodation Notes 未記錄時顯示 `-`；有內容時以 `/` 作為換行分隔符，去除各段前後空白，並以 Markdown `*` 對應的 unordered-list 圓點樣式呈現，不顯示字面上的 `*`。
 
 FR-EXP-14 (Accommodation Heatmap Render):
-Heatmap 畫出歐洲地圖，以篩選後的 Accommodation 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上設一個點代表該國；點的底色必須使用該國實際平均 metric 對應的 heatmap 顏色。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。
+Heatmap 畫出歐洲地圖，以篩選後的 Accommodation 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上設一個點代表該國；點的底色必須使用該國實際平均 metric 對應的 heatmap 顏色。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。費用屬於由低至高的單向數值，使用低值淺藍、中值藍、高值深海軍藍的三段式 sequential scale，不使用暗示中性分界的雙色 diverging scale。
 
 FR-EXP-15 (Accommodation Heatmap Interaction):
 地圖可以用滾輪縮放。
