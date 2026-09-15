@@ -5,8 +5,9 @@ import sources from '../../../public/images/companies/sources.json';
 export function CompanyIcon({ company, category }: { company: string | null; category: string }) {
   const [failedSource, setFailedSource] = useState<string | null>(null);
   if (category === 'City Bus' || !company) return null;
-  const source = (sources as Record<string, { path: string }>)[company.trim().toLowerCase()];
+  const source = (sources as Record<string, { path: string; display?: 'wordmark' }>)[company.trim().toLowerCase()];
   if (!source || failedSource === source.path) return null;
-  return <img className="company-icon" src={`${import.meta.env.BASE_URL}${source.path}`} alt={`${company} icon`}
-    width="24" height="24" onError={() => setFailedSource(source.path)} />;
+  return <img className={`company-icon${source.display === 'wordmark' ? ' company-icon--wordmark' : ''}`}
+    src={`${import.meta.env.BASE_URL}${source.path}`} alt={`${company} icon`}
+    width={source.display === 'wordmark' ? 52 : 24} height="24" onError={() => setFailedSource(source.path)} />;
 }

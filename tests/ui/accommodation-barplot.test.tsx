@@ -32,6 +32,7 @@ describe('Accommodation barplot (FR-EXP-12 and FR-EXP-13)', () => {
     await user.unhover(salzburg);
     expect(salzburg).toHaveAttribute('aria-pressed', 'true');
     const details = screen.getByRole('region', { name: 'Salzburg Airbnb details' });
+    expect(details.compareDocumentPosition(screen.getByRole('list', { name: 'Accommodation barplot' })) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(details).toHaveTextContent('Commute10 min');
     expect(details).toHaveTextContent('Nearest stationSalzburg Parsch');
     expect(details).toHaveTextContent('2.75 / 5 stars');

@@ -79,6 +79,47 @@ export function TransportationBarplot({
         <p>{rows.length} Segments</p>
       </div>
 
+      <div className="transportation-bar-details-slot">
+        {activeSegment && activeRoute ? (
+          <section
+            aria-label={`${activeRoute} details`}
+            className="transportation-bar-details"
+            key={activeSegment.id}
+            role="region"
+          >
+            <div className="transportation-bar-details-heading">
+              <p className="eyebrow">Selected Segment</p>
+              <h3>{activeRoute}</h3>
+            </div>
+            <div className="transportation-bar-detail-grid">
+              <section className="transportation-bar-detail-card">
+                <h4>Base Segment</h4>
+                <dl>
+                  <div><dt>Fare</dt><dd>€ {activeSegment.baseCostEur.toFixed(2)}</dd></div>
+                  <div>
+                    <dt>Company</dt>
+                    <dd className="transportation-bar-company">
+                      {activeSegment.company ?? 'Not recorded'}
+                      <CompanyIcon
+                        category={activeSegment.transportationCategory}
+                        company={activeSegment.company}
+                      />
+                    </dd>
+                  </div>
+                  <div><dt>Notes</dt><dd><MetadataNotes notes={activeSegment.notes} /></dd></div>
+                </dl>
+              </section>
+              {transferDetails('departure')}
+              {transferDetails('arrival')}
+            </div>
+          </section>
+        ) : (
+          <p className="transportation-bar-details-placeholder">
+            Hover over or focus a Segment bar to inspect its fare and transfers. Click to lock it.
+          </p>
+        )}
+      </div>
+
       {rows.length ? (
         <ol className="transportation-bars-list" aria-label="Transportation barplot">
           {rows.map((row, index) => {
@@ -124,47 +165,6 @@ export function TransportationBarplot({
           })}
         </ol>
       ) : <p className="transportation-chart-empty">No Segments match the current filters.</p>}
-
-      <div className="transportation-bar-details-slot">
-        {activeSegment && activeRoute ? (
-          <section
-            aria-label={`${activeRoute} details`}
-            className="transportation-bar-details"
-            key={activeSegment.id}
-            role="region"
-          >
-            <div className="transportation-bar-details-heading">
-              <p className="eyebrow">Selected Segment</p>
-              <h3>{activeRoute}</h3>
-            </div>
-            <div className="transportation-bar-detail-grid">
-              <section className="transportation-bar-detail-card">
-                <h4>Base Segment</h4>
-                <dl>
-                  <div><dt>Fare</dt><dd>€ {activeSegment.baseCostEur.toFixed(2)}</dd></div>
-                  <div>
-                    <dt>Company</dt>
-                    <dd className="transportation-bar-company">
-                      {activeSegment.company ?? 'Not recorded'}
-                      <CompanyIcon
-                        category={activeSegment.transportationCategory}
-                        company={activeSegment.company}
-                      />
-                    </dd>
-                  </div>
-                  <div><dt>Notes</dt><dd><MetadataNotes notes={activeSegment.notes} /></dd></div>
-                </dl>
-              </section>
-              {transferDetails('departure')}
-              {transferDetails('arrival')}
-            </div>
-          </section>
-        ) : (
-          <p className="transportation-bar-details-placeholder">
-            Hover over or focus a Segment bar to inspect its fare and transfers.
-          </p>
-        )}
-      </div>
     </section>
   );
 }

@@ -119,7 +119,9 @@ SPA fallback routing.
 
 FR-MAP-02 uses `#europe`, `#europe/<country-id>` (selected preview), and
 `#country/<country-id>` (entered Country Map). Browser history and direct links
-restore these states; unrecognized country IDs fall back to Europe. Selecting
+restore these states; unrecognized country IDs fall back to Europe. Europe-level
+hover uses visited country polygons as well as markers; route hit paths above
+country fills take priority. Microstates retain marker interaction. Selecting
 via a country marker double-click enters that Country Map directly, equivalent
 to its preview's Enter control. Selecting
 another country resets its photo to the first chronological image. Escape,

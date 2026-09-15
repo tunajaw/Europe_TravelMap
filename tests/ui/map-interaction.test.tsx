@@ -12,6 +12,21 @@ const data = TravelDataSchema.parse(source);
 beforeEach(() => window.history.replaceState(null, '', '/Europe_TravelMap/'));
 afterEach(cleanup);
 describe('FR-MAP-07 through FR-MAP-09', () => {
+  it('hands country-area hover to a route and restores country hover when leaving the route', async () => {
+    const user = userEvent.setup();
+    const { container } = render(<CountryExplorer data={data} />);
+    const germany = container.querySelector('[data-boundary-country="germany"]')!;
+    await user.hover(germany);
+    expect(germany).toHaveClass('country-boundary--active');
+    const route = container.querySelector('[data-segment-id]')!;
+    expect(germany.compareDocumentPosition(route) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    await user.hover(route);
+    expect(germany).not.toHaveClass('country-boundary--active');
+    expect(screen.getByRole('region', { name: 'Segment details' })).toHaveTextContent(route.getAttribute('data-segment-id')!);
+    await user.hover(germany);
+    expect(germany).toHaveClass('country-boundary--active');
+    await waitFor(() => expect(screen.queryByRole('region', { name: 'Segment details' })).not.toBeInTheDocument());
+  });
   it.each(['europe', 'country'])('links Skopje transit and emphasizes every waypoint in %s view', async (level) => {
     window.history.replaceState(null, '', level === 'country' ? '#country/north-macedonia' : '#europe');
     const user = userEvent.setup();

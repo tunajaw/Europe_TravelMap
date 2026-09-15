@@ -54,10 +54,11 @@
     "retrieved": "2026-09-08"
   },
   "pegasus": {
-    "path": "images/companies/pegasus.ico",
+    "path": "images/companies/pegasus.jpg",
+    "display": "wordmark",
     "website": "https://www.flypgs.com/",
-    "source": "https://www.flypgs.com/favicon.ico",
-    "retrieved": "2026-09-08"
+    "source": "https://cdnp.flypgs.com/files/GorselArsiv/PGSlogo_i_ucaksiz.jpg",
+    "retrieved": "2026-09-15"
   },
   "regiojet": {
     "path": "images/companies/regiojet.ico",
@@ -88,5 +89,11 @@
     "website": "https://www.vueling.com/",
     "source": "https://static.vueling.com/corporativeCMS/media/images/vueling.ico",
     "retrieved": "2026-09-08"
+  },
+  "wizz air": {
+    "path": "images/companies/wizz-air.ico",
+    "website": "https://www.wizzair.com/",
+    "source": "https://www.wizzair.com/favicon.ico",
+    "retrieved": "2026-09-15"
   }
 }

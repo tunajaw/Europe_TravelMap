@@ -257,6 +257,7 @@ describe('Expense explorer (FR-EXP-01 through FR-EXP-15)', () => {
     await user.hover(row);
 
     const details = screen.getByRole('region', { name: 'Alpha to Beta details' });
+    expect(details.compareDocumentPosition(screen.getByRole('list', { name: 'Transportation barplot' })) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(details).toHaveTextContent('Base Segment');
     expect(details).toHaveTextContent('Ryanair');
     expect(within(details).getByRole('img', { name: 'Ryanair icon' })).toHaveAttribute(

@@ -84,6 +84,7 @@
 .marker--route-emphasis text { font-weight: 800; fill: #111827; }
 .segment-company { display: flex; align-items: center; gap: 8px; }
 .company-icon { object-fit: contain; flex-shrink: 0; }
+.segment-company .company-icon--wordmark { width: 52px; }
 .segment-details, .city-selection { margin: 12px 20px; padding: 16px; background: var(--paper, #f8faff); border: 1px solid var(--line, #d9e3f0); border-radius: 12px; color: var(--ink, #182537); }
 .segment-details header, .city-selection { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 .segment-details h3 { margin: 0; font-size: 18px; }

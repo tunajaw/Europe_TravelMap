@@ -11,13 +11,16 @@ const companies = {
   costa: 'https://www.costacruises.com/', ns: 'https://www.ns.nl/',
   regiojet: 'https://regiojet.com/', ret: 'https://www.ret.nl/', sncb: 'https://www.belgiantrain.be/',
 };
+const preferredIcons = {
+  pegasus: 'https://cdnp.flypgs.com/files/GorselArsiv/PGSlogo_i_ucaksiz.jpg',
+};
 const output = new URL('../public/images/companies/', import.meta.url);
 await mkdir(output, { recursive: true });
 const results = {};
 const request = (url) => fetch(url, { signal: AbortSignal.timeout(12000) });
 for (const batch of [Object.entries(companies).slice(0, 6), Object.entries(companies).slice(6, 12), Object.entries(companies).slice(12)]) {
   await Promise.all(batch.map(async ([company, website]) => {
-    const candidates = [];
+    const candidates = preferredIcons[company] ? [preferredIcons[company]] : [];
     try {
       const response = await request(website);
       if (response.ok) {
@@ -37,15 +40,17 @@ for (const batch of [Object.entries(companies).slice(0, 6), Object.entries(compa
         const bytes = Buffer.from(await response.arrayBuffer());
         const png = bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
         const ico = bytes.subarray(0, 4).equals(Buffer.from([0, 0, 1, 0]));
-        if ((!png && !ico) || bytes.length > 500000) continue;
-        const file = `${company.replace(/[^a-z0-9]+/g, '-')}.${png ? 'png' : 'ico'}`;
+        const jpeg = bytes.subarray(0, 3).equals(Buffer.from([255, 216, 255]));
+        if ((!png && !ico && !jpeg) || bytes.length > 500000) continue;
+        const extension = png ? 'png' : jpeg ? 'jpg' : 'ico';
+        const file = `${company.replace(/[^a-z0-9]+/g, '-')}.${extension}`;
         await writeFile(new URL(file, output), bytes);
         results[company] = { path: `images/companies/${file}`, website, source: response.url, retrieved: new Date().toISOString().slice(0, 10) };
         console.log(`${company}: ${file}`);
         return;
       } catch { /* A missing icon must not prevent other companies working. */ }
     }
-    console.log(`${company}: no verified PNG/ICO; text only`);
+    console.log(`${company}: no verified image; text only`);
   }));
 }
 await writeFile(new URL('sources.json', output), JSON.stringify(Object.fromEntries(Object.entries(results).sort()), null, 2) + '\n');

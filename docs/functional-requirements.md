@@ -2,7 +2,7 @@ FR-NAV-01 (Primary Subpage Navigation)：Travel Map 與 Expense subpage 上方�
 
 FR-MAP-01(Europe map)：進入 Travel Map 時顯示 Europe map，我去過的國家的首都地理位置都有一個灰點代標該國家，該國家的國界線變粗，點上方以深灰色標示該國家名稱。Italy 為避免與 Vatican City 重疊，顯示點使用 Milano Centrale 的已審核座標，但 Rome 仍為 Italy 的首都。
 
-FR-MAP-02 (Country selection): 當我的滑鼠移到點附近時，該國家的所有國界線（包含與其他國家重疊的邊界）變粗加黑，文字變黑色，點稍微放大一點點且變黑以顯示不同之處。靠近點時應容易觸發，移開後不應容易閃爍；移開則恢復原狀。滑鼠操作不顯示點周圍的加粗方框，但鍵盤 focus indicator 必須保留。左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、依時間排序的三張國家旅遊圖片集錦與"Enter"。按下 "Enter" 或連點兩下該國家 marker，則 zoom-in 該國家地圖，開啟 Country Map。按到小 box 以外的地方則回到 Europe Map，縮回小 box，取消國家"鎖定"狀態；marker、Segment、metadata card 與地圖控制項不視為 box 外部。如果點擊 marker (即使不是現在的鎖定國家)本身，切換到該 marker 代表國家的鎖定狀態及圖片。圖片左右兩側提供上一張／下一張按鈕，第一張只顯示下一張，最後一張只顯示上一張；圖片切換使用滑動效果，按鈕為較小的半透明正方形且文字置中。切換國家時，右側 bar 使用滑動填滿效果。動畫需遵守 reduced-motion 設定。Europe Map、國家預覽與 Country Map 狀態需由 URL hash 支援直接開啟及瀏覽器上一頁／下一頁。
+FR-MAP-02 (Country selection): Europe Map 中滑鼠移到已造訪國家的任意國土區域或 marker 時，該國家的所有國界線（包含與其他國家重疊的邊界）變粗加黑，文字變黑色，點稍微放大一點點且變黑以顯示不同之處。不需要靠近中心點；Segment 的命中區域優先觸發路線互動。袖珍國家仍可透過 marker 觸發。移開國家區域與 marker 後恢復原狀。滑鼠操作不顯示點周圍的加粗方框，但鍵盤 focus indicator 必須保留。左鍵滑鼠點下該點開啟該點的浮動小 box (位置盡量在 Segment 重疊最少的地方)，顯示國家名稱、依時間排序的三張國家旅遊圖片集錦與"Enter"。按下 "Enter" 或連點兩下該國家 marker，則 zoom-in 該國家地圖，開啟 Country Map。按到小 box 以外的地方則回到 Europe Map，縮回小 box，取消國家"鎖定"狀態；marker、Segment、metadata card 與地圖控制項不視為 box 外部。如果點擊 marker (即使不是現在的鎖定國家)本身，切換到該 marker 代表國家的鎖定狀態及圖片。圖片左右兩側提供上一張／下一張按鈕，第一張只顯示下一張，最後一張只顯示上一張；圖片切換使用滑動效果，按鈕為較小的半透明正方形且文字置中。切換國家時，右側 bar 使用滑動填滿效果。動畫需遵守 reduced-motion 設定。Europe Map、國家預覽與 Country Map 狀態需由 URL hash 支援直接開啟及瀏覽器上一頁／下一頁。
 
 造訪國家不必具有 Segment。Vatican City 在 MVP 顯示為袖珍國家 marker，浮動 box 可顯示國家名稱及圖片；因為沒有 Segment，marker interaction 不 highlight 路線，Transportation 統計顯示無資料而不是 0。
 
@@ -17,7 +17,7 @@ FR-MAP-05 (Toggle segment visibility): 地圖的左上角有一個 [Checkbox] "S
 FR-MAP-06 (Segment rendering): 如果是打開軌跡的狀態，顯示旅行軌跡，用很淡偏細的半透明拋物線繪製。Europe Map 永久隱藏起點與終點為同一 Country 的 Segment；Country Map 與統計仍保留這些 Segment。Country Map 顯示其 path 中任何 City（包含 Transit Point）屬於目前國家的 Segment，並套用 FR-MAP-05 的篩選。Endpoint Transfer 不繪製為獨立 Segment。兩段 Segment 即使起/終點相同也不要重疊，在 hover/click 之前雖然會畫多條但不展開，以很小的曲度差異疊加 (視覺上加粗)，但 hover / click 後展開呈明顯多條的 Segment。
 。無論真實出發的城市為何，在 Europe Map 中一律以地圖上的 Country 顯示點為端點；在 Country Map 中以 City 顯示點依 origin、Transit Point、destination 順序繪製；在 City Map 中不顯示 Segment。一般線寬為 1.6px，展開時為 2.5px，且不隨 zoom 改變。地圖與 dashboard 使用相同六類：High-speed Rail（深紅色 #780d25）、Train（深粉紅色 #c65c82）、City Bus（淺綠色 #a2d9b0）、InterCity Bus（綠色 #34855b）、Plane（深藍色 #254e85）、Ferry / Cruise（淺藍色 #8bc8e5）。確切 raw subtype 仍保留於 metadata。
 
-FR-MAP-07 (Marker Interaction): 當在 Europe Map 時，當我的滑鼠 hover/focus 或鎖定某一 Country marker，所有可見 Segment path 中包含該 Country 的 Segment 維持 highlight，path 中其他 Country 的文字與點變深；移開時取消暫時狀態，但保留已鎖定 marker 的狀態。當在 Country Map 時，當我的滑鼠 hover/focus 或鎖定某一 City marker，所有可見 Segment path 中包含該 City 的 Segment 維持 highlight，path 中其他 City 的文字與點變深。origin、destination 與 Transit Point 都參與互動；Europe Map 將 City 對應為 Country。隱藏的 Segment 與沒有相關 Segment 的 Country 不產生 highlight。
+FR-MAP-07 (Marker Interaction): 當在 Europe Map 時，當我的滑鼠 hover 某一 Country 區域，或 hover/focus／鎖定某一 Country marker，所有可見 Segment path 中包含該 Country 的 Segment 維持 highlight，path 中其他 Country 的文字與點變深；移開時取消暫時狀態，但保留已鎖定 marker 的狀態。當在 Country Map 時，當我的滑鼠 hover/focus 或鎖定某一 City marker，所有可見 Segment path 中包含該 City 的 Segment 維持 highlight，path 中其他 City 的文字與點變深。origin、destination 與 Transit Point 都參與互動；Europe Map 將 City 對應為 Country。隱藏的 Segment 與沒有相關 Segment 的 Country 不產生 highlight。
 
 FR-MAP-08 (Segment Interaction): 
 * Europe Map：
@@ -39,7 +39,7 @@ FR-EXP-01 (Expense Page Selection): Expense 畫面最左上方兩個互斥按鍵
 
 FR-EXP-02 (Transportation Element Component): 
 Transportation :
-畫面左上方有六種交通類別的按鈕(類別 div 本體是按鈕):
+畫面上方有六種交通類別的緊湊按鈕(類別 div 本體是按鈕)，單列排列；窄螢幕可橫向捲動，不分為多行。按鈕使用明確邊框、hover／按壓回饋及勾選狀態，未選取不代表停用：
 High-speed Rail: ...
 Train: ...
 City Bus: ...
@@ -86,7 +86,7 @@ FR-EXP-05 (Transportation Barplot Render):
 
 FR-EXP-06 (Transportation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
-滑鼠移到 bar 上時暫時列出該 Segment 的 metadata；滑鼠離開 barplot 後，metadata 回復為目前鎖定的 Segment。點擊 bar 可鎖定該 Segment，其 bar 持續顯示較深底色；點擊其他 bar 會改鎖定該 Segment，再次點擊已鎖定的 bar 可解除鎖定。Hover 或鎖定顯示的 metadata 可以拆出 Base Segment / Departure Transfer / Arrival Transfer，包含以下架構:
+metadata 位於 barplot 上方的固定高度區域，內容過長時可在區域內捲動，不改變 barplot 位置。滑鼠移到 bar 上時暫時列出該 Segment 的 metadata；滑鼠離開 barplot 後，metadata 回復為目前鎖定的 Segment。點擊 bar 可鎖定該 Segment，其 bar 持續顯示較深底色；點擊其他 bar 會改鎖定該 Segment，再次點擊已鎖定的 bar 可解除鎖定。Hover 或鎖定顯示的 metadata 可以拆出 Base Segment / Departure Transfer / Arrival Transfer，包含以下架構:
 * Segment 
 	* 交通公司
 	* 備註 (如有)
@@ -105,12 +105,12 @@ Base Segment、Departure Transfer 與 Arrival Transfer 的 Notes 使用相同顯
 Base Segment 的公司名稱沿用 FR-MAP-09 的本機 company icon 規則；City Bus 不顯示 icon，找不到或載入失敗時保留公司文字。
 
 FR-EXP-07 (Transportation Heatmap Render):
-Heatmap 畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。No data 使用中性灰色，與有資料但 metric 為 0 的淺藍色明確區隔。費用色階使用低值淺藍、中值藍、高值深海軍藍的三段式 sequential scale。所有 Country boundary 使用一致的較粗線寬；hover、focus 或選取 Country 時不可顯示矩形 outline。
+此處 Heatmap 指依國家區域填色的 choropleth（分級設色地圖），而非點密度圖。畫出歐洲地圖，以篩選後的 Segment 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上上設一個點代表該國。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。No data 使用中性灰色，與有資料但 metric 為 0 的淺藍色明確區隔。費用色階使用低值淺藍、中值藍、高值深海軍藍的三段式 sequential scale。所有 Country boundary 使用一致的較粗線寬；hover、focus 或選取 Country 時不可顯示矩形 outline。
 
 跨國 Segment 一律歸屬至出發地 Country，不重複計入目的地 Country。
 
 FR-EXP-08 (Transportation Heatmap Interaction):
-地圖可以用滾輪縮放。
+地圖維持固定視野，不提供縮放或 Reset zoom；滾輪保留頁面捲動。metadata 位於地圖上方的固定高度區域，內容過長時可在區域內捲動，不推動地圖。
 滑鼠移到 heatmap 上暫時列出該國家的 metadata；點擊 Country 可鎖定該國家與 metadata，並在最上層加粗顯示該國完整 boundary。Hover 其他 Country 時暫時切換 metadata，滑鼠離開後恢復鎖定的 Country；再次點擊已鎖定的 Country 可解除鎖定。metadata 包含以下架構:
 * 國家名稱
 * 幾段 Segment
@@ -145,7 +145,7 @@ FR-EXP-10 (Accommodation Data Calculation):
 
 
 FR-EXP-11 (Accommodation Filter)
-住宿類別按鈕如果按下，代表納入分析，呈現在下方的視覺圖中。沒按下則不納入分析。
+住宿類別按鈕沿用交通按鈕的邊框、hover／按壓回饋及勾選狀態。如果按下，代表納入分析，呈現在下方的視覺圖中。沒按下則不納入分析。
 barplot 與 heatmap 的視覺化資料由住宿類別按鈕的篩選資料與選單決定的類別呈現。選單 "顯示" 會影響 barplot/heatmap，選單"排列" 會影響 barplot。
 
 FR-EXP-12 (Accommodation Barplot Render):
@@ -153,7 +153,7 @@ FR-EXP-12 (Accommodation Barplot Render):
 
 FR-EXP-13 (Accommodation Barplot Interaction):
 滑鼠滾輪可以檢視上/下被摺疊的 bar。
-滑鼠移到 bar 上列出該 Accommodation 的 metadata，包含以下架構:
+metadata 位於 barplot 上方的固定高度區域，內容過長時可在區域內捲動，不改變 barplot 位置。滑鼠移到 bar 上暫時顯示該 Accommodation 的 metadata；點擊可鎖定，再次點擊可解鎖。滑鼠離開其他 bar 後恢復鎖定項目，包含以下架構:
 * 另一項資訊 (如現在顯示價錢的話 metadata 就顯示通勤時間)
 * 最近的大眾運輸站名；Airport 過夜顯示 `-`
 * 個人評價：總分以五星制顯示；個別評分須顯示 rubric 項目名稱，並依該項目的 scale 畫出離散長方形格。例如價錢的 0.0～1.0 scale 以四格呈現，0.75 填滿三格。含負值的「其他加分」以零為中心，負分與正分使用不同方向及顏色呈現。
@@ -165,7 +165,7 @@ FR-EXP-14 (Accommodation Heatmap Render):
 Heatmap 畫出歐洲地圖，以篩選後的 Accommodation 為 aggregation unit，Country heatmap 顯示該國的平均 metric。迷你袖珍小國(會在資料中定義) 額外在歐洲地圖該國的位置上設一個點代表該國；點的底色必須使用該國實際平均 metric 對應的 heatmap 顏色。同一種 metric 在不同 sort/filter 狀態下保持相同 scale；不同 metric 各自有自己的 scale。費用屬於由低至高的單向數值，使用低值淺藍、中值藍、高值深海軍藍的三段式 sequential scale，不使用暗示中性分界的雙色 diverging scale。
 
 FR-EXP-15 (Accommodation Heatmap Interaction):
-地圖可以用滾輪縮放。
+地圖維持固定視野，不提供縮放或 Reset zoom；滾輪保留頁面捲動。metadata 位於地圖上方的固定高度區域，內容過長時可在區域內捲動，不推動地圖。
 滑鼠移到或鎖定迷你袖珍小國的點時，只放大點並加粗邊界，不得覆蓋代表 expense 的底色。
 滑鼠移到 heatmap 上的國家區域時，列出該國家的 metadata，包含以下架構:
 * 國家名稱

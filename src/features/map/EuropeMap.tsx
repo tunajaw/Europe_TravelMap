@@ -112,6 +112,8 @@ export function EuropeMap({ countries, cities = [], segments = [], showRoutes = 
               className={`country-boundary${country ? ' country-boundary--visited' : ''}${country && (country.id === hoveredId || country.id === selectedId) ? ' country-boundary--active' : ''}`}
               d={path(boundary) ?? undefined}
               data-boundary-country={country?.id}
+              onMouseEnter={() => { if (!focused && country) onHover?.(country.id); }}
+              onMouseLeave={() => { if (!focused && country) onHover?.(null); }}
               key={boundary.id ?? boundary.properties.name}
             />
           );

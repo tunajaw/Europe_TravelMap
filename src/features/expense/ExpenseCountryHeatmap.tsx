@@ -1,12 +1,11 @@
 import { geoPath } from 'd3-geo';
 import { scaleLinear } from 'd3-scale';
-import { useState, type KeyboardEvent, type WheelEvent } from 'react';
+import { useState, type KeyboardEvent } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { MAP_HEIGHT, MAP_WIDTH, europeProjection } from '../map/country-label-layout.ts';
 import { worldCountries } from '../map/world-geography.ts';
 
 const path = geoPath(europeProjection);
-type ViewBox = [number, number, number, number];
 
 export interface ExpenseHeatmapDatum {
   countryId: string; count: number; average: number; standardDeviation: number; rank: number;
@@ -18,7 +17,6 @@ export function ExpenseCountryHeatmap({ ariaLabel, countLabel, countries, data, 
 }) {
   const [hoveredCountryId, setHoveredCountryId] = useState<string | null>(null);
   const [lockedCountryId, setLockedCountryId] = useState<string | null>(null);
-  const [viewBox, setViewBox] = useState<ViewBox>([0, 0, MAP_WIDTH, MAP_HEIGHT]);
   const activeCountryId = hoveredCountryId ?? lockedCountryId;
   const activeCountry = countries.find(({ id }) => id === activeCountryId);
   const datumByCountry = new Map(data.map((datum) => [datum.countryId, datum]));
@@ -31,31 +29,21 @@ export function ExpenseCountryHeatmap({ ariaLabel, countLabel, countries, data, 
     .clamp(true);
   const toggleCountry = (countryId: string) => setLockedCountryId((current) => current === countryId ? null : countryId);
 
-  function handleWheel(event: WheelEvent<SVGSVGElement>) {
-    if (event.deltaY === 0) return;
-    const [x, y, width, height] = viewBox;
-    const nextWidth = Math.min(MAP_WIDTH, Math.max(MAP_WIDTH / 4, width * (event.deltaY < 0 ? 0.82 : 1.22)));
-    if (nextWidth === width) return;
-    event.preventDefault();
-    const nextHeight = nextWidth * MAP_HEIGHT / MAP_WIDTH;
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const ratioX = bounds.width > 0 ? clamp((event.clientX - bounds.left) / bounds.width, 0, 1) : 0.5;
-    const ratioY = bounds.height > 0 ? clamp((event.clientY - bounds.top) / bounds.height, 0, 1) : 0.5;
-    setViewBox([
-      clamp(x + ratioX * (width - nextWidth), 0, MAP_WIDTH - nextWidth),
-      clamp(y + ratioY * (height - nextHeight), 0, MAP_HEIGHT - nextHeight), nextWidth, nextHeight,
-    ]);
-  }
-
   const keyboardToggle = (event: KeyboardEvent, countryId: string) => {
     if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleCountry(countryId); }
   };
 
   return <section className="transportation-heatmap" aria-label={heading}>
-    <div className="transportation-heatmap-heading"><div><p className="eyebrow">{eyebrow}</p><h3>{heading}</h3></div>
-      <button disabled={viewBox[2] === MAP_WIDTH} onClick={() => setViewBox([0, 0, MAP_WIDTH, MAP_HEIGHT])} type="button">Reset zoom</button></div>
+    <div className="transportation-heatmap-heading">
+      <div><p className="eyebrow">{eyebrow}</p><h3>{heading}</h3></div>
+    </div>
+    <div className="transportation-heatmap-details-slot">{activeCountry ?
+      <section aria-label={`${activeCountry.name} heatmap details`} className="transportation-heatmap-details" key={activeCountry.id} role="region">
+        <h4>{activeCountry.name}</h4><dl><div><dt>{countLabel}</dt><dd>{activeDatum?.count ?? 0}</dd></div>
+          <div><dt>Average ± standard deviation</dt><dd>{activeDatum ? `${formatMetric(activeDatum.average)} ± ${formatMetric(activeDatum.standardDeviation)}` : 'No data'}</dd></div>
+          <div><dt>Rank</dt><dd>{activeDatum ? `#${activeDatum.rank}` : 'Not ranked'}</dd></div></dl></section> : <p>{prompt}</p>}</div>
     <svg aria-label={ariaLabel} className="transportation-heatmap-map" onMouseLeave={() => setHoveredCountryId(null)}
-      onWheel={handleWheel} role="group" viewBox={viewBox.join(' ')}>
+      role="group" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}>
       <rect className="transportation-heatmap-sea" height={MAP_HEIGHT} width={MAP_WIDTH} />
       <g aria-label="Country heatmap values">{worldCountries.features.map((boundary) => {
         const country = countryByBoundary.get(String(boundary.id).padStart(3, '0'));
@@ -88,14 +76,6 @@ export function ExpenseCountryHeatmap({ ariaLabel, countLabel, countries, data, 
       })}</g>
     </svg>
     <div className="transportation-heatmap-legend" aria-label="Heatmap scale"><span>{formatMetric(0)}</span><span aria-hidden="true" /><span>{formatMetric(scaleMaximum)}</span></div>
-    <div className="transportation-heatmap-details-slot">{activeCountry ?
-      <section aria-label={`${activeCountry.name} heatmap details`} className="transportation-heatmap-details" key={activeCountry.id} role="region">
-        <h4>{activeCountry.name}</h4><dl><div><dt>{countLabel}</dt><dd>{activeDatum?.count ?? 0}</dd></div>
-          <div><dt>Average ± standard deviation</dt><dd>{activeDatum ? `${formatMetric(activeDatum.average)} ± ${formatMetric(activeDatum.standardDeviation)}` : 'No data'}</dd></div>
-          <div><dt>Rank</dt><dd>{activeDatum ? `#${activeDatum.rank}` : 'Not ranked'}</dd></div></dl></section> : <p>{prompt}</p>}</div>
-  </section>;
-}
 
-function clamp(value: number, minimum: number, maximum: number): number {
-  return Math.min(maximum, Math.max(minimum, value));
+  </section>;
 }

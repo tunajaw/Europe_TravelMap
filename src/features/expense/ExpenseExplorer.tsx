@@ -167,7 +167,7 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 style={{ '--category-color': color } as CSSProperties}
                 type="button"
               >
-                <span className="transportation-category-name">{category}</span>
+                <span className="transportation-category-name">{category}<span aria-hidden="true" className="category-check">{selectedCategories.includes(category) ? '✓' : ''}</span></span>
                 <span>Total € {totalCostEur.toFixed(2)}</span>
                 <span>Avg. € {averageCostEur.toFixed(2)}</span>
               </button>
@@ -185,7 +185,7 @@ export function ExpenseExplorer({ data }: { data: ExpenseData }) {
                 style={{ '--category-color': ACCOMMODATION_COLORS[summary.category] } as CSSProperties}
                 type="button"
               >
-                <span className="transportation-category-name">{summary.category}</span>
+                <span className="transportation-category-name">{summary.category}<span aria-hidden="true" className="category-check">{selectedAccommodationCategories.includes(summary.category) ? '✓' : ''}</span></span>
                 <span>Total € {summary.totalCostEur.toFixed(2)}</span>
                 <span>Avg. € {summary.averageNightlyCostEur.toFixed(2)} / night</span>
                 <span>Avg. commute {summary.averageCommuteMinutes === null

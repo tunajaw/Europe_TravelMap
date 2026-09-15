@@ -27,3 +27,16 @@ it('ships all referenced company icons locally with source attribution', () => {
     expect(source.source).toMatch(/^https:\/\//);
   }
 });
+
+it('uses the reviewed official Pegasus wordmark instead of its generic favicon', () => {
+  render(<CompanyIcon company="Pegasus" category="Plane" />);
+  expect(screen.getByRole('img', { name: 'Pegasus icon' }))
+    .toHaveAttribute('src', `${import.meta.env.BASE_URL}images/companies/pegasus.jpg`);
+  expect(screen.getByRole('img', { name: 'Pegasus icon' })).toHaveClass('company-icon--wordmark');
+});
+
+it('uses the official Wizz Air icon', () => {
+  render(<CompanyIcon company="Wizz Air" category="Plane" />);
+  expect(screen.getByRole('img', { name: 'Wizz Air icon' }))
+    .toHaveAttribute('src', `${import.meta.env.BASE_URL}images/companies/wizz-air.ico`);
+});

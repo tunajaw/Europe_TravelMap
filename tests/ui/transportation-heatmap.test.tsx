@@ -43,6 +43,7 @@ describe('Transportation heatmap (FR-EXP-07 and FR-EXP-08)', () => {
     expect(details).toHaveTextContent('Segments2');
     expect(details).toHaveTextContent('€ 20.00 ± € 10.00');
     expect(details).toHaveTextContent('#1');
+    expect(details.compareDocumentPosition(screen.getByRole('group', { name: 'Transportation expense heatmap' })) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   });
 
   it('locks a Country on click and restores it after a temporary hover preview', async () => {
@@ -67,16 +68,14 @@ describe('Transportation heatmap (FR-EXP-07 and FR-EXP-08)', () => {
     expect(screen.getByRole('region', { name: 'France heatmap details' })).toBeVisible();
   });
 
-  it('zooms with the mouse wheel and can reset the viewport', async () => {
-    const user = userEvent.setup();
+  it('keeps a fixed viewport and leaves the wheel available for page scrolling', () => {
     render(<TransportationHeatmap countries={countries} metric="total-cost" scaleMaximum={20} segmentRows={segmentRows} />);
     const map = screen.getByRole('group', { name: 'Transportation expense heatmap' });
 
     expect(map).toHaveAttribute('viewBox', '0 0 1200 700');
-    fireEvent.wheel(map, { deltaY: -100, clientX: 600, clientY: 350 });
-    expect(map).not.toHaveAttribute('viewBox', '0 0 1200 700');
-
-    await user.click(screen.getByRole('button', { name: 'Reset zoom' }));
+    expect(fireEvent.wheel(map, { deltaY: -100, cancelable: true })).toBe(true);
+    expect(fireEvent.wheel(map, { deltaY: 100, cancelable: true })).toBe(true);
+    expect(screen.queryByRole('button', { name: 'Reset zoom' })).not.toBeInTheDocument();
     expect(map).toHaveAttribute('viewBox', '0 0 1200 700');
   });
 });

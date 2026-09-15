@@ -38,6 +38,30 @@ export function AccommodationBarplot({
         <p>{rows.length} Accommodations</p>
       </div>
 
+      <div className="accommodation-details-slot">
+        {active ? (
+          <section
+            aria-label={`${cityNames.get(active.cityId) ?? active.cityId} ${active.type} details`}
+            className="accommodation-details"
+            key={active.accommodationId}
+            role="region"
+          >
+            <div><p className="eyebrow">Selected Accommodation</p><h3>{active.label}</h3></div>
+            <dl>
+              <div>
+                <dt>{metric === 'nightly-price' ? 'Commute' : 'Nightly price'}</dt>
+                <dd>{metric === 'nightly-price'
+                  ? active.commuteMinutes === null ? 'Not applicable' : `${active.commuteMinutes} min`
+                  : `€ ${active.pricePerNightEur.toFixed(2)} / night`}</dd>
+              </div>
+              <div><dt>Nearest station</dt><dd>{active.nearestStationName ?? '-'}</dd></div>
+              <div className="accommodation-rating-detail"><dt>Personal rating</dt><dd><AccommodationRating rating={active.rating} type={active.type} /></dd></div>
+              <div><dt>Notes</dt><dd><MetadataNotes notes={active.notes} /></dd></div>
+            </dl>
+          </section>
+        ) : <p>Hover over or focus an Accommodation bar to inspect its details. Click to lock it.</p>}
+      </div>
+
       {rows.length ? (
         <ol className="accommodation-bars-list" aria-label="Accommodation barplot">
           {rows.map((row, index) => {
@@ -78,30 +102,6 @@ export function AccommodationBarplot({
           })}
         </ol>
       ) : <p className="accommodation-chart-empty">No Accommodations match the current filters.</p>}
-
-      <div className="accommodation-details-slot">
-        {active ? (
-          <section
-            aria-label={`${cityNames.get(active.cityId) ?? active.cityId} ${active.type} details`}
-            className="accommodation-details"
-            key={active.accommodationId}
-            role="region"
-          >
-            <div><p className="eyebrow">Selected Accommodation</p><h3>{active.label}</h3></div>
-            <dl>
-              <div>
-                <dt>{metric === 'nightly-price' ? 'Commute' : 'Nightly price'}</dt>
-                <dd>{metric === 'nightly-price'
-                  ? active.commuteMinutes === null ? 'Not applicable' : `${active.commuteMinutes} min`
-                  : `€ ${active.pricePerNightEur.toFixed(2)} / night`}</dd>
-              </div>
-              <div><dt>Nearest station</dt><dd>{active.nearestStationName ?? '-'}</dd></div>
-              <div className="accommodation-rating-detail"><dt>Personal rating</dt><dd><AccommodationRating rating={active.rating} type={active.type} /></dd></div>
-              <div><dt>Notes</dt><dd><MetadataNotes notes={active.notes} /></dd></div>
-            </dl>
-          </section>
-        ) : <p>Hover over or focus an Accommodation bar to inspect its details. Click to lock it.</p>}
-      </div>
     </section>
   );
 }
