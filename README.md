@@ -12,6 +12,8 @@ Use Node.js 24 LTS, then install and verify the project:
 ```sh
 npm ci
 npm run check
+npx playwright install chromium
+npm run test:e2e
 ```
 
 To rebuild the public application dataset, first provide the ignored private
@@ -48,14 +50,15 @@ MVP+). Hover or focus a route to inspect its metadata; click or press Enter/Spac
 to keep it open. Escape dismisses the route details before the City selection
 and Country navigation. Route filters do not change dashboard statistics.
 
-CI runs type checking, domain tests (`npm run test:domain`), preprocessing tests (`npm run test:preprocess`), UI/map
-tests (`npm run test:ui`), public-data validation, and a production build.
+CI runs type checking, domain tests (`npm run test:domain`), preprocessing tests
+(`npm run test:preprocess`), UI/map tests (`npm run test:ui`), public-data
+validation, a production build, and desktop/mobile Chromium MVP smoke tests.
 
 For the three visual design studies, open
 `http://127.0.0.1:4173/Europe_TravelMap/?view=mockups` after starting the preview.
 The comparison supports individual enlarged views and synchronized Italy photo
-selection. Dashboard counts come from the public dataset; country navigation
-and expense interactions are visual placeholders pending design selection.
+selection. It remains a design reference; the main Travel Map and Expense
+interactions are implemented in the production application.
 
 Architecture, domain rules, and preprocessing decisions are documented under
 [`docs/`](docs/).

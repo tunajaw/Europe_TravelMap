@@ -74,7 +74,7 @@ export function App() {
       {requestedView !== 'expense' && <section className="hero">
         <div>
           <p className="eyebrow">Exchange travel journal</p>
-          <h1>Your places,<br />in perspective.</h1>
+          <h1>Travel Map</h1>
           <p className="intro">
             A visual record of the cities, crossings, and small discoveries that shaped one European exchange.
           </p>

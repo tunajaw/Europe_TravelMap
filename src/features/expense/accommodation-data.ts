@@ -12,6 +12,12 @@ export const ACCOMMODATION_COLORS: Record<Accommodation['type'], string> = {
   Hotel: '#6c9ed3',
   Airport: '#e4bf62',
 };
+const RATING_TYPE_ORDER: Record<AccommodationCategory, number> = {
+  Hotel: 0,
+  Airbnb: 1,
+  Hostel: 2,
+  Airport: 3,
+};
 
 export interface AccommodationOptions {
   categories: AccommodationCategory[];
@@ -97,7 +103,9 @@ export function buildAccommodationBarRows(
     .sort((left, right) => {
       if (options.sort === 'chronological') return left.sequence - right.sequence;
       if (options.sort === 'rating') {
-        return right.rating.total - left.rating.total || left.sequence - right.sequence;
+        return right.rating.total - left.rating.total
+          || RATING_TYPE_ORDER[left.type] - RATING_TYPE_ORDER[right.type]
+          || left.sequence - right.sequence;
       }
       const difference = left.value - right.value;
       if (difference === 0) return left.sequence - right.sequence;

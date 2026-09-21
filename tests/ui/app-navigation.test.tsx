@@ -20,6 +20,7 @@ describe('primary subpage navigation (FR-NAV-01)', () => {
     expect(screen.getByRole('link', { name: 'Travel Map' })).toHaveAttribute('aria-current', 'page');
     expect(screen.getByRole('link', { name: 'Expense' })).not.toHaveAttribute('aria-current');
     expect(navigation).toBeVisible();
+    expect(screen.getByRole('heading', { level: 1, name: 'Travel Map' })).toBeVisible();
   });
 
   it('switches subpages without reloading and writes the URL', async () => {

@@ -57,15 +57,36 @@ describe('Accommodation expense data', () => {
     expect(accommodationScaleMaximum(accommodations, 'commute')).toBe(40);
   });
 
-  it('sorts by total rating from highest to lowest and breaks ties chronologically', () => {
+  it('sorts by total rating from highest to lowest', () => {
     const rated = accommodations.map((row, index) => ({
       ...row,
-      rating: { ...row.rating, total: [3, 4, 4, 1][index]! },
+      rating: { ...row.rating, total: [3, 5, 4, 1][index]! },
     })) as TravelData['accommodations'];
     const rows = buildAccommodationBarRows(rated, {
       categories: ['Airbnb', 'Hotel'], metric: 'nightly-price', sort: 'rating',
     });
 
     expect(rows.map(({ accommodationId }) => accommodationId)).toEqual(['a-2', 'h-1', 'a-1']);
+  });
+
+  it('breaks rating ties by Hotel, Airbnb, Hostel, Airport, then chronology', () => {
+    const tied = [
+      ...accommodations.map((row) => ({ ...row, rating: { ...row.rating, total: 4 } })),
+      {
+        ...accommodations[0]!,
+        id: 'hostel',
+        sequence: 5,
+        type: 'Hostel',
+        rating: { ...rating, total: 4 },
+      },
+    ] as TravelData['accommodations'];
+    const rows = buildAccommodationBarRows(tied, {
+      categories: ['Airbnb', 'Hostel', 'Hotel', 'Airport'],
+      metric: 'nightly-price',
+      sort: 'rating',
+    });
+
+    expect(rows.map(({ accommodationId }) => accommodationId))
+      .toEqual(['h-1', 'a-1', 'a-2', 'hostel', 'airport']);
   });
 });

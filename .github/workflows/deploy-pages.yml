@@ -24,6 +24,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - name: Install browser for end-to-end tests
+        run: npx playwright install --with-deps chromium
+      - name: MVP end-to-end smoke tests
+        run: npm run test:e2e
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

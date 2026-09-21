@@ -14,5 +14,5 @@
     "skipLibCheck": true,
     "types": ["node", "vitest/globals", "vite/client"]
   },
-  "include": ["src", "scripts", "tests", "vite.config.ts"]
+  "include": ["src", "scripts", "tests", "vite.config.ts", "playwright.config.ts"]
 }

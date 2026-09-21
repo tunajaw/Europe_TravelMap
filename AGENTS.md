@@ -177,9 +177,12 @@ history.
 
 ## Current Development Phase
 
-The project is currently in incremental MVP implementation and validation.
-Data preprocessing and Travel Map requirements through FR-MAP-09 have been
-implemented; remaining requirements continue through TDD.
+The functional MVP is complete and the project is in MVP stabilization.
+Data preprocessing, FR-NAV-01, Travel Map requirements through FR-MAP-09, and
+Expense requirements through FR-EXP-15 are implemented. Stabilization should
+prioritize regression testing, browser-level smoke coverage, responsive and
+accessibility review, documentation accuracy, and release readiness. Do not add
+MVP+ features unless the project owner explicitly promotes them into scope.
 
 ---
 

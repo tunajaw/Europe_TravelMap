@@ -88,7 +88,6 @@ export function TransportationBarplot({
             role="region"
           >
             <div className="transportation-bar-details-heading">
-              <p className="eyebrow">Selected Segment</p>
               <h3>{activeRoute}</h3>
             </div>
             <div className="transportation-bar-detail-grid">

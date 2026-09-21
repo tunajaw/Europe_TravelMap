@@ -158,9 +158,11 @@ future image-export work must bake these corrections before removing the UI rule
 3. React Testing Library covers filters, selections, metadata, and navigation.
 4. Playwright covers only critical cross-view flows on the production build.
 
-Current automated coverage uses Vitest and React Testing Library; browser-level
-Playwright coverage is planned, not yet implemented. CI explicitly separates
-domain, preprocessing, and UI/map tests, then validates public data and builds the app.
+Current automated coverage uses Vitest and React Testing Library for domain,
+preprocessing, and UI/map behavior. Playwright exercises critical Travel Map,
+Segment metadata, and Expense flows against the production build in desktop and
+mobile Chromium. CI runs these layers separately, validates public data, and
+builds the app.
 FR-MAP-03 through FR-MAP-06 tests cover all 20 Country Maps, navigation, persistent
 route visibility, route endpoints and ordered Transit Points, stable overlapping
 geometry, and hover/click expansion. FR-MAP-07/08 tests cover endpoint and Transit Point

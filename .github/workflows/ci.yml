@@ -30,3 +30,14 @@ jobs:
         run: npm run data:validate
       - name: Production build
         run: npm run build
+      - name: Install browser for end-to-end tests
+        run: npx playwright install --with-deps chromium
+      - name: MVP end-to-end smoke tests
+        run: npm run test:e2e
+      - name: Upload end-to-end failure traces
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-test-results
+          path: test-results/
+          if-no-files-found: ignore
