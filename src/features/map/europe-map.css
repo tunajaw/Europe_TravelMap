@@ -96,6 +96,15 @@
 @media (max-width: 550px) { .segment-details dl { grid-template-columns: 1fr; } }
 
 .city-attraction-explorer { padding: 0 20px 20px; }
+.city-review-layout { display: grid; grid-template-columns: minmax(190px, 230px) minmax(0, 1fr); gap: 14px; }
+.city-review-main { min-width: 0; }
+.city-review-sidebar { min-width: 0; padding: 12px; border: 1px solid #cad6e3; border-radius: 10px; background: #f8faff; }
+.city-review-sidebar .poi-progress-heading p:last-child { margin: 6px 0 0; color: #526273; font-size: 11px; }
+.city-review-pending-list { display: grid; gap: 6px; max-height: 510px; overflow-y: auto; padding-right: 3px; }
+.city-review-pending-list button { width: 100%; padding: 8px 9px; overflow: hidden; border: 1px solid #c2cfdb; border-radius: 7px; background: #fff; color: #24364b; text-align: left; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; font: inherit; font-size: 11px; }
+.city-review-pending-list button:hover { border-color: #54708e; background: #edf3f8; }
+.city-review-pending-list button:focus-visible { outline: 2px solid #3569c8; outline-offset: 1px; }
+.poi-review-complete { margin: 8px 0; color: #39724c; font-size: 12px; }
 .city-map-controls { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; }
 .city-map-controls button { min-height: 32px; padding: 6px 11px; border: 1px solid #9ba9ba; border-radius: 7px; background: #f8faff; color: #182537; box-shadow: 0 1px 2px rgba(24, 37, 55, .12); cursor: pointer; font: inherit; font-size: 12px; }
 .city-map-controls button:hover:not(:disabled), .city-map-controls button[aria-pressed=true] { border-color: #315d91; background: #e1ecf7; }
@@ -127,11 +136,27 @@
 .attraction-marker--unclassified path { fill: #755c9d; stroke: #f8faff; stroke-width: 2.5; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: d 140ms ease, stroke-width 140ms ease; }
 .attraction-marker--unclassified.attraction-marker--active path { fill: #583d82; stroke: #fff; stroke-width: 4; }
 .attraction-marker:focus-visible .attraction-marker-hit { stroke: #111827; stroke-width: 2; }
+.attraction-marker .poi-review-marker-ring { fill: none; stroke: #2d7a48; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.attraction-marker--reviewed:not(.attraction-marker--active) { opacity: .78; }
 .poi-metadata { min-height: 92px; margin-top: 12px; padding: 16px 18px; border: 1px solid var(--line, #d9e3f0); border-radius: 12px; background: var(--paper, #f8faff); }
 .poi-metadata .eyebrow { margin: 0 0 5px; }
 .poi-metadata h3 { margin: 0; font-size: 20px; font-weight: 550; letter-spacing: -.02em; }
 .poi-metadata .poi-localized-name { margin: 3px 0 0; color: #526273; font-size: 12px; line-height: 1.35; }
 .poi-metadata p:last-child { margin: 7px 0 0; color: var(--muted, #475569); font-size: 12px; }
+.poi-review-panel { display: grid; grid-template-columns: minmax(180px, 1fr) auto auto; gap: 12px 18px; align-items: end; margin-top: 12px; padding: 16px 18px; border: 1px solid #b7c8d8; border-radius: 12px; background: #f8faff; }
+.poi-review-panel-heading { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.poi-review-panel-heading .eyebrow { margin: 0 0 4px; }
+.poi-review-panel-heading h3 { margin: 0; font-size: 18px; font-weight: 600; }
+.poi-review-status { padding: 4px 8px; border-radius: 999px; background: #dcefe2; color: #2d6840; font-size: 10px; font-weight: 700; }
+.poi-review-name { display: grid; gap: 5px; color: #526273; font-size: 11px; }
+.poi-review-name input { min-height: 35px; padding: 7px 9px; border: 1px solid #9eafbf; border-radius: 7px; background: #fff; color: #182537; font: inherit; }
+.poi-review-decisions, .poi-review-categories { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; border: 0; }
+.poi-review-decisions legend, .poi-review-categories legend { margin-bottom: 5px; color: #526273; font-size: 11px; }
+.poi-review-decisions label, .poi-review-categories label { display: inline-flex; align-items: center; gap: 3px; color: #24364b; font-size: 11px; white-space: nowrap; }
+.poi-review-panel input { accent-color: #315d91; }
+.poi-review-panel input:focus-visible { outline: 2px solid #3569c8; outline-offset: 2px; }
+.poi-review-panel .primary-button { min-height: 35px; cursor: pointer; }
 .city-map-empty { min-height: 360px; margin: 0 20px 20px; display: grid; place-content: center; text-align: center; border: 1px solid var(--line, #d9e3f0); border-radius: 12px; background: #edf5fa; }
 @media (prefers-reduced-motion: reduce) { .attraction-marker circle:last-child, .attraction-marker--unclassified path { transition: none; } }
 @media (max-width: 650px) { .city-map-controls { flex-wrap: wrap; } .city-map-controls > span { flex-basis: 100%; } .city-poi-filters { margin-left: 0; } }
+@media (max-width: 760px) { .city-review-layout { grid-template-columns: 1fr; } .city-review-pending-list { max-height: 220px; } .poi-review-panel { grid-template-columns: 1fr; align-items: stretch; } }

@@ -122,6 +122,21 @@ export function zoomViewportAtPoint(
   };
 }
 
+export function focusViewportOnLocation(
+  initialViewport: CityGeoViewport,
+  location: { latitude: number; longitude: number },
+  scale = 0.28,
+): CityGeoViewport {
+  const longitudeSpan = (initialViewport.east - initialViewport.west) * scale;
+  const latitudeSpan = (initialViewport.north - initialViewport.south) * scale;
+  return {
+    west: location.longitude - longitudeSpan / 2,
+    east: location.longitude + longitudeSpan / 2,
+    south: location.latitude - latitudeSpan / 2,
+    north: location.latitude + latitudeSpan / 2,
+  };
+}
+
 export function interpolateViewport(
   start: CityGeoViewport,
   end: CityGeoViewport,

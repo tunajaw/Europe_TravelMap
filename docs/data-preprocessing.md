@@ -209,6 +209,16 @@ POI images are optional; their
 folder, naming, conversion, and relationship workflow remain deferred until POI
 review is complete.
 
+The temporary in-map POI review tool stores a separate, versioned review result
+in browser localStorage and supports JSON export and import. POI ID is the
+upsert key. Each record contains the edited display name, Keep or Discard
+decision, selected public categories, review status, and update timestamp. The
+browser must never rewrite `poi_reference.json`, the review workbook, Timeline,
+Maps activity, or any other raw/private input. After owner review, preprocessing
+will validate and merge `Raw POI + Review Result` into cleaned application-ready
+POI data. The temporary UI may then be removed while its exported review result
+remains an auditable transformation input.
+
 `npm run data:city-context` sends only the public City name and Country name for
 every Travel Map City to Nominatim. It caches the response locally and writes
 the selected, simplified OSM Polygon or MultiPolygon to

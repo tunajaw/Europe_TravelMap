@@ -1,5 +1,23 @@
 .travel-workspace { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: start; }
 .map-canvas { width: 100%; }
+.poi-review-map-layout { display: grid; grid-template-columns: minmax(190px, 230px) minmax(0, 1fr); gap: 14px; padding: 0 20px; }
+.poi-review-map-layout--city { display: block; padding: 0; }
+.poi-progress-sidebar { min-width: 0; padding: 12px; border: 1px solid #cad6e3; border-radius: 10px; background: #f8faff; }
+.poi-progress-heading { margin-bottom: 10px; }
+.poi-progress-heading .eyebrow { margin: 0 0 4px; }
+.poi-progress-heading h3 { margin: 0; font-size: 17px; font-weight: 620; }
+.poi-progress-list { display: grid; gap: 7px; max-height: 440px; overflow-y: auto; padding-right: 3px; }
+.poi-progress-item { display: grid; gap: 3px; width: 100%; padding: 9px 10px; border: 1px solid #bcc9d7; border-radius: 8px; background: #fff; color: #24364b; text-align: left; cursor: pointer; box-shadow: 0 1px 2px rgb(24 37 55 / 8%); }
+.poi-progress-item:hover { border-color: #54708e; background: #edf3f8; }
+.poi-progress-item:focus-visible { outline: 2px solid #3569c8; outline-offset: 2px; }
+.poi-progress-item--complete { border-color: #79a98a; background: #edf8f1; }
+.poi-progress-item strong { font-size: 12px; }
+.poi-progress-item span { color: #526273; font-size: 10px; }
+.poi-review-file-actions { display: flex; align-items: center; gap: 7px; margin-left: auto; }
+.poi-review-file-actions button { min-height: 31px; padding: 6px 10px; border: 1px solid #8fa1b5; border-radius: 7px; background: #f8faff; color: #182537; cursor: pointer; font: inherit; font-size: 11px; box-shadow: 0 1px 2px rgb(24 37 55 / 12%); }
+.poi-review-file-actions button:hover { border-color: #315d91; background: #e1ecf7; }
+.poi-review-file-actions button:focus-visible { outline: 2px solid #3569c8; outline-offset: 2px; }
+.poi-review-file-actions [role=status] { color: #526273; font-size: 10px; }
 .map-toolbar { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; padding: 0 24px 12px; min-height: 12px; }
 .route-toggle { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--ink); cursor: pointer; }
 .route-toggle input { accent-color: var(--accent); }
@@ -40,3 +58,4 @@
 .dashboard-footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .dashboard-empty { padding: 32px 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 900px) { .travel-workspace { grid-template-columns: 1fr; } .transport-bars { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .poi-review-map-layout { grid-template-columns: 1fr; } .poi-progress-list { max-height: 220px; } .poi-review-file-actions { width: 100%; margin-left: 0; } }

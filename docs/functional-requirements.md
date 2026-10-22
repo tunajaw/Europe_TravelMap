@@ -43,6 +43,24 @@ FR-MAP-11 (City Map POI interaction) [MVP+]: Hover 或 keyboard focus POI marker
 
 FR-MAP-12 (City Map POI metadata) [MVP+]: 地圖下方固定的 POI metadata 區域第一版只顯示 POI 名稱、類別與子類別。主名稱位置顯示 OSM `name:en`，不存在時使用經審核的原始／Google 顯示名稱；若 OSM 同時提供 `name:zh-Hant` 或 `name:zh`，在主名稱下方以較小字級顯示中文名稱。沒有可靠第二語言來源時不自行翻譯，也不重複顯示相同名稱。POI 圖片為 optional；加入圖片後，若有多張圖片，使用與 Country preview 一致的上一張／下一張控制與滑動行為；沒有圖片時只顯示文字資訊，不顯示空白 carousel。Visit ID、原始／當地造訪時間、造訪次數、Google／OSM metadata、配對距離、信心值與審核狀態均不公開顯示。
 
+## 臨時 POI 審核工具（內部 Data QA）
+
+本工具不屬於正式 MVP，僅用於完成 City Map POI 資料審核。UI 在審核完成後可移除，但審核結果必須保留，且不得直接修改 raw POI data。
+
+TEMP-FR-01 (POI Review)：點擊 City Map 的 POI marker 或左側待審核項目後開啟審核面板。面板提供可編輯名稱，以及 Keep／Discard 決策。Keep 時可複選 Attractions（新紀錄預設勾選）、Shop、Restaurant；至少選一類。Discard 不保存類別。再次審核同一 POI 時載入並更新原紀錄。
+
+TEMP-FR-02 (Review Persistence)：審核結果以 POI ID 為唯一鍵，與 raw POI data 分開儲存在瀏覽器 localStorage，可離線使用並於重新開啟後載入。每筆至少保存 POI ID、編輯後名稱、Keep／Discard、類別、review status 與更新時間。工具另提供 JSON 匯出與匯入，以便備份、跨瀏覽器移轉及後續資料前處理；同一 POI 匯入或再次保存時採 upsert，不得新增重複紀錄。
+
+TEMP-FR-03 (Review Marker)：City Map 上已審核與未審核 POI 必須使用不同 marker 樣式，不能只以文字狀態區分。原始 POI 類別的顏色與形狀仍保留。
+
+TEMP-FR-04 (City Review Progress)：City Map 左側列出目前城市所有尚未審核的 POI 與 `reviewed / total` 進度。點擊項目後，地圖以動畫移動並放大至該 POI，同時開啟審核面板；完成 Keep 或 Discard 後即時從待審核清單移除。
+
+TEMP-FR-05 (Country Review Progress)：Country Map 左側列出該國每個 Travel Map City 的 POI `reviewed / total` 進度。點擊城市進入其 City Map；所有 POI 已審核的城市使用完成樣式。零 POI 城市依集合完成規則視為完成。
+
+TEMP-FR-06 (Europe Review Progress)：Europe Map 左側列出各國的 `Cities: reviewed / total` 與 `POIs: reviewed / total`。點擊國家進入 Country Map；一個國家的所有 Travel Map City 都完成時，該國使用完成樣式。
+
+完成定義：POI 存在 Keep 或 Discard 紀錄即為已審核；城市的所有 POI 已審核即為城市完成；國家的所有 Travel Map City 都完成即為國家完成。後續資料流程為 `Raw POI + Review Result → Cleaned / Approved POI Data`，合併與公開資料產生由 preprocessing 執行，不由瀏覽器直接覆寫來源資料。
+
 FR-EXP-01 (Expense Page Selection): Expense 畫面最左上方兩個互斥按鍵: Transportation / Accommodation 代表現在 Show 的頁面是交通還是住宿相關的資訊，預設是 Transportation
 
 FR-EXP-02 (Transportation Element Component): 

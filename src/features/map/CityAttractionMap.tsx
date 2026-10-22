@@ -12,17 +12,80 @@ import {
   cityBoundaryPath,
   cityMapTiles,
   cityPoiViewport,
+  focusViewportOnLocation,
   interpolateViewport,
   projectCityPoint,
   zoomViewportAtPoint,
   zoomViewportFromBox,
   type CityMapBox,
 } from './city-viewport.ts';
+import {
+  POI_REVIEW_CATEGORIES,
+  type PoiReviewCategory,
+  type PoiReviewMap,
+  type PoiReviewRecord,
+} from './poi-review-store.ts';
 
-export function CityAttractionMap({ city, pois, context }: {
+type Poi = NonNullable<TravelData['pois']>[number];
+
+function PoiReviewPanel({ poi, review, onReview }: {
+  poi: Poi;
+  review?: PoiReviewRecord | undefined;
+  onReview: (record: PoiReviewRecord) => void;
+}) {
+  const [name, setName] = useState(review?.editedName ?? poi.name);
+  const [decision, setDecision] = useState<'Keep' | 'Discard'>(review?.decision ?? 'Keep');
+  const [categories, setCategories] = useState<PoiReviewCategory[]>(review?.categories ?? ['Attractions']);
+
+  const toggleCategory = (category: PoiReviewCategory, checked: boolean) => {
+    setCategories((current) => checked
+      ? [...current, category].filter((value, index, values) => values.indexOf(value) === index)
+      : current.filter((value) => value !== category));
+  };
+
+  return <form className="poi-review-panel" aria-label="POI review panel" onSubmit={(event) => {
+    event.preventDefault();
+    const editedName = name.trim();
+    if (!editedName || (decision === 'Keep' && categories.length === 0)) return;
+    onReview({
+      poiId: poi.id,
+      editedName,
+      decision,
+      categories: decision === 'Keep' ? categories : [],
+      reviewStatus: 'reviewed',
+      updatedAt: new Date().toISOString(),
+    });
+  }}>
+    <div className="poi-review-panel-heading">
+      <div><p className="eyebrow">Temporary data QA</p><h3>Review POI</h3></div>
+      {review && <span className="poi-review-status">Reviewed</span>}
+    </div>
+    <label className="poi-review-name">Name
+      <input aria-label="Name" value={name} onChange={(event) => setName(event.currentTarget.value)} />
+    </label>
+    <fieldset className="poi-review-decisions"><legend>Decision</legend>
+      {(['Keep', 'Discard'] as const).map((value) => <label key={value}>
+        <input type="radio" name={`decision-${poi.id}`} checked={decision === value}
+          onChange={() => setDecision(value)} /> {value}
+      </label>)}
+    </fieldset>
+    <fieldset className="poi-review-categories" disabled={decision === 'Discard'}><legend>Categories</legend>
+      {POI_REVIEW_CATEGORIES.map((category) => <label key={category}>
+        <input type="checkbox" checked={categories.includes(category)}
+          onChange={(event) => toggleCategory(category, event.currentTarget.checked)} /> {category}
+      </label>)}
+    </fieldset>
+    <button className="primary-button" type="submit"
+      disabled={!name.trim() || (decision === 'Keep' && categories.length === 0)}>Save review</button>
+  </form>;
+}
+
+export function CityAttractionMap({ city, pois, context, reviews, onReview }: {
   city: TravelData['cities'][number];
   pois: NonNullable<TravelData['pois']>;
   context?: NonNullable<TravelData['cityContexts']>[number] | undefined;
+  reviews: PoiReviewMap;
+  onReview: (record: PoiReviewRecord) => void;
 }) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -38,6 +101,9 @@ export function CityAttractionMap({ city, pois, context }: {
   const tiles = useMemo(() => cityMapTiles(viewport), [viewport]);
   const visiblePois = pois.filter((poi) => visibleCategories[poi.category]);
   const active = visiblePois.find((poi) => poi.id === (hoveredId ?? selectedId));
+  const selectedPoi = pois.find((poi) => poi.id === selectedId);
+  const pendingPois = pois.filter((poi) => !reviews[poi.id]);
+  const reviewedCount = pois.length - pendingPois.length;
 
   useEffect(() => {
     if (animationFrameRef.current !== null) cancelAnimationFrame(animationFrameRef.current);
@@ -136,7 +202,24 @@ export function CityAttractionMap({ city, pois, context }: {
     height: Math.abs(dragBox.endY - dragBox.startY),
   } : null;
 
+  const selectForReview = (poi: Poi) => {
+    setSelectedId(poi.id);
+    setHoveredId(null);
+    animateToViewport(focusViewportOnLocation(initialViewport, poi.location), true);
+  };
+
   return <section className="city-attraction-explorer">
+    <div className="city-review-layout">
+    <nav className="city-review-sidebar" aria-label="Unreviewed POIs">
+      <div className="poi-progress-heading"><p className="eyebrow">Temporary QA</p><h3>Unreviewed POIs</h3>
+        <p>{reviewedCount} / {pois.length} reviewed</p></div>
+      <div className="city-review-pending-list">
+        {pendingPois.map((poi) => <button key={poi.id} type="button" aria-label={`Review ${poi.name}`}
+          onClick={() => selectForReview(poi)}>{poi.name}</button>)}
+        {pendingPois.length === 0 && <p className="poi-review-complete">All POIs reviewed.</p>}
+      </div>
+    </nav>
+    <div className="city-review-main">
     <div className="city-map-controls" aria-label="City map controls">
       <button type="button" disabled={!isZoomed}
         onClick={() => { animateToViewport(initialViewport, false); setDragBox(null); }}>
@@ -196,9 +279,11 @@ export function CityAttractionMap({ city, pois, context }: {
         {visiblePois.map((poi) => {
           const [x, y] = projectCityPoint(poi.location, viewport);
           const isActive = poi.id === hoveredId || poi.id === selectedId;
+          const isReviewed = Boolean(reviews[poi.id]);
           return <g key={poi.id} role="button" tabIndex={0} aria-label={poi.name}
             aria-pressed={selectedId === poi.id} data-poi-id={poi.id}
-            className={`attraction-marker attraction-marker--${poi.category.toLowerCase()}${isActive ? ' attraction-marker--active' : ''}`}
+            data-review-status={isReviewed ? 'reviewed' : 'unreviewed'}
+            className={`attraction-marker attraction-marker--${poi.category.toLowerCase()}${isReviewed ? ' attraction-marker--reviewed' : ''}${isActive ? ' attraction-marker--active' : ''}`}
             transform={`translate(${x} ${y})`}
             onMouseEnter={() => setHoveredId(poi.id)} onMouseLeave={() => setHoveredId(null)}
             onFocus={() => setHoveredId(poi.id)} onBlur={() => setHoveredId(null)}
@@ -211,6 +296,7 @@ export function CityAttractionMap({ city, pois, context }: {
               }
             }}>
             <circle className="attraction-marker-hit" r="22" />
+            {isReviewed && <circle className="poi-review-marker-ring" r="12" />}
             {poi.category === 'Attraction'
               ? <circle data-testid="attraction-marker" r={isActive ? 9 : 7} />
               : <path data-testid="unclassified-marker"
@@ -233,5 +319,9 @@ export function CityAttractionMap({ city, pois, context }: {
           ? 'Hover or focus a point to see its name.'
           : pois.length ? 'No places match the current filters.' : 'No reviewed places yet'}</p></>}
     </section>
+    {selectedPoi && <PoiReviewPanel key={`${selectedPoi.id}-${reviews[selectedPoi.id]?.updatedAt ?? 'new'}`}
+      poi={selectedPoi} review={reviews[selectedPoi.id]} onReview={onReview} />}
+    </div>
+    </div>
   </section>;
 }

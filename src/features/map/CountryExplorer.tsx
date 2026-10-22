@@ -3,6 +3,15 @@ import type { TravelData } from '../../domain/travel-data.ts';
 import { EuropeMap } from './EuropeMap.tsx';
 import { CityAttractionMap } from './CityAttractionMap.tsx';
 import { CountryPhoto } from './CountryPhoto.tsx';
+import { CityReviewProgress, CountryReviewProgress } from './PoiReviewProgress.tsx';
+import {
+  loadPoiReviews,
+  parsePoiReviewFile,
+  persistPoiReviews,
+  serializePoiReviews,
+  upsertPoiReview,
+  type PoiReviewRecord,
+} from './poi-review-store.ts';
 import { TRANSPORT_MODES } from './transport-colors.ts';
 import './country-explorer.css';
 
@@ -66,7 +75,10 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [showRoutes, setShowRoutes] = useState(true);
   const [domesticOnly, setDomesticOnly] = useState(false);
+  const [poiReviews, setPoiReviews] = useState(loadPoiReviews);
+  const [reviewFileStatus, setReviewFileStatus] = useState('');
   const root = useRef<HTMLDivElement>(null);
+  const importInput = useRef<HTMLInputElement>(null);
   const selected = data.countries.find((country) => country.id === navigation.selectedId);
   const activeCity = data.cities.find((city) => city.id === navigation.cityId);
   const cityPois = (data.pois ?? []).filter((poi) => poi.cityId === activeCity?.id);
@@ -82,6 +94,33 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   function enterCity(id: string) {
     const city = data.cities.find((candidate) => candidate.id === id);
     if (city) navigate({ type: 'enter-city', id: city.id, countryId: city.countryId });
+  }
+  function savePoiReview(record: PoiReviewRecord) {
+    setPoiReviews((current) => {
+      const next = upsertPoiReview(current, record);
+      persistPoiReviews(next);
+      return next;
+    });
+  }
+  function downloadReviews() {
+    const blob = new Blob([serializePoiReviews(poiReviews)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'poi-review-results.json';
+    link.click();
+    URL.revokeObjectURL(url);
+  }
+  async function importReviews(file: File | undefined) {
+    if (!file) return;
+    try {
+      const next = parsePoiReviewFile(await file.text());
+      persistPoiReviews(next);
+      setPoiReviews(next);
+      setReviewFileStatus(`Loaded ${Object.keys(next).length} reviews`);
+    } catch {
+      setReviewFileStatus('Could not load review file');
+    }
   }
   function close(restoreFocus = false) {
     const id = navigation.selectedId;
@@ -101,7 +140,7 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       // The clicked arrow may unmount at the first/last photo. The original
       // event path retains its card ancestor even after that DOM update.
       const inside = event.composedPath().some((node) => node instanceof Element
-        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .segment-details, .city-selection, .country-switcher, .map-toolbar'));
+        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .segment-details, .city-selection, .country-switcher, .map-toolbar, .poi-progress-sidebar, .city-review-sidebar, .poi-review-panel'));
       if (!inside && !navigation.cityId) close();
     };
     const key = (event: KeyboardEvent) => {
@@ -129,15 +168,29 @@ export function CountryExplorer({ data }: { data: TravelData }) {
           : navigation.focusedId && <button className="map-back" onClick={() => close(true)}>Back to Europe</button>}
         {!activeCity && <label className="route-toggle"><input type="checkbox" checked={showRoutes} onChange={(event) => setShowRoutes(event.target.checked)} /> Show travel routes</label>}
         {navigation.focusedId && !activeCity && <label className="route-toggle"><input type="checkbox" checked={domesticOnly} onChange={(event) => setDomesticOnly(event.target.checked)} /> Only show domestic routes</label>}
+        <div className="poi-review-file-actions" aria-label="POI review file actions">
+          <button type="button" onClick={downloadReviews}>Export reviews</button>
+          <button type="button" onClick={() => importInput.current?.click()}>Import reviews</button>
+          <input ref={importInput} type="file" accept="application/json,.json" hidden
+            onChange={(event) => { void importReviews(event.currentTarget.files?.[0]); event.currentTarget.value = ''; }} />
+          {reviewFileStatus && <span role="status">{reviewFileStatus}</span>}
+        </div>
       </div>
-      <div className="map-canvas">
-        {activeCity ? <CityAttractionMap city={activeCity} pois={cityPois} context={cityContext} />
-          : <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments}
+      <div className={`poi-review-map-layout${activeCity ? ' poi-review-map-layout--city' : ''}`}>
+        {!activeCity && (navigation.focusedId && selected
+          ? <CityReviewProgress countryId={selected.id} data={data} reviews={poiReviews} onEnter={enterCity} />
+          : <CountryReviewProgress data={data} reviews={poiReviews}
+            onEnter={(id) => navigate({ type: 'enter', id })} />)}
+        <div className="map-canvas">
+          {activeCity ? <CityAttractionMap city={activeCity} pois={cityPois} context={cityContext}
+            reviews={poiReviews} onReview={savePoiReview} />
+            : <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments}
             showRoutes={showRoutes} domesticOnly={domesticOnly} selectedId={navigation.selectedId}
             hoveredId={hoveredId} focusedId={navigation.focusedId}
             onSelect={(id) => navigate({ type: 'select', id })}
             onEnter={(id) => navigate({ type: 'enter', id })}
             onEnterCity={enterCity} onHover={setHoveredId} />}
+        </div>
       </div>
       {!activeCity && <div className="country-card-dock">
         {selected ? <CountryCard key={selected.id} country={selected} photos={photos} entered={Boolean(navigation.focusedId)}
