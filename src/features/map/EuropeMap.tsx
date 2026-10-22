@@ -31,10 +31,11 @@ interface EuropeMapProps {
   focusedId?: string | null;
   onSelect?: (id: string) => void;
   onEnter?: (id: string) => void;
+  onEnterCity?: (id: string) => void;
   onHover?: (id: string | null) => void;
 }
 
-export function EuropeMap({ countries, cities = [], segments = [], showRoutes = true, domesticOnly = false, selectedId, hoveredId, focusedId, onSelect, onEnter, onHover }: EuropeMapProps) {
+export function EuropeMap({ countries, cities = [], segments = [], showRoutes = true, domesticOnly = false, selectedId, hoveredId, focusedId, onSelect, onEnter, onEnterCity, onHover }: EuropeMapProps) {
   const shadowId = useId();
   const [cityHover, setCityHover] = useState<string | null>(null);
   const [citySelection, setCitySelection] = useState<string | null>(null);
@@ -178,7 +179,7 @@ export function EuropeMap({ countries, cities = [], segments = [], showRoutes = 
         })}
       </g>
       {focused && <CityLayer key={`cities-${focused.id}-${domesticOnly}`} cities={visibleCities} viewport={viewport}
-        selectedId={citySelection} linkedIds={linkedIds} emphasizedIds={emphasizedIds} onHover={setCityHover} onSelect={setCitySelection} />}
+        selectedId={citySelection} linkedIds={linkedIds} emphasizedIds={emphasizedIds} onHover={setCityHover} onSelect={setCitySelection} onEnter={onEnterCity} />}
     </svg>
     {focused && citySelection && <section className="city-selection" aria-label="Selected city">
       <strong>{cities.find((city) => city.id === citySelection)?.name}</strong>

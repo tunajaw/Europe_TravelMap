@@ -105,6 +105,126 @@ Confirmed airport-to-domain-City mappings include:
   canonical City to which that Transit Point belongs may receive a navigable
   City Map in MVP+.
 
+## City Map POI Preprocessing
+
+`data/raw/timeline.json` is the private local source for City Map POI
+candidates and is excluded from Git. Only Visits during the 2025-09-30 through
+2026-03-31 review period are processed.
+POIs may only be related to an existing Travel Map City or City-like Location.
+Candidates whose City relationship is ambiguous remain in the preprocessing
+dataset but do not enter application-ready City Map data.
+
+Repeated Visits with the same Google Place ID are merged into one POI. Each
+source Visit retains a deterministic ID derived from Place ID, start time, end
+time, and hierarchy level. Raw timestamps are preserved, and local timestamps
+are derived from the candidate City's reviewed country time zone; the `+08:00`
+offset present in Timeline data must not be treated as European local time.
+
+POI names and classification candidates come from an OpenStreetMap snapshot
+downloaded by City area and matched to Timeline coordinates locally. Individual
+Timeline coordinates are not sent to an external reverse-geocoding service, and
+Google Places API content is not used to build application data. Up to three OSM
+candidates are retained with distance, element ID, tags, map link, matching
+method, and confidence. A Google Place ID review link may be retained for manual
+comparison.
+
+`data/raw/map_search.html` is optional private supporting evidence from the
+owner's Google Maps activity export. It is gitignored and processed locally;
+the raw file, unrelated searches, account metadata, and unmatched activity
+titles must not enter the review workbook or public application data. Search,
+View, and Directions activity within the review period may support an existing
+Timeline POI candidate. The search-confirmed POI flow below accepts only Search
+and Directions; a View alone never creates a POI.
+The export's `CST` timestamps are interpreted as the owner's Taiwan account
+time and compared with the raw UTC Visit interval. Exact Google Place ID and
+exact normalized OSM candidate-name matches are retained as aggregate evidence
+counts, action types, nearest time gap, and the best matched name/candidate.
+Searching, viewing, or requesting directions without corresponding Timeline
+evidence must not create a POI. For an existing Timeline POI candidate, exact
+Place ID and normalized OSM-name matches remain supporting evidence under the
+current matching rules.
+
+The search-confirmed POI flow starts from each in-period Search or Directions
+record. Its Google Maps displayed place name becomes the primary display-name
+candidate. The coordinate encoded in the Maps URL is treated as an approximate
+search viewport, not a verified official Place coordinate. When any later
+Timeline path point, raw GPS position, or semantic Visit falls within 350 metres
+of that viewport, the searched place is classified as High-confidence visit
+evidence and proposed for automatic inclusion. A View alone, a search without a
+viewport, a City-only query, or a search without later proximity evidence does
+not create a POI.
+
+Nearby named OSM features within 350 metres are used only to classify and enrich
+the search-confirmed POI. A reliable name match to an OSM Attraction classifies
+the result as `Attraction` and supplies the OSM coordinate; otherwise the result
+is retained as `Unclassified` at the approximate search viewport. Competing
+nearby OSM candidates do not veto this search-confirmed visit: the general rule
+requiring a second candidate to be at least 50 metres away or twice as far does
+not apply to this flow. The workbook contains only the selected Google display
+name, optional matched OSM metadata, and aggregate distance/count evidence; raw
+activity rows, exact private trajectories, and unmatched searches remain local
+and are not exported.
+
+Candidate records carry `match_confidence`, `category_confidence`,
+`city_confidence`, `overall_confidence`, and `review_priority`. A POI may be
+`auto_approved` only when its Timeline coordinate is inside a unique compatible
+named OSM polygon, or when exactly one compatible named OSM POI is within 25
+metres and the next candidate is clearly farther away, and both classification
+and City assignment are unambiguous. Other review states are `needs_review`,
+`owner_approved`, `excluded`, and `unresolved`. Owner review may override an
+automatic decision.
+
+The review workbook contains `POI Review`, `Searched POI Recovery`, `Visits`,
+`Category Mapping`, and `Review Summary`. `Searched POI Recovery` is an isolated
+sheet whose yellow decision and notes columns are available for owner
+review; it does not mutate `POI Review`. Preprocessing regenerates all evidence
+sheets without VBA macros. The review sheets support coarse-grained
+High, Medium, and Low confidence plus filtering or sorting by review priority,
+review status, City, and category. Import validation requires unique POI IDs,
+valid City references and categories, and coordinates for displayed POIs.
+`needs_review` and `unresolved` records cannot enter final application-ready
+data. For the current visual review, the owner has directed the pipeline to
+provisionally treat every search-confirmed High-confidence POI as correct. The
+public export labels these rows `provisional_owner_assumption` so
+that this temporary assumption remains distinguishable from completed review.
+
+Preprocessing retains Attraction, Station, Restaurant, Shop, Shopping Mall,
+Takeaway, Supermarket, Convenience Store, and other identifiable categories.
+The current City Map visual-review release includes provisionally accepted
+`Attraction` and search-confirmed `Unclassified` records, with independent map
+filters and distinct marker encodings. Restaurant is the next display category;
+Stations and all other categories are processed but hidden by default. The
+export deduplicates OSM Attractions by OSM element ID and search-confirmed POIs
+by Google Place ID when available, otherwise by normalized Google display name
+within the City. It removes search, Timeline, Visit, matching,
+confidence, and review evidence before writing tracked public data. Display
+names use OSM `name:en` as the main English field when available and otherwise
+retain the reviewed source or Google Maps displayed name. OSM `name:zh-Hant`,
+then `name:zh`, is retained as a separate optional localized field. The pipeline
+does not invent translations or duplicate an identical value as a second
+language. The parsed reference retains the original source name for traceability,
+while the public application dataset exposes only the main name and optional
+Chinese display name.
+POI images are optional; their
+folder, naming, conversion, and relationship workflow remain deferred until POI
+review is complete.
+
+`npm run data:city-context` sends only the public City name and Country name for
+every Travel Map City to Nominatim. It caches the response locally and writes
+the selected, simplified OSM Polygon or MultiPolygon to
+`data/parsed/city_map_context.json`. Timeline positions, Maps activity, POI
+coordinates, and other private evidence are never included in this request.
+Andorra uses the explicit `Andorra la Vella` query, while Vatican City uses its
+reviewed country/city boundary relation. When a City-like Location has no OSM
+administrative boundary, preprocessing writes a five-kilometre local extent
+around its reviewed City reference point and labels it as such rather than
+claiming it is an administrative boundary. The application dataset removes the
+source label and OSM identifier, retaining City ID, context kind, attribution
+source, and boundary geometry. Dataset validation requires exactly one context
+for every Travel Map City. City Map zoom uses the polygon containing the reviewed City
+reference point (or the largest polygon as fallback), so detached administrative
+enclaves do not make central POIs unreadably small.
+
 ## Accommodation Source Conventions
 
 * Blank Trip cells are filled down.
@@ -167,7 +287,11 @@ Run `npm run data:build` locally to combine the tracked Segment and reviewed
 reference files with the ignored private Accommodation CSV. The command writes
 `public/data/travel-data.json`, validates its runtime schema and relationships,
 checks every photo asset, and rejects private Accommodation fields in the
-serialized output.
+serialized output. It also imports the tracked, privacy-reduced
+`data/parsed/poi_reference.json` and emits only the public POI ID, City
+relationship, main display name, optional Chinese display name, category, subcategory, coordinates, and optional
+image path. Source IDs, URLs, Visits, search evidence, confidence, and review
+status do not enter the browser dataset.
 
 CI runs `npm run data:validate` against the committed output without access to
 the private source. The browser consumes only this JSON and never parses source

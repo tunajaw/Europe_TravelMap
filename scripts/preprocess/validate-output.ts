@@ -34,6 +34,10 @@ for (const photo of data.photos) {
   await access(resolve(root, 'public', ...photo.path.split('/')));
 }
 
+if ((data.cityContexts?.length ?? 0) !== data.cities.length) {
+  throw new Error('Public City Map contexts do not cover every Travel Map City');
+}
+
 const serialized = JSON.stringify(data);
 for (const forbidden of ['住宿地址', '名稱(如有)', 'candidate_label', 'geocode_query']) {
   if (serialized.includes(forbidden)) throw new Error(`Public data contains forbidden field: ${forbidden}`);
@@ -41,5 +45,6 @@ for (const forbidden of ['住宿地址', '名稱(如有)', 'candidate_label', 'g
 
 console.log(
   `Validated ${data.countries.length} Countries, ${data.cities.length} Cities, `
-  + `${data.airports.length} Airports, ${data.segments.length} Segments, and ${data.photos.length} Photos.`,
+  + `${data.airports.length} Airports, ${data.segments.length} Segments, ${data.photos.length} Photos, `
+  + `${data.pois?.length ?? 0} POIs, and ${data.cityContexts?.length ?? 0} City Map contexts.`,
 );

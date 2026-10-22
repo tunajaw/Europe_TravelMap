@@ -18,6 +18,8 @@ data/raw/img/
 
 # Private source data
 data/private/
+data/raw/map_search.html
+data/raw/timeline.json
 
 # Local environment files
 .env
@@ -32,3 +34,6 @@ data/private/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local mock interview notes
+/mock/

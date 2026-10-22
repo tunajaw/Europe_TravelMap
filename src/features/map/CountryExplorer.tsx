@@ -1,26 +1,37 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { EuropeMap } from './EuropeMap.tsx';
+import { CityAttractionMap } from './CityAttractionMap.tsx';
 import { CountryPhoto } from './CountryPhoto.tsx';
 import { TRANSPORT_MODES } from './transport-colors.ts';
 import './country-explorer.css';
 
-type Navigation = { selectedId: string | null; focusedId: string | null };
-type Action = { type: 'select'; id: string } | { type: 'enter'; id?: string } | { type: 'clear' } | { type: 'restore'; state: Navigation };
+type Navigation = { selectedId: string | null; focusedId: string | null; cityId: string | null };
+type Action = { type: 'select'; id: string }
+  | { type: 'enter'; id?: string }
+  | { type: 'enter-city'; id: string; countryId: string }
+  | { type: 'leave-city' }
+  | { type: 'clear' }
+  | { type: 'restore'; state: Navigation };
 function reducer(state: Navigation, action: Action): Navigation {
   switch (action.type) {
-    case 'select': return { selectedId: action.id, focusedId: null };
-    case 'enter': return { selectedId: action.id ?? state.selectedId, focusedId: action.id ?? state.selectedId };
-    case 'clear': return { selectedId: null, focusedId: null };
+    case 'select': return { selectedId: action.id, focusedId: null, cityId: null };
+    case 'enter': return { selectedId: action.id ?? state.selectedId, focusedId: action.id ?? state.selectedId, cityId: null };
+    case 'enter-city': return { selectedId: action.countryId, focusedId: action.countryId, cityId: action.id };
+    case 'leave-city': return { ...state, cityId: null };
+    case 'clear': return { selectedId: null, focusedId: null, cityId: null };
     case 'restore': return action.state;
   }
 }
 
 function readNavigation(data: TravelData): Navigation {
+  const cityMatch = /^#city\/([a-z0-9-]+)$/.exec(window.location.hash);
+  const city = data.cities.find((candidate) => candidate.id === cityMatch?.[1]);
+  if (city) return { selectedId: city.countryId, focusedId: city.countryId, cityId: city.id };
   const match = /^#(country|europe)\/([a-z0-9-]+)$/.exec(window.location.hash);
   const id = match?.[2];
-  if (!id || !data.countries.some((country) => country.id === id)) return { selectedId: null, focusedId: null };
-  return { selectedId: id, focusedId: match?.[1] === 'country' ? id : null };
+  if (!id || !data.countries.some((country) => country.id === id)) return { selectedId: null, focusedId: null, cityId: null };
+  return { selectedId: id, focusedId: match?.[1] === 'country' ? id : null, cityId: null };
 }
 
 function CountryCard({ country, photos, entered, onEnter, onClose }: {
@@ -57,13 +68,20 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   const [domesticOnly, setDomesticOnly] = useState(false);
   const root = useRef<HTMLDivElement>(null);
   const selected = data.countries.find((country) => country.id === navigation.selectedId);
+  const activeCity = data.cities.find((city) => city.id === navigation.cityId);
+  const cityPois = (data.pois ?? []).filter((poi) => poi.cityId === activeCity?.id);
+  const cityContext = (data.cityContexts ?? []).find((context) => context.cityId === activeCity?.id);
   const photos = data.photos.filter((photo) => photo.countryId === selected?.id).sort((a, b) => a.displayOrder - b.displayOrder);
 
   function navigate(action: Action) {
     const next = reducer(navigation, action);
-    const hash = next.focusedId ? `#country/${next.focusedId}` : next.selectedId ? `#europe/${next.selectedId}` : '#europe';
+    const hash = next.cityId ? `#city/${next.cityId}` : next.focusedId ? `#country/${next.focusedId}` : next.selectedId ? `#europe/${next.selectedId}` : '#europe';
     if (window.location.hash !== hash) window.history.pushState(null, '', hash);
     dispatch(action);
+  }
+  function enterCity(id: string) {
+    const city = data.cities.find((candidate) => candidate.id === id);
+    if (city) navigate({ type: 'enter-city', id: city.id, countryId: city.countryId });
   }
   function close(restoreFocus = false) {
     const id = navigation.selectedId;
@@ -84,9 +102,14 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       // event path retains its card ancestor even after that DOM update.
       const inside = event.composedPath().some((node) => node instanceof Element
         && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .segment-details, .city-selection, .country-switcher, .map-toolbar'));
-      if (!inside) close();
+      if (!inside && !navigation.cityId) close();
     };
-    const key = (event: KeyboardEvent) => { if (event.key === 'Escape' && !event.defaultPrevented) { event.preventDefault(); close(true); } };
+    const key = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape' || event.defaultPrevented) return;
+      event.preventDefault();
+      if (navigation.cityId) navigate({ type: 'leave-city' });
+      else close(true);
+    };
     document.addEventListener('click', click);
     document.addEventListener('keydown', key);
     return () => { document.removeEventListener('click', click); document.removeEventListener('keydown', key); };
@@ -99,38 +122,46 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   return <div className="travel-workspace" ref={root}>
     <section className="map-panel" aria-labelledby="map-heading">
       <header className="map-panel-heading"><div><p className="eyebrow">The journey so far</p>
-        <h2 id="map-heading">{navigation.focusedId ? `${selected?.name} / Country Map` : 'Europe overview'}</h2></div>
+        <h2 id="map-heading">{activeCity ? `${activeCity.name} / City Map` : navigation.focusedId ? `${selected?.name} / Country Map` : 'Europe overview'}</h2></div>
       </header>
       <div className="map-toolbar">
-        {navigation.focusedId && <button className="map-back" onClick={() => close(true)}>Back to Europe</button>}
-        <label className="route-toggle"><input type="checkbox" checked={showRoutes} onChange={(event) => setShowRoutes(event.target.checked)} /> Show travel routes</label>
-        {navigation.focusedId && <label className="route-toggle"><input type="checkbox" checked={domesticOnly} onChange={(event) => setDomesticOnly(event.target.checked)} /> Only show domestic routes</label>}
+        {activeCity ? <button className="map-back" onClick={() => navigate({ type: 'leave-city' })}>Back to {selected?.name}</button>
+          : navigation.focusedId && <button className="map-back" onClick={() => close(true)}>Back to Europe</button>}
+        {!activeCity && <label className="route-toggle"><input type="checkbox" checked={showRoutes} onChange={(event) => setShowRoutes(event.target.checked)} /> Show travel routes</label>}
+        {navigation.focusedId && !activeCity && <label className="route-toggle"><input type="checkbox" checked={domesticOnly} onChange={(event) => setDomesticOnly(event.target.checked)} /> Only show domestic routes</label>}
       </div>
       <div className="map-canvas">
-        <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments} showRoutes={showRoutes} domesticOnly={domesticOnly} selectedId={navigation.selectedId} hoveredId={hoveredId}
-          focusedId={navigation.focusedId} onSelect={(id) => navigate({ type: 'select', id })} onEnter={(id) => navigate({ type: 'enter', id })} onHover={setHoveredId} />
+        {activeCity ? <CityAttractionMap city={activeCity} pois={cityPois} context={cityContext} />
+          : <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments}
+            showRoutes={showRoutes} domesticOnly={domesticOnly} selectedId={navigation.selectedId}
+            hoveredId={hoveredId} focusedId={navigation.focusedId}
+            onSelect={(id) => navigate({ type: 'select', id })}
+            onEnter={(id) => navigate({ type: 'enter', id })}
+            onEnterCity={enterCity} onHover={setHoveredId} />}
       </div>
-      <div className="country-card-dock">
+      {!activeCity && <div className="country-card-dock">
         {selected ? <CountryCard key={selected.id} country={selected} photos={photos} entered={Boolean(navigation.focusedId)}
           onEnter={() => navigate({ type: 'enter' })} onClose={() => close(true)} />
           : <p className="map-instruction">Select a country to explore its photographs.</p>}
-      </div>
-      <label className="country-switcher">Choose a country
+      </div>}
+      {!activeCity && <label className="country-switcher">Choose a country
         <select value={navigation.selectedId ?? ''} onChange={(event) => event.target.value ? navigate({ type: 'select', id: event.target.value }) : close()}>
           <option value="">Europe overview</option>{data.countries.map((country) => <option key={country.id} value={country.id}>{country.name}</option>)}
         </select>
-      </label>
+      </label>}
     </section>
     <aside className="journey-dashboard" aria-label="Journey dashboard">
       <p className="eyebrow">The journey in numbers</p><h2>Dashboard</h2>
-      <p className="dashboard-scope">{selected?.name ?? 'All countries'}</p>
-      {segments.length ? <><p className="dashboard-total"><strong>{segments.length}</strong> transport segments</p>
+      <p className="dashboard-scope">{activeCity?.name ?? selected?.name ?? 'All countries'}</p>
+      {activeCity ? <><p className="dashboard-total"><strong>{cityPois.length}</strong> attractions</p>
+        <p className="dashboard-caption">Provisional reviewed City Map points</p></>
+        : segments.length ? <><p className="dashboard-total"><strong>{segments.length}</strong> transport segments</p>
         <p className="dashboard-caption">{selected ? 'Departing from this country' : 'Transportation / segment count'}</p>
         <div className="transport-bars">{counts.map(({ name, color, count }) => <div key={name}>
           <div className="transport-bar-label"><span>{name}</span><b>{count}</b></div>
           <div className="transport-bar-track"><span key={selected?.id ?? 'all'} style={{ width: `${count / maximum * 100}%`, backgroundColor: color }} /></div>
         </div>)}</div></> : <p className="dashboard-empty">No transportation data</p>}
-      <p className="dashboard-footer">{selected ? photos.length : data.photos.length} photographs</p>
+      <p className="dashboard-footer">{activeCity ? 'Attraction prototype' : `${selected ? photos.length : data.photos.length} photographs`}</p>
     </aside>
   </div>;
 }

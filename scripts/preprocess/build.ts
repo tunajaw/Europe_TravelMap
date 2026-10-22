@@ -12,5 +12,6 @@ await writeFile(output, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
 console.log(
   `Built ${output}: ${data.trips.length} Trips, ${data.segments.length} Segments, `
   + `${data.transfers.length} Transfers, ${data.accommodations.length} Accommodations, `
-  + `${data.photos.length} Photos.`,
+  + `${data.photos.length} Photos, ${data.pois?.length ?? 0} POIs, `
+  + `${data.cityContexts?.length ?? 0} City Map contexts.`,
 );

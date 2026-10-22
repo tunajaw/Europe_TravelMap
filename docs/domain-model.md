@@ -193,6 +193,16 @@ Examples:
 
 POIs are primarily MVP+.
 
+The current City Map distinguishes `Attraction` from `Unclassified`.
+`Unclassified` means that private Search or Directions activity followed by
+nearby Timeline evidence supports a real visit, while the available OSM match
+does not reliably establish the place category. It is a provisional
+classification, not a claim that the place has no category.
+
+A POI has one public main display name and may have one public localized Chinese
+name. The localized name is optional and must come from reviewed source metadata;
+the application does not infer or machine-translate a missing name.
+
 ---
 
 ### Photo

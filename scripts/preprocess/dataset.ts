@@ -1,4 +1,4 @@
-import { access } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { preprocessAccommodations } from './accommodations.ts';
 import { readCsv, readNotionExportCsv } from './csv.ts';
@@ -12,6 +12,19 @@ type PhotoRow = {
   candidate_city: string; alt_text_draft: string; rights_status: string; metadata_status: string;
 };
 
+type PoiReferenceRow = {
+  poi_id: string; city_id: string; name: string; category: 'Attraction' | 'Unclassified'; subcategory: string;
+  latitude: number; longitude: number; review_status: string;
+  localized_name?: string | null; original_name?: string;
+};
+
+type CityContextReferenceRow = {
+  city_id: string; kind: 'administrative_boundary' | 'local_extent';
+  source: 'OpenStreetMap' | 'Reviewed city reference'; source_osm_id: string | null; source_label: string;
+  boundary: { type: 'Polygon'; coordinates: [number, number][][] }
+    | { type: 'MultiPolygon'; coordinates: [number, number][][][] };
+};
+
 export async function buildDataset(root: string): Promise<TravelData> {
   const references = await loadReferences(root);
   const segmentRows = await readNotionExportCsv<RawSegmentRow>(join(root, 'data', 'raw', 'segment-raw.csv'));
@@ -19,6 +32,12 @@ export async function buildDataset(root: string): Promise<TravelData> {
     join(root, 'data', 'private', 'accommodation-raw.csv'),
   );
   const photoRows = await readCsv<PhotoRow>(join(root, 'data', 'parsed', 'photo_manifest.csv'));
+  const poiRows = JSON.parse(await readFile(
+    join(root, 'data', 'parsed', 'poi_reference.json'), 'utf8',
+  )) as PoiReferenceRow[];
+  const cityContextRows = JSON.parse(await readFile(
+    join(root, 'data', 'parsed', 'city_map_context.json'), 'utf8',
+  )) as CityContextReferenceRow[];
   const { trips, segments, transfers } = preprocessSegments(segmentRows, references.index);
   const localTransferIds = new Set(
     transfers.filter(({ endpointKind }) => endpointKind === 'local').map(({ id }) => id),
@@ -73,8 +92,39 @@ export async function buildDataset(root: string): Promise<TravelData> {
       .map((photo) => photo.id),
   }));
 
+  const pois = poiRows.map((row) => {
+    if (row.review_status !== 'provisional_owner_assumption'
+      || !['Attraction', 'Unclassified'].includes(row.category)) {
+      throw new Error(`POI is not approved for the City Map prototype: ${row.poi_id}`);
+    }
+    if (!references.cities.some((city) => city.id === row.city_id)) throw new Error(`Unknown POI City: ${row.city_id}`);
+    return {
+      id: row.poi_id,
+      cityId: row.city_id,
+      name: row.name,
+      localizedName: row.localized_name ?? null,
+      category: row.category,
+      subcategory: row.subcategory,
+      location: { latitude: row.latitude, longitude: row.longitude },
+      imagePath: null,
+    };
+  });
+
+  const cityContexts = cityContextRows.map((row) => {
+    if ((row.kind === 'administrative_boundary') !== (row.source === 'OpenStreetMap')) {
+      throw new Error(`City context kind/source mismatch: ${row.city_id}`);
+    }
+    if (!references.cities.some((city) => city.id === row.city_id)) throw new Error(`Unknown City context City: ${row.city_id}`);
+    return { cityId: row.city_id, kind: row.kind, source: row.source, boundary: row.boundary };
+  });
+  const allCityIds = new Set(references.cities.map(({ id }) => id));
+  if (cityContexts.length !== allCityIds.size
+    || cityContexts.some(({ cityId }) => !allCityIds.has(cityId))) {
+    throw new Error('City context references must exactly cover all Travel Map Cities');
+  }
+
   const data = TravelDataSchema.parse({
-    schemaVersion: '1.0.0',
+    schemaVersion: '1.5.0',
     travelPeriod: { start: '2025-09-30', end: '2026-04-30' },
     countries,
     cities: references.cities,
@@ -84,6 +134,8 @@ export async function buildDataset(root: string): Promise<TravelData> {
     transfers,
     accommodations,
     photos,
+    pois,
+    cityContexts,
   });
   assertReferentialIntegrity(data);
   await assertPrivateFieldsExcluded(data, accommodationRows);

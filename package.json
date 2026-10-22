@@ -19,6 +19,9 @@
     "typecheck": "tsc --noEmit",
     "data:build": "node scripts/preprocess/build.ts",
     "data:validate": "node scripts/preprocess/validate-output.ts",
+    "data:city-context": "node scripts/preprocess/city-map-context.ts",
+    "data:poi-review": "node scripts/poi-review/generate-review-data.ts",
+    "data:poi-export": "node scripts/poi-review/export-attractions.ts",
     "check": "npm run typecheck && npm test && npm run data:validate && npm run build"
   },
   "dependencies": {

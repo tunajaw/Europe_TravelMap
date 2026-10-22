@@ -4,9 +4,14 @@ const id = z.string().min(1);
 const coordinate = z.object({ latitude: z.number().gte(-90).lte(90), longitude: z.number().gte(-180).lte(180) }).strict();
 const transferPoint = coordinate.extend({ name: z.string().min(1) }).strict();
 const localTransferRoute = z.object({ start: transferPoint, end: transferPoint }).strict();
+const linearRing = z.array(z.tuple([z.number().gte(-180).lte(180), z.number().gte(-90).lte(90)])).min(4);
+const cityBoundary = z.discriminatedUnion('type', [
+  z.object({ type: z.literal('Polygon'), coordinates: z.array(linearRing).min(1) }).strict(),
+  z.object({ type: z.literal('MultiPolygon'), coordinates: z.array(z.array(linearRing).min(1)).min(1) }).strict(),
+]);
 
 export const TravelDataSchema = z.object({
-  schemaVersion: z.literal('1.0.0'),
+  schemaVersion: z.enum(['1.0.0', '1.1.0', '1.2.0', '1.3.0', '1.4.0', '1.5.0']),
   travelPeriod: z.object({ start: z.iso.date(), end: z.iso.date() }).strict(),
   countries: z.array(z.object({
     id, name: z.string().min(1), slug: z.string().min(1), boundaryId: z.string().regex(/^\d{3}$/), capitalCity: z.string().min(1),
@@ -52,6 +57,16 @@ export const TravelDataSchema = z.object({
     id, countryId: id, path: z.string().min(1).refine((value) => !value.startsWith('/'), 'Photo path must be base-relative'),
     displayOrder: z.number().int().positive(), candidateCityId: id.nullable(), altText: z.string().min(1),
   }).strict()),
+  pois: z.array(z.object({
+    id, cityId: id, name: z.string().min(1), localizedName: z.string().min(1).nullable(), category: z.enum(['Attraction', 'Unclassified']),
+    subcategory: z.string().min(1), location: coordinate, imagePath: z.string().min(1).nullable(),
+  }).strict()).optional(),
+  cityContexts: z.array(z.object({
+    cityId: id,
+    kind: z.enum(['administrative_boundary', 'local_extent']),
+    source: z.enum(['OpenStreetMap', 'Reviewed city reference']),
+    boundary: cityBoundary,
+  }).strict()).optional(),
 }).strict();
 
 export type TravelData = z.infer<typeof TravelDataSchema>;
@@ -70,6 +85,8 @@ export function assertReferentialIntegrity(data: TravelData): void {
   const transfers = uniqueIds('Transfer', data.transfers.map(({ id }) => id));
   uniqueIds('Accommodation', data.accommodations.map(({ id }) => id));
   const photos = uniqueIds('Photo', data.photos.map(({ id }) => id));
+  uniqueIds('POI', (data.pois ?? []).map(({ id }) => id));
+  uniqueIds('City context', (data.cityContexts ?? []).map(({ cityId }) => cityId));
 
   const requireId = (set: Set<string>, value: string, relationship: string): void => {
     if (!set.has(value)) throw new Error(`Broken ${relationship}: ${value}`);
@@ -126,6 +143,8 @@ export function assertReferentialIntegrity(data: TravelData): void {
     requireId(countries, photo.countryId, 'Photo Country');
     if (photo.candidateCityId) requireId(cities, photo.candidateCityId, 'Photo candidate City');
   }
+  for (const poi of data.pois ?? []) requireId(cities, poi.cityId, 'POI City');
+  for (const context of data.cityContexts ?? []) requireId(cities, context.cityId, 'City context City');
   for (const country of data.countries) {
     country.photoIds.forEach((value) => requireId(photos, value, 'Country Photo'));
     const countryPhotos = data.photos.filter(({ countryId }) => countryId === country.id);

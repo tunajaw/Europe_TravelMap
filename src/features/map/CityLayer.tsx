@@ -3,11 +3,11 @@ import { useMemo, useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { europeProjection, layoutCountryLabels, MAP_WIDTH } from './country-label-layout.ts';
 
-export function CityLayer({ cities, viewport, selectedId, linkedIds = new Set<string>(), emphasizedIds = new Set<string>(), onHover, onSelect }: {
+export function CityLayer({ cities, viewport, selectedId, linkedIds = new Set<string>(), emphasizedIds = new Set<string>(), onHover, onSelect, onEnter }: {
   cities: TravelData['cities']; viewport: [number, number, number, number];
   selectedId?: string | null; linkedIds?: Set<string>;
   emphasizedIds?: Set<string>;
-  onHover?: (id: string | null) => void; onSelect?: (id: string) => void;
+  onHover?: (id: string | null) => void; onSelect?: (id: string) => void; onEnter?: ((id: string) => void) | undefined;
 }) {
   const [activeId, setActiveId] = useState<string | null>(null);
   const scale = viewport[2] / MAP_WIDTH;
@@ -26,6 +26,7 @@ export function CityLayer({ cities, viewport, selectedId, linkedIds = new Set<st
       onMouseEnter={() => { setActiveId(label.countryId); onHover?.(label.countryId); }} onMouseLeave={() => { setActiveId(null); onHover?.(null); }}
       onFocus={() => { setActiveId(label.countryId); onHover?.(label.countryId); }} onBlur={() => { setActiveId(null); onHover?.(null); }}
       onClick={(event) => { event.stopPropagation(); onSelect?.(label.countryId); }}
+      onDoubleClick={(event) => { event.stopPropagation(); onEnter?.(label.countryId); }}
       onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onSelect?.(label.countryId); } }}>
       <circle className="city-marker-hit" cx={label.markerX} cy={label.markerY} r={activeId === label.countryId ? 24 : 18} />
       {label.showLeader && <line className="city-marker-leader" x1={label.markerX} y1={label.markerY} x2={label.labelX} y2={label.labelY} />}
