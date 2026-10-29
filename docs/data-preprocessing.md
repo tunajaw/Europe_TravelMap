@@ -110,6 +110,21 @@ Confirmed airport-to-domain-City mappings include:
 `data/raw/timeline.json` is the private local source for City Map POI
 candidates and is excluded from Git. Only Visits during the 2025-09-30 through
 2026-03-31 review period are processed.
+`data/raw/POIadd_until_Munich_v1.txt` is a second gitignored owner-confirmed
+source. Its Google Maps short links are resolved only during preprocessing;
+tracked output retains the reviewed names, City relationship, stable opaque ID,
+and coordinates but not the source short link. These records establish that the
+place was visited, while category and display-name review still occurs in the
+temporary POI review tool. Entries marked `location update` update a matching
+City/name record without replacing its existing POI ID; unmatched entries
+become new `Unclassified` review candidates.
+When a location-update name was introduced by human review rather than the raw
+candidate, preprocessing matches it through a tracked SHA-256 hash of the
+normalized reviewed name. The plaintext review export remains local, while the
+matched candidate keeps its reviewed POI ID and receives the manual name and
+coordinates instead of creating a duplicate manual POI. If an unreviewed
+same-name candidate is within 250 metres of that authoritative manual location,
+it is collapsed into the reviewed ID; another reviewed POI is never removed.
 POIs may only be related to an existing Travel Map City or City-like Location.
 Candidates whose City relationship is ambiguous remain in the preprocessing
 dataset but do not enter application-ready City Map data.
@@ -147,12 +162,13 @@ current matching rules.
 The search-confirmed POI flow starts from each in-period Search or Directions
 record. Its Google Maps displayed place name becomes the primary display-name
 candidate. The coordinate encoded in the Maps URL is treated as an approximate
-search viewport, not a verified official Place coordinate. When any later
+search viewport, not a verified official Place coordinate. When any in-period
 Timeline path point, raw GPS position, or semantic Visit falls within 350 metres
-of that viewport, the searched place is classified as High-confidence visit
-evidence and proposed for automatic inclusion. A View alone, a search without a
-viewport, a City-only query, or a search without later proximity evidence does
-not create a POI.
+of that viewport, regardless of whether the movement precedes or follows the
+Maps activity, the searched place is classified as High-confidence visit
+evidence and proposed for automatic inclusion. The retained nearest time gap is
+an absolute difference. A View alone, a search without a viewport, a City-only
+query, or a search without in-period proximity evidence does not create a POI.
 
 Nearby named OSM features within 350 metres are used only to classify and enrich
 the search-confirmed POI. A reliable name match to an OSM Attraction classifies
@@ -196,7 +212,17 @@ filters and distinct marker encodings. Restaurant is the next display category;
 Stations and all other categories are processed but hidden by default. The
 export deduplicates OSM Attractions by OSM element ID and search-confirmed POIs
 by Google Place ID when available, otherwise by normalized Google display name
-within the City. It removes search, Timeline, Visit, matching,
+within the City. Ordinary retail candidates—including supermarkets,
+convenience stores, shopping malls, pharmacies/drugstores, and other named
+shops—are excluded from the visual-review list. After this semantic filter,
+`Unclassified` candidates no more than 15 metres from an already retained POI
+in the same City are treated as dense duplicates; explicit Attractions and
+unmatched owner-confirmed manual additions, and existing human-reviewed Keep
+records are never removed by this spatial rule. More generally, every POI with
+a human-reviewed Keep or Discard record is protected from both the semantic
+retail filter and spatial deduplication. A Discard decision controls downstream
+publication; it does not delete the source candidate or its audit relationship.
+It removes search, Timeline, Visit, matching,
 confidence, and review evidence before writing tracked public data. Display
 names use OSM `name:en` as the main English field when available and otherwise
 retain the reviewed source or Google Maps displayed name. OSM `name:zh-Hant`,
@@ -211,13 +237,21 @@ review is complete.
 
 The temporary in-map POI review tool stores a separate, versioned review result
 in browser localStorage and supports JSON export and import. POI ID is the
-upsert key. Each record contains the edited display name, Keep or Discard
+upsert key. Each record contains the edited English/primary display name, an
+optional edited Chinese display name, Keep or Discard
 decision, selected public categories, review status, and update timestamp. The
 browser must never rewrite `poi_reference.json`, the review workbook, Timeline,
 Maps activity, or any other raw/private input. After owner review, preprocessing
-will validate and merge `Raw POI + Review Result` into cleaned application-ready
-POI data. The temporary UI may then be removed while its exported review result
-remains an auditable transformation input.
+will validate and merge `Raw/Recovered POI + Owner-confirmed Manual POI + Review
+Result` into cleaned application-ready POI data. The temporary UI may then be
+removed while its exported review result remains an auditable transformation
+input.
+The versioned parser accepts legacy single-name review records and migrates the
+missing Chinese name to `null`; new exports always use the bilingual schema.
+
+Temporary review links always build the Google Maps query from the already-public
+POI latitude and longitude. No link-mode field, raw search text, activity
+timestamp, source URL, or unmatched activity enters application data.
 
 `npm run data:city-context` sends only the public City name and Country name for
 every Travel Map City to Nominatim. It caches the response locally and writes
@@ -358,7 +392,7 @@ application with a custom User-Agent, and cache responses. The public API is a
 data-preparation dependency only and must not be called by the website at
 runtime.
 
-The dataset contains approved coordinates for all 76 City reference points,
+The dataset contains approved coordinates for all 84 City reference points,
 28 Airports, and 20 MVP Country records. Country markers normally use
 each Country's capital-City coordinate. Italy is an owner-approved display
 exception: its Country marker uses the reviewed Milano Centrale reference

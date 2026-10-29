@@ -1,0 +1,742 @@
+[
+  {
+    "manual_id": "manual-poi-48ae67cc437005",
+    "city_id": "city-andorra",
+    "name": "La Noblesse du Temps",
+    "localized_name": null,
+    "latitude": 42.5088189,
+    "longitude": 1.5294559,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-e8f72b7b91aaaf",
+    "city_id": "city-andorra",
+    "name": "Pont Tibetà Canillo",
+    "localized_name": null,
+    "latitude": 42.5765663,
+    "longitude": 1.6107014,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-e3691f105d69a9",
+    "city_id": "city-salzburg",
+    "name": "Mega Star Kebab",
+    "localized_name": null,
+    "latitude": 47.8105643,
+    "longitude": 13.0615841,
+    "operation": "location_update",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-8f634b2a3075d2",
+    "city_id": "city-brugge",
+    "name": "Market Square",
+    "localized_name": null,
+    "latitude": 51.2086881,
+    "longitude": 3.2244082,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-4454c36d76c5da",
+    "city_id": "city-brussels",
+    "name": "Grand-Place",
+    "localized_name": "布魯塞爾大廣場",
+    "latitude": 50.8467887,
+    "longitude": 4.3524356,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-de4b49dbc193a1",
+    "city_id": "city-brussels",
+    "name": "Galeries Royales Saint Hubert",
+    "localized_name": "聖休伯特拱廊街",
+    "latitude": 50.8480832,
+    "longitude": 4.3552506,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-020568136cfdc7",
+    "city_id": "city-brussels",
+    "name": "Bruxelles-Nord",
+    "localized_name": null,
+    "latitude": 50.8603166,
+    "longitude": 4.3608795,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-4c50c0648c73e6",
+    "city_id": "city-gent",
+    "name": "Graslei",
+    "localized_name": null,
+    "latitude": 51.0547683,
+    "longitude": 3.72075,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-d40873dea894a9",
+    "city_id": "city-karlovy-vary",
+    "name": "Mlýnská kolonáda",
+    "localized_name": "磨坊溫泉長廊",
+    "latitude": 50.2252871,
+    "longitude": 12.8817812,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-c385e111b5abe9",
+    "city_id": "city-karlovy-vary",
+    "name": "Tržní kolonáda",
+    "localized_name": "市集迴廊",
+    "latitude": 50.2234548,
+    "longitude": 12.8831694,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a230f5a75aec1b",
+    "city_id": "city-karlovy-vary",
+    "name": "Vřídelní kolonáda",
+    "localized_name": "大溫泉迴廊",
+    "latitude": 50.2227118,
+    "longitude": 12.883365,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-63156515dc5533",
+    "city_id": "city-prague",
+    "name": "Karlův most",
+    "localized_name": "查理大橋",
+    "latitude": 50.0864771,
+    "longitude": 14.4114366,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-fcf6106b0e0350",
+    "city_id": "city-prague",
+    "name": "Havelské tržiště",
+    "localized_name": "哈維爾市集",
+    "latitude": 50.0847749,
+    "longitude": 14.4209608,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-09432ab3358863",
+    "city_id": "city-prague",
+    "name": "Prašná brána",
+    "localized_name": "火藥塔",
+    "latitude": 50.087273,
+    "longitude": 14.4277887,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-41ed3521b2ca6c",
+    "city_id": "city-prague",
+    "name": "Pomník svatého Václava",
+    "localized_name": "聖瓦茨拉夫雕像",
+    "latitude": 50.0797799,
+    "longitude": 14.4297318,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-1c8b77116fb537",
+    "city_id": "city-menton",
+    "name": "Citron D’or",
+    "localized_name": null,
+    "latitude": 43.7753395,
+    "longitude": 7.4950048,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-643532e6fcef0c",
+    "city_id": "city-menton",
+    "name": "Jardins Biovès",
+    "localized_name": null,
+    "latitude": 43.7732793,
+    "longitude": 7.4983778,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-3332c384084a32",
+    "city_id": "city-menton",
+    "name": "Plage du Borrigo",
+    "localized_name": null,
+    "latitude": 43.770908,
+    "longitude": 7.495826,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-5185a2deabbaea",
+    "city_id": "city-nice",
+    "name": "Fontaine du Soleil",
+    "localized_name": "太陽噴泉",
+    "latitude": 43.6964811,
+    "longitude": 7.2706472,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-61a00aea9205a1",
+    "city_id": "city-paris",
+    "name": "Château de Fontainebleau",
+    "localized_name": "楓丹白露宮",
+    "latitude": 48.4021018,
+    "longitude": 2.6994844,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-d11ca2a5c58e0c",
+    "city_id": "city-vilnius",
+    "name": "ETNO DVARAS",
+    "localized_name": null,
+    "latitude": 54.6764316,
+    "longitude": 25.2888474,
+    "operation": "location_update",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-bc451a94efb9e3",
+    "city_id": "city-vilnius",
+    "name": "Maxima XXX",
+    "localized_name": null,
+    "latitude": 54.6780949,
+    "longitude": 25.272716,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-6e2e4263137d1e",
+    "city_id": "city-vilnius",
+    "name": "Užupio Respublikos konstitucija",
+    "localized_name": "對岸共和國",
+    "latitude": 54.6800523,
+    "longitude": 25.2958111,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-46e6fa587a5103",
+    "city_id": "city-vilnius",
+    "name": "Rotušes aikštė",
+    "localized_name": "維爾紐斯市政廳廣場",
+    "latitude": 54.6786996,
+    "longitude": 25.2873657,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-e2d3a9bf04a485",
+    "city_id": "city-vilnius",
+    "name": "Šv. Dvasios cerkvė",
+    "localized_name": "東正教聖靈教堂",
+    "latitude": 54.6755127,
+    "longitude": 25.2892101,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-7ae1cac8b78f35",
+    "city_id": "city-vilnius",
+    "name": "G9",
+    "localized_name": null,
+    "latitude": 54.6870713,
+    "longitude": 25.2814834,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-2418923295a051",
+    "city_id": "city-vilnius",
+    "name": "Maxima X",
+    "localized_name": null,
+    "latitude": 54.6870486,
+    "longitude": 25.2790922,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-829a17832d4b01",
+    "city_id": "city-aachen",
+    "name": "RWTH Aachen University",
+    "localized_name": "亞琛工業大學",
+    "latitude": 50.7775413,
+    "longitude": 6.0774853,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0f86fa2af54f00",
+    "city_id": "city-aachen",
+    "name": "Katschhof",
+    "localized_name": null,
+    "latitude": 50.7753768,
+    "longitude": 6.0838146,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-1060c295bc8c28",
+    "city_id": "city-aachen",
+    "name": "Elisenbrunnen",
+    "localized_name": null,
+    "latitude": 50.7740678,
+    "longitude": 6.0869838,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-52b5df9a9c51ce",
+    "city_id": "city-bad-camberg",
+    "name": "Altstadt Bad Camberg",
+    "localized_name": null,
+    "latitude": 50.2981026,
+    "longitude": 8.269872,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-b52790cc1683ea",
+    "city_id": "city-baden-baden",
+    "name": "Trinkhalle",
+    "localized_name": null,
+    "latitude": 48.7618497,
+    "longitude": 8.2366831,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a04abf97289341",
+    "city_id": "city-baden-baden",
+    "name": "Friedrichsbad - Das Römisch-Irische Bad",
+    "localized_name": "弗里德里希浴場",
+    "latitude": 48.7629938,
+    "longitude": 8.2420786,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a2ed09edac9e14",
+    "city_id": "city-baden-baden",
+    "name": "Historische Altstadt Baden-Baden",
+    "localized_name": null,
+    "latitude": 48.7610938,
+    "longitude": 8.2399992,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-c09474e92ac42a",
+    "city_id": "city-baden-baden",
+    "name": "Casino Baden-Baden",
+    "localized_name": "巴登巴登賭場",
+    "latitude": 48.7602042,
+    "longitude": 8.2367283,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-cc87b79b44a949",
+    "city_id": "city-baden-baden",
+    "name": "Schach Kebab - Döner & Pizza",
+    "localized_name": null,
+    "latitude": 48.7907214,
+    "longitude": 8.1949088,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-2122e918499292",
+    "city_id": "city-bamberg",
+    "name": "Altes Rathaus",
+    "localized_name": "老市政廳",
+    "latitude": 49.8916449,
+    "longitude": 10.8868071,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-fd80c2c35334ea",
+    "city_id": "city-bamberg",
+    "name": "Klein Venedig viewpoint",
+    "localized_name": null,
+    "latitude": 49.8928937,
+    "longitude": 10.8845904,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-ec8e7b8eb65c11",
+    "city_id": "city-berlin",
+    "name": "Brandenburger Tor",
+    "localized_name": "布蘭登堡門",
+    "latitude": 52.5162746,
+    "longitude": 13.3777041,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-18e84ce7dfc866",
+    "city_id": "city-berlin",
+    "name": "Unter den Linden",
+    "localized_name": null,
+    "latitude": 52.5168975,
+    "longitude": 13.3892254,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-d67708a6336993",
+    "city_id": "city-berlin",
+    "name": "Berliner Fernsehturm",
+    "localized_name": "柏林電視塔",
+    "latitude": 52.520815,
+    "longitude": 13.4094191,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-7dbaee8478081e",
+    "city_id": "city-berlin",
+    "name": "Alexanderplatz",
+    "localized_name": "亞歷山大廣場",
+    "latitude": 52.5219814,
+    "longitude": 13.413306,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-79a80cb5802aa0",
+    "city_id": "city-berlin",
+    "name": "East Side Gallery",
+    "localized_name": "東邊畫廊",
+    "latitude": 52.5050224,
+    "longitude": 13.4396952,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-047a7acab0b2c7",
+    "city_id": "city-berlin",
+    "name": "Besucherzentrum der Gedenkstätte Berliner Mauer",
+    "localized_name": "柏林圍牆紀念館遊客中心",
+    "latitude": 52.5337772,
+    "longitude": 13.3874468,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-312297769e1533",
+    "city_id": "city-berlin",
+    "name": "S+U Friedrichstr. Bhf (Berlin)",
+    "localized_name": null,
+    "latitude": 52.5203,
+    "longitude": 13.38725,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-40b5d18836ee99",
+    "city_id": "city-bremen",
+    "name": "Town Musicians of Bremen",
+    "localized_name": null,
+    "latitude": 53.0762353,
+    "longitude": 8.8075909,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-21da5916131bec",
+    "city_id": "city-bremen",
+    "name": "Markthalle Acht",
+    "localized_name": null,
+    "latitude": 53.0762455,
+    "longitude": 8.8098222,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-ab0c2cb78dc511",
+    "city_id": "city-freiburg",
+    "name": "Martinstor",
+    "localized_name": "馬丁門",
+    "latitude": 47.9936972,
+    "longitude": 7.8489223,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-b84cfe3cd9281c",
+    "city_id": "city-friedrichshafen",
+    "name": "Moleturm",
+    "localized_name": null,
+    "latitude": 47.6486101,
+    "longitude": 9.4821711,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-95331233c3ef64",
+    "city_id": "city-friedrichshafen",
+    "name": "Zeppelin Museum Friedrichshafen",
+    "localized_name": "斐特列港齊柏林博物館",
+    "latitude": 47.6507925,
+    "longitude": 9.4830611,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-c0077702c3cbdc",
+    "city_id": "city-hamburg",
+    "name": "Reeperbahn",
+    "localized_name": null,
+    "latitude": 53.5495698,
+    "longitude": 9.9626144,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-e61843e2462b63",
+    "city_id": "city-hamburg",
+    "name": "Herbertstraße",
+    "localized_name": null,
+    "latitude": 53.5481056,
+    "longitude": 9.9626359,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-91388198a933dd",
+    "city_id": "city-heidelberg",
+    "name": "Alte Brücke Heidelberg",
+    "localized_name": "海德堡古橋",
+    "latitude": 49.4145665,
+    "longitude": 8.7095062,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0916fbe6d3fdd5",
+    "city_id": "city-heidelberg",
+    "name": "Bergbahn",
+    "localized_name": "Heidelberg, Rathaus",
+    "latitude": 49.41111,
+    "longitude": 8.71192,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0b9371b72f4ac8",
+    "city_id": "city-heidelberg",
+    "name": "Karlsplatz",
+    "localized_name": "卡爾斯廣場",
+    "latitude": 49.4122563,
+    "longitude": 8.7127459,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-7709ad3dedfd9a",
+    "city_id": "city-heidelberg",
+    "name": "Heidelberg-Altstadt",
+    "localized_name": null,
+    "latitude": 49.4151285,
+    "longitude": 8.7207777,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a4e84cdd1791ca",
+    "city_id": "city-idstein",
+    "name": "Idsteiner Altstadt",
+    "localized_name": null,
+    "latitude": 50.2213512,
+    "longitude": 8.2696286,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0795cbb28484e0",
+    "city_id": "city-simmern",
+    "name": "Parkplatz Busbahnhof",
+    "localized_name": null,
+    "latitude": 49.98227,
+    "longitude": 7.5260144,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-6a48b082e6be8e",
+    "city_id": "city-konigssee",
+    "name": "Kirche St. Bartholomä",
+    "localized_name": "聖巴爾多祿茂教堂",
+    "latitude": 47.5447844,
+    "longitude": 12.9724603,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-dc4f131e4c1380",
+    "city_id": "city-konigssee",
+    "name": "Fischerhütte am Obersee (Westufer)",
+    "localized_name": "上湖釣魚小屋",
+    "latitude": 47.5193125,
+    "longitude": 12.9811875,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a2de9bfb9d0d6e",
+    "city_id": "city-konigssee",
+    "name": "Königssee Boathouse",
+    "localized_name": null,
+    "latitude": 47.5869647,
+    "longitude": 12.9899225,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-37de015b856b8f",
+    "city_id": "city-lubeck",
+    "name": "Museum Holstentor",
+    "localized_name": "霍爾斯滕門",
+    "latitude": 53.8661389,
+    "longitude": 10.6796886,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0c18122faf8beb",
+    "city_id": "city-mainz",
+    "name": "Rekonstruierter Marktplatz am Dom",
+    "localized_name": null,
+    "latitude": 49.9994687,
+    "longitude": 8.2735517,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-cfad91437468c3",
+    "city_id": "city-nurnberg",
+    "name": "Handwerkerhof Nürnberg",
+    "localized_name": "工匠廣場",
+    "latitude": 49.4476697,
+    "longitude": 11.0812015,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-ce6aff286a61b4",
+    "city_id": "city-nurnberg",
+    "name": "Ehekarussell",
+    "localized_name": null,
+    "latitude": 49.4505739,
+    "longitude": 11.0709227,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-ef831a27570ad5",
+    "city_id": "city-stuttgart",
+    "name": "Wendlingen (Neckar)",
+    "localized_name": null,
+    "latitude": 48.6725451,
+    "longitude": 9.3730378,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-1772f85e2c247b",
+    "city_id": "city-triberg",
+    "name": "Haus der 1000 Uhren",
+    "localized_name": null,
+    "latitude": 48.1289743,
+    "longitude": 8.2310579,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-97fe3ba6e06019",
+    "city_id": "city-ulm",
+    "name": "Ulmer Münster",
+    "localized_name": "烏爾姆大教堂",
+    "latitude": 48.3985233,
+    "longitude": 9.992555,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0194e114707998",
+    "city_id": "city-munich",
+    "name": "MVG Museum",
+    "localized_name": "MVG博物館",
+    "latitude": 48.1031033,
+    "longitude": 11.6020919,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-55bd7d21dc4955",
+    "city_id": "city-munich",
+    "name": "Königsplatz",
+    "localized_name": "國王廣場",
+    "latitude": 48.1457089,
+    "longitude": 11.5652836,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-32f34a3556a420",
+    "city_id": "city-munich",
+    "name": "Fasanenpark",
+    "localized_name": null,
+    "latitude": 48.0797765,
+    "longitude": 11.609362,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-73f2ce5615dad6",
+    "city_id": "city-munich",
+    "name": "Münchner Freiheit",
+    "localized_name": "慕尼黑自由廣場",
+    "latitude": 48.1632179,
+    "longitude": 11.5869325,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-05074291daae49",
+    "city_id": "city-munich",
+    "name": "Englischer Garten",
+    "localized_name": "英國花園",
+    "latitude": 48.1642323,
+    "longitude": 11.6055522,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-63a0f9266a4005",
+    "city_id": "city-munich",
+    "name": "Oktoberfest",
+    "localized_name": null,
+    "latitude": 48.1328943,
+    "longitude": 11.5479931,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  }
+]

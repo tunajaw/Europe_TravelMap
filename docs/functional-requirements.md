@@ -35,11 +35,11 @@ FR-MAP-08 (Segment Interaction):
 
 FR-MAP-09 (Segment Path metadata): 包含出發點-抵達點、日期、Segment base fare（€，明確標示不包含 Transfers）、確切原始交通分類、分析交通類別、公司、依序排列的 Transit Point 與備註。0 元顯示為 € 0.00；缺少的 optional field 應明確顯示未記錄。metadata 顯示在 SVG 下方，不遮住路線。除 City Bus 外，公司名稱最後端在有本機 icon 時顯示各自公司的網站 icon；InterCity Bus 仍顯示 icon。若找不到或載入失敗則保留文字，不可在 runtime 向第三方服務請求 icon。
 
-FR-MAP-10 (City Map rendering) [MVP+]: City Map 不繪製 Timeline 軌跡、Segment 或 Visit 路徑，只顯示已核准或目前經 owner assumption 暫定通過的 POI marker。現階段顯示 Attraction 與 Unclassified；Unclassified 代表搜尋／導航後有後續 Timeline 接近證據，但尚無法可靠判定為 Attraction 的地點。Restaurant 與其他類別在後續版本再加入。Travel Map 的每一個 City 均須有可直接進入且可繪製的 City Map context；以低飽和度的 OpenStreetMap raster tiles 提供道路、水域、公園與地名等基礎 context，並疊加 preprocessing 取得的 OSM City administrative boundary，以較粗深色線顯示所有可見邊界。沒有可用行政邊界的 City-like Location 使用以已審核 City reference point 為中心的 local extent，並以虛線邊界清楚區別，不得將其表示為 OSM 行政邊界。Tile zoom 依目前 City viewport 計算，runtime 僅向 `tile.openstreetmap.org` 傳送公開地圖 tile 請求，不得傳送 Timeline、搜尋紀錄或 private raw data；UI 必須顯示 OpenStreetMap attribution。此 runtime dependency 可能向 tile provider 暴露訪客 IP、page referrer 與正在瀏覽的公開地圖範圍。
+FR-MAP-10 (City Map rendering) [MVP+]: City Map 不繪製 Timeline 軌跡、Segment 或 Visit 路徑，只顯示已核准或目前經 owner assumption 暫定通過的 POI marker。現階段顯示 Attraction 與 Unclassified；Unclassified 代表搜尋／導航且在同一審核期間內有 Timeline 接近證據，或由 owner 明確確認造訪，但尚無法可靠判定為 Attraction 的地點；接近證據不限制發生於搜尋／導航之前或之後。Restaurant 與其他類別在後續版本再加入。Travel Map 的每一個 City 均須有可直接進入且可繪製的 City Map context；以低飽和度的 OpenStreetMap raster tiles 提供道路、水域、公園與地名等基礎 context，並疊加 preprocessing 取得的 OSM City administrative boundary，以較粗深色線顯示所有可見邊界。沒有可用行政邊界的 City-like Location 使用以已審核 City reference point 為中心的 local extent，並以虛線邊界清楚區別，不得將其表示為 OSM 行政邊界。Tile zoom 依目前 City viewport 計算，runtime 僅向 `tile.openstreetmap.org` 傳送公開地圖 tile 請求，不得傳送 Timeline、搜尋紀錄或 private raw data；UI 必須顯示 OpenStreetMap attribution。此 runtime dependency 可能向 tile provider 暴露訪客 IP、page referrer 與正在瀏覽的公開地圖範圍。
 
 Attraction 使用藍色圓形 marker，Unclassified 使用灰紫色三角形 marker，並提供兩類各自的 filter 與 legend。Restaurant 預留橘色菱形 marker，Station 預留綠色方形 marker，但現階段不顯示。類別必須同時使用顏色與形狀區分，不可只依賴顏色。POI 名稱不永久顯示，以避免密集 City Map 上的文字重疊。相同或過度接近的 marker 在互動時以小型 spider layout 展開，關閉互動後收回。只要該 City 有可見 POI，初始地圖範圍即依 POI 座標邊界、地圖長寬比與少量 padding 自動縮放，不因完整 City administrative boundary 而額外縮小 POI；City boundary 仍保留並只繪製目前 viewport 中可見的部分。單一或非常接近的 POI 使用最小顯示範圍。沒有可見 POI 時才以包含 City reference point 的主要 boundary polygon 決定初始範圍；OSM detached enclave 仍保留在資料與 path 中，但不強制納入 viewport，並在 metadata 顯示 empty state。
 
-FR-MAP-11 (City Map POI interaction) [MVP+]: Hover 或 keyboard focus POI marker 時，marker 稍微放大，並在地圖下方固定的 metadata 區域暫時顯示 POI 名稱與類別；地圖上不顯示 tooltip 或文字標籤。移開後恢復；若已有鎖定 POI，metadata 回到該鎖定 POI。左鍵點擊 marker 或按 Enter／Space 時鎖定 POI；點擊其他 marker 時切換鎖定。鎖定時保留原本類別顏色，只放大 marker 並加粗外框。再次點擊目前 marker 或按 Escape 時解除鎖定。City Map 不提供 Box zoom mode 或啟用按鈕；在非 POI marker 的地圖區域直接以滑鼠或 pointer 拖曳至少 12px 的矩形範圍即可放大，選取範圍須維持地圖原有長寬比例以避免幾何變形。滑鼠滾輪以目前游標位置為縮放中心，向上滾放大、向下滾縮小，最大縮小範圍不得超出該 City 的初始自動縮放範圍；游標位於 City Map 上時必須攔截該次 wheel event，避免頁面同時垂直捲動。框選與滾輪縮放使用約 260ms 的 ease-out viewport animation；`prefers-reduced-motion` 時立即切換。"Reset view" 或在已放大的地圖非控制項區域連點兩下，皆以相同動畫回到初始範圍；Escape 取消尚未完成的框選。拖曳框選不得誤觸 POI 鎖定。所有 marker、filter、Back control、Reset view 與 metadata 控制項必須支援合理的 accessible name、可見 focus indicator 及適用的 keyboard 操作；動畫與 spider layout 必須遵守 reduced-motion 設定。
+FR-MAP-11 (City Map POI interaction) [MVP+]: Hover 或 keyboard focus POI marker 時，marker 稍微放大，並在地圖下方固定的 metadata 區域暫時顯示 POI 名稱與類別；地圖上不顯示 tooltip 或文字標籤。移開後恢復；若已有鎖定 POI，metadata 回到該鎖定 POI。左鍵點擊 marker 或按 Enter／Space 時鎖定 POI；點擊其他 marker 時切換鎖定。鎖定時保留原本類別顏色，只放大 marker 並加粗外框。再次點擊目前 marker 或按 Escape 時解除鎖定。City Map 不提供 Box zoom mode 或啟用按鈕；在非 POI marker 的地圖區域按住滑鼠左鍵或 pointer 拖曳時平移地圖。可平移範圍以包含 City 中心點的主要 City boundary 與該 City 全部已分配 POI viewport 的聯集為準，並只保留小幅 overscroll margin；因此位於行政邊界外但已分配至該 City 的合法 POI 仍必須能由 sidebox 聚焦並完整出現在地圖內。Sidebox 聚焦使用 POI 密度自適應倍率：City 有 25 筆以上 POI 時使用初始 viewport 的 12%，且 latitude span 上限為 0.025°；其餘 City 維持 28%，避免高密度 City 聚焦後仍顯示過大範圍。按住 Shift 再拖曳至少 12px 的矩形範圍時放大，選取範圍須維持地圖原有長寬比例以避免幾何變形。滑鼠滾輪以目前游標位置為縮放中心，向上滾放大、向下滾縮小，最大縮小範圍不得超出該 City 的初始自動縮放範圍；游標位於 City Map 上時必須攔截該次 wheel event，避免頁面同時垂直捲動。框選與滾輪縮放使用約 260ms 的 ease-out viewport animation；`prefers-reduced-motion` 時立即切換。"Reset view" 或在已放大的地圖非控制項區域連點兩下，皆以相同動畫回到初始範圍；Escape 取消尚未完成的框選或平移。拖曳互動不得誤觸 POI 鎖定。所有 marker、filter、Back control、Reset view 與 metadata 控制項必須支援合理的 accessible name、可見 focus indicator 及適用的 keyboard 操作；動畫與 spider layout 必須遵守 reduced-motion 設定。
 
 FR-MAP-12 (City Map POI metadata) [MVP+]: 地圖下方固定的 POI metadata 區域第一版只顯示 POI 名稱、類別與子類別。主名稱位置顯示 OSM `name:en`，不存在時使用經審核的原始／Google 顯示名稱；若 OSM 同時提供 `name:zh-Hant` 或 `name:zh`，在主名稱下方以較小字級顯示中文名稱。沒有可靠第二語言來源時不自行翻譯，也不重複顯示相同名稱。POI 圖片為 optional；加入圖片後，若有多張圖片，使用與 Country preview 一致的上一張／下一張控制與滑動行為；沒有圖片時只顯示文字資訊，不顯示空白 carousel。Visit ID、原始／當地造訪時間、造訪次數、Google／OSM metadata、配對距離、信心值與審核狀態均不公開顯示。
 
@@ -47,19 +47,19 @@ FR-MAP-12 (City Map POI metadata) [MVP+]: 地圖下方固定的 POI metadata 區
 
 本工具不屬於正式 MVP，僅用於完成 City Map POI 資料審核。UI 在審核完成後可移除，但審核結果必須保留，且不得直接修改 raw POI data。
 
-TEMP-FR-01 (POI Review)：點擊 City Map 的 POI marker 或左側待審核項目後開啟審核面板。面板提供可編輯名稱，以及 Keep／Discard 決策。Keep 時可複選 Attractions（新紀錄預設勾選）、Shop、Restaurant；至少選一類。Discard 不保存類別。再次審核同一 POI 時載入並更新原紀錄。
+TEMP-FR-01 (POI Review)：點擊 City Map 的 POI marker 或左側待審核項目後開啟審核面板。面板提供可同時編輯的英文／主要名稱與 optional 中文名稱。既有中文名稱作為中文欄位預設值；沒有中文名稱時可留空或人工補入。Keep 使用綠色 `✓ Save POI` 明確動作，並以 radio 單選 Attractions（新紀錄預設）、Shop、Restaurant、Accommodation 或 Transportation；必須選擇一類，審核結果只保存該分類。Discard 使用紅色 `✕ Discard POI` 明確動作且不保存類別，兩者不得只依靠同一組 radio 與單一保存按鈕區分。再次審核同一 POI 時載入並更新原紀錄；既有複選紀錄載入面板時使用其第一個分類，重新保存後轉為單一分類。
 
-TEMP-FR-02 (Review Persistence)：審核結果以 POI ID 為唯一鍵，與 raw POI data 分開儲存在瀏覽器 localStorage，可離線使用並於重新開啟後載入。每筆至少保存 POI ID、編輯後名稱、Keep／Discard、類別、review status 與更新時間。工具另提供 JSON 匯出與匯入，以便備份、跨瀏覽器移轉及後續資料前處理；同一 POI 匯入或再次保存時採 upsert，不得新增重複紀錄。
+TEMP-FR-02 (Review Persistence)：審核結果以 POI ID 為唯一鍵，與 raw POI data 分開儲存在瀏覽器 localStorage，可離線使用並於重新開啟後載入。每筆至少保存 POI ID、編輯後英文／主要名稱、optional 中文名稱、Keep／Discard、類別、review status 與更新時間。工具另提供 JSON 匯出與匯入，以便備份、跨瀏覽器移轉及後續資料前處理；同一 POI 匯入或再次保存時採 upsert，不得新增重複紀錄。新版審核格式必須可載入舊版單一名稱紀錄，並將缺少的中文名稱遷移為空值。
 
-TEMP-FR-03 (Review Marker)：City Map 上已審核與未審核 POI 必須使用不同 marker 樣式，不能只以文字狀態區分。原始 POI 類別的顏色與形狀仍保留。
+TEMP-FR-03 (Review Marker)：City Map 上未審核、Keep 與 Discard POI 必須使用不同 marker 樣式，不能只以文字狀態區分。Keep marker 加上綠色勾號，Discard marker 加上紅色叉號；原始 POI 類別的顏色與形狀仍保留。
 
-TEMP-FR-04 (City Review Progress)：City Map 左側列出目前城市所有尚未審核的 POI 與 `reviewed / total` 進度。點擊項目後，地圖以動畫移動並放大至該 POI，同時開啟審核面板；完成 Keep 或 Discard 後即時從待審核清單移除。
+TEMP-FR-04 (City Review Progress)：City Map 左側列出目前城市所有尚未審核的 POI 與 `reviewed / total` 進度。點擊或 hover 待審核 POI 後，地圖下方的 POI metadata 區域須以 `latitude, longitude` 顯示六位小數座標（例如 `52.372931, 4.912194`），使文字可直接貼入 Google Maps 搜尋，以供精細位置比對；不將座標塞入左側狹窄清單。點擊項目後，地圖以動畫移動並放大至該 POI，同時開啟審核面板；完成 Keep 或 Discard 後即時從待審核清單移除。每筆待審核 POI 另提供在新分頁開啟的 Google Maps link，所有連結一律以該 POI 的公開 `latitude, longitude` 作為 query。前端不得接收或組入原始搜尋文字、時間或活動紀錄。
 
 TEMP-FR-05 (Country Review Progress)：Country Map 左側列出該國每個 Travel Map City 的 POI `reviewed / total` 進度。點擊城市進入其 City Map；所有 POI 已審核的城市使用完成樣式。零 POI 城市依集合完成規則視為完成。
 
 TEMP-FR-06 (Europe Review Progress)：Europe Map 左側列出各國的 `Cities: reviewed / total` 與 `POIs: reviewed / total`。點擊國家進入 Country Map；一個國家的所有 Travel Map City 都完成時，該國使用完成樣式。
 
-完成定義：POI 存在 Keep 或 Discard 紀錄即為已審核；城市的所有 POI 已審核即為城市完成；國家的所有 Travel Map City 都完成即為國家完成。後續資料流程為 `Raw POI + Review Result → Cleaned / Approved POI Data`，合併與公開資料產生由 preprocessing 執行，不由瀏覽器直接覆寫來源資料。
+完成定義：POI 存在 Keep 或 Discard 紀錄即為已審核；城市的所有 POI 已審核即為城市完成；國家的所有 Travel Map City 都完成即為國家完成。後續資料流程為 `Raw / Recovered POI + Owner-confirmed Manual POI + Review Result → Cleaned / Approved POI Data`，合併與公開資料產生由 preprocessing 執行，不由瀏覽器直接覆寫來源資料。
 
 FR-EXP-01 (Expense Page Selection): Expense 畫面最左上方兩個互斥按鍵: Transportation / Accommodation 代表現在 Show 的頁面是交通還是住宿相關的資訊，預設是 Transportation
 

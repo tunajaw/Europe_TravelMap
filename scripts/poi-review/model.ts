@@ -180,7 +180,8 @@ export function extractMapsViewportCoordinate(url: string): Coordinate | null {
   } catch {
     // A malformed private URL must not abort the review-data build.
   }
-  const match = decoded.match(/@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/);
+  const match = decoded.match(/!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)/)
+    ?? decoded.match(/@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/);
   if (!match) return null;
   const latitude = Number(match[1]);
   const longitude = Number(match[2]);
@@ -194,7 +195,7 @@ export function parseMapActivityHtml(html: string): MapActivity[] {
     const block = blockMatch[0];
     const content = block.match(/<div class="content-cell mdl-cell mdl-cell--6-col mdl-typography--body-1">([\s\S]*?)<\/div>/)?.[1];
     if (!content) continue;
-    const detail = content.match(/^([\s\S]*?)<a href="([^"]+)">([\s\S]*?)<\/a><br>([\s\S]*?)<br>/);
+    const detail = content.match(/^([\s\S]*?)<a href="([^"]+)">([\s\S]*?)<\/a>([\s\S]*)$/);
     if (!detail) continue;
     const actionLabel = plainText(detail[1]!);
     const action: MapActivityAction | undefined = actionLabel === "Searched for"
@@ -207,12 +208,17 @@ export function parseMapActivityHtml(html: string): MapActivity[] {
     if (!action) continue;
     const title = plainText(detail[3]!);
     const url = decodeHtml(detail[2]!);
-    let occurredAt: Date;
-    try {
-      occurredAt = parseTakeoutCstTimestamp(plainText(detail[4]!));
-    } catch {
-      continue;
+    let occurredAt: Date | undefined;
+    const trailingLines = detail[4]!.split(/<br\s*\/?>/i).map(plainText).filter(Boolean);
+    for (const line of [...trailingLines].reverse()) {
+      try {
+        occurredAt = parseTakeoutCstTimestamp(line);
+        break;
+      } catch {
+        // Directions rows may contain an address between the link and timestamp.
+      }
     }
+    if (!occurredAt) continue;
     activities.push({
       activityId: stableId("map-activity", action, occurredAt.toISOString(), url),
       action,

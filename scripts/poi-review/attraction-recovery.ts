@@ -8,6 +8,7 @@ import {
   type Coordinate,
   type MapActivity,
   type OsmFeature,
+  type PoiCategory,
   type PoiNameMatch,
   type TravelCity,
 } from "./model.ts";
@@ -53,6 +54,7 @@ export type SearchedPoiRecoveryRow = {
   latitude: number;
   longitude: number;
   matchedOsmName: string;
+  matchedOsmCategory: PoiCategory | "";
   matchedAlias: string;
   nameMatchMethod: PoiNameMatch["method"] | "none";
   nameMatchScore: number;
@@ -168,16 +170,16 @@ function measureEvidence(
   const activityTime = Date.parse(activity.occurredAt);
   const nearby = nearbyEvidence(location, evidenceIndex).flatMap((point) => {
     const pointTime = Date.parse(point.occurredAt);
-    if (pointTime < activityTime) return [];
     const distanceMeters = Math.round(haversineKm(point, location) * 1_000);
     return distanceMeters <= EVIDENCE_RADIUS_METERS ? [{ point, pointTime, distanceMeters }] : [];
   });
   if (!nearby.length) return null;
-  nearby.sort((a, b) => a.distanceMeters - b.distanceMeters || a.pointTime - b.pointTime);
+  nearby.sort((a, b) => a.distanceMeters - b.distanceMeters
+    || Math.abs(a.pointTime - activityTime) - Math.abs(b.pointTime - activityTime));
   const nearest = nearby[0]!;
   return {
     nearestDistanceMeters: nearest.distanceMeters,
-    nearestGapHours: Number(((nearest.pointTime - activityTime) / 3_600_000).toFixed(1)),
+    nearestGapHours: Number((Math.abs(nearest.pointTime - activityTime) / 3_600_000).toFixed(1)),
     closestSource: nearest.point.source,
     within75: nearby.filter((row) => row.distanceMeters <= 75).length,
     within200: nearby.filter((row) => row.distanceMeters <= 200).length,
@@ -271,6 +273,7 @@ export function recoverSearchedPois(options: {
       latitude: location.latitude,
       longitude: location.longitude,
       matchedOsmName: classified?.feature.name ?? "",
+      matchedOsmCategory: classified?.feature.category ?? "",
       matchedAlias: classified?.match.matchedAlias ?? "",
       nameMatchMethod: classified?.match.method ?? "none",
       nameMatchScore: classified?.match.score ?? 0,

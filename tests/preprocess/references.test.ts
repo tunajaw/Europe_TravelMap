@@ -6,7 +6,7 @@ describe('reviewed reference data', () => {
     const references = await loadReferences(process.cwd());
 
     expect(references.countries).toHaveLength(20);
-    expect(references.cities).toHaveLength(76);
+    expect(references.cities).toHaveLength(84);
     expect(references.airports).toHaveLength(28);
     expect(references.index.aliases.size).toBe(102);
     expect(references.index.aliases.get('Skopje')?.cityId).toBe('city-skopje');

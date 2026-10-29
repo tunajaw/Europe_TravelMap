@@ -1,15 +1,18 @@
 import type { TravelData } from '../../domain/travel-data.ts';
 
 export const POI_REVIEW_STORAGE_KEY = 'europe-travel-map:poi-reviews:v1';
-export const POI_REVIEW_SCHEMA_VERSION = 1;
+export const POI_REVIEW_SCHEMA_VERSION = 2;
 
-export const POI_REVIEW_CATEGORIES = ['Attractions', 'Shop', 'Restaurant'] as const;
+export const POI_REVIEW_CATEGORIES = [
+  'Attractions', 'Shop', 'Restaurant', 'Accommodation', 'Transportation',
+] as const;
 export type PoiReviewCategory = typeof POI_REVIEW_CATEGORIES[number];
 export type PoiReviewDecision = 'Keep' | 'Discard';
 
 export type PoiReviewRecord = {
   poiId: string;
   editedName: string;
+  editedLocalizedName: string | null;
   decision: PoiReviewDecision;
   categories: PoiReviewCategory[];
   reviewStatus: 'reviewed';
@@ -19,12 +22,14 @@ export type PoiReviewRecord = {
 export type PoiReviewMap = Record<string, PoiReviewRecord>;
 
 type PoiReviewFile = {
-  schemaVersion: 1;
+  schemaVersion: 2;
   exportedAt: string;
   reviews: PoiReviewRecord[];
 };
 
-function isReviewRecord(value: unknown): value is PoiReviewRecord {
+type LegacyPoiReviewRecord = Omit<PoiReviewRecord, 'editedLocalizedName'>;
+
+function isLegacyReviewRecord(value: unknown): value is LegacyPoiReviewRecord {
   if (!value || typeof value !== 'object') return false;
   const row = value as Partial<PoiReviewRecord>;
   return typeof row.poiId === 'string' && row.poiId.length > 0
@@ -36,15 +41,26 @@ function isReviewRecord(value: unknown): value is PoiReviewRecord {
     && typeof row.updatedAt === 'string';
 }
 
+function isReviewRecord(value: unknown): value is PoiReviewRecord {
+  if (!isLegacyReviewRecord(value)) return false;
+  const row = value as Partial<PoiReviewRecord>;
+  return row.editedLocalizedName === null || typeof row.editedLocalizedName === 'string';
+}
+
 export function parsePoiReviewFile(source: string): PoiReviewMap {
-  const parsed = JSON.parse(source) as Partial<PoiReviewFile>;
-  if (parsed.schemaVersion !== POI_REVIEW_SCHEMA_VERSION || !Array.isArray(parsed.reviews)) {
+  const parsed = JSON.parse(source) as { schemaVersion?: unknown; reviews?: unknown };
+  if (![1, POI_REVIEW_SCHEMA_VERSION].includes(parsed.schemaVersion as number) || !Array.isArray(parsed.reviews)) {
     throw new Error('Unsupported POI review file');
   }
   const reviews: PoiReviewMap = {};
   for (const record of parsed.reviews) {
-    if (!isReviewRecord(record)) throw new Error('Invalid POI review record');
-    reviews[record.poiId] = record;
+    if (parsed.schemaVersion === 1) {
+      if (!isLegacyReviewRecord(record)) throw new Error('Invalid POI review record');
+      reviews[record.poiId] = { ...record, editedLocalizedName: null };
+    } else {
+      if (!isReviewRecord(record)) throw new Error('Invalid POI review record');
+      reviews[record.poiId] = record;
+    }
   }
   return reviews;
 }

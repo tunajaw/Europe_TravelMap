@@ -1,0 +1,2291 @@
+[
+  {
+    "poi_id": "attraction-node-240866019",
+    "name_hashes": [
+      "0c99bce108cd3bc0920eed0bfd0894749839281d6dac468e774c0f0dcbdf6092",
+      "a1392f014e7017b0b52224aa05ad792fb12515953bb9683c05ab335fcc5adc63"
+    ]
+  },
+  {
+    "poi_id": "attraction-node-244036327",
+    "name_hashes": [
+      "298e77bd4eac2cf651b78458e0d1966c66cf7055947e1f040ae9d6c32b74f9b6"
+    ]
+  },
+  {
+    "poi_id": "attraction-node-3445660920",
+    "name_hashes": [
+      "490348697e9cfe659699b08aed3418aa9f7a9db32cb2624a51a7a0a9480164f9"
+    ]
+  },
+  {
+    "poi_id": "attraction-node-417346627",
+    "name_hashes": [
+      "524ee6f33d1578d0aef32f035e6c5b03ec6832ad8ea4d90bd36d17788c085157",
+      "862a23c1b300c3963947e229dc49be514bddf6bff94a1df22000f43503e13a0a"
+    ]
+  },
+  {
+    "poi_id": "attraction-node-5276390706",
+    "name_hashes": [
+      "546b8262836926816b3874992ed85a4870bc5af26acd91f271b15c5fb507dbbb"
+    ]
+  },
+  {
+    "poi_id": "attraction-node-703266500",
+    "name_hashes": [
+      "96d9f7a35e86f8bd96fa7f460219621cc1343f6953f4a8c2ca99211cf1b64897",
+      "e5b1aa71cbf93fb565ed79d390d70cae83c840e838eb6faf003634fad3e8e76d"
+    ]
+  },
+  {
+    "poi_id": "attraction-node-910390736",
+    "name_hashes": [
+      "93f591402644434fe02e4ab013ef75e3151c7e2c770e1527fed87fa00f34c9f2",
+      "ff467e8aad3cd96a495843384903726289c7ec1102a844ac9b4f692c5190f292"
+    ]
+  },
+  {
+    "poi_id": "attraction-relation-6751056",
+    "name_hashes": [
+      "a89649d8160d4b0338baf1c030ce5c2f63514280b55c557f200137ce1005e51e",
+      "dc503c61a6f9387edba62ab240da555b03de90296f6aa2b954625e794e4822df"
+    ]
+  },
+  {
+    "poi_id": "attraction-relation-9503840",
+    "name_hashes": [
+      "58418e7245306f220ea96e2ae214acd30278f3f338ae3739a7c74fcb1ace2957"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-122237921",
+    "name_hashes": [
+      "12249d5fd02ed9a326160dc72ff10150c62a884f5d7107cd281076726a828a24"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-15804929",
+    "name_hashes": [
+      "5b8858ab83d00bad53d4418991c1df04aa6d788db1383d2a05be69164a5b3fda"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-19856722",
+    "name_hashes": [
+      "0390ddc3bcc2193e9bea9dfccdb99ccc2b001631fbd063a72b7e980020f47e8c",
+      "27f821a01026a71152aa897aece349adc3615b108d3a094c9ee3664cf719f387"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-23762981",
+    "name_hashes": [
+      "78f75fc13f3baad27558a0b3de986fb268d5dc7026e391d57a2f3123360b42eb",
+      "adc98808844c465cf32327c25eebc112f4548cee67fd1a3a0d872552b2dff9a1"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-33845624",
+    "name_hashes": [
+      "31bb55c1e2497747d2c905a1eb230c998663c2f0aa4d64c39fef2a01865980e3"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-35100527",
+    "name_hashes": [
+      "1b87523577a8241231c842aa13ca0e4db35335979c6b34dd42ac3f7928c7f84e",
+      "98294d72087ca4eca2525ae9db7d3587d1d8dec87dba03d473361978bc7ec4e0"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-361846817",
+    "name_hashes": [
+      "f1605bab088568ee29f77405fdce2160a1e76459979e9bb70289579e5b886432"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-4208595",
+    "name_hashes": [
+      "906f6cd3ff1bd6df8bae9c8464bd778846eda76497351c2c0c2b0b9170616f83",
+      "fd1bcb308355a25eb0bfccadd168ad19958aa0376f14b1e52c0a17799b3ca36d"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-47515468",
+    "name_hashes": [
+      "01c3006cdc8b70ff7bd44aae4d77bda01f815d81f50529f99964a2c50327403e",
+      "c2a88047e6bd5b4e3c1445a8b8aca8b0a2450441ba859759f67edb52c12b37b2"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-5013364",
+    "name_hashes": [
+      "61836c84710950759f3e5561c6abdd9b3e561f2bdc953ccc67e27a79c7259d82",
+      "ddfdc0405ccfdee85ecc7e227e48f6c98f1adba8fd6dc177609d5b43269dd08c"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-503091186",
+    "name_hashes": [
+      "907156abf99ff29207897c7b54b50ece7a97dd1397ed28ad16be6650a3c07c03"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-69661309",
+    "name_hashes": [
+      "6ad098fea6e93ffd36412837ac7baa1142d5a31332f826ba57260295b193829e"
+    ]
+  },
+  {
+    "poi_id": "attraction-way-716912509",
+    "name_hashes": [
+      "b9a1b1dd7c1e4d6083454ca339683de5da1be0ba53f5349d135f727a347e9c11"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-00865a6d0c83b9",
+    "name_hashes": [
+      "ff55d151161e21a5d2b9908da340e8f1a28b2640a0015f2a1620fd957529456e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-011b8e5bbc792b",
+    "name_hashes": [
+      "9deeb322af548aaab040f966f4cf7da8b69563dcd5b0a02ae08dc46ef1ca1a37"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-01eb61f35693c6",
+    "name_hashes": [
+      "2f38f8ff1aa719d0fd38aa8e2f6b7f2953b190a0813853b019c88e517de9f7d7"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-01f182410d0742",
+    "name_hashes": [
+      "a2bb1ecf0cbdc5157f74fa44750819b66b3abecdd91e66afd5edc7c37762dd66",
+      "f7f83a8abf147b9c3ce79daf9a3609cb68b22862190e98f69beac601871df7a8"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-026fcddaf69578",
+    "name_hashes": [
+      "417b54d128dd5e221433a385dfd497aa643a5cba4ff6bf2489d90071a868ed8f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-02855763fd2bd0",
+    "name_hashes": [
+      "93dd24e31f6b6ddad229c95c4d015dde3762811286221b569bf9421152f2bd2b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0345e34d20da79",
+    "name_hashes": [
+      "dadb953c6a8a6a784e7a0e27e4da67bea50b0a5d75a4a21c71659d3828808ece"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0400b8a7a5e0dc",
+    "name_hashes": [
+      "1b092ab90e19942bc8254dba20dc7ee9ea26c22fd9cbbd35d3d7eff94544f6dc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-042182b0e69746",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0433bce41810b3",
+    "name_hashes": [
+      "1d20ac0de43d81b164780d63281c986aa3e7b2a0b876a95e8862f88914a76bf2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-050d9c218042d4",
+    "name_hashes": [
+      "ab3ef3489cf1239f0bfad15672cb4f72d454ad9e834d774b8880325070e0011c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-051508cde618d8",
+    "name_hashes": [
+      "4620ce24fb8eb2e8e7e345d917680451a62fa8af53c88baf97536fd56ec3bbb2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-07fe18de4068e7",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-091b99a28719d5",
+    "name_hashes": [
+      "cd206068496a493c6c7c80cd0a0a303a15b7a4d66de0531421d88169bab7db42"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-09950015f45292",
+    "name_hashes": [
+      "7be6ade3183cead058d7c2e8ebbb23dc1b2c32d283afaa6c240ef2469458d28c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0aac82194a3cd7",
+    "name_hashes": [
+      "517974f0d81f113fc1076439e083e93b8b57378c0526ff0214e28f5fe00075c7",
+      "da15a60eba675d5688a53209ce728678cad79283bc3f05280ab61d127538f088"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b02481c02ab66",
+    "name_hashes": [
+      "0239b37d774ed8151d3b2c49fe51344e79d7bef0283111d49d22bb1f946efd3a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b53d8dc097550",
+    "name_hashes": [
+      "198768222f1c73b15343e22bc662f2f5452c29946c649dd552f48d86a82588aa"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0ca673de874005",
+    "name_hashes": [
+      "9a410140060180cd7b04668d76ba42af594812337658af89133f0441f7d52060"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0e89c0ec719663",
+    "name_hashes": [
+      "e24ad7cb9c634b12e58e175f0677c1b8fa79459e730c4dd8057e52d556dd1c1f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0fffa11adce0e8",
+    "name_hashes": [
+      "46d94b85e7896bf6a86c7481659fd51129d3be966110dccc6fcc313b7ae20a4f",
+      "6a6981c7519e397870a52a02bd0bfdefd5a642768566363fd38c46649ab27137"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-100c053c5bdc2e",
+    "name_hashes": [
+      "7cfceab00a4b36590661eabd7912aab1d06f4a97aa54649745fd664801cbf89b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10320699ee3fcd",
+    "name_hashes": [
+      "c3634dba104fbd9ba7f76961b0ac3308b05ac22e99457777d29411af8391c17e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10b16854e79c24",
+    "name_hashes": [
+      "0bb0fe14f0f198616f9b53357a8006c7b9654859a8a9b77827b73270cc10e790",
+      "13b4a321e338c9b04d5cf5d25a6279752ddbb6b9bfefe00aa56bb3d2d2b99d17"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-119c7aeac5d3a5",
+    "name_hashes": [
+      "3502a24f8761e400766eaca09e7372e8ac81f44498a77e02c50b37211ba61e1b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-11dfcb1f349b9e",
+    "name_hashes": [
+      "f59442a2695074cb5adf43ab78c0b08d361e5c1cc5f3c1a41fbcf51fed6ddb4a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-131ad6387d6bd3",
+    "name_hashes": [
+      "ace66e57d4e2c6e31f62cf1113eec9f292b1c70a44cdbc53f2dcecc49792ad49"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-14480c82f6e712",
+    "name_hashes": [
+      "60f8b19bcecb7140413a1a6f240bbd259fd09ee680a033bf3a8c686f0fee9e3d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1473d7e90b40d7",
+    "name_hashes": [
+      "e0d483ab9f5fd17464783c61c87f0de212990c43c546083d9e23ce1cc982b6ca"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-158581bd162770",
+    "name_hashes": [
+      "ab3ef3489cf1239f0bfad15672cb4f72d454ad9e834d774b8880325070e0011c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-15a62c24760161",
+    "name_hashes": [
+      "8633e1db559865489ca7bd994610a48d050864df09d0913ce0c378bde6c6177d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-168902d9bf852d",
+    "name_hashes": [
+      "14dab673df388390ab8fea23639ebc433d389815cad01c19c9022561a2fb4b19"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-171c3a3a5a691c",
+    "name_hashes": [
+      "c76a36f29171971880cd463133033bdbb2ef4525fb914667acf5c28b8c9b5232"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-17d3f1acf8c102",
+    "name_hashes": [
+      "cd342020d78f65367f2e3338477f4b8ba54d225563f538b4b9ce14307fad9764"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1856b5002f117a",
+    "name_hashes": [
+      "fb9f2aa2b93d49324d424e427b2117ba6401f3ee6d3f5551eef18a1ffd8d686e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-188c63434d7575",
+    "name_hashes": [
+      "2e684ae60fb60f51e4f9af1553c4226003e1d34a0bf91594d01b142598bce0d8"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-19b08169d18f2c",
+    "name_hashes": [
+      "5f70790d8bbb71804d5b73a6921565e39b5f01c6d90e1c6385e5ce026560bc17"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-19c40d434f5cb9",
+    "name_hashes": [
+      "07b8411b45e84dd35448670b39e855eb3caba05b9b8fe31a86f4085eeb243761"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-19d949e0af37ba",
+    "name_hashes": [
+      "fc3e35e03474d0bbab1a327feec6a769f59f7b21eb1a29524dc9117474e9eda5"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b3d287fb221fa",
+    "name_hashes": [
+      "4219b502e0d0411d1fed3b609f95f86138fcbef1418d5e2f08db31b13fdff95d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1bfb6212547cfa",
+    "name_hashes": [
+      "8d2ad59ec14590de81d0c8f95695ad358ab42a006f48a2c42d0f23121a5578d8"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d521814f85c75",
+    "name_hashes": [
+      "da9f652d394127e3ea1726c0815fa1d36a14afe24c9e8cf06ab1645bfab620cc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d61a3268196b8",
+    "name_hashes": [
+      "f381adf2d0fa3d296702cf8b7b180790d153dd5986265cd5d01dc08cc7d6fc93"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1e5e355a059ac2",
+    "name_hashes": [
+      "aa69c6027e04a6ad1c9526b1e08cfc89b8ca19b74c13a7e96f2fc3efa6f0b2cb"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1eca77add10db5",
+    "name_hashes": [
+      "cc0fc14ca8321bb5fad7ab5572530486916350d91507491834cc9466a2afc3fd"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2004d74174484d",
+    "name_hashes": [
+      "7b8d4d167456dae82bf15f0e69e73f95dff48f2f4403d97ee07a7bdf1d401e8e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-205ce6fe0dac06",
+    "name_hashes": [
+      "e322c5921310b2720caf672aad6c4e36c5c8f953aa89a3c9a777112e2d14ce20"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-20b5c972ac5d9a",
+    "name_hashes": [
+      "0d5a92b712795c40da0b48cbe98c2b5344b0edfa8ea02482c310d9cd883291a5",
+      "f383cce458a4174e71fee53170ba83c67d5d2217b32297726336da082c0a21b3"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-21707d36c5a8d0",
+    "name_hashes": [
+      "6e533337bd970a97d7ac74f6f8f891e70a702b45ac5d03469006d2835844e4d6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-22434443a7b2c2",
+    "name_hashes": [
+      "eefa3980fdf345e9f673e115a77224b8ed56a8c286dc38def70699f6bbec22a4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-24520a15b0ee25",
+    "name_hashes": [
+      "b2d9b98b9a08e318610495e254ad9fccbf46eec323ba229211e656d83362b7a6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2617628e205ef5",
+    "name_hashes": [
+      "f35de7bde22539bbb127dede9ddfc0e2d953150f4706125c2cbf4df3a616cec4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-28ec4c4922fdc2",
+    "name_hashes": [
+      "04372ba269b2d9f5277318b8b7942372b2fa0f75baeddae5e10b0630769b750b",
+      "648d2b31c05f8d7fcf795cbbbd75d8680fde6ac91044a318408be3a0950e0ce1"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2b1530d2c9fb7d",
+    "name_hashes": [
+      "4c42c1e137978d6e5f86e34bbe4902d11289d5c665d3121094dffee3375f6e15"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2b70ec76770df3",
+    "name_hashes": [
+      "a6188622aab1dfdbcd13ecf6a5dc6c5de3ed12aca5b06be0775b27e23e5f59ac"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2b7c77610ff2fc",
+    "name_hashes": [
+      "8693873cd8f8a2d9c7c596477180f851e525f4eaf55a4f637b445cb442a5e340"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2ca9a65e585d00",
+    "name_hashes": [
+      "275975c2cdf29429d6866a5aba2489137ba7b582516a3284e73b7ef7a70ed204"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2d67f90e12cf7b",
+    "name_hashes": [
+      "233a43ad60e075e41b84bc4ce3d815b8ede54d744adf8f5d94260dafa44f5b98"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2e8b8b8459c47e",
+    "name_hashes": [
+      "f234070e0d65d44412b617090fda70ec14440fabaf28d73bdb513295540281e9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2ea4cb1ead8cc9",
+    "name_hashes": [
+      "804083ca7aa232123e459f5a1c62d12167a65215d6a8b115a5b5cdeec8bca4c9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2f5defbfb937e2",
+    "name_hashes": [
+      "2c1a3601176c65288d26fe7d99152fd5166f7941f1367e6b35b1c40d643eaa52",
+      "d959d425693d399d00df442c4468018e4a8f916b08e58c56ce9da00fa3db854e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2fea7cde30de8c",
+    "name_hashes": [
+      "dd7847e6c58b5b7bc6326900d130376ff97f6f98779cac7f23cdecec1a19d7c6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-30842a5e9bf465",
+    "name_hashes": [
+      "69a4692a0f3afdeb6f47fae4d9d5176eb6bcf9f2a5898093661e9abbcf404acb"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-30c1fbf995acaf",
+    "name_hashes": [
+      "220659c36386c6cac6d9f3d0416daa45d1ff4f518a8bc3684ddb9dea1f329e2d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-31b759bb309399",
+    "name_hashes": [
+      "73c533e238ef06a960d7e3630e272d76b3d2ce8b59d8fdf1575f5b30158d0acc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3200e0533eeb30",
+    "name_hashes": [
+      "a789a7d588cb1982d0b95c19cd74e3fcce0dcb447faf14c6e4c03ac8cea8081d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-33bb8345c5d314",
+    "name_hashes": [
+      "c1566cd30726303d4655aaaa39ec5fedbce3b4ad566cca5969496313dd057a15"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-34ef6c06aa4a5d",
+    "name_hashes": [
+      "4b8ddc91e5d5850513f3e71ad081f280bfa3a9982d70d2162586dfab1e1b09e1"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3597905de44bbc",
+    "name_hashes": [
+      "982347c61a2fe04f5b18163a786a852de68fc32a0cb79c6470e055abcf390028"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3739af33f3f3e0",
+    "name_hashes": [
+      "b3827a5e6b62a0cf0385ca36383c0d496a6c912876bcdd8c9eec9f7e56dad378"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3868d63ff11c0c",
+    "name_hashes": [
+      "398d48f952bc74f6aa2dbe914c3a08fe5ea361e069e8cd812b58d87a39b2e046"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-38df0cb7db9efd",
+    "name_hashes": [
+      "3502a24f8761e400766eaca09e7372e8ac81f44498a77e02c50b37211ba61e1b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-393db57673662f",
+    "name_hashes": [
+      "69953541e2f0b45eaa48828fab77aee29f5d7304c76aeb60f2a963e099791b7a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3a7427582d7615",
+    "name_hashes": [
+      "6c15b47034b606f243a6ebd045cfd91de28fef3d6e342839c973fa78e00adac7"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3c8fc54ec065f6",
+    "name_hashes": [
+      "0d21e493464df500fc803f4185d82aff54fc57106baf4383c26f9f38f62fd8ca"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3dbc14ec16fcfb",
+    "name_hashes": [
+      "4341a3028ca82aa1ced4d44e698c15ee70611c8ad5bc6ebed491c3c28eab3d9f",
+      "5ab4a1c7b37bfcfeb5b8a9c59a8a2198bdc8e21a0096830fb8bafee4c76ba9d6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3fd6da8cf1a8f8",
+    "name_hashes": [
+      "e57bd924047ef39d2a206c8bc5c06a0ed38baa918c5054859f5e8ffd23037371"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-418dd781f87710",
+    "name_hashes": [
+      "df6fa48af44ec96985ae715817dce0a6d077ee096fcd4efa711d3f9c94e19441"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-41b3e9e98ddfe6",
+    "name_hashes": [
+      "13dd0bf0fffb6a7582e2a2eceffb58fda5f41c828a3292069a000240843a1e4b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-420e8c0ad3fa1d",
+    "name_hashes": [
+      "088c1339d5c50af836344f0592c71d2cb14b56c88e5f70e821f7f787fa3e2b79",
+      "d18db9e224bbfc1a4975fce33a84b86acc539ee41b4496fb0d8606c0a59d99af"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-424d5e7f095d0b",
+    "name_hashes": [
+      "1f3a0a63ef05a57b0f80badf997d21229752817a26dfa8a53bbd94ba8e3e44a0"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-42bdea581cf93f",
+    "name_hashes": [
+      "9086cdf9770bb6b2c18efcb21227f378d2f2a87f3d3fc2476e1054c29723b475"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-43738d0c327744",
+    "name_hashes": [
+      "b2a9fc8ef13471fdc932b091b61ff6792096fb0be18a00278bfa6e415adeb967"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-438d4c0b54729e",
+    "name_hashes": [
+      "74f7fd1cf08b145c5859b9f402422440c0ddd4a459b584f23e51f2dbfe17380f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-452baa47e9cfe9",
+    "name_hashes": [
+      "9cac31a08ad1a0bdafdb386413be3e2c7e75ace5afcd91f9d0ced133d5714f4e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-456aa9f12ac4bf",
+    "name_hashes": [
+      "3e78e29b2ff6589b529ab33b7f9c303a16ae177e2c288fd4bb0546e169568a34"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-45a9507e7f133d",
+    "name_hashes": [
+      "748aa5f714b7f44a726a7a72e18f98f9595c4a0193715e088b5b816c8873ed28"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-475c87808ba370",
+    "name_hashes": [
+      "37caed767666490557e8da106f8c604d009fe9e14fc19b7124adc5e70dd798cd"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-477df9869febcf",
+    "name_hashes": [
+      "22133c5a2fcd15376a3452685ce736a463a59ff2b51470f1468559448f5fd511"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-48c937c283ef5b",
+    "name_hashes": [
+      "070be9cef925fb23d8ab0c5a0487161823a85f148c2f15b1f95357dc9e50cb85"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4a07fd90658035",
+    "name_hashes": [
+      "e165e42f617646b78a88e497a28d52379a81a4b4a5504bc487d7c972efad8893"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4b6d94fd5f5f92",
+    "name_hashes": [
+      "7b8d4d167456dae82bf15f0e69e73f95dff48f2f4403d97ee07a7bdf1d401e8e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4b8029c00eed95",
+    "name_hashes": [
+      "e88b94d9d18be04e4e6e98c70be0bbf7ee9f40c0705ddfdc59bdabc1750f08fc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4bf85cc8e03609",
+    "name_hashes": [
+      "a0781ac0a6ee48d8a79a6bf8e221795d0cc173355489f43f11053b4ad2a77539",
+      "fe43210aa9433d1c6541225e496a42d5f5db25313d2420daef0e0c8a0839efc1"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4c49b907dc5528",
+    "name_hashes": [
+      "a39a6194bb9c3c7fee0ca1a10a9d2315f876ddc0f946a773afb6040ae52a9331",
+      "e03424e3af9eb7584b3fd50ee307114e7aa968acd5ffe3809ec14a17b4f5425b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4d66742f528dc9",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4dd75bb7baebea",
+    "name_hashes": [
+      "fa35bc2d8b6b79304eedecd542a5b854e149299ea40adf2e87dbea6cd0a1c274"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4de0624908ce37",
+    "name_hashes": [
+      "8576435d13bc5c1c85cbffbcc13268a9cebfbf32bdb0d9adec1642edd76dedc7"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4e73c7334ae848",
+    "name_hashes": [
+      "3671e36f73883a7071638d7657226858e9abb6679b176c4db13eb74549e7db5a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4f82e01b2474bd",
+    "name_hashes": [
+      "38a607db9feab42b138796515b9d75508d1d41cfe339078699e35db7aa0c53ad"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4feb9e8fc7f7e7",
+    "name_hashes": [
+      "15322610c819eb3ab646c1a17eaf0d1547aaa667bcb5cea35bd6c81818365f43"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-50331a7962614c",
+    "name_hashes": [
+      "125043a753c767f9a6e8a5132e6eb2cd80cdfcde85823a5aaa17c99f290ee15b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-512a09bb540d82",
+    "name_hashes": [
+      "1e48be28629f7ab023021545f70cf1013263c4995c498ac432b4c7c9ea960d75"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-512b0739513d45",
+    "name_hashes": [
+      "0dbdc4fb0fbb8e199f1b35ba58207b865a654466b3388ec09542e8098809bd9d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-51e3e26a3b0d5d",
+    "name_hashes": [
+      "cb5b0488797504f7cd57816baaa8fc6556ef2e569c5f3ef23c60149a5cb49f93"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-52b9b8e3d80d33",
+    "name_hashes": [
+      "f9a4fc73ad5965547c0c37bd8e186a69922d53427b2c8ff2a0042a213bb38294"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-53f49c0da36562",
+    "name_hashes": [
+      "ad3b95b90f63b771fa60241b328c6d70e047f45d42755b324125bed209103252"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-549ed6665417cf",
+    "name_hashes": [
+      "332160072b3274bc04fd743071957af1db369c8a2ff6452aedd14a74e3dd7a00"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-54a64796a78a11",
+    "name_hashes": [
+      "5ae1f3f18efb957de393b52e4ddd135f07e0e7c842f0a6fe7cf922c8c6ebffae",
+      "c9e24abac8d94f28c70b88db2b49beb64be31502b3291b2cc33a6911b0586528"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5510b79a957cc5",
+    "name_hashes": [
+      "0ca38fd9d22bda5e33477e032835d4a54d00dedaa02c3b1b0ddc859c8edcd034"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-551967d3786a49",
+    "name_hashes": [
+      "c1d9ba11632baea8b1f96479d06e6ac04566d8b67607fe667132d1933bf102f7"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-559fbfc02321da",
+    "name_hashes": [
+      "2b63bd1a162bbc8d18cef589e3aa5b4f4857781b8e0598b168a8bf367fa0de40"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5767fb352f9219",
+    "name_hashes": [
+      "d33ffb885cbd320e16f291caef7f5d168867867577b57d7f53fab99cba4662eb"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-57946b4dab3a98",
+    "name_hashes": [
+      "a03870f8c9779db70d25c426625e8c90c3a094e01306edbd76050e39bd134c25"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-580699d203592f",
+    "name_hashes": [
+      "59806d6d6b84e8e1ff5e3d81a1f97b7f8e3ed019fcba035e3323c6a122ea7351"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-581a2c48a3e194",
+    "name_hashes": [
+      "5b3cfa697fdb30b5f2e29b4c26ec330d4e6d71a9fa2abe9f7dc9004f89e2cc97"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-585b064c16cb4b",
+    "name_hashes": [
+      "bf533fc9b6bd685dce77e47ffe5e8507b69ff70be98d90f2ae64c693f238b188"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-59279797e70a29",
+    "name_hashes": [
+      "e7bbc58f08d8381488c8bb90ebfce9079ad3c806122f608ed03812318c634dbf"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-59742a2050dac6",
+    "name_hashes": [
+      "35053c8dde1452d27b8c2ac0b4199765f99f91e0141ef1f77ce7f05e28b59588"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5ab2f581a3487b",
+    "name_hashes": [
+      "a1df6edb7020312bbbcedf199df94c5d24a5c2387d3e2bd610bdb3b7568bb8d6",
+      "ebb7b8baadf28194c2a34e83fdc10ee40818344738b5ca2c1d3ba7b41a96f31d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5bfcd38ac0daa1",
+    "name_hashes": [
+      "21fa5c0baba20032bfda1a344ef88973bc797d3d5f9df90b59903c1026fc1775"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5e67f5681399dd",
+    "name_hashes": [
+      "9f3f4a694d5c4d43bbfe7e33e4b02a7ff43a41de5df6774864575d998c9ec175"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5eb9a85519cf55",
+    "name_hashes": [
+      "9b24a03d247aa14060e809e7dbda2f1b201c437046ae93b48d1dc9bb0274ef9e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5f1d6829376af1",
+    "name_hashes": [
+      "6e0b6c7e12cd3d57e7a813a8e4d05153b045815d90dd7422f225ab7859875dcd"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5f6a17d557f1d4",
+    "name_hashes": [
+      "74f7fd1cf08b145c5859b9f402422440c0ddd4a459b584f23e51f2dbfe17380f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-612af2c18f9e65",
+    "name_hashes": [
+      "813cd8339bead4773b15c567bf7b18467c694c65e5fd1a4f3627cb6e986d0171"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-616a4588455e63",
+    "name_hashes": [
+      "271a0bee7ea6ccfbe3613ad49f83bcd8f3cf24f5d77d35046c733a405309a505"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-639d7058c12a1c",
+    "name_hashes": [
+      "58bc6b1824dff2d4608cba75637364db4c4eb3dcafd2f210d9c54c0cb2417249"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6413466ab0e12a",
+    "name_hashes": [
+      "df4948e950c2f70b730bb6d806f6e02d46b9bd9bf933f091356b096d1eebfc7f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-644c4f594e289c",
+    "name_hashes": [
+      "dd110daeeccda41f990fd8172021e5430ed50aafab2ce245b50da479adf86eb9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-650cd7b1fe9d31",
+    "name_hashes": [
+      "76fb353a52b01025a997af794ec84771e4c1db7c34e7b5fd268a12d7258f0615",
+      "d6197551ac096edb5bc1a193fccabbfad2c090924c5dbb3013f5ebb00764dff1"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-66597c02c851d1",
+    "name_hashes": [
+      "35203cddf6184ad4cb0184d04b6c0e3fc21d11ff93edb6ae6aaaa1aa978629b6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-67d72f07fefa56",
+    "name_hashes": [
+      "b78ff9c45a5fe043750273db249457aee86cf4128f61f2d15d136c7f96b65b3b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6894dd7617ad4f",
+    "name_hashes": [
+      "31677d4831f370fc971de787936d12fe7bab762da19f7e4fcb2570d02fcd8c63",
+      "b506778c810980c1c247ddfebc18804172f09afaf0c44d4ebd5a5f93f6797d8d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-68ee50d2932735",
+    "name_hashes": [
+      "cea5ce7c628fd003f267447ded3f35c4bfe0ead7c712de8118a22645b6f6ab35"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-699f97b4ebee2c",
+    "name_hashes": [
+      "ffcc91a8cf78e378552eecf149bb91cd58925e6e4dbeb1023a4a558fdd64cdca"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-69c085c4f9e809",
+    "name_hashes": [
+      "146b13855044f7ab1dc940140d7fbfb00807805fb15810542d7735ab8d18bf2e",
+      "6a182a58e1edb0d75f83493d49708812410ccca2e9ad7e3b3fd1d5effd81758f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6a9db57a9e011f",
+    "name_hashes": [
+      "97e7771b6d68edf742d34f3671230ad59377510d1ce0c3447f5be4cd83b45113"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ad2d7d017b0bc",
+    "name_hashes": [
+      "cde0e753dc250f2c57e27a5815e9eaf3a64df85acf8a3311aab066ba7c90643c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6b08c48627cb4a",
+    "name_hashes": [
+      "4fd71c6877a8f5a9ed93aa508c90d35a081f1c0a6babbf4efd22e3fbf64edef3"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6bee5da5d862a0",
+    "name_hashes": [
+      "69953541e2f0b45eaa48828fab77aee29f5d7304c76aeb60f2a963e099791b7a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6c68b3bc361bb3",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6e6d04f787cff1",
+    "name_hashes": [
+      "712739d2658cd5ca8abba130cb35e9015aa0df2fbc0013a931aa854589146aee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6e990d38d8ec26",
+    "name_hashes": [
+      "cd792971ae853c4803a18fcd5abd0234d20146a831f175b0554681393b1c0090"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ea01ab5526888",
+    "name_hashes": [
+      "556defee8a3a64ff9a4048f4c6a427d93ba7c59624f1f1613d75b25917e416df"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ebed5a02f05d3",
+    "name_hashes": [
+      "f227e212b81beb5b7cbc5770a4759400f13adc4ee777137dfbc944b801501069"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6eda0d0caee087",
+    "name_hashes": [
+      "5546488a38c15a88fd5e2f4d001f6bcf3bf8f811d8e4e23c9b786048b0b5b93c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ee73e0f48f1d4",
+    "name_hashes": [
+      "c0a0606b30ef1960668cb2eed287e6c5adababd4c2f3f247e6b11043f65bfa93"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70c668ae0f742a",
+    "name_hashes": [
+      "95214e6ad78cd9d1309b60d04d17073023de0d4ccaca7974a22178a8c849658d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70cc1f9ae741c5",
+    "name_hashes": [
+      "78831cb63d27c03e5a31bc5e6a43ab7e3d79ba20109a330ae1466cdb8d1a662f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70d04b69aa42fc",
+    "name_hashes": [
+      "8152d174a666aee21e8e7b55066a5f9213aa620ec9121afaf1335d81fb6cc187"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7185c1cbbf11b9",
+    "name_hashes": [
+      "c586e6e60f0187f3b539a1b1a1bcbb713e389e63ccf5d8828333f2a0750e40f8",
+      "fb73953a79a0d78aabb5cfb417ac90b47130e49e36b8fd2e0a68709d17ba9106"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-71ccc6fa11aca4",
+    "name_hashes": [
+      "9a460bf62d3768dea83b0592454b190675f6635c03ad2371f2504a2148069f3c",
+      "f27af7219c0faf740bd2031f7164bfbd6610632660f83e5936b2df5a672a15dc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-73245f2314a919",
+    "name_hashes": [
+      "2bd9b5233c0f0a68ebb5efbca9ee0856d3f9903edd2e2197857712018aebf81d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-733e708e663a38",
+    "name_hashes": [
+      "ab05dd9d253cb187728c8c42fbf55147bcae32d47285f23451eb8882f8e9046e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-73a50acace1769",
+    "name_hashes": [
+      "1a5cbb2ce36c2631c4b0518f404ec3b553bfd14b633e3842ddb8c0d7aa580e29"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-74351bc3f43ff1",
+    "name_hashes": [
+      "6e798ad64863d38ae9863499ea9f415215f83f77cb4f3afaad0e5a8d85491fb0",
+      "dbc7ddf9a0f486a323419a29bddba85bef0570cac0bb1b2a8f3855017fd320b9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-750e2da732a879",
+    "name_hashes": [
+      "1bfadfefd0fe12ec6db125d5f273261588494baf2c85bb45d96738189d2e393c",
+      "cbc8a32b131f2a31fe105dec00ebd4ca0a439ac65f19e8919fc6528745a3bd18"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7642054a4d6533",
+    "name_hashes": [
+      "4775fe2f82a6f6cca558002a51d77875606143f1a6b84f351a5a35a3400249bc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77539deb05db50",
+    "name_hashes": [
+      "1ff0d5493c55e54931669799a3134aa3e6949242967d251cc2cd50d13e86cc61"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7767f8ec963895",
+    "name_hashes": [
+      "d25aac20821557210f1309186e53bfb67a0d2dc94d372cd2b4d9f70828ab2831"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77ab82f209db43",
+    "name_hashes": [
+      "d3115ba24eb95c638537413430256a31d95c58673b57945658f77ae50357fb7c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77ffd8197b0f35",
+    "name_hashes": [
+      "85d042a6ca601c71c51e7597bff3efecf49e7071f0216fd833a2a3de2ac0bd2a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-780b4f7443df91",
+    "name_hashes": [
+      "26fc33dcac6710b011f1c9a2385405b31b12506111f289a9975d530cf0150b84"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-78b64777c4a707",
+    "name_hashes": [
+      "8d4922c61c6a20c67a486808ea60439c805ca41780b4c62caada2009975a36a8"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7a599a85e72da1",
+    "name_hashes": [
+      "ceae00be3407bd865545c0d4b74b3982aaa221e2db81116713f1cac00d012ac4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7b660b7c8582ce",
+    "name_hashes": [
+      "af46d7d573c2193a005c5ca7578bb946706e7798273f5fc4238d1d50ce449b02",
+      "c90fad2053292ccae8b56f315374df93d6c00c19466e3d9cf49ca4a9d18fdd3b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7c090338bbb97f",
+    "name_hashes": [
+      "4e8c66c333ca38db0cd053020ea64df6129ce4985aec7838ed628715fd718751",
+      "f4ad0fe0bf4543ff36129f0781111d891346a268a87e1d0f9b0b57b15b41dac2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7c1c50eb1b6e2e",
+    "name_hashes": [
+      "792bbfaf69ac3defeff1dd730ba69c8f1f3f25a75a9f6e13278c19fbaa7ed758"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7d75ee8cc61cc8",
+    "name_hashes": [
+      "7bd6c02a57c344a8e20c84fc393849b9e92bb703d20eb8c4d21f1e9ac77d1daa"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7d826ff974354a",
+    "name_hashes": [
+      "bf9e7bf2d601e0013d5430882b56603137ea86a5895d99fef1d86cb097b03bdf"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7efa4dadf9187d",
+    "name_hashes": [
+      "5cfaeaceb52a9a279f67a485a4c119b06c025075abae73ae34dac2d85db0eef4",
+      "c6a7f1b42d58e8647ea272b104e031eff7e4696f50317c8457cf4360622d211c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7f982400ab3f6e",
+    "name_hashes": [
+      "31bb55c1e2497747d2c905a1eb230c998663c2f0aa4d64c39fef2a01865980e3"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7fe0208c97174a",
+    "name_hashes": [
+      "ca234b743f2a17371e98b21b0788c9f3a665e3f406c2a147f00b14c943d15a80"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-81b596c99a4abd",
+    "name_hashes": [
+      "d449a868fb5d370c70e49357509dd8779e04efe236f670f754b624843339df31"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-820377a1a7ac33",
+    "name_hashes": [
+      "54b92025fe0e0d0e75ff496863e0116488b40932025878036efa183488fc580c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8380d01ffe7e0d",
+    "name_hashes": [
+      "3a62621d0c3b91a847540453dcb7cf2b592fb7fb09c9edd4f0044fa913593e1c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-83aac320a6bb71",
+    "name_hashes": [
+      "44799b668abc1ed5814bd07474a94b0a08d6f191cf83a738361b57e63011637f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84188dd51e700b",
+    "name_hashes": [
+      "940bc6a63b337c51771e967f8c690b08d4032b352c0a04c815477da372952bf2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-841f621cedbe43",
+    "name_hashes": [
+      "86027098d96e1583dd83763c74f1b2be7953303196d8ce1b1c1859bbc227f341",
+      "d7b63cce452306bd3ec10ce5c0e4e85cee058ef0109d7fe25692b1f8ce857ebe"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84a45e8091fb70",
+    "name_hashes": [
+      "9cc5abd60fe5985380ce1e85a7fbe6a6eecd74ceaeb42c75e2fe9c52810fe590"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84d428361a3420",
+    "name_hashes": [
+      "0ca06886938325d659f7622f0b83582528bbae2cecab78085738165a51e1d702",
+      "609f31c11ab13c03819d65a90f40e0850fa17169c4192c0b82d97cc31385d382"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8541fd80a0358e",
+    "name_hashes": [
+      "f911f4d45a02f03f61f03e555743e83ed25279b8bf7b148e30884bf697cc2a2f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8583d2c9a244cb",
+    "name_hashes": [
+      "86e2d0da8a99b4bd188d7c60fb4678218f1e3c1134dbc19c05d39773577c50a4",
+      "d347223fbc488f97101f7ad030e7851d2369580a4c7712ef5f66266fddb3f0cf"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-86436b6003d800",
+    "name_hashes": [
+      "c4257082d790f9b4a86546ba729020c958fdd03b1d7580bfdde71cfd5c31f164"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-86a69868899d9b",
+    "name_hashes": [
+      "848a143687f7b09c1b370c569110ecd74f127cfcc113a4a0519ad8ddb2b97ee9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-870dff7a161842",
+    "name_hashes": [
+      "dab7d82428372c3ebd5cc0057688bbd18315010821cbd38eb0eff35b68bc9093"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8719f37e4d59d5",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-87eea6725222ff",
+    "name_hashes": [
+      "5fb4cd0f6d7f7f3dc5dff9beb8f2df06bcb6c7423c3ec20581a3c9e3a4a052ae"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-881eff03a72c33",
+    "name_hashes": [
+      "302cd5b1f36df21b5c672231cf324e0d6814bd1d77ad80d3e85a3809cc1a8d6b",
+      "e42dac9b2f90906d6489a785b8ced34971e8997a4d77d1ce7afc5affe026424d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8864f86431fe2e",
+    "name_hashes": [
+      "c2985b7fe176bcf7f74337f3e3f8ed14faa7bb83bd7dd6ac6ebf4aee83da7ecb",
+      "ed91693f9aea913fbdda5308fa00f25d274790029d0114a87156bd46552adf10"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-898ab5d0e42107",
+    "name_hashes": [
+      "25aae88cec92b7b768f643606145dd50fa62b391d5520eabeada9e14b24891d9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8a2d29eca4209d",
+    "name_hashes": [
+      "2aeb7f45f7a53cb4331b0170fa8d7b9a83e21372fc90fc74ca54fc699f91dd4b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8a3285bd0735f7",
+    "name_hashes": [
+      "34954209c37d277d5915de0b0b2f11ba13d273bc764e59cc0653c2415b7dd769"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8b12abe3ea8bed",
+    "name_hashes": [
+      "35f8c9eaecaf8907de6e95ce91349c4c95db732cb2f8a3dc8683a1022850cb4f",
+      "7704c521878692e63a43451b4d3622a980d97e6e07c7a33bb8e8b74f3ac64f6d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8b4558552d91ba",
+    "name_hashes": [
+      "74f7fd1cf08b145c5859b9f402422440c0ddd4a459b584f23e51f2dbfe17380f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8b8027d5ff102c",
+    "name_hashes": [
+      "cde0e753dc250f2c57e27a5815e9eaf3a64df85acf8a3311aab066ba7c90643c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8c14045784bc42",
+    "name_hashes": [
+      "1e6d78b3f95d9c6df6072ef747bde0aea41341191bbadaff65eaf347ad015827",
+      "40e3ffe864a240aae3cb53178166229ee32c31ebb525761dccd252a839431309"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8c1d1b571cde3b",
+    "name_hashes": [
+      "25d5191b5cd17c5f03bfee6c82a40e33a37dd580f9eccad607ab178a7d05a5e6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8ea41c5874fd70",
+    "name_hashes": [
+      "097b95d9dc72253162e6726c1818eaa558db1876d0f151d43cfbf302872a5f2e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-917be08a08ab06",
+    "name_hashes": [
+      "df555a7e403afb3d5530c1167ea5daa5411528a4c04021071a4055b4fd630cc6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-923177f97ba750",
+    "name_hashes": [
+      "20f4bc486cd054a98402fb56185be85b52a9cc472d35cd0dd74d47ff243dabe1",
+      "4da53379d131e363f7c08ef834f3abe113a265ae466f706dba0ea3225a611380"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-926a22c258b611",
+    "name_hashes": [
+      "5fe857f67ffb1bcf8f499a71b65a50826cb343de21ccbf9f33ad129d6dbad0e0"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9327862ac15aca",
+    "name_hashes": [
+      "4a43164a19686b1992123bcfb913f66e6dcebfc9e1ab249c0ddadb64ad294bfe"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-936ad9cd042e6a",
+    "name_hashes": [
+      "7e7125fe80a2567a8394cce61347eba680d8db2b83312e12476382b17397454e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-944e3cef399166",
+    "name_hashes": [
+      "ec7220d19198af6b8310986c07ca70c350a5c133352fb6c8753d3dea5989ebb4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-94e1e7335acbab",
+    "name_hashes": [
+      "5c5178c934449ef1525dbb4bdb0ca8fedfd672095095161d84872b19ffcdd2a6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9580af250f9320",
+    "name_hashes": [
+      "32065efd88991f9c0dc45cd35c26fa2911a39117faf9139dc8689eb50fad4124"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-95a3f9c0ec882b",
+    "name_hashes": [
+      "73c533e238ef06a960d7e3630e272d76b3d2ce8b59d8fdf1575f5b30158d0acc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-95abf6651e6ed3",
+    "name_hashes": [
+      "af08318e58cd5463a4f83748fd4974f7db343631e1df2b96b68eb0981490b5b5"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-975d1c2898e26c",
+    "name_hashes": [
+      "96d9f7a35e86f8bd96fa7f460219621cc1343f6953f4a8c2ca99211cf1b64897",
+      "cafbca6e414777246471db6260892c3f5ea465e91ee46437077ce52bb3149c2d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98d2a049b4ca9b",
+    "name_hashes": [
+      "f9b0e05eba593f2de7fd4820216793d35278d7c9830a5334018bca42b5a91b29"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98e0ab6755a543",
+    "name_hashes": [
+      "56f44aaad4a9a6cf081e6b8cfcdf684522a32df21bbc9322c2466ea441f18a6e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98e8161385ad58",
+    "name_hashes": [
+      "7e1373df9dc36213bc171a171a38c584a2c8aa5505fbb0b5be320deeb2f9db4a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-996a5b05998438",
+    "name_hashes": [
+      "95d9ff72bc8f19daeb892b911c61b715dc7b6707dd23dde7fbb6cbb6fcc554ed"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-99e3bff0528f08",
+    "name_hashes": [
+      "51b7151d397235178439c267b80bcf8d00a9ab004b91ea0e2a0e310a4a8a74f5",
+      "758ec1afa2071dd8a719614dbcdfeef22a5cd825266c63c72cc8dc64f5b4083c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9a42a13023ef07",
+    "name_hashes": [
+      "a860b858265b22dad3aaf1165cfc2936daf1d3d86e0b7b77e3cc07f59f96858f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9a9f7ef889294b",
+    "name_hashes": [
+      "ea43f3ffa6a0ed9e454a79426bee3559e854b918623bf99d9e2254eda0c51f6f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9d068fa0cf5fac",
+    "name_hashes": [
+      "0c4c1c3ea0888517d5887013a018cedba5e721abe80f8e57e69341c7f81cfaf0",
+      "0c8cdd936b140e544be4423501cd15c3b4f910284e264fd70ce83bb0e1cc9ef4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9e261982931b15",
+    "name_hashes": [
+      "7b8d4d167456dae82bf15f0e69e73f95dff48f2f4403d97ee07a7bdf1d401e8e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9eee3058062db4",
+    "name_hashes": [
+      "1671416bfa655c42fcea21abc016f00f8e3b71db110105efa28ff222c0563371"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9f062ce017a243",
+    "name_hashes": [
+      "8f162fa432353498f4ec0aaa65bb488a8e2487f21e0c6f756f3076ea16f061fc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fe46eddf1bb3a",
+    "name_hashes": [
+      "148bf47434d4fa8df47bc54fb1d76408be9143f1a3c85b82745809b30e7b03f0"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fee5e72c29934",
+    "name_hashes": [
+      "8f27d3dcc3a1357e5f4323a193a216282cb38f973579f68e5fb336805228fb1b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a0109ec5d6a280",
+    "name_hashes": [
+      "4a5fbc7200c427575a941be215b821c02ddf3f40c7884dfedb7bf99b1e421b3e",
+      "7b8f7684f819cf9bfcf66d442e52d918a6e8077b5b0b444e7537f476371f7ac4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a060b49acdadcd",
+    "name_hashes": [
+      "712739d2658cd5ca8abba130cb35e9015aa0df2fbc0013a931aa854589146aee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a10cd58a3b7e5b",
+    "name_hashes": [
+      "4abf6ded619a7667026a5d940f6076877d4de10dc39decf2a639257de3152f22"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a179752da9afab",
+    "name_hashes": [
+      "8294222916e56741feb507c65972116a6f0464ba81cb527aa8060c11bc3ef129"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a192c745c83d7d",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a38a1b64cbca23",
+    "name_hashes": [
+      "f592add60ec6502e4aab113522d26c6fc82988f558f0277de9ea8fd979a5553b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a50ecc3adaf4ff",
+    "name_hashes": [
+      "0694601accebcff1045915c327682d3266ecf6998951d8327747cb56143e0488"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a5565032d203aa",
+    "name_hashes": [
+      "ace66e57d4e2c6e31f62cf1113eec9f292b1c70a44cdbc53f2dcecc49792ad49"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a7b106b6df8789",
+    "name_hashes": [
+      "e94fb0442d1832ecb194fc3b027648b3ffc676a91bb95c3a8219660d328287aa"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a8b658dd9d98a8",
+    "name_hashes": [
+      "ddfaf8aabf56fec146b74d086ed3708ccef697ec3509b8f0755673564f7626bc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a916dd6ea2ea24",
+    "name_hashes": [
+      "6955dacba1682a88c41ea401c2033515edc0f338d5bcdccd975991fa3f778795",
+      "f8a26867a2b03fec6a8e95163cd3fe2c1d76e23a6ab9993c171b30d5413fcb32"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a96ce8baceddaf",
+    "name_hashes": [
+      "06c07e54861d86767f2cf043ae7557ac21d92fd2e8421955df2e7689614714b9",
+      "9eccdb31edb68e46740b82f9d3dff9ae02935c1a6c89dcb33e090887e98e278a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-aa9ab8d3467618",
+    "name_hashes": [
+      "4ca70bffd370cd0bf8b2a7d3cbee89709967c81944edee3922fccf284878bd06"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-aae9fedff1621a",
+    "name_hashes": [
+      "8dfc310207803c8c563b004fb38a3601ec36af035171968faf492e1d481dc613"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-abaacd10337b81",
+    "name_hashes": [
+      "083f93c9b5f02edd1470a5c692c96e027eb2b7950576b2db09bb3ff4b706a68e",
+      "a34f73aa1bbc1b7e9e56ef5e50747ec1864c50ff260ba92da23bcc4959c10cc5"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-abf6b7170a4534",
+    "name_hashes": [
+      "1f7990360877fff0ac646e9fbef1a3988d9bd489983bd81664753d648bba9d75",
+      "dd375c5b15ccd4714fd9d4787102689d743883b8e14da3ca38b2ac8e55f55f2c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-afff083476e650",
+    "name_hashes": [
+      "97e6c626bbcadf99fc7d5029566cf7c5ef78f1e28442694d61fcea8a2351af4e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b1713fcba3fb04",
+    "name_hashes": [
+      "a03870f8c9779db70d25c426625e8c90c3a094e01306edbd76050e39bd134c25"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b386a0212161a6",
+    "name_hashes": [
+      "62a3869935455a794e8b35e15112bcfed938fce5637a8ffd87b2dd1d12022348"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b3cee0eafe0835",
+    "name_hashes": [
+      "242ab4ac31522e28fb16163c45c0c19e4402c4a32bcb3b144e7c2edce675b150"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b524d2cf044086",
+    "name_hashes": [
+      "acb0a1e01ad40bb155d3e9584af7adfe0276ae55b473a8ce0b3ceeb62b765ac3",
+      "ad6bfee150afc9879a356916b78bd6c7ca46641856dd8f340e8f7d6790421a0f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b657381b4d4f12",
+    "name_hashes": [
+      "14d14ae76471f101177c1625ba891a39569c3ba02739bc3885eaf24749f67156"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b66d179ee20304",
+    "name_hashes": [
+      "0d799ce374ea68645e98f1f71192034ad62a3fc67c7ab08657b576dec668898e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b6b12e0f5870e6",
+    "name_hashes": [
+      "934f420e9571aac7c329231e0b834b01239fdefc9096b60b48f8fc4154abc0d6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b721a8a0510b53",
+    "name_hashes": [
+      "6aab89976a40d6398fa13451fb45fbb596feffb4a73f072bb4b752655b6ab0a1",
+      "f848b964ebc485db5e430eb949b982dc26474f459952144fd712f7666681584f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b77593ea36f61a",
+    "name_hashes": [
+      "9671aeb3e4bcc83271febdd7d7e8f2ee12f50ffebcd1bc56239232e6f6f66bf8"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b84b3c5560bb54",
+    "name_hashes": [
+      "95bf26dd6eede2d93e0dcac9955aca9c0ece64f5e74d7383295fc62286dbd884"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b88af5bd811ebc",
+    "name_hashes": [
+      "e1dc5d1cbea12790dbb68b0c4124974e885f684d1ec325b7e8975dd584d040b2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b959d9c45dd418",
+    "name_hashes": [
+      "1c6633b40b4d396925d949aee02aa09c93cba01ea1ecb43e3e57d7b62627a9db"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9b0061a9dda88",
+    "name_hashes": [
+      "21972452432d39e35eddecbd667dc101273e26f5571186538047e18be1d6d07f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9e2f6a939056b",
+    "name_hashes": [
+      "929d8ad357381bdbb2e63d411782a596bef8cc655c917bb73d7713e8af38a47f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bbedc62e52bfce",
+    "name_hashes": [
+      "56bd59811a1ad338c7ef3eba70097a39153ed31cabd3a7c3a19255d4c669d10a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bc6af73c7a3ab1",
+    "name_hashes": [
+      "edb2da395c05e99eab37a292ee54a218ca6fda7d28a942da4f7c83f24e19bb1b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bc92176953488e",
+    "name_hashes": [
+      "07973ee136c4e4d7d940683d6a1d78d045b3549e33df0d6678084286b0d2d7fe"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bcf0db2d0f67c9",
+    "name_hashes": [
+      "a58bdd7c4f6c36a74cd1d18c490539a4deced42a8359703b377b6ee1628be61f",
+      "eb162b4c6b57ab5decc86a1bb50fe4f9c0d785b1bd546d603cb97239e96a1a59"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bda1900315411a",
+    "name_hashes": [
+      "d7e2fe56a47c53b0faf775661bde43e0feb67bc5ab58f21476cc23c38f462ec4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bda96b154ac68a",
+    "name_hashes": [
+      "a262ff4786f1224d32aa60789def63b276aac0604d1aa305ed1141290c36009f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-be9a2f7c36dbf8",
+    "name_hashes": [
+      "1738cfbc9239fa538d7fc2785243fa2d04418b76530ef91c6f80a963ee6eaabc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c03748290119c5",
+    "name_hashes": [
+      "712739d2658cd5ca8abba130cb35e9015aa0df2fbc0013a931aa854589146aee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c054f788be122f",
+    "name_hashes": [
+      "c47daba738c60ef18fc0c080fc9158f1038cf34cb9e1dde9f08c695896e9aada"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c1c7ba3a8060e1",
+    "name_hashes": [
+      "a5ba4c040b6dbac8798e460a4fb2317a1be9597494e81457d3f92da35fb1ac77",
+      "a707b668bc17bdea54195b1197a65b09ff3f053f4a4cea0bf4245a2c2fb0e000"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c219e54833a948",
+    "name_hashes": [
+      "c9ba775d4ced8446cf4816167f66b0846f577e93ccf31a43b003967c06782917",
+      "de7930c5392d9aa16043a1b4333d5765129d1abf25bcef1b075631092e6191ae"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2236b569cdcb5",
+    "name_hashes": [
+      "1ba16635a593ae08276448429bc6d60155fc268d968bec234caa4ebb5e2fe51f",
+      "525b50da0d6649a3dc6dc08e90347c571bb46ec67180f5fb84a88ef4ab64ed37"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2a0fec7a383ad",
+    "name_hashes": [
+      "ea132b9f843bd2659d01408c5d486c03649079354de734a784b05b640f96dd51"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2c2c39876f929",
+    "name_hashes": [
+      "1c18c37a67ed521fed0dd03296152e7c941015d423746bbed35736f9e941f203"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2f0477971871f",
+    "name_hashes": [
+      "e8ad6ba344735e801e3af62f418afc49b938f9b71c9ae9b521f67cc312b7fb2c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c3d97190fa6aa8",
+    "name_hashes": [
+      "006e7c32c4b870beae4f18b765750920df78e8bcc89bd01b9935f4ba1275c7c7"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c3fdd76b161378",
+    "name_hashes": [
+      "31a7ee7fea989dc2750d6447628a52a4b33e9b727a79c4a0fbbc15e399120683",
+      "c9cbdf437abf3ac64835475662ed0ce9fc870de95d7fad032cbdff8e6fab4959"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c47318315326bc",
+    "name_hashes": [
+      "2ed0645a98a19f054d3aee12165aeac403a6f55c94335bbc26b89b8aedd791e0",
+      "7fcd404dadba5686c1cc61cf4ae177a4da0ccf00bd17d63ec3d2402610c8d056"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c4b83848522008",
+    "name_hashes": [
+      "7b8d4d167456dae82bf15f0e69e73f95dff48f2f4403d97ee07a7bdf1d401e8e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c6f98a6a7dd45f",
+    "name_hashes": [
+      "2b13f34ec046a6839ef60d99a01b30918392e315cd902aa323d91a0a6a404cfb"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c79071a9bb75f4",
+    "name_hashes": [
+      "605a3a8a44145935b959b8c483bfce9325f453ad8d76332f94e7f96c8f2b2b09",
+      "be31dfcc2e6d8c42ba06b15b8a36d8321dff1e8c9cd0900d35be886dda0bf97c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c7a0df45f8e0e3",
+    "name_hashes": [
+      "eefa3980fdf345e9f673e115a77224b8ed56a8c286dc38def70699f6bbec22a4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c86b98cb3a4dec",
+    "name_hashes": [
+      "a83ec130db6070d3b214773181dc46650d852245e8d33bbbdadf993b1c5437a0"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c8c0949dc9b59f",
+    "name_hashes": [
+      "f0ab275fb9104d2ed68df86b89ec93c7496c78bb6cab3c69ef53e81816b0d30d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c8f94c2cee9f9e",
+    "name_hashes": [
+      "bf9e7bf2d601e0013d5430882b56603137ea86a5895d99fef1d86cb097b03bdf"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c991939b674fc9",
+    "name_hashes": [
+      "f234070e0d65d44412b617090fda70ec14440fabaf28d73bdb513295540281e9"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca1da001db7aea",
+    "name_hashes": [
+      "44f8079115415b7255afabc55be12f297eb9952e885e6cf426fc6009431286ff"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca34049756929f",
+    "name_hashes": [
+      "7b8d4d167456dae82bf15f0e69e73f95dff48f2f4403d97ee07a7bdf1d401e8e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca49b11b61e40c",
+    "name_hashes": [
+      "abca47112c6cd7ac6d1afce818f74be0043c57deef0f5b0aa65505717970870a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca8e24cadc4eed",
+    "name_hashes": [
+      "c8cf1bd79cf7c09b5c7c826866217f55ff1a93ad355ae2709539eaad3a0f5358"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb0e5bf61e05eb",
+    "name_hashes": [
+      "a2b4f1f05bded7c02bd15d13792c3eb6967e293b5cc452cb7b8b979c27853452"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb7b417be6f0b9",
+    "name_hashes": [
+      "8ea663ffe9dbb28fb08d45c72492f4f1db6cc1d3b29c1233f645249ef3817604"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb96a9259abb91",
+    "name_hashes": [
+      "02fb6bd3df6d497d76652456ab6eaf91aa4cb97a7c993d60a252a9dadaeb298e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cbe602877ba69d",
+    "name_hashes": [
+      "3de8392541ace28284aca7f2724273739fcf4cf73de276a8ddd3547c0011323c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cd176508ca5a3b",
+    "name_hashes": [
+      "a4560973839e18f00b3bc7964b23fa12824936269e636bf6ff0843be7e516e8f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cd366c42249584",
+    "name_hashes": [
+      "6dc175609f95e2edc5c129164c7f82c6752843913d85eb6642f4795f5231349c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cdd33c6f40c0be",
+    "name_hashes": [
+      "fdf9cec5a390ca836f6ebf417afeab396927bdb0bc6b86d401bcaa634f516206"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ced386b6aed618",
+    "name_hashes": [
+      "cdd6c26b45a81bf0c594d223947c62f0c72e04515686235ce18709b7ecc9e064"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf1ac8f8d7fdbb",
+    "name_hashes": [
+      "795af5e478b050fcdcda0a62d9782bbe7edcef5e62bf19f5d9908123e19a3c9d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf594161663d0e",
+    "name_hashes": [
+      "03d04f7fcebc3c449289bce40f9ec8c62aebca687e314ce13fe5ac33d02298d6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf787af97beb41",
+    "name_hashes": [
+      "14aecdea8229a269ffdb6a1009d994adc3c19948f1b2d474a2c2b5d03ae0cf1f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf99195e4da958",
+    "name_hashes": [
+      "bca59617453d7e7d58307d4caa3575a865d3dc334e4b9019fe75ad59b18c425e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d0c5eef53dd0a4",
+    "name_hashes": [
+      "8356beadf795d157eede129485788879a9b8e070d3121ac92fb412e338b35f0a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d1218be69da21c",
+    "name_hashes": [
+      "df555a7e403afb3d5530c1167ea5daa5411528a4c04021071a4055b4fd630cc6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d23f53dd5d948e",
+    "name_hashes": [
+      "1f6a9aa4378c8fd857bbd43177d1b80ffff063096165a6c9d51f49b66e4c6815"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d3252e27b6d656",
+    "name_hashes": [
+      "15322610c819eb3ab646c1a17eaf0d1547aaa667bcb5cea35bd6c81818365f43"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d4710ecbc41908",
+    "name_hashes": [
+      "a70dd5569dcd89f9eb3dd0bf849fe01047c7ad84b4370a05bd50c19a99928c4d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d4f9677643c95a",
+    "name_hashes": [
+      "de8de1ebcaa70e651413db6ba789c00aa7a49b68975a1247a573cb7f93407c06"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d5e6585c7e9621",
+    "name_hashes": [
+      "d1b5ac4c218440d0e7e9467d676845c043a85ed181b0cbd5d9fa4dce6514c5ee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d65d3469abe9cf",
+    "name_hashes": [
+      "eb88b90ec07950b13b9506697301faeda938fa3d02e57cad1a6d1bab5c93ff56"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d729619685b99e",
+    "name_hashes": [
+      "9859713d1ba39944d5eeb9c803580dcd58c8438f4704628236781ec5aeabf642"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d7fc68b43b8b12",
+    "name_hashes": [
+      "712739d2658cd5ca8abba130cb35e9015aa0df2fbc0013a931aa854589146aee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d82c997ebafcf6",
+    "name_hashes": [
+      "2c0654861c2de6776a660a4c31216a7703a1d62f9c520fbb8bc8f7656942d67e",
+      "88e3be0e51956578abfc8166d266d3c3b44af4f6d34da73bb9caddf918c90ab6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d84105fa6cb616",
+    "name_hashes": [
+      "fedafde6be0a0748b9c49bc5355a5d950902284baac5947165721ea5f2f97136"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-daa12c5e6f5e43",
+    "name_hashes": [
+      "a54bd1877b053bf4d483d0be418b6a83a541d78f1c01ccd457a569569cef9e19"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dbaed9501c94e7",
+    "name_hashes": [
+      "0cdff4a1063259697185e7c6ad9b0696e0483d2bd96f404787b10c06a6e763ce",
+      "df7cb0dbc2f5310bfaac2ec8a4bffff8b3ded1a08eca2ec2cee7e27bae2124a2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dc731f6e9cf49f",
+    "name_hashes": [
+      "71508df592b4e7185299e7fcdf1de9165e9ff4d182085df3ab3fbbbc46adecbc"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ddcf6c29eeebbd",
+    "name_hashes": [
+      "046e3ffc8c9b8728e48189b89f8fd002a77662fbbbbdf200cf16f757ebea4040"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-def726afea690e",
+    "name_hashes": [
+      "e2c9c80d2a476920e158c7fca9953f6eace44a82e8a88b07a8e8b8d76145e80e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-df4233d3545713",
+    "name_hashes": [
+      "bb30b9c31cd13c0e4170cff1b117e6856806faf1742526bc4b2aeb9541d1fadf"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e058efbf63dda0",
+    "name_hashes": [
+      "d6911d8355bea520bb1ea32be3d8dbf8d5d8908ab5369166779b9225a6252ba6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e1ab6f9e894080",
+    "name_hashes": [
+      "91ba50c265aec195573a73c0c773b9affa0095ee8b986189dc414acc2b2db7cb"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e1ff71b798f617",
+    "name_hashes": [
+      "201006f4952cf3e27f9e50272850aea01a60c1bce1e7655a3bd3609d24f8fc8f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e274e39d03ff3c",
+    "name_hashes": [
+      "0c4d4388f2ae29b102aa53fa8a7ff57d67e7fbcf7458e5f42abcce558e9c3332"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e2e02265d04104",
+    "name_hashes": [
+      "741646ac6009d891d8cc3a49dd49ba417d637b4d4d1fa8131befe0c1a68da416"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e301ce6d912c2c",
+    "name_hashes": [
+      "792bbfaf69ac3defeff1dd730ba69c8f1f3f25a75a9f6e13278c19fbaa7ed758"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e31b062e75c191",
+    "name_hashes": [
+      "c587105bd2995db27345c310e05225f083e173dec4245099e7db5ef7821fff07"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e4e093a13c4cdb",
+    "name_hashes": [
+      "98c79b603491308f4ff3042a1908c987216d5ebfd3f31885639dc694b020f3b8",
+      "dcd40efa52bb69b242b8b98c365b98e0b3f83567af49ab816652bd9907ab8381"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e55fd884ed9ba9",
+    "name_hashes": [
+      "bd4e62a635f67d50120dd136b66bb5e2d1d8eefc583ba0c427cc7b6c4e7716ab"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e8adef10c770fa",
+    "name_hashes": [
+      "b666ea055e90cb2e49dca8eab3307607a1b7072157018ad924cd16e5dffe6575",
+      "ff24b0b191305308c1abc27e4022502fea4f8335565a3bc10ff76111b7b9b368"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e8ae237f9534db",
+    "name_hashes": [
+      "04f22d91823f2b726ea0ca98ca14e9ec87c78ba33a57d40cdae9321b1244c101"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e984c9ab498aa1",
+    "name_hashes": [
+      "4e7cf3cf5960fe137805b6f1c86db450aa33cad0cce51fec4e0f641c1dc3131e"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e9de078b64726b",
+    "name_hashes": [
+      "28e45b1c5a4ece2d8912fd7e40f1958b11c3e2078241b9a4ab7dcc8fcf3ca225"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ea674f5751f0d8",
+    "name_hashes": [
+      "5b3988b1518ac86a77423f1e2906b4c6d38cf705ecc2886b712817f79b27a8dd"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eac6388398ae4c",
+    "name_hashes": [
+      "ace61ca6202e0fe3783777d16456119ddcc547f801ac5653d6dfd1b416c490ee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb3b3697369dd2",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb85922c2761ad",
+    "name_hashes": [
+      "9aa0ad45b712bcfc1a019b8d451b85f7528def3dd83189a7725dd424c39c94d6"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb8ab54e87391b",
+    "name_hashes": [
+      "e32840cb2a4b3b083998ba1c3dab41b9a8a8b0e6ed0698118b9ac0894caf3628"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ecbffe69a40eeb",
+    "name_hashes": [
+      "1d04b6eebb8496f66b000dd04a6733e6ffb57a0fb3d2ab493c04c4a87ba5085d"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ed946c22525fc4",
+    "name_hashes": [
+      "0e74e75e41f0e3b4f9f72d4ae9cf57c12537869d69db646e70c969abfd9f94a2"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-edac837ef430bc",
+    "name_hashes": [
+      "5d1342fa283fc356c1616f0b88ffd43d07460999f7c92a001885265f1ff3555f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-edc0440e97bc12",
+    "name_hashes": [
+      "6ecf7682b18df76592ae7fd605225de74b1e6c63febb799e022dee004a790355"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eeaed600257ec1",
+    "name_hashes": [
+      "acdf93eb4f998f567090a8bd49cbd008f3d25d9ed1e73a68a31690ac49f993db"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef46056c267694",
+    "name_hashes": [
+      "eefa3980fdf345e9f673e115a77224b8ed56a8c286dc38def70699f6bbec22a4"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef6ee0e1ba83ec",
+    "name_hashes": [
+      "5a66e55f8f2b053eff916414d5861510324ccabe6628fd6eafccacefb61b7cae"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-efa247788dfde1",
+    "name_hashes": [
+      "71e59cc3d497475071cec0c852b0001e7beb6f9da5da4b92085d8c2955f1beee"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f134a5739bc465",
+    "name_hashes": [
+      "e3a397d4d64151537ee8f7ce1df7b89df3ffe6fc596bcb829bd0dbe151f2495f"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f1ca6295171842",
+    "name_hashes": [
+      "e6d9724dc8fb957be205f4c2f29ec5deb2e2831efde203d065006dc060b7449b"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f45664596f1f59",
+    "name_hashes": [
+      "4597547e6d0b738b8cd4f5007a844e49db9a7f777c33932738aee8961ceddf2c"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7822f249fae01",
+    "name_hashes": [
+      "6421ba810d0524544cebc578b6783e7a051a6b419b49a7984e81cf6c66852f7a"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7da6ace14c34c",
+    "name_hashes": [
+      "b1e702db8788a19a5306037ee640666890f60d5a6bb89516370ef84ebc90a9e3"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f82dfe08e546fa",
+    "name_hashes": [
+      "71876ea8b90c82e75bf247a87f36b09379215ba81ba39ed4c23b40c2c81e9e20"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fa54e87845ef71",
+    "name_hashes": [
+      "792bbfaf69ac3defeff1dd730ba69c8f1f3f25a75a9f6e13278c19fbaa7ed758"
+    ]
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fbeafac2cae179",
+    "name_hashes": [
+      "60c1dcfcfd3cce84df0fc01f34639f77ce3ca1011da1e4ebfa23eeee961be408"
+    ]
+  }
+]

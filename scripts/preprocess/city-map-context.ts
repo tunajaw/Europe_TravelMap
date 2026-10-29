@@ -1,6 +1,8 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 
+import { loadReferences } from './references.ts';
+
 type Coordinate = [number, number];
 type Geometry =
   | { type: 'Polygon'; coordinates: Coordinate[][] }
@@ -15,16 +17,34 @@ type NominatimResult = {
 };
 
 const root = resolve(import.meta.dirname, '..', '..');
-const travelData = JSON.parse(await readFile(join(root, 'public', 'data', 'travel-data.json'), 'utf8')) as {
-  countries: Array<{ id: string; name: string }>;
-  cities: Array<{ id: string; name: string; countryId: string; location: { latitude: number; longitude: number } }>;
-};
+const references = await loadReferences(root);
+const travelData = { countries: references.countries, cities: references.cities };
 const output = join(root, 'data', 'parsed', 'city_map_context.json');
 const cacheDir = join(root, 'data', 'generated', 'city-map-context');
 const aliases = new Map([['city-andorra', 'Andorra la Vella']]);
 const countryBoundaryCities = new Set(['city-vatican-city']);
 const boundaryOsmIds = new Map([['city-vatican-city', 'R36989']]);
 const cityIds = travelData.cities.map(({ id }) => id).sort();
+const refresh = process.argv.includes('--refresh');
+
+type CityContextRow = {
+  city_id: string;
+  kind: 'administrative_boundary' | 'local_extent';
+  source: 'OpenStreetMap' | 'Reviewed city reference';
+  source_osm_id: string | null;
+  source_label: string;
+  boundary: Geometry;
+};
+
+let existingContexts = new Map<string, CityContextRow>();
+if (!refresh) {
+  try {
+    const rows = JSON.parse(await readFile(output, 'utf8')) as CityContextRow[];
+    existingContexts = new Map(rows.map((row) => [row.city_id, row]));
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+  }
+}
 
 function isBoundary(result: NominatimResult): result is NominatimResult & { geojson: Geometry } {
   return (result.geojson?.type === 'Polygon' || result.geojson?.type === 'MultiPolygon')
@@ -142,6 +162,11 @@ await mkdir(cacheDir, { recursive: true });
 const contexts = [];
 for (const [index, cityId] of cityIds.entries()) {
   process.stdout.write(`[${index + 1}/${cityIds.length}] OSM boundary ${cityId}\n`);
+  const existing = existingContexts.get(cityId);
+  if (existing) {
+    contexts.push(existing);
+    continue;
+  }
   const boundary = await boundaryFor(cityId);
   const city = travelData.cities.find(({ id }) => id === cityId)!;
   if (boundary) {
