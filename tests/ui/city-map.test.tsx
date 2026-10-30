@@ -99,7 +99,7 @@ describe('FR-MAP-10 City Attraction Map', () => {
     const munich = data.cities.find(({ id }) => id === 'city-munich')!;
     const munichPois = (data.pois ?? []).filter(({ cityId }) => cityId === munich.id);
     const context = data.cityContexts?.find(({ cityId }) => cityId === munich.id)!;
-    const outlyingPoi = munichPois.find(({ name }) => name === '艾雪德')!;
+    const outlyingPoi = munichPois.find(({ name }) => name === 'Bahnhof, Herrsching a. Ammersee')!;
     const initial = cityPoiViewport(munich, munichPois, context.boundary);
     const panBounds = cityPanBounds(munich, context.boundary, initial);
     const focused = constrainCityViewport(

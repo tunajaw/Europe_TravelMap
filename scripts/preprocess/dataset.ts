@@ -93,9 +93,9 @@ export async function buildDataset(root: string): Promise<TravelData> {
   }));
 
   const pois = poiRows.map((row) => {
-    if (row.review_status !== 'provisional_owner_assumption'
+    if (!['provisional_owner_assumption', 'needs_review'].includes(row.review_status)
       || !['Attraction', 'Unclassified'].includes(row.category)) {
-      throw new Error(`POI is not approved for the City Map prototype: ${row.poi_id}`);
+      throw new Error(`POI is not eligible for the City Map review dataset: ${row.poi_id}`);
     }
     if (!references.cities.some((city) => city.id === row.city_id)) throw new Error(`Unknown POI City: ${row.city_id}`);
     return {

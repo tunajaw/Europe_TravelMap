@@ -4,6 +4,7 @@ import {
   extractMapsViewportCoordinate,
   matchPoiName,
   normalizePoiName,
+  osmFeatureNames,
   stableId,
   type Coordinate,
   type MapActivity,
@@ -206,13 +207,25 @@ function classifyFromOsm(
   cityName: string,
   viewport: Coordinate,
   features: OsmFeature[],
+  exactCandidates: OsmFeature[],
+  evidenceIndex: Map<string, TimelineEvidencePoint[]>,
 ): ClassifiedFeature | undefined {
-  return features.flatMap((feature): ClassifiedFeature[] => {
+  const citywideExactMatches = exactCandidates.flatMap((feature): ClassifiedFeature[] => {
+    if (!measureEvidence(activity, feature, evidenceIndex)) return [];
+    const distanceMeters = Math.round(haversineKm(viewport, feature) * 1_000);
+    const match = matchPoiName(activity.title, feature, cityName);
+    return match && (match.method === "exact" || match.method === "alias_exact")
+      ? [{ feature, match, distanceMeters }]
+      : [];
+  });
+  const nearbyMatches = citywideExactMatches.length ? [] : features.flatMap((feature): ClassifiedFeature[] => {
     const distanceMeters = Math.round(haversineKm(viewport, feature) * 1_000);
     if (distanceMeters > OSM_CLASSIFICATION_RADIUS_METERS) return [];
     const match = matchPoiName(activity.title, feature, cityName);
     return match ? [{ feature, match, distanceMeters }] : [];
-  }).sort((left, right) =>
+  });
+  const eligible = citywideExactMatches.length ? citywideExactMatches : nearbyMatches;
+  return eligible.sort((left, right) =>
     right.match.score - left.match.score
     || left.distanceMeters - right.distanceMeters
     || left.feature.name.localeCompare(right.feature.name)
@@ -233,6 +246,18 @@ export function recoverSearchedPois(options: {
 }): SearchedPoiRecoveryRow[] {
   const recoveredBySource = new Map<string, SearchedPoiRecoveryRow>();
   const evidenceIndex = indexEvidence(options.evidence);
+  const exactFeaturesByCity = new Map<string, Map<string, OsmFeature[]>>();
+  for (const [cityId, snapshot] of options.snapshots) {
+    const featureIndex = new Map<string, OsmFeature[]>();
+    for (const feature of snapshot.features) {
+      for (const alias of osmFeatureNames(feature)) {
+        const key = normalizePoiName(alias);
+        if (!key) continue;
+        featureIndex.set(key, [...(featureIndex.get(key) ?? []), feature]);
+      }
+    }
+    exactFeaturesByCity.set(cityId, featureIndex);
+  }
   for (const activity of options.activities) {
     if (activity.action !== "search" && activity.action !== "directions") continue;
     const viewport = extractMapsViewportCoordinate(activity.url);
@@ -249,6 +274,8 @@ export function recoverSearchedPois(options: {
       cityCandidate.city.name,
       viewport,
       options.snapshots.get(cityCandidate.city.id)?.features ?? [],
+      exactFeaturesByCity.get(cityCandidate.city.id)?.get(normalizePoiName(displayName)) ?? [],
+      evidenceIndex,
     );
     const attraction = classified?.feature.category === "Attraction" ? classified.feature : undefined;
     const location = attraction ?? viewport;

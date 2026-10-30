@@ -181,6 +181,48 @@ name, optional matched OSM metadata, and aggregate distance/count evidence; raw
 activity rows, exact private trajectories, and unmatched searches remain local
 and are not exported.
 
+When the owner supplies a Google Maps link for a coordinate correction, the
+resolved canonical Place coordinate may be stored in
+`data/parsed/poi_google_place_coordinate_overrides.json`, keyed by the stable
+Google Place identity already present in the private activity export. The
+tracked override contains only the identity, reviewed City/name, coordinate,
+and source status; it does not retain the short link or unrelated activity.
+This coordinate replaces the approximate viewport for an unreviewed candidate.
+An accepted reviewed `Keep` snapshot and coordinate lock still take precedence,
+while a reviewed `Discard` remains excluded.
+
+The private unreviewed-coordinate audit scans the current review candidates
+against a locally indexed set of OSM aliases in the assigned City. It excludes
+accepted `Keep` records, already reopened `needs_review` records,
+owner-confirmed manual additions, and candidates already using an OSM source
+coordinate. Findings require a distance of at least 250 metres. A unique
+`exact` or `alias_exact` name is ranked High, a unique match scoring at least
+0.92 is ranked Medium, and competing or weaker matches are Ambiguous. These
+levels describe confidence in the OSM name candidate, not proof that the
+current coordinate is wrong. The audit is report-only and remains private;
+only an owner-confirmed canonical Place link or another approved source may
+create a coordinate override.
+
+An OSM `exact` or `alias_exact` name match within the already assigned City is
+an exception to the 350-metre classification radius because a Google Maps URL
+may encode a displaced search viewport rather than the Place coordinate. The
+exact OSM feature supplies the POI coordinate; fuzzy or partial matches remain
+subject to the 350-metre limit. A citywide exact match is applied only when the
+Timeline evidence also contains a point within 350 metres of that OSM feature;
+name equality alone cannot move a POI.
+
+Before this rule or another preprocessing improvement can change tracked POI
+coordinates, imported human-reviewed POIs receive coordinate locks from the
+last reviewed dataset, and full reviewed snapshots preserve their IDs and
+candidate records across reclassification. A separate private audit accepts the
+local review export and reports only unique exact-name OSM matches whose
+coordinates differ by at least 250 metres. The audit does not overwrite POI
+coordinates. A reviewed `Keep` finding is instead re-keyed as a new
+`needs_review` candidate so that the owner can compare and approve the corrected
+location explicitly; its previous review remains local audit history. A
+reviewed `Discard` remains excluded. Explicit owner-provided `location update`
+entries may still override a coordinate lock.
+
 Candidate records carry `match_confidence`, `category_confidence`,
 `city_confidence`, `overall_confidence`, and `review_priority`. A POI may be
 `auto_approved` only when its Timeline coordinate is inside a unique compatible
@@ -199,7 +241,9 @@ High, Medium, and Low confidence plus filtering or sorting by review priority,
 review status, City, and category. Import validation requires unique POI IDs,
 valid City references and categories, and coordinates for displayed POIs.
 `needs_review` and `unresolved` records cannot enter final application-ready
-data. For the current visual review, the owner has directed the pipeline to
+data. The temporary POI QA branch may expose `needs_review` candidates in its
+City Map review dataset, but they remain ineligible for the final cleaned
+dataset until reviewed. For the current visual review, the owner has directed the pipeline to
 provisionally treat every search-confirmed High-confidence POI as correct. The
 public export labels these rows `provisional_owner_assumption` so
 that this temporary assumption remains distinguishable from completed review.
@@ -217,13 +261,14 @@ convenience stores, shopping malls, pharmacies/drugstores, and other named
 shops—are excluded from the visual-review list. After this semantic filter,
 `Unclassified` candidates no more than 15 metres from an already retained POI
 in the same City are treated as dense duplicates; explicit Attractions and
-unmatched owner-confirmed manual additions, and existing human-reviewed Keep
-records are never removed by this spatial rule. More generally, every POI with
-a human-reviewed Keep or Discard record is protected from both the semantic
-retail filter and spatial deduplication. A Discard decision controls downstream
-publication; it does not delete the source candidate or its audit relationship.
-It removes search, Timeline, Visit, matching,
-confidence, and review evidence before writing tracked public data. Display
+unmatched owner-confirmed manual additions, and accepted human-reviewed `Keep`
+records are never removed by this spatial rule. A reviewed `Keep` record with a
+coordinate-audit discrepancy is reopened under a new candidate ID and enters
+the pending review list. Reviewed `Discard` records are excluded from both the
+application-ready data and the visual-review candidate dataset; the original
+local review result remains unchanged as audit history.
+Before writing tracked public data, the export removes search, Timeline, Visit,
+matching, confidence, and review evidence. Display
 names use OSM `name:en` as the main English field when available and otherwise
 retain the reviewed source or Google Maps displayed name. OSM `name:zh-Hant`,
 then `name:zh`, is retained as a separate optional localized field. The pipeline

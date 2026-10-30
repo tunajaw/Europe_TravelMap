@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 
 import {
   assignCity,
@@ -23,6 +25,7 @@ import {
 } from "../../scripts/poi-review/attraction-recovery.ts";
 import { localizedPoiName } from "../../scripts/poi-review/localized-name.ts";
 import {
+  applyGooglePlaceCoordinateOverride,
   extractResolvedGoogleMapsLocation,
   manualPoiNameHash,
   mergeManualPoiReferences,
@@ -138,6 +141,30 @@ describe("POI review preprocessing", () => {
       .toEqual({ latitude: 48.1372, longitude: 11.5756, placeKey: "ChIJTest" });
   });
 
+  it("uses an owner-confirmed coordinate keyed by stable Google Place identity", () => {
+    const candidate = {
+      googlePlaceId: "0x12cddb055c4fe4bd:0x1138a84037403971",
+      latitude: 43.7031553,
+      longitude: 7.2812612,
+    };
+    const corrected = applyGooglePlaceCoordinateOverride(candidate, new Map([[
+      candidate.googlePlaceId,
+      {
+        google_place_id: candidate.googlePlaceId,
+        city_id: "city-nice",
+        name: "Marché Aux Fleurs - Cours Saleya - Nice",
+        latitude: 43.6955865,
+        longitude: 7.274994,
+        source_status: "owner_confirmed_google_maps_link" as const,
+      },
+    ]]));
+    expect(corrected).toEqual({
+      ...candidate,
+      latitude: 43.6955865,
+      longitude: 7.274994,
+    });
+  });
+
   it("merges an owner-confirmed location update without changing the existing POI ID", () => {
     const existing = [{
       poi_id: "existing-id", city_id: "city-munich", name: "Existing Place", localized_name: null,
@@ -178,7 +205,7 @@ describe("POI review preprocessing", () => {
     })]);
   });
 
-  it("removes ordinary retail POIs and dense Unclassified duplicates without deleting confirmed places", () => {
+  it("protects accepted Keep POIs while allowing discarded candidates to be removed", () => {
     const base = {
       city_id: "city-munich", localized_name: null, original_name: "Place",
       category: "Unclassified" as const, subcategory: "unclassified",
@@ -192,11 +219,44 @@ describe("POI review preprocessing", () => {
       { ...base, poi_id: "reviewed", name: "Reviewed place", latitude: 48.13807 },
       { ...base, poi_id: "reviewed-retail", name: "dm-drogerie reviewed", latitude: 48.13808 },
       { ...base, poi_id: "reviewed-discard", name: "Reviewed discard", latitude: 48.13809 },
-    ], 15, new Set(["reviewed", "reviewed-retail", "reviewed-discard"]));
-    expect(result).toEqual(expect.objectContaining({ retailRemoved: 1, denseRemoved: 1 }));
+    ], 15, new Set(["reviewed", "reviewed-retail"]));
+    expect(result).toEqual(expect.objectContaining({ retailRemoved: 1, denseRemoved: 2 }));
     expect(result.pois.map(({ poi_id }) => poi_id).sort()).toEqual([
-      "attraction", "manual", "reviewed", "reviewed-discard", "reviewed-retail",
+      "attraction", "manual", "reviewed", "reviewed-retail",
     ]);
+  });
+
+  it("keeps review dispositions disjoint in the generated POI dataset", async () => {
+    const parsedRoot = resolve(import.meta.dirname, "..", "..", "data", "parsed");
+    const [pois, reviewedIds, discardedIds, recheckIds] = await Promise.all([
+      readFile(resolve(parsedRoot, "poi_reference.json"), "utf8").then(JSON.parse) as Promise<Array<{
+        poi_id: string;
+        review_status: string;
+      }>>,
+      readFile(resolve(parsedRoot, "poi_reviewed_ids.json"), "utf8").then(JSON.parse) as Promise<string[]>,
+      readFile(resolve(parsedRoot, "poi_discarded_ids.json"), "utf8").then(JSON.parse) as Promise<string[]>,
+      readFile(resolve(parsedRoot, "poi_coordinate_recheck_ids.json"), "utf8").then(JSON.parse) as Promise<string[]>,
+    ]);
+    const poiIds = new Set(pois.map(({ poi_id }) => poi_id));
+
+    expect(reviewedIds.length).toBeGreaterThan(0);
+    expect(discardedIds.length).toBeGreaterThan(0);
+    expect(recheckIds.length).toBeGreaterThan(0);
+    expect(reviewedIds.every((poiId) => poiIds.has(poiId))).toBe(true);
+    expect(discardedIds.every((poiId) => !poiIds.has(poiId))).toBe(true);
+    expect(recheckIds.every((poiId) => !poiIds.has(poiId))).toBe(true);
+    expect(recheckIds.every((poiId) => pois.some((poi) => (
+      poi.poi_id === `${poiId}-coordinate-review` && poi.review_status === "needs_review"
+    )))).toBe(true);
+  });
+
+  it("exports the owner-confirmed Marché Aux Fleurs coordinate", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ name: string; latitude: number; longitude: number }>;
+    expect(pois.find(({ name }) => name === "Marché Aux Fleurs - Cours Saleya - Nice"))
+      .toEqual(expect.objectContaining({ latitude: 43.6955865, longitude: 7.274994 }));
   });
 
   it("matches attraction names against reviewed OSM aliases conservatively", () => {
@@ -261,6 +321,40 @@ describe("POI review preprocessing", () => {
       evidenceConfidence: "high",
       newCandidate: true,
       semanticVisitsWithin200Meters: 1,
+    })]);
+  });
+
+  it("uses an exact citywide OSM name match when the Google Maps viewport is displaced", () => {
+    const cities: TravelCity[] = [{
+      id: "marseille", name: "Marseille", countryId: "france",
+      location: { latitude: 43.302, longitude: 5.38 },
+    }];
+    const rows = recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Plage de Maldormé",
+        url: "https://www.google.com/maps/dir/Test/@43.2935733,5.3755849,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: [],
+      }],
+      cities,
+      snapshots: new Map([["marseille", { features: [{
+        osmId: "way/97284416", osmUrl: "https://www.openstreetmap.org/way/97284416",
+        name: "Plage de Maldormé", category: "Attraction", subcategory: "beach",
+        latitude: 43.2804479, longitude: 5.350204, tags: { natural: "beach" },
+      }] }]]),
+      evidence: [{
+        latitude: 43.2935733, longitude: 5.3755849,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }, {
+        latitude: 43.2805, longitude: 5.3503,
+        occurredAt: "2026-03-01T12:00:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    });
+    expect(rows).toEqual([expect.objectContaining({
+      name: "Plage de Maldormé",
+      category: "Attraction",
+      latitude: 43.2804479,
+      longitude: 5.350204,
     })]);
   });
 

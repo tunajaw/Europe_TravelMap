@@ -122,6 +122,20 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "attraction-node-251528292",
+    "city_id": "city-amsterdam",
+    "name": "阿姆斯特丹地牢 The Amsterdam Dungeon",
+    "localized_name": null,
+    "original_name": "阿姆斯特丹地牢 The Amsterdam Dungeon",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 52.3701984,
+    "longitude": 4.892168,
+    "source_osm_id": "node/251528292",
+    "source_osm_url": "https://www.openstreetmap.org/node/251528292",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-caffb54a79df21",
     "city_id": "city-amsterdam",
     "name": "紅燈區秘密博物館 Oudezijds Achterburgwal 60",
@@ -251,20 +265,6 @@
     "subcategory": "unclassified",
     "latitude": 52.3556303,
     "longitude": 4.8934085,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-145953534",
-    "city_id": "city-amsterdam",
-    "name": "Flower Market",
-    "localized_name": "辛格花市",
-    "original_name": "Residence Flower Market",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 52.3669538,
-    "longitude": 4.8914048,
-    "source_osm_id": "way/145953534",
-    "source_osm_url": "https://www.openstreetmap.org/way/145953534",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -426,6 +426,20 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "attraction-way-145953534",
+    "city_id": "city-amsterdam",
+    "name": "Residence Flower Market",
+    "localized_name": "辛格花市",
+    "original_name": "Residence Flower Market",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 52.3669538,
+    "longitude": 4.8914048,
+    "source_osm_id": "way/145953534",
+    "source_osm_url": "https://www.openstreetmap.org/way/145953534",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-e7abf714ca2614",
     "city_id": "city-amsterdam",
     "name": "Sloterdijk",
@@ -435,20 +449,6 @@
     "subcategory": "unclassified",
     "latitude": 52.3887784,
     "longitude": 4.838888,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-node-251528292",
-    "city_id": "city-amsterdam",
-    "name": "The Amsterdam Dungeon",
-    "localized_name": null,
-    "original_name": "阿姆斯特丹地牢 The Amsterdam Dungeon",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 52.3701984,
-    "longitude": 4.892168,
-    "source_osm_id": "node/251528292",
-    "source_osm_url": "https://www.openstreetmap.org/node/251528292",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -536,27 +536,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-5f1d6829376af1",
+    "poi_id": "unclassified-searched-poi-a10cd58a3b7e5b",
     "city_id": "city-andorra",
-    "name": "山谷小屋AD500 Andorra la Vella",
+    "name": "CCA Centre Comercial Andorrà - Super U",
     "localized_name": null,
-    "original_name": "山谷小屋AD500 Andorra la Vella",
+    "original_name": "fresh",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 42.5066088,
-    "longitude": 1.5179118,
+    "latitude": 42.5092482,
+    "longitude": 1.5437498,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-820377a1a7ac33",
+    "poi_id": "unclassified-searched-poi-ddcf6c29eeebbd",
     "city_id": "city-andorra",
-    "name": "食料品点",
+    "name": "Centre Comercial Illa Carlemany",
     "localized_name": null,
-    "original_name": "食料品点",
+    "original_name": "Les Escaldes observation point",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 42.5079254,
-    "longitude": 1.5286694,
+    "latitude": 42.5092778,
+    "longitude": 1.5351978,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -569,18 +569,6 @@
     "subcategory": "unclassified",
     "latitude": 42.5082887,
     "longitude": 1.5266352,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-a10cd58a3b7e5b",
-    "city_id": "city-andorra",
-    "name": "fresh",
-    "localized_name": null,
-    "original_name": "fresh",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 42.5092482,
-    "longitude": 1.5437498,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -620,29 +608,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-ddcf6c29eeebbd",
+    "poi_id": "attraction-way-716912509",
     "city_id": "city-andorra",
-    "name": "Les Escaldes observation point",
+    "name": "Placeta del Madriu",
     "localized_name": null,
-    "original_name": "Les Escaldes observation point",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 42.5092778,
-    "longitude": 1.5351978,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-361846817",
-    "city_id": "city-andorra",
-    "name": "Plaça del Poble",
-    "localized_name": null,
-    "original_name": "Plaça del Poble",
+    "original_name": "Pont de la Tosca",
     "category": "Attraction",
-    "subcategory": "park",
-    "latitude": 42.5066481,
-    "longitude": 1.5222624,
-    "source_osm_id": "way/361846817",
-    "source_osm_url": "https://www.openstreetmap.org/way/361846817",
+    "subcategory": "yes",
+    "latitude": 42.5092188,
+    "longitude": 1.5455045,
+    "source_osm_id": "way/716912509",
+    "source_osm_url": "https://www.openstreetmap.org/way/716912509",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -658,20 +634,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-way-716912509",
-    "city_id": "city-andorra",
-    "name": "Pont de la Tosca",
-    "localized_name": null,
-    "original_name": "Pont de la Tosca",
-    "category": "Attraction",
-    "subcategory": "yes",
-    "latitude": 42.5092188,
-    "longitude": 1.5455045,
-    "source_osm_id": "way/716912509",
-    "source_osm_url": "https://www.openstreetmap.org/way/716912509",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "manual-poi-e8f72b7b91aaaf",
     "city_id": "city-andorra",
     "name": "Pont Tibetà Canillo",
@@ -681,42 +643,6 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 42.5765663,
     "longitude": 1.6107014,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-95a3f9c0ec882b",
-    "city_id": "city-andorra",
-    "name": "Prat Nou",
-    "localized_name": null,
-    "original_name": "Prat Nou",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 42.4583803,
-    "longitude": 1.4874208,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-31b759bb309399",
-    "city_id": "city-andorra",
-    "name": "Prat Nou",
-    "localized_name": null,
-    "original_name": "Prat Nou",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 42.4685554,
-    "longitude": 1.490241,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-5767fb352f9219",
-    "city_id": "city-andorra",
-    "name": "Rotonda de la Margineda",
-    "localized_name": null,
-    "original_name": "Rotonda de la Margineda",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 42.4605013,
-    "longitude": 1.4890194,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -756,18 +682,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-585b064c16cb4b",
-    "city_id": "city-baden-baden",
-    "name": "76532 Baden-Baden",
-    "localized_name": null,
-    "original_name": "76532 Baden-Baden",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.7901656,
-    "longitude": 8.1913124,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-02a5fa949b8a03",
     "city_id": "city-baden-baden",
     "name": "里奇騰塔勒大道",
@@ -789,6 +703,18 @@
     "subcategory": "unclassified",
     "latitude": 48.7620109,
     "longitude": 8.2375909,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-585b064c16cb4b",
+    "city_id": "city-baden-baden",
+    "name": "Baden-Baden Hbf",
+    "localized_name": null,
+    "original_name": "76532 Baden-Baden",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.7901656,
+    "longitude": 8.1913124,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -864,18 +790,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-898ab5d0e42107",
-    "city_id": "city-bamberg",
-    "name": "96052 Bamberg",
-    "localized_name": null,
-    "original_name": "96052 Bamberg",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.9006305,
-    "longitude": 10.8998949,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "manual-poi-2122e918499292",
     "city_id": "city-bamberg",
     "name": "Altes Rathaus",
@@ -888,14 +802,14 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-e9de078b64726b",
+    "poi_id": "unclassified-searched-poi-898ab5d0e42107",
     "city_id": "city-bamberg",
-    "name": "Bamberg Döner",
+    "name": "Bamberg Bahnhof",
     "localized_name": null,
-    "original_name": "Bamberg Döner",
+    "original_name": "96052 Bamberg",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 49.9005962,
+    "latitude": 49.9006305,
     "longitude": 10.8998949,
     "review_status": "provisional_owner_assumption"
   },
@@ -1472,15 +1386,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-7a31fbea94d56d",
+    "poi_id": "attraction-way-239567902",
     "city_id": "city-barcelona",
     "name": "Mercat dels Encants",
-    "localized_name": null,
+    "localized_name": "跳蚤市场",
     "original_name": "Mercat dels Encants",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 41.3899984,
-    "longitude": 2.1751283,
+    "category": "Attraction",
+    "subcategory": "marketplace",
+    "latitude": 41.4010094,
+    "longitude": 2.186145,
+    "source_osm_id": "way/239567902",
+    "source_osm_url": "https://www.openstreetmap.org/way/239567902",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -1786,18 +1702,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-0400b8a7a5e0dc",
-    "city_id": "city-berlin",
-    "name": "52.410751",
-    "localized_name": null,
-    "original_name": "52.410751",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.410751,
-    "longitude": 13.393601,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-c33a2750cff390",
     "city_id": "city-berlin",
     "name": "勃兰登堡门",
@@ -1810,27 +1714,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-3dbc14ec16fcfb",
+    "poi_id": "attraction-way-53333454",
     "city_id": "city-berlin",
-    "name": "幽靈車站",
-    "localized_name": null,
-    "original_name": "幽靈車站",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.5324907,
-    "longitude": 13.3870329,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-841f621cedbe43",
-    "city_id": "city-berlin",
-    "name": "柏林布蘭登堡機場 (BER) Melli-Beese-Ring 1",
-    "localized_name": null,
-    "original_name": "柏林布蘭登堡機場 (BER) Melli-Beese-Ring 1",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.3645625,
-    "longitude": 13.5049605,
+    "name": "柏林圍牆紀念館 Bernauer Str. 111",
+    "localized_name": "柏林圍牆紀念館",
+    "original_name": "柏林圍牆紀念館 Bernauer Str. 111",
+    "category": "Attraction",
+    "subcategory": "museum",
+    "latitude": 52.533794,
+    "longitude": 13.3874451,
+    "source_osm_id": "way/53333454",
+    "source_osm_url": "https://www.openstreetmap.org/way/53333454",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -1843,30 +1737,6 @@
     "subcategory": "unclassified",
     "latitude": 52.5200413,
     "longitude": 13.392241,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-1d521814f85c75",
-    "city_id": "city-berlin",
-    "name": "Agnes-von-Zahn-Harnack-Straße 1",
-    "localized_name": null,
-    "original_name": "Agnes-von-Zahn-Harnack-Straße 1",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.5239059,
-    "longitude": 13.3674027,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-9e261982931b15",
-    "city_id": "city-berlin",
-    "name": "aldi",
-    "localized_name": null,
-    "original_name": "aldi",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.5067038,
-    "longitude": 13.3903756,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -1906,17 +1776,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-way-53333454",
+    "poi_id": "unclassified-searched-poi-3dbc14ec16fcfb",
     "city_id": "city-berlin",
-    "name": "Berlin Wall Memorial",
-    "localized_name": "柏林圍牆紀念館",
-    "original_name": "柏林圍牆紀念館 Bernauer Str. 111",
-    "category": "Attraction",
-    "subcategory": "museum",
-    "latitude": 52.533794,
-    "longitude": 13.3874451,
-    "source_osm_id": "way/53333454",
-    "source_osm_url": "https://www.openstreetmap.org/way/53333454",
+    "name": "Berlin Nordbahnhof",
+    "localized_name": "幽靈車站",
+    "original_name": "幽靈車站",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 52.5324907,
+    "longitude": 13.3870329,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -1968,18 +1836,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-0aac82194a3cd7",
-    "city_id": "city-berlin",
-    "name": "Bundestag",
-    "localized_name": null,
-    "original_name": "Bundestag",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.5182798,
-    "longitude": 13.3756895,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "attraction-node-417346627",
     "city_id": "city-berlin",
     "name": "Checkpoint Charlie",
@@ -2006,6 +1862,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-841f621cedbe43",
+    "city_id": "city-berlin",
+    "name": "Flughafen Berlin Brandenburg Willy Brandt",
+    "localized_name": "柏林布蘭登堡機場",
+    "original_name": "柏林布蘭登堡機場 (BER) Melli-Beese-Ring 1",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 52.3645625,
+    "longitude": 13.5049605,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-1585383cae0b9c",
     "city_id": "city-berlin",
     "name": "Friedrichstraße",
@@ -2027,6 +1895,18 @@
     "subcategory": "unclassified",
     "latitude": 52.5171282,
     "longitude": 13.4079378,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d521814f85c75",
+    "city_id": "city-berlin",
+    "name": "Grillstand hbf",
+    "localized_name": null,
+    "original_name": "Agnes-von-Zahn-Harnack-Straße 1",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 52.5239059,
+    "longitude": 13.3674027,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2080,15 +1960,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2d67f90e12cf7b",
+    "poi_id": "unclassified-searched-poi-cf99195e4da958",
     "city_id": "city-berlin",
-    "name": "Oberbaumbrücke",
+    "name": "Neukölln",
     "localized_name": null,
-    "original_name": "Oberbaumbrücke",
+    "original_name": "Sonnenallee",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 52.5259165,
-    "longitude": 13.3668907,
+    "latitude": 52.4749434,
+    "longitude": 13.4510209,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0aac82194a3cd7",
+    "city_id": "city-berlin",
+    "name": "Reichstagsgebäude",
+    "localized_name": "德國國會大廈",
+    "original_name": "Bundestag",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 52.5182798,
+    "longitude": 13.3756895,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2116,30 +2008,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-cf99195e4da958",
-    "city_id": "city-berlin",
-    "name": "Sonnenallee",
-    "localized_name": null,
-    "original_name": "Sonnenallee",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.4749434,
-    "longitude": 13.4510209,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-eb3b3697369dd2",
-    "city_id": "city-berlin",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.4108916,
-    "longitude": 13.3930273,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "manual-poi-18e84ce7dfc866",
     "city_id": "city-berlin",
     "name": "Unter den Linden",
@@ -2149,6 +2017,18 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 52.5168975,
     "longitude": 13.3892254,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7767f8ec963895",
+    "city_id": "city-bochum",
+    "name": "Bochum Hbf",
+    "localized_name": null,
+    "original_name": "Supermärkte",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 51.4784913,
+    "longitude": 7.2235117,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2164,30 +2044,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c991939b674fc9",
-    "city_id": "city-bochum",
-    "name": "mcdonald's",
-    "localized_name": null,
-    "original_name": "mcdonald's",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.4793385,
-    "longitude": 7.222867,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7767f8ec963895",
-    "city_id": "city-bochum",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.4784913,
-    "longitude": 7.2235117,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-73ae3bb41c5f2f",
     "city_id": "city-bremen",
     "name": "不來梅 Böttcherstraße",
@@ -2200,18 +2056,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-54a64796a78a11",
-    "city_id": "city-bremen",
-    "name": "不萊梅主教座堂 Sandstraße 10-12",
-    "localized_name": null,
-    "original_name": "不萊梅主教座堂 Sandstraße 10-12",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.0755426,
-    "longitude": 8.8090624,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-a9bbdee39064b0",
     "city_id": "city-bremen",
     "name": "施諾爾區",
@@ -2221,18 +2065,6 @@
     "subcategory": "unclassified",
     "latitude": 53.072639,
     "longitude": 8.8100748,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-975d1c2898e26c",
-    "city_id": "city-bremen",
-    "name": "聖母教堂 Unser Lieben Frauen Kirchhof 27-29",
-    "localized_name": null,
-    "original_name": "聖母教堂 Unser Lieben Frauen Kirchhof 27-29",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.076484,
-    "longitude": 8.807448,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2283,6 +2115,18 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 53.0762455,
     "longitude": 8.8098222,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-54a64796a78a11",
+    "city_id": "city-bremen",
+    "name": "St. Petri Dom Bremen",
+    "localized_name": "不萊梅主教座堂",
+    "original_name": "不萊梅主教座堂 Sandstraße 10-12",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 53.0755426,
+    "longitude": 8.8090624,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2348,30 +2192,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-158581bd162770",
-    "city_id": "city-brugge",
-    "name": "euroshop",
-    "localized_name": null,
-    "original_name": "euroshop",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.2082855,
-    "longitude": 3.2198602,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-b77593ea36f61a",
-    "city_id": "city-brugge",
-    "name": "Grocery store",
-    "localized_name": null,
-    "original_name": "Grocery store",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.1971966,
-    "longitude": 3.2178565,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-9112b5010e5bb1",
     "city_id": "city-brugge",
     "name": "Market Square",
@@ -2384,15 +2204,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c86b98cb3a4dec",
+    "poi_id": "unclassified-searched-poi-b77593ea36f61a",
     "city_id": "city-brugge",
-    "name": "PITTA GRILLHOUSE",
+    "name": "Station Brugge",
     "localized_name": null,
-    "original_name": "PITTA GRILLHOUSE",
+    "original_name": "Grocery store",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 51.2057156,
-    "longitude": 3.2156489,
+    "latitude": 51.1971966,
+    "longitude": 3.2178565,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2405,30 +2225,6 @@
     "subcategory": "unclassified",
     "latitude": 51.2092059,
     "longitude": 3.2245615,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-b657381b4d4f12",
-    "city_id": "city-brussels",
-    "name": "50.853099",
-    "localized_name": null,
-    "original_name": "50.853099",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.853099,
-    "longitude": 4.330474,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c79071a9bb75f4",
-    "city_id": "city-brussels",
-    "name": "尿尿小妹 Imp. de la Fidélité 10-12",
-    "localized_name": null,
-    "original_name": "尿尿小妹 Imp. de la Fidélité 10-12",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.8484807,
-    "longitude": 4.3540406,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2489,6 +2285,18 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 50.8467887,
     "longitude": 4.3524356,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c79071a9bb75f4",
+    "city_id": "city-brussels",
+    "name": "Jeanneke Pis",
+    "localized_name": "尿尿小妹",
+    "original_name": "尿尿小妹 Imp. de la Fidélité 10-12",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.8484807,
+    "longitude": 4.3540406,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2702,6 +2510,20 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "attraction-way-24323859",
+    "city_id": "city-budapest",
+    "name": "布達佩斯中央市場1093 匈牙利",
+    "localized_name": "布達佩斯中央市場",
+    "original_name": "布達佩斯中央市場1093 匈牙利",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 47.4865975,
+    "longitude": 19.0588663,
+    "source_osm_id": "way/24323859",
+    "source_osm_url": "https://www.openstreetmap.org/way/24323859",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-ad210b1d43ccdb",
     "city_id": "city-budapest",
     "name": "岩石醫院 Lovas út 4/c",
@@ -2891,20 +2713,6 @@
     "subcategory": "unclassified",
     "latitude": 47.4963143,
     "longitude": 19.0526172,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-24323859",
-    "city_id": "city-budapest",
-    "name": "Great Market Hall",
-    "localized_name": "布達佩斯中央市場",
-    "original_name": "布達佩斯中央市場1093 匈牙利",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 47.4865975,
-    "longitude": 19.0588663,
-    "source_osm_id": "way/24323859",
-    "source_osm_url": "https://www.openstreetmap.org/way/24323859",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3262,18 +3070,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-6894dd7617ad4f",
-    "city_id": "city-colmar",
-    "name": "A l'Échevin",
-    "localized_name": null,
-    "original_name": "A l'Échevin",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0745055,
-    "longitude": 7.3567686,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-e6283c268f706a",
     "city_id": "city-colmar",
     "name": "Au Chasseur",
@@ -3310,18 +3106,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-cb96a9259abb91",
-    "city_id": "city-colmar",
-    "name": "Chez Hansi",
-    "localized_name": null,
-    "original_name": "Chez Hansi",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0761194,
-    "longitude": 7.3586444,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-10320699ee3fcd",
     "city_id": "city-colmar",
     "name": "City Hall of Colmar",
@@ -3355,6 +3139,30 @@
     "subcategory": "unclassified",
     "latitude": 48.0798224,
     "longitude": 7.3528169,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b60c2f53608c2",
+    "city_id": "city-colmar",
+    "name": "L'Ardoise",
+    "localized_name": null,
+    "original_name": "L'Ardoise",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.0748271,
+    "longitude": 7.3590092,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6894dd7617ad4f",
+    "city_id": "city-colmar",
+    "name": "La Petite Venise",
+    "localized_name": "小威尼斯",
+    "original_name": "A l'Échevin",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.0745055,
+    "longitude": 7.3567686,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3406,42 +3214,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-bc6af73c7a3ab1",
-    "city_id": "city-colmar",
-    "name": "Restaurant La Romantica",
-    "localized_name": null,
-    "original_name": "Restaurant La Romantica",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0763931,
-    "longitude": 7.3592562,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-30c1fbf995acaf",
-    "city_id": "city-colmar",
-    "name": "Ru de",
-    "localized_name": null,
-    "original_name": "Ru de",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0789449,
-    "longitude": 7.355803,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6eda0d0caee087",
-    "city_id": "city-colmar",
-    "name": "Rue du Chasseur",
-    "localized_name": null,
-    "original_name": "Rue du Chasseur",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0748384,
-    "longitude": 7.3590092,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2e2cf088eb54bd",
     "city_id": "city-colmar",
     "name": "Rue Turenne",
@@ -3451,18 +3223,6 @@
     "subcategory": "unclassified",
     "latitude": 48.0740713,
     "longitude": 7.3594929,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c3fdd76b161378",
-    "city_id": "city-cologne",
-    "name": "科隆主教座堂 Domkloster 4",
-    "localized_name": null,
-    "original_name": "科隆主教座堂 Domkloster 4",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.9412784,
-    "longitude": 6.9582814,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3487,6 +3247,18 @@
     "subcategory": "unclassified",
     "latitude": 50.9507075,
     "longitude": 6.9536175,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c3fdd76b161378",
+    "city_id": "city-cologne",
+    "name": "Kölner Dom",
+    "localized_name": "科隆主教座堂",
+    "original_name": "科隆主教座堂 Domkloster 4",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.9412784,
+    "longitude": 6.9582814,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3658,18 +3430,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-4d66742f528dc9",
-    "city_id": "city-duisburg",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.4263045,
-    "longitude": 6.7560215,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-0b53d8dc097550",
     "city_id": "city-duisburg",
     "name": "Tiger & Turtle",
@@ -3679,18 +3439,6 @@
     "subcategory": "unclassified",
     "latitude": 51.3756461,
     "longitude": 6.7379532,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-650cd7b1fe9d31",
-    "city_id": "city-dusseldorf",
-    "name": "小東京 Immermannstraße",
-    "localized_name": null,
-    "original_name": "小東京 Immermannstraße",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.2237392,
-    "longitude": 6.7880343,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3742,6 +3490,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-650cd7b1fe9d31",
+    "city_id": "city-dusseldorf",
+    "name": "Little Tokyo Düsseldorf",
+    "localized_name": "小東京",
+    "original_name": "小東京 Immermannstraße",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 51.2237392,
+    "longitude": 6.7880343,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-11dfcb1f349b9e",
     "city_id": "city-dusseldorf",
     "name": "Tritonenbrunnen",
@@ -3754,6 +3514,32 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-4a07fd90658035",
+    "city_id": "city-erfurt",
+    "name": "Erfurt Central Station",
+    "localized_name": null,
+    "original_name": "Willy-Brandt-Platz 12",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.9723535,
+    "longitude": 11.0379944,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-122237922",
+    "city_id": "city-erfurt",
+    "name": "Krämerbrücke",
+    "localized_name": null,
+    "original_name": "Krämerbrücke",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 50.9787656,
+    "longitude": 11.0316386,
+    "source_osm_id": "way/122237922",
+    "source_osm_url": "https://www.openstreetmap.org/way/122237922",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "attraction-way-122237921",
     "city_id": "city-erfurt",
     "name": "Krämerbrücke",
@@ -3763,18 +3549,6 @@
     "subcategory": "attraction",
     "latitude": 50.9787436,
     "longitude": 11.03094,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-4a07fd90658035",
-    "city_id": "city-erfurt",
-    "name": "Willy-Brandt-Platz 12",
-    "localized_name": null,
-    "original_name": "Willy-Brandt-Platz 12",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.9723535,
-    "longitude": 11.0379944,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3792,30 +3566,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-ed946c22525fc4",
-    "city_id": "city-frankfurt",
-    "name": "50.054572",
-    "localized_name": null,
-    "original_name": "50.054572",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.054572,
-    "longitude": 8.525103,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-9d068fa0cf5fac",
-    "city_id": "city-frankfurt",
-    "name": "歐元塔 Kaiserstraße 29",
-    "localized_name": null,
-    "original_name": "歐元塔 Kaiserstraße 29",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.1095772,
-    "longitude": 8.6739511,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-341614237d715b",
     "city_id": "city-frankfurt",
     "name": "鐵橋",
@@ -3825,18 +3575,6 @@
     "subcategory": "unclassified",
     "latitude": 50.1083959,
     "longitude": 8.6817631,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-ca34049756929f",
-    "city_id": "city-frankfurt",
-    "name": "aldi",
-    "localized_name": null,
-    "original_name": "aldi",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.1071825,
-    "longitude": 8.6624042,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3852,15 +3590,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c1a9c5154d3150",
+    "poi_id": "unclassified-searched-poi-0e89c0ec719663",
     "city_id": "city-frankfurt",
-    "name": "Elbenwald",
+    "name": "Brockhaus-Brunnen",
     "localized_name": null,
-    "original_name": "Elbenwald",
+    "original_name": "Primark",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 50.1114786,
-    "longitude": 8.675143,
+    "latitude": 50.1148662,
+    "longitude": 8.6837214,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9d068fa0cf5fac",
+    "city_id": "city-frankfurt",
+    "name": "Eurotower",
+    "localized_name": "歐元塔",
+    "original_name": "歐元塔 Kaiserstraße 29",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.1095772,
+    "longitude": 8.6739511,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3876,18 +3626,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-512a09bb540d82",
-    "city_id": "city-frankfurt",
-    "name": "frankfurt hbf",
-    "localized_name": null,
-    "original_name": "frankfurt hbf",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.1071963,
-    "longitude": 8.6636123,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-4e5fbcbe2aab1b",
     "city_id": "city-frankfurt",
     "name": "Kelsterbach",
@@ -3897,42 +3635,6 @@
     "subcategory": "unclassified",
     "latitude": 50.0585687,
     "longitude": 8.5278005,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6e6d04f787cff1",
-    "city_id": "city-frankfurt",
-    "name": "lidl",
-    "localized_name": null,
-    "original_name": "lidl",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.1067157,
-    "longitude": 8.6641644,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-0e89c0ec719663",
-    "city_id": "city-frankfurt",
-    "name": "Primark",
-    "localized_name": null,
-    "original_name": "Primark",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.1148662,
-    "longitude": 8.6837214,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6c68b3bc361bb3",
-    "city_id": "city-frankfurt",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.062058,
-    "longitude": 8.5297569,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3974,37 +3676,13 @@
   {
     "poi_id": "unclassified-searched-poi-780b4f7443df91",
     "city_id": "city-freiburg",
-    "name": "holzmarkt",
+    "name": "Freiburg (Breisgau) Hauptbahnhof",
     "localized_name": null,
     "original_name": "holzmarkt",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 47.9962625,
     "longitude": 7.8407648,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8c1d1b571cde3b",
-    "city_id": "city-freiburg",
-    "name": "Holzmarkt",
-    "localized_name": null,
-    "original_name": "Holzmarkt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9924063,
-    "longitude": 7.8495358,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-3c8fc54ec065f6",
-    "city_id": "city-freiburg",
-    "name": "Kollnau Bahnhof",
-    "localized_name": null,
-    "original_name": "Kollnau Bahnhof",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.101135,
-    "longitude": 7.9713895,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4164,18 +3842,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-a916dd6ea2ea24",
-    "city_id": "city-gent",
-    "name": "比利時根特 Sint-Veerleplein",
-    "localized_name": null,
-    "original_name": "比利時根特 Sint-Veerleplein",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.0568507,
-    "longitude": 3.7207169,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-917be08a08ab06",
     "city_id": "city-gent",
     "name": "Flixbus Stop",
@@ -4235,6 +3901,18 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 51.0547683,
     "longitude": 3.72075,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a916dd6ea2ea24",
+    "city_id": "city-gent",
+    "name": "Gravensteen",
+    "localized_name": "伯爵城堡",
+    "original_name": "比利時根特 Sint-Veerleplein",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 51.0568507,
+    "longitude": 3.7207169,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4502,99 +4180,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-5eb9a85519cf55",
-    "city_id": "city-hamburg",
-    "name": "53.454909",
-    "localized_name": null,
-    "original_name": "53.454909",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.454909,
-    "longitude": 9.976909,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-9327862ac15aca",
-    "city_id": "city-hamburg",
-    "name": "62 號渡輪",
-    "localized_name": null,
-    "original_name": "62 號渡輪",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5442717,
-    "longitude": 9.9456206,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-8864f86431fe2e",
     "city_id": "city-hamburg",
-    "name": "易北隧道 Bei den St. Pauli-Landungsbrücken",
-    "localized_name": null,
+    "name": "Alter Elbtunnel",
+    "localized_name": "易北隧道",
     "original_name": "易北隧道 Bei den St. Pauli-Landungsbrücken",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 53.5458861,
     "longitude": 9.9665878,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-20b5c972ac5d9a",
-    "city_id": "city-hamburg",
-    "name": "微縮景觀世界 Kehrwieder 2/Block D",
-    "localized_name": null,
-    "original_name": "微縮景觀世界 Kehrwieder 2/Block D",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5437277,
-    "longitude": 9.9889078,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-e8adef10c770fa",
-    "city_id": "city-hamburg",
-    "name": "聖尼古拉教堂 Willy-Brandt-Straße 60",
-    "localized_name": null,
-    "original_name": "聖尼古拉教堂 Willy-Brandt-Straße 60",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5474603,
-    "longitude": 9.9906708,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-750e2da732a879",
-    "city_id": "city-hamburg",
-    "name": "漢堡 Platz der Deutschen Einheit",
-    "localized_name": null,
-    "original_name": "漢堡 Platz der Deutschen Einheit",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5433461,
-    "longitude": 9.9785605,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-99e3bff0528f08",
-    "city_id": "city-hamburg",
-    "name": "漢堡潛艇博物館",
-    "localized_name": null,
-    "original_name": "漢堡潛艇博物館",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5453013,
-    "longitude": 9.9542419,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-4b6d94fd5f5f92",
-    "city_id": "city-hamburg",
-    "name": "aldi",
-    "localized_name": null,
-    "original_name": "aldi",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5520297,
-    "longitude": 10.0067532,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4634,18 +4228,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2b1530d2c9fb7d",
-    "city_id": "city-hamburg",
-    "name": "Brücke 10",
-    "localized_name": null,
-    "original_name": "Brücke 10",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5456806,
-    "longitude": 9.9636807,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-ac3bf334ad274f",
     "city_id": "city-hamburg",
     "name": "Dulf's Burger",
@@ -4658,15 +4240,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-3fd6da8cf1a8f8",
+    "poi_id": "unclassified-searched-poi-750e2da732a879",
     "city_id": "city-hamburg",
-    "name": "Eat",
-    "localized_name": null,
-    "original_name": "Eat",
+    "name": "Elbphilharmonie Hamburg",
+    "localized_name": "易北愛樂廳",
+    "original_name": "漢堡 Platz der Deutschen Einheit",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 53.5543914,
-    "longitude": 9.9894354,
+    "latitude": 53.5433461,
+    "longitude": 9.9785605,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4682,18 +4264,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-7f982400ab3f6e",
-    "city_id": "city-hamburg",
-    "name": "Fischmarkt",
-    "localized_name": null,
-    "original_name": "Fischmarkt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5440917,
-    "longitude": 9.9155859,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-520f0abaa2634c",
     "city_id": "city-hamburg",
     "name": "Hamburg BUNKER",
@@ -4706,15 +4276,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-6bee5da5d862a0",
+    "poi_id": "unclassified-searched-poi-393db57673662f",
     "city_id": "city-hamburg",
     "name": "Hamburg Central Station",
     "localized_name": null,
-    "original_name": "Hamburg Central Station",
+    "original_name": "hbf",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 53.5520216,
-    "longitude": 10.0094264,
+    "latitude": 53.5524007,
+    "longitude": 10.0073672,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4742,30 +4312,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-f45664596f1f59",
-    "city_id": "city-hamburg",
-    "name": "Harburg Rathaus",
-    "localized_name": null,
-    "original_name": "Harburg Rathaus",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.4607262,
-    "longitude": 9.9782391,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-699f97b4ebee2c",
-    "city_id": "city-hamburg",
-    "name": "Harmsstraße",
-    "localized_name": null,
-    "original_name": "Harmsstraße",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.4542746,
-    "longitude": 9.9777081,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2f4f1fc484bedc",
     "city_id": "city-hamburg",
     "name": "Harmsstraße 1哈堡",
@@ -4775,18 +4321,6 @@
     "subcategory": "unclassified",
     "latitude": 53.4545542,
     "longitude": 9.9843283,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-393db57673662f",
-    "city_id": "city-hamburg",
-    "name": "hbf",
-    "localized_name": null,
-    "original_name": "hbf",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5524007,
-    "longitude": 10.0073672,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4804,25 +4338,13 @@
   {
     "poi_id": "unclassified-searched-poi-41b3e9e98ddfe6",
     "city_id": "city-hamburg",
-    "name": "Kaufland Hamburg-St. Georg",
+    "name": "Kaufland hamburg-st.georg",
     "localized_name": null,
     "original_name": "Kaufland Hamburg-St. Georg",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 53.5526972,
     "longitude": 10.0143537,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-98d2a049b4ca9b",
-    "city_id": "city-hamburg",
-    "name": "Landungsbrücken Brücke 1 - Altona (Fischmarkt)",
-    "localized_name": null,
-    "original_name": "Landungsbrücken Brücke 1 - Altona (Fischmarkt)",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5439881,
-    "longitude": 9.9622534,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4838,41 +4360,41 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-d7fc68b43b8b12",
+    "poi_id": "unclassified-searched-poi-e8adef10c770fa",
     "city_id": "city-hamburg",
-    "name": "Lidl",
-    "localized_name": null,
-    "original_name": "Lidl",
+    "name": "Mahnmal St. Nikolai",
+    "localized_name": "聖尼古拉教堂",
+    "original_name": "聖尼古拉教堂 Willy-Brandt-Straße 60",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 53.5647913,
-    "longitude": 10.0382189,
+    "latitude": 53.5474603,
+    "longitude": 9.9906708,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-node-3445660920",
-    "city_id": "city-hamburg",
-    "name": "MINDWAYS 3D TrickArt",
-    "localized_name": null,
-    "original_name": "MINDWAYS 3D TrickArt",
-    "category": "Attraction",
-    "subcategory": "museum",
-    "latitude": 53.5484803,
-    "longitude": 9.9891644,
-    "source_osm_id": "node/3445660920",
-    "source_osm_url": "https://www.openstreetmap.org/node/3445660920",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-99ca5d62620e2b",
+    "poi_id": "attraction-node-10946039386",
     "city_id": "city-hamburg",
     "name": "Miniatur Wunderland",
-    "localized_name": null,
+    "localized_name": "微缩景观世界",
     "original_name": "Miniatur Wunderland",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 53.5438229,
+    "longitude": 9.9889448,
+    "source_osm_id": "node/10946039386",
+    "source_osm_url": "https://www.openstreetmap.org/node/10946039386",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-20b5c972ac5d9a",
+    "city_id": "city-hamburg",
+    "name": "Miniatur Wunderland",
+    "localized_name": "微縮景觀世界",
+    "original_name": "微縮景觀世界 Kehrwieder 2/Block D",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 53.5463681,
-    "longitude": 9.9711715,
+    "latitude": 53.5437277,
+    "longitude": 9.9889078,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4890,63 +4412,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-09950015f45292",
+    "poi_id": "unclassified-searched-poi-99e3bff0528f08",
     "city_id": "city-hamburg",
-    "name": "SRH University Campus Hamburg",
-    "localized_name": null,
-    "original_name": "SRH University Campus Hamburg",
+    "name": "U-Bootmuseum Hamburg GmbH",
+    "localized_name": "漢堡潛艇博物館",
+    "original_name": "漢堡潛艇博物館",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 53.5475909,
-    "longitude": 9.9944928,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-042182b0e69746",
-    "city_id": "city-hamburg",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5456043,
-    "longitude": 9.9744571,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-b959d9c45dd418",
-    "city_id": "city-hamburg",
-    "name": "U-434",
-    "localized_name": null,
-    "original_name": "U-434",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5450049,
-    "longitude": 9.9448348,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-3597905de44bbc",
-    "city_id": "city-hamburg",
-    "name": "Wandsbeker Marktplatz",
-    "localized_name": null,
-    "original_name": "Wandsbeker Marktplatz",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5720894,
-    "longitude": 10.0680141,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-24520a15b0ee25",
-    "city_id": "city-hamburg",
-    "name": "Wandsbeker Marktstraße",
-    "localized_name": null,
-    "original_name": "Wandsbeker Marktstraße",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 53.5723579,
-    "longitude": 10.0670132,
+    "latitude": 53.5453013,
+    "longitude": 9.9542419,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4962,18 +4436,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-8583d2c9a244cb",
-    "city_id": "city-heidelberg",
-    "name": "海德堡學生監獄 Augustinergasse 2",
-    "localized_name": null,
-    "original_name": "海德堡學生監獄 Augustinergasse 2",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.411342,
-    "longitude": 8.7067031,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-4d9b62cab65ce2",
     "city_id": "city-heidelberg",
     "name": "海德堡學生監獄 Augustinergasse 2",
@@ -4983,18 +4445,6 @@
     "subcategory": "unclassified",
     "latitude": 49.4059831,
     "longitude": 8.6911982,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-923177f97ba750",
-    "city_id": "city-heidelberg",
-    "name": "穀物廣場 Kornmarkt",
-    "localized_name": null,
-    "original_name": "穀物廣場 Kornmarkt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4119036,
-    "longitude": 8.7115949,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5022,6 +4472,30 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-ea674f5751f0d8",
+    "city_id": "city-heidelberg",
+    "name": "Heidelberg Hauptbahnhof",
+    "localized_name": null,
+    "original_name": "kfc",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 49.4041735,
+    "longitude": 8.6759541,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-089ab2e44d3187",
+    "city_id": "city-heidelberg",
+    "name": "Heidelberg-Altstadt",
+    "localized_name": null,
+    "original_name": "Heidelberg-Altstadt",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 49.4151285,
+    "longitude": 8.7207777,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "manual-poi-0b9371b72f4ac8",
     "city_id": "city-heidelberg",
     "name": "Karlsplatz",
@@ -5034,51 +4508,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-ea674f5751f0d8",
+    "poi_id": "unclassified-searched-poi-923177f97ba750",
     "city_id": "city-heidelberg",
-    "name": "kfc",
-    "localized_name": null,
-    "original_name": "kfc",
+    "name": "Kornmarkt",
+    "localized_name": "穀物廣場",
+    "original_name": "穀物廣場 Kornmarkt",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 49.4041735,
-    "longitude": 8.6759541,
+    "latitude": 49.4119036,
+    "longitude": 8.7115949,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-edac837ef430bc",
+    "poi_id": "unclassified-searched-poi-8583d2c9a244cb",
     "city_id": "city-heidelberg",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
+    "name": "Studentenkarzer",
+    "localized_name": "海德堡學生監獄",
+    "original_name": "海德堡學生監獄 Augustinergasse 2",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 49.4041735,
-    "longitude": 8.6759541,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-2ca9a65e585d00",
-    "city_id": "city-hof",
-    "name": "95028 Hof",
-    "localized_name": null,
-    "original_name": "95028 Hof",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.308544,
-    "longitude": 11.921524,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c8c0949dc9b59f",
-    "city_id": "city-hof",
-    "name": "attractions",
-    "localized_name": null,
-    "original_name": "attractions",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.3072984,
-    "longitude": 11.9189644,
+    "latitude": 49.411342,
+    "longitude": 8.7067031,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5115,18 +4565,6 @@
     "subcategory": "unclassified",
     "latitude": 50.317017,
     "longitude": 11.7923271,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-a192c745c83d7d",
-    "city_id": "city-hof",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.3086891,
-    "longitude": 11.9241384,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5262,6 +4700,20 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "attraction-relation-18055570",
+    "city_id": "city-istanbul",
+    "name": "蘇丹艾哈邁德清真寺 Cankurtaran",
+    "localized_name": "蘇丹艾哈邁德清真寺",
+    "original_name": "蘇丹艾哈邁德清真寺 Cankurtaran",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 41.0054066,
+    "longitude": 28.9766495,
+    "source_osm_id": "relation/18055570",
+    "source_osm_url": "https://www.openstreetmap.org/relation/18055570",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-83a3ff2e8377f3",
     "city_id": "city-istanbul",
     "name": "Ali Muhiddin Hacı Bekir Lokumları",
@@ -5307,20 +4759,6 @@
     "subcategory": "unclassified",
     "latitude": 41.0136111,
     "longitude": 28.9747222,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-relation-18055570",
-    "city_id": "city-istanbul",
-    "name": "Blue Mosque",
-    "localized_name": "蘇丹艾哈邁德清真寺",
-    "original_name": "蘇丹艾哈邁德清真寺 Cankurtaran",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 41.0054066,
-    "longitude": 28.9766495,
-    "source_osm_id": "relation/18055570",
-    "source_osm_url": "https://www.openstreetmap.org/relation/18055570",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5376,7 +4814,7 @@
   {
     "poi_id": "attraction-way-175516451",
     "city_id": "city-istanbul",
-    "name": "Dolmabahce Palace",
+    "name": "Dolmabahçe Palace",
     "localized_name": "多玛巴赫切宫",
     "original_name": "Dolmabahçe Palace",
     "category": "Attraction",
@@ -5642,39 +5080,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-131ad6387d6bd3",
+    "poi_id": "unclassified-searched-poi-52b9b8e3d80d33",
     "city_id": "city-karlovy-vary",
-    "name": "Fio banka",
+    "name": "Karlovy Vary Dolní Nádraží",
     "localized_name": null,
-    "original_name": "Fio banka",
+    "original_name": "Terminál",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 50.230255,
-    "longitude": 12.8676278,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-a5565032d203aa",
-    "city_id": "city-karlovy-vary",
-    "name": "Fio Banka",
-    "localized_name": null,
-    "original_name": "Fio Banka",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.2242102,
-    "longitude": 12.8817812,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-0433bce41810b3",
-    "city_id": "city-karlovy-vary",
-    "name": "gio ba",
-    "localized_name": null,
-    "original_name": "gio ba",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.2242102,
-    "longitude": 12.8817812,
+    "latitude": 50.2299881,
+    "longitude": 12.8639812,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5687,18 +5101,6 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 50.2252871,
     "longitude": 12.8817812,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-5510b79a957cc5",
-    "city_id": "city-karlovy-vary",
-    "name": "Raiffeisen bank",
-    "localized_name": null,
-    "original_name": "Raiffeisen bank",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.2276261,
-    "longitude": 12.8671082,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5723,18 +5125,6 @@
     "subcategory": "unclassified",
     "latitude": 50.2248358,
     "longitude": 12.8772433,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-52b9b8e3d80d33",
-    "city_id": "city-karlovy-vary",
-    "name": "Terminál",
-    "localized_name": null,
-    "original_name": "Terminál",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.2299881,
-    "longitude": 12.8639812,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5774,21 +5164,9 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-aa9ab8d3467618",
-    "city_id": "city-karlsruhe",
-    "name": "49.080459",
-    "localized_name": null,
-    "original_name": "49.080459",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.080459,
-    "longitude": 8.399,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-66597c02c851d1",
     "city_id": "city-karlsruhe",
-    "name": "Eichendorffstraße 19",
+    "name": "Eggenstein Spöcker Weg",
     "localized_name": null,
     "original_name": "Eichendorffstraße 19",
     "category": "Unclassified",
@@ -5798,15 +5176,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-def726afea690e",
+    "poi_id": "unclassified-searched-poi-5bfcd38ac0daa1",
     "city_id": "city-karlsruhe",
-    "name": "Eichendorffstraße 19",
+    "name": "Karlsruhe Central Station",
     "localized_name": null,
-    "original_name": "Eichendorffstraße 19",
+    "original_name": "Supermärkte",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 49.0804777,
-    "longitude": 8.3964415,
+    "latitude": 48.993005,
+    "longitude": 8.4023215,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5846,7 +5224,7 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-87eea6725222ff",
+    "poi_id": "unclassified-searched-poi-87eea6725222ff-coordinate-review",
     "city_id": "city-karlsruhe",
     "name": "Schlossplatz",
     "localized_name": null,
@@ -5855,19 +5233,7 @@
     "subcategory": "unclassified",
     "latitude": 49.0120631,
     "longitude": 8.4042607,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-5bfcd38ac0daa1",
-    "city_id": "city-karlsruhe",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.993005,
-    "longitude": 8.4023215,
-    "review_status": "provisional_owner_assumption"
+    "review_status": "needs_review"
   },
   {
     "poi_id": "unclassified-searched-poi-73a50acace1769",
@@ -5891,18 +5257,6 @@
     "subcategory": "unclassified",
     "latitude": 50.3579789,
     "longitude": 7.5899798,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6e990d38d8ec26",
-    "city_id": "city-konigssee",
-    "name": "83471舍瑙阿姆克尼格塞國王湖",
-    "localized_name": null,
-    "original_name": "83471舍瑙阿姆克尼格塞國王湖",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.5550248,
-    "longitude": 12.9792417,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5942,6 +5296,20 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "attraction-relation-2270819",
+    "city_id": "city-krakow",
+    "name": "瓦維爾城堡",
+    "localized_name": null,
+    "original_name": "瓦維爾城堡",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 50.0544127,
+    "longitude": 19.936564,
+    "source_osm_id": "relation/2270819",
+    "source_osm_url": "https://www.openstreetmap.org/relation/2270819",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-d68838ba426f9a",
     "city_id": "city-krakow",
     "name": "克拉科夫瓮城 Basztowa",
@@ -5963,6 +5331,34 @@
     "subcategory": "unclassified",
     "latitude": 50.0646918,
     "longitude": 19.9400993,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-23256528",
+    "city_id": "city-krakow",
+    "name": "紡織會館 Rynek Główny 3",
+    "localized_name": "紡織會館",
+    "original_name": "紡織會館 Rynek Główny 3",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 50.0617002,
+    "longitude": 19.9373615,
+    "source_osm_id": "way/23256528",
+    "source_osm_url": "https://www.openstreetmap.org/way/23256528",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-26195267",
+    "city_id": "city-krakow",
+    "name": "聖母聖殿 plac Mariacki 5",
+    "localized_name": "聖母聖殿",
+    "original_name": "聖母聖殿 plac Mariacki 5",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 50.0616572,
+    "longitude": 19.93945,
+    "source_osm_id": "way/26195267",
+    "source_osm_url": "https://www.openstreetmap.org/way/26195267",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5999,44 +5395,6 @@
     "subcategory": "unclassified",
     "latitude": 50.0640979,
     "longitude": 19.9325477,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-1533a019e8ce2c",
-    "city_id": "city-krakow",
-    "name": "Biedronka",
-    "localized_name": null,
-    "original_name": "Biedronka",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0459246,
-    "longitude": 19.9335689,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-e755e1a3db2879",
-    "city_id": "city-krakow",
-    "name": "Biedronka",
-    "localized_name": null,
-    "original_name": "Biedronka",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0546019,
-    "longitude": 19.9234386,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-23256528",
-    "city_id": "city-krakow",
-    "name": "Cloth Hall",
-    "localized_name": "紡織會館",
-    "original_name": "紡織會館 Rynek Główny 3",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 50.0617002,
-    "longitude": 19.9373615,
-    "source_osm_id": "way/23256528",
-    "source_osm_url": "https://www.openstreetmap.org/way/23256528",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6150,7 +5508,7 @@
   {
     "poi_id": "attraction-node-10878068105",
     "city_id": "city-krakow",
-    "name": "Lost Souls Alley Horror House",
+    "name": "Lost Souls Alley",
     "localized_name": null,
     "original_name": "Lost Souls Alley",
     "category": "Attraction",
@@ -6222,29 +5580,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-dfc24051e08d66",
+    "poi_id": "attraction-way-201133718",
     "city_id": "city-krakow",
     "name": "Rynek Główny",
-    "localized_name": null,
+    "localized_name": "中央集市廣場",
     "original_name": "Rynek Główny",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0594819,
-    "longitude": 19.9300758,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-26195267",
-    "city_id": "city-krakow",
-    "name": "St. Mary's Basilica",
-    "localized_name": "聖母聖殿",
-    "original_name": "聖母聖殿 plac Mariacki 5",
     "category": "Attraction",
     "subcategory": "attraction",
-    "latitude": 50.0616572,
-    "longitude": 19.93945,
-    "source_osm_id": "way/26195267",
-    "source_osm_url": "https://www.openstreetmap.org/way/26195267",
+    "latitude": 50.0614961,
+    "longitude": 19.9373512,
+    "source_osm_id": "way/201133718",
+    "source_osm_url": "https://www.openstreetmap.org/way/201133718",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6260,20 +5606,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-relation-2270819",
-    "city_id": "city-krakow",
-    "name": "Wawel Castle",
-    "localized_name": "瓦維爾城堡",
-    "original_name": "瓦維爾城堡",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 50.0544127,
-    "longitude": 19.936564,
-    "source_osm_id": "relation/2270819",
-    "source_osm_url": "https://www.openstreetmap.org/relation/2270819",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-6ddd9e17fc17e1",
     "city_id": "city-leipzig",
     "name": "集市廣場",
@@ -6286,18 +5618,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-581a2c48a3e194",
-    "city_id": "city-leipzig",
-    "name": "altstadt",
-    "localized_name": null,
-    "original_name": "altstadt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.3458099,
-    "longitude": 12.4079884,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-804ce7f4bac2da",
     "city_id": "city-leipzig",
     "name": "Brühl 1",
@@ -6307,18 +5627,6 @@
     "subcategory": "unclassified",
     "latitude": 51.343488,
     "longitude": 12.375612,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-996a5b05998438",
-    "city_id": "city-leipzig",
-    "name": "Eisenbahnstraße 87",
-    "localized_name": null,
-    "original_name": "Eisenbahnstraße 87",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.345609,
-    "longitude": 12.4075897,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6360,7 +5668,7 @@
   {
     "poi_id": "unclassified-searched-poi-4dd75bb7baebea",
     "city_id": "city-leipzig",
-    "name": "Kentucky Fried Chicken",
+    "name": "Leipzig Central Station",
     "localized_name": null,
     "original_name": "Kentucky Fried Chicken",
     "category": "Unclassified",
@@ -6538,18 +5846,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-abf6b7170a4534",
-    "city_id": "city-mannheim",
-    "name": "曼海姆水塔 Friedrichsplatz",
-    "localized_name": null,
-    "original_name": "曼海姆水塔 Friedrichsplatz",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4840188,
-    "longitude": 8.4756253,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-edacd187b94648",
     "city_id": "city-mannheim",
     "name": "曼海姆宮",
@@ -6574,39 +5870,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-22434443a7b2c2",
-    "city_id": "city-mannheim",
-    "name": "kfc",
-    "localized_name": null,
-    "original_name": "kfc",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4862976,
-    "longitude": 8.4699299,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-9f062ce017a243",
     "city_id": "city-mannheim",
-    "name": "Mannheim Hbf (DE)",
+    "name": "Mannheim Hbf",
     "localized_name": null,
     "original_name": "Mannheim Hbf (DE)",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 49.4796864,
     "longitude": 8.4698347,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8719f37e4d59d5",
-    "city_id": "city-mannheim",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.482651,
-    "longitude": 8.4721283,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6622,6 +5894,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-abf6b7170a4534",
+    "city_id": "city-mannheim",
+    "name": "Wasserturm Mannheim",
+    "localized_name": "曼海姆水塔",
+    "original_name": "曼海姆水塔 Friedrichsplatz",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 49.4840188,
+    "longitude": 8.4756253,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-9580af250f9320",
     "city_id": "city-mannheim",
     "name": "Worms Hbf",
@@ -6631,18 +5915,6 @@
     "subcategory": "unclassified",
     "latitude": 49.6347993,
     "longitude": 8.3542207,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-171c3a3a5a691c",
-    "city_id": "city-marseille",
-    "name": "43.304179",
-    "localized_name": null,
-    "original_name": "43.304179",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.304179,
-    "longitude": 5.379868,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6670,18 +5942,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-69c085c4f9e809",
-    "city_id": "city-marseille",
-    "name": "法國馬賽老港",
-    "localized_name": null,
-    "original_name": "法國馬賽老港",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.2944646,
-    "longitude": 5.3645147,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-214089530824f0",
     "city_id": "city-marseille",
     "name": "法羅宮",
@@ -6691,30 +5951,6 @@
     "subcategory": "unclassified",
     "latitude": 43.2944739,
     "longitude": 5.3584204,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7efa4dadf9187d",
-    "city_id": "city-marseille",
-    "name": "隆尚宮 Bd Jard. Zoologique",
-    "localized_name": null,
-    "original_name": "隆尚宮 Bd Jard. Zoologique",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.3042669,
-    "longitude": 5.3946029,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-57946b4dab3a98",
-    "city_id": "city-marseille",
-    "name": "Au Savon de marseille",
-    "localized_name": null,
-    "original_name": "Au Savon de marseille",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.2950712,
-    "longitude": 5.3726936,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6742,42 +5978,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-505a7de6712442",
-    "city_id": "city-marseille",
-    "name": "celio",
-    "localized_name": null,
-    "original_name": "celio",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.303588,
-    "longitude": 5.367356,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6413466ab0e12a",
-    "city_id": "city-marseille",
-    "name": "Cruise Free Shuttle",
-    "localized_name": null,
-    "original_name": "Cruise Free Shuttle",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.3056554,
-    "longitude": 5.3644254,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-612af2c18f9e65",
-    "city_id": "city-marseille",
-    "name": "la Cantine de la Friche",
-    "localized_name": null,
-    "original_name": "la Cantine de la Friche",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.3015484,
-    "longitude": 5.3782853,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-02b5320b962dc6",
     "city_id": "city-marseille",
     "name": "La Major",
@@ -6790,53 +5990,39 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-00865a6d0c83b9",
+    "poi_id": "unclassified-searched-poi-69c085c4f9e809",
     "city_id": "city-marseille",
-    "name": "Longchamp Palace",
-    "localized_name": null,
-    "original_name": "Longchamp Palace",
+    "name": "Le vieux Port",
+    "localized_name": "法國馬賽老港",
+    "original_name": "法國馬賽老港",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 43.3010867,
-    "longitude": 5.3878902,
+    "latitude": 43.2944646,
+    "longitude": 5.3645147,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-way-503091186",
+    "poi_id": "unclassified-searched-poi-84188dd51e700b",
     "city_id": "city-marseille",
-    "name": "Marché des Capucins",
+    "name": "Les Terrasses du Port",
     "localized_name": null,
-    "original_name": "Marché des Capucins",
-    "category": "Attraction",
-    "subcategory": "marketplace",
-    "latitude": 43.2964156,
-    "longitude": 5.3800044,
-    "source_osm_id": "way/503091186",
-    "source_osm_url": "https://www.openstreetmap.org/way/503091186",
+    "original_name": "Tezenis",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 43.3067346,
+    "longitude": 5.3641865,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-50331a7962614c",
+    "poi_id": "unclassified-searched-poi-171c3a3a5a691c",
     "city_id": "city-marseille",
-    "name": "Marseille en Cornet",
+    "name": "Marseille Saint-Charles",
     "localized_name": null,
-    "original_name": "Marseille en Cornet",
+    "original_name": "43.304179",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 43.2956642,
-    "longitude": 5.365846,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-d6cf6d2a9d0ac9",
-    "city_id": "city-marseille",
-    "name": "Noailles",
-    "localized_name": null,
-    "original_name": "Noailles",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.30115,
-    "longitude": 5.3703483,
+    "latitude": 43.304179,
+    "longitude": 5.379868,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6852,15 +6038,29 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-d9d9c9c8eb8b4d",
+    "poi_id": "unclassified-searched-poi-7efa4dadf9187d",
+    "city_id": "city-marseille",
+    "name": "Palais Longchamp",
+    "localized_name": "隆尚宮",
+    "original_name": "隆尚宮 Bd Jard. Zoologique",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 43.3042669,
+    "longitude": 5.3946029,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-97284416",
     "city_id": "city-marseille",
     "name": "Plage de Maldormé",
     "localized_name": null,
     "original_name": "Plage de Maldormé",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.2935733,
-    "longitude": 5.3755849,
+    "category": "Attraction",
+    "subcategory": "beach",
+    "latitude": 43.2804479,
+    "longitude": 5.350204,
+    "source_osm_id": "way/97284416",
+    "source_osm_url": "https://www.openstreetmap.org/way/97284416",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -6888,30 +6088,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-936ad9cd042e6a",
-    "city_id": "city-marseille",
-    "name": "Restaurant Le Palmier",
-    "localized_name": null,
-    "original_name": "Restaurant Le Palmier",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.2948272,
-    "longitude": 5.3769883,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-ca8e24cadc4eed",
-    "city_id": "city-marseille",
-    "name": "Restaurant Tella Cuisine Orientale & Algérienne",
-    "localized_name": null,
-    "original_name": "Restaurant Tella Cuisine Orientale & Algérienne",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.2985198,
-    "longitude": 5.3764933,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2fb73c32b4676e",
     "city_id": "city-marseille",
     "name": "Sadi Carnot",
@@ -6921,44 +6097,6 @@
     "subcategory": "unclassified",
     "latitude": 43.3101665,
     "longitude": 5.3805055,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-69661309",
-    "city_id": "city-marseille",
-    "name": "Savonnerie Fer à Cheval",
-    "localized_name": null,
-    "original_name": "Savonnerie Fer à Cheval",
-    "category": "Attraction",
-    "subcategory": "factory",
-    "latitude": 43.3217331,
-    "longitude": 5.3901867,
-    "source_osm_id": "way/69661309",
-    "source_osm_url": "https://www.openstreetmap.org/way/69661309",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-84188dd51e700b",
-    "city_id": "city-marseille",
-    "name": "Tezenis",
-    "localized_name": null,
-    "original_name": "Tezenis",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.3067346,
-    "longitude": 5.3641865,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7d9443fcc9d7aa",
-    "city_id": "city-marseille",
-    "name": "Tezenis",
-    "localized_name": null,
-    "original_name": "Tezenis",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.2662703,
-    "longitude": 5.3728113,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7033,18 +6171,6 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 43.770908,
     "longitude": 7.495826,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8b4558552d91ba",
-    "city_id": "city-menton",
-    "name": "toilet",
-    "localized_name": null,
-    "original_name": "toilet",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.7742295,
-    "longitude": 7.5011703,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7276,18 +6402,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c4463e5f0062f7",
-    "city_id": "city-milan",
-    "name": "Tigotà",
-    "localized_name": null,
-    "original_name": "Tigotà",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 45.4667629,
-    "longitude": 9.1828358,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-8062f2a55539ed",
     "city_id": "city-milan",
     "name": "Yamato Shop",
@@ -7384,18 +6498,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-5e67f5681399dd",
-    "city_id": "city-munich",
-    "name": "227 bus Deisenhofen",
-    "localized_name": null,
-    "original_name": "227 bus Deisenhofen",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0170731,
-    "longitude": 11.5876595,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-057aaf9a8830e3",
     "city_id": "city-munich",
     "name": "马克林铁路博物馆",
@@ -7405,42 +6507,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1324864,
     "longitude": 11.5457548,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7a599a85e72da1",
-    "city_id": "city-munich",
-    "name": "手機維修",
-    "localized_name": null,
-    "original_name": "手機維修",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1327957,
-    "longitude": 11.5686513,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-418dd781f87710",
-    "city_id": "city-munich",
-    "name": "艾雪德",
-    "localized_name": null,
-    "original_name": "艾雪德",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9735672,
-    "longitude": 11.6525731,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c1c7ba3a8060e1",
-    "city_id": "city-munich",
-    "name": "西公園81373 München",
-    "localized_name": null,
-    "original_name": "西公園81373 München",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1200557,
-    "longitude": 11.5175186,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7480,30 +6546,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-77539deb05db50",
-    "city_id": "city-munich",
-    "name": "阿默湖畔黑爾興",
-    "localized_name": null,
-    "original_name": "阿默湖畔黑爾興",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0018901,
-    "longitude": 11.1710335,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-4c49b907dc5528",
-    "city_id": "city-munich",
-    "name": "帝苑 Hermann-Böcker-Straße 13",
-    "localized_name": null,
-    "original_name": "帝苑 Hermann-Böcker-Straße 13",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.2215441,
-    "longitude": 11.3313642,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-11c5c4e6e6ac38",
     "city_id": "city-munich",
     "name": "胡家酒樓 Münchener Str. 1",
@@ -7513,44 +6555,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1550173,
     "longitude": 11.4180254,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-926a22c258b611",
-    "city_id": "city-munich",
-    "name": "國家劇院 Max-Joseph-Platz 2",
-    "localized_name": null,
-    "original_name": "國家劇院 Max-Joseph-Platz 2",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1396372,
-    "longitude": 11.576974,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-a96ce8baceddaf",
-    "city_id": "city-munich",
-    "name": "奧伯林格 Neuhauser Str. 18",
-    "localized_name": null,
-    "original_name": "奧伯林格 Neuhauser Str. 18",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1389986,
-    "longitude": 11.5676773,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-node-703266500",
-    "city_id": "city-munich",
-    "name": "聖母教堂 Frauenplatz 1",
-    "localized_name": "聖母教堂",
-    "original_name": "聖母教堂 Frauenplatz 1",
-    "category": "Attraction",
-    "subcategory": "memorial",
-    "latitude": 48.1388639,
-    "longitude": 11.5739365,
-    "source_osm_id": "node/703266500",
-    "source_osm_url": "https://www.openstreetmap.org/node/703266500",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7590,30 +6594,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-e058efbf63dda0",
-    "city_id": "city-munich",
-    "name": "慕尼黑瑪利亞希爾夫廣場",
-    "localized_name": null,
-    "original_name": "慕尼黑瑪利亞希爾夫廣場",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1171589,
-    "longitude": 11.5886281,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-45a9507e7f133d",
-    "city_id": "city-munich",
-    "name": "慕尼黑機場瑞享酒店 Ludwigstraße 43",
-    "localized_name": null,
-    "original_name": "慕尼黑機場瑞享酒店 Ludwigstraße 43",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.3314649,
-    "longitude": 11.739648,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-33b9fab7dd30f3",
     "city_id": "city-munich",
     "name": "穀物市場",
@@ -7623,18 +6603,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1353899,
     "longitude": 11.5760761,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8c14045784bc42",
-    "city_id": "city-munich",
-    "name": "寶馬世界 Am Olympiapark 1",
-    "localized_name": null,
-    "original_name": "寶馬世界 Am Olympiapark 1",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1771981,
-    "longitude": 11.5562963,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7650,21 +6618,9 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c4b83848522008",
-    "city_id": "city-munich",
-    "name": "aldi",
-    "localized_name": null,
-    "original_name": "aldi",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9710062,
-    "longitude": 11.6612648,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-70cc1f9ae741c5",
     "city_id": "city-munich",
-    "name": "Allacher Lohe",
+    "name": "Allacher Forst",
     "localized_name": null,
     "original_name": "Allacher Lohe",
     "category": "Unclassified",
@@ -7674,51 +6630,39 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-b3cee0eafe0835",
+    "poi_id": "unclassified-searched-poi-b84b3c5560bb54",
     "city_id": "city-munich",
-    "name": "anime",
+    "name": "Asia Supermarkt",
     "localized_name": null,
-    "original_name": "anime",
+    "original_name": "Bingener Str. 46",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1356235,
-    "longitude": 11.5630782,
+    "latitude": 48.1860667,
+    "longitude": 11.5254838,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-e4e093a13c4cdb",
+    "poi_id": "unclassified-searched-poi-6b08c48627cb4a",
     "city_id": "city-munich",
-    "name": "Arcisstraße 21",
+    "name": "Bahnhof, Herrsching a. Ammersee",
     "localized_name": null,
-    "original_name": "Arcisstraße 21",
+    "original_name": "toilet",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1487431,
-    "longitude": 11.5685317,
+    "latitude": 47.9947123,
+    "longitude": 11.1702744,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c054f788be122f",
+    "poi_id": "unclassified-searched-poi-616a4588455e63",
     "city_id": "city-munich",
-    "name": "ASIA CITY Unterhaching",
+    "name": "Berg am Laim",
     "localized_name": null,
-    "original_name": "ASIA CITY Unterhaching",
+    "original_name": "dm-drogerie markt",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.056107,
-    "longitude": 11.6083396,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-ced386b6aed618",
-    "city_id": "city-munich",
-    "name": "Bahnhof",
-    "localized_name": null,
-    "original_name": "Bahnhof",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9736431,
-    "longitude": 11.6546687,
+    "latitude": 48.1328131,
+    "longitude": 11.6322675,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7734,29 +6678,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-b84b3c5560bb54",
+    "poi_id": "unclassified-searched-poi-8c14045784bc42",
     "city_id": "city-munich",
-    "name": "Bingener Str. 46",
-    "localized_name": null,
-    "original_name": "Bingener Str. 46",
+    "name": "BMW Welt",
+    "localized_name": "寶馬世界",
+    "original_name": "寶馬世界 Am Olympiapark 1",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1860667,
-    "longitude": 11.5254838,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-15804929",
-    "city_id": "city-munich",
-    "name": "bmw welt bmw welt am olympiapark munich-milbertshofen-am hart",
-    "localized_name": null,
-    "original_name": "bmw welt bmw welt am olympiapark munich-milbertshofen-am hart",
-    "category": "Attraction",
-    "subcategory": "museum",
-    "latitude": 48.1773638,
-    "longitude": 11.5565521,
-    "source_osm_id": "way/15804929",
-    "source_osm_url": "https://www.openstreetmap.org/way/15804929",
+    "latitude": 48.1771981,
+    "longitude": 11.5562963,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7769,30 +6699,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1667017,
     "longitude": 11.5781521,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-84a45e8091fb70",
-    "city_id": "city-munich",
-    "name": "Carrer de la Palma de Sant Just",
-    "localized_name": null,
-    "original_name": "Carrer de la Palma de Sant Just",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9756288,
-    "longitude": 11.6523008,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-19b08169d18f2c",
-    "city_id": "city-munich",
-    "name": "Carrer de la Palma de Sant Just Barcelona",
-    "localized_name": null,
-    "original_name": "Carrer de la Palma de Sant Just Barcelona",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9756288,
-    "longitude": 11.6523008,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -7811,7 +6717,7 @@
     "poi_id": "unclassified-searched-poi-8b12abe3ea8bed",
     "city_id": "city-munich",
     "name": "Dachau Concentration Camp Memorial Site",
-    "localized_name": null,
+    "localized_name": "達豪集中營",
     "original_name": "Dachau Concentration Camp Memorial Site",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -7820,47 +6726,11 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-9a9f7ef889294b",
-    "city_id": "city-munich",
-    "name": "Dachauer Str. 177",
-    "localized_name": null,
-    "original_name": "Dachauer Str. 177",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1581575,
-    "longitude": 11.5483921,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-dc731f6e9cf49f",
     "city_id": "city-munich",
     "name": "Decathlon",
     "localized_name": null,
     "original_name": "Decathlon",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1393547,
-    "longitude": 11.5616978,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-48c937c283ef5b",
-    "city_id": "city-munich",
-    "name": "DECATHLON Connect München - Stachus",
-    "localized_name": null,
-    "original_name": "DECATHLON Connect München - Stachus",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1393365,
-    "longitude": 11.5654194,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-be9a2f7c36dbf8",
-    "city_id": "city-munich",
-    "name": "deutsche post",
-    "localized_name": null,
-    "original_name": "deutsche post",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 48.1393547,
@@ -7880,102 +6750,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-168902d9bf852d",
-    "city_id": "city-munich",
-    "name": "DJANGO'S",
-    "localized_name": null,
-    "original_name": "DJANGO'S",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1114152,
-    "longitude": 11.5948805,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8b8027d5ff102c",
-    "city_id": "city-munich",
-    "name": "dm",
-    "localized_name": null,
-    "original_name": "dm",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.127449,
-    "longitude": 11.6032181,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6ad2d7d017b0bc",
-    "city_id": "city-munich",
-    "name": "dm",
-    "localized_name": null,
-    "original_name": "dm",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1488643,
-    "longitude": 11.4624344,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-616a4588455e63",
-    "city_id": "city-munich",
-    "name": "dm-drogerie markt",
-    "localized_name": null,
-    "original_name": "dm-drogerie markt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1328131,
-    "longitude": 11.6322675,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7c1c50eb1b6e2e",
-    "city_id": "city-munich",
-    "name": "dm-drogerie markt",
-    "localized_name": null,
-    "original_name": "dm-drogerie markt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1263083,
-    "longitude": 11.6032178,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-fa54e87845ef71",
-    "city_id": "city-munich",
-    "name": "dm-drogerie markt",
-    "localized_name": null,
-    "original_name": "dm-drogerie markt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1274501,
-    "longitude": 11.6032177,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-e301ce6d912c2c",
-    "city_id": "city-munich",
-    "name": "dm-drogerie markt",
-    "localized_name": null,
-    "original_name": "dm-drogerie markt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1358011,
-    "longitude": 11.5796199,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-df4233d3545713",
-    "city_id": "city-munich",
-    "name": "Döner",
-    "localized_name": null,
-    "original_name": "Döner",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.3280293,
-    "longitude": 11.7164824,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-a20c32b9629f02",
     "city_id": "city-munich",
     "name": "Döner",
@@ -7985,6 +6759,18 @@
     "subcategory": "unclassified",
     "latitude": 48.3995224,
     "longitude": 11.7421707,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb8ab54e87391b",
+    "city_id": "city-munich",
+    "name": "Döner Bärlin",
+    "localized_name": null,
+    "original_name": "Freisinger Dunya Döner",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.3988626,
+    "longitude": 11.7393396,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8009,18 +6795,6 @@
     "subcategory": "unclassified",
     "latitude": 48.132476,
     "longitude": 11.6163313,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-34ef6c06aa4a5d",
-    "city_id": "city-munich",
-    "name": "edeka",
-    "localized_name": null,
-    "original_name": "edeka",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.354128,
-    "longitude": 11.786768,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8060,18 +6834,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-050d9c218042d4",
-    "city_id": "city-munich",
-    "name": "Euroshop",
-    "localized_name": null,
-    "original_name": "Euroshop",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1286469,
-    "longitude": 11.6004319,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-b0793ebd73d7cf",
     "city_id": "city-munich",
     "name": "expert TechnoMarkt Unterhaching",
@@ -8108,18 +6870,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-1b3d287fb221fa",
-    "city_id": "city-munich",
-    "name": "Flohmarkt München-Riem",
-    "localized_name": null,
-    "original_name": "Flohmarkt München-Riem",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.13377,
-    "longitude": 11.7048951,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2ea4cb1ead8cc9",
     "city_id": "city-munich",
     "name": "Flughafen München Besucherpark",
@@ -8132,27 +6882,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-026fcddaf69578",
+    "poi_id": "attraction-node-703266500",
     "city_id": "city-munich",
-    "name": "Freegun",
-    "localized_name": null,
-    "original_name": "Freegun",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9760167,
-    "longitude": 11.6530697,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-eb8ab54e87391b",
-    "city_id": "city-munich",
-    "name": "Freisinger Dunya Döner",
-    "localized_name": null,
-    "original_name": "Freisinger Dunya Döner",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.3988626,
-    "longitude": 11.7393396,
+    "name": "Frauenkirche",
+    "localized_name": "聖母教堂",
+    "original_name": "聖母教堂 Frauenplatz 1",
+    "category": "Attraction",
+    "subcategory": "memorial",
+    "latitude": 48.1388639,
+    "longitude": 11.5739365,
+    "source_osm_id": "node/703266500",
+    "source_osm_url": "https://www.openstreetmap.org/node/703266500",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8165,30 +6905,6 @@
     "subcategory": "unclassified",
     "latitude": 48.0355662,
     "longitude": 11.5934927,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c8f94c2cee9f9e",
-    "city_id": "city-munich",
-    "name": "Furth Bahnhof",
-    "localized_name": null,
-    "original_name": "Furth Bahnhof",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0351967,
-    "longitude": 11.590036,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7d826ff974354a",
-    "city_id": "city-munich",
-    "name": "Furth Bahnhof",
-    "localized_name": null,
-    "original_name": "Furth Bahnhof",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.0311185,
-    "longitude": 11.5856906,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8216,51 +6932,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-5ef75513e2043f",
+    "poi_id": "unclassified-searched-poi-ef6ee0e1ba83ec",
     "city_id": "city-munich",
-    "name": "go asia",
+    "name": "Giesing Bahnhof",
     "localized_name": null,
-    "original_name": "go asia",
+    "original_name": "kfc",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1320538,
-    "longitude": 11.5527108,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-2b7c77610ff2fc",
-    "city_id": "city-munich",
-    "name": "ha",
-    "localized_name": null,
-    "original_name": "ha",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1479403,
-    "longitude": 11.5635486,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-cf1ac8f8d7fdbb",
-    "city_id": "city-munich",
-    "name": "Hans-Piloty-Hörsaal",
-    "localized_name": null,
-    "original_name": "Hans-Piloty-Hörsaal",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1477909,
-    "longitude": 11.5669489,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-19d949e0af37ba",
-    "city_id": "city-munich",
-    "name": "hasenpfad",
-    "localized_name": null,
-    "original_name": "hasenpfad",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1479403,
-    "longitude": 11.5635486,
+    "latitude": 48.1106312,
+    "longitude": 11.5961501,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8276,18 +6956,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-1eca77add10db5",
-    "city_id": "city-munich",
-    "name": "Hauptbahnhof (S",
-    "localized_name": null,
-    "original_name": "Hauptbahnhof (S",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.139775,
-    "longitude": 11.5609584,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-0136d95a16adeb",
     "city_id": "city-munich",
     "name": "Hauptbahnhof (S",
@@ -8297,54 +6965,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1441415,
     "longitude": 11.5672747,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-21707d36c5a8d0",
-    "city_id": "city-munich",
-    "name": "hb",
-    "localized_name": null,
-    "original_name": "hb",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1494595,
-    "longitude": 11.5661218,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-011b8e5bbc792b",
-    "city_id": "city-munich",
-    "name": "hbf",
-    "localized_name": null,
-    "original_name": "hbf",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1406954,
-    "longitude": 11.5579388,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-2b70ec76770df3",
-    "city_id": "city-munich",
-    "name": "hostel",
-    "localized_name": null,
-    "original_name": "hostel",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1262142,
-    "longitude": 11.5376703,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-3739af33f3f3e0",
-    "city_id": "city-munich",
-    "name": "Info center 2.Stammstrecke Munich",
-    "localized_name": null,
-    "original_name": "Info center 2.Stammstrecke Munich",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1383311,
-    "longitude": 11.5765921,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8360,18 +6980,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-bc92176953488e",
-    "city_id": "city-munich",
-    "name": "Kaufland",
-    "localized_name": null,
-    "original_name": "Kaufland",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1494751,
-    "longitude": 11.5691252,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-53267cc2696941",
     "city_id": "city-munich",
     "name": "Kentucky Fried Chicken",
@@ -8384,15 +6992,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-ef6ee0e1ba83ec",
+    "poi_id": "unclassified-searched-poi-4c49b907dc5528",
     "city_id": "city-munich",
-    "name": "kfc",
-    "localized_name": null,
-    "original_name": "kfc",
+    "name": "King's Garden Restaurant",
+    "localized_name": "帝苑",
+    "original_name": "帝苑 Hermann-Böcker-Straße 13",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1106312,
-    "longitude": 11.5961501,
+    "latitude": 48.2215441,
+    "longitude": 11.3313642,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8420,15 +7028,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-afff083476e650",
+    "poi_id": "unclassified-searched-poi-afff083476e650-coordinate-review",
     "city_id": "city-munich",
-    "name": "Laim rossmann",
+    "name": "Laim",
     "localized_name": null,
     "original_name": "Laim rossmann",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 48.1419108,
     "longitude": 11.5066464,
+    "review_status": "needs_review"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-71ccc6fa11aca4",
+    "city_id": "city-munich",
+    "name": "Landratsamt München Außenstelle Ludmillastrasse",
+    "localized_name": "KVR 慕尼黑縣外管局",
+    "original_name": "Ludmillastraße 26",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.1106546,
+    "longitude": 11.5668681,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8444,18 +7064,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-bda1900315411a",
-    "city_id": "city-munich",
-    "name": "lidl",
-    "localized_name": null,
-    "original_name": "lidl",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1335439,
-    "longitude": 11.5666468,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-8b336acf7420d9",
     "city_id": "city-munich",
     "name": "Löwenbrunnen",
@@ -8468,39 +7076,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-71ccc6fa11aca4",
+    "poi_id": "unclassified-searched-poi-3739af33f3f3e0",
     "city_id": "city-munich",
-    "name": "Ludmillastraße 26",
+    "name": "Marienplatz",
     "localized_name": null,
-    "original_name": "Ludmillastraße 26",
+    "original_name": "Info center 2.Stammstrecke Munich",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1106546,
-    "longitude": 11.5668681,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-2e8b8b8459c47e",
-    "city_id": "city-munich",
-    "name": "McDonald's",
-    "localized_name": null,
-    "original_name": "McDonald's",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1360321,
-    "longitude": 11.5782336,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-f82dfe08e546fa",
-    "city_id": "city-munich",
-    "name": "McDonald's",
-    "localized_name": null,
-    "original_name": "McDonald's",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1274219,
-    "longitude": 11.6053025,
+    "latitude": 48.1383311,
+    "longitude": 11.5765921,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8516,15 +7100,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-b6b12e0f5870e6",
+    "poi_id": "unclassified-searched-poi-1b3d287fb221fa",
     "city_id": "city-munich",
-    "name": "MediaMarkt Smart München Tal",
+    "name": "Messe München",
     "localized_name": null,
-    "original_name": "MediaMarkt Smart München Tal",
+    "original_name": "Flohmarkt München-Riem",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1360819,
-    "longitude": 11.5798435,
+    "latitude": 48.13377,
+    "longitude": 11.7048951,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8537,18 +7121,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1257154,
     "longitude": 11.6016962,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6ebed5a02f05d3",
-    "city_id": "city-munich",
-    "name": "Müller",
-    "localized_name": null,
-    "original_name": "Müller",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.128494,
-    "longitude": 11.5992318,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8588,27 +7160,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-15a62c24760161",
-    "city_id": "city-munich",
-    "name": "Munich Central Bus Station",
-    "localized_name": null,
-    "original_name": "Munich Central Bus Station",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.142346,
-    "longitude": 11.549866,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-38df0cb7db9efd",
+    "poi_id": "unclassified-searched-poi-119c7aeac5d3a5",
     "city_id": "city-munich",
     "name": "Munich Central Bus Station（ZOB München）",
     "localized_name": null,
-    "original_name": "Munich Central Bus Station（ZOB München）",
+    "original_name": "ZOB",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1421702,
-    "longitude": 11.5489736,
+    "latitude": 48.1424686,
+    "longitude": 11.5499457,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8624,15 +7184,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-78b64777c4a707",
+    "poi_id": "unclassified-searched-poi-a96ce8baceddaf",
     "city_id": "city-munich",
-    "name": "Neuheitengasse",
-    "localized_name": null,
-    "original_name": "Neuheitengasse",
+    "name": "Oberpollinger",
+    "localized_name": "奧伯林格",
+    "original_name": "奧伯林格 Neuhauser Str. 18",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 47.9710386,
-    "longitude": 11.6508573,
+    "latitude": 48.1389986,
+    "longitude": 11.5676773,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8660,15 +7220,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-8a3285bd0735f7",
+    "poi_id": "unclassified-searched-poi-f82dfe08e546fa",
     "city_id": "city-munich",
-    "name": "Parkplatz P9 Messe München",
+    "name": "Ostbahnhof",
     "localized_name": null,
-    "original_name": "Parkplatz P9 Messe München",
+    "original_name": "McDonald's",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1357166,
-    "longitude": 11.706403,
+    "latitude": 48.1274219,
+    "longitude": 11.6053025,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8681,6 +7241,18 @@
     "subcategory": "unclassified",
     "latitude": 48.148827,
     "longitude": 11.4611889,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9e2f6a939056b",
+    "city_id": "city-munich",
+    "name": "Pasing Arcaden",
+    "localized_name": null,
+    "original_name": "ROSSMANN Drogeriemarkt",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.1492821,
+    "longitude": 11.4601126,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8732,18 +7304,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2fea7cde30de8c",
-    "city_id": "city-munich",
-    "name": "reparatur handy",
-    "localized_name": null,
-    "original_name": "reparatur handy",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.136337,
-    "longitude": 11.5715205,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-daa12c5e6f5e43",
     "city_id": "city-munich",
     "name": "Restaurant Cooking Yu",
@@ -8756,30 +7316,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-d5e6585c7e9621",
-    "city_id": "city-munich",
-    "name": "rewe",
-    "localized_name": null,
-    "original_name": "rewe",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1418366,
-    "longitude": 11.5583866,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-580699d203592f",
-    "city_id": "city-munich",
-    "name": "rewr",
-    "localized_name": null,
-    "original_name": "rewr",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.354128,
-    "longitude": 11.786768,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-76ca0cbaa1eb67",
     "city_id": "city-munich",
     "name": "Rosenheimer Platz",
@@ -8789,78 +7325,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1359651,
     "longitude": 11.5805555,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-e31b062e75c191",
-    "city_id": "city-munich",
-    "name": "rossmann",
-    "localized_name": null,
-    "original_name": "rossmann",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1390225,
-    "longitude": 11.5613103,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-b9e2f6a939056b",
-    "city_id": "city-munich",
-    "name": "ROSSMANN Drogeriemarkt",
-    "localized_name": null,
-    "original_name": "ROSSMANN Drogeriemarkt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1492821,
-    "longitude": 11.4601126,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-4e73c7334ae848",
-    "city_id": "city-munich",
-    "name": "ROSSMANN Drogeriemarkt",
-    "localized_name": null,
-    "original_name": "ROSSMANN Drogeriemarkt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1372249,
-    "longitude": 11.5605349,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-e1ff71b798f617",
-    "city_id": "city-munich",
-    "name": "Rubinstein-Saal - Tonkünstler München e.V.",
-    "localized_name": null,
-    "original_name": "Rubinstein-Saal - Tonkünstler München e.V.",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1445102,
-    "longitude": 11.4956297,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-4feb9e8fc7f7e7",
-    "city_id": "city-munich",
-    "name": "Rudolf-Diesel-Ring 1",
-    "localized_name": null,
-    "original_name": "Rudolf-Diesel-Ring 1",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9708834,
-    "longitude": 11.6613356,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-d3252e27b6d656",
-    "city_id": "city-munich",
-    "name": "Rudolf-Diesel-Ring 1",
-    "localized_name": null,
-    "original_name": "Rudolf-Diesel-Ring 1",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9707,
-    "longitude": 11.6611198,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8888,17 +7352,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-way-47515468",
+    "poi_id": "unclassified-searched-poi-ced386b6aed618",
     "city_id": "city-munich",
-    "name": "Sankt Johann Nepomuk / Asam Church",
-    "localized_name": "阿桑教堂",
-    "original_name": "阿桑教堂 Sendlinger Str. 32",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 48.1352114,
-    "longitude": 11.5695201,
-    "source_osm_id": "way/47515468",
-    "source_osm_url": "https://www.openstreetmap.org/way/47515468",
+    "name": "Sauerlach Bahnhof",
+    "localized_name": null,
+    "original_name": "Bahnhof",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 47.9736431,
+    "longitude": 11.6546687,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8914,10 +7376,22 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-bda1900315411a",
+    "city_id": "city-munich",
+    "name": "Senlinger Tor",
+    "localized_name": null,
+    "original_name": "lidl",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.1335439,
+    "longitude": 11.5666468,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-4bf85cc8e03609",
     "city_id": "city-munich",
-    "name": "Shang Garden 香乐园",
-    "localized_name": null,
+    "name": "Shang Garden",
+    "localized_name": "香乐园",
     "original_name": "Shang Garden 香乐园",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8938,15 +7412,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2617628e205ef5",
+    "poi_id": "unclassified-searched-poi-e4e093a13c4cdb",
     "city_id": "city-munich",
-    "name": "Technomarkt",
-    "localized_name": null,
-    "original_name": "Technomarkt",
+    "name": "Technische Universität München",
+    "localized_name": "慕尼黑工業大學",
+    "original_name": "Arcisstraße 21",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 47.9738059,
-    "longitude": 11.6588662,
+    "latitude": 48.1487431,
+    "longitude": 11.5685317,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -8971,18 +7445,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1511346,
     "longitude": 11.5642195,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6b08c48627cb4a",
-    "city_id": "city-munich",
-    "name": "toilet",
-    "localized_name": null,
-    "original_name": "toilet",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9947123,
-    "longitude": 11.1702744,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9046,6 +7508,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-c1c7ba3a8060e1",
+    "city_id": "city-munich",
+    "name": "Westpark",
+    "localized_name": "西公園",
+    "original_name": "西公園81373 München",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.1200557,
+    "longitude": 11.5175186,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-893f3ca3ef1ef1",
     "city_id": "city-munich",
     "name": "westpark 慕尼黑-森德靈-西公園",
@@ -9055,18 +7529,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1173319,
     "longitude": 11.5215769,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-119c7aeac5d3a5",
-    "city_id": "city-munich",
-    "name": "ZOB",
-    "localized_name": null,
-    "original_name": "ZOB",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1424686,
-    "longitude": 11.5499457,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9202,30 +7664,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-e55fd884ed9ba9",
-    "city_id": "city-nice",
-    "name": "43.712070",
-    "localized_name": null,
-    "original_name": "43.712070",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.71207,
-    "longitude": 7.286534,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8a2d29eca4209d",
-    "city_id": "city-nice",
-    "name": "法國 Nice",
-    "localized_name": null,
-    "original_name": "法國 Nice",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.7121627,
-    "longitude": 7.2865495,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-f5aad76dd84665",
     "city_id": "city-nice",
     "name": "法國尼斯 Rue Georges Janvier",
@@ -9257,14 +7695,14 @@
     "original_name": "Marché Aux Fleurs - Cours Saleya - Nice",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 43.7031553,
-    "longitude": 7.2812612,
+    "latitude": 43.6955865,
+    "longitude": 7.274994,
     "review_status": "provisional_owner_assumption"
   },
   {
     "poi_id": "unclassified-searched-poi-f1ca6295171842",
     "city_id": "city-nice",
-    "name": "Nice Airport Bus Station Terminal 1",
+    "name": "Nice Airport Terminal 1",
     "localized_name": null,
     "original_name": "Nice Airport Bus Station Terminal 1",
     "category": "Unclassified",
@@ -9283,18 +7721,6 @@
     "subcategory": "unclassified",
     "latitude": 43.6688178,
     "longitude": 7.210577,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-0345e34d20da79",
-    "city_id": "city-nice",
-    "name": "obest chicken",
-    "localized_name": null,
-    "original_name": "obest chicken",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.7034279,
-    "longitude": 7.2651804,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9322,6 +7748,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-b386a0212161a6",
+    "city_id": "city-nice",
+    "name": "Square leclerc",
+    "localized_name": null,
+    "original_name": "Supermarché",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 43.6985617,
+    "longitude": 7.2857279,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-b90688ed5508d3",
     "city_id": "city-nice",
     "name": "Square leclerc",
@@ -9331,18 +7769,6 @@
     "subcategory": "unclassified",
     "latitude": 43.7073095,
     "longitude": 7.2809831,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-b386a0212161a6",
-    "city_id": "city-nice",
-    "name": "Supermarché",
-    "localized_name": null,
-    "original_name": "Supermarché",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 43.6985617,
-    "longitude": 7.2857279,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9358,18 +7784,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-0fffa11adce0e8",
-    "city_id": "city-nurnberg",
-    "name": "紐倫堡交通博物館 Lessingstraße 6",
-    "localized_name": null,
-    "original_name": "紐倫堡交通博物館 Lessingstraße 6",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4457206,
-    "longitude": 11.0738859,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-9fee5e72c29934",
     "city_id": "city-nurnberg",
     "name": "a&o Hostel Nürnberg Hauptbahnhof",
@@ -9382,15 +7796,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2004d74174484d",
+    "poi_id": "unclassified-searched-poi-0fffa11adce0e8",
     "city_id": "city-nurnberg",
-    "name": "aldi",
-    "localized_name": null,
-    "original_name": "aldi",
+    "name": "DB Museum Nürnberg",
+    "localized_name": "紐倫堡交通博物館",
+    "original_name": "紐倫堡交通博物館 Lessingstraße 6",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 49.4456062,
-    "longitude": 11.0822121,
+    "latitude": 49.4457206,
+    "longitude": 11.0738859,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9418,42 +7832,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-c7a0df45f8e0e3",
-    "city_id": "city-nurnberg",
-    "name": "kfc",
-    "localized_name": null,
-    "original_name": "kfc",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4478654,
-    "longitude": 11.065526,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-a060b49acdadcd",
-    "city_id": "city-nurnberg",
-    "name": "Lidl",
-    "localized_name": null,
-    "original_name": "Lidl",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.44654,
-    "longitude": 11.08161,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c03748290119c5",
-    "city_id": "city-nurnberg",
-    "name": "Lidl",
-    "localized_name": null,
-    "original_name": "Lidl",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4446518,
-    "longitude": 11.081755,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-ef6f6ed2bf669d",
     "city_id": "city-nurnberg",
     "name": "Lorenzkirche",
@@ -9463,18 +7841,6 @@
     "subcategory": "unclassified",
     "latitude": 49.4471241,
     "longitude": 11.0776488,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-95abf6651e6ed3",
-    "city_id": "city-nurnberg",
-    "name": "nuremberg airport (nue) flughafenstraße 紐倫堡-nordwestliche außenstadt",
-    "localized_name": null,
-    "original_name": "nuremberg airport (nue) flughafenstraße 紐倫堡-nordwestliche außenstadt",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.496577,
-    "longitude": 11.0730406,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9499,18 +7865,6 @@
     "subcategory": "unclassified",
     "latitude": 49.44639,
     "longitude": 11.08194,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-aae9fedff1621a",
-    "city_id": "city-nurnberg",
-    "name": "Opera House",
-    "localized_name": null,
-    "original_name": "Opera House",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.4469338,
-    "longitude": 11.0748808,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9595,6 +7949,20 @@
     "subcategory": "unclassified",
     "latitude": 59.9133312,
     "longitude": 10.7349411,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-810259696",
+    "city_id": "city-oslo",
+    "name": "奧斯陸歌劇院",
+    "localized_name": null,
+    "original_name": "奧斯陸歌劇院",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 59.9074842,
+    "longitude": 10.7526811,
+    "source_osm_id": "way/810259696",
+    "source_osm_url": "https://www.openstreetmap.org/way/810259696",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9710,18 +8078,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-28e593cbc0b03d",
-    "city_id": "city-oslo",
-    "name": "Kiwi",
-    "localized_name": null,
-    "original_name": "Kiwi",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 59.9485441,
-    "longitude": 10.7015218,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-48dd9f9b1bfb93",
     "city_id": "city-oslo",
     "name": "Maritim",
@@ -9758,18 +8114,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-69c7ce7a0b48ac",
-    "city_id": "city-oslo",
-    "name": "MENY Colosseum",
-    "localized_name": null,
-    "original_name": "MENY Colosseum",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 59.9424443,
-    "longitude": 10.7046662,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-6e10b9e528df5b",
     "city_id": "city-oslo",
     "name": "MUNCH Museum",
@@ -9803,20 +8147,6 @@
     "subcategory": "unclassified",
     "latitude": 59.9112239,
     "longitude": 10.7520409,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-810259696",
-    "city_id": "city-oslo",
-    "name": "Oslo Opera House",
-    "localized_name": "奧斯陸歌劇院",
-    "original_name": "奧斯陸歌劇院",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 59.9074842,
-    "longitude": 10.7526811,
-    "source_osm_id": "way/810259696",
-    "source_osm_url": "https://www.openstreetmap.org/way/810259696",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9904,18 +8234,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-35e13bb7ea84d8",
-    "city_id": "city-oslo",
-    "name": "way nor",
-    "localized_name": null,
-    "original_name": "way nor",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 59.9062942,
-    "longitude": 10.7555334,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-80322f3306ce08",
     "city_id": "city-oslo",
     "name": "Way Nor Munch Brygge",
@@ -9988,15 +8306,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-26dced1c853cf1",
+    "poi_id": "attraction-way-24705750",
     "city_id": "city-palermo",
     "name": "Foro Italico",
     "localized_name": null,
     "original_name": "Foro Italico",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 38.1119629,
-    "longitude": 13.3715912,
+    "category": "Attraction",
+    "subcategory": "park",
+    "latitude": 38.1172098,
+    "longitude": 13.3753474,
+    "source_osm_id": "way/24705750",
+    "source_osm_url": "https://www.openstreetmap.org/way/24705750",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10110,15 +8430,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-45e66c97500501",
+    "poi_id": "attraction-way-316031490",
     "city_id": "city-palermo",
     "name": "Ponte dell'Ammiraglio",
     "localized_name": null,
     "original_name": "Ponte dell'Ammiraglio",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 38.109173,
-    "longitude": 13.3748775,
+    "category": "Attraction",
+    "subcategory": "yes",
+    "latitude": 38.105025,
+    "longitude": 13.375063,
+    "source_osm_id": "way/316031490",
+    "source_osm_url": "https://www.openstreetmap.org/way/316031490",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10146,44 +8468,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-59742a2050dac6",
-    "city_id": "city-paris",
-    "name": "69 Bd de l'Yerres",
-    "localized_name": null,
-    "original_name": "69 Bd de l'Yerres",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.6218047,
-    "longitude": 2.4256401,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c219e54833a948",
-    "city_id": "city-paris",
-    "name": "小皇宮 Av. Winston Churchill",
-    "localized_name": null,
-    "original_name": "小皇宮 Av. Winston Churchill",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8660479,
-    "longitude": 2.3145896,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-node-910390736",
-    "city_id": "city-paris",
-    "name": "巴黎古監獄2 Bd du Palais",
-    "localized_name": "巴黎古監獄",
-    "original_name": "巴黎古監獄2 Bd du Palais",
-    "category": "Attraction",
-    "subcategory": "museum",
-    "latitude": 48.8559492,
-    "longitude": 2.3460263,
-    "source_osm_id": "node/910390736",
-    "source_osm_url": "https://www.openstreetmap.org/node/910390736",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-b2c2c196f66843",
     "city_id": "city-paris",
     "name": "先賢祠",
@@ -10196,15 +8480,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-d23f53dd5d948e",
+    "poi_id": "attraction-node-3422228091",
     "city_id": "city-paris",
-    "name": "法國巴黎",
-    "localized_name": null,
-    "original_name": "法國巴黎",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8588549,
-    "longitude": 2.3470341,
+    "name": "法國巴黎 Avenue Gustave Eiffel",
+    "localized_name": "古斯塔夫·艾菲爾",
+    "original_name": "法國巴黎 Avenue Gustave Eiffel",
+    "category": "Attraction",
+    "subcategory": "memorial",
+    "latitude": 48.8587307,
+    "longitude": 2.2944894,
+    "source_osm_id": "node/3422228091",
+    "source_osm_url": "https://www.openstreetmap.org/node/3422228091",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10232,18 +8518,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-b721a8a0510b53",
-    "city_id": "city-paris",
-    "name": "法國巴黎 Boulevard Haussmann",
-    "localized_name": null,
-    "original_name": "法國巴黎 Boulevard Haussmann",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8731855,
-    "longitude": 2.3148533,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2bac9a12ca56f3",
     "city_id": "city-paris",
     "name": "法國巴黎 rue du Chevalier-de-La-Barre",
@@ -10268,18 +8542,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-d0c5eef53dd0a4",
-    "city_id": "city-paris",
-    "name": "法國巴黎橘園美術館",
-    "localized_name": null,
-    "original_name": "法國巴黎橘園美術館",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8541207,
-    "longitude": 2.3478828,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-bfd769c1310cfb",
     "city_id": "city-paris",
     "name": "法國巴黎戴高樂廣場巴黎凱旋門",
@@ -10289,18 +8551,6 @@
     "subcategory": "unclassified",
     "latitude": 48.8732954,
     "longitude": 2.3132187,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-10b16854e79c24",
-    "city_id": "city-paris",
-    "name": "海軍府2 Pl. de la Concorde",
-    "localized_name": null,
-    "original_name": "海軍府2 Pl. de la Concorde",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8668354,
-    "longitude": 2.3229144,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10316,33 +8566,9 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2f5defbfb937e2",
-    "city_id": "city-paris",
-    "name": "傷兵院75007 Paris",
-    "localized_name": null,
-    "original_name": "傷兵院75007 Paris",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8561074,
-    "longitude": 2.3127829,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-bcf0db2d0f67c9",
-    "city_id": "city-paris",
-    "name": "羅浮宮75001 Paris",
-    "localized_name": null,
-    "original_name": "羅浮宮75001 Paris",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8606111,
-    "longitude": 2.337644,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "attraction-way-23762981",
     "city_id": "city-paris",
-    "name": "Basilica of the Sacred Heart of Paris",
+    "name": "Basilique du Sacré-Cœur de Montmartre",
     "localized_name": "聖心堂",
     "original_name": "Basilique du Sacré-Cœur",
     "category": "Attraction",
@@ -10356,8 +8582,8 @@
   {
     "poi_id": "attraction-way-19856722",
     "city_id": "city-paris",
-    "name": "Bourse de Commerce - Pinault Collection2 Rue de Viarmes",
-    "localized_name": "巴黎商业交易所",
+    "name": "Bourse de Commerce - Pinault Collection",
+    "localized_name": "現代藝術博物館",
     "original_name": "Bourse de Commerce - Pinault Collection2 Rue de Viarmes",
     "category": "Attraction",
     "subcategory": "museum",
@@ -10365,6 +8591,20 @@
     "longitude": 2.3428183,
     "source_osm_id": "way/19856722",
     "source_osm_url": "https://www.openstreetmap.org/way/19856722",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-4208595",
+    "city_id": "city-paris",
+    "name": "Champ-de-Mars",
+    "localized_name": "戰神廣場",
+    "original_name": "戰神廣場",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 48.856163,
+    "longitude": 2.2978311,
+    "source_osm_id": "way/4208595",
+    "source_osm_url": "https://www.openstreetmap.org/way/4208595",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10377,6 +8617,20 @@
     "subcategory": "owner_confirmed_visit",
     "latitude": 48.4021018,
     "longitude": 2.6994844,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-node-910390736",
+    "city_id": "city-paris",
+    "name": "Conciergerie",
+    "localized_name": "巴黎古監獄",
+    "original_name": "巴黎古監獄2 Bd du Palais",
+    "category": "Attraction",
+    "subcategory": "museum",
+    "latitude": 48.8559492,
+    "longitude": 2.3460263,
+    "source_osm_id": "node/910390736",
+    "source_osm_url": "https://www.openstreetmap.org/node/910390736",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10404,29 +8658,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-way-4208595",
-    "city_id": "city-paris",
-    "name": "Field of Mars",
-    "localized_name": "戰神廣場",
-    "original_name": "戰神廣場",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 48.856163,
-    "longitude": 2.2978311,
-    "source_osm_id": "way/4208595",
-    "source_osm_url": "https://www.openstreetmap.org/way/4208595",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-d1218be69da21c",
     "city_id": "city-paris",
-    "name": "FlixBus Shop",
+    "name": "FlixBus Stop",
     "localized_name": null,
     "original_name": "FlixBus Shop",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 48.8357368,
     "longitude": 2.3803723,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b721a8a0510b53",
+    "city_id": "city-paris",
+    "name": "Galeries Lafayette Haussmann",
+    "localized_name": "拉法葉百貨 巴黎奧斯曼旗艦店",
+    "original_name": "法國巴黎 Boulevard Haussmann",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8731855,
+    "longitude": 2.3148533,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10442,6 +8694,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-70c668ae0f742a-coordinate-review",
+    "city_id": "city-paris",
+    "name": "Gare Saint-Lazare",
+    "localized_name": null,
+    "original_name": "Supermarché",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8746188,
+    "longitude": 2.3053446,
+    "review_status": "needs_review"
+  },
+  {
     "poi_id": "unclassified-searched-poi-14ea77e9bb84da",
     "city_id": "city-paris",
     "name": "Gare SNCF - Rue de l'Industrie",
@@ -10454,17 +8718,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-node-3422228091",
+    "poi_id": "unclassified-searched-poi-10b16854e79c24",
     "city_id": "city-paris",
-    "name": "Gustave Eiffel",
-    "localized_name": "古斯塔夫·艾菲爾",
-    "original_name": "法國巴黎 Avenue Gustave Eiffel",
-    "category": "Attraction",
-    "subcategory": "memorial",
-    "latitude": 48.8587307,
-    "longitude": 2.2944894,
-    "source_osm_id": "node/3422228091",
-    "source_osm_url": "https://www.openstreetmap.org/node/3422228091",
+    "name": "Hôtel de la Marine",
+    "localized_name": "海軍府",
+    "original_name": "海軍府2 Pl. de la Concorde",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8668354,
+    "longitude": 2.3229144,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2f5defbfb937e2",
+    "city_id": "city-paris",
+    "name": "Hôtel des Invalides",
+    "localized_name": "傷兵院",
+    "original_name": "傷兵院75007 Paris",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8561074,
+    "longitude": 2.3127829,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10540,6 +8814,30 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-bcf0db2d0f67c9",
+    "city_id": "city-paris",
+    "name": "Musée du Louvre",
+    "localized_name": "羅浮宮",
+    "original_name": "羅浮宮75001 Paris",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8606111,
+    "longitude": 2.337644,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-051508cde618d8-coordinate-review",
+    "city_id": "city-paris",
+    "name": "Parc des Expositions",
+    "localized_name": null,
+    "original_name": "PARIS NORD VILLEPINTE (Halls 5 & 6).",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.970568,
+    "longitude": 2.5238781,
+    "review_status": "needs_review"
+  },
+  {
     "poi_id": "unclassified-searched-poi-cbf4b026bb9a20",
     "city_id": "city-paris",
     "name": "Paris Bercy Seine",
@@ -10549,18 +8847,6 @@
     "subcategory": "unclassified",
     "latitude": 48.8339547,
     "longitude": 2.3797446,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-051508cde618d8",
-    "city_id": "city-paris",
-    "name": "PARIS NORD VILLEPINTE (Halls 5 & 6).",
-    "localized_name": null,
-    "original_name": "PARIS NORD VILLEPINTE (Halls 5 & 6).",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.970568,
-    "longitude": 2.5238781,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10576,6 +8862,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-c219e54833a948",
+    "city_id": "city-paris",
+    "name": "Petit Palais",
+    "localized_name": "小皇宮",
+    "original_name": "小皇宮 Av. Winston Churchill",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8660479,
+    "longitude": 2.3145896,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-a38a1b64cbca23",
     "city_id": "city-paris",
     "name": "Royal Wok",
@@ -10585,30 +8883,6 @@
     "subcategory": "unclassified",
     "latitude": 48.8489385,
     "longitude": 2.5798895,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-70c668ae0f742a",
-    "city_id": "city-paris",
-    "name": "Supermarché",
-    "localized_name": null,
-    "original_name": "Supermarché",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8746188,
-    "longitude": 2.3053446,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-5f6a17d557f1d4",
-    "city_id": "city-paris",
-    "name": "toilet",
-    "localized_name": null,
-    "original_name": "toilet",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.8559265,
-    "longitude": 2.2972061,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10636,18 +8910,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-84d428361a3420",
-    "city_id": "city-prague",
-    "name": "布拉格天文鐘 Staroměstské nám. 1",
-    "localized_name": null,
-    "original_name": "布拉格天文鐘 Staroměstské nám. 1",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0870215,
-    "longitude": 14.4207065,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-3766e8937b0725",
     "city_id": "city-prague",
     "name": "布拉格火車總站",
@@ -10657,18 +8919,6 @@
     "subcategory": "unclassified",
     "latitude": 50.086695,
     "longitude": 14.4362436,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-7b660b7c8582ce",
-    "city_id": "city-prague",
-    "name": "布拉格城堡 Hradčany",
-    "localized_name": null,
-    "original_name": "布拉格城堡 Hradčany",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0910966,
-    "longitude": 14.4016165,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10708,18 +8958,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-fbeafac2cae179",
-    "city_id": "city-prague",
-    "name": "唐人街",
-    "localized_name": null,
-    "original_name": "唐人街",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0852267,
-    "longitude": 14.4270507,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2f77eba1e01ac3",
     "city_id": "city-prague",
     "name": "捷克布拉格 Velkopřevorské náměstí",
@@ -10732,34 +8970,10 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-100c053c5bdc2e",
-    "city_id": "city-prague",
-    "name": "景點",
-    "localized_name": null,
-    "original_name": "景點",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0875782,
-    "longitude": 14.4063847,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-d5c7f8e03a18d7",
-    "city_id": "city-prague",
-    "name": "Albert",
-    "localized_name": null,
-    "original_name": "Albert",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0810311,
-    "longitude": 14.4070753,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-7c090338bbb97f",
     "city_id": "city-prague",
     "name": "Café Imperial",
-    "localized_name": null,
+    "localized_name": "帝國咖啡館",
     "original_name": "Café Imperial",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10791,18 +9005,6 @@
     "longitude": 14.4141688,
     "source_osm_id": "relation/6751056",
     "source_osm_url": "https://www.openstreetmap.org/relation/6751056",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-d5715fc7bafbc8",
-    "city_id": "city-prague",
-    "name": "HalfPrice",
-    "localized_name": null,
-    "original_name": "HalfPrice",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0827967,
-    "longitude": 14.4279703,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10866,18 +9068,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-ef46056c267694",
-    "city_id": "city-prague",
-    "name": "kfc",
-    "localized_name": null,
-    "original_name": "kfc",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0614512,
-    "longitude": 14.4451128,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-69f011581bd993",
     "city_id": "city-prague",
     "name": "Kobylisy",
@@ -10938,6 +9128,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-1d61a3268196b8",
+    "city_id": "city-prague",
+    "name": "Palladium Prague",
+    "localized_name": null,
+    "original_name": "SPORTISIMO",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.0890918,
+    "longitude": 14.4286943,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-70d04b69aa42fc",
     "city_id": "city-prague",
     "name": "Park Legií",
@@ -10976,7 +9178,7 @@
   {
     "poi_id": "attraction-relation-3312247",
     "city_id": "city-prague",
-    "name": "Prague Castle",
+    "name": "Prague Visitor Centre — Prague Castle",
     "localized_name": null,
     "original_name": "Prague Visitor Centre — Prague Castle",
     "category": "Attraction",
@@ -10985,20 +9187,6 @@
     "longitude": 14.4016545,
     "source_osm_id": "relation/3312247",
     "source_osm_url": "https://www.openstreetmap.org/relation/3312247",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-node-6815500185",
-    "city_id": "city-prague",
-    "name": "Prague Palace",
-    "localized_name": null,
-    "original_name": "Hrad",
-    "category": "Attraction",
-    "subcategory": "castle",
-    "latitude": 50.0912427,
-    "longitude": 14.4037743,
-    "source_osm_id": "node/6815500185",
-    "source_osm_url": "https://www.openstreetmap.org/node/6815500185",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11014,6 +9202,32 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "attraction-node-6815500185",
+    "city_id": "city-prague",
+    "name": "Pražský hrad",
+    "localized_name": null,
+    "original_name": "Pražský hrad",
+    "category": "Attraction",
+    "subcategory": "castle",
+    "latitude": 50.0912427,
+    "longitude": 14.4037743,
+    "source_osm_id": "node/6815500185",
+    "source_osm_url": "https://www.openstreetmap.org/node/6815500185",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7b660b7c8582ce",
+    "city_id": "city-prague",
+    "name": "Pražský hrad",
+    "localized_name": "布拉格城堡",
+    "original_name": "布拉格城堡 Hradčany",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.0910966,
+    "longitude": 14.4016165,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-4cb7ee5c1a2050",
     "city_id": "city-prague",
     "name": "Pražský hrad",
@@ -11026,51 +9240,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-ac5568674dd761",
+    "poi_id": "unclassified-searched-poi-84d428361a3420",
     "city_id": "city-prague",
-    "name": "Pražský hrad",
-    "localized_name": null,
-    "original_name": "Pražský hrad",
+    "name": "Pražský orloj",
+    "localized_name": "布拉格天文鐘",
+    "original_name": "布拉格天文鐘 Staroměstské nám. 1",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 50.081883,
-    "longitude": 14.4099021,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c8222a7a305cb9",
-    "city_id": "city-prague",
-    "name": "Primark",
-    "localized_name": null,
-    "original_name": "Primark",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0761244,
-    "longitude": 14.428664,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-bda96b154ac68a",
-    "city_id": "city-prague",
-    "name": "sportisimo",
-    "localized_name": null,
-    "original_name": "sportisimo",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0845772,
-    "longitude": 14.421626,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-1d61a3268196b8",
-    "city_id": "city-prague",
-    "name": "SPORTISIMO",
-    "localized_name": null,
-    "original_name": "SPORTISIMO",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0890918,
-    "longitude": 14.4286943,
+    "latitude": 50.0870215,
+    "longitude": 14.4207065,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11124,30 +9302,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-e984c9ab498aa1",
-    "city_id": "city-prague",
-    "name": "Stores",
-    "localized_name": null,
-    "original_name": "Stores",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0814586,
-    "longitude": 14.4288797,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-cdd33c6f40c0be",
-    "city_id": "city-prague",
-    "name": "Václavské nám.",
-    "localized_name": null,
-    "original_name": "Václavské nám.",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0818334,
-    "longitude": 14.4270921,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-6187c47f1f8ce1",
     "city_id": "city-prague",
     "name": "Vltavská",
@@ -11169,6 +9323,20 @@
     "subcategory": "unclassified",
     "latitude": 41.898362,
     "longitude": 12.557988,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-23055100",
+    "city_id": "city-rome",
+    "name": "卡比托利歐博物館 Piazza del Campidoglio",
+    "localized_name": "坎皮多怡歐廣場",
+    "original_name": "卡比托利歐博物館 Piazza del Campidoglio",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 41.8932288,
+    "longitude": 12.4829654,
+    "source_osm_id": "way/23055100",
+    "source_osm_url": "https://www.openstreetmap.org/way/23055100",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11289,20 +9457,6 @@
     "subcategory": "unclassified",
     "latitude": 41.9044792,
     "longitude": 12.4836502,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-23055100",
-    "city_id": "city-rome",
-    "name": "Capitol Square",
-    "localized_name": "坎皮多怡歐廣場",
-    "original_name": "卡比托利歐博物館 Piazza del Campidoglio",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 41.8932288,
-    "longitude": 12.4829654,
-    "source_osm_id": "way/23055100",
-    "source_osm_url": "https://www.openstreetmap.org/way/23055100",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11488,18 +9642,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-db8cc80d9d0f33",
-    "city_id": "city-rome",
-    "name": "TUDAY CONAD",
-    "localized_name": null,
-    "original_name": "TUDAY CONAD",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 41.9018896,
-    "longitude": 12.5026757,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-5278e57c53ffe6",
     "city_id": "city-rotterdam",
     "name": "方塊屋 Overblaak 70",
@@ -11610,18 +9752,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-86436b6003d800",
-    "city_id": "city-salzburg",
-    "name": "47.802688",
-    "localized_name": null,
-    "original_name": "47.802688",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.802688,
-    "longitude": 13.077181,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-771054f764d268",
     "city_id": "city-salzburg",
     "name": "王宮噴泉",
@@ -11631,6 +9761,20 @@
     "subcategory": "unclassified",
     "latitude": 47.7983947,
     "longitude": 13.0469116,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-64132876",
+    "city_id": "city-salzburg",
+    "name": "莫扎特出生地 Getreidegasse 9",
+    "localized_name": "莫扎特出生地",
+    "original_name": "莫扎特出生地 Getreidegasse 9",
+    "category": "Attraction",
+    "subcategory": "museum",
+    "latitude": 47.7999325,
+    "longitude": 13.0435551,
+    "source_osm_id": "way/64132876",
+    "source_osm_url": "https://www.openstreetmap.org/way/64132876",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11648,18 +9792,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-dbaed9501c94e7",
-    "city_id": "city-salzburg",
-    "name": "莫札特故居 Makartplatz 8",
-    "localized_name": null,
-    "original_name": "莫札特故居 Makartplatz 8",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.8026282,
-    "longitude": 13.0438679,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-18e60c972b3f07",
     "city_id": "city-salzburg",
     "name": "奧地利 Salzburg",
@@ -11669,18 +9801,6 @@
     "subcategory": "unclassified",
     "latitude": 47.7888596,
     "longitude": 12.9879457,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-01f182410d0742",
-    "city_id": "city-salzburg",
-    "name": "薩爾茨堡要塞 Mönchsberg 34",
-    "localized_name": null,
-    "original_name": "薩爾茨堡要塞 Mönchsberg 34",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.7949483,
-    "longitude": 13.0476583,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11696,51 +9816,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-7185c1cbbf11b9",
+    "poi_id": "unclassified-searched-poi-870dff7a161842",
     "city_id": "city-salzburg",
-    "name": "薩爾斯堡露天博物館 Hasenweg 1",
+    "name": "Balkan Grill Walter (Bosna Grill)",
     "localized_name": null,
-    "original_name": "薩爾斯堡露天博物館 Hasenweg 1",
+    "original_name": "Getreidegasse 33",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 47.7513531,
-    "longitude": 12.9469801,
+    "latitude": 47.799837,
+    "longitude": 13.041359,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-81b596c99a4abd",
+    "poi_id": "unclassified-searched-poi-01f182410d0742",
     "city_id": "city-salzburg",
-    "name": "christmas museum",
-    "localized_name": null,
-    "original_name": "christmas museum",
+    "name": "Festungsmuseum",
+    "localized_name": "要塞博物館",
+    "original_name": "薩爾茨堡要塞 Mönchsberg 34",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 47.7993509,
-    "longitude": 13.0467428,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c3d97190fa6aa8",
-    "city_id": "city-salzburg",
-    "name": "Dr.-Friedrich-Oedl-Weg 2 5083 Gartenau",
-    "localized_name": null,
-    "original_name": "Dr.-Friedrich-Oedl-Weg 2 5083 Gartenau",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.7257198,
-    "longitude": 13.0421625,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c2c2c39876f929",
-    "city_id": "city-salzburg",
-    "name": "Gaisbergstraße 61-57",
-    "localized_name": null,
-    "original_name": "Gaisbergstraße 61-57",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.802613,
-    "longitude": 13.0772387,
+    "latitude": 47.7949483,
+    "longitude": 13.0476583,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11753,54 +9849,6 @@
     "subcategory": "unclassified",
     "latitude": 47.8030597,
     "longitude": 13.0786035,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-870dff7a161842",
-    "city_id": "city-salzburg",
-    "name": "Getreidegasse 33",
-    "localized_name": null,
-    "original_name": "Getreidegasse 33",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.799837,
-    "longitude": 13.041359,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-eeaed600257ec1",
-    "city_id": "city-salzburg",
-    "name": "Hasenweg 1 5084 Großgmain",
-    "localized_name": null,
-    "original_name": "Hasenweg 1 5084 Großgmain",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.7520918,
-    "longitude": 12.9446628,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-78222f6fb92a95",
-    "city_id": "city-salzburg",
-    "name": "hofer",
-    "localized_name": null,
-    "original_name": "hofer",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.8175508,
-    "longitude": 13.0424891,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-a1091e8851e6a9",
-    "city_id": "city-salzburg",
-    "name": "HOFER",
-    "localized_name": null,
-    "original_name": "HOFER",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.8076046,
-    "longitude": 13.0541656,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11855,7 +9903,7 @@
     "poi_id": "unclassified-searched-poi-abaacd10337b81",
     "city_id": "city-salzburg",
     "name": "mönchsberg lift",
-    "localized_name": null,
+    "localized_name": "僧侶山電梯",
     "original_name": "mönchsberg lift",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -11864,17 +9912,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-way-64132876",
+    "poi_id": "unclassified-searched-poi-dbaed9501c94e7",
     "city_id": "city-salzburg",
-    "name": "Mozart's Birthplace",
-    "localized_name": "莫扎特出生地",
-    "original_name": "莫扎特出生地 Getreidegasse 9",
-    "category": "Attraction",
-    "subcategory": "museum",
-    "latitude": 47.7999325,
-    "longitude": 13.0435551,
-    "source_osm_id": "way/64132876",
-    "source_osm_url": "https://www.openstreetmap.org/way/64132876",
+    "name": "Mozart-Wohnhaus",
+    "localized_name": "莫札特故居",
+    "original_name": "莫札特故居 Makartplatz 8",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 47.8026282,
+    "longitude": 13.0438679,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11902,6 +9948,30 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-7185c1cbbf11b9",
+    "city_id": "city-salzburg",
+    "name": "Salzburger Freilichtmuseum",
+    "localized_name": "薩爾斯堡露天博物館",
+    "original_name": "薩爾斯堡露天博物館 Hasenweg 1",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 47.7513531,
+    "longitude": 12.9469801,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-28ec4c4922fdc2",
+    "city_id": "city-salzburg",
+    "name": "Schloss Hellbrunn",
+    "localized_name": "海爾布倫宮與惡作劇噴泉",
+    "original_name": "Zoo Salzburg Hellbrunn",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 47.7601322,
+    "longitude": 13.0620962,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-11342351fa3a8a",
     "city_id": "city-salzburg",
     "name": "Traunstein",
@@ -11923,18 +9993,6 @@
     "subcategory": "unclassified",
     "latitude": 47.7421624,
     "longitude": 13.0512395,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-28ec4c4922fdc2",
-    "city_id": "city-salzburg",
-    "name": "Zoo Salzburg Hellbrunn",
-    "localized_name": null,
-    "original_name": "Zoo Salzburg Hellbrunn",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.7601322,
-    "longitude": 13.0620962,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11986,18 +10044,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-cbe602877ba69d",
-    "city_id": "city-simmern",
-    "name": "615",
-    "localized_name": null,
-    "original_name": "615",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0716701,
-    "longitude": 7.4424,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-583062a3b66f80",
     "city_id": "city-simmern",
     "name": "法蘭克福-哈恩機場 (HHN)55483 Lautzenhausen",
@@ -12034,6 +10080,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-5ab2f581a3487b",
+    "city_id": "city-speyer",
+    "name": "施派爾主教座堂",
+    "localized_name": "Dom zu Speyer",
+    "original_name": "德國 Speyer",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 49.3173348,
+    "longitude": 8.4417164,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-0ce65fda81771b",
     "city_id": "city-speyer",
     "name": "教堂廣場",
@@ -12046,18 +10104,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-5ab2f581a3487b",
-    "city_id": "city-speyer",
-    "name": "德國 Speyer",
-    "localized_name": null,
-    "original_name": "德國 Speyer",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 49.3173348,
-    "longitude": 8.4417164,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-7642054a4d6533",
     "city_id": "city-speyer",
     "name": "Speyer Hbf",
@@ -12067,18 +10113,6 @@
     "subcategory": "unclassified",
     "latitude": 49.3241174,
     "longitude": 8.4283285,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-639d7058c12a1c",
-    "city_id": "city-strasbourg",
-    "name": "14 Rue de Buhl",
-    "localized_name": null,
-    "original_name": "14 Rue de Buhl",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5608291,
-    "longitude": 7.7816798,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12106,42 +10140,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-1856b5002f117a",
-    "city_id": "city-strasbourg",
-    "name": "48.560836",
-    "localized_name": null,
-    "original_name": "48.560836",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.560836,
-    "longitude": 7.781655,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-42bdea581cf93f",
-    "city_id": "city-strasbourg",
-    "name": "67000 Strasbourg",
-    "localized_name": null,
-    "original_name": "67000 Strasbourg",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5850362,
-    "longitude": 7.7348915,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-d82c997ebafcf6",
-    "city_id": "city-strasbourg",
-    "name": "史特拉斯堡國際機場 (SXB) RM 221 /Route de l'Aéroport",
-    "localized_name": null,
-    "original_name": "史特拉斯堡國際機場 (SXB) RM 221 /Route de l'Aéroport",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5389965,
-    "longitude": 7.6223038,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-7f8eb386b3f25f",
     "city_id": "city-strasbourg",
     "name": "克勒貝爾廣場",
@@ -12166,27 +10164,15 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-b524d2cf044086",
+    "poi_id": "unclassified-searched-poi-d82c997ebafcf6",
     "city_id": "city-strasbourg",
-    "name": "議會廳",
-    "localized_name": null,
-    "original_name": "議會廳",
+    "name": "Aéroport de Strasbourg",
+    "localized_name": "史特拉斯堡國際機場",
+    "original_name": "史特拉斯堡國際機場 (SXB) RM 221 /Route de l'Aéroport",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.5975908,
-    "longitude": 7.7685581,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-420e8c0ad3fa1d",
-    "city_id": "city-strasbourg",
-    "name": "Au Brasseur",
-    "localized_name": null,
-    "original_name": "Au Brasseur",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5846273,
-    "longitude": 7.7471049,
+    "latitude": 48.5389965,
+    "longitude": 7.6223038,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12211,18 +10197,6 @@
     "subcategory": "unclassified",
     "latitude": 48.5829236,
     "longitude": 7.7423374,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-4f82e01b2474bd",
-    "city_id": "city-strasbourg",
-    "name": "corep",
-    "localized_name": null,
-    "original_name": "corep",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5828421,
-    "longitude": 7.7618824,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12262,6 +10236,30 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-b524d2cf044086",
+    "city_id": "city-strasbourg",
+    "name": "European Parliament | Strasbourg",
+    "localized_name": "議會廳",
+    "original_name": "議會廳",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.5975908,
+    "longitude": 7.7685581,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dd40e8f5f33e70",
+    "city_id": "city-strasbourg",
+    "name": "impremie",
+    "localized_name": null,
+    "original_name": "impremie",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.5828421,
+    "longitude": 7.7618824,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-d1a570fd558bba",
     "city_id": "city-strasbourg",
     "name": "imprimerie",
@@ -12286,18 +10284,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-67d72f07fefa56",
-    "city_id": "city-strasbourg",
-    "name": "La Flammekueche",
-    "localized_name": null,
-    "original_name": "La Flammekueche",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5808824,
-    "longitude": 7.7405491,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-97758e548bf308",
     "city_id": "city-strasbourg",
     "name": "Pizza Renard Strasbourg-Neudorf",
@@ -12307,18 +10293,6 @@
     "subcategory": "unclassified",
     "latitude": 48.5785504,
     "longitude": 7.7527437,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-33bb8345c5d314",
-    "city_id": "city-strasbourg",
-    "name": "Pl. Broglie",
-    "localized_name": null,
-    "original_name": "Pl. Broglie",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5852952,
-    "longitude": 7.7505129,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12334,27 +10308,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-512b0739513d45",
+    "poi_id": "unclassified-searched-poi-420e8c0ad3fa1d-coordinate-review",
     "city_id": "city-strasbourg",
-    "name": "Restaurants",
-    "localized_name": null,
-    "original_name": "Restaurants",
+    "name": "Quartier de La Petite France",
+    "localized_name": "小法蘭西",
+    "original_name": "Au Brasseur",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.5808824,
-    "longitude": 7.7405491,
-    "review_status": "provisional_owner_assumption"
+    "latitude": 48.5846273,
+    "longitude": 7.7471049,
+    "review_status": "needs_review"
   },
   {
-    "poi_id": "unclassified-searched-poi-7fe0208c97174a",
+    "poi_id": "unclassified-searched-poi-42bdea581cf93f",
     "city_id": "city-strasbourg",
-    "name": "Supermarché",
+    "name": "Strasbourg",
     "localized_name": null,
-    "original_name": "Supermarché",
+    "original_name": "67000 Strasbourg",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.5841637,
-    "longitude": 7.7505128,
+    "latitude": 48.5850362,
+    "longitude": 7.7348915,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12367,32 +10341,6 @@
     "subcategory": "unclassified",
     "latitude": 48.5817196,
     "longitude": 7.7487334,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-node-5276390706",
-    "city_id": "city-strasbourg",
-    "name": "United Earth",
-    "localized_name": null,
-    "original_name": "United Earth",
-    "category": "Attraction",
-    "subcategory": "artwork",
-    "latitude": 48.5975531,
-    "longitude": 7.7685235,
-    "source_osm_id": "node/5276390706",
-    "source_osm_url": "https://www.openstreetmap.org/node/5276390706",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c2236b569cdcb5",
-    "city_id": "city-stuttgart",
-    "name": "斯圖加特機場 (STR) Flughafenstraße 32",
-    "localized_name": null,
-    "original_name": "斯圖加特機場 (STR) Flughafenstraße 32",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.6901311,
-    "longitude": 9.1896798,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12420,6 +10368,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-c2236b569cdcb5",
+    "city_id": "city-stuttgart",
+    "name": "Flughafen Stuttgart",
+    "localized_name": "斯圖加特機場 (STR)",
+    "original_name": "斯圖加特機場 (STR) Flughafenstraße 32",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.6901311,
+    "longitude": 9.1896798,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-ce0ec7af321ec5",
     "city_id": "city-stuttgart",
     "name": "NORMA Filiale",
@@ -12429,18 +10389,6 @@
     "subcategory": "unclassified",
     "latitude": 48.673197,
     "longitude": 9.3764018,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-477df9869febcf",
-    "city_id": "city-stuttgart",
-    "name": "Stuttgart Airport Busterminal",
-    "localized_name": null,
-    "original_name": "Stuttgart Airport Busterminal",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.6920485,
-    "longitude": 9.1972242,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12468,30 +10416,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-cd366c42249584",
-    "city_id": "city-triberg",
-    "name": "48.139530",
-    "localized_name": null,
-    "original_name": "48.139530",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.13953,
-    "longitude": 8.015729,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-452baa47e9cfe9",
-    "city_id": "city-triberg",
-    "name": "550 bus",
-    "localized_name": null,
-    "original_name": "550 bus",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1341566,
-    "longitude": 8.2275722,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-20352a4eca8011",
     "city_id": "city-triberg",
     "name": "黑森林蛋糕",
@@ -12516,18 +10440,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-549ed6665417cf",
-    "city_id": "city-triberg",
-    "name": "Bahnhofstraße",
-    "localized_name": null,
-    "original_name": "Bahnhofstraße",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1389072,
-    "longitude": 8.2386484,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-0f602a397b5b4d",
     "city_id": "city-triberg",
     "name": "BnB in Black Forest at Cla & Martin",
@@ -12549,18 +10461,6 @@
     "subcategory": "unclassified",
     "latitude": 48.1342361,
     "longitude": 8.2365097,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-9a42a13023ef07",
-    "city_id": "city-triberg",
-    "name": "cafe",
-    "localized_name": null,
-    "original_name": "cafe",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1407249,
-    "longitude": 8.2414912,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12600,54 +10500,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-83aac320a6bb71",
-    "city_id": "city-triberg",
-    "name": "eulenpark",
-    "localized_name": null,
-    "original_name": "eulenpark",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1281534,
-    "longitude": 8.2299906,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-cd176508ca5a3b",
-    "city_id": "city-triberg",
-    "name": "furtwagen hinterberg",
-    "localized_name": null,
-    "original_name": "furtwagen hinterberg",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1357479,
-    "longitude": 8.2374199,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-17d3f1acf8c102",
-    "city_id": "city-triberg",
-    "name": "furtwagen hinterbreg",
-    "localized_name": null,
-    "original_name": "furtwagen hinterbreg",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1357479,
-    "longitude": 8.2374199,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-01eb61f35693c6",
-    "city_id": "city-triberg",
-    "name": "Gerwigstraße",
-    "localized_name": null,
-    "original_name": "Gerwigstraße",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1363368,
-    "longitude": 8.2378588,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-ff9a762ec3d23d",
     "city_id": "city-triberg",
     "name": "Hauptstraße 108",
@@ -12657,18 +10509,6 @@
     "subcategory": "unclassified",
     "latitude": 48.13942,
     "longitude": 8.0160014,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-1e5e355a059ac2",
-    "city_id": "city-triberg",
-    "name": "Hauptstraße 110",
-    "localized_name": null,
-    "original_name": "Hauptstraße 110",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.1392069,
-    "longitude": 8.0133894,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12722,39 +10562,27 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-86a69868899d9b",
+    "poi_id": "unclassified-searched-poi-549ed6665417cf",
     "city_id": "city-triberg",
-    "name": "schwarzwälder kirschtorte",
+    "name": "Treiberg Bahnhof",
     "localized_name": null,
-    "original_name": "schwarzwälder kirschtorte",
+    "original_name": "Bahnhofstraße",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.1407249,
-    "longitude": 8.2414912,
+    "latitude": 48.1389072,
+    "longitude": 8.2386484,
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-73245f2314a919",
+    "poi_id": "unclassified-searched-poi-83aac320a6bb71",
     "city_id": "city-triberg",
-    "name": "Wallfahrtstraße",
+    "name": "Triberg Waterfalls",
     "localized_name": null,
-    "original_name": "Wallfahrtstraße",
+    "original_name": "eulenpark",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.130785,
-    "longitude": 8.2263787,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-53f49c0da36562",
-    "city_id": "city-ulm",
-    "name": "德國 Memmingerberg",
-    "localized_name": null,
-    "original_name": "德國 Memmingerberg",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9892913,
-    "longitude": 10.2326993,
+    "latitude": 48.1281534,
+    "longitude": 8.2299906,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12773,7 +10601,7 @@
     "poi_id": "unclassified-searched-poi-881eff03a72c33",
     "city_id": "city-ulm",
     "name": "Allgäu flughafen",
-    "localized_name": null,
+    "localized_name": "梅明根機場 (FMM)",
     "original_name": "Allgäu flughafen",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -12818,52 +10646,16 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-a50ecc3adaf4ff",
+    "poi_id": "unclassified-searched-poi-a50ecc3adaf4ff-coordinate-review",
     "city_id": "city-ulm",
-    "name": "kebab",
+    "name": "Memmingen Hbf",
     "localized_name": null,
     "original_name": "kebab",
     "category": "Unclassified",
     "subcategory": "unclassified",
     "latitude": 47.9849548,
     "longitude": 10.1869148,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-eac6388398ae4c",
-    "city_id": "city-ulm",
-    "name": "Memmingen",
-    "localized_name": null,
-    "original_name": "Memmingen",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9844096,
-    "longitude": 10.1866762,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-07fe18de4068e7",
-    "city_id": "city-ulm",
-    "name": "Supermärkte",
-    "localized_name": null,
-    "original_name": "Supermärkte",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9851759,
-    "longitude": 10.1871002,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-438d4c0b54729e",
-    "city_id": "city-ulm",
-    "name": "toilet",
-    "localized_name": null,
-    "original_name": "toilet",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.3976635,
-    "longitude": 9.9861116,
-    "review_status": "provisional_owner_assumption"
+    "review_status": "needs_review"
   },
   {
     "poi_id": "unclassified-searched-poi-644c4f594e289c",
@@ -12938,18 +10730,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-bc978d65fca0cb",
-    "city_id": "city-utrecht",
-    "name": "Jumbo",
-    "localized_name": null,
-    "original_name": "Jumbo",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 52.0955934,
-    "longitude": 5.0674437,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-1aa5ec2c0ec2f6",
     "city_id": "city-utrecht",
     "name": "Rietveld Schröder House",
@@ -12959,6 +10739,20 @@
     "subcategory": "unclassified",
     "latitude": 52.0863275,
     "longitude": 5.1293425,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-215289671",
+    "city_id": "city-vatican-city",
+    "name": "西斯汀小堂",
+    "localized_name": null,
+    "original_name": "西斯汀小堂",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 41.9029338,
+    "longitude": 12.4544042,
+    "source_osm_id": "way/215289671",
+    "source_osm_url": "https://www.openstreetmap.org/way/215289671",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -12995,6 +10789,20 @@
     "subcategory": "unclassified",
     "latitude": 41.9064878,
     "longitude": 12.4536413,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-node-1274807963",
+    "city_id": "city-vatican-city",
+    "name": "聖伯多祿廣場 Piazza San Pietro",
+    "localized_name": "聖彼得大教堂",
+    "original_name": "聖伯多祿廣場 Piazza San Pietro",
+    "category": "Attraction",
+    "subcategory": "memorial",
+    "latitude": 41.90351,
+    "longitude": 12.452071,
+    "source_osm_id": "node/1274807963",
+    "source_osm_url": "https://www.openstreetmap.org/node/1274807963",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -13072,34 +10880,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "attraction-node-1274807963",
-    "city_id": "city-vatican-city",
-    "name": "Saint Peter",
-    "localized_name": "聖彼得大教堂",
-    "original_name": "聖伯多祿廣場 Piazza San Pietro",
-    "category": "Attraction",
-    "subcategory": "memorial",
-    "latitude": 41.90351,
-    "longitude": 12.452071,
-    "source_osm_id": "node/1274807963",
-    "source_osm_url": "https://www.openstreetmap.org/node/1274807963",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "attraction-way-215289671",
-    "city_id": "city-vatican-city",
-    "name": "Sistine Chapel",
-    "localized_name": "西斯汀小堂",
-    "original_name": "西斯汀小堂",
-    "category": "Attraction",
-    "subcategory": "attraction",
-    "latitude": 41.9029338,
-    "longitude": 12.4544042,
-    "source_osm_id": "way/215289671",
-    "source_osm_url": "https://www.openstreetmap.org/way/215289671",
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-5b90daeccc7a1c",
     "city_id": "city-vatican-city",
     "name": "Supplì Roma",
@@ -13136,39 +10916,17 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-74351bc3f43ff1",
-    "city_id": "city-vilnius",
-    "name": "克格勃博物館 Aukų g. 2A",
-    "localized_name": null,
-    "original_name": "克格勃博物館 Aukų g. 2A",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 54.6879376,
-    "longitude": 25.270475,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-19290084efffa6",
+    "poi_id": "attraction-way-343751993",
     "city_id": "city-vilnius",
     "name": "聖母主教座堂",
     "localized_name": null,
     "original_name": "聖母主教座堂",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 54.6768095,
-    "longitude": 25.2895695,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-c47318315326bc",
-    "city_id": "city-vilnius",
-    "name": "維爾紐斯國際機場 (VNO) Rodūnios kl. 10A",
-    "localized_name": null,
-    "original_name": "維爾紐斯國際機場 (VNO) Rodūnios kl. 10A",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 54.6355868,
-    "longitude": 25.2854718,
+    "category": "Attraction",
+    "subcategory": "place_of_worship",
+    "latitude": 54.6810875,
+    "longitude": 25.2923201,
+    "source_osm_id": "way/343751993",
+    "source_osm_url": "https://www.openstreetmap.org/way/343751993",
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -13193,30 +10951,6 @@
     "subcategory": "unclassified",
     "latitude": 54.6427747,
     "longitude": 25.2771464,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-8541fd80a0358e",
-    "city_id": "city-vilnius",
-    "name": "Budapest Revolut ATUM",
-    "localized_name": null,
-    "original_name": "Budapest Revolut ATUM",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 54.6982402,
-    "longitude": 25.2676075,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-6ee73e0f48f1d4",
-    "city_id": "city-vilnius",
-    "name": "Cat Cafe",
-    "localized_name": null,
-    "original_name": "Cat Cafe",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 54.6865905,
-    "longitude": 25.2832258,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -13270,7 +11004,7 @@
   {
     "poi_id": "attraction-node-2837707104",
     "city_id": "city-vilnius",
-    "name": "Gediminas Tower",
+    "name": "Gediminas’ Tower",
     "localized_name": "格迪米納斯塔",
     "original_name": "Gediminas’ Tower",
     "category": "Attraction",
@@ -13303,18 +11037,6 @@
     "subcategory": "unclassified",
     "latitude": 54.6727057,
     "longitude": 25.2806934,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-47cd65e7ad8eba",
-    "city_id": "city-vilnius",
-    "name": "Humana",
-    "localized_name": null,
-    "original_name": "Humana",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 54.6790396,
-    "longitude": 25.2757484,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -13378,6 +11100,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-74351bc3f43ff1",
+    "city_id": "city-vilnius",
+    "name": "Okupacijų ir laisvės kovų muziejus",
+    "localized_name": "克格勃 (KGB) 博物館",
+    "original_name": "克格勃博物館 Aukų g. 2A",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 54.6879376,
+    "longitude": 25.270475,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-1867e3e59177fa",
     "city_id": "city-vilnius",
     "name": "Rotušes aikštė",
@@ -13426,10 +11160,22 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-c47318315326bc",
+    "city_id": "city-vilnius",
+    "name": "VNO Airport",
+    "localized_name": "維爾紐斯國際機場",
+    "original_name": "維爾紐斯國際機場 (VNO) Rodūnios kl. 10A",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 54.6355868,
+    "longitude": 25.2854718,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-a0109ec5d6a280",
     "city_id": "city-wiesbaden",
-    "name": "25 Jahre Deutsche Einheit",
-    "localized_name": null,
+    "name": "Thermalquelle Kochbrunnen",
+    "localized_name": "科赫噴泉",
     "original_name": "25 Jahre Deutsche Einheit",
     "category": "Unclassified",
     "subcategory": "unclassified",

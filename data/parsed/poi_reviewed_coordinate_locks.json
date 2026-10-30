@@ -1,0 +1,967 @@
+[
+  {
+    "poi_id": "attraction-node-240866019",
+    "latitude": 50.8449861,
+    "longitude": 4.3499932
+  },
+  {
+    "poi_id": "attraction-node-244036327",
+    "latitude": 53.075,
+    "longitude": 8.8056705
+  },
+  {
+    "poi_id": "attraction-node-417346627",
+    "latitude": 52.5074321,
+    "longitude": 13.3903814
+  },
+  {
+    "poi_id": "attraction-node-703266500",
+    "latitude": 48.1388639,
+    "longitude": 11.5739365
+  },
+  {
+    "poi_id": "attraction-node-910390736",
+    "latitude": 48.8559492,
+    "longitude": 2.3460263
+  },
+  {
+    "poi_id": "attraction-relation-6751056",
+    "latitude": 50.0754226,
+    "longitude": 14.4141688
+  },
+  {
+    "poi_id": "attraction-relation-9503840",
+    "latitude": 52.5021685,
+    "longitude": 13.4314938
+  },
+  {
+    "poi_id": "attraction-way-122237921",
+    "latitude": 50.9787436,
+    "longitude": 11.03094
+  },
+  {
+    "poi_id": "attraction-way-19856722",
+    "latitude": 48.8628167,
+    "longitude": 2.3428183
+  },
+  {
+    "poi_id": "attraction-way-23762981",
+    "latitude": 48.8867961,
+    "longitude": 2.3430272
+  },
+  {
+    "poi_id": "attraction-way-33845624",
+    "latitude": 53.5458515,
+    "longitude": 9.9520535
+  },
+  {
+    "poi_id": "attraction-way-35100527",
+    "latitude": 51.488054,
+    "longitude": 7.0389228
+  },
+  {
+    "poi_id": "attraction-way-4208595",
+    "latitude": 48.856163,
+    "longitude": 2.2978311
+  },
+  {
+    "poi_id": "attraction-way-5013364",
+    "latitude": 48.8582603,
+    "longitude": 2.2945008
+  },
+  {
+    "poi_id": "attraction-way-716912509",
+    "latitude": 42.5092188,
+    "longitude": 1.5455045
+  },
+  {
+    "poi_id": "unclassified-searched-poi-01f182410d0742",
+    "latitude": 47.7949483,
+    "longitude": 13.0476583
+  },
+  {
+    "poi_id": "unclassified-searched-poi-02855763fd2bd0",
+    "latitude": 47.8130272,
+    "longitude": 13.0450386
+  },
+  {
+    "poi_id": "unclassified-searched-poi-091b99a28719d5",
+    "latitude": 48.5839656,
+    "longitude": 7.7456352
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0aac82194a3cd7",
+    "latitude": 52.5182798,
+    "longitude": 13.3756895
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b02481c02ab66",
+    "latitude": 48.1404358,
+    "longitude": 11.5578497
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b53d8dc097550",
+    "latitude": 51.3756461,
+    "longitude": 6.7379532
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0ca673de874005",
+    "latitude": 48.5738135,
+    "longitude": 7.7569997
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0e89c0ec719663",
+    "latitude": 50.1148662,
+    "longitude": 8.6837214
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0fffa11adce0e8",
+    "latitude": 49.4457206,
+    "longitude": 11.0738859
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10320699ee3fcd",
+    "latitude": 48.0794357,
+    "longitude": 7.3580324
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10b16854e79c24",
+    "latitude": 48.8668354,
+    "longitude": 2.3229144
+  },
+  {
+    "poi_id": "unclassified-searched-poi-119c7aeac5d3a5",
+    "latitude": 48.1424686,
+    "longitude": 11.5499457
+  },
+  {
+    "poi_id": "unclassified-searched-poi-11dfcb1f349b9e",
+    "latitude": 51.2235939,
+    "longitude": 6.7820797
+  },
+  {
+    "poi_id": "unclassified-searched-poi-14480c82f6e712",
+    "latitude": 51.0361132,
+    "longitude": 3.7108392
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1473d7e90b40d7",
+    "latitude": 48.1394752,
+    "longitude": 8.0226112
+  },
+  {
+    "poi_id": "unclassified-searched-poi-171c3a3a5a691c",
+    "latitude": 43.304179,
+    "longitude": 5.379868
+  },
+  {
+    "poi_id": "unclassified-searched-poi-188c63434d7575",
+    "latitude": 50.0855096,
+    "longitude": 14.4216261
+  },
+  {
+    "poi_id": "unclassified-searched-poi-19c40d434f5cb9",
+    "latitude": 50.0827807,
+    "longitude": 14.4263432
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b3d287fb221fa",
+    "latitude": 48.13377,
+    "longitude": 11.7048951
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1bfb6212547cfa",
+    "latitude": 47.761873,
+    "longitude": 11.8305343
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d521814f85c75",
+    "latitude": 52.5239059,
+    "longitude": 13.3674027
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d61a3268196b8",
+    "latitude": 50.0890918,
+    "longitude": 14.4286943
+  },
+  {
+    "poi_id": "unclassified-searched-poi-205ce6fe0dac06",
+    "latitude": 50.76816,
+    "longitude": 6.0908
+  },
+  {
+    "poi_id": "unclassified-searched-poi-20b5c972ac5d9a",
+    "latitude": 53.5437277,
+    "longitude": 9.9889078
+  },
+  {
+    "poi_id": "unclassified-searched-poi-28ec4c4922fdc2",
+    "latitude": 47.7601322,
+    "longitude": 13.0620962
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2ea4cb1ead8cc9",
+    "latitude": 48.3521622,
+    "longitude": 11.7644588
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2f5defbfb937e2",
+    "latitude": 48.8561074,
+    "longitude": 2.3127829
+  },
+  {
+    "poi_id": "unclassified-searched-poi-30842a5e9bf465",
+    "latitude": 48.8499455,
+    "longitude": 2.3497819
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3200e0533eeb30",
+    "latitude": 48.404066,
+    "longitude": 8.0152719
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3739af33f3f3e0",
+    "latitude": 48.1383311,
+    "longitude": 11.5765921
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3868d63ff11c0c",
+    "latitude": 52.5250839,
+    "longitude": 13.369402
+  },
+  {
+    "poi_id": "unclassified-searched-poi-393db57673662f",
+    "latitude": 53.5524007,
+    "longitude": 10.0073672
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3a7427582d7615",
+    "latitude": 47.8105643,
+    "longitude": 13.0615841
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3dbc14ec16fcfb",
+    "latitude": 52.5324907,
+    "longitude": 13.3870329
+  },
+  {
+    "poi_id": "unclassified-searched-poi-41b3e9e98ddfe6",
+    "latitude": 53.5526972,
+    "longitude": 10.0143537
+  },
+  {
+    "poi_id": "unclassified-searched-poi-424d5e7f095d0b",
+    "latitude": 48.2796187,
+    "longitude": 8.0890833
+  },
+  {
+    "poi_id": "unclassified-searched-poi-42bdea581cf93f",
+    "latitude": 48.5850362,
+    "longitude": 7.7348915
+  },
+  {
+    "poi_id": "unclassified-searched-poi-43738d0c327744",
+    "latitude": 43.6688178,
+    "longitude": 7.210577
+  },
+  {
+    "poi_id": "unclassified-searched-poi-456aa9f12ac4bf",
+    "latitude": 49.44639,
+    "longitude": 11.08194
+  },
+  {
+    "poi_id": "unclassified-searched-poi-475c87808ba370",
+    "latitude": 54.7096851,
+    "longitude": 25.2605228
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4a07fd90658035",
+    "latitude": 50.9723535,
+    "longitude": 11.0379944
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4b8029c00eed95",
+    "latitude": 48.1595579,
+    "longitude": 11.5441349
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4bf85cc8e03609",
+    "latitude": 48.0633333,
+    "longitude": 11.6208333
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4c49b907dc5528",
+    "latitude": 48.2215441,
+    "longitude": 11.3313642
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4dd75bb7baebea",
+    "latitude": 51.3452156,
+    "longitude": 12.379722
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4de0624908ce37",
+    "latitude": 42.4583921,
+    "longitude": 1.4875946
+  },
+  {
+    "poi_id": "unclassified-searched-poi-51e3e26a3b0d5d",
+    "latitude": 54.6764316,
+    "longitude": 25.2888474
+  },
+  {
+    "poi_id": "unclassified-searched-poi-52b9b8e3d80d33",
+    "latitude": 50.2299881,
+    "longitude": 12.8639812
+  },
+  {
+    "poi_id": "unclassified-searched-poi-549ed6665417cf",
+    "latitude": 48.1389072,
+    "longitude": 8.2386484
+  },
+  {
+    "poi_id": "unclassified-searched-poi-54a64796a78a11",
+    "latitude": 53.0755426,
+    "longitude": 8.8090624
+  },
+  {
+    "poi_id": "unclassified-searched-poi-551967d3786a49",
+    "latitude": 48.5759682,
+    "longitude": 7.8072034
+  },
+  {
+    "poi_id": "unclassified-searched-poi-559fbfc02321da",
+    "latitude": 48.5817196,
+    "longitude": 7.7487334
+  },
+  {
+    "poi_id": "unclassified-searched-poi-585b064c16cb4b",
+    "latitude": 48.7901656,
+    "longitude": 8.1913124
+  },
+  {
+    "poi_id": "unclassified-searched-poi-59279797e70a29",
+    "latitude": 51.161753,
+    "longitude": 6.878005
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5ab2f581a3487b",
+    "latitude": 49.3173348,
+    "longitude": 8.4417164
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5bfcd38ac0daa1",
+    "latitude": 48.993005,
+    "longitude": 8.4023215
+  },
+  {
+    "poi_id": "unclassified-searched-poi-616a4588455e63",
+    "latitude": 48.1328131,
+    "longitude": 11.6322675
+  },
+  {
+    "poi_id": "unclassified-searched-poi-644c4f594e289c",
+    "latitude": 48.3994494,
+    "longitude": 9.9832799
+  },
+  {
+    "poi_id": "unclassified-searched-poi-650cd7b1fe9d31",
+    "latitude": 51.2237392,
+    "longitude": 6.7880343
+  },
+  {
+    "poi_id": "unclassified-searched-poi-66597c02c851d1",
+    "latitude": 49.0799307,
+    "longitude": 8.3992483
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6894dd7617ad4f",
+    "latitude": 48.0745055,
+    "longitude": 7.3567686
+  },
+  {
+    "poi_id": "unclassified-searched-poi-68ee50d2932735",
+    "latitude": 54.6703567,
+    "longitude": 25.2842932
+  },
+  {
+    "poi_id": "unclassified-searched-poi-69c085c4f9e809",
+    "latitude": 43.2944646,
+    "longitude": 5.3645147
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6a9db57a9e011f",
+    "latitude": 50.0710408,
+    "longitude": 8.2434169
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6b08c48627cb4a",
+    "latitude": 47.9947123,
+    "longitude": 11.1702744
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ea01ab5526888",
+    "latitude": 51.216236,
+    "longitude": 3.213238
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70cc1f9ae741c5",
+    "latitude": 48.2054841,
+    "longitude": 11.4719745
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70d04b69aa42fc",
+    "latitude": 50.0825872,
+    "longitude": 14.4099185
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7185c1cbbf11b9",
+    "latitude": 47.7513531,
+    "longitude": 12.9469801
+  },
+  {
+    "poi_id": "unclassified-searched-poi-71ccc6fa11aca4",
+    "latitude": 48.1106546,
+    "longitude": 11.5668681
+  },
+  {
+    "poi_id": "unclassified-searched-poi-733e708e663a38",
+    "latitude": 51.4297566,
+    "longitude": 6.775994
+  },
+  {
+    "poi_id": "unclassified-searched-poi-73a50acace1769",
+    "latitude": 50.350935,
+    "longitude": 7.5884417
+  },
+  {
+    "poi_id": "unclassified-searched-poi-74351bc3f43ff1",
+    "latitude": 54.6879376,
+    "longitude": 25.270475
+  },
+  {
+    "poi_id": "unclassified-searched-poi-750e2da732a879",
+    "latitude": 53.5433461,
+    "longitude": 9.9785605
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7642054a4d6533",
+    "latitude": 49.3241174,
+    "longitude": 8.4283285
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7767f8ec963895",
+    "latitude": 51.4784913,
+    "longitude": 7.2235117
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77ab82f209db43",
+    "latitude": 49.4939629,
+    "longitude": 11.078626
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77ffd8197b0f35",
+    "latitude": 50.848522,
+    "longitude": 4.353582
+  },
+  {
+    "poi_id": "unclassified-searched-poi-780b4f7443df91",
+    "latitude": 47.9962625,
+    "longitude": 7.8407648
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7b660b7c8582ce",
+    "latitude": 50.0910966,
+    "longitude": 14.4016165
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7c090338bbb97f",
+    "latitude": 50.0897986,
+    "longitude": 14.4326642
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7d75ee8cc61cc8",
+    "latitude": 54.6861185,
+    "longitude": 25.2834601
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7efa4dadf9187d",
+    "latitude": 43.3042669,
+    "longitude": 5.3946029
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8380d01ffe7e0d",
+    "latitude": 47.6514999,
+    "longitude": 9.4823877
+  },
+  {
+    "poi_id": "unclassified-searched-poi-83aac320a6bb71",
+    "latitude": 48.1281534,
+    "longitude": 8.2299906
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84188dd51e700b",
+    "latitude": 43.3067346,
+    "longitude": 5.3641865
+  },
+  {
+    "poi_id": "unclassified-searched-poi-841f621cedbe43",
+    "latitude": 52.3645625,
+    "longitude": 13.5049605
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84d428361a3420",
+    "latitude": 50.0870215,
+    "longitude": 14.4207065
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8583d2c9a244cb",
+    "latitude": 49.411342,
+    "longitude": 8.7067031
+  },
+  {
+    "poi_id": "unclassified-searched-poi-870dff7a161842",
+    "latitude": 47.799837,
+    "longitude": 13.041359
+  },
+  {
+    "poi_id": "unclassified-searched-poi-881eff03a72c33",
+    "latitude": 47.9873044,
+    "longitude": 10.2373668
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8864f86431fe2e",
+    "latitude": 53.5458861,
+    "longitude": 9.9665878
+  },
+  {
+    "poi_id": "unclassified-searched-poi-898ab5d0e42107",
+    "latitude": 49.9006305,
+    "longitude": 10.8998949
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8b12abe3ea8bed",
+    "latitude": 48.2679303,
+    "longitude": 11.4687875
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8c14045784bc42",
+    "latitude": 48.1771981,
+    "longitude": 11.5562963
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8ea41c5874fd70",
+    "latitude": 48.0786509,
+    "longitude": 7.3565137
+  },
+  {
+    "poi_id": "unclassified-searched-poi-917be08a08ab06",
+    "latitude": 51.0531618,
+    "longitude": 3.7405929
+  },
+  {
+    "poi_id": "unclassified-searched-poi-923177f97ba750",
+    "latitude": 49.4119036,
+    "longitude": 8.7115949
+  },
+  {
+    "poi_id": "unclassified-searched-poi-944e3cef399166",
+    "latitude": 48.6257836,
+    "longitude": 2.4286385
+  },
+  {
+    "poi_id": "unclassified-searched-poi-94e1e7335acbab",
+    "latitude": 53.8668976,
+    "longitude": 10.6701974
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9580af250f9320",
+    "latitude": 49.6347993,
+    "longitude": 8.3542207
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98e0ab6755a543",
+    "latitude": 47.6378101,
+    "longitude": 13.0178527
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98e8161385ad58",
+    "latitude": 50.3167893,
+    "longitude": 11.7948327
+  },
+  {
+    "poi_id": "unclassified-searched-poi-99e3bff0528f08",
+    "latitude": 53.5453013,
+    "longitude": 9.9542419
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9d068fa0cf5fac",
+    "latitude": 50.1095772,
+    "longitude": 8.6739511
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9eee3058062db4",
+    "latitude": 48.8498436,
+    "longitude": 2.3482751
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9f062ce017a243",
+    "latitude": 49.4796864,
+    "longitude": 8.4698347
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fe46eddf1bb3a",
+    "latitude": 50.001715,
+    "longitude": 8.25904
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fee5e72c29934",
+    "latitude": 49.4474045,
+    "longitude": 11.0862063
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a0109ec5d6a280",
+    "latitude": 50.0785851,
+    "longitude": 8.2428599
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a10cd58a3b7e5b",
+    "latitude": 42.5092482,
+    "longitude": 1.5437498
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a179752da9afab",
+    "latitude": 48.0536384,
+    "longitude": 11.6103314
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a38a1b64cbca23",
+    "latitude": 48.8489385,
+    "longitude": 2.5798895
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a7b106b6df8789",
+    "latitude": 54.6727057,
+    "longitude": 25.2806934
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a8b658dd9d98a8",
+    "latitude": 51.4802445,
+    "longitude": 7.2229639
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a916dd6ea2ea24",
+    "latitude": 51.0568507,
+    "longitude": 3.7207169
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a96ce8baceddaf",
+    "latitude": 48.1389986,
+    "longitude": 11.5676773
+  },
+  {
+    "poi_id": "unclassified-searched-poi-abaacd10337b81",
+    "latitude": 47.8008735,
+    "longitude": 13.0389789
+  },
+  {
+    "poi_id": "unclassified-searched-poi-abf6b7170a4534",
+    "latitude": 49.4840188,
+    "longitude": 8.4756253
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b1713fcba3fb04",
+    "latitude": 43.2960716,
+    "longitude": 5.3683687
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b386a0212161a6",
+    "latitude": 43.6985617,
+    "longitude": 7.2857279
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b524d2cf044086",
+    "latitude": 48.5975908,
+    "longitude": 7.7685581
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b66d179ee20304",
+    "latitude": 48.3538478,
+    "longitude": 11.78356
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b721a8a0510b53",
+    "latitude": 48.8731855,
+    "longitude": 2.3148533
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b77593ea36f61a",
+    "latitude": 51.1971966,
+    "longitude": 3.2178565
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b84b3c5560bb54",
+    "latitude": 48.1860667,
+    "longitude": 11.5254838
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b88af5bd811ebc",
+    "latitude": 48.5277337,
+    "longitude": 2.6551331
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9b0061a9dda88",
+    "latitude": 53.45686,
+    "longitude": 9.9910567
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9e2f6a939056b",
+    "latitude": 48.1492821,
+    "longitude": 11.4601126
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bbedc62e52bfce",
+    "latitude": 48.1445906,
+    "longitude": 11.5355505
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bcf0db2d0f67c9",
+    "latitude": 48.8606111,
+    "longitude": 2.337644
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bda1900315411a",
+    "latitude": 48.1335439,
+    "longitude": 11.5666468
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c1c7ba3a8060e1",
+    "latitude": 48.1200557,
+    "longitude": 11.5175186
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c219e54833a948",
+    "latitude": 48.8660479,
+    "longitude": 2.3145896
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2236b569cdcb5",
+    "latitude": 48.6901311,
+    "longitude": 9.1896798
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2a0fec7a383ad",
+    "latitude": 48.1402368,
+    "longitude": 11.5677123
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2f0477971871f",
+    "latitude": 52.5239457,
+    "longitude": 13.4071823
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c3fdd76b161378",
+    "latitude": 50.9412784,
+    "longitude": 6.9582814
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c47318315326bc",
+    "latitude": 54.6355868,
+    "longitude": 25.2854718
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c6f98a6a7dd45f",
+    "latitude": 50.1071439,
+    "longitude": 8.6637837
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c79071a9bb75f4",
+    "latitude": 50.8484807,
+    "longitude": 4.3540406
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca1da001db7aea",
+    "latitude": 42.5082887,
+    "longitude": 1.5266352
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca49b11b61e40c",
+    "latitude": 50.0752715,
+    "longitude": 14.4316349
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb0e5bf61e05eb",
+    "latitude": 53.5458199,
+    "longitude": 9.9710671
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb7b417be6f0b9",
+    "latitude": 48.1632179,
+    "longitude": 11.5869325
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ced386b6aed618",
+    "latitude": 47.9736431,
+    "longitude": 11.6546687
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf594161663d0e",
+    "latitude": 47.7959998,
+    "longitude": 13.0553298
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf787af97beb41",
+    "latitude": 47.6527564,
+    "longitude": 9.4707072
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf99195e4da958",
+    "latitude": 52.4749434,
+    "longitude": 13.4510209
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d1218be69da21c",
+    "latitude": 48.8357368,
+    "longitude": 2.3803723
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d4710ecbc41908",
+    "latitude": 54.6736516,
+    "longitude": 25.2860853
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d4f9677643c95a",
+    "latitude": 51.2152991,
+    "longitude": 3.2226994
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d65d3469abe9cf",
+    "latitude": 50.3081631,
+    "longitude": 11.9219609
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d729619685b99e",
+    "latitude": 52.5028152,
+    "longitude": 13.4473839
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d82c997ebafcf6",
+    "latitude": 48.5389965,
+    "longitude": 7.6223038
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d84105fa6cb616",
+    "latitude": 48.0355662,
+    "longitude": 11.5934927
+  },
+  {
+    "poi_id": "unclassified-searched-poi-daa12c5e6f5e43",
+    "latitude": 48.1000223,
+    "longitude": 11.5280224
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dbaed9501c94e7",
+    "latitude": 47.8026282,
+    "longitude": 13.0438679
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dc731f6e9cf49f",
+    "latitude": 48.1393547,
+    "longitude": 11.5616978
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ddcf6c29eeebbd",
+    "latitude": 42.5092778,
+    "longitude": 1.5351978
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e1ab6f9e894080",
+    "latitude": 51.3455886,
+    "longitude": 12.4074806
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e274e39d03ff3c",
+    "latitude": 51.220115,
+    "longitude": 6.7927281
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e2e02265d04104",
+    "latitude": 48.1667017,
+    "longitude": 11.5781521
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e4e093a13c4cdb",
+    "latitude": 48.1487431,
+    "longitude": 11.5685317
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e8adef10c770fa",
+    "latitude": 53.5474603,
+    "longitude": 9.9906708
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e8ae237f9534db",
+    "latitude": 48.148827,
+    "longitude": 11.4611889
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ea674f5751f0d8",
+    "latitude": 49.4041735,
+    "longitude": 8.6759541
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb85922c2761ad",
+    "latitude": 43.7049088,
+    "longitude": 7.2648397
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb8ab54e87391b",
+    "latitude": 48.3988626,
+    "longitude": 11.7393396
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ecbffe69a40eeb",
+    "latitude": 49.0088669,
+    "longitude": 8.40394
+  },
+  {
+    "poi_id": "unclassified-searched-poi-edc0440e97bc12",
+    "latitude": 50.075344,
+    "longitude": 14.429981
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef6ee0e1ba83ec",
+    "latitude": 48.1106312,
+    "longitude": 11.5961501
+  },
+  {
+    "poi_id": "unclassified-searched-poi-efa247788dfde1",
+    "latitude": 51.0562027,
+    "longitude": 3.7402824
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f134a5739bc465",
+    "latitude": 48.1711859,
+    "longitude": 8.0712286
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f1ca6295171842",
+    "latitude": 43.664817,
+    "longitude": 7.209588
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7822f249fae01",
+    "latitude": 47.973029,
+    "longitude": 11.653519
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7da6ace14c34c",
+    "latitude": 50.3579789,
+    "longitude": 7.5899798
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f82dfe08e546fa",
+    "latitude": 48.1274219,
+    "longitude": 11.6053025
+  }
+]

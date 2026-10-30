@@ -23,6 +23,15 @@ export type ManualPoiReference = {
   source_status: 'owner_confirmed_visit';
 };
 
+export type GooglePlaceCoordinateOverride = {
+  google_place_id: string;
+  city_id: string;
+  name: string;
+  latitude: number;
+  longitude: number;
+  source_status: 'owner_confirmed_google_maps_link';
+};
+
 export type PublicPoiReference = {
   poi_id: string;
   city_id: string;
@@ -109,6 +118,20 @@ export function manualPoiId(placeKey: string): string {
   return `manual-poi-${createHash('sha256').update(placeKey).digest('hex').slice(0, 14)}`;
 }
 
+export function applyGooglePlaceCoordinateOverride<
+  T extends { googlePlaceId?: string; latitude: number; longitude: number },
+>(
+  candidate: T,
+  overrides: ReadonlyMap<string, GooglePlaceCoordinateOverride>,
+): T {
+  const override = candidate.googlePlaceId
+    ? overrides.get(candidate.googlePlaceId)
+    : undefined;
+  return override
+    ? { ...candidate, latitude: override.latitude, longitude: override.longitude }
+    : candidate;
+}
+
 function namesFor(reference: PublicPoiReference): string[] {
   return [reference.name, reference.localized_name, reference.original_name]
     .filter((value): value is string => Boolean(value?.trim()))
@@ -119,11 +142,18 @@ export function mergeManualPoiReferences(
   existing: PublicPoiReference[],
   manual: ManualPoiReference[],
   reviewedNameHashes: ReadonlyMap<string, ReadonlySet<string>> = new Map(),
-): { pois: PublicPoiReference[]; added: number; updated: number; deduplicated: number } {
+): {
+  pois: PublicPoiReference[];
+  added: number;
+  updated: number;
+  deduplicated: number;
+  updatedPoiIds: string[];
+} {
   const pois = existing.map((poi) => ({ ...poi }));
   let added = 0;
   let updated = 0;
   let deduplicated = 0;
+  const updatedPoiIds: string[] = [];
   for (const row of manual) {
     const normalizedNames = [row.name, row.localized_name]
       .filter((value): value is string => Boolean(value?.trim()))
@@ -163,6 +193,7 @@ export function mergeManualPoiReferences(
       match.name = row.name;
       if (row.localized_name) match.localized_name = row.localized_name;
       updated += 1;
+      updatedPoiIds.push(match.poi_id);
       continue;
     }
     pois.push({
@@ -184,6 +215,7 @@ export function mergeManualPoiReferences(
     added,
     updated,
     deduplicated,
+    updatedPoiIds: [...new Set(updatedPoiIds)].sort(),
   };
 }
 
