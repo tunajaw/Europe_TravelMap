@@ -189,7 +189,11 @@ tracked override contains only the identity, reviewed City/name, coordinate,
 and source status; it does not retain the short link or unrelated activity.
 This coordinate replaces the approximate viewport for an unreviewed candidate.
 An accepted reviewed `Keep` snapshot and coordinate lock still take precedence,
-while a reviewed `Discard` remains excluded.
+while a reviewed `Discard` remains excluded. When the owner explicitly identifies
+an override as the corrected location of an accepted reviewed POI, the override
+may name that reviewed POI as its target. The pipeline then preserves the
+reviewed POI ID and edited metadata, applies the canonical coordinate after the
+coordinate lock, and removes the matching provisional Google Place duplicate.
 
 The private unreviewed-coordinate audit scans the current review candidates
 against a locally indexed set of OSM aliases in the assigned City. It excludes
@@ -201,15 +205,25 @@ coordinate. Findings require a distance of at least 250 metres. A unique
 levels describe confidence in the OSM name candidate, not proof that the
 current coordinate is wrong. The audit is report-only and remains private;
 only an owner-confirmed canonical Place link or another approved source may
-create a coordinate override.
+create a coordinate override. Its output also records every assigned City that
+could not be audited because no OSM snapshot was available. Missing coverage is
+not equivalent to a clean result and must remain visible until a later rerun
+successfully creates the City snapshot.
 
 An OSM `exact` or `alias_exact` name match within the already assigned City is
 an exception to the 350-metre classification radius because a Google Maps URL
 may encode a displaced search viewport rather than the Place coordinate. The
 exact OSM feature supplies the POI coordinate; fuzzy or partial matches remain
-subject to the 350-metre limit. A citywide exact match is applied only when the
-Timeline evidence also contains a point within 350 metres of that OSM feature;
-name equality alone cannot move a POI.
+subject to the 350-metre limit. A citywide exact match is normally applied only
+when the Timeline evidence also contains a point within 350 metres of that OSM
+feature. One conservative exception is allowed when the search record has a
+stable Google Place identity, the City has exactly one exact or alias-exact OSM
+name candidate, and that candidate is an `Attraction` or `Station`. This rule
+may replace a displaced viewport with the OSM coordinate. It does not apply to
+restaurants, takeaways, shops, or supermarkets because same-name branches are
+common. Station candidates retain their Google recovery ID and remain hidden
+under the current display-category policy; coordinate correction must not cause
+review-identity churn.
 
 Before this rule or another preprocessing improvement can change tracked POI
 coordinates, imported human-reviewed POIs receive coordinate locks from the

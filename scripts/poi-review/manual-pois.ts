@@ -25,6 +25,7 @@ export type ManualPoiReference = {
 
 export type GooglePlaceCoordinateOverride = {
   google_place_id: string;
+  target_poi_id?: string;
   city_id: string;
   name: string;
   latitude: number;

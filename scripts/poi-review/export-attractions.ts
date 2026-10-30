@@ -27,6 +27,7 @@ type Candidate = {
 type ExportCandidate = Candidate & {
   cityId: string;
   recoveryId?: string;
+  googlePlaceId?: string;
   nameSource: 'osm' | 'google';
 };
 
@@ -140,6 +141,7 @@ for (const filename of await readdir(osmCache)) {
 }
 
 let bilingualCount = 0;
+const candidateIdByGooglePlaceId = new Map<string, string>();
 
 const provisionalPois = [...candidatesBySource.values()]
   .filter((candidate) => !exposesPrivateAccommodation(candidate.name))
@@ -153,8 +155,10 @@ const provisionalPois = [...candidatesBySource.values()]
     const sourceId = candidate.osmId
       ? candidate.osmId.replace('/', '-')
       : candidate.recoveryId ?? candidate.name;
+    const poiId = `${candidate.category.toLowerCase()}-${sourceId}`;
+    if (candidate.googlePlaceId) candidateIdByGooglePlaceId.set(candidate.googlePlaceId, poiId);
     return {
-      poi_id: `${candidate.category.toLowerCase()}-${sourceId}`,
+      poi_id: poiId,
       city_id: candidate.cityId,
       name: englishName,
       localized_name: chineseName && chineseName !== englishName ? chineseName : null,
@@ -304,6 +308,27 @@ try {
 } catch (error) {
   if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
 }
+let ownerCoordinateUpdatedCount = 0;
+let ownerCoordinateDeduplicatedCount = 0;
+for (const override of googlePlaceCoordinateOverrideRows) {
+  if (!override.target_poi_id) continue;
+  const target = pois.find((poi) => poi.poi_id === override.target_poi_id);
+  if (!target) throw new Error(`Unknown coordinate override target POI: ${override.target_poi_id}`);
+  if (target.city_id !== override.city_id) {
+    throw new Error(`Coordinate override target City mismatch: ${override.target_poi_id}`);
+  }
+  target.latitude = override.latitude;
+  target.longitude = override.longitude;
+  ownerCoordinateUpdatedCount += 1;
+  const duplicatePoiId = candidateIdByGooglePlaceId.get(override.google_place_id);
+  if (duplicatePoiId && duplicatePoiId !== target.poi_id) {
+    const duplicateIndex = pois.findIndex((poi) => poi.poi_id === duplicatePoiId);
+    if (duplicateIndex >= 0) {
+      pois.splice(duplicateIndex, 1);
+      ownerCoordinateDeduplicatedCount += 1;
+    }
+  }
+}
 let manualAdded = 0;
 let manualUpdated = 0;
 let manualDeduplicated = 0;
@@ -350,6 +375,7 @@ process.stdout.write(`Included separate English/source and Chinese names for ${b
 process.stdout.write(`Manual owner-confirmed POIs: ${manualAdded} added, ${manualUpdated} matched and updated.\n`);
 process.stdout.write(`Manual location-update duplicates collapsed: ${manualDeduplicated}.\n`);
 process.stdout.write(`Owner-confirmed Google Place coordinate overrides: ${googlePlaceCoordinateOverrideCount}.\n`);
+process.stdout.write(`Reviewed coordinate targets updated: ${ownerCoordinateUpdatedCount}; matching provisional duplicates collapsed: ${ownerCoordinateDeduplicatedCount}.\n`);
 process.stdout.write(`Reviewed coordinate changes held for audit: ${coordinateAudit.length}.\n`);
 process.stdout.write(`Discarded reviewed POIs excluded: ${discardedCount}.\n`);
 process.stdout.write(`Coordinate rechecks reopened: ${coordinateRecheckIds.size}.\n`);

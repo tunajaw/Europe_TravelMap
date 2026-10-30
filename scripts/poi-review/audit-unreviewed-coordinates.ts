@@ -74,11 +74,17 @@ for (const filename of await readdir(osmCache)) {
   featureIndexes.set(filename.replace(/\.json$/, ''), index);
 }
 
+const isAuditEligible = (poi: Poi): boolean => !reviewedIds.has(poi.poi_id)
+  && poi.review_status !== 'needs_review'
+  && poi.subcategory !== 'owner_confirmed_visit'
+  && !poi.source_osm_id;
+const eligiblePois = pois.filter(isAuditEligible);
+const missingCityIds = [...new Set(eligiblePois
+  .map(({ city_id }) => city_id)
+  .filter((cityId) => !featureIndexes.has(cityId)))].sort();
+
 const findings = pois.flatMap((poi) => {
-  if (reviewedIds.has(poi.poi_id)
-    || poi.review_status === 'needs_review'
-    || poi.subcategory === 'owner_confirmed_visit'
-    || poi.source_osm_id) return [];
+  if (!isAuditEligible(poi)) return [];
   const names = [poi.name, poi.localized_name, poi.original_name]
     .filter((value): value is string => typeof value === 'string' && Boolean(value.trim()));
   const featureIndex = featureIndexes.get(poi.city_id);
@@ -126,6 +132,8 @@ const findings = pois.flatMap((poi) => {
     candidate_longitude: best.feature.longitude,
     candidate_osm_id: best.feature.osmId,
     candidate_osm_name: best.feature.name,
+    candidate_osm_category: best.feature.category,
+    candidate_osm_subcategory: best.feature.subcategory,
     google_place_id: googlePlaceIdByPoiId.get(poi.poi_id) || null,
     distance_meters: best.distanceMeters,
     match_method: best.match.method,
@@ -143,9 +151,16 @@ const findings = pois.flatMap((poi) => {
 });
 
 await mkdir(dirname(output), { recursive: true });
-await writeFile(output, `${JSON.stringify(findings, null, 2)}\n`, 'utf8');
+await writeFile(output, `${JSON.stringify({
+  schema_version: 1,
+  generated_at: new Date().toISOString(),
+  total_current_pois: pois.length,
+  eligible_unreviewed_pois: eligiblePois.length,
+  missing_city_ids: missingCityIds,
+  findings,
+}, null, 2)}\n`, 'utf8');
 const counts = findings.reduce<Record<string, number>>((result, finding) => {
   result[finding.confidence] = (result[finding.confidence] ?? 0) + 1;
   return result;
 }, {});
-process.stdout.write(`Audited ${pois.length} current POIs; reported ${findings.length} unreviewed coordinate candidates (${JSON.stringify(counts)}) to ${output}\n`);
+process.stdout.write(`Audited ${pois.length} current POIs; reported ${findings.length} unreviewed coordinate candidates (${JSON.stringify(counts)}); missing OSM coverage for ${missingCityIds.length} Cities to ${output}\n`);

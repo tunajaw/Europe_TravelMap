@@ -259,6 +259,19 @@ describe("POI review preprocessing", () => {
       .toEqual(expect.objectContaining({ latitude: 43.6955865, longitude: 7.274994 }));
   });
 
+  it("updates a reviewed coordinate target and removes its Google Place duplicate", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ poi_id: string; name: string; latitude: number; longitude: number }>;
+    const squareLeclerc = pois.filter(({ name }) => name === "Square leclerc");
+    expect(squareLeclerc).toEqual([expect.objectContaining({
+      poi_id: "unclassified-searched-poi-b386a0212161a6",
+      latitude: 43.6979598,
+      longitude: 7.2739839,
+    })]);
+  });
+
   it("matches attraction names against reviewed OSM aliases conservatively", () => {
     const feature = {
       name: "Musée du Louvre",
@@ -355,6 +368,68 @@ describe("POI review preprocessing", () => {
       category: "Attraction",
       latitude: 43.2804479,
       longitude: 5.350204,
+    })]);
+  });
+
+  it("uses a unique identity-backed Station coordinate without reclassifying it as an Attraction", () => {
+    const cities: TravelCity[] = [{
+      id: "munich", name: "Munich", countryId: "germany",
+      location: { latitude: 48.2, longitude: 11.7 },
+    }];
+    const rows = recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Test Station",
+        url: "https://www.google.com/maps/dir/Test/@48.2,11.7,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: ["place-1"],
+      }],
+      cities,
+      snapshots: new Map([["munich", { features: [{
+        osmId: "node/station", osmUrl: "https://www.openstreetmap.org/node/station",
+        name: "Test Station", category: "Station", subcategory: "station",
+        latitude: 48.1, longitude: 11.5, tags: { railway: "station" },
+      }] }]]),
+      evidence: [{
+        latitude: 48.2, longitude: 11.7,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    });
+    expect(rows).toEqual([expect.objectContaining({
+      category: "Unclassified",
+      osmId: "",
+      latitude: 48.1,
+      longitude: 11.5,
+    })]);
+  });
+
+  it("does not move an identity-backed Restaurant to a distant same-name branch", () => {
+    const cities: TravelCity[] = [{
+      id: "munich", name: "Munich", countryId: "germany",
+      location: { latitude: 48.2, longitude: 11.7 },
+    }];
+    const rows = recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Branch Restaurant",
+        url: "https://www.google.com/maps/dir/Test/@48.2,11.7,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: ["place-1"],
+      }],
+      cities,
+      snapshots: new Map([["munich", { features: [{
+        osmId: "node/restaurant", osmUrl: "https://www.openstreetmap.org/node/restaurant",
+        name: "Branch Restaurant", category: "Restaurant", subcategory: "restaurant",
+        latitude: 48.1, longitude: 11.5, tags: { amenity: "restaurant" },
+      }] }]]),
+      evidence: [{
+        latitude: 48.2, longitude: 11.7,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    });
+    expect(rows).toEqual([expect.objectContaining({
+      category: "Unclassified",
+      osmId: "",
+      latitude: 48.2,
+      longitude: 11.7,
     })]);
   });
 

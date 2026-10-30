@@ -6,5 +6,14 @@
     "latitude": 43.6955865,
     "longitude": 7.274994,
     "source_status": "owner_confirmed_google_maps_link"
+  },
+  {
+    "google_place_id": "0x12cdd11caf5c37d9:0xef437f708e2a93d5",
+    "target_poi_id": "unclassified-searched-poi-b386a0212161a6",
+    "city_id": "city-nice",
+    "name": "Square leclerc",
+    "latitude": 43.6979598,
+    "longitude": 7.2739839,
+    "source_status": "owner_confirmed_google_maps_link"
   }
 ]

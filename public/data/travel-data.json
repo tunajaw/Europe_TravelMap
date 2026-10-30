@@ -5862,21 +5862,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.3884402,
-        "longitude": 4.8389474
-      },
-      "imagePath": null
-    },
-    {
-      "id": "unclassified-searched-poi-2bafe8201c0d2b",
-      "cityId": "city-amsterdam",
-      "name": "Amsterdam Sloterdijk",
-      "localizedName": null,
-      "category": "Unclassified",
-      "subcategory": "unclassified",
-      "location": {
-        "latitude": 52.3897249,
-        "longitude": 4.838442
+        "latitude": 52.3890317,
+        "longitude": 4.8381062
       },
       "imagePath": null
     },
@@ -5979,8 +5966,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.3914396,
-        "longitude": 4.8458897
+        "latitude": 52.3951713,
+        "longitude": 4.8507911
       },
       "imagePath": null
     },
@@ -6044,21 +6031,21 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.3725373,
-        "longitude": 4.9057473
+        "latitude": 52.3722981,
+        "longitude": 4.9018885
       },
       "imagePath": null
     },
     {
-      "id": "unclassified-searched-poi-4aa53ed84171b5",
+      "id": "unclassified-searched-poi-d1a3f0aa94c77a",
       "cityId": "city-amsterdam",
-      "name": "Noord",
+      "name": "Nieuwmarkt 21阿姆斯特丹荷蘭",
       "localizedName": null,
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.4020069,
-        "longitude": 4.8927468
+        "latitude": 52.3725373,
+        "longitude": 4.9057528
       },
       "imagePath": null
     },
@@ -6213,8 +6200,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.368026,
-        "longitude": 4.9056292
+        "latitude": 52.3673901,
+        "longitude": 4.9024643
       },
       "imagePath": null
     },
@@ -6837,8 +6824,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 41.3823664,
-        "longitude": 2.1858176
+        "latitude": 41.38209,
+        "longitude": 2.1855154
       },
       "imagePath": null
     },
@@ -6993,8 +6980,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 41.3923146,
-        "longitude": 2.1985606
+        "latitude": 41.3878165,
+        "longitude": 2.1935777
       },
       "imagePath": null
     },
@@ -7175,8 +7162,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 41.4090707,
-        "longitude": 2.1114297
+        "latitude": 41.4090465,
+        "longitude": 2.1114055
       },
       "imagePath": null
     },
@@ -7233,15 +7220,15 @@
       "imagePath": null
     },
     {
-      "id": "unclassified-searched-poi-d9f0f1fad5a547",
+      "id": "attraction-way-262717753",
       "cityId": "city-barcelona",
       "name": "Plaça de Catalunya",
       "localizedName": null,
-      "category": "Unclassified",
-      "subcategory": "unclassified",
+      "category": "Attraction",
+      "subcategory": "park",
       "location": {
-        "latitude": 41.3756149,
-        "longitude": 2.1395591
+        "latitude": 41.3594733,
+        "longitude": 2.0781848
       },
       "imagePath": null
     },
@@ -7669,8 +7656,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.519266,
-        "longitude": 13.3889301
+        "latitude": 52.5195747,
+        "longitude": 13.3885542
       },
       "imagePath": null
     },
@@ -7890,8 +7877,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 53.0819848,
-        "longitude": 8.8135806
+        "latitude": 53.0832972,
+        "longitude": 8.8137576
       },
       "imagePath": null
     },
@@ -8085,8 +8072,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.8485952,
-        "longitude": 4.3582351
+        "latitude": 50.8465485,
+        "longitude": 4.3586397
       },
       "imagePath": null
     },
@@ -8436,8 +8423,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.4955803,
-        "longitude": 19.0503122
+        "latitude": 47.5071525,
+        "longitude": 19.0394211
       },
       "imagePath": null
     },
@@ -8449,8 +8436,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.4963535,
-        "longitude": 19.0529637
+        "latitude": 47.4787204,
+        "longitude": 19.0668593
       },
       "imagePath": null
     },
@@ -8501,8 +8488,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.5178311,
-        "longitude": 19.0628862
+        "latitude": 47.4983508,
+        "longitude": 19.0535905
       },
       "imagePath": null
     },
@@ -8553,8 +8540,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.4963143,
-        "longitude": 19.0526172
+        "latitude": 47.4872011,
+        "longitude": 19.057849
       },
       "imagePath": null
     },
@@ -8631,8 +8618,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.5007118,
-        "longitude": 19.0499408
+        "latitude": 47.5057199,
+        "longitude": 19.0449808
       },
       "imagePath": null
     },
@@ -8683,8 +8670,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.5029091,
-        "longitude": 19.0576077
+        "latitude": 47.4909112,
+        "longitude": 19.051576
       },
       "imagePath": null
     },
@@ -8761,8 +8748,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.4678507,
-        "longitude": 19.0734088
+        "latitude": 47.4695473,
+        "longitude": 19.0701356
       },
       "imagePath": null
     },
@@ -8774,8 +8761,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.5103368,
-        "longitude": 19.0560793
+        "latitude": 47.5112788,
+        "longitude": 19.0564694
       },
       "imagePath": null
     },
@@ -8865,8 +8852,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.5070502,
-        "longitude": 19.0249492
+        "latitude": 47.5077259,
+        "longitude": 19.0263013
       },
       "imagePath": null
     },
@@ -9125,8 +9112,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.9507075,
-        "longitude": 6.9536175
+        "latitude": 50.9427839,
+        "longitude": 6.9590705
       },
       "imagePath": null
     },
@@ -9164,8 +9151,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.0792508,
-        "longitude": 4.3109478
+        "latitude": 52.0803437,
+        "longitude": 4.3103798
       },
       "imagePath": null
     },
@@ -9190,21 +9177,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.0808708,
-        "longitude": 4.3199418
-      },
-      "imagePath": null
-    },
-    {
-      "id": "unclassified-searched-poi-3716afd9dce6ad",
-      "cityId": "city-den-haag",
-      "name": "Den Haag Centraal",
-      "localizedName": null,
-      "category": "Unclassified",
-      "subcategory": "unclassified",
-      "location": {
-        "latitude": 52.08108,
-        "longitude": 4.32412
+        "latitude": 52.0808443,
+        "longitude": 4.3245487
       },
       "imagePath": null
     },
@@ -9229,8 +9203,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 51.4880234,
-        "longitude": 7.5002949
+        "latitude": 51.4877621,
+        "longitude": 7.5002259
       },
       "imagePath": null
     },
@@ -9281,8 +9255,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 51.0399305,
-        "longitude": 13.7341897
+        "latitude": 51.0402452,
+        "longitude": 13.7320768
       },
       "imagePath": null
     },
@@ -9554,8 +9528,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.1118955,
-        "longitude": 8.68525
+        "latitude": 50.114547,
+        "longitude": 8.6873921
       },
       "imagePath": null
     },
@@ -9658,8 +9632,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.6529691,
-        "longitude": 9.4735327
+        "latitude": 47.6532337,
+        "longitude": 9.4737004
       },
       "imagePath": null
     },
@@ -11257,8 +11231,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 49.0120631,
-        "longitude": 8.4042607
+        "latitude": 48.9991185,
+        "longitude": 8.4739792
       },
       "imagePath": null
     },
@@ -11751,8 +11725,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 47.5493391,
-        "longitude": 9.6922074
+        "latitude": 47.5524552,
+        "longitude": 9.7031148
       },
       "imagePath": null
     },
@@ -12180,8 +12154,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 43.3101665,
-        "longitude": 5.3805055
+        "latitude": 43.2998941,
+        "longitude": 5.3712111
       },
       "imagePath": null
     },
@@ -12193,8 +12167,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 43.2951952,
-        "longitude": 5.3740783
+        "latitude": 43.295543,
+        "longitude": 5.3743186
       },
       "imagePath": null
     },
@@ -12206,8 +12180,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 43.7744731,
-        "longitude": 7.4933283
+        "latitude": 43.7743825,
+        "longitude": 7.4932988
       },
       "imagePath": null
     },
@@ -12245,8 +12219,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 43.7774027,
-        "longitude": 7.4961637
+        "latitude": 43.777082,
+        "longitude": 7.494192
       },
       "imagePath": null
     },
@@ -13077,8 +13051,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.1119921,
-        "longitude": 11.5817296
+        "latitude": 48.1110358,
+        "longitude": 11.5958195
       },
       "imagePath": null
     },
@@ -13103,8 +13077,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.145818,
-        "longitude": 11.561185
+        "latitude": 48.1401869,
+        "longitude": 11.561126
       },
       "imagePath": null
     },
@@ -13506,8 +13480,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.1359651,
-        "longitude": 11.5805555
+        "latitude": 48.1291844,
+        "longitude": 11.5930749
       },
       "imagePath": null
     },
@@ -13532,8 +13506,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.1494856,
-        "longitude": 11.5601138
+        "latitude": 48.1505965,
+        "longitude": 11.5581254
       },
       "imagePath": null
     },
@@ -13636,8 +13610,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.1511346,
-        "longitude": 11.5642195
+        "latitude": 48.1515099,
+        "longitude": 11.5644523
       },
       "imagePath": null
     },
@@ -13831,8 +13805,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 40.8530135,
-        "longitude": 14.2723254
+        "latitude": 40.8530238,
+        "longitude": 14.2731399
       },
       "imagePath": null
     },
@@ -13974,21 +13948,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 43.6985617,
-        "longitude": 7.2857279
-      },
-      "imagePath": null
-    },
-    {
-      "id": "unclassified-searched-poi-b90688ed5508d3",
-      "cityId": "city-nice",
-      "name": "Square leclerc",
-      "localizedName": null,
-      "category": "Unclassified",
-      "subcategory": "unclassified",
-      "location": {
-        "latitude": 43.7073095,
-        "longitude": 7.2809831
+        "latitude": 43.6979598,
+        "longitude": 7.2739839
       },
       "imagePath": null
     },
@@ -14000,8 +13961,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 43.71001,
-        "longitude": 7.2866
+        "latitude": 43.7100209,
+        "longitude": 7.286598
       },
       "imagePath": null
     },
@@ -14065,8 +14026,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 49.4471241,
-        "longitude": 11.0776488
+        "latitude": 49.450219,
+        "longitude": 11.0786422
       },
       "imagePath": null
     },
@@ -14312,8 +14273,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 59.9071832,
-        "longitude": 10.7437339
+        "latitude": 59.9115419,
+        "longitude": 10.7500125
       },
       "imagePath": null
     },
@@ -14390,8 +14351,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 59.9112239,
-        "longitude": 10.7520409
+        "latitude": 59.9110251,
+        "longitude": 10.7531379
       },
       "imagePath": null
     },
@@ -14429,8 +14390,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 59.915557,
-        "longitude": 10.7157331
+        "latitude": 59.9224287,
+        "longitude": 10.6784991
       },
       "imagePath": null
     },
@@ -14468,8 +14429,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 59.9115902,
-        "longitude": 10.7341563
+        "latitude": 59.9122865,
+        "longitude": 10.7416769
       },
       "imagePath": null
     },
@@ -14676,8 +14637,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 38.1097119,
-        "longitude": 13.3671945
+        "latitude": 38.1092571,
+        "longitude": 13.3674799
       },
       "imagePath": null
     },
@@ -14962,8 +14923,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.8380928,
-        "longitude": 2.379469
+        "latitude": 48.838336,
+        "longitude": 2.3850822
       },
       "imagePath": null
     },
@@ -15131,8 +15092,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.8339547,
-        "longitude": 2.3797446
+        "latitude": 48.8360993,
+        "longitude": 2.3795976
       },
       "imagePath": null
     },
@@ -15378,8 +15339,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.090702,
-        "longitude": 14.4248265
+        "latitude": 50.1241376,
+        "longitude": 14.4542345
       },
       "imagePath": null
     },
@@ -15417,8 +15378,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.0831585,
-        "longitude": 14.4119069
+        "latitude": 50.0814354,
+        "longitude": 14.4140068
       },
       "imagePath": null
     },
@@ -15430,8 +15391,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.0811222,
-        "longitude": 14.4111852
+        "latitude": 50.0732453,
+        "longitude": 14.414519
       },
       "imagePath": null
     },
@@ -15469,8 +15430,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.07164,
-        "longitude": 14.4191102
+        "latitude": 50.060243,
+        "longitude": 14.4171693
       },
       "imagePath": null
     },
@@ -15573,21 +15534,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.0911397,
-        "longitude": 14.4166941
-      },
-      "imagePath": null
-    },
-    {
-      "id": "unclassified-searched-poi-18c9e0192e3e63",
-      "cityId": "city-prague",
-      "name": "Staroměstská",
-      "localizedName": null,
-      "category": "Unclassified",
-      "subcategory": "unclassified",
-      "location": {
-        "latitude": 50.0895487,
-        "longitude": 14.41277
+        "latitude": 50.0884689,
+        "longitude": 14.4155104
       },
       "imagePath": null
     },
@@ -15599,8 +15547,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.0839515,
-        "longitude": 14.4259105
+        "latitude": 50.0882161,
+        "longitude": 14.417628
       },
       "imagePath": null
     },
@@ -15625,8 +15573,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 50.0960369,
-        "longitude": 14.4277201
+        "latitude": 50.0986409,
+        "longitude": 14.4373213
       },
       "imagePath": null
     },
@@ -15950,8 +15898,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 41.8982081,
-        "longitude": 12.5580087
+        "latitude": 41.8999933,
+        "longitude": 12.5578627
       },
       "imagePath": null
     },
@@ -15963,8 +15911,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 41.9014264,
-        "longitude": 12.4999752
+        "latitude": 41.9017444,
+        "longitude": 12.4998427
       },
       "imagePath": null
     },
@@ -16028,8 +15976,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 51.9106904,
-        "longitude": 4.4681347
+        "latitude": 51.9083626,
+        "longitude": 4.4672839
       },
       "imagePath": null
     },
@@ -16054,8 +16002,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 51.9183925,
-        "longitude": 4.4802587
+        "latitude": 51.9147772,
+        "longitude": 4.4817997
       },
       "imagePath": null
     },
@@ -16561,8 +16509,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.5833008,
-        "longitude": 7.7604669
+        "latitude": 48.5847082,
+        "longitude": 7.7492715
       },
       "imagePath": null
     },
@@ -16691,8 +16639,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.5799944,
-        "longitude": 7.7491729
+        "latitude": 48.578096,
+        "longitude": 7.7501357
       },
       "imagePath": null
     },
@@ -16743,8 +16691,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 48.7688601,
-        "longitude": 9.1847916
+        "latitude": 48.7679525,
+        "longitude": 9.1837217
       },
       "imagePath": null
     },
@@ -17276,8 +17224,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 41.9114759,
-        "longitude": 12.4697545
+        "latitude": 41.9130735,
+        "longitude": 12.4657008
       },
       "imagePath": null
     },
@@ -17770,8 +17718,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 51.25662,
-        "longitude": 7.1464476
+        "latitude": 51.2559198,
+        "longitude": 7.14842
       },
       "imagePath": null
     },
@@ -17796,8 +17744,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 51.2698589,
-        "longitude": 7.1973732
+        "latitude": 51.2669712,
+        "longitude": 7.1949423
       },
       "imagePath": null
     },
@@ -17848,8 +17796,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 49.80155,
-        "longitude": 9.93578
+        "latitude": 49.8021549,
+        "longitude": 9.935891
       },
       "imagePath": null
     },
@@ -17887,8 +17835,8 @@
       "category": "Unclassified",
       "subcategory": "unclassified",
       "location": {
-        "latitude": 52.4692427,
-        "longitude": 4.8051486
+        "latitude": 52.4692791,
+        "longitude": 4.8051566
       },
       "imagePath": null
     }

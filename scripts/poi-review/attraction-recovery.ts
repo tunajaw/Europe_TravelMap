@@ -211,7 +211,10 @@ function classifyFromOsm(
   evidenceIndex: Map<string, TimelineEvidencePoint[]>,
 ): ClassifiedFeature | undefined {
   const citywideExactMatches = exactCandidates.flatMap((feature): ClassifiedFeature[] => {
-    if (!measureEvidence(activity, feature, evidenceIndex)) return [];
+    const identityBackedExactLocation = activity.googlePlaceIds.length > 0
+      && exactCandidates.length === 1
+      && (feature.category === 'Attraction' || feature.category === 'Station');
+    if (!measureEvidence(activity, feature, evidenceIndex) && !identityBackedExactLocation) return [];
     const distanceMeters = Math.round(haversineKm(viewport, feature) * 1_000);
     const match = matchPoiName(activity.title, feature, cityName);
     return match && (match.method === "exact" || match.method === "alias_exact")
@@ -278,7 +281,13 @@ export function recoverSearchedPois(options: {
       evidenceIndex,
     );
     const attraction = classified?.feature.category === "Attraction" ? classified.feature : undefined;
-    const location = attraction ?? viewport;
+    const exactLocationFeature = classified
+      && (classified.match.method === 'exact' || classified.match.method === 'alias_exact')
+      && (classified.feature.category === 'Attraction' || classified.feature.category === 'Station')
+      ? classified.feature
+      : undefined;
+    const locationFeature = exactLocationFeature ?? attraction;
+    const location = locationFeature ?? viewport;
     const sourceKey = recoverySourceKey(activity, cityCandidate.city.id, displayName);
     const existing = attraction
       ? options.existingPois.find((poi) => poi.candidateOsmIds.includes(attraction.osmId))
