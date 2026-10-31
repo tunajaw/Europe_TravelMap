@@ -310,6 +310,16 @@ describe("POI review preprocessing", () => {
       .toEqual(expect.objectContaining({ latitude: 48.5835411, longitude: 7.7457536 }));
   });
 
+  it("exports Dublin OSM matches as explicit owner-review candidates", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ city_id: string; review_status: string }>;
+    const dublin = pois.filter(({ city_id: cityId }) => cityId === "city-dublin");
+    expect(dublin).toHaveLength(8);
+    expect(dublin.every(({ review_status: reviewStatus }) => reviewStatus === "needs_review")).toBe(true);
+  });
+
   it("matches attraction names against reviewed OSM aliases conservatively", () => {
     const feature = {
       name: "Musée du Louvre",

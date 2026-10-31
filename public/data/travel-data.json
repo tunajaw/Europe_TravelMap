@@ -9274,6 +9274,110 @@
       "imagePath": null
     },
     {
+      "id": "unclassified-node-3044810381",
+      "cityId": "city-dublin",
+      "name": "Cocu Kitchen",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.3337524,
+        "longitude": -6.2624872
+      },
+      "imagePath": null
+    },
+    {
+      "id": "unclassified-node-2757007323",
+      "cityId": "city-dublin",
+      "name": "Fortune Terrace Buffet",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.3513969,
+        "longitude": -6.2614694
+      },
+      "imagePath": null
+    },
+    {
+      "id": "unclassified-way-558926731",
+      "cityId": "city-dublin",
+      "name": "ILAC Centre",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "mall",
+      "location": {
+        "latitude": 53.3499978,
+        "longitude": -6.264375
+      },
+      "imagePath": null
+    },
+    {
+      "id": "attraction-relation-8452336",
+      "cityId": "city-dublin",
+      "name": "North Dock C 1970",
+      "localizedName": null,
+      "category": "Attraction",
+      "subcategory": "yes",
+      "location": {
+        "latitude": 53.3516998,
+        "longitude": -6.2475049
+      },
+      "imagePath": null
+    },
+    {
+      "id": "unclassified-node-3774230657",
+      "cityId": "city-dublin",
+      "name": "Paesano",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "restaurant",
+      "location": {
+        "latitude": 53.3502781,
+        "longitude": -6.2661394
+      },
+      "imagePath": null
+    },
+    {
+      "id": "unclassified-node-768231204",
+      "cityId": "city-dublin",
+      "name": "Sinnott’s",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "pub",
+      "location": {
+        "latitude": 53.3400902,
+        "longitude": -6.2617022
+      },
+      "imagePath": null
+    },
+    {
+      "id": "unclassified-node-10803352579",
+      "cityId": "city-dublin",
+      "name": "Tara Street",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "station",
+      "location": {
+        "latitude": 53.3471286,
+        "longitude": -6.2543071
+      },
+      "imagePath": null
+    },
+    {
+      "id": "unclassified-node-9217315843",
+      "cityId": "city-dublin",
+      "name": "TK Maxx",
+      "localizedName": null,
+      "category": "Unclassified",
+      "subcategory": "department_store",
+      "location": {
+        "latitude": 53.3397653,
+        "longitude": -6.2618073
+      },
+      "imagePath": null
+    },
+    {
       "id": "unclassified-searched-poi-733e708e663a38",
       "cityId": "city-duisburg",
       "name": "Duisburg Hbf",

@@ -17,18 +17,20 @@ type Candidate = {
   osmId: string;
   osmUrl: string;
   name: string;
-  category: 'Attraction' | 'Unclassified';
+  category: string;
   subcategory: string;
   latitude: number;
   longitude: number;
   tags?: OsmNameTags;
 };
 
-type ExportCandidate = Candidate & {
+type ExportCandidate = Omit<Candidate, 'category'> & {
+  category: 'Attraction' | 'Unclassified';
   cityId: string;
   recoveryId?: string;
   googlePlaceId?: string;
   nameSource: 'osm' | 'google';
+  reviewStatus?: 'needs_review';
 };
 
 type ReviewPoi = {
@@ -39,7 +41,8 @@ type ReviewPoi = {
   candidates: Candidate[];
 };
 
-type RecoveryPoi = Candidate & {
+type RecoveryPoi = Omit<Candidate, 'category'> & {
+  category: 'Attraction' | 'Unclassified';
   cityId: string;
   recoveryId: string;
   sourceKey: string;
@@ -105,8 +108,26 @@ for (const poi of review.pois) {
     || typeof poi.selectedCandidate !== 'number') continue;
   const candidate = poi.candidates[poi.selectedCandidate - 1];
   if (candidate?.category === 'Attraction') {
-    candidatesBySource.set(`osm:${candidate.osmId}`, { ...candidate, cityId: poi.cityId, nameSource: 'osm' });
+    candidatesBySource.set(`osm:${candidate.osmId}`, {
+      ...candidate,
+      category: 'Attraction',
+      cityId: poi.cityId,
+      nameSource: 'osm',
+    });
   }
+}
+const ownerReviewCityIds = new Set(['city-dublin']);
+for (const poi of review.pois) {
+  if (!ownerReviewCityIds.has(poi.cityId) || poi.reviewStatus !== 'needs_review') continue;
+  const candidate = poi.candidates[0];
+  if (!candidate) continue;
+  candidatesBySource.set(`osm:${candidate.osmId}`, {
+    ...candidate,
+    category: candidate.category === 'Attraction' ? 'Attraction' : 'Unclassified',
+    cityId: poi.cityId,
+    nameSource: 'osm',
+    reviewStatus: 'needs_review',
+  });
 }
 let googlePlaceCoordinateOverrideCount = 0;
 for (const rawCandidate of review.searchedPoiRecovery) {
@@ -170,7 +191,7 @@ const provisionalPois = [...candidatesBySource.values()]
       source_osm_id: candidate.osmId || undefined,
       source_osm_url: candidate.osmUrl || undefined,
       source_matched_category: 'matchedOsmCategory' in candidate ? candidate.matchedOsmCategory : undefined,
-      review_status: 'provisional_owner_assumption',
+      review_status: candidate.reviewStatus ?? 'provisional_owner_assumption',
     };
   })
   .sort((left, right) => left.city_id.localeCompare(right.city_id) || left.name.localeCompare(right.name));
@@ -361,7 +382,12 @@ try {
 const pruned = prunePublicPoiReferences(
   pois,
   15,
-  new Set([...reviewedPoiIds, ...coordinateRecheckIds]),
+  new Set([
+    ...reviewedPoiIds,
+    ...coordinateRecheckIds,
+    ...pois.filter(({ review_status: reviewStatus }) => reviewStatus === 'needs_review')
+      .map(({ poi_id: poiId }) => poiId),
+  ]),
 );
 pois = pruned.pois.map((poi) => {
   const { source_matched_category: _, ...publicPoi } = poi;

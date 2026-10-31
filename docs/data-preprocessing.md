@@ -263,6 +263,11 @@ dataset until reviewed. For the current visual review, the owner has directed th
 provisionally treat every search-confirmed High-confidence POI as correct. The
 public export labels these rows `provisional_owner_assumption` so
 that this temporary assumption remains distinguishable from completed review.
+Dublin is an explicit temporary-QA exception: because its refreshed OSM snapshot
+has Timeline candidates but no search-confirmed recovery or auto-approved
+Attraction, the closest OSM match for each `needs_review` Timeline POI is exposed
+as an `Unclassified` review candidate. These rows remain `needs_review`; their
+presence on the review map does not assert that the matched place was visited.
 
 Preprocessing retains Attraction, Station, Restaurant, Shop, Shopping Mall,
 Takeaway, Supermarket, Convenience Store, and other identifiable categories.
