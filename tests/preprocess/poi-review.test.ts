@@ -23,7 +23,10 @@ import {
   googleMapsDisplayName,
   recoverSearchedPois,
 } from "../../scripts/poi-review/attraction-recovery.ts";
-import { localizedPoiName } from "../../scripts/poi-review/localized-name.ts";
+import {
+  localizedPoiName,
+  separateChinesePoiName,
+} from "../../scripts/poi-review/localized-name.ts";
 import {
   applyGooglePlaceCoordinateOverride,
   extractResolvedGoogleMapsLocation,
@@ -41,6 +44,32 @@ describe("POI review preprocessing", () => {
       .toEqual({ name: "中文名稱", originalName: "Original", language: "zh" });
     expect(localizedPoiName("Original", { "name:en": "English" }))
       .toEqual({ name: "Original", originalName: "Original", language: "source" });
+  });
+
+  it("moves meaningful Chinese words out of a mixed primary POI name", () => {
+    expect(separateChinesePoiName("加泰羅尼亞廣場 Plaça de Catalunya", null)).toEqual({
+      name: "Plaça de Catalunya",
+      localizedName: "加泰羅尼亞廣場",
+    });
+    expect(separateChinesePoiName("法蘭克福-哈恩機場 (HHN)55483 Lautzenhausen", null)).toEqual({
+      name: "(HHN)55483 Lautzenhausen",
+      localizedName: "法蘭克福-哈恩機場",
+    });
+    expect(separateChinesePoiName("法國巴黎 Avenue Gustave Eiffel", "古斯塔夫·艾菲爾")).toEqual({
+      name: "Avenue Gustave Eiffel",
+      localizedName: "古斯塔夫·艾菲爾／法國巴黎",
+    });
+  });
+
+  it("preserves pure Chinese names and isolated mojibake-like Han characters", () => {
+    expect(separateChinesePoiName("克勒貝爾廣場", null)).toEqual({
+      name: "克勒貝爾廣場",
+      localizedName: null,
+    });
+    expect(separateChinesePoiName("W羹rzburg Hauptbahnhof", null)).toEqual({
+      name: "W羹rzburg Hauptbahnhof",
+      localizedName: null,
+    });
   });
 
   it("parses Timeline coordinates and creates stable opaque IDs", () => {
@@ -272,6 +301,15 @@ describe("POI review preprocessing", () => {
     })]);
   });
 
+  it("exports the owner-confirmed Place Kléber coordinate", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ name: string; latitude: number; longitude: number }>;
+    expect(pois.find(({ name }) => name === "克勒貝爾廣場"))
+      .toEqual(expect.objectContaining({ latitude: 48.5835411, longitude: 7.7457536 }));
+  });
+
   it("matches attraction names against reviewed OSM aliases conservatively", () => {
     const feature = {
       name: "Musée du Louvre",
@@ -335,6 +373,27 @@ describe("POI review preprocessing", () => {
       newCandidate: true,
       semanticVisitsWithin200Meters: 1,
     })]);
+  });
+
+  it("does not create a POI from the Google Maps Current location placeholder", () => {
+    const cities: TravelCity[] = [{
+      id: "munich", name: "Munich", countryId: "germany",
+      location: { latitude: 48.137, longitude: 11.575 },
+    }];
+    expect(recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Current location",
+        url: "https://www.google.com/maps/dir/Test/@48.137,11.575,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: [],
+      }],
+      cities,
+      snapshots: new Map([["munich", { features: [] }]]),
+      evidence: [{
+        latitude: 48.137, longitude: 11.575,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    })).toEqual([]);
   });
 
   it("uses an exact citywide OSM name match when the Google Maps viewport is displaced", () => {

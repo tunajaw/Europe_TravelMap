@@ -24,18 +24,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-2b51bf33953cb3",
-    "city_id": "city-aachen",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.7740167,
-    "longitude": 6.0862821,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "attraction-way-80716477",
     "city_id": "city-aachen",
     "name": "Elisenbrunnen",
@@ -88,8 +76,8 @@
   {
     "poi_id": "unclassified-searched-poi-301a9c2c5c23cb",
     "city_id": "city-amsterdam",
-    "name": "1011 VX 阿姆斯特丹荷蘭",
-    "localized_name": null,
+    "name": "1011 VX",
+    "localized_name": "阿姆斯特丹荷蘭",
     "original_name": "1011 VX 阿姆斯特丹荷蘭",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -124,8 +112,8 @@
   {
     "poi_id": "attraction-node-251528292",
     "city_id": "city-amsterdam",
-    "name": "阿姆斯特丹地牢 The Amsterdam Dungeon",
-    "localized_name": null,
+    "name": "The Amsterdam Dungeon",
+    "localized_name": "阿姆斯特丹地牢",
     "original_name": "阿姆斯特丹地牢 The Amsterdam Dungeon",
     "category": "Attraction",
     "subcategory": "attraction",
@@ -138,8 +126,8 @@
   {
     "poi_id": "unclassified-searched-poi-caffb54a79df21",
     "city_id": "city-amsterdam",
-    "name": "紅燈區秘密博物館 Oudezijds Achterburgwal 60",
-    "localized_name": null,
+    "name": "Oudezijds Achterburgwal 60",
+    "localized_name": "紅燈區秘密博物館",
     "original_name": "紅燈區秘密博物館 Oudezijds Achterburgwal 60",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -150,8 +138,8 @@
   {
     "poi_id": "unclassified-searched-poi-a83a86e071f932",
     "city_id": "city-amsterdam",
-    "name": "荷蘭阿姆斯特丹 Wolvenstraat",
-    "localized_name": null,
+    "name": "Wolvenstraat",
+    "localized_name": "荷蘭阿姆斯特丹",
     "original_name": "荷蘭阿姆斯特丹 Wolvenstraat",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -356,8 +344,8 @@
   {
     "poi_id": "unclassified-searched-poi-d1a3f0aa94c77a",
     "city_id": "city-amsterdam",
-    "name": "Nieuwmarkt 21阿姆斯特丹荷蘭",
-    "localized_name": null,
+    "name": "Nieuwmarkt 21",
+    "localized_name": "阿姆斯特丹荷蘭",
     "original_name": "Nieuwmarkt 21阿姆斯特丹荷蘭",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -888,8 +876,8 @@
   {
     "poi_id": "unclassified-searched-poi-fdf2961999ab43",
     "city_id": "city-barcelona",
-    "name": "巴特略之家 Pg. de Gràcia",
-    "localized_name": null,
+    "name": "Pg. de Gràcia",
+    "localized_name": "巴特略之家",
     "original_name": "巴特略之家 Pg. de Gràcia",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -912,8 +900,8 @@
   {
     "poi_id": "unclassified-searched-poi-01533dbbe7f311",
     "city_id": "city-barcelona",
-    "name": "加泰羅尼亞廣場 Plaça de Catalunya",
-    "localized_name": null,
+    "name": "Plaça de Catalunya",
+    "localized_name": "加泰羅尼亞廣場",
     "original_name": "加泰羅尼亞廣場 Plaça de Catalunya",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -924,8 +912,8 @@
   {
     "poi_id": "unclassified-searched-poi-1393ab766270a5",
     "city_id": "city-barcelona",
-    "name": "西班牙巴塞隆拿 Avinguda de Francesc Cambó",
-    "localized_name": null,
+    "name": "Avinguda de Francesc Cambó",
+    "localized_name": "西班牙巴塞隆拿",
     "original_name": "西班牙巴塞隆拿 Avinguda de Francesc Cambó",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -936,8 +924,8 @@
   {
     "poi_id": "unclassified-searched-poi-ef563e9cac5fa7",
     "city_id": "city-barcelona",
-    "name": "西班牙巴塞隆拿 Carrer de la Diputació",
-    "localized_name": null,
+    "name": "Carrer de la Diputació",
+    "localized_name": "西班牙巴塞隆拿",
     "original_name": "西班牙巴塞隆拿 Carrer de la Diputació",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -948,8 +936,8 @@
   {
     "poi_id": "unclassified-searched-poi-6d0932fe668aa1",
     "city_id": "city-barcelona",
-    "name": "西班牙巴塞隆拿 Carrer de Mallorca",
-    "localized_name": null,
+    "name": "Carrer de Mallorca",
+    "localized_name": "西班牙巴塞隆拿",
     "original_name": "西班牙巴塞隆拿 Carrer de Mallorca",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -960,8 +948,8 @@
   {
     "poi_id": "unclassified-searched-poi-eb3e6288b62440",
     "city_id": "city-barcelona",
-    "name": "西班牙巴塞隆拿 Plaça de Carles Buïgas",
-    "localized_name": null,
+    "name": "Plaça de Carles Buïgas",
+    "localized_name": "西班牙巴塞隆拿",
     "original_name": "西班牙巴塞隆拿 Plaça de Carles Buïgas",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -996,8 +984,8 @@
   {
     "poi_id": "unclassified-searched-poi-149d5a3d01d7f6",
     "city_id": "city-barcelona",
-    "name": "桂爾公園 Gràcia",
-    "localized_name": null,
+    "name": "Gràcia",
+    "localized_name": "桂爾公園",
     "original_name": "桂爾公園 Gràcia",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -1008,8 +996,8 @@
   {
     "poi_id": "attraction-node-3798221693",
     "city_id": "city-barcelona",
-    "name": "凱旋門 Passeig de Lluís Companys",
-    "localized_name": null,
+    "name": "Passeig de Lluís Companys",
+    "localized_name": "凱旋門",
     "original_name": "凱旋門 Passeig de Lluís Companys",
     "category": "Attraction",
     "subcategory": "artwork",
@@ -1022,8 +1010,8 @@
   {
     "poi_id": "unclassified-searched-poi-b3734c4d0df809",
     "city_id": "city-barcelona",
-    "name": "聖家堂 Carrer de Mallorca",
-    "localized_name": null,
+    "name": "Carrer de Mallorca",
+    "localized_name": "聖家堂",
     "original_name": "聖家堂 Carrer de Mallorca",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -1706,7 +1694,7 @@
   {
     "poi_id": "attraction-way-53333454",
     "city_id": "city-berlin",
-    "name": "柏林圍牆紀念館 Bernauer Str. 111",
+    "name": "Bernauer Str. 111",
     "localized_name": "柏林圍牆紀念館",
     "original_name": "柏林圍牆紀念館 Bernauer Str. 111",
     "category": "Attraction",
@@ -2036,8 +2024,8 @@
   {
     "poi_id": "unclassified-searched-poi-73ae3bb41c5f2f",
     "city_id": "city-bremen",
-    "name": "不來梅 Böttcherstraße",
-    "localized_name": null,
+    "name": "Böttcherstraße",
+    "localized_name": "不來梅",
     "original_name": "不來梅 Böttcherstraße",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2330,8 +2318,8 @@
   {
     "poi_id": "unclassified-searched-poi-353e716f6d0794",
     "city_id": "city-bucharest",
-    "name": "布加勒斯特伯尼亞薩－奧雷爾·弗拉伊庫國際機場 (BBU) Șoseaua București-Ploiești 40",
-    "localized_name": null,
+    "name": "－ (BBU) Șoseaua București-Ploiești 40",
+    "localized_name": "布加勒斯特伯尼亞薩／奧雷爾·弗拉伊庫國際機場",
     "original_name": "布加勒斯特伯尼亞薩－奧雷爾·弗拉伊庫國際機場 (BBU) Șoseaua București-Ploiești 40",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2342,8 +2330,8 @@
   {
     "poi_id": "unclassified-searched-poi-c17647fa58c889",
     "city_id": "city-bucharest",
-    "name": "離境 075150羅馬尼亞 Otopeni",
-    "localized_name": null,
+    "name": "075150 Otopeni",
+    "localized_name": "離境／羅馬尼亞",
     "original_name": "離境 075150羅馬尼亞 Otopeni",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2440,8 +2428,8 @@
   {
     "poi_id": "unclassified-searched-poi-e45976e565bd9d",
     "city_id": "city-budapest",
-    "name": "中國城餐廳 Népszínház u. 15",
-    "localized_name": null,
+    "name": "Népszínház u. 15",
+    "localized_name": "中國城餐廳",
     "original_name": "中國城餐廳 Népszínház u. 15",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2452,8 +2440,8 @@
   {
     "poi_id": "attraction-node-3242687761",
     "city_id": "city-budapest",
-    "name": "布達佩斯 Bethlen Gábor u. 14",
-    "localized_name": null,
+    "name": "Bethlen Gábor u. 14",
+    "localized_name": "布達佩斯",
     "original_name": "布達佩斯 Bethlen Gábor u. 14",
     "category": "Attraction",
     "subcategory": "memorial",
@@ -2466,8 +2454,8 @@
   {
     "poi_id": "unclassified-searched-poi-c06ee01ec3d743",
     "city_id": "city-budapest",
-    "name": "布達佩斯 Budapest Népliget bus station",
-    "localized_name": null,
+    "name": "Budapest Népliget bus station",
+    "localized_name": "布達佩斯",
     "original_name": "布達佩斯 Budapest Népliget bus station",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2478,8 +2466,8 @@
   {
     "poi_id": "unclassified-searched-poi-f3ac8f745123d8",
     "city_id": "city-budapest",
-    "name": "布達佩斯 Hűvösvölgy",
-    "localized_name": null,
+    "name": "Hűvösvölgy",
+    "localized_name": "布達佩斯",
     "original_name": "布達佩斯 Hűvösvölgy",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2490,8 +2478,8 @@
   {
     "poi_id": "unclassified-searched-poi-225deb371b5a26",
     "city_id": "city-budapest",
-    "name": "布達佩斯 MediaMarkt",
-    "localized_name": null,
+    "name": "MediaMarkt",
+    "localized_name": "布達佩斯",
     "original_name": "布達佩斯 MediaMarkt",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2516,8 +2504,8 @@
   {
     "poi_id": "unclassified-searched-poi-ad210b1d43ccdb",
     "city_id": "city-budapest",
-    "name": "岩石醫院 Lovas út 4/c",
-    "localized_name": null,
+    "name": "Lovas út 4/c",
+    "localized_name": "岩石醫院",
     "original_name": "岩石醫院 Lovas út 4/c",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2540,8 +2528,8 @@
   {
     "poi_id": "unclassified-searched-poi-c6248ba06ad103",
     "city_id": "city-budapest",
-    "name": "星巴克 Deák Ferenc u. 23",
-    "localized_name": null,
+    "name": "Deák Ferenc u. 23",
+    "localized_name": "星巴克",
     "original_name": "星巴克 Deák Ferenc u. 23",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2564,8 +2552,8 @@
   {
     "poi_id": "unclassified-searched-poi-adc3b011af55a2",
     "city_id": "city-budapest",
-    "name": "聖盧卡奇溫泉 Frankel Leó út 25-29",
-    "localized_name": null,
+    "name": "Frankel Leó út 25-29",
+    "localized_name": "聖盧卡奇溫泉",
     "original_name": "聖盧卡奇溫泉 Frankel Leó út 25-29",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2576,8 +2564,8 @@
   {
     "poi_id": "unclassified-searched-poi-8ac6e237cb0634",
     "city_id": "city-budapest",
-    "name": "盧達溫泉 Döbrentei tér 9",
-    "localized_name": null,
+    "name": "Döbrentei tér 9",
+    "localized_name": "盧達溫泉",
     "original_name": "盧達溫泉 Döbrentei tér 9",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -2631,18 +2619,6 @@
     "subcategory": "unclassified",
     "latitude": 47.5412133,
     "longitude": 18.9650452,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-aebd8133bd02e8",
-    "city_id": "city-budapest",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.4999543,
-    "longitude": 19.0463455,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -2973,6 +2949,18 @@
     "subcategory": "unclassified",
     "latitude": 47.4970365,
     "longitude": 19.0480202,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-aebd8133bd02e8",
+    "city_id": "city-budapest",
+    "name": "Rudas Gyógyfürdő",
+    "localized_name": null,
+    "original_name": "Rudas Gyógyfürdő",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 47.4900995,
+    "longitude": 19.0471927,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -3630,8 +3618,8 @@
   {
     "poi_id": "unclassified-searched-poi-6e895d3dab9080",
     "city_id": "city-freiburg",
-    "name": "弗萊堡大教堂 Münsterplatz 1",
-    "localized_name": null,
+    "name": "Münsterplatz 1",
+    "localized_name": "弗萊堡大教堂",
     "original_name": "弗萊堡大教堂 Münsterplatz 1",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -3908,8 +3896,8 @@
   {
     "poi_id": "unclassified-searched-poi-75b72b14094b4e",
     "city_id": "city-goreme",
-    "name": "50180土耳其內夫謝希爾 Nevşehir Merkez",
-    "localized_name": null,
+    "name": "50180 Nevşehir Merkez",
+    "localized_name": "土耳其內夫謝希爾",
     "original_name": "50180土耳其內夫謝希爾 Nevşehir Merkez",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -3920,8 +3908,8 @@
   {
     "poi_id": "unclassified-searched-poi-6fc8a1ec80eba5",
     "city_id": "city-goreme",
-    "name": "土耳其內夫謝希爾 Nevşehir Merkez",
-    "localized_name": null,
+    "name": "Nevşehir Merkez",
+    "localized_name": "土耳其內夫謝希爾",
     "original_name": "土耳其內夫謝希爾 Nevşehir Merkez",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -3932,8 +3920,8 @@
   {
     "poi_id": "unclassified-searched-poi-d2e00ff3d39fb9",
     "city_id": "city-goreme",
-    "name": "卡帕多奇亞洞窟酒店 Gaferli Mah",
-    "localized_name": null,
+    "name": "Gaferli Mah",
+    "localized_name": "卡帕多奇亞洞窟酒店",
     "original_name": "卡帕多奇亞洞窟酒店 Gaferli Mah",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4292,8 +4280,8 @@
   {
     "poi_id": "unclassified-searched-poi-2f4f1fc484bedc",
     "city_id": "city-hamburg",
-    "name": "Harmsstraße 1哈堡",
-    "localized_name": null,
+    "name": "Harmsstraße 1",
+    "localized_name": "哈堡",
     "original_name": "Harmsstraße 1哈堡",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4416,8 +4404,8 @@
   {
     "poi_id": "unclassified-searched-poi-4d9b62cab65ce2",
     "city_id": "city-heidelberg",
-    "name": "海德堡學生監獄 Augustinergasse 2",
-    "localized_name": null,
+    "name": "Augustinergasse 2",
+    "localized_name": "海德堡學生監獄",
     "original_name": "海德堡學生監獄 Augustinergasse 2",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4560,13 +4548,13 @@
   {
     "poi_id": "unclassified-searched-poi-f726fd4a4e8537",
     "city_id": "city-idstein",
-    "name": "Current Location",
+    "name": "Hochschule Fresenius",
     "localized_name": null,
-    "original_name": "Current Location",
+    "original_name": "Hochschule Fresenius",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 50.2216269,
-    "longitude": 8.2669258,
+    "latitude": 50.2216553,
+    "longitude": 8.2681851,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -4608,8 +4596,8 @@
   {
     "poi_id": "unclassified-searched-poi-b6204965112639",
     "city_id": "city-istanbul",
-    "name": "土耳其伊斯坦堡省貝伊奧盧 Müeyyedzade",
-    "localized_name": null,
+    "name": "Müeyyedzade",
+    "localized_name": "土耳其伊斯坦堡省貝伊奧盧",
     "original_name": "土耳其伊斯坦堡省貝伊奧盧 Müeyyedzade",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4620,8 +4608,8 @@
   {
     "poi_id": "unclassified-searched-poi-949cdca8c7a7a1",
     "city_id": "city-istanbul",
-    "name": "大巴扎 Beyazıt",
-    "localized_name": null,
+    "name": "Beyazıt",
+    "localized_name": "大巴扎",
     "original_name": "大巴扎 Beyazıt",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4632,8 +4620,8 @@
   {
     "poi_id": "unclassified-searched-poi-176772d9bcca98",
     "city_id": "city-istanbul",
-    "name": "加拉塔大橋 Kemankeş Karamustafa Paşa",
-    "localized_name": null,
+    "name": "Kemankeş Karamustafa Paşa",
+    "localized_name": "加拉塔大橋",
     "original_name": "加拉塔大橋 Kemankeş Karamustafa Paşa",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4644,8 +4632,8 @@
   {
     "poi_id": "unclassified-searched-poi-372c0578ac6485",
     "city_id": "city-istanbul",
-    "name": "哈利勒·拉赫馬昆 Caferağa",
-    "localized_name": null,
+    "name": "Caferağa",
+    "localized_name": "哈利勒·拉赫馬昆",
     "original_name": "哈利勒·拉赫馬昆 Caferağa",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4668,8 +4656,8 @@
   {
     "poi_id": "unclassified-searched-poi-39acc27164cdc8",
     "city_id": "city-istanbul",
-    "name": "薩比哈·格克琴國際機場 (SAW) Sanayi",
-    "localized_name": null,
+    "name": "(SAW) Sanayi",
+    "localized_name": "薩比哈·格克琴國際機場",
     "original_name": "薩比哈·格克琴國際機場 (SAW) Sanayi",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -4680,7 +4668,7 @@
   {
     "poi_id": "attraction-relation-18055570",
     "city_id": "city-istanbul",
-    "name": "蘇丹艾哈邁德清真寺 Cankurtaran",
+    "name": "Cankurtaran",
     "localized_name": "蘇丹艾哈邁德清真寺",
     "original_name": "蘇丹艾哈邁德清真寺 Cankurtaran",
     "category": "Attraction",
@@ -5290,8 +5278,8 @@
   {
     "poi_id": "unclassified-searched-poi-d68838ba426f9a",
     "city_id": "city-krakow",
-    "name": "克拉科夫瓮城 Basztowa",
-    "localized_name": null,
+    "name": "Basztowa",
+    "localized_name": "克拉科夫瓮城",
     "original_name": "克拉科夫瓮城 Basztowa",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -5302,8 +5290,8 @@
   {
     "poi_id": "unclassified-searched-poi-0c8f5c3d513a46",
     "city_id": "city-krakow",
-    "name": "恰爾托雷斯基博物館 Pijarska 15",
-    "localized_name": null,
+    "name": "Pijarska 15",
+    "localized_name": "恰爾托雷斯基博物館",
     "original_name": "恰爾托雷斯基博物館 Pijarska 15",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -5314,7 +5302,7 @@
   {
     "poi_id": "attraction-way-23256528",
     "city_id": "city-krakow",
-    "name": "紡織會館 Rynek Główny 3",
+    "name": "Rynek Główny 3",
     "localized_name": "紡織會館",
     "original_name": "紡織會館 Rynek Główny 3",
     "category": "Attraction",
@@ -5328,7 +5316,7 @@
   {
     "poi_id": "attraction-way-26195267",
     "city_id": "city-krakow",
-    "name": "聖母聖殿 plac Mariacki 5",
+    "name": "plac Mariacki 5",
     "localized_name": "聖母聖殿",
     "original_name": "聖母聖殿 plac Mariacki 5",
     "category": "Attraction",
@@ -5342,8 +5330,8 @@
   {
     "poi_id": "unclassified-searched-poi-1b50bf6d05f239",
     "city_id": "city-krakow",
-    "name": "維利奇卡鹽礦 Daniłowicza 10",
-    "localized_name": null,
+    "name": "Daniłowicza 10",
+    "localized_name": "維利奇卡鹽礦",
     "original_name": "維利奇卡鹽礦 Daniłowicza 10",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -5385,18 +5373,6 @@
     "subcategory": "unclassified",
     "latitude": 50.0614761,
     "longitude": 19.9422762,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-0e8346410f4c51",
-    "city_id": "city-krakow",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.0411666,
-    "longitude": 19.9402725,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -5682,8 +5658,8 @@
   {
     "poi_id": "unclassified-searched-poi-41b88490bed8b8",
     "city_id": "city-london",
-    "name": "英國倫敦 Western Gateway",
-    "localized_name": null,
+    "name": "Western Gateway",
+    "localized_name": "英國倫敦",
     "original_name": "英國倫敦 Western Gateway",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -5730,8 +5706,8 @@
   {
     "poi_id": "unclassified-searched-poi-7e4ab7361e5742",
     "city_id": "city-london",
-    "name": "ExCel國際會展中心 Royal Victoria Dock",
-    "localized_name": null,
+    "name": "ExCel Royal Victoria Dock",
+    "localized_name": "國際會展中心",
     "original_name": "ExCel國際會展中心 Royal Victoria Dock",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6166,8 +6142,8 @@
   {
     "poi_id": "unclassified-searched-poi-bac2f55342fdaa",
     "city_id": "city-milan",
-    "name": "卡拉瓦喬國際機場 (BGY) Via Aeroporto",
-    "localized_name": null,
+    "name": "(BGY) Via Aeroporto",
+    "localized_name": "卡拉瓦喬國際機場",
     "original_name": "卡拉瓦喬國際機場 (BGY) Via Aeroporto",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6178,8 +6154,8 @@
   {
     "poi_id": "unclassified-searched-poi-961f9f8c6a2b8f",
     "city_id": "city-milan",
-    "name": "米蘭主教座堂 P.za del Duomo",
-    "localized_name": null,
+    "name": "P.za del Duomo",
+    "localized_name": "米蘭主教座堂",
     "original_name": "米蘭主教座堂 P.za del Duomo",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6202,8 +6178,8 @@
   {
     "poi_id": "unclassified-searched-poi-d2696a6f137b7e",
     "city_id": "city-milan",
-    "name": "斯卡拉大劇院 V. Filodrammatici",
-    "localized_name": null,
+    "name": "V. Filodrammatici",
+    "localized_name": "斯卡拉大劇院",
     "original_name": "斯卡拉大劇院 V. Filodrammatici",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6226,8 +6202,8 @@
   {
     "poi_id": "unclassified-searched-poi-7844159f59a37a",
     "city_id": "city-milan",
-    "name": "義大利米蘭省米蘭 Piazza Cordusio",
-    "localized_name": null,
+    "name": "Piazza Cordusio",
+    "localized_name": "義大利米蘭省米蘭",
     "original_name": "義大利米蘭省米蘭 Piazza Cordusio",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6490,8 +6466,8 @@
   {
     "poi_id": "unclassified-searched-poi-889d92a68416dd",
     "city_id": "city-munich",
-    "name": "西公園81373 München",
-    "localized_name": null,
+    "name": "81373 München",
+    "localized_name": "西公園",
     "original_name": "西公園81373 München",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6502,8 +6478,8 @@
   {
     "poi_id": "unclassified-searched-poi-b08befc11b144e",
     "city_id": "city-munich",
-    "name": "西公園81373 München",
-    "localized_name": null,
+    "name": "81373 München",
+    "localized_name": "西公園",
     "original_name": "西公園81373 München",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6526,8 +6502,8 @@
   {
     "poi_id": "unclassified-searched-poi-11c5c4e6e6ac38",
     "city_id": "city-munich",
-    "name": "胡家酒樓 Münchener Str. 1",
-    "localized_name": null,
+    "name": "Münchener Str. 1",
+    "localized_name": "胡家酒樓",
     "original_name": "胡家酒樓 Münchener Str. 1",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6538,8 +6514,8 @@
   {
     "poi_id": "unclassified-searched-poi-b4047a7d2c8d37",
     "city_id": "city-munich",
-    "name": "德國慕尼黑 Am Bavariapark",
-    "localized_name": null,
+    "name": "Am Bavariapark",
+    "localized_name": "德國慕尼黑",
     "original_name": "德國慕尼黑 Am Bavariapark",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6550,8 +6526,8 @@
   {
     "poi_id": "unclassified-searched-poi-5d4517905caf20",
     "city_id": "city-munich",
-    "name": "慕尼黑工業大學 Arcisstraße 21",
-    "localized_name": null,
+    "name": "Arcisstraße 21",
+    "localized_name": "慕尼黑工業大學",
     "original_name": "慕尼黑工業大學 Arcisstraße 21",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -6562,8 +6538,8 @@
   {
     "poi_id": "unclassified-searched-poi-77a295427fa156",
     "city_id": "city-munich",
-    "name": "慕尼黑工業大學 Arcisstraße 21",
-    "localized_name": null,
+    "name": "Arcisstraße 21",
+    "localized_name": "慕尼黑工業大學",
     "original_name": "慕尼黑工業大學 Arcisstraße 21",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -7500,8 +7476,8 @@
   {
     "poi_id": "unclassified-searched-poi-893f3ca3ef1ef1",
     "city_id": "city-munich",
-    "name": "westpark 慕尼黑-森德靈-西公園",
-    "localized_name": null,
+    "name": "westpark",
+    "localized_name": "慕尼黑-森德靈-西公園",
     "original_name": "westpark 慕尼黑-森德靈-西公園",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -7548,8 +7524,8 @@
   {
     "poi_id": "unclassified-searched-poi-b80169896fc13c",
     "city_id": "city-naples",
-    "name": "龐貝古城考古​​公園80045 Pompei NA",
-    "localized_name": null,
+    "name": "​​ 80045 Pompei NA",
+    "localized_name": "龐貝古城考古／公園",
     "original_name": "龐貝古城考古​​公園80045 Pompei NA",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -7644,8 +7620,8 @@
   {
     "poi_id": "unclassified-searched-poi-f5aad76dd84665",
     "city_id": "city-nice",
-    "name": "法國尼斯 Rue Georges Janvier",
-    "localized_name": null,
+    "name": "Rue Georges Janvier",
+    "localized_name": "法國尼斯",
     "original_name": "法國尼斯 Rue Georges Janvier",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -7872,8 +7848,8 @@
   {
     "poi_id": "unclassified-searched-poi-fb8edba04b0790",
     "city_id": "city-oslo",
-    "name": "前進號博物館 Bygdøynesveien 39",
-    "localized_name": null,
+    "name": "Bygdøynesveien 39",
+    "localized_name": "前進號博物館",
     "original_name": "前進號博物館 Bygdøynesveien 39",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -7896,8 +7872,8 @@
   {
     "poi_id": "unclassified-searched-poi-134abf1a8e860f",
     "city_id": "city-oslo",
-    "name": "奧斯陸中央車站 Jernbanetorget 1",
-    "localized_name": null,
+    "name": "Jernbanetorget 1",
+    "localized_name": "奧斯陸中央車站",
     "original_name": "奧斯陸中央車站 Jernbanetorget 1",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8214,8 +8190,8 @@
   {
     "poi_id": "unclassified-searched-poi-0fd3e135ea87cb",
     "city_id": "city-palermo",
-    "name": "卡普奇尼地下墓穴 Piazza Cappuccini",
-    "localized_name": null,
+    "name": "Piazza Cappuccini",
+    "localized_name": "卡普奇尼地下墓穴",
     "original_name": "卡普奇尼地下墓穴 Piazza Cappuccini",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8238,8 +8214,8 @@
   {
     "poi_id": "unclassified-searched-poi-6e04ffc66091bb",
     "city_id": "city-palermo",
-    "name": "普雷托利亞噴泉 Piazza Pretoria",
-    "localized_name": null,
+    "name": "Piazza Pretoria",
+    "localized_name": "普雷托利亞噴泉",
     "original_name": "普雷托利亞噴泉 Piazza Pretoria",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8448,8 +8424,8 @@
   {
     "poi_id": "attraction-node-3422228091",
     "city_id": "city-paris",
-    "name": "法國巴黎 Avenue Gustave Eiffel",
-    "localized_name": "古斯塔夫·艾菲爾",
+    "name": "Avenue Gustave Eiffel",
+    "localized_name": "古斯塔夫·艾菲爾／法國巴黎",
     "original_name": "法國巴黎 Avenue Gustave Eiffel",
     "category": "Attraction",
     "subcategory": "memorial",
@@ -8462,8 +8438,8 @@
   {
     "poi_id": "unclassified-searched-poi-f3bcf71c0ce217",
     "city_id": "city-paris",
-    "name": "法國巴黎 Boulevard de Clichy",
-    "localized_name": null,
+    "name": "Boulevard de Clichy",
+    "localized_name": "法國巴黎",
     "original_name": "法國巴黎 Boulevard de Clichy",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8474,8 +8450,8 @@
   {
     "poi_id": "unclassified-searched-poi-c5c02906a8fee0",
     "city_id": "city-paris",
-    "name": "法國巴黎 Boulevard du Palais",
-    "localized_name": null,
+    "name": "Boulevard du Palais",
+    "localized_name": "法國巴黎",
     "original_name": "法國巴黎 Boulevard du Palais",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8486,8 +8462,8 @@
   {
     "poi_id": "unclassified-searched-poi-2bac9a12ca56f3",
     "city_id": "city-paris",
-    "name": "法國巴黎 rue du Chevalier-de-La-Barre",
-    "localized_name": null,
+    "name": "rue du Chevalier-de-La-Barre",
+    "localized_name": "法國巴黎",
     "original_name": "法國巴黎 rue du Chevalier-de-La-Barre",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8522,8 +8498,8 @@
   {
     "poi_id": "unclassified-searched-poi-4cc4abe4f11f5e",
     "city_id": "city-paris",
-    "name": "麥當勞98 Bd Saint-Germain",
-    "localized_name": null,
+    "name": "98 Bd Saint-Germain",
+    "localized_name": "麥當勞",
     "original_name": "麥當勞98 Bd Saint-Germain",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8926,8 +8902,8 @@
   {
     "poi_id": "unclassified-searched-poi-2f77eba1e01ac3",
     "city_id": "city-prague",
-    "name": "捷克布拉格 Velkopřevorské náměstí",
-    "localized_name": null,
+    "name": "Velkopřevorské náměstí",
+    "localized_name": "捷克布拉格",
     "original_name": "捷克布拉格 Velkopřevorské náměstí",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -8945,18 +8921,6 @@
     "subcategory": "unclassified",
     "latitude": 50.0897986,
     "longitude": 14.4326642,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-b8a48d07f20978",
-    "city_id": "city-prague",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 50.081964,
-    "longitude": 14.4143367,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -9256,6 +9220,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-b8a48d07f20978",
+    "city_id": "city-prague",
+    "name": "Újezd",
+    "localized_name": null,
+    "original_name": "Újezd",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 50.0812021,
+    "longitude": 14.4051734,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-6187c47f1f8ce1",
     "city_id": "city-prague",
     "name": "Vltavská",
@@ -9282,8 +9258,8 @@
   {
     "poi_id": "attraction-way-23055100",
     "city_id": "city-rome",
-    "name": "卡比托利歐博物館 Piazza del Campidoglio",
-    "localized_name": "坎皮多怡歐廣場",
+    "name": "Piazza del Campidoglio",
+    "localized_name": "坎皮多怡歐廣場／卡比托利歐博物館",
     "original_name": "卡比托利歐博物館 Piazza del Campidoglio",
     "category": "Attraction",
     "subcategory": "attraction",
@@ -9320,8 +9296,8 @@
   {
     "poi_id": "unclassified-searched-poi-05dcd044a3e921",
     "city_id": "city-rome",
-    "name": "萬神殿 Piazza della Rotonda",
-    "localized_name": null,
+    "name": "Piazza della Rotonda",
+    "localized_name": "萬神殿",
     "original_name": "萬神殿 Piazza della Rotonda",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -9332,8 +9308,8 @@
   {
     "poi_id": "unclassified-searched-poi-b8e280ae5d84ff",
     "city_id": "city-rome",
-    "name": "義大利羅馬 Lungotevere Castello",
-    "localized_name": null,
+    "name": "Lungotevere Castello",
+    "localized_name": "義大利羅馬",
     "original_name": "義大利羅馬 Lungotevere Castello",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -9344,8 +9320,8 @@
   {
     "poi_id": "unclassified-searched-poi-38aaeb9376614f",
     "city_id": "city-rome",
-    "name": "義大利羅馬 Via del Plebiscito",
-    "localized_name": null,
+    "name": "Via del Plebiscito",
+    "localized_name": "義大利羅馬",
     "original_name": "義大利羅馬 Via del Plebiscito",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -9356,8 +9332,8 @@
   {
     "poi_id": "unclassified-searched-poi-69c9c67bc20e0e",
     "city_id": "city-rome",
-    "name": "圖拉真廣場 Via dei Fori Imperiali",
-    "localized_name": null,
+    "name": "Via dei Fori Imperiali",
+    "localized_name": "圖拉真廣場",
     "original_name": "圖拉真廣場 Via dei Fori Imperiali",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -9598,8 +9574,8 @@
   {
     "poi_id": "unclassified-searched-poi-5278e57c53ffe6",
     "city_id": "city-rotterdam",
-    "name": "方塊屋 Overblaak 70",
-    "localized_name": null,
+    "name": "Overblaak 70",
+    "localized_name": "方塊屋",
     "original_name": "方塊屋 Overblaak 70",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -9720,7 +9696,7 @@
   {
     "poi_id": "attraction-way-64132876",
     "city_id": "city-salzburg",
-    "name": "莫扎特出生地 Getreidegasse 9",
+    "name": "Getreidegasse 9",
     "localized_name": "莫扎特出生地",
     "original_name": "莫扎特出生地 Getreidegasse 9",
     "category": "Attraction",
@@ -9748,8 +9724,8 @@
   {
     "poi_id": "unclassified-searched-poi-18e60c972b3f07",
     "city_id": "city-salzburg",
-    "name": "奧地利 Salzburg",
-    "localized_name": null,
+    "name": "Salzburg",
+    "localized_name": "奧地利",
     "original_name": "奧地利 Salzburg",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10000,8 +9976,8 @@
   {
     "poi_id": "unclassified-searched-poi-583062a3b66f80",
     "city_id": "city-simmern",
-    "name": "法蘭克福-哈恩機場 (HHN)55483 Lautzenhausen",
-    "localized_name": null,
+    "name": "(HHN)55483 Lautzenhausen",
+    "localized_name": "法蘭克福-哈恩機場",
     "original_name": "法蘭克福-哈恩機場 (HHN)55483 Lautzenhausen",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10101,8 +10077,8 @@
     "original_name": "克勒貝爾廣場",
     "category": "Unclassified",
     "subcategory": "unclassified",
-    "latitude": 48.5808829,
-    "longitude": 7.7431279,
+    "latitude": 48.5835411,
+    "longitude": 7.7457536,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10130,6 +10106,18 @@
     "review_status": "provisional_owner_assumption"
   },
   {
+    "poi_id": "unclassified-searched-poi-50186c790cd618",
+    "city_id": "city-strasbourg",
+    "name": "Au Brasseur",
+    "localized_name": null,
+    "original_name": "Au Brasseur",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.5835475,
+    "longitude": 7.7474182,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
     "poi_id": "unclassified-searched-poi-2b604e5b89dab0",
     "city_id": "city-strasbourg",
     "name": "Broglie",
@@ -10151,18 +10139,6 @@
     "subcategory": "unclassified",
     "latitude": 48.5829236,
     "longitude": 7.7423374,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-50186c790cd618",
-    "city_id": "city-strasbourg",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.5809479,
-    "longitude": 7.7481245,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -10310,18 +10286,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-cb0c512bc8ebe4",
-    "city_id": "city-stuttgart",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 48.6731069,
-    "longitude": 9.3737131,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-c2236b569cdcb5",
     "city_id": "city-stuttgart",
     "name": "Flughafen Stuttgart",
@@ -10346,13 +10310,13 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "manual-poi-ef831a27570ad5",
+    "poi_id": "unclassified-searched-poi-cb0c512bc8ebe4",
     "city_id": "city-stuttgart",
     "name": "Wendlingen (Neckar)",
     "localized_name": null,
     "original_name": "Wendlingen (Neckar)",
     "category": "Unclassified",
-    "subcategory": "owner_confirmed_visit",
+    "subcategory": "unclassified",
     "latitude": 48.6725451,
     "longitude": 9.3730378,
     "review_status": "provisional_owner_assumption"
@@ -10564,30 +10528,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-6cc3ef356fedc7",
-    "city_id": "city-ulm",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9841654,
-    "longitude": 10.1849701,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
-    "poi_id": "unclassified-searched-poi-2b906d6bb43dec",
-    "city_id": "city-ulm",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 47.9825439,
-    "longitude": 10.1858621,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-951617cf3e8f76",
     "city_id": "city-ulm",
     "name": "Fischerviertel Ulm",
@@ -10662,8 +10602,8 @@
   {
     "poi_id": "unclassified-searched-poi-1852544f3f7329",
     "city_id": "city-utrecht",
-    "name": "荷蘭鐵道博物館 Maliebaanstation 16",
-    "localized_name": null,
+    "name": "Maliebaanstation 16",
+    "localized_name": "荷蘭鐵道博物館",
     "original_name": "荷蘭鐵道博物館 Maliebaanstation 16",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10712,8 +10652,8 @@
   {
     "poi_id": "unclassified-searched-poi-da0a400ff2941e",
     "city_id": "city-vatican-city",
-    "name": "特雷維噴泉 Piazza di Trevi",
-    "localized_name": null,
+    "name": "Piazza di Trevi",
+    "localized_name": "特雷維噴泉",
     "original_name": "特雷維噴泉 Piazza di Trevi",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10736,8 +10676,8 @@
   {
     "poi_id": "unclassified-searched-poi-c6f234e1fefbf6",
     "city_id": "city-vatican-city",
-    "name": "梵蒂岡博物館00120 Città del Vaticano",
-    "localized_name": null,
+    "name": "00120 Città del Vaticano",
+    "localized_name": "梵蒂岡博物館",
     "original_name": "梵蒂岡博物館00120 Città del Vaticano",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10748,8 +10688,8 @@
   {
     "poi_id": "attraction-node-1274807963",
     "city_id": "city-vatican-city",
-    "name": "聖伯多祿廣場 Piazza San Pietro",
-    "localized_name": "聖彼得大教堂",
+    "name": "Piazza San Pietro",
+    "localized_name": "聖彼得大教堂／聖伯多祿廣場",
     "original_name": "聖伯多祿廣場 Piazza San Pietro",
     "category": "Attraction",
     "subcategory": "memorial",
@@ -10762,8 +10702,8 @@
   {
     "poi_id": "attraction-node-12471829759",
     "city_id": "city-vatican-city",
-    "name": "鮮花廣場 P.za Campo de' Fiori",
-    "localized_name": null,
+    "name": "P.za Campo de' Fiori",
+    "localized_name": "鮮花廣場",
     "original_name": "鮮花廣場 P.za Campo de' Fiori",
     "category": "Attraction",
     "subcategory": "marketplace",
@@ -10776,8 +10716,8 @@
   {
     "poi_id": "unclassified-searched-poi-1121fbf53310f3",
     "city_id": "city-vatican-city",
-    "name": "羅馬-法林明高機場 (FCO)Via Pierpaolo Racchetti",
-    "localized_name": null,
+    "name": "(FCO)Via Pierpaolo Racchetti",
+    "localized_name": "羅馬-法林明高機場",
     "original_name": "羅馬-法林明高機場 (FCO)Via Pierpaolo Racchetti",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10788,8 +10728,8 @@
   {
     "poi_id": "unclassified-searched-poi-d8ecda91d78332",
     "city_id": "city-vatican-city",
-    "name": "EUR馬格利亞納站 Via Castelrosso",
-    "localized_name": null,
+    "name": "EUR Via Castelrosso",
+    "localized_name": "馬格利亞納站",
     "original_name": "EUR馬格利亞納站 Via Castelrosso",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -10898,8 +10838,8 @@
   {
     "poi_id": "unclassified-searched-poi-b840e43ff9d237",
     "city_id": "city-vilnius",
-    "name": "離境 02189立陶宛 Vilnius",
-    "localized_name": null,
+    "name": "02189 Vilnius",
+    "localized_name": "離境／立陶宛",
     "original_name": "離境 02189立陶宛 Vilnius",
     "category": "Unclassified",
     "subcategory": "unclassified",
@@ -11162,18 +11102,6 @@
     "review_status": "provisional_owner_assumption"
   },
   {
-    "poi_id": "unclassified-searched-poi-8f03123238da0a",
-    "city_id": "city-wuppertal",
-    "name": "Current Location",
-    "localized_name": null,
-    "original_name": "Current Location",
-    "category": "Unclassified",
-    "subcategory": "unclassified",
-    "latitude": 51.2302581,
-    "longitude": 7.0679583,
-    "review_status": "provisional_owner_assumption"
-  },
-  {
     "poi_id": "unclassified-searched-poi-2153a86b0aa81e",
     "city_id": "city-wuppertal",
     "name": "Haven Hotels - Wuppertal City",
@@ -11245,6 +11173,18 @@
     "longitude": 7.0714193,
     "source_osm_id": "way/46614783",
     "source_osm_url": "https://www.openstreetmap.org/way/46614783",
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8f03123238da0a",
+    "city_id": "city-wuppertal",
+    "name": "W-Vohwinkel Schwebebahn",
+    "localized_name": null,
+    "original_name": "W-Vohwinkel Schwebebahn",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 51.2302581,
+    "longitude": 7.0679583,
     "review_status": "provisional_owner_assumption"
   },
   {
@@ -11322,8 +11262,8 @@
   {
     "poi_id": "unclassified-searched-poi-f19158195dc71d",
     "city_id": "city-wurzburg",
-    "name": "維爾茨堡官邸 Residenzpl. 2",
-    "localized_name": null,
+    "name": "Residenzpl. 2",
+    "localized_name": "維爾茨堡官邸",
     "original_name": "維爾茨堡官邸 Residenzpl. 2",
     "category": "Unclassified",
     "subcategory": "unclassified",

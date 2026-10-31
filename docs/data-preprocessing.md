@@ -161,7 +161,9 @@ current matching rules.
 
 The search-confirmed POI flow starts from each in-period Search or Directions
 record. Its Google Maps displayed place name becomes the primary display-name
-candidate. The coordinate encoded in the Maps URL is treated as an approximate
+candidate. Google Maps interface placeholders such as `Current location` are
+not places and are excluded before candidate creation. The coordinate encoded
+in the Maps URL is treated as an approximate
 search viewport, not a verified official Place coordinate. When any in-period
 Timeline path point, raw GPS position, or semantic Visit falls within 350 metres
 of that viewport, regardless of whether the movement precedes or follows the
@@ -285,9 +287,14 @@ Before writing tracked public data, the export removes search, Timeline, Visit,
 matching, confidence, and review evidence. Display
 names use OSM `name:en` as the main English field when available and otherwise
 retain the reviewed source or Google Maps displayed name. OSM `name:zh-Hant`,
-then `name:zh`, is retained as a separate optional localized field. The pipeline
-does not invent translations or duplicate an identical value as a second
-language. The parsed reference retains the original source name for traceability,
+then `name:zh`, is retained as a separate optional localized field. When a
+Latin/source display name also contains a meaningful Chinese phrase of at least
+two Han characters, preprocessing removes that phrase from the main name and
+merges it into the optional Chinese field. A pure Chinese main name is preserved
+when no reliable Latin/source alternative exists, and an isolated Han-like
+mojibake character is not treated as a translation. The pipeline does not invent
+translations or duplicate an identical value as a second language. The parsed
+reference retains the original source name for traceability,
 while the public application dataset exposes only the main name and optional
 Chinese display name.
 POI images are optional; their

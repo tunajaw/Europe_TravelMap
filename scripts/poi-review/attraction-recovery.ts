@@ -269,6 +269,7 @@ export function recoverSearchedPois(options: {
     if (cityCandidate.confidence === "unresolved") continue;
     const displayName = googleMapsDisplayName(activity.title, cityCandidate.city.name);
     if (!displayName || normalizePoiName(displayName) === normalizePoiName(cityCandidate.city.name)) continue;
+    if (normalizePoiName(displayName) === 'current location') continue;
     const measured = measureEvidence(activity, viewport, evidenceIndex);
     if (!measured) continue;
 

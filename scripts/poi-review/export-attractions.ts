@@ -2,7 +2,7 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { readCsv } from '../preprocess/csv.ts';
 import { haversineKm } from '../preprocess/geo.ts';
-import type { OsmNameTags } from './localized-name.ts';
+import { separateChinesePoiName, type OsmNameTags } from './localized-name.ts';
 import {
   applyGooglePlaceCoordinateOverride,
   mergeManualPoiReferences,
@@ -144,14 +144,14 @@ let bilingualCount = 0;
 const candidateIdByGooglePlaceId = new Map<string, string>();
 
 const provisionalPois = [...candidatesBySource.values()]
-  .filter((candidate) => !exposesPrivateAccommodation(candidate.name))
+  .filter((candidate) => !exposesPrivateAccommodation(candidate.name)
+    && candidate.name.trim().toLocaleLowerCase('en') !== 'current location')
   .map((candidate) => {
     const tags = candidate.tags ?? cachedTags.get(candidate.osmId) ?? {};
     const englishName = candidate.nameSource === 'google'
       ? candidate.name
       : tags['name:en']?.trim() || candidate.name;
     const chineseName = tags['name:zh-Hant']?.trim() || tags['name:zh']?.trim() || null;
-    if (chineseName && chineseName !== englishName) bilingualCount += 1;
     const sourceId = candidate.osmId
       ? candidate.osmId.replace('/', '-')
       : candidate.recoveryId ?? candidate.name;
@@ -365,8 +365,14 @@ const pruned = prunePublicPoiReferences(
 );
 pois = pruned.pois.map((poi) => {
   const { source_matched_category: _, ...publicPoi } = poi;
-  return publicPoi;
+  const bilingualName = separateChinesePoiName(publicPoi.name, publicPoi.localized_name);
+  return {
+    ...publicPoi,
+    name: bilingualName.name,
+    localized_name: bilingualName.localizedName,
+  };
 });
+bilingualCount = pois.filter(({ localized_name: localizedName }) => Boolean(localizedName)).length;
 
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(pois, null, 2)}\n`, 'utf8');
