@@ -316,8 +316,43 @@ describe("POI review preprocessing", () => {
       "utf8",
     )) as Array<{ city_id: string; review_status: string }>;
     const dublin = pois.filter(({ city_id: cityId }) => cityId === "city-dublin");
-    expect(dublin).toHaveLength(8);
+    expect(dublin).toHaveLength(12);
     expect(dublin.every(({ review_status: reviewStatus }) => reviewStatus === "needs_review")).toBe(true);
+  });
+
+  it("exports the search-confirmed Howth and Malahide review candidates", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ city_id: string; name: string; review_status: string }>;
+    const coastalDublinNames = pois
+      .filter(({ city_id: cityId, name }) => cityId === "city-dublin"
+        && ["Howth", "Howth-Boats", "Malahide Beach", "Malahide Train Station"].includes(name))
+      .map(({ name }) => name)
+      .sort();
+
+    expect(coastalDublinNames).toEqual([
+      "Howth",
+      "Howth-Boats",
+      "Malahide Beach",
+      "Malahide Train Station",
+    ]);
+  });
+
+  it("exports search-confirmed London candidates from both Visits for owner review", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ city_id: string; name: string; review_status: string }>;
+    const london = pois.filter(({ city_id: cityId }) => cityId === "city-london");
+
+    expect(london).toHaveLength(26);
+    expect(london).toEqual(expect.arrayContaining([
+      expect.objectContaining({ name: "Buckingham Palace", review_status: "needs_review" }),
+      expect.objectContaining({ name: "Tower Bridge", review_status: "needs_review" }),
+      expect.objectContaining({ name: "British Museum", review_status: "needs_review" }),
+      expect.objectContaining({ name: "Natural History Museum", review_status: "needs_review" }),
+    ]));
   });
 
   it("matches attraction names against reviewed OSM aliases conservatively", () => {
@@ -343,6 +378,21 @@ describe("POI review preprocessing", () => {
       rawSignals: [{ position: { LatLng: "48.0003°, 11.0003°", timestamp: "2025-10-01T10:02:00Z", accuracyMeters: 8 } }],
     });
     expect(evidence.map((point) => point.source)).toEqual(["semantic_visit", "timeline_path", "raw_position"]);
+  });
+
+  it("preserves western longitudes in Timeline recovery evidence", () => {
+    const evidence = collectTimelineEvidence({
+      semanticSegments: [{
+        startTime: "2026-03-23T01:00:00+08:00",
+        timelinePath: [{ point: "53.3892245°, -6.0752956°", time: "2026-03-23T01:03:00+08:00" }],
+        visit: { topCandidate: { placeLocation: { latLng: "53.3890036°, -6.0741398°" } } },
+      }],
+    });
+
+    expect(evidence).toEqual([
+      expect.objectContaining({ latitude: 53.3890036, longitude: -6.0741398, source: "semantic_visit" }),
+      expect.objectContaining({ latitude: 53.3892245, longitude: -6.0752956, source: "timeline_path" }),
+    ]);
   });
 
   it("uses the Google display name and recovers a searched attraction when later Timeline evidence is nearby", () => {

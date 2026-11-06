@@ -84,10 +84,10 @@ const EVIDENCE_GRID_DEGREES = 0.01;
 
 function parseCoordinate(value: string | undefined): Coordinate | null {
   if (!value) return null;
-  const match = value.match(/^\s*(-?\d+(?:\.\d+)?)\D+\s*(-?\d+(?:\.\d+)?)/u);
-  if (!match) return null;
-  const latitude = Number(match[1]);
-  const longitude = Number(match[2]);
+  const values = value.match(/-?\d+(?:\.\d+)?/gu);
+  if (!values || values.length < 2) return null;
+  const latitude = Number(values[0]);
+  const longitude = Number(values[1]);
   return Number.isFinite(latitude) && Number.isFinite(longitude) ? { latitude, longitude } : null;
 }
 

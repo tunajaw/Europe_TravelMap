@@ -99,6 +99,20 @@ export function reviewedPoiCount(poiIds: string[], reviews: PoiReviewMap): numbe
   return poiIds.filter((id) => Boolean(reviews[id])).length;
 }
 
+export function poiReviewSummary(
+  pois: NonNullable<TravelData['pois']>,
+  reviews: PoiReviewMap,
+): { total: number; reviewed: number; accepted: number; rejected: number } {
+  const currentIds = new Set(pois.map(({ id }) => id));
+  const currentReviews = Object.values(reviews).filter(({ poiId }) => currentIds.has(poiId));
+  return {
+    total: pois.length,
+    reviewed: currentReviews.length,
+    accepted: currentReviews.filter(({ decision }) => decision === 'Keep').length,
+    rejected: currentReviews.filter(({ decision }) => decision === 'Discard').length,
+  };
+}
+
 export function cityReviewProgress(
   cityId: string,
   pois: NonNullable<TravelData['pois']>,

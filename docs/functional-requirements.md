@@ -57,7 +57,7 @@ TEMP-FR-04 (City Review Progress)：City Map 左側列出目前城市所有尚�
 
 TEMP-FR-05 (Country Review Progress)：Country Map 左側列出該國每個 Travel Map City 的 POI `reviewed / total` 進度。點擊城市進入其 City Map；所有 POI 已審核的城市使用完成樣式。零 POI 城市依集合完成規則視為完成。
 
-TEMP-FR-06 (Europe Review Progress)：Europe Map 左側列出各國的 `Cities: reviewed / total` 與 `POIs: reviewed / total`。點擊國家進入 Country Map；一個國家的所有 Travel Map City 都完成時，該國使用完成樣式。
+TEMP-FR-06 (Europe Review Progress)：Europe Map 左側先顯示目前 POI 資料集的臨時審核總覽，包括 POI 總數、已審核數量及占總數比例、Keep 數量及其占總數與已審核數的比例，以及 Discard 數量及其占總數與已審核數的比例。總覽只計算目前資料集中仍存在的 POI ID，不納入 localStorage 中已失效或已從資料集移除的舊紀錄。總覽下方列出各國的 `Cities: reviewed / total` 與 `POIs: reviewed / total`。點擊國家進入 Country Map；一個國家的所有 Travel Map City 都完成時，該國使用完成樣式。
 
 完成定義：POI 存在 Keep 或 Discard 紀錄即為已審核；城市的所有 POI 已審核即為城市完成；國家的所有 Travel Map City 都完成即為國家完成。後續資料流程為 `Raw / Recovered POI + Owner-confirmed Manual POI + Review Result → Cleaned / Approved POI Data`，合併與公開資料產生由 preprocessing 執行，不由瀏覽器直接覆寫來源資料。
 

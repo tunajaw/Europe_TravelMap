@@ -11,6 +11,7 @@ import {
   POI_REVIEW_STORAGE_KEY,
   loadPoiReviews,
   parsePoiReviewFile,
+  poiReviewSummary,
   serializePoiReviews,
   upsertPoiReview,
   type PoiReviewRecord,
@@ -58,6 +59,37 @@ describe('temporary POI review tool', () => {
     expect(restored['legacy-poi']).toEqual(expect.objectContaining({
       editedName: 'Legacy', editedLocalizedName: null, decision: 'Keep',
     }));
+  });
+
+  it('summarizes only reviews that belong to the current POI dataset', () => {
+    const [accepted, rejected] = (data.pois ?? []).slice(0, 2);
+    expect(accepted).toBeDefined();
+    expect(rejected).toBeDefined();
+    const record = (poiId: string, decision: 'Keep' | 'Discard'): PoiReviewRecord => ({
+      poiId, editedName: poiId, editedLocalizedName: null, decision,
+      categories: decision === 'Keep' ? ['Attractions'] : [],
+      reviewStatus: 'reviewed', updatedAt: '2026-11-01T00:00:00.000Z',
+    });
+    const reviews = {
+      [accepted!.id]: record(accepted!.id, 'Keep'),
+      [rejected!.id]: record(rejected!.id, 'Discard'),
+      stale: record('stale-poi-id', 'Keep'),
+    };
+    expect(poiReviewSummary(data.pois ?? [], reviews)).toEqual({
+      total: data.pois?.length ?? 0,
+      reviewed: 2,
+      accepted: 1,
+      rejected: 1,
+    });
+
+    window.localStorage.setItem(POI_REVIEW_STORAGE_KEY, serializePoiReviews(reviews));
+    window.history.replaceState(null, '', '#europe');
+    render(<CountryExplorer data={data} />);
+    const panel = screen.getByRole('region', { name: 'Overall POI review summary' });
+    expect(within(panel).getByText(String(data.pois?.length ?? 0))).toBeInTheDocument();
+    expect(within(panel).getByText('2')).toBeInTheDocument();
+    expect(within(panel).getAllByText('1')).toHaveLength(2);
+    expect(within(panel).getAllByText(/0\.1% of all · 50\.0% of reviewed/)).toHaveLength(2);
   });
 
   it('opens a review panel from a POI, keeps an edited record, and updates the pending list', async () => {

@@ -1,13 +1,31 @@
 import type { TravelData } from '../../domain/travel-data.ts';
-import { cityReviewProgress, countryReviewProgress, type PoiReviewMap } from './poi-review-store.ts';
+import {
+  cityReviewProgress,
+  countryReviewProgress,
+  poiReviewSummary,
+  type PoiReviewMap,
+} from './poi-review-store.ts';
+
+const percent = (value: number, total: number): string =>
+  `${total === 0 ? '0.0' : (value / total * 100).toFixed(1)}%`;
 
 export function CountryReviewProgress({ data, reviews, onEnter }: {
   data: TravelData;
   reviews: PoiReviewMap;
   onEnter: (countryId: string) => void;
 }) {
+  const summary = poiReviewSummary(data.pois ?? [], reviews);
   return <nav className="poi-progress-sidebar" aria-label="Country POI review progress">
     <div className="poi-progress-heading"><p className="eyebrow">Temporary QA</p><h3>Countries</h3></div>
+    <section className="poi-review-summary" aria-label="Overall POI review summary">
+      <h4>POI review summary</h4>
+      <dl>
+        <div><dt>Total POIs</dt><dd><strong>{summary.total}</strong></dd></div>
+        <div><dt>Reviewed</dt><dd><strong>{summary.reviewed}</strong><span>{percent(summary.reviewed, summary.total)} of all</span></dd></div>
+        <div><dt>Accepted</dt><dd><strong>{summary.accepted}</strong><span>{percent(summary.accepted, summary.total)} of all · {percent(summary.accepted, summary.reviewed)} of reviewed</span></dd></div>
+        <div><dt>Rejected</dt><dd><strong>{summary.rejected}</strong><span>{percent(summary.rejected, summary.total)} of all · {percent(summary.rejected, summary.reviewed)} of reviewed</span></dd></div>
+      </dl>
+    </section>
     <div className="poi-progress-list">{data.countries.map((country) => {
       const progress = countryReviewProgress(country.id, data, reviews);
       return <button key={country.id} type="button"
