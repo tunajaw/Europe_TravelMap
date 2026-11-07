@@ -11,7 +11,7 @@ const cityBoundary = z.discriminatedUnion('type', [
 ]);
 
 export const TravelDataSchema = z.object({
-  schemaVersion: z.enum(['1.0.0', '1.1.0', '1.2.0', '1.3.0', '1.4.0', '1.5.0']),
+  schemaVersion: z.enum(['1.0.0', '1.1.0', '1.2.0', '1.3.0', '1.4.0', '1.5.0', '1.6.0']),
   travelPeriod: z.object({ start: z.iso.date(), end: z.iso.date() }).strict(),
   countries: z.array(z.object({
     id, name: z.string().min(1), slug: z.string().min(1), boundaryId: z.string().regex(/^\d{3}$/), capitalCity: z.string().min(1),
@@ -58,7 +58,8 @@ export const TravelDataSchema = z.object({
     displayOrder: z.number().int().positive(), candidateCityId: id.nullable(), altText: z.string().min(1),
   }).strict()),
   pois: z.array(z.object({
-    id, cityId: id, name: z.string().min(1), localizedName: z.string().min(1).nullable(), category: z.enum(['Attraction', 'Unclassified']),
+    id, cityId: id, name: z.string().min(1), localizedName: z.string().min(1).nullable(),
+    category: z.enum(['Attraction', 'Shop', 'Restaurant', 'Accommodation', 'Transportation']),
     subcategory: z.string().min(1), location: coordinate, imagePath: z.string().min(1).nullable(),
   }).strict()).optional(),
   cityContexts: z.array(z.object({

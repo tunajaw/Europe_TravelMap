@@ -102,7 +102,7 @@
 .city-map-controls button:focus-visible { outline: 2px solid #3569c8; outline-offset: 2px; }
 .city-map-controls button:disabled { opacity: .45; cursor: default; box-shadow: none; }
 .city-map-controls span { color: var(--muted, #475569); font-size: 11px; }
-.city-poi-filters { display: flex; align-items: center; gap: 10px; margin: 0 0 0 auto; padding: 0; border: 0; }
+.city-poi-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin: 0 0 0 auto; padding: 0; border: 0; }
 .city-poi-filters legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .city-poi-filters label { display: inline-flex; align-items: center; gap: 5px; min-height: 30px; padding: 4px 8px; border: 1px solid #b7c2cf; border-radius: 7px; background: #f8faff; color: #24364b; cursor: pointer; font-size: 11px; box-shadow: 0 1px 2px rgba(24, 37, 55, .08); }
 .city-poi-filters label:hover { border-color: #687b91; background: #eef3f8; }
@@ -110,8 +110,12 @@
 .city-poi-filters input { margin: 0; accent-color: #315d91; }
 .city-map-controls .city-poi-legend { display: inline-block; width: 9px; height: 9px; flex: 0 0 auto; }
 .city-poi-legend--attraction { border-radius: 50%; background: #2f6fb2; }
-.city-poi-legend--unclassified { background: #755c9d; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
-.city-attraction-map { display: block; width: 100%; aspect-ratio: 1000 / 380; touch-action: none; cursor: crosshair; user-select: none; }
+.city-poi-legend--transportation { border-radius: 50%; background: #2f8f63; }
+.city-poi-legend--restaurant { border-radius: 50%; background: #e07a2d; }
+.city-poi-legend--shop { border-radius: 50%; background: #7b5fb0; }
+.city-poi-legend--accommodation { border-radius: 50%; background: #c95d79; }
+.city-attraction-map { display: block; width: 100%; aspect-ratio: 1000 / 380; touch-action: none; cursor: grab; user-select: none; }
+.city-attraction-map--panning { cursor: grabbing; }
 .city-map-background { fill: #edf5fa; stroke: #cad9e5; stroke-width: 1.5; }
 .city-map-tiles { opacity: .58; filter: saturate(.55) contrast(.92) brightness(1.04); }
 .city-map-city-fill { fill: #e5f0f6; fill-opacity: .16; stroke: none; pointer-events: none; }
@@ -123,15 +127,18 @@
 .attraction-marker { cursor: pointer; outline: none; }
 .attraction-marker-hit { fill: transparent; stroke: none; }
 .attraction-marker circle:last-child { fill: #2f6fb2; stroke: #f8faff; stroke-width: 2.5; vector-effect: non-scaling-stroke; transition: r 140ms ease, stroke-width 140ms ease; }
-.attraction-marker--active circle:last-child { fill: #1e5794; stroke: #fff; stroke-width: 4; }
-.attraction-marker--unclassified path { fill: #755c9d; stroke: #f8faff; stroke-width: 2.5; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: d 140ms ease, stroke-width 140ms ease; }
-.attraction-marker--unclassified.attraction-marker--active path { fill: #583d82; stroke: #fff; stroke-width: 4; }
+.attraction-marker--transportation circle:last-child { fill: #2f8f63; }
+.attraction-marker--restaurant circle:last-child { fill: #e07a2d; }
+.attraction-marker--shop circle:last-child { fill: #7b5fb0; }
+.attraction-marker--accommodation circle:last-child { fill: #c95d79; }
+.attraction-marker--active circle:last-child { filter: brightness(.8); stroke: #fff; stroke-width: 4; }
 .attraction-marker:focus-visible .attraction-marker-hit { stroke: #111827; stroke-width: 2; }
 .poi-metadata { min-height: 92px; margin-top: 12px; padding: 16px 18px; border: 1px solid var(--line, #d9e3f0); border-radius: 12px; background: var(--paper, #f8faff); }
 .poi-metadata .eyebrow { margin: 0 0 5px; }
 .poi-metadata h3 { margin: 0; font-size: 20px; font-weight: 550; letter-spacing: -.02em; }
-.poi-metadata .poi-localized-name { margin: 3px 0 0; color: #526273; font-size: 12px; line-height: 1.35; }
+.poi-metadata .poi-localized-name { margin: 4px 0 0; color: #526273; font-size: 15px; line-height: 1.45; }
 .poi-metadata p:last-child { margin: 7px 0 0; color: var(--muted, #475569); font-size: 12px; }
+.poi-metadata .poi-subcategory { margin: 7px 0 0; color: var(--muted, #475569); font-size: 12px; }
 .city-map-empty { min-height: 360px; margin: 0 20px 20px; display: grid; place-content: center; text-align: center; border: 1px solid var(--line, #d9e3f0); border-radius: 12px; background: #edf5fa; }
-@media (prefers-reduced-motion: reduce) { .attraction-marker circle:last-child, .attraction-marker--unclassified path { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .attraction-marker circle:last-child { transition: none; } }
 @media (max-width: 650px) { .city-map-controls { flex-wrap: wrap; } .city-map-controls > span { flex-basis: 100%; } .city-poi-filters { margin-left: 0; } }

@@ -73,6 +73,74 @@ export function cityBoundaryPath(boundary: Boundary, viewport: CityGeoViewport):
   }).join(' ') + ' Z').join(' ')).join(' ');
 }
 
+export function cityPanBounds(
+  city: TravelData['cities'][number],
+  boundary: Boundary | undefined,
+  fallback: CityGeoViewport,
+): CityGeoViewport {
+  const locations = boundaryLocations(boundary, city.location);
+  if (!locations.length) return fallback;
+  const latitudes = locations.map(({ latitude }) => latitude);
+  const longitudes = locations.map(({ longitude }) => longitude);
+  // The initial viewport contains every City-assigned POI. Union it with the
+  // administrative boundary so legitimate outlying POIs remain reachable.
+  const west = Math.min(fallback.west, ...longitudes);
+  const east = Math.max(fallback.east, ...longitudes);
+  const south = Math.min(fallback.south, ...latitudes);
+  const north = Math.max(fallback.north, ...latitudes);
+  const longitudeMargin = Math.max((east - west) * 0.1, 0.002);
+  const latitudeMargin = Math.max((north - south) * 0.1, 0.002);
+  return {
+    west: west - longitudeMargin,
+    east: east + longitudeMargin,
+    south: south - latitudeMargin,
+    north: north + latitudeMargin,
+  };
+}
+
+export function panViewport(
+  viewport: CityGeoViewport,
+  deltaX: number,
+  deltaY: number,
+  width = CITY_MAP_WIDTH,
+  height = CITY_MAP_HEIGHT,
+): CityGeoViewport {
+  const longitudeShift = -deltaX / width * (viewport.east - viewport.west);
+  const latitudeShift = deltaY / height * (viewport.north - viewport.south);
+  return {
+    west: viewport.west + longitudeShift,
+    east: viewport.east + longitudeShift,
+    south: viewport.south + latitudeShift,
+    north: viewport.north + latitudeShift,
+  };
+}
+
+export function constrainCityViewport(
+  viewport: CityGeoViewport,
+  bounds: CityGeoViewport,
+  overscrollRatio = 0.15,
+): CityGeoViewport {
+  const longitudeSpan = viewport.east - viewport.west;
+  const latitudeSpan = viewport.north - viewport.south;
+  const allowedWest = bounds.west - longitudeSpan * overscrollRatio;
+  const allowedEast = bounds.east + longitudeSpan * overscrollRatio;
+  const allowedSouth = bounds.south - latitudeSpan * overscrollRatio;
+  const allowedNorth = bounds.north + latitudeSpan * overscrollRatio;
+
+  const clampAxis = (start: number, span: number, minimum: number, maximum: number): [number, number] => {
+    if (span >= maximum - minimum) {
+      const center = (minimum + maximum) / 2;
+      return [center - span / 2, center + span / 2];
+    }
+    const constrainedStart = Math.max(minimum, Math.min(maximum - span, start));
+    return [constrainedStart, constrainedStart + span];
+  };
+
+  const [west, east] = clampAxis(viewport.west, longitudeSpan, allowedWest, allowedEast);
+  const [south, north] = clampAxis(viewport.south, latitudeSpan, allowedSouth, allowedNorth);
+  return { west, east, south, north };
+}
+
 export function zoomViewportFromBox(
   viewport: CityGeoViewport,
   box: CityMapBox,
@@ -122,6 +190,34 @@ export function zoomViewportAtPoint(
   };
 }
 
+export function focusViewportOnLocation(
+  initialViewport: CityGeoViewport,
+  location: { latitude: number; longitude: number },
+  scale = 0.28,
+  maximumLatitudeSpan = Number.POSITIVE_INFINITY,
+): CityGeoViewport {
+  const initialLatitudeSpan = initialViewport.north - initialViewport.south;
+  const effectiveScale = Math.min(scale, maximumLatitudeSpan / initialLatitudeSpan);
+  const longitudeSpan = (initialViewport.east - initialViewport.west) * effectiveScale;
+  const latitudeSpan = initialLatitudeSpan * effectiveScale;
+  return {
+    west: location.longitude - longitudeSpan / 2,
+    east: location.longitude + longitudeSpan / 2,
+    south: location.latitude - latitudeSpan / 2,
+    north: location.latitude + latitudeSpan / 2,
+  };
+}
+
+export function cityPoiFocusViewport(
+  initialViewport: CityGeoViewport,
+  location: { latitude: number; longitude: number },
+  poiCount: number,
+): CityGeoViewport {
+  return poiCount >= 25
+    ? focusViewportOnLocation(initialViewport, location, 0.12, 0.025)
+    : focusViewportOnLocation(initialViewport, location);
+}
+
 export function interpolateViewport(
   start: CityGeoViewport,
   end: CityGeoViewport,
@@ -142,19 +238,29 @@ function mercatorTileY(latitude: number): number {
   return (1 - Math.log(Math.tan(radians) + 1 / Math.cos(radians)) / Math.PI) / 2;
 }
 
-export function cityMapTiles(
+export function cityMapZoom(
   viewport: CityGeoViewport,
   width = CITY_MAP_WIDTH,
   height = CITY_MAP_HEIGHT,
-): CityMapTile[] {
+): number {
   const longitudeFraction = Math.max(1e-6, (viewport.east - viewport.west) / 360);
   const northY = mercatorTileY(viewport.north);
   const southY = mercatorTileY(viewport.south);
   const latitudeFraction = Math.max(1e-6, southY - northY);
-  const zoom = Math.max(3, Math.min(16, Math.floor(Math.min(
+  return Math.max(3, Math.min(16, Math.floor(Math.min(
     Math.log2(width / 256 / longitudeFraction),
     Math.log2(height / 256 / latitudeFraction),
   ))));
+}
+
+export function cityMapTiles(
+  viewport: CityGeoViewport,
+  width = CITY_MAP_WIDTH,
+  height = CITY_MAP_HEIGHT,
+  zoom = cityMapZoom(viewport, width, height),
+): CityMapTile[] {
+  const northY = mercatorTileY(viewport.north);
+  const southY = mercatorTileY(viewport.south);
   const scale = 2 ** zoom;
   const westX = (viewport.west + 180) / 360 * scale;
   const eastX = (viewport.east + 180) / 360 * scale;

@@ -10,32 +10,69 @@ import {
   CITY_MAP_HEIGHT,
   CITY_MAP_WIDTH,
   cityBoundaryPath,
+  cityMapZoom,
   cityMapTiles,
+  cityPanBounds,
+  cityPoiFocusViewport,
   cityPoiViewport,
+  constrainCityViewport,
   interpolateViewport,
+  panViewport,
   projectCityPoint,
   zoomViewportAtPoint,
   zoomViewportFromBox,
   type CityMapBox,
 } from './city-viewport.ts';
 
-export function CityAttractionMap({ city, pois, context }: {
+type Poi = NonNullable<TravelData['pois']>[number];
+export type CityPoiFocusRequest = { poiId: string; requestId: number };
+
+const POI_CATEGORIES = [
+  'Attraction', 'Transportation', 'Restaurant', 'Shop', 'Accommodation',
+] as const satisfies readonly Poi['category'][];
+
+function categoryClass(category: Poi['category']): string {
+  return category.toLowerCase();
+}
+
+type CityMapPan = {
+  startX: number;
+  startY: number;
+  startViewport: ReturnType<typeof cityPoiViewport>;
+};
+
+export function CityAttractionMap({ city, pois, context, focusRequest }: {
   city: TravelData['cities'][number];
   pois: NonNullable<TravelData['pois']>;
   context?: NonNullable<TravelData['cityContexts']>[number] | undefined;
+  focusRequest?: CityPoiFocusRequest | null;
 }) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [dragBox, setDragBox] = useState<CityMapBox | null>(null);
-  const [visibleCategories, setVisibleCategories] = useState({ Attraction: true, Unclassified: true });
+  const [isPanning, setIsPanning] = useState(false);
+  const [visibleCategories, setVisibleCategories] = useState<Record<Poi['category'], boolean>>({
+    Attraction: true,
+    Transportation: true,
+    Restaurant: true,
+    Shop: true,
+    Accommodation: true,
+  });
   const initialViewport = useMemo(() => cityPoiViewport(city, pois, context?.boundary), [city, pois, context]);
+  const initialTileZoom = useMemo(() => cityMapZoom(initialViewport), [initialViewport]);
+  const panBounds = useMemo(
+    () => cityPanBounds(city, context?.boundary, initialViewport),
+    [city, context?.boundary, initialViewport],
+  );
   const [viewport, setViewport] = useState(initialViewport);
+  const [tileZoom, setTileZoom] = useState(initialTileZoom);
   const [isZoomed, setIsZoomed] = useState(false);
   const mapRef = useRef<SVGSVGElement | null>(null);
   const viewportRef = useRef(viewport);
   const animationFrameRef = useRef<number | null>(null);
+  const panDragRef = useRef<CityMapPan | null>(null);
   const boundaryPath = useMemo(() => context ? cityBoundaryPath(context.boundary, viewport) : '', [context, viewport]);
-  const tiles = useMemo(() => cityMapTiles(viewport), [viewport]);
+  const tiles = useMemo(() => cityMapTiles(viewport, CITY_MAP_WIDTH, CITY_MAP_HEIGHT, tileZoom), [tileZoom, viewport]);
   const visiblePois = pois.filter((poi) => visibleCategories[poi.category]);
   const active = visiblePois.find((poi) => poi.id === (hoveredId ?? selectedId));
 
@@ -43,10 +80,19 @@ export function CityAttractionMap({ city, pois, context }: {
     if (animationFrameRef.current !== null) cancelAnimationFrame(animationFrameRef.current);
     viewportRef.current = initialViewport;
     setViewport(initialViewport);
+    setTileZoom(initialTileZoom);
     setIsZoomed(false);
     setDragBox(null);
-    setVisibleCategories({ Attraction: true, Unclassified: true });
-  }, [city.id, initialViewport]);
+    panDragRef.current = null;
+    setIsPanning(false);
+    setVisibleCategories({
+      Attraction: true,
+      Transportation: true,
+      Restaurant: true,
+      Shop: true,
+      Accommodation: true,
+    });
+  }, [city.id, initialTileZoom, initialViewport]);
 
   useEffect(() => () => {
     if (animationFrameRef.current !== null) cancelAnimationFrame(animationFrameRef.current);
@@ -54,11 +100,13 @@ export function CityAttractionMap({ city, pois, context }: {
 
   useEffect(() => {
     const escape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && (selectedId || dragBox)) {
+      if (event.key === 'Escape' && (selectedId || dragBox || panDragRef.current)) {
         event.preventDefault();
         setSelectedId(null);
         setHoveredId(null);
         setDragBox(null);
+        panDragRef.current = null;
+        setIsPanning(false);
       }
     };
     document.addEventListener('keydown', escape, true);
@@ -76,10 +124,13 @@ export function CityAttractionMap({ city, pois, context }: {
   const animateToViewport = (target: typeof viewport, nextIsZoomed: boolean) => {
     if (animationFrameRef.current !== null) cancelAnimationFrame(animationFrameRef.current);
     const start = viewportRef.current;
+    const targetTileZoom = cityMapZoom(target);
+    setTileZoom(Math.min(cityMapZoom(start), targetTileZoom));
     const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     if (reducedMotion) {
       viewportRef.current = target;
       setViewport(target);
+      setTileZoom(targetTileZoom);
       setIsZoomed(nextIsZoomed);
       return;
     }
@@ -93,6 +144,7 @@ export function CityAttractionMap({ city, pois, context }: {
       if (linearProgress < 1) animationFrameRef.current = requestAnimationFrame(tick);
       else {
         animationFrameRef.current = null;
+        setTileZoom(targetTileZoom);
         setIsZoomed(nextIsZoomed);
       }
     };
@@ -112,21 +164,20 @@ export function CityAttractionMap({ city, pois, context }: {
       if (event.deltaY > 0 && candidateLongitudeSpan >= initialLongitudeSpan) {
         animateToViewport(initialViewport, false);
       } else {
-        animateToViewport(candidate, true);
+        animateToViewport(constrainCityViewport(candidate, panBounds), true);
       }
     };
     map.addEventListener('wheel', handleWheel, { passive: false });
     return () => map.removeEventListener('wheel', handleWheel);
-  }, [initialViewport]);
+  }, [initialViewport, panBounds]);
 
   const finishBoxZoom = (event: ReactPointerEvent<SVGSVGElement>) => {
     if (!dragBox) return;
     const [endX, endY] = pointerPosition(event.currentTarget, event.clientX, event.clientY);
     const completedBox = { ...dragBox, endX, endY };
-    const nextViewport = zoomViewportFromBox(viewport, completedBox);
-    if (nextViewport) animateToViewport(nextViewport, true);
+    const nextViewport = zoomViewportFromBox(viewportRef.current, completedBox);
+    if (nextViewport) animateToViewport(constrainCityViewport(nextViewport, panBounds), true);
     setDragBox(null);
-    event.currentTarget.releasePointerCapture?.(event.pointerId);
   };
 
   const selectionRectangle = dragBox ? {
@@ -136,16 +187,38 @@ export function CityAttractionMap({ city, pois, context }: {
     height: Math.abs(dragBox.endY - dragBox.startY),
   } : null;
 
+  const focusPoi = (poi: Poi) => {
+    setSelectedId(poi.id);
+    setHoveredId(null);
+    animateToViewport(constrainCityViewport(
+      cityPoiFocusViewport(initialViewport, poi.location, pois.length),
+      panBounds,
+    ), true);
+  };
+
+  useEffect(() => {
+    if (!focusRequest) return;
+    const poi = pois.find(({ id }) => id === focusRequest.poiId);
+    if (poi) focusPoi(poi);
+  // Each request ID represents an explicit list action, including repeated clicks on the same POI.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [focusRequest?.requestId]);
+
   return <section className="city-attraction-explorer">
     <div className="city-map-controls" aria-label="City map controls">
       <button type="button" disabled={!isZoomed}
-        onClick={() => { animateToViewport(initialViewport, false); setDragBox(null); }}>
+        onClick={() => {
+          animateToViewport(initialViewport, false);
+          setDragBox(null);
+          panDragRef.current = null;
+          setIsPanning(false);
+        }}>
         Reset view
       </button>
-      <span>Drag a box or use the mouse wheel to zoom</span>
+      <span>Drag to pan · Shift-drag a box or use the mouse wheel to zoom</span>
       <fieldset className="city-poi-filters">
         <legend>Show places</legend>
-        {(['Attraction', 'Unclassified'] as const).map((category) => <label key={category}>
+        {POI_CATEGORIES.map((category) => <label key={category}>
           <input type="checkbox" checked={visibleCategories[category]}
             onChange={(event) => {
               const checked = event.currentTarget.checked;
@@ -153,34 +226,62 @@ export function CityAttractionMap({ city, pois, context }: {
               if (!checked && pois.find((poi) => poi.id === selectedId)?.category === category) setSelectedId(null);
               if (!checked && pois.find((poi) => poi.id === hoveredId)?.category === category) setHoveredId(null);
             }} />
-          <span className={`city-poi-legend city-poi-legend--${category.toLowerCase()}`} aria-hidden="true" />
+          <span className={`city-poi-legend city-poi-legend--${categoryClass(category)}`} aria-hidden="true" />
           {category}
         </label>)}
       </fieldset>
     </div>
-    <svg ref={mapRef} className="city-attraction-map" role="group" aria-label={`${city.name} city map`}
+    <svg ref={mapRef} className={`city-attraction-map${isPanning ? ' city-attraction-map--panning' : ''}`}
+      role="group" aria-label={`${city.name} city map`}
       viewBox={`0 0 ${CITY_MAP_WIDTH} ${CITY_MAP_HEIGHT}`}
       data-geo-bounds={`${viewport.west},${viewport.south},${viewport.east},${viewport.north}`}
       data-zoomed={isZoomed ? 'true' : 'false'}
       onPointerDown={(event) => {
         if (event.button !== 0) return;
         const [startX, startY] = pointerPosition(event.currentTarget, event.clientX, event.clientY);
-        setDragBox({ startX, startY, endX: startX, endY: startY });
+        if (event.shiftKey) {
+          setDragBox({ startX, startY, endX: startX, endY: startY });
+        } else {
+          panDragRef.current = { startX, startY, startViewport: viewportRef.current };
+          setIsPanning(true);
+        }
         event.currentTarget.setPointerCapture?.(event.pointerId);
         event.preventDefault();
       }}
       onPointerMove={(event) => {
-        if (!dragBox) return;
         const [endX, endY] = pointerPosition(event.currentTarget, event.clientX, event.clientY);
-        setDragBox((current) => current ? { ...current, endX, endY } : null);
+        if (dragBox) {
+          setDragBox((current) => current ? { ...current, endX, endY } : null);
+          return;
+        }
+        const pan = panDragRef.current;
+        if (!pan) return;
+        const nextViewport = constrainCityViewport(
+          panViewport(pan.startViewport, endX - pan.startX, endY - pan.startY),
+          panBounds,
+        );
+        viewportRef.current = nextViewport;
+        setViewport(nextViewport);
+        if (Math.abs(endX - pan.startX) >= 2 || Math.abs(endY - pan.startY) >= 2) setIsZoomed(true);
       }}
-      onPointerUp={finishBoxZoom}
-      onPointerCancel={() => setDragBox(null)}
+      onPointerUp={(event) => {
+        if (dragBox) finishBoxZoom(event);
+        panDragRef.current = null;
+        setIsPanning(false);
+        event.currentTarget.releasePointerCapture?.(event.pointerId);
+      }}
+      onPointerCancel={() => {
+        setDragBox(null);
+        panDragRef.current = null;
+        setIsPanning(false);
+      }}
       onDoubleClick={(event) => {
         if (!isZoomed) return;
         event.preventDefault();
         animateToViewport(initialViewport, false);
         setDragBox(null);
+        panDragRef.current = null;
+        setIsPanning(false);
       }}>
       <defs><clipPath id={`city-map-clip-${city.id}`}><rect width={CITY_MAP_WIDTH} height={CITY_MAP_HEIGHT} rx="18" /></clipPath></defs>
       <rect className="city-map-background" width={CITY_MAP_WIDTH} height={CITY_MAP_HEIGHT} rx="18" />
@@ -198,7 +299,8 @@ export function CityAttractionMap({ city, pois, context }: {
           const isActive = poi.id === hoveredId || poi.id === selectedId;
           return <g key={poi.id} role="button" tabIndex={0} aria-label={poi.name}
             aria-pressed={selectedId === poi.id} data-poi-id={poi.id}
-            className={`attraction-marker attraction-marker--${poi.category.toLowerCase()}${isActive ? ' attraction-marker--active' : ''}`}
+            data-poi-category={poi.category}
+            className={`attraction-marker attraction-marker--${categoryClass(poi.category)}${isActive ? ' attraction-marker--active' : ''}`}
             transform={`translate(${x} ${y})`}
             onMouseEnter={() => setHoveredId(poi.id)} onMouseLeave={() => setHoveredId(null)}
             onFocus={() => setHoveredId(poi.id)} onBlur={() => setHoveredId(null)}
@@ -211,10 +313,7 @@ export function CityAttractionMap({ city, pois, context }: {
               }
             }}>
             <circle className="attraction-marker-hit" r="22" />
-            {poi.category === 'Attraction'
-              ? <circle data-testid="attraction-marker" r={isActive ? 9 : 7} />
-              : <path data-testid="unclassified-marker"
-                d={isActive ? 'M 0 -11 L 10 8 L -10 8 Z' : 'M 0 -9 L 8 7 L -8 7 Z'} />}
+            <circle data-testid={`poi-marker-${categoryClass(poi.category)}`} r={isActive ? 9 : 7} />
           </g>;
         })}
       </g>
@@ -227,8 +326,7 @@ export function CityAttractionMap({ city, pois, context }: {
     </p>
     <section className="poi-metadata" aria-label="POI metadata" aria-live="polite">
       {active ? <><p className="eyebrow">{active.category}</p><h3>{active.name}</h3>
-        {active.localizedName && <p className="poi-localized-name">{active.localizedName}</p>}
-        <p>{active.subcategory}</p></>
+        {active.localizedName && <p className="poi-localized-name">{active.localizedName}</p>}</>
         : <><p className="eyebrow">{city.name}</p><h3>Places</h3><p>{visiblePois.length
           ? 'Hover or focus a point to see its name.'
           : pois.length ? 'No places match the current filters.' : 'No reviewed places yet'}</p></>}

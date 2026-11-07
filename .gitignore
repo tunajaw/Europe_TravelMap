@@ -20,6 +20,7 @@ data/raw/img/
 data/private/
 data/raw/map_search.html
 data/raw/timeline.json
+data/raw/POIadd_until_Munich_v1.txt
 
 # Local environment files
 .env

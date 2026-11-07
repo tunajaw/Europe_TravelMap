@@ -4,8 +4,35 @@ import { europeProjection, MAP_HEIGHT, MAP_WIDTH } from './country-label-layout.
 import { worldCountries } from './world-geography.ts';
 
 export const EUROPE_VIEWPORT: [number, number, number, number] = [160, 90, 950, 555];
+export type MapViewport = [number, number, number, number];
 
-export function countryViewport(country: TravelData['countries'][number] | undefined, cities: TravelData['cities'] = []): [number, number, number, number] {
+export function zoomMapViewportAtPoint(
+  viewport: MapViewport,
+  initialViewport: MapViewport,
+  anchorX: number,
+  anchorY: number,
+  factor: number,
+): MapViewport {
+  const minimumWidth = initialViewport[2] * 0.2;
+  const width = Math.min(initialViewport[2], Math.max(minimumWidth, viewport[2] * factor));
+  const height = width * initialViewport[3] / initialViewport[2];
+  if (width >= initialViewport[2]) return [...initialViewport];
+
+  const horizontalAnchor = Math.min(1, Math.max(0, (anchorX - viewport[0]) / viewport[2]));
+  const verticalAnchor = Math.min(1, Math.max(0, (anchorY - viewport[1]) / viewport[3]));
+  const unclampedX = anchorX - horizontalAnchor * width;
+  const unclampedY = anchorY - verticalAnchor * height;
+  const maximumX = initialViewport[0] + initialViewport[2] - width;
+  const maximumY = initialViewport[1] + initialViewport[3] - height;
+  return [
+    Math.min(maximumX, Math.max(initialViewport[0], unclampedX)),
+    Math.min(maximumY, Math.max(initialViewport[1], unclampedY)),
+    width,
+    height,
+  ];
+}
+
+export function countryViewport(country: TravelData['countries'][number] | undefined, cities: TravelData['cities'] = []): MapViewport {
   if (!country) return EUROPE_VIEWPORT;
   const center = europeProjection([country.marker.longitude, country.marker.latitude])!;
   const points: number[][] = [center, ...cities.map((city) => europeProjection([city.location.longitude, city.location.latitude])!)];

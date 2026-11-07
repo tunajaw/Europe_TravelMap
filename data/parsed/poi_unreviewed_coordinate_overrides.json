@@ -1,0 +1,1050 @@
+[
+  {
+    "poi_id": "unclassified-searched-poi-dddccf04827056",
+    "city_id": "city-aachen",
+    "name": "Aachener Altstadt",
+    "latitude": 50.7744116,
+    "longitude": 6.0840198,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6078e263c9cbb1",
+    "city_id": "city-amsterdam",
+    "name": "Fabel Friet Oude Hoogstraat",
+    "latitude": 52.3712792,
+    "longitude": 4.8978713,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-32f1cde0e19f5b",
+    "city_id": "city-amsterdam",
+    "name": "Fantasyshop Chimera",
+    "latitude": 52.3723226,
+    "longitude": 4.8947917,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-be8a0ce6a39ece",
+    "city_id": "city-amsterdam",
+    "name": "Public urinal (curl)",
+    "latitude": 52.3730826,
+    "longitude": 4.8890899999999995,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10de83984bd98b",
+    "city_id": "city-bad-camberg",
+    "name": "Bad Camberg Bahnhof",
+    "latitude": 50.2968219,
+    "longitude": 8.2554134,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-02a5fa949b8a03",
+    "city_id": "city-baden-baden",
+    "name": "里奇騰塔勒大道",
+    "latitude": 48.7629938,
+    "longitude": 8.2420786,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef11cfd1e108b2",
+    "city_id": "city-barcelona",
+    "name": "哥倫布紀念碑",
+    "latitude": 41.37580868865141,
+    "longitude": 2.177760636429711,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ab364fefc83ec3",
+    "city_id": "city-barcelona",
+    "name": "Barcelona - Terminal Nord",
+    "latitude": 41.372408199999995,
+    "longitude": 2.1804049,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bc51c88c99ce40",
+    "city_id": "city-barcelona",
+    "name": "https://maps.app.goo.gl/T1ihmTur5TC3Tbky8?g_st=ac",
+    "latitude": 41.3823776,
+    "longitude": 2.1791329,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-71eb623d6b7481",
+    "city_id": "city-barcelona",
+    "name": "Mercado de la boquería",
+    "latitude": 41.3817399,
+    "longitude": 2.1715853,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb3e6288b62440",
+    "city_id": "city-barcelona",
+    "name": "Plaça de Carles Buïgas",
+    "latitude": 41.3709874,
+    "longitude": 2.1521643,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-262717753",
+    "city_id": "city-barcelona",
+    "name": "Plaça de Catalunya",
+    "latitude": 41.3873006,
+    "longitude": 2.1687832,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b334bed7cefb50",
+    "city_id": "city-barcelona",
+    "name": "Rambla De Mar",
+    "latitude": 41.3758703,
+    "longitude": 2.1792505,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-53688ea13fbe31",
+    "city_id": "city-barcelona",
+    "name": "Supermercados",
+    "latitude": 41.450001,
+    "longitude": 2.2294799,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6edfcd615e215f",
+    "city_id": "city-berlin",
+    "name": "德國國會大廈",
+    "latitude": 52.5186538,
+    "longitude": 13.3761015,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c06ee01ec3d743",
+    "city_id": "city-budapest",
+    "name": "Budapest Népliget bus station",
+    "latitude": 47.4743608,
+    "longitude": 19.098546,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6fff49bb3785cf",
+    "city_id": "city-budapest",
+    "name": "Ildikó Konyhája",
+    "latitude": 47.499628,
+    "longitude": 19.0398672,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3ab699f75b3796",
+    "city_id": "city-dortmund",
+    "name": "Phönixsee",
+    "latitude": 51.4893326,
+    "longitude": 7.5141345,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-619f26f88bc9cf",
+    "city_id": "city-dresden",
+    "name": "茨溫格宮",
+    "latitude": 51.05291441459023,
+    "longitude": 13.7346328198952,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7a4223c7ef56ba",
+    "city_id": "city-dresden",
+    "name": "Dresdner Molkerei Gebrüder Pfund GmbH",
+    "latitude": 51.0637639,
+    "longitude": 13.7598407,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fbd2026471566d",
+    "city_id": "city-dublin",
+    "name": "半分橋",
+    "latitude": 53.3465188,
+    "longitude": -6.2632247,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-350242806",
+    "city_id": "city-dublin",
+    "name": "都柏林城堡",
+    "latitude": 53.3426623,
+    "longitude": -6.2670042,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d3d038803eb6b7",
+    "city_id": "city-dublin",
+    "name": "Ballinteer - Dublin Airport",
+    "latitude": 53.3517673,
+    "longitude": -6.2612961,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d8cd8cc238b191",
+    "city_id": "city-dublin",
+    "name": "College Green",
+    "latitude": 53.3447601,
+    "longitude": -6.259288,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-673b679a720f2b",
+    "city_id": "city-dublin",
+    "name": "Dublin Airport T1",
+    "latitude": 53.4277506,
+    "longitude": -6.2417131,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e097eb1a5a7273",
+    "city_id": "city-dublin",
+    "name": "Grafton Street",
+    "latitude": 53.3439678,
+    "longitude": -6.2591981,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a75f25653e19aa",
+    "city_id": "city-dublin",
+    "name": "Molly Malone Statue",
+    "latitude": 53.34377266701537,
+    "longitude": -6.260939013489747,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-79ec4c9122351d",
+    "city_id": "city-dublin",
+    "name": "The Temple Bar Pub",
+    "latitude": 53.3454789,
+    "longitude": -6.2640728,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d5421f60634b7d",
+    "city_id": "city-frankfurt",
+    "name": "anime",
+    "latitude": 50.133929099999996,
+    "longitude": 8.4534118,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7fe8712c02894a",
+    "city_id": "city-garmisch-partenkirchen",
+    "name": "Kebab & Smash",
+    "latitude": 47.4934142,
+    "longitude": 11.1024338,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5c9f2a53f2f174",
+    "city_id": "city-goreme",
+    "name": "Cappadocia Street Foods",
+    "latitude": 38.644894099999995,
+    "longitude": 34.8304839,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-50ff06cdcc0328",
+    "city_id": "city-goreme",
+    "name": "Göreme Otobüs Terminali",
+    "latitude": 38.64340007589022,
+    "longitude": 34.82949179998396,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ac3bf334ad274f",
+    "city_id": "city-hamburg",
+    "name": "Dulf's Burger",
+    "latitude": 53.5570164,
+    "longitude": 9.9751479,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-83a3ff2e8377f3",
+    "city_id": "city-istanbul",
+    "name": "Ali Muhiddin Hacı Bekir Lokumları",
+    "latitude": 41.015741999999996,
+    "longitude": 28.973492,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-176772d9bcca98",
+    "city_id": "city-istanbul",
+    "name": "Kemankeş Karamustafa Paşa",
+    "latitude": 41.0240206,
+    "longitude": 28.9785963,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-87eea6725222ff-coordinate-review",
+    "city_id": "city-karlsruhe",
+    "name": "Schlossplatz",
+    "latitude": 49.0107531,
+    "longitude": 8.4035356,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ddd9e17fc17e1",
+    "city_id": "city-leipzig",
+    "name": "集市廣場",
+    "latitude": 51.341046699008224,
+    "longitude": 12.37483825332944,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c0c23d63f402f9",
+    "city_id": "city-leipzig",
+    "name": "Leipzig Zentrum",
+    "latitude": 51.3405174,
+    "longitude": 12.3814634,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-node-3272712570",
+    "city_id": "city-london",
+    "name": "1",
+    "latitude": 51.57748,
+    "longitude": -0.1538564,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e9bbab4a01bedf",
+    "city_id": "city-london",
+    "name": "125-133",
+    "latitude": 51.5074456,
+    "longitude": -0.1277653,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2af49076b5e520",
+    "city_id": "city-london",
+    "name": "191 Waterloo Rd",
+    "latitude": 51.5005685,
+    "longitude": -0.1077254,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ea77dd9b0dd236",
+    "city_id": "city-london",
+    "name": "2 Castlehaven Rd",
+    "latitude": 51.5418364,
+    "longitude": -0.1457969,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c36d55fe282f4b",
+    "city_id": "city-london",
+    "name": "251 Royal College St",
+    "latitude": 51.5427531,
+    "longitude": -0.1394522,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-19012e19f0a0cd",
+    "city_id": "city-london",
+    "name": "29 Shaftesbury Ave",
+    "latitude": 51.5700759,
+    "longitude": -0.3504075,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d9adfd91230fb8",
+    "city_id": "city-london",
+    "name": "4 Robert Burns Mews",
+    "latitude": 51.4559716,
+    "longitude": -0.1043201,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ac2413743a7ff7",
+    "city_id": "city-london",
+    "name": "41",
+    "latitude": 51.5733998,
+    "longitude": 0.0192604,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4a8f6aaa988bbc",
+    "city_id": "city-london",
+    "name": "51.488721",
+    "latitude": 51.488721,
+    "longitude": -0.060961,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6168b195f079b8",
+    "city_id": "city-london",
+    "name": "82 Rossetti Rd",
+    "latitude": 51.4886078,
+    "longitude": -0.0617649,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f969663334c374",
+    "city_id": "city-london",
+    "name": "82 Rossetti Rd",
+    "latitude": 51.4886078,
+    "longitude": -0.0617649,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f1910cbec3ad4c",
+    "city_id": "city-london",
+    "name": "82 Rossetti Road",
+    "latitude": 51.4886078,
+    "longitude": -0.0617649,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-relation-5208404",
+    "city_id": "city-london",
+    "name": "白金漢宮",
+    "latitude": 51.5008349,
+    "longitude": -0.1430045,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-37730c37ebb471",
+    "city_id": "city-london",
+    "name": "利德賀市場",
+    "latitude": 51.5121865086832,
+    "longitude": -0.08357644200145661,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-23135fc8c48c51",
+    "city_id": "city-london",
+    "name": "波羅市場",
+    "latitude": 51.50474126018979,
+    "longitude": -0.09057212060578557,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a94984abefd2f6",
+    "city_id": "city-london",
+    "name": "波羅市場",
+    "latitude": 51.50474126018979,
+    "longitude": -0.09057212060578557,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c704ee70124470",
+    "city_id": "city-london",
+    "name": "英國倫敦白教堂",
+    "latitude": 51.51353363779219,
+    "longitude": -0.06922952391849549,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9dab297da320ba",
+    "city_id": "city-london",
+    "name": "英國倫敦柯芬園",
+    "latitude": 51.51165706031468,
+    "longitude": -0.12404361836219033,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e95695f500e7e1",
+    "city_id": "city-london",
+    "name": "英國倫敦斯特拉特福",
+    "latitude": 51.53844349748826,
+    "longitude": -0.012902392749427165,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d19b3448054347",
+    "city_id": "city-london",
+    "name": "倫敦塔",
+    "latitude": 51.508217,
+    "longitude": -0.0761879,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-378493707",
+    "city_id": "city-london",
+    "name": "倫敦橋",
+    "latitude": 51.5067822,
+    "longitude": -0.0880432,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6565f4a97fb361",
+    "city_id": "city-london",
+    "name": "歷史",
+    "latitude": 51.50251189995891,
+    "longitude": -0.11876276381090276,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-11ffb4ee6f5878",
+    "city_id": "city-london",
+    "name": "anime",
+    "latitude": 51.5115548,
+    "longitude": -0.1217216,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5df6cc31f0ca41",
+    "city_id": "city-london",
+    "name": "attractions",
+    "latitude": 51.5356288,
+    "longitude": -0.2439068,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-263d1cd17f0fb1",
+    "city_id": "city-london",
+    "name": "Bedford St",
+    "latitude": 51.5096743,
+    "longitude": -0.1231342,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5e6ffcdbb78b37",
+    "city_id": "city-london",
+    "name": "Camden Town Currency Exchange Ltd",
+    "latitude": 51.53780477874473,
+    "longitude": -0.141419807104664,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5a586d6b7528c8",
+    "city_id": "city-london",
+    "name": "Camden Town Station",
+    "latitude": 51.5380316,
+    "longitude": -0.1419787,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-521d424f4a862d",
+    "city_id": "city-london",
+    "name": "casino",
+    "latitude": 51.5219012,
+    "longitude": -0.1234725,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2c0dca1fac2609",
+    "city_id": "city-london",
+    "name": "Charing Cross Station",
+    "latitude": 51.5082148,
+    "longitude": -0.1245247,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-51e922ed7a39b2",
+    "city_id": "city-london",
+    "name": "Charming 3 Bedroom Apartment in Central London",
+    "latitude": 51.5209617,
+    "longitude": -0.15379299999999999,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-987c93cb6159ba",
+    "city_id": "city-london",
+    "name": "Chris's Fish Bar",
+    "latitude": 51.5324205,
+    "longitude": -0.1360684,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-24436446",
+    "city_id": "city-london",
+    "name": "Cromwell Rd",
+    "latitude": 51.4952111,
+    "longitude": -0.1809531,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3b00fef9d4f60a",
+    "city_id": "city-london",
+    "name": "Cromwell Rd",
+    "latitude": 51.4952111,
+    "longitude": -0.1809531,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-4259619",
+    "city_id": "city-london",
+    "name": "Dean's Yard",
+    "latitude": 51.4992259,
+    "longitude": -0.1291953,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4d8946e8a396d5",
+    "city_id": "city-london",
+    "name": "eurochange",
+    "latitude": 51.5117765,
+    "longitude": -0.1285698,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c98ab756055f19",
+    "city_id": "city-london",
+    "name": "exchange",
+    "latitude": 51.5146365,
+    "longitude": -0.0862784,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-63a23b7737506d",
+    "city_id": "city-london",
+    "name": "Gatwick Airport",
+    "latitude": 51.1554838,
+    "longitude": -0.1606435,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-relation-177044",
+    "city_id": "city-london",
+    "name": "Great Russell St",
+    "latitude": 51.5181106,
+    "longitude": -0.1264428,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8118a0e8461194",
+    "city_id": "city-london",
+    "name": "lgw",
+    "latitude": 51.1540772,
+    "longitude": -0.1823226,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-63a0dbe8b0028e",
+    "city_id": "city-london",
+    "name": "London SW1A 0AA",
+    "latitude": 51.5019701,
+    "longitude": -0.1187389,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-05374b63ea2222",
+    "city_id": "city-london",
+    "name": "Mercado Spitalfields",
+    "latitude": 51.51974637305184,
+    "longitude": -0.0768696404672814,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fe6c447ea8f8a8",
+    "city_id": "city-london",
+    "name": "Mr Wu",
+    "latitude": 51.5113201,
+    "longitude": -0.1319443,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fe95b1917d379",
+    "city_id": "city-london",
+    "name": "North Terminal",
+    "latitude": 51.8904985,
+    "longitude": 0.261345,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-16306646",
+    "city_id": "city-london",
+    "name": "Old Spitalfields Market",
+    "latitude": 51.5190179,
+    "longitude": -0.078722,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-218344453",
+    "city_id": "city-london",
+    "name": "Platform 9¾",
+    "latitude": 51.5321868,
+    "longitude": -0.1239137,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-792983dbd31296",
+    "city_id": "city-london",
+    "name": "Rock and Sole Plaice",
+    "latitude": 51.5148151,
+    "longitude": -0.12512869999999998,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fe95a0555118e0",
+    "city_id": "city-london",
+    "name": "Royal Mail Postbox",
+    "latitude": 51.5161156,
+    "longitude": -0.0971396,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eeaaecb74975ad",
+    "city_id": "city-london",
+    "name": "sex toys",
+    "latitude": 51.51374881711749,
+    "longitude": -0.12959587216427135,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f12a4b4ea845f8",
+    "city_id": "city-london",
+    "name": "soho",
+    "latitude": 51.5140654,
+    "longitude": -0.1350494,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3b6689e9d887d5",
+    "city_id": "city-london",
+    "name": "South Bermondsey Station",
+    "latitude": 51.488096,
+    "longitude": -0.0578064,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-efd04db976e0fa",
+    "city_id": "city-london",
+    "name": "Spafield Market",
+    "latitude": 51.519216279127576,
+    "longitude": -0.0754605199651885,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-208091528",
+    "city_id": "city-london",
+    "name": "Spitalfields Market",
+    "latitude": 51.5183917,
+    "longitude": -0.0754683,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-1367424158",
+    "city_id": "city-london",
+    "name": "St. Paul's Churchyard",
+    "latitude": 51.5134305,
+    "longitude": -0.099803,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8d72015ce7542d",
+    "city_id": "city-london",
+    "name": "sunday roast",
+    "latitude": 51.50478806693882,
+    "longitude": -0.11057822563845135,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-node-4749096025",
+    "city_id": "city-london",
+    "name": "The Guards Museum",
+    "latitude": 51.5000475,
+    "longitude": -0.1361252,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-way-172645316",
+    "city_id": "city-london",
+    "name": "The Hippodrome Casino London",
+    "latitude": 51.511407016433296,
+    "longitude": -0.1286459685543544,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-31a742bb1dcce2",
+    "city_id": "city-london",
+    "name": "Thomas Exchange Bureau De Change Currency Exchange - KINGS CROSS and EUSTON RD",
+    "latitude": 51.5297687,
+    "longitude": -0.1239067,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b6dad43f9b004f",
+    "city_id": "city-london",
+    "name": "thomas exchange global",
+    "latitude": 51.5163701,
+    "longitude": -0.0822951,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-node-2079674503",
+    "city_id": "city-london",
+    "name": "Tower Bridge Rd",
+    "latitude": 51.5005071,
+    "longitude": -0.0784612,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-relation-3962877",
+    "city_id": "city-london",
+    "name": "Trafalgar Sq",
+    "latitude": 51.5084502,
+    "longitude": -0.1284499,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "attraction-relation-6036811",
+    "city_id": "city-london",
+    "name": "Victoria",
+    "latitude": 51.4959786,
+    "longitude": -0.1413172,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-72a5411e64a39c",
+    "city_id": "city-london",
+    "name": "Victoria",
+    "latitude": 51.4959786,
+    "longitude": -0.1413172,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4dcbd1444417c5",
+    "city_id": "city-london",
+    "name": "water refill",
+    "latitude": 51.504238,
+    "longitude": -0.1148857,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a89c1ea4bf1e80",
+    "city_id": "city-london",
+    "name": "Western Gateway",
+    "latitude": 51.5086466,
+    "longitude": 0.0144994,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-046c352a5f3d81",
+    "city_id": "city-london",
+    "name": "Westminster",
+    "latitude": 51.5004439,
+    "longitude": -0.1265398,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a220afedf90139",
+    "city_id": "city-london",
+    "name": "Whitechapel",
+    "latitude": 51.5174861,
+    "longitude": -0.0659685,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ad8b87e5f78b28",
+    "city_id": "city-london",
+    "name": "Whitechapel",
+    "latitude": 51.5174861,
+    "longitude": -0.0659685,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cecf3f28dc22a9",
+    "city_id": "city-lubeck",
+    "name": "聖靈醫院",
+    "latitude": 53.871439197442264,
+    "longitude": 10.689298646072658,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5b606e6b9a727a",
+    "city_id": "city-lubeck",
+    "name": "I.G Niederegger",
+    "latitude": 53.8662499,
+    "longitude": 10.682951,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d591220673074a",
+    "city_id": "city-milan",
+    "name": "和平之門",
+    "latitude": 45.475548702283554,
+    "longitude": 9.172601429662906,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9059b289be095c",
+    "city_id": "city-milan",
+    "name": "La Fabbrica dei Sapori",
+    "latitude": 45.5304649,
+    "longitude": 9.1936409,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e7bcb233d5909a",
+    "city_id": "city-milan",
+    "name": "La Hora Feliz",
+    "latitude": 45.4594315,
+    "longitude": 9.182812,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a5c27c5ae2f785",
+    "city_id": "city-milan",
+    "name": "Piazza degli Affari",
+    "latitude": 45.4648073,
+    "longitude": 9.1836109,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2d2e131cff9db7",
+    "city_id": "city-munich",
+    "name": "Best Döner & Falafel",
+    "latitude": 48.1198072,
+    "longitude": 11.5407795,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4b5dd3e234d9e3",
+    "city_id": "city-munich",
+    "name": "Giesing",
+    "latitude": 48.1108656,
+    "longitude": 11.5762221,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-49e68a49e792ca",
+    "city_id": "city-munich",
+    "name": "Premier Inn Müchen Airport Ost",
+    "latitude": 48.326214,
+    "longitude": 11.75028,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1366d04e22cae0",
+    "city_id": "city-murnau",
+    "name": "Laguna Murnau",
+    "latitude": 47.680910624860786,
+    "longitude": 11.18803471964491,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f93a46a1dbccd7",
+    "city_id": "city-naples",
+    "name": "Naples Port",
+    "latitude": 40.8375991,
+    "longitude": 14.2613454,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b2ac5b12652c6",
+    "city_id": "city-naples",
+    "name": "San Gennaro Pizzeria",
+    "latitude": 40.8479135,
+    "longitude": 14.2554681,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-07b2694bf8c64b",
+    "city_id": "city-nurnberg",
+    "name": "WurstDurst",
+    "latitude": 49.4480227,
+    "longitude": 11.0789849,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-82ac6d65e18452",
+    "city_id": "city-oslo",
+    "name": "Bestumveien 2J",
+    "latitude": 59.919077,
+    "longitude": 10.665339,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-79a7b70865b5cb",
+    "city_id": "city-oslo",
+    "name": "Fly Chicken Torggata",
+    "latitude": 59.9140195,
+    "longitude": 10.7480177,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8c0781decbb4c2",
+    "city_id": "city-oslo",
+    "name": "Los Tacos",
+    "latitude": 59.911944,
+    "longitude": 10.749407,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dce0416500229b",
+    "city_id": "city-oslo",
+    "name": "MENY Bogstadveien",
+    "latitude": 59.9264967,
+    "longitude": 10.7199516,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6e10b9e528df5b",
+    "city_id": "city-oslo",
+    "name": "MUNCH Museum",
+    "latitude": 59.9170237,
+    "longitude": 10.7743548,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1c29673eb7d608",
+    "city_id": "city-rome",
+    "name": "Casa Serenissima Holiday Home Roma Barbara Bonanno",
+    "latitude": 41.8983497,
+    "longitude": 12.5579796,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2b262e3d17933e",
+    "city_id": "city-salzburg",
+    "name": "Salzburg",
+    "latitude": 47.7981346,
+    "longitude": 13.0464806,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-97758e548bf308",
+    "city_id": "city-strasbourg",
+    "name": "Pizza Renard Strasbourg-Neudorf",
+    "latitude": 48.5640992,
+    "longitude": 7.7685653,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-420e8c0ad3fa1d-coordinate-review",
+    "city_id": "city-strasbourg",
+    "name": "Quartier de La Petite France",
+    "latitude": 48.5811419,
+    "longitude": 7.7415077,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0e375321299b5b",
+    "city_id": "city-triberg",
+    "name": "Museums Café",
+    "latitude": 48.1292258,
+    "longitude": 8.2298903,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-36602fd2997041",
+    "city_id": "city-utrecht",
+    "name": "烏德勒支聖馬丁主教座堂塔樓",
+    "latitude": 52.090825399672966,
+    "longitude": 5.121325411051648,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-da0a400ff2941e",
+    "city_id": "city-vatican-city",
+    "name": "Piazza di Trevi",
+    "latitude": 41.90222252497251,
+    "longitude": 12.456728297128741,
+    "source_status": "unreviewed_geocoding_candidate"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f5b0f4f0f22e60",
+    "city_id": "city-wurzburg",
+    "name": "聖母禮拜堂",
+    "latitude": 49.794784897689894,
+    "longitude": 9.929437610155915,
+    "source_status": "unreviewed_geocoding_candidate"
+  }
+]

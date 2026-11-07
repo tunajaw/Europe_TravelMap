@@ -1,0 +1,39 @@
+[
+  {
+    "poi_id": "attraction-way-122237921",
+    "replaces_poi_id": "attraction-way-122237922",
+    "city_id": "city-erfurt",
+    "name": "Krämerbrücke",
+    "localized_name": null,
+    "original_name": "Krämerbrücke",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 50.9787436,
+    "longitude": 11.03094,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-33845624",
+    "city_id": "city-hamburg",
+    "name": "Fischmarkt",
+    "localized_name": null,
+    "original_name": "Fischmarkt",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 53.5458515,
+    "longitude": 9.9520535,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "attraction-way-5013364",
+    "city_id": "city-paris",
+    "name": "Eiffel Tower",
+    "localized_name": "艾菲爾鐵塔",
+    "original_name": "艾菲爾鐵塔 Av. Gustave Eiffel",
+    "category": "Attraction",
+    "subcategory": "attraction",
+    "latitude": 48.8582603,
+    "longitude": 2.2945008,
+    "review_status": "provisional_owner_assumption"
+  }
+]

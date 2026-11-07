@@ -1,8 +1,9 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { EuropeMap } from './EuropeMap.tsx';
-import { CityAttractionMap } from './CityAttractionMap.tsx';
+import { CityAttractionMap, type CityPoiFocusRequest } from './CityAttractionMap.tsx';
 import { CountryPhoto } from './CountryPhoto.tsx';
+import { CityList, CityPoiList, CountryList } from './MapNavigationList.tsx';
 import { TRANSPORT_MODES } from './transport-colors.ts';
 import './country-explorer.css';
 
@@ -66,6 +67,7 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [showRoutes, setShowRoutes] = useState(true);
   const [domesticOnly, setDomesticOnly] = useState(false);
+  const [cityPoiFocusRequest, setCityPoiFocusRequest] = useState<CityPoiFocusRequest | null>(null);
   const root = useRef<HTMLDivElement>(null);
   const selected = data.countries.find((country) => country.id === navigation.selectedId);
   const activeCity = data.cities.find((city) => city.id === navigation.cityId);
@@ -81,7 +83,10 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   }
   function enterCity(id: string) {
     const city = data.cities.find((candidate) => candidate.id === id);
-    if (city) navigate({ type: 'enter-city', id: city.id, countryId: city.countryId });
+    if (city) {
+      setCityPoiFocusRequest(null);
+      navigate({ type: 'enter-city', id: city.id, countryId: city.countryId });
+    }
   }
   function close(restoreFocus = false) {
     const id = navigation.selectedId;
@@ -101,7 +106,7 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       // The clicked arrow may unmount at the first/last photo. The original
       // event path retains its card ancestor even after that DOM update.
       const inside = event.composedPath().some((node) => node instanceof Element
-        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .segment-details, .city-selection, .country-switcher, .map-toolbar'));
+        && node.matches('.country-card, [data-country-id], [data-city-id], [data-segment-id], .segment-details, .city-selection, .country-switcher, .map-toolbar, .poi-progress-sidebar, .city-review-sidebar'));
       if (!inside && !navigation.cityId) close();
     };
     const key = (event: KeyboardEvent) => {
@@ -130,14 +135,20 @@ export function CountryExplorer({ data }: { data: TravelData }) {
         {!activeCity && <label className="route-toggle"><input type="checkbox" checked={showRoutes} onChange={(event) => setShowRoutes(event.target.checked)} /> Show travel routes</label>}
         {navigation.focusedId && !activeCity && <label className="route-toggle"><input type="checkbox" checked={domesticOnly} onChange={(event) => setDomesticOnly(event.target.checked)} /> Only show domestic routes</label>}
       </div>
-      <div className="map-canvas">
-        {activeCity ? <CityAttractionMap city={activeCity} pois={cityPois} context={cityContext} />
-          : <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments}
+      <div className={`poi-review-map-layout${activeCity ? ' poi-review-map-layout--city' : ''}`}>
+        {!activeCity && (navigation.focusedId && selected
+          ? <CityList countryId={selected.id} data={data} onEnter={enterCity} />
+          : <CountryList data={data} onEnter={(id) => navigate({ type: 'enter', id })} />)}
+        <div className="map-canvas">
+          {activeCity ? <CityAttractionMap city={activeCity} pois={cityPois} context={cityContext}
+            focusRequest={cityPoiFocusRequest} />
+            : <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments}
             showRoutes={showRoutes} domesticOnly={domesticOnly} selectedId={navigation.selectedId}
             hoveredId={hoveredId} focusedId={navigation.focusedId}
             onSelect={(id) => navigate({ type: 'select', id })}
             onEnter={(id) => navigate({ type: 'enter', id })}
             onEnterCity={enterCity} onHover={setHoveredId} />}
+        </div>
       </div>
       {!activeCity && <div className="country-card-dock">
         {selected ? <CountryCard key={selected.id} country={selected} photos={photos} entered={Boolean(navigation.focusedId)}
@@ -151,17 +162,20 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       </label>}
     </section>
     <aside className="journey-dashboard" aria-label="Journey dashboard">
-      <p className="eyebrow">The journey in numbers</p><h2>Dashboard</h2>
-      <p className="dashboard-scope">{activeCity?.name ?? selected?.name ?? 'All countries'}</p>
-      {activeCity ? <><p className="dashboard-total"><strong>{cityPois.length}</strong> attractions</p>
-        <p className="dashboard-caption">Provisional reviewed City Map points</p></>
-        : segments.length ? <><p className="dashboard-total"><strong>{segments.length}</strong> transport segments</p>
+      {activeCity ? <CityPoiList cityName={activeCity.name} pois={cityPois}
+        onFocus={(poiId) => setCityPoiFocusRequest((current) => ({
+          poiId,
+          requestId: (current?.requestId ?? 0) + 1,
+        }))} />
+        : <><p className="eyebrow">The journey in numbers</p><h2>Dashboard</h2>
+        <p className="dashboard-scope">{selected?.name ?? 'All countries'}</p>
+        {segments.length ? <><p className="dashboard-total"><strong>{segments.length}</strong> transport segments</p>
         <p className="dashboard-caption">{selected ? 'Departing from this country' : 'Transportation / segment count'}</p>
         <div className="transport-bars">{counts.map(({ name, color, count }) => <div key={name}>
           <div className="transport-bar-label"><span>{name}</span><b>{count}</b></div>
           <div className="transport-bar-track"><span key={selected?.id ?? 'all'} style={{ width: `${count / maximum * 100}%`, backgroundColor: color }} /></div>
         </div>)}</div></> : <p className="dashboard-empty">No transportation data</p>}
-      <p className="dashboard-footer">{activeCity ? 'Attraction prototype' : `${selected ? photos.length : data.photos.length} photographs`}</p>
+        <p className="dashboard-footer">{selected ? photos.length : data.photos.length} photographs</p></>}
     </aside>
   </div>;
 }

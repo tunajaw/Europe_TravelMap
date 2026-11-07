@@ -18,6 +18,11 @@ type PoiReferenceRow = {
   localized_name?: string | null; original_name?: string;
 };
 
+type ReviewedPoiCategory = {
+  poi_id: string;
+  category: 'Attraction' | 'Shop' | 'Restaurant' | 'Accommodation' | 'Transportation';
+};
+
 type CityContextReferenceRow = {
   city_id: string; kind: 'administrative_boundary' | 'local_extent';
   source: 'OpenStreetMap' | 'Reviewed city reference'; source_osm_id: string | null; source_label: string;
@@ -35,6 +40,18 @@ export async function buildDataset(root: string): Promise<TravelData> {
   const poiRows = JSON.parse(await readFile(
     join(root, 'data', 'parsed', 'poi_reference.json'), 'utf8',
   )) as PoiReferenceRow[];
+  const reviewedPoiIds = new Set(JSON.parse(await readFile(
+    join(root, 'data', 'parsed', 'poi_reviewed_ids.json'), 'utf8',
+  )) as string[]);
+  const reviewedPoiCategories = JSON.parse(await readFile(
+    join(root, 'data', 'parsed', 'poi_reviewed_categories.json'), 'utf8',
+  )) as ReviewedPoiCategory[];
+  const reviewedPoiCategoryById = new Map(
+    reviewedPoiCategories.map((row) => [row.poi_id, row.category]),
+  );
+  if (reviewedPoiCategoryById.size !== reviewedPoiCategories.length) {
+    throw new Error('Duplicate reviewed POI category identity');
+  }
   const cityContextRows = JSON.parse(await readFile(
     join(root, 'data', 'parsed', 'city_map_context.json'), 'utf8',
   )) as CityContextReferenceRow[];
@@ -92,18 +109,20 @@ export async function buildDataset(root: string): Promise<TravelData> {
       .map((photo) => photo.id),
   }));
 
-  const pois = poiRows.map((row) => {
-    if (row.review_status !== 'provisional_owner_assumption'
+  const pois = poiRows.filter((row) => reviewedPoiIds.has(row.poi_id)).map((row) => {
+    if (!['provisional_owner_assumption', 'needs_review'].includes(row.review_status)
       || !['Attraction', 'Unclassified'].includes(row.category)) {
-      throw new Error(`POI is not approved for the City Map prototype: ${row.poi_id}`);
+      throw new Error(`POI is not eligible for the approved City Map dataset: ${row.poi_id}`);
     }
     if (!references.cities.some((city) => city.id === row.city_id)) throw new Error(`Unknown POI City: ${row.city_id}`);
+    const category = reviewedPoiCategoryById.get(row.poi_id);
+    if (!category) throw new Error(`Approved POI lacks a reviewed category: ${row.poi_id}`);
     return {
       id: row.poi_id,
       cityId: row.city_id,
       name: row.name,
       localizedName: row.localized_name ?? null,
-      category: row.category,
+      category,
       subcategory: row.subcategory,
       location: { latitude: row.latitude, longitude: row.longitude },
       imagePath: null,
@@ -124,7 +143,7 @@ export async function buildDataset(root: string): Promise<TravelData> {
   }
 
   const data = TravelDataSchema.parse({
-    schemaVersion: '1.5.0',
+    schemaVersion: '1.6.0',
     travelPeriod: { start: '2025-09-30', end: '2026-04-30' },
     countries,
     cities: references.cities,

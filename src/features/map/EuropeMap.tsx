@@ -1,5 +1,5 @@
 import { geoGraticule10, geoPath } from 'd3-geo';
-import { useEffect, useId, useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import {
   MAP_HEIGHT,
@@ -8,7 +8,7 @@ import {
   layoutCountryLabels,
 } from './country-label-layout.ts';
 import { worldCountries } from './world-geography.ts';
-import { countryViewport } from './country-viewport.ts';
+import { countryViewport, zoomMapViewportAtPoint } from './country-viewport.ts';
 import { CityLayer } from './CityLayer.tsx';
 import { SegmentLayer } from './SegmentLayer.tsx';
 import { SegmentDetails } from './SegmentDetails.tsx';
@@ -17,6 +17,8 @@ import { useViewportTransition } from './use-viewport-transition.ts';
 import './europe-map.css';
 
 type Country = TravelData['countries'][number];
+const EMPTY_CITIES: TravelData['cities'] = [];
+const EMPTY_SEGMENTS: TravelData['segments'] = [];
 
 const path = geoPath(europeProjection);
 
@@ -35,7 +37,7 @@ interface EuropeMapProps {
   onHover?: (id: string | null) => void;
 }
 
-export function EuropeMap({ countries, cities = [], segments = [], showRoutes = true, domesticOnly = false, selectedId, hoveredId, focusedId, onSelect, onEnter, onEnterCity, onHover }: EuropeMapProps) {
+export function EuropeMap({ countries, cities = EMPTY_CITIES, segments = EMPTY_SEGMENTS, showRoutes = true, domesticOnly = false, selectedId, hoveredId, focusedId, onSelect, onEnter, onEnterCity, onHover }: EuropeMapProps) {
   const shadowId = useId();
   const [cityHover, setCityHover] = useState<string | null>(null);
   const [citySelection, setCitySelection] = useState<string | null>(null);
@@ -64,8 +66,32 @@ export function EuropeMap({ countries, cities = [], segments = [], showRoutes = 
     const connected = new Set(visibleSegments.filter((segment) => segment.pathCityIds.some((id) => own.has(id))).flatMap((segment) => segment.pathCityIds));
     return cities.filter((city) => own.has(city.id) || connected.has(city.id));
   }, [cities, visibleSegments, focused]);
-  const viewport = countryViewport(focused, visibleCities);
-  const displayedViewport = useViewportTransition(viewport);
+  const viewport = useMemo(() => countryViewport(focused, visibleCities), [focused, visibleCities]);
+  const [zoomedViewport, setZoomedViewport] = useState(viewport);
+  const zoomedViewportRef = useRef(viewport);
+  const mapRef = useRef<SVGSVGElement | null>(null);
+  useEffect(() => {
+    zoomedViewportRef.current = viewport;
+    setZoomedViewport(viewport);
+  }, [viewport]);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const handleWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      const bounds = map.getBoundingClientRect();
+      if (!bounds.width || !bounds.height) return;
+      const current = zoomedViewportRef.current;
+      const anchorX = current[0] + (event.clientX - bounds.left) / bounds.width * current[2];
+      const anchorY = current[1] + (event.clientY - bounds.top) / bounds.height * current[3];
+      const next = zoomMapViewportAtPoint(current, viewport, anchorX, anchorY, event.deltaY < 0 ? 0.78 : 1.28);
+      zoomedViewportRef.current = next;
+      setZoomedViewport(next);
+    };
+    map.addEventListener('wheel', handleWheel, { passive: false });
+    return () => map.removeEventListener('wheel', handleWheel);
+  }, [viewport]);
+  const displayedViewport = useViewportTransition(zoomedViewport);
   const markerScale = viewport[2] / MAP_WIDTH;
   const routes = useMemo(() => buildSegmentRoutes({ countries, cities, segments: visibleSegments }, focusedId ?? null, markerScale), [countries, cities, visibleSegments, focusedId, markerScale]);
   const markerIds = new Set(focused ? [citySelection, cityHover] : [selectedId, hoveredId]);
@@ -91,9 +117,10 @@ export function EuropeMap({ countries, cities = [], segments = [], showRoutes = 
   );
 
   return (
-    <><svg
+    <><svg ref={mapRef}
       aria-label={focused ? `${focused.name} country map` : 'Europe travel map'}
       className="europe-map"
+      data-zoomed={zoomedViewport[2] < viewport[2] ? 'true' : 'false'}
       role={onSelect ? 'group' : 'img'}
       viewBox={displayedViewport.join(' ')}
     >

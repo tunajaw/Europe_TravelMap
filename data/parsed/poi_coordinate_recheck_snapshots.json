@@ -1,0 +1,74 @@
+[
+  {
+    "poi_id": "unclassified-searched-poi-051508cde618d8",
+    "city_id": "city-paris",
+    "name": "Parc des Expositions",
+    "localized_name": null,
+    "original_name": "PARIS NORD VILLEPINTE (Halls 5 & 6).",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.970568,
+    "longitude": 2.5238781,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-420e8c0ad3fa1d",
+    "city_id": "city-strasbourg",
+    "name": "Quartier de La Petite France",
+    "localized_name": "小法蘭西",
+    "original_name": "Au Brasseur",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.5846273,
+    "longitude": 7.7471049,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70c668ae0f742a",
+    "city_id": "city-paris",
+    "name": "Gare Saint-Lazare",
+    "localized_name": null,
+    "original_name": "Supermarché",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.8746188,
+    "longitude": 2.3053446,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-87eea6725222ff",
+    "city_id": "city-karlsruhe",
+    "name": "Schlossplatz",
+    "localized_name": null,
+    "original_name": "Schlossplatz",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 49.0120631,
+    "longitude": 8.4042607,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a50ecc3adaf4ff",
+    "city_id": "city-ulm",
+    "name": "Memmingen Hbf",
+    "localized_name": null,
+    "original_name": "kebab",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 47.9849548,
+    "longitude": 10.1869148,
+    "review_status": "provisional_owner_assumption"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-afff083476e650",
+    "city_id": "city-munich",
+    "name": "Laim",
+    "localized_name": null,
+    "original_name": "Laim rossmann",
+    "category": "Unclassified",
+    "subcategory": "unclassified",
+    "latitude": 48.1419108,
+    "longitude": 11.5066464,
+    "review_status": "provisional_owner_assumption"
+  }
+]

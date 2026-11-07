@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 
 import {
   assignCity,
@@ -21,9 +23,55 @@ import {
   googleMapsDisplayName,
   recoverSearchedPois,
 } from "../../scripts/poi-review/attraction-recovery.ts";
-import { localizedPoiName } from "../../scripts/poi-review/localized-name.ts";
+import {
+  localizedPoiName,
+  separateChinesePoiName,
+} from "../../scripts/poi-review/localized-name.ts";
+import {
+  applyGooglePlaceCoordinateOverride,
+  extractResolvedGoogleMapsLocation,
+  manualPoiNameHash,
+  mergeManualPoiReferences,
+  parseManualPoiSource,
+  prunePublicPoiReferences,
+} from "../../scripts/poi-review/manual-pois.ts";
+import {
+  assignVaticanBoundaryPoisToRome,
+  pointInBoundary,
+} from "../../scripts/poi-review/city-assignment.ts";
 
 describe("POI review preprocessing", () => {
+  it("assigns Vatican candidates outside the administrative boundary to Rome", () => {
+    const boundary = {
+      type: "Polygon" as const,
+      coordinates: [[[12.44, 41.90], [12.46, 41.90], [12.46, 41.91], [12.44, 41.91], [12.44, 41.90]]],
+    };
+    expect(pointInBoundary(12.45, 41.905, boundary)).toBe(true);
+    expect(pointInBoundary(12.48, 41.905, boundary)).toBe(false);
+    expect(assignVaticanBoundaryPoisToRome([
+      { city_id: "city-vatican-city", latitude: 41.905, longitude: 12.45, name: "Inside" },
+      { city_id: "city-vatican-city", latitude: 41.905, longitude: 12.48, name: "Outside" },
+    ], boundary)).toEqual([
+      { city_id: "city-vatican-city", latitude: 41.905, longitude: 12.45, name: "Inside" },
+      { city_id: "city-rome", latitude: 41.905, longitude: 12.48, name: "Outside" },
+    ]);
+  });
+
+  it("keeps every exported Vatican City POI inside its reviewed boundary", async () => {
+    const root = resolve(import.meta.dirname, "..", "..");
+    const [pois, contexts] = await Promise.all([
+      readFile(resolve(root, "data", "parsed", "poi_reference.json"), "utf8").then(JSON.parse) as Promise<Array<{
+        city_id: string; latitude: number; longitude: number;
+      }>>,
+      readFile(resolve(root, "data", "parsed", "city_map_context.json"), "utf8").then(JSON.parse) as Promise<Array<{
+        city_id: string; boundary: Parameters<typeof pointInBoundary>[2];
+      }>>,
+    ]);
+    const boundary = contexts.find(({ city_id: cityId }) => cityId === "city-vatican-city")!.boundary;
+    const vaticanPois = pois.filter(({ city_id: cityId }) => cityId === "city-vatican-city");
+    expect(vaticanPois.length).toBeGreaterThan(0);
+    expect(vaticanPois.every((poi) => pointInBoundary(poi.longitude, poi.latitude, boundary))).toBe(true);
+  });
   it("prefers OSM Traditional Chinese, then Chinese, and otherwise preserves the source name", () => {
     expect(localizedPoiName("Original", { "name:zh-Hant": "繁體名稱", "name:zh": "中文名稱" }))
       .toEqual({ name: "繁體名稱", originalName: "Original", language: "zh-Hant" });
@@ -31,6 +79,32 @@ describe("POI review preprocessing", () => {
       .toEqual({ name: "中文名稱", originalName: "Original", language: "zh" });
     expect(localizedPoiName("Original", { "name:en": "English" }))
       .toEqual({ name: "Original", originalName: "Original", language: "source" });
+  });
+
+  it("moves meaningful Chinese words out of a mixed primary POI name", () => {
+    expect(separateChinesePoiName("加泰羅尼亞廣場 Plaça de Catalunya", null)).toEqual({
+      name: "Plaça de Catalunya",
+      localizedName: "加泰羅尼亞廣場",
+    });
+    expect(separateChinesePoiName("法蘭克福-哈恩機場 (HHN)55483 Lautzenhausen", null)).toEqual({
+      name: "(HHN)55483 Lautzenhausen",
+      localizedName: "法蘭克福-哈恩機場",
+    });
+    expect(separateChinesePoiName("法國巴黎 Avenue Gustave Eiffel", "古斯塔夫·艾菲爾")).toEqual({
+      name: "Avenue Gustave Eiffel",
+      localizedName: "古斯塔夫·艾菲爾／法國巴黎",
+    });
+  });
+
+  it("preserves pure Chinese names and isolated mojibake-like Han characters", () => {
+    expect(separateChinesePoiName("克勒貝爾廣場", null)).toEqual({
+      name: "克勒貝爾廣場",
+      localizedName: null,
+    });
+    expect(separateChinesePoiName("W羹rzburg Hauptbahnhof", null)).toEqual({
+      name: "W羹rzburg Hauptbahnhof",
+      localizedName: null,
+    });
   });
 
   it("parses Timeline coordinates and creates stable opaque IDs", () => {
@@ -97,12 +171,282 @@ describe("POI review preprocessing", () => {
     })]);
   });
 
+  it("parses Directions activity when Google inserts an address before the timestamp", () => {
+    const html = `<body>
+      <div class="outer-cell mdl-cell"><div class="content-cell mdl-cell mdl-cell--6-col mdl-typography--body-1">Directions to <a href="https://www.google.com/maps/dir/Test/@48.1372,11.5756,15z">Test Museum</a><br>Example address<br>Wed, 01 Oct 2025 01:30:00 GMT<br></div></div>
+    </body>`;
+    expect(parseMapActivityHtml(html)).toEqual([expect.objectContaining({
+      action: "directions",
+      title: "Test Museum",
+      occurredAt: "2025-10-01T01:30:00.000Z",
+    })]);
+  });
+
   it("uses Maps viewport coordinates only as a City-filtering hint", () => {
     expect(extractMapsViewportCoordinate("https://www.google.com/maps/search/Test/@48.1372,11.5756,15z")).toEqual({
       latitude: 48.1372,
       longitude: 11.5756,
     });
     expect(extractMapsViewportCoordinate("https://www.google.com/maps/search/Test")).toBeNull();
+    expect(extractMapsViewportCoordinate("https://www.google.com/maps/place/Test/data=!4m2!3d47.7138!4d11.7576"))
+      .toEqual({ latitude: 47.7138, longitude: 11.7576 });
+  });
+
+  it("parses owner-confirmed manual POIs without retaining unrelated notes", () => {
+    const rows = parseManualPoiSource(`Munich:\n* 國王廣場/Königsplatz: https://maps.app.goo.gl/example\n* Existing Place location update: https://maps.app.goo.gl/update\n* instruction only`);
+    expect(rows).toEqual([
+      expect.objectContaining({ cityName: "Munich", name: "Königsplatz", localizedName: "國王廣場", operation: "add" }),
+      expect.objectContaining({ cityName: "Munich", name: "Existing Place", localizedName: null, operation: "location_update" }),
+    ]);
+  });
+
+  it("parses bilingual POI corrections and City reassignment notes from the v2 source", () => {
+    const rows = parseManualPoiSource(`Göreme:\n* Kayseri Havalimanı/開塞利機場: https://maps.app.goo.gl/airport\n* 格雷梅公車站改為中文名字，英文為 Göreme Otobüs Terminali， GPS: https://maps.app.goo.gl/bus\nIstanbul:\n* 加拉塔大橋英文應為 Kemankeş Karamustafa Paşa，GPS 應為 https://maps.app.goo.gl/bridge\nVatican City POI 點嚴格在邊界線之內；其他的歸屬 Rome\n* Pizza A Taglio Da Manuel 更改 GPS: https://maps.app.goo.gl/pizza`);
+    expect(rows).toEqual([
+      expect.objectContaining({ cityName: "Göreme", name: "Kayseri Havalimanı", localizedName: "開塞利機場", operation: "add" }),
+      expect.objectContaining({ cityName: "Göreme", name: "Göreme Otobüs Terminali", localizedName: "格雷梅公車站", operation: "location_update" }),
+      expect.objectContaining({ cityName: "Istanbul", name: "Kemankeş Karamustafa Paşa", localizedName: "加拉塔大橋", operation: "location_update" }),
+      expect.objectContaining({ cityName: "Vatican City", name: "Pizza A Taglio Da Manuel", localizedName: null, operation: "location_update" }),
+    ]);
+  });
+
+  it("extracts the official place coordinate from a resolved Google Maps URL", () => {
+    expect(extractResolvedGoogleMapsLocation("https://www.google.com/maps/place/Test/@48.1,11.5,14z/data=!4m2!3d48.1372!4d11.5756!1sChIJTest"))
+      .toEqual({ latitude: 48.1372, longitude: 11.5756, placeKey: "ChIJTest" });
+  });
+
+  it("uses an owner-confirmed coordinate keyed by stable Google Place identity", () => {
+    const candidate = {
+      googlePlaceId: "0x12cddb055c4fe4bd:0x1138a84037403971",
+      latitude: 43.7031553,
+      longitude: 7.2812612,
+    };
+    const corrected = applyGooglePlaceCoordinateOverride(candidate, new Map([[
+      candidate.googlePlaceId,
+      {
+        google_place_id: candidate.googlePlaceId,
+        city_id: "city-nice",
+        name: "Marché Aux Fleurs - Cours Saleya - Nice",
+        latitude: 43.6955865,
+        longitude: 7.274994,
+        source_status: "owner_confirmed_google_maps_link" as const,
+      },
+    ]]));
+    expect(corrected).toEqual({
+      ...candidate,
+      latitude: 43.6955865,
+      longitude: 7.274994,
+    });
+  });
+
+  it("merges an owner-confirmed location update without changing the existing POI ID", () => {
+    const existing = [{
+      poi_id: "existing-id", city_id: "city-munich", name: "Existing Place", localized_name: null,
+      original_name: "Existing Place", category: "Unclassified" as const, subcategory: "unclassified",
+      latitude: 48, longitude: 11, review_status: "provisional_owner_assumption",
+    }];
+    const merged = mergeManualPoiReferences(existing, [{
+      manual_id: "manual-id", city_id: "city-munich", name: "Existing Place", localized_name: "既有地點",
+      latitude: 48.1, longitude: 11.1, operation: "location_update", source_status: "owner_confirmed_visit",
+    }]);
+    expect(merged).toEqual(expect.objectContaining({ added: 0, updated: 1, deduplicated: 0 }));
+    expect(merged.pois[0]).toEqual(expect.objectContaining({
+      poi_id: "existing-id", latitude: 48.1, longitude: 11.1, localized_name: "既有地點",
+    }));
+  });
+
+  it("matches the reviewed Sky Garden candidate across Chinese naming variants", () => {
+    const existing = [{
+      poi_id: "sky-garden-id", city_id: "city-london", name: "1", localized_name: "天空花园",
+      original_name: "1", category: "Attraction" as const, subcategory: "viewpoint",
+      latitude: 51.57748, longitude: -0.1538564, review_status: "needs_review",
+    }];
+    const merged = mergeManualPoiReferences(existing, [{
+      manual_id: "manual-sky-garden", city_id: "city-london", name: "Sky Garden",
+      localized_name: "空中花園", latitude: 51.5112422, longitude: -0.0835493,
+      operation: "add", source_status: "owner_confirmed_visit",
+    }]);
+    expect(merged).toEqual(expect.objectContaining({ added: 0, updated: 1 }));
+    expect(merged.pois).toEqual([expect.objectContaining({
+      poi_id: "sky-garden-id", name: "Sky Garden", localized_name: "空中花園",
+      latitude: 51.5112422, longitude: -0.0835493,
+    })]);
+  });
+
+  it("matches a location update through a hashed human-reviewed name alias", () => {
+    const existing = [{
+      poi_id: "reviewed-id", city_id: "city-salzburg", name: "Grocery store", localized_name: null,
+      original_name: "Grocery store", category: "Unclassified" as const, subcategory: "unclassified",
+      latitude: 47.8, longitude: 13.05, review_status: "provisional_owner_assumption",
+    }, {
+      poi_id: "unreviewed-duplicate", city_id: "city-salzburg", name: "Mega Star Kebab", localized_name: null,
+      original_name: "Mega Star Kebab", category: "Unclassified" as const, subcategory: "unclassified",
+      latitude: 47.8105, longitude: 13.0615, review_status: "provisional_owner_assumption",
+    }];
+    const manual = [{
+      manual_id: "manual-id", city_id: "city-salzburg", name: "Mega Star Kebab", localized_name: null,
+      latitude: 47.8105643, longitude: 13.0615841, operation: "location_update" as const,
+      source_status: "owner_confirmed_visit" as const,
+    }];
+    const aliases = new Map([["reviewed-id", new Set([manualPoiNameHash("Mega Star Kebab")])]]);
+    const merged = mergeManualPoiReferences(existing, manual, aliases);
+    expect(merged).toEqual(expect.objectContaining({ added: 0, updated: 1, deduplicated: 1 }));
+    expect(merged.pois).toEqual([expect.objectContaining({
+      poi_id: "reviewed-id", name: "Mega Star Kebab",
+      latitude: 47.8105643, longitude: 13.0615841,
+    })]);
+  });
+
+  it("prefers an exact manual identity and removes its reviewed name duplicate", () => {
+    const existing = [{
+      poi_id: "manual-id", city_id: "city-rome", name: "Corrected Place", localized_name: null,
+      original_name: "Corrected Place", category: "Unclassified" as const, subcategory: "owner_confirmed_visit",
+      latitude: 41.90, longitude: 12.46, review_status: "provisional_owner_assumption",
+    }, {
+      poi_id: "searched-id", city_id: "city-rome", name: "Corrected Place", localized_name: null,
+      original_name: "Corrected Place", category: "Unclassified" as const, subcategory: "unclassified",
+      latitude: 41.91, longitude: 12.47, review_status: "provisional_owner_assumption",
+    }];
+    const aliases = new Map([
+      ["manual-id", new Set([manualPoiNameHash("Corrected Place")])],
+      ["searched-id", new Set([manualPoiNameHash("Corrected Place")])],
+    ]);
+    const merged = mergeManualPoiReferences(existing, [{
+      manual_id: "manual-id", city_id: "city-rome", name: "Corrected Place", localized_name: null,
+      latitude: 41.905, longitude: 12.465, operation: "location_update",
+      source_status: "owner_confirmed_visit",
+    }], aliases);
+    expect(merged).toEqual(expect.objectContaining({ added: 0, updated: 1, deduplicated: 1 }));
+    expect(merged.pois).toEqual([expect.objectContaining({
+      poi_id: "manual-id", latitude: 41.905, longitude: 12.465,
+    })]);
+  });
+
+  it("protects accepted Keep POIs while allowing discarded candidates to be removed", () => {
+    const base = {
+      city_id: "city-munich", localized_name: null, original_name: "Place",
+      category: "Unclassified" as const, subcategory: "unclassified",
+      longitude: 11.575, review_status: "provisional_owner_assumption",
+    };
+    const result = prunePublicPoiReferences([
+      { ...base, poi_id: "retail", name: "dm-drogerie markt", latitude: 48.137 },
+      { ...base, poi_id: "attraction", name: "Museum", category: "Attraction", latitude: 48.138 },
+      { ...base, poi_id: "dense", name: "Nearby search", latitude: 48.13805 },
+      { ...base, poi_id: "manual", name: "Owner place", subcategory: "owner_confirmed_visit", latitude: 48.13806 },
+      { ...base, poi_id: "reviewed", name: "Reviewed place", latitude: 48.13807 },
+      { ...base, poi_id: "reviewed-retail", name: "dm-drogerie reviewed", latitude: 48.13808 },
+      { ...base, poi_id: "reviewed-discard", name: "Reviewed discard", latitude: 48.13809 },
+    ], 15, new Set(["reviewed", "reviewed-retail"]));
+    expect(result).toEqual(expect.objectContaining({ retailRemoved: 1, denseRemoved: 2 }));
+    expect(result.pois.map(({ poi_id }) => poi_id).sort()).toEqual([
+      "attraction", "manual", "reviewed", "reviewed-retail",
+    ]);
+  });
+
+  it("keeps review dispositions disjoint in the generated POI dataset", async () => {
+    const parsedRoot = resolve(import.meta.dirname, "..", "..", "data", "parsed");
+    const [pois, reviewedIds, discardedIds, recheckIds] = await Promise.all([
+      readFile(resolve(parsedRoot, "poi_reference.json"), "utf8").then(JSON.parse) as Promise<Array<{
+        poi_id: string;
+        review_status: string;
+      }>>,
+      readFile(resolve(parsedRoot, "poi_reviewed_ids.json"), "utf8").then(JSON.parse) as Promise<string[]>,
+      readFile(resolve(parsedRoot, "poi_discarded_ids.json"), "utf8").then(JSON.parse) as Promise<string[]>,
+      readFile(resolve(parsedRoot, "poi_coordinate_recheck_ids.json"), "utf8").then(JSON.parse) as Promise<string[]>,
+    ]);
+    const poiIds = new Set(pois.map(({ poi_id }) => poi_id));
+
+    expect(reviewedIds.length).toBeGreaterThan(0);
+    expect(discardedIds.length).toBeGreaterThan(0);
+    expect(recheckIds.length).toBeGreaterThan(0);
+    const privacyExcludedReviewedIds = reviewedIds.filter((poiId) => !poiIds.has(poiId));
+    expect(privacyExcludedReviewedIds).toEqual([
+      "unclassified-searched-poi-344a9fd840ab50",
+      "unclassified-searched-poi-3b1a2917bd8d69",
+    ]);
+    expect(discardedIds.every((poiId) => !poiIds.has(poiId))).toBe(true);
+    expect(recheckIds.every((poiId) => !poiIds.has(poiId))).toBe(true);
+    expect(recheckIds.every((poiId) => pois.some((poi) => (
+      poi.poi_id === `${poiId}-coordinate-review`
+      && (poi.review_status === "needs_review" || reviewedIds.includes(poi.poi_id))
+    )) || discardedIds.includes(`${poiId}-coordinate-review`))).toBe(true);
+  });
+
+  it("exports the owner-confirmed Marché Aux Fleurs coordinate", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ name: string; latitude: number; longitude: number }>;
+    expect(pois.find(({ name }) => name === "Marché Aux Fleurs - Cours Saleya - Nice"))
+      .toEqual(expect.objectContaining({ latitude: 43.6955865, longitude: 7.274994 }));
+  });
+
+  it("updates a reviewed coordinate target and removes its Google Place duplicate", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ poi_id: string; name: string; latitude: number; longitude: number }>;
+    const squareLeclerc = pois.filter(({ name }) => name === "Square leclerc");
+    expect(squareLeclerc).toEqual([expect.objectContaining({
+      poi_id: "unclassified-searched-poi-b386a0212161a6",
+      latitude: 43.6979598,
+      longitude: 7.2739839,
+    })]);
+  });
+
+  it("exports the owner-confirmed Place Kléber coordinate", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ localized_name: string | null; latitude: number; longitude: number }>;
+    expect(pois.find(({ localized_name: localizedName }) => localizedName === "克勒貝爾廣場"))
+      .toEqual(expect.objectContaining({ latitude: 48.5835411, longitude: 7.7457536 }));
+  });
+
+  it("exports Dublin OSM matches as explicit owner-review candidates", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ city_id: string; review_status: string }>;
+    const dublin = pois.filter(({ city_id: cityId }) => cityId === "city-dublin");
+    expect(dublin.length).toBeGreaterThanOrEqual(12);
+    expect(dublin.filter(({ review_status: reviewStatus }) => reviewStatus === "needs_review").length)
+      .toBeGreaterThanOrEqual(12);
+  });
+
+  it("exports the search-confirmed Howth and Malahide review candidates", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ city_id: string; name: string; review_status: string }>;
+    const coastalDublinNames = pois
+      .filter(({ city_id: cityId, name }) => cityId === "city-dublin"
+        && ["Howth", "Howth-Boats", "Malahide Beach", "Malahide Train Station"].includes(name))
+      .map(({ name }) => name)
+      .sort();
+
+    expect(coastalDublinNames).toEqual([
+      "Howth",
+      "Howth-Boats",
+      "Malahide Beach",
+      "Malahide Train Station",
+    ]);
+  });
+
+  it("exports search-confirmed London candidates from both Visits for owner review", async () => {
+    const pois = JSON.parse(await readFile(
+      resolve(import.meta.dirname, "..", "..", "data", "parsed", "poi_reference.json"),
+      "utf8",
+    )) as Array<{ city_id: string; name: string; review_status: string }>;
+    const london = pois.filter(({ city_id: cityId }) => cityId === "city-london");
+
+    expect(london.length).toBeGreaterThanOrEqual(26);
+    expect(london).toEqual(expect.arrayContaining([
+      expect.objectContaining({ name: "Buckingham Palace", review_status: "needs_review" }),
+      expect.objectContaining({ name: "Tower Bridge", review_status: "needs_review" }),
+      expect.objectContaining({ name: "British Museum", review_status: "needs_review" }),
+      expect.objectContaining({ name: "Natural History Museum", review_status: "needs_review" }),
+    ]));
   });
 
   it("matches attraction names against reviewed OSM aliases conservatively", () => {
@@ -128,6 +472,21 @@ describe("POI review preprocessing", () => {
       rawSignals: [{ position: { LatLng: "48.0003°, 11.0003°", timestamp: "2025-10-01T10:02:00Z", accuracyMeters: 8 } }],
     });
     expect(evidence.map((point) => point.source)).toEqual(["semantic_visit", "timeline_path", "raw_position"]);
+  });
+
+  it("preserves western longitudes in Timeline recovery evidence", () => {
+    const evidence = collectTimelineEvidence({
+      semanticSegments: [{
+        startTime: "2026-03-23T01:00:00+08:00",
+        timelinePath: [{ point: "53.3892245°, -6.0752956°", time: "2026-03-23T01:03:00+08:00" }],
+        visit: { topCandidate: { placeLocation: { latLng: "53.3890036°, -6.0741398°" } } },
+      }],
+    });
+
+    expect(evidence).toEqual([
+      expect.objectContaining({ latitude: 53.3890036, longitude: -6.0741398, source: "semantic_visit" }),
+      expect.objectContaining({ latitude: 53.3892245, longitude: -6.0752956, source: "timeline_path" }),
+    ]);
   });
 
   it("uses the Google display name and recovers a searched attraction when later Timeline evidence is nearby", () => {
@@ -170,7 +529,124 @@ describe("POI review preprocessing", () => {
     })]);
   });
 
-  it("does not recover an attraction from viewport coordinates or pre-search movement alone", () => {
+  it("does not create a POI from the Google Maps Current location placeholder", () => {
+    const cities: TravelCity[] = [{
+      id: "munich", name: "Munich", countryId: "germany",
+      location: { latitude: 48.137, longitude: 11.575 },
+    }];
+    expect(recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Current location",
+        url: "https://www.google.com/maps/dir/Test/@48.137,11.575,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: [],
+      }],
+      cities,
+      snapshots: new Map([["munich", { features: [] }]]),
+      evidence: [{
+        latitude: 48.137, longitude: 11.575,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    })).toEqual([]);
+  });
+
+  it("uses an exact citywide OSM name match when the Google Maps viewport is displaced", () => {
+    const cities: TravelCity[] = [{
+      id: "marseille", name: "Marseille", countryId: "france",
+      location: { latitude: 43.302, longitude: 5.38 },
+    }];
+    const rows = recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Plage de Maldormé",
+        url: "https://www.google.com/maps/dir/Test/@43.2935733,5.3755849,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: [],
+      }],
+      cities,
+      snapshots: new Map([["marseille", { features: [{
+        osmId: "way/97284416", osmUrl: "https://www.openstreetmap.org/way/97284416",
+        name: "Plage de Maldormé", category: "Attraction", subcategory: "beach",
+        latitude: 43.2804479, longitude: 5.350204, tags: { natural: "beach" },
+      }] }]]),
+      evidence: [{
+        latitude: 43.2935733, longitude: 5.3755849,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }, {
+        latitude: 43.2805, longitude: 5.3503,
+        occurredAt: "2026-03-01T12:00:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    });
+    expect(rows).toEqual([expect.objectContaining({
+      name: "Plage de Maldormé",
+      category: "Attraction",
+      latitude: 43.2804479,
+      longitude: 5.350204,
+    })]);
+  });
+
+  it("uses a unique identity-backed Station coordinate without reclassifying it as an Attraction", () => {
+    const cities: TravelCity[] = [{
+      id: "munich", name: "Munich", countryId: "germany",
+      location: { latitude: 48.2, longitude: 11.7 },
+    }];
+    const rows = recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Test Station",
+        url: "https://www.google.com/maps/dir/Test/@48.2,11.7,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: ["place-1"],
+      }],
+      cities,
+      snapshots: new Map([["munich", { features: [{
+        osmId: "node/station", osmUrl: "https://www.openstreetmap.org/node/station",
+        name: "Test Station", category: "Station", subcategory: "station",
+        latitude: 48.1, longitude: 11.5, tags: { railway: "station" },
+      }] }]]),
+      evidence: [{
+        latitude: 48.2, longitude: 11.7,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    });
+    expect(rows).toEqual([expect.objectContaining({
+      category: "Unclassified",
+      osmId: "",
+      latitude: 48.1,
+      longitude: 11.5,
+    })]);
+  });
+
+  it("does not move an identity-backed Restaurant to a distant same-name branch", () => {
+    const cities: TravelCity[] = [{
+      id: "munich", name: "Munich", countryId: "germany",
+      location: { latitude: 48.2, longitude: 11.7 },
+    }];
+    const rows = recoverSearchedPois({
+      activities: [{
+        activityId: "activity-1", action: "directions", title: "Branch Restaurant",
+        url: "https://www.google.com/maps/dir/Test/@48.2,11.7,15z",
+        occurredAt: "2026-03-01T10:00:00Z", googlePlaceIds: ["place-1"],
+      }],
+      cities,
+      snapshots: new Map([["munich", { features: [{
+        osmId: "node/restaurant", osmUrl: "https://www.openstreetmap.org/node/restaurant",
+        name: "Branch Restaurant", category: "Restaurant", subcategory: "restaurant",
+        latitude: 48.1, longitude: 11.5, tags: { amenity: "restaurant" },
+      }] }]]),
+      evidence: [{
+        latitude: 48.2, longitude: 11.7,
+        occurredAt: "2026-03-01T10:10:00Z", source: "timeline_path", accuracyMeters: null,
+      }],
+      existingPois: [],
+    });
+    expect(rows).toEqual([expect.objectContaining({
+      category: "Unclassified",
+      osmId: "",
+      latitude: 48.2,
+      longitude: 11.7,
+    })]);
+  });
+
+  it("accepts in-period proximity evidence even when movement preceded the search", () => {
     const cities: TravelCity[] = [{ id: "munich", name: "Munich", countryId: "germany", location: { latitude: 48.137, longitude: 11.575 } }];
     const rows = recoverSearchedPois({
       activities: [{
@@ -187,7 +663,10 @@ describe("POI review preprocessing", () => {
       evidence: [{ latitude: 48.137, longitude: 11.575, occurredAt: "2025-10-01T09:00:00Z", source: "timeline_path", accuracyMeters: null }],
       existingPois: [],
     });
-    expect(rows).toEqual([]);
+    expect(rows).toEqual([expect.objectContaining({
+      name: "Test Museum",
+      evidenceConfidence: "high",
+    })]);
   });
 
   it("extracts the place name after a city prefix in a Maps display title", () => {

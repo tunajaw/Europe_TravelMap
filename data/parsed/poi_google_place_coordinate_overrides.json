@@ -1,0 +1,27 @@
+[
+  {
+    "google_place_id": "0x12cddb055c4fe4bd:0x1138a84037403971",
+    "city_id": "city-nice",
+    "name": "Marché Aux Fleurs - Cours Saleya - Nice",
+    "latitude": 43.6955865,
+    "longitude": 7.274994,
+    "source_status": "owner_confirmed_google_maps_link"
+  },
+  {
+    "google_place_id": "0x12cdd11caf5c37d9:0xef437f708e2a93d5",
+    "target_poi_id": "unclassified-searched-poi-b386a0212161a6",
+    "city_id": "city-nice",
+    "name": "Square leclerc",
+    "latitude": 43.6979598,
+    "longitude": 7.2739839,
+    "source_status": "owner_confirmed_google_maps_link"
+  },
+  {
+    "google_place_id": "0x4796c84dc105530d:0xca417f6e8a32042a",
+    "city_id": "city-strasbourg",
+    "name": "克勒貝爾廣場",
+    "latitude": 48.5835411,
+    "longitude": 7.7457536,
+    "source_status": "owner_confirmed_google_maps_link"
+  }
+]

@@ -37,6 +37,11 @@ for (const photo of data.photos) {
 if ((data.cityContexts?.length ?? 0) !== data.cities.length) {
   throw new Error('Public City Map contexts do not cover every Travel Map City');
 }
+if ((data.pois ?? []).some(({ category }) => ![
+  'Attraction', 'Shop', 'Restaurant', 'Accommodation', 'Transportation',
+].includes(category))) {
+  throw new Error('Public City Map contains an unsupported reviewed POI category');
+}
 
 const serialized = JSON.stringify(data);
 for (const forbidden of ['住宿地址', '名稱(如有)', 'candidate_label', 'geocode_query']) {
