@@ -26,11 +26,10 @@ import {
 const data = TravelDataSchema.parse(source);
 const city = data.cities.find((candidate) => {
   const categories = new Set((data.pois ?? []).filter((poi) => poi.cityId === candidate.id).map((poi) => poi.category));
-  return categories.has('Attraction') && categories.has('Unclassified');
+  return categories.size >= 2;
 }) ?? data.cities.find((candidate) => (data.pois ?? []).some((poi) => poi.cityId === candidate.id))!;
 const cityPois = (data.pois ?? []).filter((poi) => poi.cityId === city.id);
-const attractionPois = cityPois.filter((poi) => poi.category === 'Attraction');
-const unclassifiedPois = cityPois.filter((poi) => poi.category === 'Unclassified');
+const cityCategories = [...new Set(cityPois.map((poi) => poi.category))];
 const cityWithoutPois = data.cities.find((candidate) => !(data.pois ?? []).some((poi) => poi.cityId === candidate.id))!;
 
 beforeEach(() => {
@@ -178,8 +177,10 @@ describe('FR-MAP-10 City Attraction Map', () => {
     const user = userEvent.setup();
     const { container } = render(<CountryExplorer data={data} />);
     expect(screen.getByRole('group', { name: `${city.name} city map` })).toBeInTheDocument();
-    expect(screen.queryAllByTestId('attraction-marker')).toHaveLength(attractionPois.length);
-    expect(screen.queryAllByTestId('unclassified-marker')).toHaveLength(unclassifiedPois.length);
+    for (const category of cityCategories) {
+      expect(screen.queryAllByTestId(`poi-marker-${category.toLowerCase()}`))
+        .toHaveLength(cityPois.filter((poi) => poi.category === category).length);
+    }
     expect(screen.getByTestId('city-boundary')).toBeInTheDocument();
     expect(container.querySelector('.city-attraction-map text')).not.toBeInTheDocument();
 
@@ -193,10 +194,10 @@ describe('FR-MAP-10 City Attraction Map', () => {
     await user.unhover(marker);
     expect(within(metadata).getByText(poi.name)).toBeInTheDocument();
 
-    if (unclassifiedPois.length > 0) {
-      await user.click(screen.getByRole('checkbox', { name: 'Unclassified' }));
-      expect(screen.queryAllByTestId('unclassified-marker')).toHaveLength(0);
-      expect(screen.queryAllByTestId('attraction-marker')).toHaveLength(attractionPois.length);
+    const filterCategory = cityCategories.find((category) => category !== 'Attraction') ?? cityCategories[0];
+    if (filterCategory) {
+      await user.click(screen.getByRole('checkbox', { name: filterCategory }));
+      expect(screen.queryAllByTestId(`poi-marker-${filterCategory.toLowerCase()}`)).toHaveLength(0);
     }
   });
 
@@ -214,6 +215,21 @@ describe('FR-MAP-10 City Attraction Map', () => {
     const metadata = screen.getByRole('region', { name: 'POI metadata' });
     expect(within(metadata).getByRole('heading', { name: 'English place name' })).toBeInTheDocument();
     expect(within(metadata).getByText('中文地名')).toHaveClass('poi-localized-name');
+  });
+
+  it('does not expose internal preprocessing annotations in POI metadata', async () => {
+    const user = userEvent.setup();
+    const poi = cityPois[0]!;
+    const annotatedData: TravelData = {
+      ...data,
+      pois: (data.pois ?? []).map((candidate) => candidate.id === poi.id
+        ? { ...candidate, subcategory: 'owner_confirmed_visit' }
+        : candidate),
+    };
+    render(<CountryExplorer data={annotatedData} />);
+    await user.hover(screen.getByRole('button', { name: poi.name }));
+    const metadata = screen.getByRole('region', { name: 'POI metadata' });
+    expect(within(metadata).queryByText('owner_confirmed_visit')).not.toBeInTheDocument();
   });
 
   it('zooms from a Shift-dragged box and can reset to the initial City viewport', async () => {

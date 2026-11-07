@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.5.0",
+  "schemaVersion": "1.6.0",
   "travelPeriod": {
     "start": "2025-09-30",
     "end": "2026-04-30"
@@ -5664,7 +5664,7 @@
       "cityId": "city-aachen",
       "name": "Aachen Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.76816,
@@ -5677,7 +5677,7 @@
       "cityId": "city-aachen",
       "name": "Aachener Altstadt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.7744116,
@@ -5703,7 +5703,7 @@
       "cityId": "city-aachen",
       "name": "Katschhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.7753768,
@@ -5716,7 +5716,7 @@
       "cityId": "city-aachen",
       "name": "RWTH Aachen University",
       "localizedName": "亞琛工業大學",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.7775413,
@@ -5729,7 +5729,7 @@
       "cityId": "city-amsterdam",
       "name": "Amsterdam Sloterdijk",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3890317,
@@ -5742,7 +5742,7 @@
       "cityId": "city-amsterdam",
       "name": "Fabel Friet Oude Hoogstraat",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3712792,
@@ -5755,7 +5755,7 @@
       "cityId": "city-amsterdam",
       "name": "Fantasyshop Chimera",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3723226,
@@ -5768,7 +5768,7 @@
       "cityId": "city-amsterdam",
       "name": "Fishmongers Albert Cuyp",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3556303,
@@ -5781,7 +5781,7 @@
       "cityId": "city-amsterdam",
       "name": "Frites du Nord",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.402057,
@@ -5794,7 +5794,7 @@
       "cityId": "city-amsterdam",
       "name": "Isolatorweg",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3951713,
@@ -5807,7 +5807,7 @@
       "cityId": "city-amsterdam",
       "name": "Montelbaanstoren",
       "localizedName": "阿姆斯特丹荷蘭",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3725373,
@@ -5833,7 +5833,7 @@
       "cityId": "city-amsterdam",
       "name": "NEMO Science Museum",
       "localizedName": "NEMO博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3745548,
@@ -5846,7 +5846,7 @@
       "cityId": "city-amsterdam",
       "name": "Nieuwmarkt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3722981,
@@ -5859,7 +5859,7 @@
       "cityId": "city-amsterdam",
       "name": "Public urinal (curl)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3730826,
@@ -5872,7 +5872,7 @@
       "cityId": "city-amsterdam",
       "name": "Red Light View",
       "localizedName": "紅燈區",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3736815,
@@ -5911,7 +5911,7 @@
       "cityId": "city-amsterdam",
       "name": "Waterlooplein",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3673901,
@@ -5924,7 +5924,7 @@
       "cityId": "city-amsterdam",
       "name": "Westerstraat 12",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3767306,
@@ -5937,7 +5937,7 @@
       "cityId": "city-andorra",
       "name": "CCA Centre Comercial Andorrà - Super U",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 42.5092482,
@@ -5950,7 +5950,7 @@
       "cityId": "city-andorra",
       "name": "Centre Comercial Illa Carlemany",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 42.5092778,
@@ -5963,7 +5963,7 @@
       "cityId": "city-andorra",
       "name": "Freegun shop andorra",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 42.5082887,
@@ -5976,7 +5976,7 @@
       "cityId": "city-andorra",
       "name": "HOTEL SANT ELOI",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 42.4583921,
@@ -5989,7 +5989,7 @@
       "cityId": "city-andorra",
       "name": "HOTEL SANT ELOI",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 42.4817042,
@@ -6002,7 +6002,7 @@
       "cityId": "city-andorra",
       "name": "La Noblesse du Temps",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 42.5088189,
@@ -6028,7 +6028,7 @@
       "cityId": "city-andorra",
       "name": "Pont Tibetà Canillo",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 42.5765663,
@@ -6041,7 +6041,7 @@
       "cityId": "city-bad-camberg",
       "name": "Altstadt Bad Camberg",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.2981026,
@@ -6054,7 +6054,7 @@
       "cityId": "city-bad-camberg",
       "name": "Bad Camberg Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.2968219,
@@ -6067,7 +6067,7 @@
       "cityId": "city-bad-tolz",
       "name": "Bad Tölz historic old town",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7609509,
@@ -6080,7 +6080,7 @@
       "cityId": "city-bad-tolz",
       "name": "Blombergbahn Bad Tölz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.7474934,
@@ -6093,7 +6093,7 @@
       "cityId": "city-bad-tolz",
       "name": "Isar bei Tölz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.7617003,
@@ -6106,7 +6106,7 @@
       "cityId": "city-baden-baden",
       "name": "Baden-Baden Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.7901656,
@@ -6119,7 +6119,7 @@
       "cityId": "city-baden-baden",
       "name": "Casino Baden-Baden",
       "localizedName": "巴登巴登賭場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.7602042,
@@ -6132,7 +6132,7 @@
       "cityId": "city-baden-baden",
       "name": "Friedrichsbad - Das Römisch-Irische Bad",
       "localizedName": "弗里德里希浴場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.7629938,
@@ -6145,7 +6145,7 @@
       "cityId": "city-baden-baden",
       "name": "Historische Altstadt Baden-Baden",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.7610938,
@@ -6158,7 +6158,7 @@
       "cityId": "city-baden-baden",
       "name": "Schach Kebab - Döner & Pizza",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.7907214,
@@ -6171,7 +6171,7 @@
       "cityId": "city-baden-baden",
       "name": "Trinkhalle",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.7618497,
@@ -6184,7 +6184,7 @@
       "cityId": "city-bamberg",
       "name": "Altes Rathaus",
       "localizedName": "老市政廳",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.8916449,
@@ -6197,7 +6197,7 @@
       "cityId": "city-bamberg",
       "name": "Bamberg Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.9006305,
@@ -6210,7 +6210,7 @@
       "cityId": "city-bamberg",
       "name": "Klein Venedig viewpoint",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.8928937,
@@ -6223,7 +6223,7 @@
       "cityId": "city-barcelona",
       "name": "100 Montaditos Tapas Raval",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3908003,
@@ -6236,7 +6236,7 @@
       "cityId": "city-barcelona",
       "name": "99 Cheesecake | Canuda",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3847702,
@@ -6262,7 +6262,7 @@
       "cityId": "city-barcelona",
       "name": "Barcelona - Terminal Nord",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.372408199999995,
@@ -6275,7 +6275,7 @@
       "cityId": "city-barcelona",
       "name": "Barcelona Airport (BCN)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.2875988,
@@ -6288,7 +6288,7 @@
       "cityId": "city-barcelona",
       "name": "Barceloneta",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.38209,
@@ -6301,7 +6301,7 @@
       "cityId": "city-barcelona",
       "name": "Carrer de Mallorca",
       "localizedName": "聖家堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.4036299,
@@ -6314,7 +6314,7 @@
       "cityId": "city-barcelona",
       "name": "Ciutadella Vila Olímpica",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3878165,
@@ -6327,7 +6327,7 @@
       "cityId": "city-barcelona",
       "name": "Cremeria Toscana",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.391385,
@@ -6340,7 +6340,7 @@
       "cityId": "city-barcelona",
       "name": "El Racó d'Urgell Bar Restaurant",
       "localizedName": "西班牙巴塞隆拿",
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3829065,
@@ -6353,7 +6353,7 @@
       "cityId": "city-barcelona",
       "name": "Florida",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3688074,
@@ -6366,7 +6366,7 @@
       "cityId": "city-barcelona",
       "name": "Font Màgica de Montjuïc",
       "localizedName": "魔幻噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 41.3711603,
@@ -6379,7 +6379,7 @@
       "cityId": "city-barcelona",
       "name": "GAME STATION",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3560617,
@@ -6418,7 +6418,7 @@
       "cityId": "city-barcelona",
       "name": "Liceu",
       "localizedName": null,
-      "category": "Attraction",
+      "category": "Transportation",
       "subcategory": "attraction",
       "location": {
         "latitude": 41.3812937,
@@ -6431,7 +6431,7 @@
       "cityId": "city-barcelona",
       "name": "Mercado de la boquería",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3817399,
@@ -6457,7 +6457,7 @@
       "cityId": "city-barcelona",
       "name": "Monument a Colom",
       "localizedName": "哥倫布紀念碑",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.37580868865141,
@@ -6470,7 +6470,7 @@
       "cityId": "city-barcelona",
       "name": "Nova Icaria beach",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3915564,
@@ -6483,7 +6483,7 @@
       "cityId": "city-barcelona",
       "name": "Parc Güell",
       "localizedName": "桂爾公園",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.414096,
@@ -6496,7 +6496,7 @@
       "cityId": "city-barcelona",
       "name": "Peu del Funicular",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.4090465,
@@ -6509,7 +6509,7 @@
       "cityId": "city-barcelona",
       "name": "Pg. de Gràcia",
       "localizedName": "巴特略之家",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3916047,
@@ -6522,7 +6522,7 @@
       "cityId": "city-barcelona",
       "name": "Pincho J",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3737144,
@@ -6535,7 +6535,7 @@
       "cityId": "city-barcelona",
       "name": "pizzeria napoletana 081",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3801928,
@@ -6548,7 +6548,7 @@
       "cityId": "city-barcelona",
       "name": "Plaça de Catalunya",
       "localizedName": "加泰羅尼亞廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.386865,
@@ -6574,7 +6574,7 @@
       "cityId": "city-barcelona",
       "name": "Popeyes",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3878177,
@@ -6587,7 +6587,7 @@
       "cityId": "city-barcelona",
       "name": "Rambla De Mar",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3758703,
@@ -6600,7 +6600,7 @@
       "cityId": "city-barcelona",
       "name": "Taco Bell",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3765605,
@@ -6613,7 +6613,7 @@
       "cityId": "city-barcelona",
       "name": "Xurreria Laietana",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.3864026,
@@ -6626,7 +6626,7 @@
       "cityId": "city-berchtesgaden",
       "name": "Salt Mine Berchtesgaden",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6378101,
@@ -6652,7 +6652,7 @@
       "cityId": "city-berlin",
       "name": "Alexanderplatz",
       "localizedName": "亞歷山大廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.5219814,
@@ -6665,7 +6665,7 @@
       "cityId": "city-berlin",
       "name": "Berlin Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.5250839,
@@ -6678,7 +6678,7 @@
       "cityId": "city-berlin",
       "name": "Berlin Nordbahnhof",
       "localizedName": "幽靈車站",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.5324907,
@@ -6691,7 +6691,7 @@
       "cityId": "city-berlin",
       "name": "Berliner Fernsehturm",
       "localizedName": "柏林電視塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.520815,
@@ -6704,7 +6704,7 @@
       "cityId": "city-berlin",
       "name": "Besucherzentrum der Gedenkstätte Berliner Mauer",
       "localizedName": "柏林圍牆紀念館遊客中心",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.5337772,
@@ -6717,7 +6717,7 @@
       "cityId": "city-berlin",
       "name": "Brandenburger Tor",
       "localizedName": "布蘭登堡門",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.5162746,
@@ -6730,7 +6730,7 @@
       "cityId": "city-berlin",
       "name": "Buckower Chaussee",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.4120301,
@@ -6756,7 +6756,7 @@
       "cityId": "city-berlin",
       "name": "East Side Gallery",
       "localizedName": "東邊畫廊",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.5050224,
@@ -6769,7 +6769,7 @@
       "cityId": "city-berlin",
       "name": "Flughafen Berlin Brandenburg Willy Brandt",
       "localizedName": "柏林布蘭登堡機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.3645625,
@@ -6782,7 +6782,7 @@
       "cityId": "city-berlin",
       "name": "Grillstand hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.5239059,
@@ -6795,7 +6795,7 @@
       "cityId": "city-berlin",
       "name": "HoYoverse Café",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.5239457,
@@ -6821,7 +6821,7 @@
       "cityId": "city-berlin",
       "name": "Neukölln",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.4749434,
@@ -6834,7 +6834,7 @@
       "cityId": "city-berlin",
       "name": "Reichstagsgebäude",
       "localizedName": "德國國會大廈",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.5186538,
@@ -6847,7 +6847,7 @@
       "cityId": "city-berlin",
       "name": "S+U Friedrichstr. Bhf (Berlin)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.5203,
@@ -6860,7 +6860,7 @@
       "cityId": "city-berlin",
       "name": "Scheers Schnitzel",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.5028152,
@@ -6873,7 +6873,7 @@
       "cityId": "city-berlin",
       "name": "Unter den Linden",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 52.5168975,
@@ -6886,7 +6886,7 @@
       "cityId": "city-bochum",
       "name": "Bochum Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.4784913,
@@ -6899,7 +6899,7 @@
       "cityId": "city-bochum",
       "name": "Lucky Noodle",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.4802445,
@@ -6925,7 +6925,7 @@
       "cityId": "city-bremen",
       "name": "Bremen Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.0832972,
@@ -6938,7 +6938,7 @@
       "cityId": "city-bremen",
       "name": "Markthalle Acht",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 53.0762455,
@@ -6951,7 +6951,7 @@
       "cityId": "city-bremen",
       "name": "Schnoor Bremen",
       "localizedName": "施諾爾區",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.072639,
@@ -6964,7 +6964,7 @@
       "cityId": "city-bremen",
       "name": "St. Petri Dom Bremen",
       "localizedName": "不萊梅主教座堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.0755426,
@@ -6990,7 +6990,7 @@
       "cityId": "city-brugge",
       "name": "be house",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2152991,
@@ -7003,7 +7003,7 @@
       "cityId": "city-brugge",
       "name": "Carrefour market SCHEEPSDALE",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.216236,
@@ -7016,7 +7016,7 @@
       "cityId": "city-brugge",
       "name": "Market Square",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2086881,
@@ -7029,7 +7029,7 @@
       "cityId": "city-brugge",
       "name": "Station Brugge",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.1971966,
@@ -7042,7 +7042,7 @@
       "cityId": "city-brussels",
       "name": "Bruxelles-Nord",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.8603166,
@@ -7055,7 +7055,7 @@
       "cityId": "city-brussels",
       "name": "Frites Atelier",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.8473563,
@@ -7068,7 +7068,7 @@
       "cityId": "city-brussels",
       "name": "Galeries Royales Saint Hubert",
       "localizedName": "聖休伯特拱廊街",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.8480832,
@@ -7081,7 +7081,7 @@
       "cityId": "city-brussels",
       "name": "Gare Centrale Centraal Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.8465485,
@@ -7094,7 +7094,7 @@
       "cityId": "city-brussels",
       "name": "Grand-Place",
       "localizedName": "布魯塞爾大廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.8467887,
@@ -7107,7 +7107,7 @@
       "cityId": "city-brussels",
       "name": "Jeanneke Pis",
       "localizedName": "尿尿小妹",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.8484807,
@@ -7120,7 +7120,7 @@
       "cityId": "city-brussels",
       "name": "Le Roi de la Gaufre",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.848522,
@@ -7146,7 +7146,7 @@
       "cityId": "city-bucharest",
       "name": "Aeroportul Internațional Aurel Vlaicu",
       "localizedName": "布加勒斯特伯尼亞薩／奧雷爾·弗拉伊庫國際機場 (BBU)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 44.4961273,
@@ -7159,7 +7159,7 @@
       "cityId": "city-bucharest",
       "name": "Aeroportul Internațional Henri Coandă București",
       "localizedName": "布加勒斯特奧托佩尼－亨利·科安德國際機場 (OTP)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 44.5685142,
@@ -7172,7 +7172,7 @@
       "cityId": "city-bucharest",
       "name": "Biserica Mănăstirii \"Stavropoleos\"",
       "localizedName": "斯塔弗羅波萊奧斯修道院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 44.4322234,
@@ -7185,7 +7185,7 @@
       "cityId": "city-bucharest",
       "name": "Fornetti Unirii",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 44.4281694,
@@ -7211,7 +7211,7 @@
       "cityId": "city-bucharest",
       "name": "Piata Unirii Cozy Inn",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 44.4311952,
@@ -7224,7 +7224,7 @@
       "cityId": "city-budapest",
       "name": "Batthyány tér",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5071525,
@@ -7237,7 +7237,7 @@
       "cityId": "city-budapest",
       "name": "Boráros tér",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4787204,
@@ -7250,7 +7250,7 @@
       "cityId": "city-budapest",
       "name": "Budapest Népliget bus station",
       "localizedName": "布達佩斯",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4743608,
@@ -7263,7 +7263,7 @@
       "cityId": "city-budapest",
       "name": "Childrens' Railway Museum",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5412133,
@@ -7276,7 +7276,7 @@
       "cityId": "city-budapest",
       "name": "Deák Ferenc tér",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4983508,
@@ -7289,7 +7289,7 @@
       "cityId": "city-budapest",
       "name": "Fashion Street",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4967707,
@@ -7302,7 +7302,7 @@
       "cityId": "city-budapest",
       "name": "Fitzkey kürtőskalács",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5077259,
@@ -7315,7 +7315,7 @@
       "cityId": "city-budapest",
       "name": "Gilde étterem és panzió",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.619506,
@@ -7341,7 +7341,7 @@
       "cityId": "city-budapest",
       "name": "Ildikó Konyhája",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.499628,
@@ -7367,7 +7367,7 @@
       "cityId": "city-budapest",
       "name": "Kossuth Lajos tér",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5057199,
@@ -7380,7 +7380,7 @@
       "cityId": "city-budapest",
       "name": "Labyrinth",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5001434,
@@ -7393,7 +7393,7 @@
       "cityId": "city-budapest",
       "name": "Lehel Market",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5176062,
@@ -7406,7 +7406,7 @@
       "cityId": "city-budapest",
       "name": "McDonald's",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5099173,
@@ -7419,7 +7419,7 @@
       "cityId": "city-budapest",
       "name": "Müpa - Nemzeti Színház",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4695473,
@@ -7445,7 +7445,7 @@
       "cityId": "city-budapest",
       "name": "Nyugati railway station",
       "localizedName": null,
-      "category": "Attraction",
+      "category": "Transportation",
       "subcategory": "building",
       "location": {
         "latitude": 47.5105063,
@@ -7458,7 +7458,7 @@
       "cityId": "city-budapest",
       "name": "Pilisvörösvár",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6143961,
@@ -7471,7 +7471,7 @@
       "cityId": "city-budapest",
       "name": "Széchenyihegy",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4972532,
@@ -7484,7 +7484,7 @@
       "cityId": "city-budapest",
       "name": "Szent Lukács Gyógyfürdő",
       "localizedName": "聖盧卡奇溫泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5177775,
@@ -7497,7 +7497,7 @@
       "cityId": "city-budapest",
       "name": "Sziklakórház Atombunker Múzeum",
       "localizedName": "岩石醫院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5008483,
@@ -7510,7 +7510,7 @@
       "cityId": "city-budapest",
       "name": "TRAVIS’ TENDERS ASTORIA",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4956359,
@@ -7523,7 +7523,7 @@
       "cityId": "city-colmar",
       "name": "Au Chasseur",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0770799,
@@ -7536,7 +7536,7 @@
       "cityId": "city-colmar",
       "name": "Bibliothèque",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0775183,
@@ -7549,7 +7549,7 @@
       "cityId": "city-colmar",
       "name": "City Hall of Colmar",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0794357,
@@ -7562,7 +7562,7 @@
       "cityId": "city-colmar",
       "name": "L'Ardoise",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0748271,
@@ -7575,7 +7575,7 @@
       "cityId": "city-colmar",
       "name": "La Petite Venise",
       "localizedName": "小威尼斯",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0745055,
@@ -7588,7 +7588,7 @@
       "cityId": "city-colmar",
       "name": "Library of the Dominicans",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0786509,
@@ -7601,7 +7601,7 @@
       "cityId": "city-colmar",
       "name": "Quai de la Poissonnerie Colmar",
       "localizedName": "小威尼斯",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0744694,
@@ -7614,7 +7614,7 @@
       "cityId": "city-cologne",
       "name": "Bonn Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.7335181,
@@ -7627,7 +7627,7 @@
       "cityId": "city-cologne",
       "name": "Köln Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.9427839,
@@ -7640,7 +7640,7 @@
       "cityId": "city-cologne",
       "name": "Kölner Dom",
       "localizedName": "科隆主教座堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.9412784,
@@ -7653,7 +7653,7 @@
       "cityId": "city-den-haag",
       "name": "Buitenhof Herring Stall",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.079374,
@@ -7666,7 +7666,7 @@
       "cityId": "city-den-haag",
       "name": "Den Haag Centraal",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.0808443,
@@ -7679,7 +7679,7 @@
       "cityId": "city-den-haag",
       "name": "Mauritshuis",
       "localizedName": "莫瑞泰斯皇家美術館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.0802957,
@@ -7692,7 +7692,7 @@
       "cityId": "city-dortmund",
       "name": "Dortmund-Hörde",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.4877621,
@@ -7705,7 +7705,7 @@
       "cityId": "city-dortmund",
       "name": "Phönixsee",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.4893326,
@@ -7718,7 +7718,7 @@
       "cityId": "city-dresden",
       "name": "Dresden Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.0402452,
@@ -7731,7 +7731,7 @@
       "cityId": "city-dresden",
       "name": "Dresdner Molkerei Gebrüder Pfund GmbH",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.0637639,
@@ -7744,7 +7744,7 @@
       "cityId": "city-dresden",
       "name": "Dresdner Zwinger",
       "localizedName": "茨溫格宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.05291441459023,
@@ -7757,7 +7757,7 @@
       "cityId": "city-dublin",
       "name": "半分橋",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.3465188,
@@ -7770,7 +7770,7 @@
       "cityId": "city-dublin",
       "name": "Connolly",
       "localizedName": null,
-      "category": "Attraction",
+      "category": "Transportation",
       "subcategory": "yes",
       "location": {
         "latitude": 53.3516998,
@@ -7783,7 +7783,7 @@
       "cityId": "city-dublin",
       "name": "Dublin Airport (DUB)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.4277506,
@@ -7796,7 +7796,7 @@
       "cityId": "city-dublin",
       "name": "Dunnes Stores",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "department_store",
       "location": {
         "latitude": 53.3397653,
@@ -7809,7 +7809,7 @@
       "cityId": "city-dublin",
       "name": "Fortune Terrace Buffet",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "restaurant",
       "location": {
         "latitude": 53.3513969,
@@ -7822,7 +7822,7 @@
       "cityId": "city-dublin",
       "name": "Grafton Street",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.3439678,
@@ -7835,7 +7835,7 @@
       "cityId": "city-dublin",
       "name": "Howth",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.3889421,
@@ -7848,7 +7848,7 @@
       "cityId": "city-dublin",
       "name": "Howth-Boats",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.3906115,
@@ -7861,7 +7861,7 @@
       "cityId": "city-dublin",
       "name": "ILAC Centre",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "mall",
       "location": {
         "latitude": 53.3499978,
@@ -7874,7 +7874,7 @@
       "cityId": "city-dublin",
       "name": "Malahide Beach",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.4508525,
@@ -7887,7 +7887,7 @@
       "cityId": "city-dublin",
       "name": "Malahide Train Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.4506807,
@@ -7900,7 +7900,7 @@
       "cityId": "city-dublin",
       "name": "Molly Malone Statue",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.34377266701537,
@@ -7913,7 +7913,7 @@
       "cityId": "city-dublin",
       "name": "Seal watching spot",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 53.3907477,
@@ -7926,7 +7926,7 @@
       "cityId": "city-dublin",
       "name": "Tara Street",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "station",
       "location": {
         "latitude": 53.3471286,
@@ -7939,7 +7939,7 @@
       "cityId": "city-dublin",
       "name": "The Temple Bar Pub",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.3454789,
@@ -7952,7 +7952,7 @@
       "cityId": "city-dublin",
       "name": "Trinity College Dublin",
       "localizedName": "三一學院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.3447601,
@@ -7965,7 +7965,7 @@
       "cityId": "city-duisburg",
       "name": "Duisburg Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.4297566,
@@ -7978,7 +7978,7 @@
       "cityId": "city-duisburg",
       "name": "Tiger & Turtle",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.3756461,
@@ -7991,7 +7991,7 @@
       "cityId": "city-dusseldorf",
       "name": "Benrath S-Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.161753,
@@ -8004,7 +8004,7 @@
       "cityId": "city-dusseldorf",
       "name": "Düsseldorf Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.220115,
@@ -8017,7 +8017,7 @@
       "cityId": "city-dusseldorf",
       "name": "Little Tokyo Düsseldorf",
       "localizedName": "小東京",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2237392,
@@ -8030,7 +8030,7 @@
       "cityId": "city-dusseldorf",
       "name": "Tritonenbrunnen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2235939,
@@ -8043,7 +8043,7 @@
       "cityId": "city-erfurt",
       "name": "Erfurt Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.9723535,
@@ -8082,7 +8082,7 @@
       "cityId": "city-frankfurt",
       "name": "Brockhaus-Brunnen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.1148662,
@@ -8095,7 +8095,7 @@
       "cityId": "city-frankfurt",
       "name": "Eiserner Steg",
       "localizedName": "鐵橋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.1083959,
@@ -8108,7 +8108,7 @@
       "cityId": "city-frankfurt",
       "name": "Eurotower",
       "localizedName": "歐元塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.1095772,
@@ -8121,7 +8121,7 @@
       "cityId": "city-frankfurt",
       "name": "Frankfurt (Main) Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.1071439,
@@ -8134,7 +8134,7 @@
       "cityId": "city-freiburg",
       "name": "Freiburg (Breisgau) Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.9962625,
@@ -8147,7 +8147,7 @@
       "cityId": "city-freiburg",
       "name": "Freiburger Münster",
       "localizedName": "弗萊堡大教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.9962845,
@@ -8160,7 +8160,7 @@
       "cityId": "city-freiburg",
       "name": "Martinstor",
       "localizedName": "馬丁門",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.9936972,
@@ -8173,7 +8173,7 @@
       "cityId": "city-friedrichshafen",
       "name": "Friedrichshafen Hafen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6514999,
@@ -8186,7 +8186,7 @@
       "cityId": "city-friedrichshafen",
       "name": "Friedrichshafen Stadt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6532337,
@@ -8199,7 +8199,7 @@
       "cityId": "city-friedrichshafen",
       "name": "Moleturm",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6486101,
@@ -8212,7 +8212,7 @@
       "cityId": "city-friedrichshafen",
       "name": "Zeppelin Museum Friedrichshafen",
       "localizedName": "斐特列港齊柏林博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.6507925,
@@ -8225,7 +8225,7 @@
       "cityId": "city-garmisch-partenkirchen",
       "name": "Kebab & Smash",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.4934142,
@@ -8238,7 +8238,7 @@
       "cityId": "city-gengenbach",
       "name": "Gengenbach Old Town",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.404066,
@@ -8251,7 +8251,7 @@
       "cityId": "city-gengenbach",
       "name": "Haslach Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.2796187,
@@ -8264,7 +8264,7 @@
       "cityId": "city-gengenbach",
       "name": "Offenburg Altstadt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.4724596,
@@ -8277,7 +8277,7 @@
       "cityId": "city-gent",
       "name": "Flixbus Stop",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.0531618,
@@ -8290,7 +8290,7 @@
       "cityId": "city-gent",
       "name": "Gand-Dampoort / Gent-Dampoort",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.0562027,
@@ -8303,7 +8303,7 @@
       "cityId": "city-gent",
       "name": "Gent-Sint-Pieters",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.0361132,
@@ -8329,7 +8329,7 @@
       "cityId": "city-gent",
       "name": "Graslei",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 51.0547683,
@@ -8342,7 +8342,7 @@
       "cityId": "city-gent",
       "name": "Gravensteen",
       "localizedName": "伯爵城堡",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.0568507,
@@ -8355,7 +8355,7 @@
       "cityId": "city-goreme",
       "name": "A101",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.6437895,
@@ -8368,7 +8368,7 @@
       "cityId": "city-goreme",
       "name": "Cappadocia Street Foods",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.644894099999995,
@@ -8381,7 +8381,7 @@
       "cityId": "city-goreme",
       "name": "Göreme Açık Hava Müzesi",
       "localizedName": "格雷梅露天博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 38.6415918,
@@ -8394,7 +8394,7 @@
       "cityId": "city-goreme",
       "name": "Göreme Otobüs Terminali",
       "localizedName": "格雷梅公車站",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.6434001,
@@ -8407,7 +8407,7 @@
       "cityId": "city-goreme",
       "name": "Göreme Panorama View",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 38.6452022,
@@ -8420,7 +8420,7 @@
       "cityId": "city-goreme",
       "name": "Kayseri Havalimanı",
       "localizedName": "開塞利機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 38.7650674,
@@ -8433,7 +8433,7 @@
       "cityId": "city-goreme",
       "name": "Kılıçlar Vadisi",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 38.6425514,
@@ -8446,7 +8446,7 @@
       "cityId": "city-goreme",
       "name": "Nevşehir Castle & Rock City",
       "localizedName": "內夫謝希爾城堡與岩石城",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.6194143,
@@ -8459,7 +8459,7 @@
       "cityId": "city-goreme",
       "name": "Nevşehir Kapadokya Havalimanı (NAV)",
       "localizedName": "卡帕多細亞機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.771973,
@@ -8472,7 +8472,7 @@
       "cityId": "city-goreme",
       "name": "Nissara AVM",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.6245496,
@@ -8485,7 +8485,7 @@
       "cityId": "city-goreme",
       "name": "Sunset/Sunrise/Balloons Highest View point in Göreme",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.6407274,
@@ -8498,7 +8498,7 @@
       "cityId": "city-goreme",
       "name": "Uçhisar Kalesi",
       "localizedName": "烏奇沙城堡",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 38.6299062,
@@ -8511,7 +8511,7 @@
       "cityId": "city-goreme",
       "name": "Uzer Döviz Change-Exchange Office",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.6244307,
@@ -8524,7 +8524,7 @@
       "cityId": "city-hamburg",
       "name": "Alter Elbtunnel",
       "localizedName": "易北隧道",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5458861,
@@ -8537,7 +8537,7 @@
       "cityId": "city-hamburg",
       "name": "Bahnhof Hamburg Landungsbrücken",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5458199,
@@ -8550,7 +8550,7 @@
       "cityId": "city-hamburg",
       "name": "Dulf's Burger",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5570164,
@@ -8563,7 +8563,7 @@
       "cityId": "city-hamburg",
       "name": "Elbphilharmonie Hamburg",
       "localizedName": "易北愛樂廳",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5433461,
@@ -8589,7 +8589,7 @@
       "cityId": "city-hamburg",
       "name": "Hamburg Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5524007,
@@ -8602,7 +8602,7 @@
       "cityId": "city-hamburg",
       "name": "Hamburg-Harburg Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.45686,
@@ -8615,7 +8615,7 @@
       "cityId": "city-hamburg",
       "name": "Herbertstraße",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 53.5481056,
@@ -8628,7 +8628,7 @@
       "cityId": "city-hamburg",
       "name": "Kaufland hamburg-st.georg",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5526972,
@@ -8641,7 +8641,7 @@
       "cityId": "city-hamburg",
       "name": "Mahnmal St. Nikolai",
       "localizedName": "聖尼古拉教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5474603,
@@ -8654,7 +8654,7 @@
       "cityId": "city-hamburg",
       "name": "Miniatur Wunderland",
       "localizedName": "微縮景觀世界",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5437277,
@@ -8680,7 +8680,7 @@
       "cityId": "city-hamburg",
       "name": "U-Bootmuseum Hamburg GmbH",
       "localizedName": "漢堡潛艇博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.5453013,
@@ -8693,7 +8693,7 @@
       "cityId": "city-heidelberg",
       "name": "Alte Brücke Heidelberg",
       "localizedName": "海德堡古橋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4145665,
@@ -8706,7 +8706,7 @@
       "cityId": "city-heidelberg",
       "name": "Bergbahn",
       "localizedName": "Heidelberg, Rathaus",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.41111,
@@ -8719,7 +8719,7 @@
       "cityId": "city-heidelberg",
       "name": "Heidelberg Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4041735,
@@ -8732,7 +8732,7 @@
       "cityId": "city-heidelberg",
       "name": "Heidelberg-Altstadt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4151285,
@@ -8745,7 +8745,7 @@
       "cityId": "city-heidelberg",
       "name": "Karlsplatz",
       "localizedName": "卡爾斯廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.4122563,
@@ -8758,7 +8758,7 @@
       "cityId": "city-heidelberg",
       "name": "Kornmarkt",
       "localizedName": "穀物廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4119036,
@@ -8771,7 +8771,7 @@
       "cityId": "city-heidelberg",
       "name": "Studentenkarzer",
       "localizedName": "海德堡學生監獄",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.411342,
@@ -8784,7 +8784,7 @@
       "cityId": "city-hof",
       "name": "Hof hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.3081631,
@@ -8797,7 +8797,7 @@
       "cityId": "city-hof",
       "name": "Stegenwaldhaus",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.3167893,
@@ -8810,7 +8810,7 @@
       "cityId": "city-idstein",
       "name": "Idsteiner Altstadt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.2213512,
@@ -8823,7 +8823,7 @@
       "cityId": "city-ingolstadt",
       "name": "Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.744835,
@@ -8836,7 +8836,7 @@
       "cityId": "city-ingolstadt",
       "name": "Ingolstadt Village",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.7834599,
@@ -8849,7 +8849,7 @@
       "cityId": "city-istanbul",
       "name": "Ali Muhiddin Hacı Bekir Lokumları",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.015741999999996,
@@ -8862,7 +8862,7 @@
       "cityId": "city-istanbul",
       "name": "Arcade Tigers",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0357993,
@@ -8875,7 +8875,7 @@
       "cityId": "city-istanbul",
       "name": "Balkan Restaurant Sirkeci",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0136111,
@@ -8888,7 +8888,7 @@
       "cityId": "city-istanbul",
       "name": "DİLAN BÖREK",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0163778,
@@ -8927,7 +8927,7 @@
       "cityId": "city-istanbul",
       "name": "Dürüm MAX Zurna Dürüm",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0376971,
@@ -8940,7 +8940,7 @@
       "cityId": "city-istanbul",
       "name": "Egyptian Bazaar",
       "localizedName": "埃及市場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 41.0165001,
@@ -8953,7 +8953,7 @@
       "cityId": "city-istanbul",
       "name": "Galata Kulesi",
       "localizedName": "加拉達石塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 41.025569,
@@ -8966,7 +8966,7 @@
       "cityId": "city-istanbul",
       "name": "Galataport İstanbul",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.02639,
@@ -8992,7 +8992,7 @@
       "cityId": "city-istanbul",
       "name": "İDO Yenikapı Hızlı Feribot Terminali",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 41.00239,
@@ -9005,7 +9005,7 @@
       "cityId": "city-istanbul",
       "name": "Istiklal Mall",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0349566,
@@ -9018,7 +9018,7 @@
       "cityId": "city-istanbul",
       "name": "Kadim Çorba Kebap",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 40.9903038,
@@ -9031,7 +9031,7 @@
       "cityId": "city-istanbul",
       "name": "Kapalı Çarşı",
       "localizedName": "大巴扎",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0106848,
@@ -9044,7 +9044,7 @@
       "cityId": "city-istanbul",
       "name": "Kemankeş Karamustafa Paşa",
       "localizedName": "加拉塔大橋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 41.0200155,
@@ -9057,7 +9057,7 @@
       "cityId": "city-istanbul",
       "name": "Sabiha Gökçen Havaalanı (SAW)",
       "localizedName": "薩比哈·格克琴國際機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 40.9066492,
@@ -9083,7 +9083,7 @@
       "cityId": "city-istanbul",
       "name": "Taksim Square",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0363503,
@@ -9096,7 +9096,7 @@
       "cityId": "city-istanbul",
       "name": "Taksim Square",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0370504,
@@ -9109,7 +9109,7 @@
       "cityId": "city-istanbul",
       "name": "Torun Hotel",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.0204973,
@@ -9122,7 +9122,7 @@
       "cityId": "city-karlovy-vary",
       "name": "Karlovy Vary Dolní Nádraží",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.2299881,
@@ -9135,7 +9135,7 @@
       "cityId": "city-karlovy-vary",
       "name": "Mlýnská kolonáda",
       "localizedName": "磨坊溫泉長廊",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.2252871,
@@ -9148,7 +9148,7 @@
       "cityId": "city-karlovy-vary",
       "name": "Tržní kolonáda",
       "localizedName": "市集迴廊",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.2234548,
@@ -9161,7 +9161,7 @@
       "cityId": "city-karlovy-vary",
       "name": "Vřídelní kolonáda",
       "localizedName": "大溫泉迴廊",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.2227118,
@@ -9174,7 +9174,7 @@
       "cityId": "city-karlsruhe",
       "name": "Eggenstein Spöcker Weg",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.0799307,
@@ -9187,7 +9187,7 @@
       "cityId": "city-karlsruhe",
       "name": "Karlsruhe Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.993005,
@@ -9200,7 +9200,7 @@
       "cityId": "city-karlsruhe",
       "name": "Marktplatz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.0088669,
@@ -9213,7 +9213,7 @@
       "cityId": "city-karlsruhe",
       "name": "Schlossplatz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.0107531,
@@ -9226,7 +9226,7 @@
       "cityId": "city-koblenz",
       "name": "Koblenz Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.350935,
@@ -9239,7 +9239,7 @@
       "cityId": "city-koblenz",
       "name": "Koblenz Stadtmitte",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.3579789,
@@ -9252,7 +9252,7 @@
       "cityId": "city-konigssee",
       "name": "Fischerhütte am Obersee (Westufer)",
       "localizedName": "上湖釣魚小屋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.5193125,
@@ -9265,7 +9265,7 @@
       "cityId": "city-konigssee",
       "name": "Kirche St. Bartholomä",
       "localizedName": "聖巴爾多祿茂教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.5447844,
@@ -9278,7 +9278,7 @@
       "cityId": "city-konigssee",
       "name": "Königssee Boathouse",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.5869647,
@@ -9291,7 +9291,7 @@
       "cityId": "city-krakow",
       "name": "Bar mleczny (milk bar)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.056687,
@@ -9304,7 +9304,7 @@
       "cityId": "city-krakow",
       "name": "Basztowa",
       "localizedName": "克拉科夫瓮城",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0654718,
@@ -9317,7 +9317,7 @@
       "cityId": "city-krakow",
       "name": "Dobra Pączkarnia Kraków",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.06346,
@@ -9330,7 +9330,7 @@
       "cityId": "city-krakow",
       "name": "Dragon Statue",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0534041,
@@ -9343,7 +9343,7 @@
       "cityId": "city-krakow",
       "name": "Endzior",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0519176,
@@ -9356,7 +9356,7 @@
       "cityId": "city-krakow",
       "name": "Kopalnia Soli „Wieliczka”",
       "localizedName": "維利奇卡鹽礦",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.983502,
@@ -9369,7 +9369,7 @@
       "cityId": "city-krakow",
       "name": "krakow mda bus station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0679625,
@@ -9382,7 +9382,7 @@
       "cityId": "city-krakow",
       "name": "Krakus",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0448991,
@@ -9395,7 +9395,7 @@
       "cityId": "city-krakow",
       "name": "Międzynarodowy Port Lotniczy im. Jana Pawła II Kraków-Balice",
       "localizedName": "克拉克夫機場 (KRK)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0725196,
@@ -9421,7 +9421,7 @@
       "cityId": "city-krakow",
       "name": "Muzeum Książąt Czartoryskich",
       "localizedName": "恰爾托雷斯基博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0646918,
@@ -9447,7 +9447,7 @@
       "cityId": "city-krakow",
       "name": "Sztolnia Wieliczka",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.9831039,
@@ -9473,7 +9473,7 @@
       "cityId": "city-leipzig",
       "name": "İkram Ocakbaşı Charcoal Grill Restaurant",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.3455886,
@@ -9486,7 +9486,7 @@
       "cityId": "city-leipzig",
       "name": "Leipzig Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.3452156,
@@ -9499,7 +9499,7 @@
       "cityId": "city-leipzig",
       "name": "Marktplatz Leipzig",
       "localizedName": "集市廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.341046699008224,
@@ -9512,7 +9512,7 @@
       "cityId": "city-leipzig",
       "name": "Oper Leipzig",
       "localizedName": "萊比錫歌劇院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.3405174,
@@ -9525,7 +9525,7 @@
       "cityId": "city-lindau",
       "name": "Altes Rathaus",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.5459813,
@@ -9538,7 +9538,7 @@
       "cityId": "city-lindau",
       "name": "Lindau-Insel bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.5441988,
@@ -9551,7 +9551,7 @@
       "cityId": "city-lindau",
       "name": "Lindau-Reutin",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.5524552,
@@ -9564,7 +9564,7 @@
       "cityId": "city-lindau",
       "name": "Mangturm",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.5444191,
@@ -9577,7 +9577,7 @@
       "cityId": "city-london",
       "name": "Beirut BBQ",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5192299,
@@ -9590,7 +9590,7 @@
       "cityId": "city-london",
       "name": "Borough Market",
       "localizedName": "波羅市場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5055826,
@@ -9603,7 +9603,7 @@
       "cityId": "city-london",
       "name": "Brick Lane",
       "localizedName": "布里克巷",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5195803,
@@ -9642,7 +9642,7 @@
       "cityId": "city-london",
       "name": "Burlington Arcade",
       "localizedName": "伯靈頓拱廊街",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5095822,
@@ -9655,7 +9655,7 @@
       "cityId": "city-london",
       "name": "Camden Road Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5427531,
@@ -9668,7 +9668,7 @@
       "cityId": "city-london",
       "name": "Camden Town Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5380316,
@@ -9681,7 +9681,7 @@
       "cityId": "city-london",
       "name": "Charing Cross Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5082148,
@@ -9694,7 +9694,7 @@
       "cityId": "city-london",
       "name": "Covent Garden",
       "localizedName": "柯芬園",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.51165706031468,
@@ -9707,7 +9707,7 @@
       "cityId": "city-london",
       "name": "Custom House",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5098574,
@@ -9720,7 +9720,7 @@
       "cityId": "city-london",
       "name": "ExCel",
       "localizedName": "國際會展中心",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5081496,
@@ -9733,7 +9733,7 @@
       "cityId": "city-london",
       "name": "Gatwick Airport Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.1554838,
@@ -9746,7 +9746,7 @@
       "cityId": "city-london",
       "name": "King's Cross St Pancras",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.530609,
@@ -9759,7 +9759,7 @@
       "cityId": "city-london",
       "name": "Leadenhall Market",
       "localizedName": "利德賀市場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5121865086832,
@@ -9772,7 +9772,7 @@
       "cityId": "city-london",
       "name": "LGW Airport",
       "localizedName": "格域機場 (LGW)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 51.1540772,
@@ -9798,7 +9798,7 @@
       "cityId": "city-london",
       "name": "London Eye",
       "localizedName": "倫敦眼",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5031864,
@@ -9824,7 +9824,7 @@
       "cityId": "city-london",
       "name": "LTN Airport",
       "localizedName": "倫敦魯頓機場 (LTN)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 51.8781015,
@@ -9837,7 +9837,7 @@
       "cityId": "city-london",
       "name": "Masters Superfish",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5005685,
@@ -9850,7 +9850,7 @@
       "cityId": "city-london",
       "name": "Max Orient",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 51.5408333,
@@ -9863,7 +9863,7 @@
       "cityId": "city-london",
       "name": "McDonald's Baker Street",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5213654,
@@ -9876,7 +9876,7 @@
       "cityId": "city-london",
       "name": "Mr Wu",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.511323,
@@ -9928,7 +9928,7 @@
       "cityId": "city-london",
       "name": "Quadrant Arcade",
       "localizedName": "伯靈頓拱廊街",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5102167,
@@ -9954,7 +9954,7 @@
       "cityId": "city-london",
       "name": "SOHO",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5140654,
@@ -9967,7 +9967,7 @@
       "cityId": "city-london",
       "name": "South Bermondsey Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.488096,
@@ -9993,7 +9993,7 @@
       "cityId": "city-london",
       "name": "STN Airport",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 51.8869652,
@@ -10006,7 +10006,7 @@
       "cityId": "city-london",
       "name": "Surrey Quays Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.4933557,
@@ -10019,7 +10019,7 @@
       "cityId": "city-london",
       "name": "The Criterion Theatre",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5097383,
@@ -10045,7 +10045,7 @@
       "cityId": "city-london",
       "name": "Tower of London",
       "localizedName": "倫敦塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.508217,
@@ -10071,7 +10071,7 @@
       "cityId": "city-london",
       "name": "Victoria",
       "localizedName": "倫敦維多利亞車站",
-      "category": "Attraction",
+      "category": "Transportation",
       "subcategory": "railway_station",
       "location": {
         "latitude": 51.4959786,
@@ -10084,7 +10084,7 @@
       "cityId": "city-london",
       "name": "Waterloo Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.504238,
@@ -10097,7 +10097,7 @@
       "cityId": "city-london",
       "name": "Westminster",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5004439,
@@ -10123,7 +10123,7 @@
       "cityId": "city-london",
       "name": "Whitechapel Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.5191918,
@@ -10136,7 +10136,7 @@
       "cityId": "city-lubeck",
       "name": "Heiligen-Geist-Hospital",
       "localizedName": "聖靈醫院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.871439197442264,
@@ -10149,7 +10149,7 @@
       "cityId": "city-lubeck",
       "name": "Lübeck Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.8668976,
@@ -10162,7 +10162,7 @@
       "cityId": "city-lubeck",
       "name": "Museum Holstentor",
       "localizedName": "霍爾斯滕門",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.8661389,
@@ -10175,7 +10175,7 @@
       "cityId": "city-lubeck",
       "name": "Niederegger Holstenstraße",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 53.8662499,
@@ -10188,7 +10188,7 @@
       "cityId": "city-mainz",
       "name": "Mainz bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.001715,
@@ -10201,7 +10201,7 @@
       "cityId": "city-mainz",
       "name": "Rekonstruierter Marktplatz am Dom",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.9994687,
@@ -10214,7 +10214,7 @@
       "cityId": "city-mannheim",
       "name": "Barockschloss Mannheim",
       "localizedName": "曼海姆宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4846604,
@@ -10227,7 +10227,7 @@
       "cityId": "city-mannheim",
       "name": "Mannheim Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4796864,
@@ -10240,7 +10240,7 @@
       "cityId": "city-mannheim",
       "name": "Wasserturm Mannheim",
       "localizedName": "曼海姆水塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4840188,
@@ -10253,7 +10253,7 @@
       "cityId": "city-mannheim",
       "name": "Worms Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.6347993,
@@ -10266,7 +10266,7 @@
       "cityId": "city-marseille",
       "name": "Au Savon de Marseille",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.2960716,
@@ -10279,7 +10279,7 @@
       "cityId": "city-marseille",
       "name": "Centre de la Vieille Charité",
       "localizedName": "老濟貧院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.3005832,
@@ -10292,7 +10292,7 @@
       "cityId": "city-marseille",
       "name": "Les Terrasses du Port",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.3067346,
@@ -10305,7 +10305,7 @@
       "cityId": "city-marseille",
       "name": "Marseille Saint-Charles",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.304179,
@@ -10318,7 +10318,7 @@
       "cityId": "city-marseille",
       "name": "Palais du Pharo",
       "localizedName": "法羅宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.2944739,
@@ -10331,7 +10331,7 @@
       "cityId": "city-marseille",
       "name": "Palais Longchamp",
       "localizedName": "隆尚宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.3042669,
@@ -10357,7 +10357,7 @@
       "cityId": "city-marseille",
       "name": "Prado Beach",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.2700708,
@@ -10370,7 +10370,7 @@
       "cityId": "city-marseille",
       "name": "Vieux-Port",
       "localizedName": "法國馬賽老港",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.295543,
@@ -10383,7 +10383,7 @@
       "cityId": "city-menton",
       "name": "Citron D’or",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.7753395,
@@ -10409,7 +10409,7 @@
       "cityId": "city-menton",
       "name": "Plage du Borrigo",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 43.770908,
@@ -10422,7 +10422,7 @@
       "cityId": "city-milan",
       "name": "(BGY) Via Aeroporto",
       "localizedName": "卡拉瓦喬國際機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.6657988,
@@ -10435,7 +10435,7 @@
       "cityId": "city-milan",
       "name": "Arco della Pace",
       "localizedName": "和平之門",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.475548702283554,
@@ -10448,7 +10448,7 @@
       "cityId": "city-milan",
       "name": "artigiano in fiera",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.5183669,
@@ -10461,7 +10461,7 @@
       "cityId": "city-milan",
       "name": "China Town",
       "localizedName": "米蘭唐人街",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.481943,
@@ -10474,7 +10474,7 @@
       "cityId": "city-milan",
       "name": "Ciacco",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4637013,
@@ -10487,7 +10487,7 @@
       "cityId": "city-milan",
       "name": "Duomo di Milano",
       "localizedName": "米蘭主教座堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4638257,
@@ -10500,7 +10500,7 @@
       "cityId": "city-milan",
       "name": "La Fabbrica dei Sapori",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.5304649,
@@ -10513,7 +10513,7 @@
       "cityId": "city-milan",
       "name": "La Hora Feliz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4594315,
@@ -10526,7 +10526,7 @@
       "cityId": "city-milan",
       "name": "Malpensa Terminal 2",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.6466322,
@@ -10539,7 +10539,7 @@
       "cityId": "city-milan",
       "name": "Ostelzzz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4775614,
@@ -10552,7 +10552,7 @@
       "cityId": "city-milan",
       "name": "Piazza Cordusio",
       "localizedName": "義大利米蘭省米蘭",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4652902,
@@ -10565,7 +10565,7 @@
       "cityId": "city-milan",
       "name": "Piazza degli Affari",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4648073,
@@ -10578,7 +10578,7 @@
       "cityId": "city-milan",
       "name": "Santuario di San Bernardino alle Ossa",
       "localizedName": "骸骨教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4624166,
@@ -10591,7 +10591,7 @@
       "cityId": "city-milan",
       "name": "Teatro alla Scala",
       "localizedName": "斯卡拉大劇院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 45.4674021,
@@ -10604,7 +10604,7 @@
       "cityId": "city-mittenwald",
       "name": "Geigenstatue",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.441882,
@@ -10617,7 +10617,7 @@
       "cityId": "city-mittenwald",
       "name": "Mittenwald Altstadt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.4419344,
@@ -10630,7 +10630,7 @@
       "cityId": "city-mittenwald",
       "name": "Wegweiser Wanderwege-Badeanlage Lautersee Lauterseealm",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.4368381,
@@ -10643,7 +10643,7 @@
       "cityId": "city-monaco",
       "name": "蒙地卡羅賭場",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.7397549,
@@ -10656,7 +10656,7 @@
       "cityId": "city-monaco",
       "name": "Yacht Club de Monaco",
       "localizedName": "摩納哥皇家遊艇會",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.7378514,
@@ -10669,7 +10669,7 @@
       "cityId": "city-munich",
       "name": "Allacher Forst",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.2054841,
@@ -10682,7 +10682,7 @@
       "cityId": "city-munich",
       "name": "Asia Supermarkt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1860667,
@@ -10695,7 +10695,7 @@
       "cityId": "city-munich",
       "name": "Bahnhof, Herrsching a. Ammersee",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.9947123,
@@ -10708,7 +10708,7 @@
       "cityId": "city-munich",
       "name": "Berg am Laim",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1328131,
@@ -10721,7 +10721,7 @@
       "cityId": "city-munich",
       "name": "Best Döner & Falafel",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1198072,
@@ -10734,7 +10734,7 @@
       "cityId": "city-munich",
       "name": "BMW Welt",
       "localizedName": "寶馬世界",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1771981,
@@ -10747,7 +10747,7 @@
       "cityId": "city-munich",
       "name": "Bonner Platz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1667017,
@@ -10760,7 +10760,7 @@
       "cityId": "city-munich",
       "name": "Dachau Concentration Camp Memorial Site",
       "localizedName": "達豪集中營",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.2679303,
@@ -10773,7 +10773,7 @@
       "cityId": "city-munich",
       "name": "Decathlon",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1393547,
@@ -10786,7 +10786,7 @@
       "cityId": "city-munich",
       "name": "Döner Bärlin",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.3988626,
@@ -10799,7 +10799,7 @@
       "cityId": "city-munich",
       "name": "Donnersbergerbrücke",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1445906,
@@ -10812,7 +10812,7 @@
       "cityId": "city-munich",
       "name": "Englischer Garten",
       "localizedName": "英國花園",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.1642323,
@@ -10825,7 +10825,7 @@
       "cityId": "city-munich",
       "name": "Europhone - Handy Reparatur München",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0536384,
@@ -10838,7 +10838,7 @@
       "cityId": "city-munich",
       "name": "Fasanenpark",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.0797765,
@@ -10851,7 +10851,7 @@
       "cityId": "city-munich",
       "name": "Flughafen München Besucherpark",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.3521622,
@@ -10877,7 +10877,7 @@
       "cityId": "city-munich",
       "name": "Furth (b Deisenhofen)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0355662,
@@ -10890,7 +10890,7 @@
       "cityId": "city-munich",
       "name": "Gemeinde Sauerlach",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.973029,
@@ -10903,7 +10903,7 @@
       "cityId": "city-munich",
       "name": "Giesing Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1108656,
@@ -10916,7 +10916,7 @@
       "cityId": "city-munich",
       "name": "Giesing Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1106312,
@@ -10929,7 +10929,7 @@
       "cityId": "city-munich",
       "name": "Höhenkirchen-Siegertsbrunn",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1371864,
@@ -10942,7 +10942,7 @@
       "cityId": "city-munich",
       "name": "King's Garden Restaurant",
       "localizedName": "帝苑",
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.2215441,
@@ -10955,7 +10955,7 @@
       "cityId": "city-munich",
       "name": "Königsplatz",
       "localizedName": "國王廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.1457089,
@@ -10968,7 +10968,7 @@
       "cityId": "city-munich",
       "name": "L'Osteria München Künstlerhaus",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1402368,
@@ -10981,7 +10981,7 @@
       "cityId": "city-munich",
       "name": "Laim",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1419108,
@@ -10994,7 +10994,7 @@
       "cityId": "city-munich",
       "name": "Landratsamt München Außenstelle Ludmillastrasse",
       "localizedName": "KVR 慕尼黑縣外管局",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1106546,
@@ -11007,7 +11007,7 @@
       "cityId": "city-munich",
       "name": "Leonrodplatz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1595579,
@@ -11020,7 +11020,7 @@
       "cityId": "city-munich",
       "name": "Marienplatz",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1383311,
@@ -11033,7 +11033,7 @@
       "cityId": "city-munich",
       "name": "Messe München",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.13377,
@@ -11046,7 +11046,7 @@
       "cityId": "city-munich",
       "name": "München Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1404358,
@@ -11059,7 +11059,7 @@
       "cityId": "city-munich",
       "name": "München-Flughafen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.3538478,
@@ -11072,7 +11072,7 @@
       "cityId": "city-munich",
       "name": "Münchner Freiheit",
       "localizedName": "慕尼黑自由廣場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1632179,
@@ -11085,7 +11085,7 @@
       "cityId": "city-munich",
       "name": "Munich Central Bus Station（ZOB München）",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1424686,
@@ -11098,7 +11098,7 @@
       "cityId": "city-munich",
       "name": "MVG Museum",
       "localizedName": "MVG博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.1031033,
@@ -11111,7 +11111,7 @@
       "cityId": "city-munich",
       "name": "Oberpollinger",
       "localizedName": "奧伯林格",
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1389986,
@@ -11124,7 +11124,7 @@
       "cityId": "city-munich",
       "name": "Oktoberfest",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.1328943,
@@ -11137,7 +11137,7 @@
       "cityId": "city-munich",
       "name": "Ostbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1274219,
@@ -11150,7 +11150,7 @@
       "cityId": "city-munich",
       "name": "Pasing",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.148827,
@@ -11163,7 +11163,7 @@
       "cityId": "city-munich",
       "name": "Pasing Arcaden",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1492821,
@@ -11176,7 +11176,7 @@
       "cityId": "city-munich",
       "name": "Perlach Plaza",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1006379,
@@ -11189,7 +11189,7 @@
       "cityId": "city-munich",
       "name": "Premier Inn Müchen Airport Ost",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.326214,
@@ -11202,7 +11202,7 @@
       "cityId": "city-munich",
       "name": "Restaurant Cooking Yu",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1000223,
@@ -11215,7 +11215,7 @@
       "cityId": "city-munich",
       "name": "Sauerlach Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.9736431,
@@ -11228,7 +11228,7 @@
       "cityId": "city-munich",
       "name": "Senlinger Tor",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1335439,
@@ -11241,7 +11241,7 @@
       "cityId": "city-munich",
       "name": "Shang Garden",
       "localizedName": "香乐园",
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0633333,
@@ -11254,7 +11254,7 @@
       "cityId": "city-munich",
       "name": "Technische Universität München",
       "localizedName": "慕尼黑工業大學",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1487431,
@@ -11267,7 +11267,7 @@
       "cityId": "city-munich",
       "name": "Tenmaya",
       "localizedName": "天滿屋",
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.150329,
@@ -11280,7 +11280,7 @@
       "cityId": "city-munich",
       "name": "Theresienstraße",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1515099,
@@ -11293,7 +11293,7 @@
       "cityId": "city-munich",
       "name": "Unterhaching",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.0651466,
@@ -11319,7 +11319,7 @@
       "cityId": "city-munich",
       "name": "Westpark",
       "localizedName": "西公園",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1200557,
@@ -11332,7 +11332,7 @@
       "cityId": "city-murnau",
       "name": "Laguna Murnau",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.680910624860786,
@@ -11345,7 +11345,7 @@
       "cityId": "city-murnau",
       "name": "Schweinebucht",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6794407,
@@ -11358,7 +11358,7 @@
       "cityId": "city-naples",
       "name": "Naples Port",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 40.8375991,
@@ -11371,7 +11371,7 @@
       "cityId": "city-naples",
       "name": "Napoli Centrale",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 40.8530238,
@@ -11384,7 +11384,7 @@
       "cityId": "city-naples",
       "name": "Parco Archeologico di Pompei",
       "localizedName": "龐貝古城考古公園",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 40.7512229,
@@ -11397,7 +11397,7 @@
       "cityId": "city-naples",
       "name": "San Gennaro Pizzeria",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 40.8479135,
@@ -11410,7 +11410,7 @@
       "cityId": "city-naples",
       "name": "Via dei Tribunali",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 40.8515175,
@@ -11423,7 +11423,7 @@
       "cityId": "city-nice",
       "name": "Fontaine du Soleil",
       "localizedName": "太陽噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 43.6964811,
@@ -11436,7 +11436,7 @@
       "cityId": "city-nice",
       "name": "Marché Aux Fleurs - Cours Saleya - Nice",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.6955865,
@@ -11449,7 +11449,7 @@
       "cityId": "city-nice",
       "name": "Nice Airport Terminal 1",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.664817,
@@ -11462,7 +11462,7 @@
       "cityId": "city-nice",
       "name": "Nice Saint-Augustin",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.6688178,
@@ -11475,7 +11475,7 @@
       "cityId": "city-nice",
       "name": "Restaurant La PLANXA-NICE",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.7049088,
@@ -11488,7 +11488,7 @@
       "cityId": "city-nice",
       "name": "Square leclerc",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 43.6979598,
@@ -11501,7 +11501,7 @@
       "cityId": "city-nurnberg",
       "name": "a&o Hostel Nürnberg Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4474045,
@@ -11514,7 +11514,7 @@
       "cityId": "city-nurnberg",
       "name": "DB Museum Nürnberg",
       "localizedName": "紐倫堡交通博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4457206,
@@ -11527,7 +11527,7 @@
       "cityId": "city-nurnberg",
       "name": "Ehekarussell",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.4505739,
@@ -11540,7 +11540,7 @@
       "cityId": "city-nurnberg",
       "name": "Handwerkerhof Nürnberg",
       "localizedName": "工匠廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.4476697,
@@ -11553,7 +11553,7 @@
       "cityId": "city-nurnberg",
       "name": "Lorenzkirche",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.450219,
@@ -11566,7 +11566,7 @@
       "cityId": "city-nurnberg",
       "name": "Nürnberg Flughafen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4939629,
@@ -11579,7 +11579,7 @@
       "cityId": "city-nurnberg",
       "name": "Nürnberg Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.44639,
@@ -11592,7 +11592,7 @@
       "cityId": "city-nurnberg",
       "name": "WurstDurst",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.4480227,
@@ -11631,7 +11631,7 @@
       "cityId": "city-oslo",
       "name": "Fly Chicken Torggata",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9140195,
@@ -11644,7 +11644,7 @@
       "cityId": "city-oslo",
       "name": "Frammuseet",
       "localizedName": "前進號博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9033813,
@@ -11657,7 +11657,7 @@
       "cityId": "city-oslo",
       "name": "Frognerseteren",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9780753,
@@ -11670,7 +11670,7 @@
       "cityId": "city-oslo",
       "name": "Jernbanetorget",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9115419,
@@ -11683,7 +11683,7 @@
       "cityId": "city-oslo",
       "name": "MENY Bogstadveien",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9264967,
@@ -11696,7 +11696,7 @@
       "cityId": "city-oslo",
       "name": "MUNCH Museum",
       "localizedName": "孟克博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9059037,
@@ -11709,7 +11709,7 @@
       "cityId": "city-oslo",
       "name": "Nationaltheatret",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9147157,
@@ -11735,7 +11735,7 @@
       "cityId": "city-oslo",
       "name": "Oslo Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9110251,
@@ -11748,7 +11748,7 @@
       "cityId": "city-oslo",
       "name": "Oslo Rådhus",
       "localizedName": "奧斯陸市政廳",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9133312,
@@ -11761,7 +11761,7 @@
       "cityId": "city-oslo",
       "name": "Skiservice: Kjelkeutleie",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9780566,
@@ -11774,7 +11774,7 @@
       "cityId": "city-oslo",
       "name": "Skogen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9751291,
@@ -11787,7 +11787,7 @@
       "cityId": "city-oslo",
       "name": "Skøyen stasjon",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9224287,
@@ -11800,7 +11800,7 @@
       "cityId": "city-oslo",
       "name": "Sognsvann",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 59.9671289,
@@ -11813,7 +11813,7 @@
       "cityId": "city-oslo",
       "name": "Sognsvann lake",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 59.9709496,
@@ -11826,7 +11826,7 @@
       "cityId": "city-palermo",
       "name": "Aeroporto di Palermo Falcone e Borsellino",
       "localizedName": "法爾科內－波爾塞里諾機場 (PMO)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1795458,
@@ -11839,7 +11839,7 @@
       "cityId": "city-palermo",
       "name": "Dolce capo",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1166067,
@@ -11865,7 +11865,7 @@
       "cityId": "city-palermo",
       "name": "Mercato Ballarò",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1106144,
@@ -11891,7 +11891,7 @@
       "cityId": "city-palermo",
       "name": "Palermo Centrale",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1092571,
@@ -11904,7 +11904,7 @@
       "cityId": "city-palermo",
       "name": "Piazza Cappuccini",
       "localizedName": "卡普奇尼地下墓穴",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.11178,
@@ -11917,7 +11917,7 @@
       "cityId": "city-palermo",
       "name": "Piazza Pretoria",
       "localizedName": "普雷托利亞噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1155096,
@@ -11943,7 +11943,7 @@
       "cityId": "city-palermo",
       "name": "Sfrigola Via Maqueda",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1162776,
@@ -11956,7 +11956,7 @@
       "cityId": "city-palermo",
       "name": "Teatro Massimo di Palermo",
       "localizedName": "馬西莫劇院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 38.1197792,
@@ -12008,7 +12008,7 @@
       "cityId": "city-paris",
       "name": "Château de Fontainebleau",
       "localizedName": "楓丹白露宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 48.4021018,
@@ -12034,7 +12034,7 @@
       "cityId": "city-paris",
       "name": "Église de la Madeleine",
       "localizedName": "馬德萊娜教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8706665,
@@ -12060,7 +12060,7 @@
       "cityId": "city-paris",
       "name": "Évry - Courcouronnes",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.6257836,
@@ -12073,7 +12073,7 @@
       "cityId": "city-paris",
       "name": "FlixBus Stop",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8357368,
@@ -12086,7 +12086,7 @@
       "cityId": "city-paris",
       "name": "Galeries Lafayette Haussmann",
       "localizedName": "拉法葉百貨 巴黎奧斯曼旗艦店",
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8731855,
@@ -12099,7 +12099,7 @@
       "cityId": "city-paris",
       "name": "Gare de Bercy",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.838336,
@@ -12112,7 +12112,7 @@
       "cityId": "city-paris",
       "name": "Hôtel de la Marine",
       "localizedName": "海軍府",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8668354,
@@ -12125,7 +12125,7 @@
       "cityId": "city-paris",
       "name": "Hôtel des Invalides",
       "localizedName": "傷兵院",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8561074,
@@ -12138,7 +12138,7 @@
       "cityId": "city-paris",
       "name": "La Maison d'Isabelle",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8498436,
@@ -12151,7 +12151,7 @@
       "cityId": "city-paris",
       "name": "La Parisienne",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8499455,
@@ -12164,7 +12164,7 @@
       "cityId": "city-paris",
       "name": "Melun",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5277337,
@@ -12177,7 +12177,7 @@
       "cityId": "city-paris",
       "name": "Musée du Louvre",
       "localizedName": "羅浮宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8606111,
@@ -12190,7 +12190,7 @@
       "cityId": "city-paris",
       "name": "Panthéon",
       "localizedName": "先賢祠",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8465186,
@@ -12203,7 +12203,7 @@
       "cityId": "city-paris",
       "name": "Parc des Expositions",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.970568,
@@ -12216,7 +12216,7 @@
       "cityId": "city-paris",
       "name": "Petit Palais",
       "localizedName": "小皇宮",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8660479,
@@ -12229,7 +12229,7 @@
       "cityId": "city-paris",
       "name": "Royal Wok",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.8489385,
@@ -12242,7 +12242,7 @@
       "cityId": "city-prague",
       "name": "Café Imperial",
       "localizedName": "帝國咖啡館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0897986,
@@ -12268,7 +12268,7 @@
       "cityId": "city-prague",
       "name": "Havelská Koruna",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0855096,
@@ -12281,7 +12281,7 @@
       "cityId": "city-prague",
       "name": "Havelské tržiště",
       "localizedName": "哈維爾市集",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0847749,
@@ -12294,7 +12294,7 @@
       "cityId": "city-prague",
       "name": "I. P. Pavlova",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.075344,
@@ -12307,7 +12307,7 @@
       "cityId": "city-prague",
       "name": "ip pavlova kfc",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0752715,
@@ -12320,7 +12320,7 @@
       "cityId": "city-prague",
       "name": "Karlův most",
       "localizedName": "查理大橋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.0864771,
@@ -12333,7 +12333,7 @@
       "cityId": "city-prague",
       "name": "Malostranská mostecká věž",
       "localizedName": "小城橋塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0875782,
@@ -12346,7 +12346,7 @@
       "cityId": "city-prague",
       "name": "MI RYMAS EXCHANGE",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0827807,
@@ -12359,7 +12359,7 @@
       "cityId": "city-prague",
       "name": "Palladium Prague",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0890918,
@@ -12372,7 +12372,7 @@
       "cityId": "city-prague",
       "name": "Park Legií",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0825872,
@@ -12385,7 +12385,7 @@
       "cityId": "city-prague",
       "name": "Pomník svatého Václava",
       "localizedName": "聖瓦茨拉夫雕像",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.0797799,
@@ -12398,7 +12398,7 @@
       "cityId": "city-prague",
       "name": "Praha hl.n.",
       "localizedName": "布拉格火車總站",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.086695,
@@ -12411,7 +12411,7 @@
       "cityId": "city-prague",
       "name": "Prašná brána",
       "localizedName": "火藥塔",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 50.087273,
@@ -12424,7 +12424,7 @@
       "cityId": "city-prague",
       "name": "Pražský hrad",
       "localizedName": "布拉格城堡",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0910966,
@@ -12437,7 +12437,7 @@
       "cityId": "city-prague",
       "name": "Pražský orloj",
       "localizedName": "布拉格天文鐘",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0870215,
@@ -12463,7 +12463,7 @@
       "cityId": "city-rome",
       "name": "(FCO)Via Pierpaolo Racchetti",
       "localizedName": "羅馬-法林明高機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.7951719,
@@ -12476,7 +12476,7 @@
       "cityId": "city-rome",
       "name": "Ce Stamo A Pensà",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.8946776,
@@ -12502,7 +12502,7 @@
       "cityId": "city-rome",
       "name": "EUR Via Castelrosso",
       "localizedName": "馬格利亞納站",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.8395268,
@@ -12515,7 +12515,7 @@
       "cityId": "city-rome",
       "name": "Fontana di Trevi",
       "localizedName": "特雷維噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9015632,
@@ -12528,7 +12528,7 @@
       "cityId": "city-rome",
       "name": "Mercati di Traiano Museo dei Fori Imperiali",
       "localizedName": "圖拉真市場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.8952822,
@@ -12541,7 +12541,7 @@
       "cityId": "city-rome",
       "name": "Museo Nazionale Romano",
       "localizedName": "羅馬國家博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9019946,
@@ -12554,7 +12554,7 @@
       "cityId": "city-rome",
       "name": "Obelisco di Montecitorio",
       "localizedName": "蒙地奇托利歐方尖碑",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9005261,
@@ -12580,7 +12580,7 @@
       "cityId": "city-rome",
       "name": "Pantheon",
       "localizedName": "萬神殿",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.8986108,
@@ -12606,7 +12606,7 @@
       "cityId": "city-rome",
       "name": "Pizza A Taglio Da Manuel",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 41.9077312,
@@ -12619,7 +12619,7 @@
       "cityId": "city-rome",
       "name": "Roadhouse Restaurant Roma Termini",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9016492,
@@ -12632,7 +12632,7 @@
       "cityId": "city-rome",
       "name": "Roma Termini",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9017444,
@@ -12645,7 +12645,7 @@
       "cityId": "city-rome",
       "name": "Scalinata di Trinità dei Monti",
       "localizedName": "西班牙階梯",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9043116,
@@ -12658,7 +12658,7 @@
       "cityId": "city-rome",
       "name": "Serenissima",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.8999933,
@@ -12671,7 +12671,7 @@
       "cityId": "city-rome",
       "name": "Supplì Roma i supplì di Giacomo",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.8871466,
@@ -12697,7 +12697,7 @@
       "cityId": "city-rotterdam",
       "name": "Kijk-Kubus",
       "localizedName": "方塊屋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.9201875,
@@ -12710,7 +12710,7 @@
       "cityId": "city-rotterdam",
       "name": "Leuvehaven",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.9147772,
@@ -12723,7 +12723,7 @@
       "cityId": "city-rotterdam",
       "name": "Market Hall",
       "localizedName": "拱廊市場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.9199641,
@@ -12736,7 +12736,7 @@
       "cityId": "city-rotterdam",
       "name": "Rotterdam Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.9243233,
@@ -12749,7 +12749,7 @@
       "cityId": "city-salzburg",
       "name": "Balkan Grill Walter (Bosna Grill)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.799837,
@@ -12762,7 +12762,7 @@
       "cityId": "city-salzburg",
       "name": "Dom zu Salzburg",
       "localizedName": "薩爾斯堡主教座堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7981346,
@@ -12775,7 +12775,7 @@
       "cityId": "city-salzburg",
       "name": "Festungsmuseum",
       "localizedName": "要塞博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7949483,
@@ -12788,7 +12788,7 @@
       "cityId": "city-salzburg",
       "name": "Kebap Kolo شاورمة عربي حلال",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.8154868,
@@ -12801,7 +12801,7 @@
       "cityId": "city-salzburg",
       "name": "Mega Star Kebab",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.8105643,
@@ -12814,7 +12814,7 @@
       "cityId": "city-salzburg",
       "name": "mönchsberg lift",
       "localizedName": "僧侶山電梯",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.8008735,
@@ -12827,7 +12827,7 @@
       "cityId": "city-salzburg",
       "name": "Mozart-Wohnhaus",
       "localizedName": "莫札特故居",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.8026282,
@@ -12866,7 +12866,7 @@
       "cityId": "city-salzburg",
       "name": "Penny",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7959998,
@@ -12879,7 +12879,7 @@
       "cityId": "city-salzburg",
       "name": "Residenzbrunnen",
       "localizedName": "王宮噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7983947,
@@ -12892,7 +12892,7 @@
       "cityId": "city-salzburg",
       "name": "Salzburg Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.8130272,
@@ -12905,7 +12905,7 @@
       "cityId": "city-salzburg",
       "name": "Salzburger Freilichtmuseum",
       "localizedName": "薩爾斯堡露天博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7513531,
@@ -12918,7 +12918,7 @@
       "cityId": "city-salzburg",
       "name": "Schloss Hellbrunn",
       "localizedName": "海爾布倫宮與惡作劇噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7601322,
@@ -12931,7 +12931,7 @@
       "cityId": "city-salzburg",
       "name": "Zoo Salzburg Hellbrunn",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7564157,
@@ -12944,7 +12944,7 @@
       "cityId": "city-schliersee",
       "name": "Lantenhammer distillery GmbH",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.761873,
@@ -12957,7 +12957,7 @@
       "cityId": "city-schliersee",
       "name": "Mountaincart Spitzingsee",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.6605112,
@@ -12970,7 +12970,7 @@
       "cityId": "city-schliersee",
       "name": "Schliersee Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7352197,
@@ -12983,7 +12983,7 @@
       "cityId": "city-schliersee",
       "name": "Uferpromenade Spitzingsee",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 47.6622577,
@@ -12996,7 +12996,7 @@
       "cityId": "city-simmern",
       "name": "Lautzenhausen Airport",
       "localizedName": "法蘭克福-哈恩機場 (HHN)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.9429026,
@@ -13009,7 +13009,7 @@
       "cityId": "city-simmern",
       "name": "Parkplatz Busbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 49.98227,
@@ -13022,7 +13022,7 @@
       "cityId": "city-speyer",
       "name": "施派爾主教座堂",
       "localizedName": "Dom zu Speyer",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.3173348,
@@ -13035,7 +13035,7 @@
       "cityId": "city-speyer",
       "name": "Speyer Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.3241174,
@@ -13048,7 +13048,7 @@
       "cityId": "city-strasbourg",
       "name": "Aéroport de Strasbourg",
       "localizedName": "史特拉斯堡國際機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5389965,
@@ -13061,7 +13061,7 @@
       "cityId": "city-strasbourg",
       "name": "Broglie",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5847082,
@@ -13074,7 +13074,7 @@
       "cityId": "city-strasbourg",
       "name": "COPYTOP Strasbourg / Imprimerie Strasbourg",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5829236,
@@ -13087,7 +13087,7 @@
       "cityId": "city-strasbourg",
       "name": "E.Leclerc",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5839656,
@@ -13100,7 +13100,7 @@
       "cityId": "city-strasbourg",
       "name": "E.Leclerc STRASBOURG",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5738135,
@@ -13113,7 +13113,7 @@
       "cityId": "city-strasbourg",
       "name": "European Parliament | Strasbourg",
       "localizedName": "議會廳",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5975908,
@@ -13126,7 +13126,7 @@
       "cityId": "city-strasbourg",
       "name": "Kehl Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5759682,
@@ -13139,7 +13139,7 @@
       "cityId": "city-strasbourg",
       "name": "Pizza Renard Strasbourg-Neudorf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5640992,
@@ -13152,7 +13152,7 @@
       "cityId": "city-strasbourg",
       "name": "Place Kléber",
       "localizedName": "克勒貝爾廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5835411,
@@ -13165,7 +13165,7 @@
       "cityId": "city-strasbourg",
       "name": "Ponts Couverts de Strasbourg",
       "localizedName": "科沃橋",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5801453,
@@ -13178,7 +13178,7 @@
       "cityId": "city-strasbourg",
       "name": "Quartier de La Petite France",
       "localizedName": "小法蘭西",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5811419,
@@ -13191,7 +13191,7 @@
       "cityId": "city-strasbourg",
       "name": "Strasbourg",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5850362,
@@ -13204,7 +13204,7 @@
       "cityId": "city-strasbourg",
       "name": "Tilt",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.5817196,
@@ -13217,7 +13217,7 @@
       "cityId": "city-stuttgart",
       "name": "Flughafen Stuttgart",
       "localizedName": "斯圖加特機場 (STR)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.6901311,
@@ -13230,7 +13230,7 @@
       "cityId": "city-stuttgart",
       "name": "Wendlingen (Neckar)",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.6725451,
@@ -13243,7 +13243,7 @@
       "cityId": "city-tegernsee",
       "name": "Tegernsee",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.7130428,
@@ -13256,7 +13256,7 @@
       "cityId": "city-triberg",
       "name": "BnB in Black Forest at Cla & Martin",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1392458,
@@ -13269,7 +13269,7 @@
       "cityId": "city-triberg",
       "name": "Elzach Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1711859,
@@ -13295,7 +13295,7 @@
       "cityId": "city-triberg",
       "name": "Museums Café",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1292258,
@@ -13308,7 +13308,7 @@
       "cityId": "city-triberg",
       "name": "Niederwinden Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1394752,
@@ -13321,7 +13321,7 @@
       "cityId": "city-triberg",
       "name": "Treiberg Bahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1389072,
@@ -13334,7 +13334,7 @@
       "cityId": "city-triberg",
       "name": "Triberg Waterfalls",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.1281534,
@@ -13347,7 +13347,7 @@
       "cityId": "city-ulm",
       "name": "Allgäu flughafen",
       "localizedName": "梅明根機場 (FMM)",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.9873044,
@@ -13360,7 +13360,7 @@
       "cityId": "city-ulm",
       "name": "Fischerviertel Ulm",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.3965774,
@@ -13373,7 +13373,7 @@
       "cityId": "city-ulm",
       "name": "Memmingen Hbf",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 47.9849548,
@@ -13386,7 +13386,7 @@
       "cityId": "city-ulm",
       "name": "Ulm Central Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.3994494,
@@ -13399,7 +13399,7 @@
       "cityId": "city-ulm",
       "name": "Ulmer Münster",
       "localizedName": "烏爾姆大教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 48.3985233,
@@ -13412,7 +13412,7 @@
       "cityId": "city-utrecht",
       "name": "Domtoren",
       "localizedName": "烏德勒支聖馬丁主教座堂塔樓",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.090825399672966,
@@ -13425,7 +13425,7 @@
       "cityId": "city-utrecht",
       "name": "FEBO Utrecht - Lange Elisabethstraat",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.0909395,
@@ -13438,7 +13438,7 @@
       "cityId": "city-utrecht",
       "name": "Park Servaasbolwerk",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.0870536,
@@ -13451,7 +13451,7 @@
       "cityId": "city-utrecht",
       "name": "Utrecht Maliebaan",
       "localizedName": "荷蘭鐵道博物館",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.0879257,
@@ -13477,7 +13477,7 @@
       "cityId": "city-vatican-city",
       "name": "Musei Vaticani",
       "localizedName": "梵蒂岡博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.9064878,
@@ -13490,7 +13490,7 @@
       "cityId": "city-vatican-city",
       "name": "Obelisco Vaticano di Piazza San Pietro",
       "localizedName": "聖伯多祿廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 41.90222252497251,
@@ -13516,7 +13516,7 @@
       "cityId": "city-vilnius",
       "name": "黎明門",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6747517,
@@ -13529,7 +13529,7 @@
       "cityId": "city-vilnius",
       "name": "ETNO DVARAS",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6764316,
@@ -13542,7 +13542,7 @@
       "cityId": "city-vilnius",
       "name": "G9",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 54.6870713,
@@ -13555,7 +13555,7 @@
       "cityId": "city-vilnius",
       "name": "Halės Market",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6736516,
@@ -13568,7 +13568,7 @@
       "cityId": "city-vilnius",
       "name": "HostelJamaika@Shopen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6727057,
@@ -13581,7 +13581,7 @@
       "cityId": "city-vilnius",
       "name": "IKI - NERIS",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6931751,
@@ -13594,7 +13594,7 @@
       "cityId": "city-vilnius",
       "name": "Kalvarijų Market",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.7003117,
@@ -13607,7 +13607,7 @@
       "cityId": "city-vilnius",
       "name": "Maxima XX",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6861185,
@@ -13620,7 +13620,7 @@
       "cityId": "city-vilnius",
       "name": "Maxima XXXX",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Shop",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.7096851,
@@ -13633,7 +13633,7 @@
       "cityId": "city-vilnius",
       "name": "Okupacijų ir laisvės kovų muziejus",
       "localizedName": "克格勃 (KGB) 博物館",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6879376,
@@ -13646,7 +13646,7 @@
       "cityId": "city-vilnius",
       "name": "Oro uostas",
       "localizedName": "離境／立陶宛",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6427747,
@@ -13659,7 +13659,7 @@
       "cityId": "city-vilnius",
       "name": "Rotušes aikštė",
       "localizedName": "維爾紐斯市政廳廣場",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6786996,
@@ -13672,7 +13672,7 @@
       "cityId": "city-vilnius",
       "name": "Šv. Dvasios cerkvė",
       "localizedName": "東正教聖靈教堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6755127,
@@ -13685,7 +13685,7 @@
       "cityId": "city-vilnius",
       "name": "Užupio Respublikos konstitucija",
       "localizedName": "對岸共和國",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "owner_confirmed_visit",
       "location": {
         "latitude": 54.6800523,
@@ -13711,7 +13711,7 @@
       "cityId": "city-vilnius",
       "name": "Vilnius Central Train Station",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6703567,
@@ -13724,7 +13724,7 @@
       "cityId": "city-vilnius",
       "name": "VNO Airport",
       "localizedName": "維爾紐斯國際機場",
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 54.6355868,
@@ -13737,7 +13737,7 @@
       "cityId": "city-wiesbaden",
       "name": "Thermalquelle Kochbrunnen",
       "localizedName": "科赫噴泉",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0785851,
@@ -13750,7 +13750,7 @@
       "cityId": "city-wiesbaden",
       "name": "Wiesbaden Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 50.0710408,
@@ -13763,7 +13763,7 @@
       "cityId": "city-wuppertal",
       "name": "Haven Hotels - Wuppertal City",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Accommodation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2686066,
@@ -13776,7 +13776,7 @@
       "cityId": "city-wuppertal",
       "name": "Vohwinkel Bahnhof",
       "localizedName": null,
-      "category": "Attraction",
+      "category": "Transportation",
       "subcategory": "railway_station",
       "location": {
         "latitude": 51.2342004,
@@ -13789,7 +13789,7 @@
       "cityId": "city-wuppertal",
       "name": "W-Vohwinkel Schwebebahn",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2302581,
@@ -13802,7 +13802,7 @@
       "cityId": "city-wuppertal",
       "name": "Wuppertal Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2559198,
@@ -13815,7 +13815,7 @@
       "cityId": "city-wuppertal",
       "name": "Wuppertal-Barmen",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 51.2669712,
@@ -13828,7 +13828,7 @@
       "cityId": "city-wurzburg",
       "name": "Asia Palast",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Restaurant",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.8006197,
@@ -13841,7 +13841,7 @@
       "cityId": "city-wurzburg",
       "name": "Marienkapelle",
       "localizedName": "聖母禮拜堂",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.794784897689894,
@@ -13854,7 +13854,7 @@
       "cityId": "city-wurzburg",
       "name": "Residenz Würzburg",
       "localizedName": "維爾茨堡官邸",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.7927423,
@@ -13867,7 +13867,7 @@
       "cityId": "city-wurzburg",
       "name": "Würzburg Hauptbahnhof",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 49.8021549,
@@ -13880,7 +13880,7 @@
       "cityId": "city-zaandijk",
       "name": "Zaandam",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.4380762,
@@ -13893,7 +13893,7 @@
       "cityId": "city-zaandijk",
       "name": "Zaandijk Zaanse Schans",
       "localizedName": null,
-      "category": "Unclassified",
+      "category": "Transportation",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.4692791,
@@ -13906,7 +13906,7 @@
       "cityId": "city-zaandijk",
       "name": "Zaanse Schans",
       "localizedName": "風車村 荷蘭",
-      "category": "Unclassified",
+      "category": "Attraction",
       "subcategory": "unclassified",
       "location": {
         "latitude": 52.4725679,

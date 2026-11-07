@@ -56,6 +56,22 @@ describe("POI review preprocessing", () => {
       { city_id: "city-rome", latitude: 41.905, longitude: 12.48, name: "Outside" },
     ]);
   });
+
+  it("keeps every exported Vatican City POI inside its reviewed boundary", async () => {
+    const root = resolve(import.meta.dirname, "..", "..");
+    const [pois, contexts] = await Promise.all([
+      readFile(resolve(root, "data", "parsed", "poi_reference.json"), "utf8").then(JSON.parse) as Promise<Array<{
+        city_id: string; latitude: number; longitude: number;
+      }>>,
+      readFile(resolve(root, "data", "parsed", "city_map_context.json"), "utf8").then(JSON.parse) as Promise<Array<{
+        city_id: string; boundary: Parameters<typeof pointInBoundary>[2];
+      }>>,
+    ]);
+    const boundary = contexts.find(({ city_id: cityId }) => cityId === "city-vatican-city")!.boundary;
+    const vaticanPois = pois.filter(({ city_id: cityId }) => cityId === "city-vatican-city");
+    expect(vaticanPois.length).toBeGreaterThan(0);
+    expect(vaticanPois.every((poi) => pointInBoundary(poi.longitude, poi.latitude, boundary))).toBe(true);
+  });
   it("prefers OSM Traditional Chinese, then Chinese, and otherwise preserves the source name", () => {
     expect(localizedPoiName("Original", { "name:zh-Hant": "繁體名稱", "name:zh": "中文名稱" }))
       .toEqual({ name: "繁體名稱", originalName: "Original", language: "zh-Hant" });
