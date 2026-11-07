@@ -89,7 +89,8 @@ describe('temporary POI review tool', () => {
     expect(within(panel).getByText(String(data.pois?.length ?? 0))).toBeInTheDocument();
     expect(within(panel).getByText('2')).toBeInTheDocument();
     expect(within(panel).getAllByText('1')).toHaveLength(2);
-    expect(within(panel).getAllByText(/0\.1% of all · 50\.0% of reviewed/)).toHaveLength(2);
+    const onePoiPercent = (100 / (data.pois?.length ?? 1)).toFixed(1);
+    expect(within(panel).getAllByText(`${onePoiPercent}% of all · 50.0% of reviewed`)).toHaveLength(2);
   });
 
   it('opens a review panel from a POI, keeps an edited record, and updates the pending list', async () => {

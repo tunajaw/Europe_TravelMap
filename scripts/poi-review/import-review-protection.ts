@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
 import { manualPoiNameHash } from './manual-pois.ts';
+import { assignVaticanBoundaryPoisToRome, type PoiBoundary } from './city-assignment.ts';
 
 const inputArgument = process.argv[2];
 if (!inputArgument) throw new Error('Usage: npm run data:poi-review-protection -- <poi-review-results.json>');
@@ -10,6 +11,7 @@ const root = resolve(import.meta.dirname, '..', '..');
 const input = resolve(inputArgument);
 const output = resolve(root, 'data', 'parsed', 'poi_reviewed_ids.json');
 const aliasesOutput = resolve(root, 'data', 'parsed', 'poi_reviewed_name_hashes.json');
+const categoriesOutput = resolve(root, 'data', 'parsed', 'poi_reviewed_categories.json');
 const coordinateLocksOutput = resolve(root, 'data', 'parsed', 'poi_reviewed_coordinate_locks.json');
 const snapshotsOutput = resolve(root, 'data', 'parsed', 'poi_reviewed_snapshots.json');
 const discardedIdsOutput = resolve(root, 'data', 'parsed', 'poi_discarded_ids.json');
@@ -18,6 +20,7 @@ const recheckIdsOutput = resolve(root, 'data', 'parsed', 'poi_coordinate_recheck
 const recheckSnapshotsOutput = resolve(root, 'data', 'parsed', 'poi_coordinate_recheck_snapshots.json');
 const coordinateAuditInput = resolve(root, 'data', 'private', 'poi-review', 'reviewed-coordinate-audit.json');
 const poiInput = resolve(root, 'data', 'parsed', 'poi_reference.json');
+const cityContextInput = resolve(root, 'data', 'parsed', 'city_map_context.json');
 const baselineRefIndex = process.argv.indexOf('--baseline-git-ref');
 const baselineGitRef = baselineRefIndex >= 0 ? process.argv[baselineRefIndex + 1] : undefined;
 const parsed = JSON.parse(await readFile(input, 'utf8')) as {
@@ -26,9 +29,9 @@ const parsed = JSON.parse(await readFile(input, 'utf8')) as {
     poiId?: unknown;
     decision?: unknown;
     reviewStatus?: unknown;
-    categories?: unknown;
     editedName?: unknown;
     editedLocalizedName?: unknown;
+    categories?: unknown;
   }>;
 };
 if (![1, 2].includes(parsed.schemaVersion as number) || !Array.isArray(parsed.reviews)) {
@@ -41,6 +44,7 @@ const reviewedRows = parsed.reviews.filter((row) => row.reviewStatus === 'review
     decision: 'Keep' | 'Discard';
     editedName?: unknown;
     editedLocalizedName?: unknown;
+    categories?: unknown;
   }>;
 const allReviewedIds = reviewedRows.map(({ poiId }) => poiId).sort();
 const reviewedRowById = new Map(reviewedRows.map((row) => [row.poiId, row]));
@@ -69,6 +73,18 @@ const reviewedNameHashes = parsed.reviews.flatMap((row) => {
     .filter((value): value is string => typeof value === 'string' && Boolean(value.trim()))
     .map(manualPoiNameHash);
   return hashes.length ? [{ poi_id: row.poiId, name_hashes: [...new Set(hashes)].sort() }] : [];
+}).sort((left, right) => left.poi_id.localeCompare(right.poi_id));
+const reviewedCategories = reviewedRows.flatMap((row) => {
+  if (row.decision !== 'Keep' || recheckIdSet.has(row.poiId)) return [];
+  if (!Array.isArray(row.categories) || row.categories.length !== 1) {
+    throw new Error(`Kept POI must have exactly one reviewed category: ${row.poiId}`);
+  }
+  const sourceCategory = row.categories[0];
+  const category = sourceCategory === 'Attractions' ? 'Attraction' : sourceCategory;
+  if (!['Attraction', 'Shop', 'Restaurant', 'Accommodation', 'Transportation'].includes(category as string)) {
+    throw new Error(`Unsupported reviewed POI category: ${row.poiId}`);
+  }
+  return [{ poi_id: row.poiId, category }];
 }).sort((left, right) => left.poi_id.localeCompare(right.poi_id));
 type PoiSnapshot = {
   poi_id: string;
@@ -120,7 +136,7 @@ for (const poi of [
 ]) {
   if (allReviewedIdSet.has(poi.poi_id)) snapshotCandidates.set(poi.poi_id, poi);
 }
-const allSnapshots = allReviewedIds.flatMap((poiId) => {
+let allSnapshots = allReviewedIds.flatMap((poiId) => {
   const snapshot = snapshotCandidates.get(poiId);
   if (!snapshot) return [];
   const reviewed = reviewedRowById.get(poiId)!;
@@ -136,6 +152,13 @@ const allSnapshots = allReviewedIds.flatMap((poiId) => {
       : snapshot.localized_name,
   }];
 });
+const cityContexts = JSON.parse(await readFile(cityContextInput, 'utf8')) as Array<{
+  city_id: string;
+  boundary: PoiBoundary;
+}>;
+const vaticanBoundary = cityContexts.find(({ city_id: cityId }) => cityId === 'city-vatican-city')?.boundary;
+if (!vaticanBoundary) throw new Error('Missing Vatican City administrative boundary');
+allSnapshots = assignVaticanBoundaryPoisToRome(allSnapshots, vaticanBoundary);
 const allSnapshotById = new Map(allSnapshots.map((snapshot) => [snapshot.poi_id, snapshot]));
 const reviewedSnapshots = reviewedIds.flatMap((poiId) => {
   const snapshot = allSnapshotById.get(poiId);
@@ -153,12 +176,15 @@ const coordinateLocks = reviewedSnapshots
   .map((poi) => ({ poi_id: poi.poi_id, latitude: poi.latitude, longitude: poi.longitude }))
   .sort((left, right) => left.poi_id.localeCompare(right.poi_id));
 if (new Set(allReviewedIds).size !== allReviewedIds.length) throw new Error('Duplicate reviewed POI ID');
-if (allSnapshots.length !== allReviewedIds.length) {
-  throw new Error(`Missing snapshots for ${allReviewedIds.length - allSnapshots.length} reviewed POIs`);
+const requiredSnapshotIds = [...reviewedIds, ...recheckIds];
+const missingRequiredSnapshots = requiredSnapshotIds.filter((poiId) => !allSnapshotById.has(poiId));
+if (missingRequiredSnapshots.length > 0) {
+  throw new Error(`Missing snapshots for ${missingRequiredSnapshots.length} kept POIs`);
 }
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(reviewedIds, null, 2)}\n`, 'utf8');
 await writeFile(aliasesOutput, `${JSON.stringify(reviewedNameHashes, null, 2)}\n`, 'utf8');
+await writeFile(categoriesOutput, `${JSON.stringify(reviewedCategories, null, 2)}\n`, 'utf8');
 await writeFile(coordinateLocksOutput, `${JSON.stringify(coordinateLocks, null, 2)}\n`, 'utf8');
 await writeFile(snapshotsOutput, `${JSON.stringify(reviewedSnapshots, null, 2)}\n`, 'utf8');
 await writeFile(discardedIdsOutput, `${JSON.stringify(discardedIds, null, 2)}\n`, 'utf8');
@@ -167,6 +193,7 @@ await writeFile(recheckIdsOutput, `${JSON.stringify(recheckIds, null, 2)}\n`, 'u
 await writeFile(recheckSnapshotsOutput, `${JSON.stringify(recheckSnapshots, null, 2)}\n`, 'utf8');
 process.stdout.write(`Wrote ${reviewedIds.length} reviewed POI IDs to ${output}\n`);
 process.stdout.write(`Wrote ${reviewedNameHashes.length} hashed reviewed-name aliases to ${aliasesOutput}\n`);
+process.stdout.write(`Wrote ${reviewedCategories.length} reviewed POI categories to ${categoriesOutput}\n`);
 process.stdout.write(`Wrote ${coordinateLocks.length} reviewed coordinate locks to ${coordinateLocksOutput}\n`);
 process.stdout.write(`Wrote ${reviewedSnapshots.length} reviewed POI snapshots to ${snapshotsOutput}\n`);
 process.stdout.write(`Wrote ${discardedIds.length} discarded POI exclusions to ${discardedIdsOutput}\n`);

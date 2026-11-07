@@ -10,14 +10,18 @@ import {
 } from './manual-pois.ts';
 
 const root = resolve(import.meta.dirname, '..', '..');
-const input = resolve(root, 'data', 'raw', 'POIadd_until_Munich_v1.txt');
+const input = resolve(root, 'data', 'raw', 'POIadd_v2.txt');
 const output = resolve(root, 'data', 'parsed', 'manual_poi_reference.json');
 const cityAliases = new Map([
   ['Karoly Vary', 'Karlovy Vary'],
   ['Vilinus', 'Vilnius'],
+  ['Gorome', 'Göreme'],
+  ['Spitzingsee', 'Schliersee'],
+  ['Vatican City', 'Rome'],
 ]);
 
-const drafts = parseManualPoiSource(await readFile(input, 'utf8'));
+const source = await readFile(input, 'utf8');
+const drafts = parseManualPoiSource(source);
 const references = await loadReferences(root);
 const rows: ManualPoiReference[] = new Array(drafts.length);
 let nextIndex = 0;
@@ -54,6 +58,23 @@ async function resolveWorker(): Promise<void> {
 }
 
 await Promise.all(Array.from({ length: 4 }, resolveWorker));
+const london = references.cityIdByName.get('London');
+if (!london) throw new Error('Missing London City reference');
+for (const airportCode of ['LTN', 'STN', 'LGW']) {
+  if (!new RegExp(`^\\s*\\*\\s+${airportCode} Airport\\s*$`, 'm').test(source)) continue;
+  const airport = references.airports.find(({ code }) => code === airportCode);
+  if (!airport) throw new Error(`Missing Airport reference: ${airportCode}`);
+  rows.push({
+    manual_id: `manual-poi-airport-${airportCode.toLowerCase()}`,
+    city_id: london.id,
+    name: `${airportCode} Airport`,
+    localized_name: null,
+    latitude: airport.location.latitude,
+    longitude: airport.location.longitude,
+    operation: 'add',
+    source_status: 'owner_confirmed_visit',
+  });
+}
 const ids = new Set(rows.map(({ manual_id }) => manual_id));
 if (ids.size !== rows.length) throw new Error('Duplicate manual POI Google Maps place identity');
 await mkdir(dirname(output), { recursive: true });

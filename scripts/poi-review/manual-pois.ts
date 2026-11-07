@@ -53,11 +53,14 @@ const EXCLUDED_RETAIL_CATEGORIES = new Set([
 const EXCLUDED_RETAIL_NAME = /\b(?:supermarket|supermarch[eé]|supermarkt|supermercado|supermercato|grocery|convenience|drugstore|drogerie|pharmacy|apotheke|chemist|aldi|lidl|carrefour|maxima|rewe|edeka|penny|netto|rossmann|dm drogerie|kaufland|spar|billa|tesco|auchan)\b/i;
 
 const LOCATION_UPDATE = /\s+location update\s*$/i;
+const CHINESE_LOCATION_UPDATE = /\s*(?:要更新GPS地址|更改\s*GPS|GPS\s*應為)\s*$/iu;
 
 export function normalizeManualPoiName(value: string): string {
   return value
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
+    .replace(/园/g, '園')
+    .replace(/天空花園/g, '空中花園')
     .toLocaleLowerCase('en')
     .replace(/&/g, ' and ')
     .replace(/[^\p{L}\p{N}]+/gu, ' ')
@@ -75,20 +78,49 @@ export function parseManualPoiSource(source: string): ManualPoiDraft[] {
   for (const rawLine of source.split(/\r?\n/)) {
     const line = rawLine.trim();
     if (!line) continue;
+    if (/^Vatican City POI\b/u.test(line)) {
+      cityName = 'Vatican City';
+      continue;
+    }
     const heading = line.match(/^([^*].*):$/);
     if (heading) {
       cityName = heading[1]!.trim();
       continue;
     }
-    const item = line.match(/^\*\s+(.+?):\s+(https:\/\/maps\.app\.goo\.gl\/\S+)$/);
+    const item = line.match(/^\*\s+(.+?)(?::\s*|\s+)(https:\/\/maps\.app\.goo\.gl\/\S+)$/);
     if (!item) continue;
     if (!cityName) throw new Error(`Manual POI lacks a City heading: ${line}`);
     const rawName = item[1]!.trim();
-    const operation: ManualPoiOperation = LOCATION_UPDATE.test(rawName) ? 'location_update' : 'add';
-    const withoutOperation = rawName.replace(LOCATION_UPDATE, '').trim();
+    const renamed = rawName.match(/^(.+?)改為中文名字，英文為\s*(.+?)，?\s*GPS$/u)
+      ?? rawName.match(/^(.+?)英文應為\s*(.+?)，?\s*GPS\s*應為$/u);
+    const replacement = rawName.match(/^.+?改為\s*(.+)$/u);
+    const operation: ManualPoiOperation = LOCATION_UPDATE.test(rawName)
+      || CHINESE_LOCATION_UPDATE.test(rawName)
+      || Boolean(renamed)
+      || Boolean(replacement)
+      ? 'location_update'
+      : 'add';
+    const withoutOperation = renamed
+      ? `${renamed[1]!.trim()}/${renamed[2]!.trim()}`
+      : (replacement?.[1] ?? rawName)
+          .replace(LOCATION_UPDATE, '')
+          .replace(CHINESE_LOCATION_UPDATE, '')
+          .trim();
     const separator = withoutOperation.indexOf('/');
-    const localizedName = separator >= 0 ? withoutOperation.slice(0, separator).trim() : null;
-    const name = separator >= 0 ? withoutOperation.slice(separator + 1).trim() : withoutOperation;
+    const firstName = separator >= 0 ? withoutOperation.slice(0, separator).trim() : withoutOperation;
+    const secondName = separator >= 0 ? withoutOperation.slice(separator + 1).trim() : '';
+    const firstHasHan = /\p{Script=Han}/u.test(firstName);
+    const secondHasHan = /\p{Script=Han}/u.test(secondName);
+    const localizedName = separator < 0
+      ? null
+      : firstHasHan && !secondHasHan ? firstName
+        : secondHasHan && !firstHasHan ? secondName
+          : firstName;
+    const name = separator < 0
+      ? firstName
+      : firstHasHan && !secondHasHan ? secondName
+        : secondHasHan && !firstHasHan ? firstName
+          : secondName;
     if (!name) throw new Error(`Manual POI lacks a primary name: ${line}`);
     drafts.push({ cityName, name, localizedName: localizedName || null, operation, shortUrl: item[2]! });
   }
@@ -161,27 +193,32 @@ export function mergeManualPoiReferences(
       .map(normalizeManualPoiName);
     const manualNameHashes = new Set(normalizedNames.map((name) => manualPoiNameHash(name)));
     const cityPois = pois.filter((poi) => poi.city_id === row.city_id);
+    const identityMatch = cityPois.find((poi) => poi.poi_id === row.manual_id);
     const directMatches = cityPois.filter((poi) =>
       namesFor(poi).some((name) => normalizedNames.includes(name)));
     const reviewedAliasMatches = cityPois.filter((poi) =>
       [...(reviewedNameHashes.get(poi.poi_id) ?? [])]
         .some((hash) => manualNameHashes.has(hash)));
-    if (reviewedAliasMatches.length > 1) {
+    if (!identityMatch && reviewedAliasMatches.length > 1) {
       throw new Error(`Reviewed manual POI name is ambiguous in ${row.city_id}: ${row.name}`);
     }
-    if (reviewedAliasMatches.length === 0 && directMatches.length > 1) {
+    if (!identityMatch && reviewedAliasMatches.length === 0 && directMatches.length > 1) {
       throw new Error(`Manual POI name is ambiguous in ${row.city_id}: ${row.name}`);
     }
-    const match = reviewedAliasMatches[0] ?? directMatches[0];
+    const match = identityMatch ?? reviewedAliasMatches[0] ?? directMatches[0];
     if (match) {
-      if (reviewedAliasMatches.length === 1) {
-        for (const duplicate of directMatches) {
-          if (duplicate.poi_id === match.poi_id || reviewedNameHashes.has(duplicate.poi_id)) continue;
+      if (identityMatch || reviewedAliasMatches.length === 1) {
+        const duplicateCandidates = identityMatch && row.operation === 'location_update'
+          ? [...new Set([...directMatches, ...reviewedAliasMatches])]
+          : directMatches;
+        for (const duplicate of duplicateCandidates) {
+          if (duplicate.poi_id === match.poi_id
+            || (!identityMatch && reviewedNameHashes.has(duplicate.poi_id))) continue;
           const distanceMeters = haversineKm(
             { latitude: duplicate.latitude, longitude: duplicate.longitude },
             { latitude: row.latitude, longitude: row.longitude },
           ) * 1_000;
-          if (distanceMeters > 250) continue;
+          if (!identityMatch && distanceMeters > 250) continue;
           const duplicateIndex = pois.findIndex((poi) => poi.poi_id === duplicate.poi_id);
           if (duplicateIndex >= 0) {
             pois.splice(duplicateIndex, 1);

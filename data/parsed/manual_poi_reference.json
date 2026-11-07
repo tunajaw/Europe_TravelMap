@@ -738,5 +738,325 @@
     "longitude": 11.5479931,
     "operation": "add",
     "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-2cbd9a6632b3b0",
+    "city_id": "city-lindau",
+    "name": "Lindau-Insel bahnhof",
+    "localized_name": null,
+    "latitude": 47.5441988,
+    "longitude": 9.6812849,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-3a1b0b10329df1",
+    "city_id": "city-lindau",
+    "name": "Altes Rathaus",
+    "localized_name": null,
+    "latitude": 47.5459813,
+    "longitude": 9.6840281,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-201bf6cc4ed4b5",
+    "city_id": "city-lindau",
+    "name": "Mangturm",
+    "localized_name": null,
+    "latitude": 47.5444191,
+    "longitude": 9.683489,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-6ec84073e75df4",
+    "city_id": "city-mittenwald",
+    "name": "Geigenstatue",
+    "localized_name": null,
+    "latitude": 47.441882,
+    "longitude": 11.2583091,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-edbdd299831683",
+    "city_id": "city-mittenwald",
+    "name": "Wegweiser Wanderwege-Badeanlage Lautersee Lauterseealm",
+    "localized_name": null,
+    "latitude": 47.4368381,
+    "longitude": 11.2390583,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-51cb7b7213ad02",
+    "city_id": "city-mittenwald",
+    "name": "Mittenwald Altstadt",
+    "localized_name": null,
+    "latitude": 47.4419344,
+    "longitude": 11.2607938,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-acfd2b83434002",
+    "city_id": "city-bad-tolz",
+    "name": "Isar bei Tölz",
+    "localized_name": null,
+    "latitude": 47.7617003,
+    "longitude": 11.5547985,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-6cfdf97eba430e",
+    "city_id": "city-bad-tolz",
+    "name": "Blombergbahn Bad Tölz",
+    "localized_name": null,
+    "latitude": 47.7474934,
+    "longitude": 11.5159689,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-26e3678b80fd0b",
+    "city_id": "city-schliersee",
+    "name": "Uferpromenade Spitzingsee",
+    "localized_name": null,
+    "latitude": 47.6622577,
+    "longitude": 11.8870749,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-f42f3ae5701b8a",
+    "city_id": "city-naples",
+    "name": "Via dei Tribunali",
+    "localized_name": null,
+    "latitude": 40.8515175,
+    "longitude": 14.2588326,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-3cbb3b04af65b0",
+    "city_id": "city-dublin",
+    "name": "Seal watching spot",
+    "localized_name": null,
+    "latitude": 53.3907477,
+    "longitude": -6.0708609,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-59e7cbd52ed23e",
+    "city_id": "city-oslo",
+    "name": "Sognsvann lake",
+    "localized_name": null,
+    "latitude": 59.9709496,
+    "longitude": 10.7263469,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-2d8e593be2a5c9",
+    "city_id": "city-oslo",
+    "name": "MUNCH Museum",
+    "localized_name": "孟克博物館",
+    "latitude": 59.9059037,
+    "longitude": 10.7552605,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-197086bfb0caf2",
+    "city_id": "city-barcelona",
+    "name": "Font Màgica de Montjuïc",
+    "localized_name": "魔幻噴泉",
+    "latitude": 41.3711603,
+    "longitude": 2.1517402,
+    "operation": "location_update",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a27c5f76cd5835",
+    "city_id": "city-goreme",
+    "name": "Grand Elite Cave Suites",
+    "localized_name": null,
+    "latitude": 38.6398206,
+    "longitude": 34.8293058,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-33053d38961227",
+    "city_id": "city-goreme",
+    "name": "Göreme Açık Hava Müzesi",
+    "localized_name": "格雷梅露天博物館",
+    "latitude": 38.6415918,
+    "longitude": 34.8439298,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-352cb44a2222b3",
+    "city_id": "city-goreme",
+    "name": "Kılıçlar Vadisi",
+    "localized_name": null,
+    "latitude": 38.6425514,
+    "longitude": 34.8467965,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-9b02ac800a0f85",
+    "city_id": "city-goreme",
+    "name": "Göreme Otobüs Terminali",
+    "localized_name": "格雷梅公車站",
+    "latitude": 38.6434001,
+    "longitude": 34.8294918,
+    "operation": "location_update",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-9629d27482ef81",
+    "city_id": "city-goreme",
+    "name": "Göreme Panorama View",
+    "localized_name": null,
+    "latitude": 38.6452022,
+    "longitude": 34.821053,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a1e1cfdec39da7",
+    "city_id": "city-goreme",
+    "name": "Uçhisar Kalesi",
+    "localized_name": "烏奇沙城堡",
+    "latitude": 38.6299062,
+    "longitude": 34.805403,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-fe2137efb5f4a3",
+    "city_id": "city-goreme",
+    "name": "Kayseri Havalimanı",
+    "localized_name": "開塞利機場",
+    "latitude": 38.7650674,
+    "longitude": 35.4843384,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-7a9fa3f920d167",
+    "city_id": "city-istanbul",
+    "name": "Kemankeş Karamustafa Paşa",
+    "localized_name": "加拉塔大橋",
+    "latitude": 41.0200155,
+    "longitude": 28.9732201,
+    "operation": "location_update",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-954a2555c4ac28",
+    "city_id": "city-istanbul",
+    "name": "Egyptian Bazaar",
+    "localized_name": "埃及市場",
+    "latitude": 41.0165001,
+    "longitude": 28.9705194,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-7ac3df58eef897",
+    "city_id": "city-istanbul",
+    "name": "İDO Yenikapı Hızlı Feribot Terminali",
+    "localized_name": null,
+    "latitude": 41.00239,
+    "longitude": 28.95613,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-0d017a9e1a5e6c",
+    "city_id": "city-istanbul",
+    "name": "Galata Kulesi",
+    "localized_name": "加拉達石塔",
+    "latitude": 41.025569,
+    "longitude": 28.9741286,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-808fcdacf62eda",
+    "city_id": "city-london",
+    "name": "Mr Wu",
+    "localized_name": null,
+    "latitude": 51.511323,
+    "longitude": -0.13193,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-a72d38e3cd0a4c",
+    "city_id": "city-london",
+    "name": "Sky Garden",
+    "localized_name": "空中花園",
+    "latitude": 51.5112422,
+    "longitude": -0.0835493,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-b553585de9fc67",
+    "city_id": "city-london",
+    "name": "Max Orient",
+    "localized_name": null,
+    "latitude": 51.5408333,
+    "longitude": -0.1447222,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-08f129a576b45f",
+    "city_id": "city-rome",
+    "name": "Pizza A Taglio Da Manuel",
+    "localized_name": null,
+    "latitude": 41.9077312,
+    "longitude": 12.4671513,
+    "operation": "location_update",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-airport-ltn",
+    "city_id": "city-london",
+    "name": "LTN Airport",
+    "localized_name": null,
+    "latitude": 51.8781015,
+    "longitude": -0.3664255,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-airport-stn",
+    "city_id": "city-london",
+    "name": "STN Airport",
+    "localized_name": null,
+    "latitude": 51.8869652,
+    "longitude": 0.2441929,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
+  },
+  {
+    "manual_id": "manual-poi-airport-lgw",
+    "city_id": "city-london",
+    "name": "LGW Airport",
+    "localized_name": null,
+    "latitude": 51.1540772,
+    "longitude": -0.1823226,
+    "operation": "add",
+    "source_status": "owner_confirmed_visit"
   }
 ]

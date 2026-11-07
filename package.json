@@ -25,6 +25,7 @@
     "data:poi-review-protection": "node scripts/poi-review/import-review-protection.ts",
     "data:poi-coordinate-audit": "node scripts/poi-review/audit-reviewed-coordinates.ts",
     "data:poi-unreviewed-coordinate-audit": "node scripts/poi-review/audit-unreviewed-coordinates.ts",
+    "data:poi-recalibrate": "node scripts/poi-review/recalibrate-unreviewed-pois.ts",
     "data:poi-export": "node scripts/poi-review/export-attractions.ts",
     "check": "npm run typecheck && npm test && npm run data:validate && npm run build"
   },

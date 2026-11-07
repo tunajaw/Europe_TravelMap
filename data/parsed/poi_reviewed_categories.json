@@ -1,0 +1,2550 @@
+[
+  {
+    "poi_id": "attraction-node-12471829759",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-1274807963",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-240866019",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-244036327",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-251528292",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-268618473",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-3232789025",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-3272712570",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-331954740",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-3798221693",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-417346627",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-4417819561",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-4879969842",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-4996326756",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-6842002785",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-703266500",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-8842292218",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-node-910390736",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-18055570",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-1834818",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-20242646",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-2270819",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-3962877",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-6036811",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "attraction-relation-6751056",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-7333373",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-relation-8452336",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "attraction-relation-9503840",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-05006526a5714c",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-318fff57a250d2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-5a6a0389d5aeff",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-5baaba68d665aa",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-750cccd3f8db62",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-944a7aeeeb275b",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-searched-poi-da44b71dab715d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-102156741",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-1117840324",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "attraction-way-1117840326",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-115901299",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-122237921",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-1367424158",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-145953534",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-170077907",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-175516451",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-19856722",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-201133718",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-205057138",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-215289671",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-23055100",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-23256528",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-23762981",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-239567902",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-24000268",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "attraction-way-240014249",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-24323859",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-24705750",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-263949162",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-264995270",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-316031490",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-3236549",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-33845624",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-343751993",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-347255151",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-35100527",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-378493707",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-4208595",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-4259619",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-46614783",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "attraction-way-5013364",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-53333454",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-64132876",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-716912509",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-80716477",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-810259696",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-93219899",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "attraction-way-97284416",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-0194e114707998",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-020568136cfdc7",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-047a7acab0b2c7",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-05074291daae49",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-0795cbb28484e0",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-08f129a576b45f",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "manual-poi-0916fbe6d3fdd5",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-09432ab3358863",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-0b9371b72f4ac8",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-0c18122faf8beb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-0d017a9e1a5e6c",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-0f86fa2af54f00",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-18e84ce7dfc866",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-197086bfb0caf2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-201bf6cc4ed4b5",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-2122e918499292",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-21da5916131bec",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-26e3678b80fd0b",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-2cbd9a6632b3b0",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-312297769e1533",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-32f34a3556a420",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-33053d38961227",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-3332c384084a32",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-352cb44a2222b3",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-3a1b0b10329df1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-3cbb3b04af65b0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-41ed3521b2ca6c",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-4454c36d76c5da",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-48ae67cc437005",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-4c50c0648c73e6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-5185a2deabbaea",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-51cb7b7213ad02",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-55bd7d21dc4955",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-59e7cbd52ed23e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-61a00aea9205a1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-63156515dc5533",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-63a0f9266a4005",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-6a48b082e6be8e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-6cfdf97eba430e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-6e2e4263137d1e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-6ec84073e75df4",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-79a80cb5802aa0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-7a9fa3f920d167",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-7ac3df58eef897",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-7ae1cac8b78f35",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "manual-poi-7dbaee8478081e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-829a17832d4b01",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-95331233c3ef64",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-954a2555c4ac28",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-9629d27482ef81",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-a1e1cfdec39da7",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-a230f5a75aec1b",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-a2de9bfb9d0d6e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-a2ed09edac9e14",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-ab0c2cb78dc511",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-acfd2b83434002",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-airport-lgw",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-airport-ltn",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-airport-stn",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "manual-poi-b52790cc1683ea",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-b553585de9fc67",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "manual-poi-c385e111b5abe9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-cc87b79b44a949",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-ce6aff286a61b4",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-cfad91437468c3",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-d40873dea894a9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-d67708a6336993",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-dc4f131e4c1380",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-e61843e2462b63",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-e8f72b7b91aaaf",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-ec8e7b8eb65c11",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-edbdd299831683",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-f42f3ae5701b8a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "manual-poi-fe2137efb5f4a3",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-node-10803352579",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-node-2757007323",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-node-9217315843",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-006bba66d2424a",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-01533dbbe7f311",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-019fc94b0fffdf",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-01f182410d0742",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-02855763fd2bd0",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-046c352a5f3d81",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-04e37c015d7118",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-051508cde618d8-coordinate-review",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-05dcd044a3e921",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-06612a6d0b7a0f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-06b1f088a34551",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-07b2694bf8c64b",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-089ab2e44d3187",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-091b99a28719d5",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b02481c02ab66",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b2ac5b12652c6",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b5214074f6d9e",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0b53d8dc097550",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0c8f5c3d513a46",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0ca673de874005",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0cad174eaf6899",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0dcf63f62a2faf",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0e375321299b5b",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0e89c0ec719663",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0f602a397b5b4d",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0fd3e135ea87cb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-0fffa11adce0e8",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-100c053c5bdc2e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10320699ee3fcd",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10b16854e79c24",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-10de83984bd98b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1121fbf53310f3",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-119c7aeac5d3a5",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-11dfcb1f349b9e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-133645f656e98f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1366d04e22cae0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-14480c82f6e712",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1473d7e90b40d7",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-149d5a3d01d7f6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1526da4efca184",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-16558528b397cf",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-16687247e15bcf",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-171c3a3a5a691c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1852544f3f7329",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1867e3e59177fa",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-188c63434d7575",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-19c40d434f5cb9",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b3d287fb221fa",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b443cd7df3ed9",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b50bf6d05f239",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b5dcd5a14e256",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1b60c2f53608c2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1bfb6212547cfa",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d521814f85c75",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1d61a3268196b8",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1e6939fbdad1d2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-1e7cba673dda03",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-205ce6fe0dac06",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2099bfd8a5019c",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-20b5c972ac5d9a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-214089530824f0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2153a86b0aa81e",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-21736fc4af2b11",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-22ce751d86a9c6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-23fff2f2950c80",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2603d2cadd964f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-270e62914a93d0",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2759c107d19f7d",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-28cbf2c00daf92",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-28ec4c4922fdc2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-29d8cebc182b0e",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2af49076b5e520",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2afde995019513",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2b262e3d17933e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2b604e5b89dab0",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2bac9a12ca56f3",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2c0dca1fac2609",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2d251215901758",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2d2e131cff9db7",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2d3865ecb7a89d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2d7b4f1322785f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2e15d69efe57e4",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2e1b7598be6ae7",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2ea4cb1ead8cc9",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2ee6924308eb9f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-2f5defbfb937e2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-30183093d4efa3",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-30842a5e9bf465",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-30d39d7f06edc6",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-319be3627fd16f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-31a4f187818b54",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3200e0533eeb30",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-32f1cde0e19f5b",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-341614237d715b",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-344a9fd840ab50",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-353e716f6d0794",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-354e313f399b26",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3611af727ce682",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-36602fd2997041",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3739af33f3f3e0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3766e8937b0725",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-37730c37ebb471",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3865b29cb7b509",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3868d63ff11c0c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-38aaeb9376614f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-393db57673662f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-39acc27164cdc8",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3a7427582d7615",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3ab699f75b3796",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3abff34788e355",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3adf4f355dbec9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3b1a2917bd8d69",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3b666c3ede4446",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3b6689e9d887d5",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3b893ff900f233",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3dbc14ec16fcfb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-3f37f070d1a1b1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-41b3e9e98ddfe6",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-420e8c0ad3fa1d-coordinate-review",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-424d5e7f095d0b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-42bdea581cf93f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-43738d0c327744",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-456aa9f12ac4bf",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-45e995536d1fa0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-475c87808ba370",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-47eb613fc74d86",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4899c29ff35612",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-49bfbfcad3c16f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-49e68a49e792ca",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4a07fd90658035",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4a35b624795998",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4a5301d57c6f7e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4b5dd3e234d9e3",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4b8029c00eed95",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4bf85cc8e03609",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4c49b907dc5528",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4dcbd1444417c5",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4dd75bb7baebea",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4de0624908ce37",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4e49c5d06e572a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4e987be911e210",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-4f81ec4ee23e7b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-50570c0ff1df47",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-50ff06cdcc0328",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-51e3e26a3b0d5d",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5278e57c53ffe6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-52b5bb47f73efa",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-52b9b8e3d80d33",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-52c7fb69d7c7a9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-549ed6665417cf",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-54a64796a78a11",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-551967d3786a49",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-558f57d83b50ac",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-559fbfc02321da",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-583062a3b66f80",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-585b064c16cb4b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-58d48fa2eead25",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-59279797e70a29",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5965cbdb6573f7",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5a1d1909ff6dc7",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5a586d6b7528c8",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5ab2f581a3487b",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5b606e6b9a727a",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5b90daeccc7a1c",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5bfcd38ac0daa1",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5c9f2a53f2f174",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5d2430cc9f4da7",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5d331ae3e3e326",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5efaf6d2b06c46",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-5f1523243eb674",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-603fe09c6f655d",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6076cd8f8cbda8",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6078e263c9cbb1",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-616a4588455e63",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-61855e546b6561",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-619f26f88bc9cf",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-62874236e23bbf",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-63a23b7737506d",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-63fb7b6b6579b0",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-644c4f594e289c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-650cd7b1fe9d31",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-660824ddd83d7d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-66597c02c851d1",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-673b679a720f2b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6894dd7617ad4f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-68ee50d2932735",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6927113dbd40d4",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6a9db57a9e011f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6b08c48627cb4a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6c4415a809c89b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ddd9e17fc17e1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6e04ffc66091bb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6e10b9e528df5b",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6e895d3dab9080",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6ea01ab5526888",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6edfcd615e215f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-6fff49bb3785cf",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70a202321aa089",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70cc1f9ae741c5",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70d04b69aa42fc",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-70e0660da2a880",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-716b9ecd2e3761",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7185c1cbbf11b9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-71ccc6fa11aca4",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-71eb623d6b7481",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7202605203f9fc",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-733e708e663a38",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-733f2efee50e18",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-73a50acace1769",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-73c87483d833e3",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-74351bc3f43ff1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-743a08007465d2",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-750e2da732a879",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7642054a4d6533",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-76773b547626c2",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-771054f764d268",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7767f8ec963895",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77ab82f209db43",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-77ffd8197b0f35",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-780b4f7443df91",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7844159f59a37a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-79a7b70865b5cb",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-79ec4c9122351d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7a4223c7ef56ba",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7b660b7c8582ce",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7c090338bbb97f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7c830051e8fca1",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7d16ff7d667590",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7d75ee8cc61cc8",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7dba6887bb7f92",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7e4ab7361e5742",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7ed837d772e98f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7efa4dadf9187d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7efd307e81af91",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7f8eb386b3f25f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-7fe8712c02894a",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-81b62a461cf082",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-82957b3131e695",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8380d01ffe7e0d",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-83a3ff2e8377f3",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-83aac320a6bb71",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84188dd51e700b",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-841f621cedbe43",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-84d428361a3420",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8583d2c9a244cb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8642a70ef98515",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-86abe18d29c578",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-870dff7a161842",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-87eea6725222ff-coordinate-review",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-881eff03a72c33",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8864f86431fe2e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-886e490cde4100",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-89149c764bf039",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-891dcbd525565e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-898ab5d0e42107",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-89c82388c92b9a",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8b12abe3ea8bed",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8c14045784bc42",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8d0b3e1fba4f34",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8d86eedbb5fa37",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8d87ea0116e93c",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8ea41c5874fd70",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8f03123238da0a",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-8fb5f88b2040de",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9027c37599f87d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9059b289be095c",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9112b5010e5bb1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-91258a17a96ff7",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-917be08a08ab06",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-923177f97ba750",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-93dd3015dfc4c6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-944e3cef399166",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-949cdca8c7a7a1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-94e1e7335acbab",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-951617cf3e8f76",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9580af250f9320",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-95c5ad356ed926",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-97404be90e046d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-97758e548bf308",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-97e88261b558da",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-988c5426531eb8",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98e0ab6755a543",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-98e8161385ad58",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-998fec7458192f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-99e3bff0528f08",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9a81313d7ed903",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9a8cd425430cf3",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9ad911be872015",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9d068fa0cf5fac",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9dab297da320ba",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9eee3058062db4",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9f062ce017a243",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fe46eddf1bb3a",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-9fee5e72c29934",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a0109ec5d6a280",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a091cc82cfe50e",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a10cd58a3b7e5b",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a111d238616719",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a179752da9afab",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a2985ac7b40caa",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a359460c92505e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a38a1b64cbca23",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a50ecc3adaf4ff-coordinate-review",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a58e6adf94b448",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a5c27c5ae2f785",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a75f25653e19aa",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a7b106b6df8789",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a8b658dd9d98a8",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a916dd6ea2ea24",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a96ce8baceddaf",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-a9bbdee39064b0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ab364fefc83ec3",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ab7064e8224c85",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-abaacd10337b81",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-abf6b7170a4534",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ac3bf334ad274f",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ad210b1d43ccdb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-adc3b011af55a2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-afdb732c07b120",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-afff083476e650-coordinate-review",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b1713fcba3fb04",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b1d334280c34eb",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b2a3465973ce16",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b2c2c196f66843",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b334bed7cefb50",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b3734c4d0df809",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b386a0212161a6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b50e1bb0b53d7a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b524d2cf044086",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b63837ea91c2a5",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b66d179ee20304",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b683f2ee7a54e5",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b721a8a0510b53",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b77593ea36f61a",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b781270b2e73fc",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b80169896fc13c",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b810da69f3c050",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b83801dd71631d",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b840e43ff9d237",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b84b3c5560bb54",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b88af5bd811ebc",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b8e280ae5d84ff",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b90f7ad684de3c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9b0061a9dda88",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-b9e2f6a939056b",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ba2ca7705fd999",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bac2f55342fdaa",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bba52ac4a2013c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bbedc62e52bfce",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bc2301f8fa3af2",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bcbf244d9ea4b0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bcf0db2d0f67c9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bcfbbb0230a29b",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bda1900315411a",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-bdd0fc94b69e24",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-be13060cfe4d02",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-be8a0ce6a39ece",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c06ee01ec3d743",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c0c23d63f402f9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c0c54837b0cbc7",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c17647fa58c889",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c1c7ba3a8060e1",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c21665fcb823c9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c219e54833a948",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2236b569cdcb5",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2a0fec7a383ad",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c2f0477971871f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c3523d4f75e3e0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c36d55fe282f4b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c3fdd76b161378",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c47318315326bc",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c49ee715bff241",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c540b71e05fdd0",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c6f234e1fefbf6",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c6f98a6a7dd45f",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c79071a9bb75f4",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-c8101faca0fa0d",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca0cdc8ac7013c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca1da001db7aea",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ca49b11b61e40c",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-caffb54a79df21",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb0c512bc8ebe4",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb0e5bf61e05eb",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cb7b417be6f0b9",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cc02cce011b8bb",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cc1e6b9103ceb5",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cecf3f28dc22a9",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ced386b6aed618",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf2c99c506f06b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf594161663d0e",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf90fcc6694561",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-cf99195e4da958",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d00a7345a8c4e8",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d1218be69da21c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d19b3448054347",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d1a3f0aa94c77a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d1b0a6362417b0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d2696a6f137b7e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d4710ecbc41908",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d4f9677643c95a",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d591220673074a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d5aa43be4266f0",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d65d3469abe9cf",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d68838ba426f9a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d729619685b99e",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d77c98ff7c779f",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d82c997ebafcf6",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d84105fa6cb616",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d8a0927e046f70",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d8ca6a41fd53c3",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d8cd8cc238b191",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d8ecda91d78332",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d94fa1dc150122",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-d9e1202aaf89fc",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-da0a400ff2941e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-da4567a929b77a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-da45a5f67508ca",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-daa12c5e6f5e43",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dbaed9501c94e7",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dc731f6e9cf49f",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dce0416500229b",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ddcf6c29eeebbd",
+    "category": "Shop"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dddccf04827056",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-de75482a9b5553",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-dea311982ba07d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-defac70d67300a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e04bee6b865e2a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e06015b0f6633b",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e097eb1a5a7273",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e11ed62aa51eab",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e1ab6f9e894080",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e274e39d03ff3c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e2e02265d04104",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e4e093a13c4cdb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e4eb0a22bfbaef",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e5371b98681a99",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e5a01da5c6900d",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e6283c268f706a",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e69a78040da30c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e71c56a05b0bf3",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e7aa8e82054da7",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e7bcb233d5909a",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e8adef10c770fa",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-e8ae237f9534db",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ea0bda7f5d01a8",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ea674f5751f0d8",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb00d3b6a6e7ae",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb85922c2761ad",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-eb8ab54e87391b",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ecbffe69a40eeb",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-edacd187b94648",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-edc0440e97bc12",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-edd5ea5682d942",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ee20c1b18bc0c7",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef11cfd1e108b2",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef563e9cac5fa7",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef6ee0e1ba83ec",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ef6f6ed2bf669d",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-efa247788dfde1",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f0ad16847cb0b0",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f12a4b4ea845f8",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f134a5739bc465",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f19158195dc71d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f1ca6295171842",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f3dc8d3d458092",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f53ea544acde44",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f5b0f4f0f22e60",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7822f249fae01",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7d10c79b2cadf",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f7da6ace14c34c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f82dfe08e546fa",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-f93a46a1dbccd7",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fa3c9d16a6f09e",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fb8edba04b0790",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fbd2026471566d",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fbf46cc46d4393",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fc52acb452e87a",
+    "category": "Accommodation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fc6347646acf8c",
+    "category": "Transportation"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fdf2961999ab43",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-fe6c447ea8f8a8",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ff726b7eacbf5f",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ff9ace3410f716",
+    "category": "Attraction"
+  },
+  {
+    "poi_id": "unclassified-searched-poi-ffe6950ce92625",
+    "category": "Restaurant"
+  },
+  {
+    "poi_id": "unclassified-way-558926731",
+    "category": "Shop"
+  }
+]

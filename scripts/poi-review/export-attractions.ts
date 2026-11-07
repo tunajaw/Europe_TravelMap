@@ -3,6 +3,7 @@ import { dirname, join, resolve } from 'node:path';
 import { readCsv } from '../preprocess/csv.ts';
 import { haversineKm } from '../preprocess/geo.ts';
 import { separateChinesePoiName, type OsmNameTags } from './localized-name.ts';
+import { assignVaticanBoundaryPoisToRome, type PoiBoundary } from './city-assignment.ts';
 import {
   applyGooglePlaceCoordinateOverride,
   mergeManualPoiReferences,
@@ -60,16 +61,24 @@ const googlePlaceCoordinateOverridesInput = resolve(
   'parsed',
   'poi_google_place_coordinate_overrides.json',
 );
+const unreviewedCoordinateOverridesInput = resolve(
+  root,
+  'data',
+  'parsed',
+  'poi_unreviewed_coordinate_overrides.json',
+);
 const reviewedRetentionInput = resolve(root, 'data', 'parsed', 'reviewed_poi_retention.json');
 const reviewedIdsInput = resolve(root, 'data', 'parsed', 'poi_reviewed_ids.json');
 const reviewedNameHashesInput = resolve(root, 'data', 'parsed', 'poi_reviewed_name_hashes.json');
 const reviewedCoordinateLocksInput = resolve(root, 'data', 'parsed', 'poi_reviewed_coordinate_locks.json');
 const reviewedSnapshotsInput = resolve(root, 'data', 'parsed', 'poi_reviewed_snapshots.json');
+const discardedIdsInput = resolve(root, 'data', 'parsed', 'poi_discarded_ids.json');
 const discardedSnapshotsInput = resolve(root, 'data', 'parsed', 'poi_discarded_snapshots.json');
 const recheckSnapshotsInput = resolve(root, 'data', 'parsed', 'poi_coordinate_recheck_snapshots.json');
 const coordinateAuditOutput = resolve(root, 'data', 'private', 'poi-review', 'coordinate-audit.json');
 const osmCache = resolve(root, 'data', 'generated', 'poi-review', 'osm-cache');
 const privateAccommodationSource = resolve(root, 'data', 'private', 'accommodation-raw.csv');
+const cityContextInput = resolve(root, 'data', 'parsed', 'city_map_context.json');
 const review = JSON.parse(await readFile(input, 'utf8')) as {
   pois: ReviewPoi[];
   searchedPoiRecovery: RecoveryPoi[];
@@ -269,8 +278,9 @@ try {
     await readFile(recheckSnapshotsInput, 'utf8'),
   ) as PublicPoiReference[];
   for (const snapshot of recheckSnapshots) {
-    const index = matchingPoiIndex(snapshot);
     const recheckId = `${snapshot.poi_id}-coordinate-review`;
+    if (acceptedReviewedIds.has(recheckId)) continue;
+    const index = matchingPoiIndex(snapshot);
     if (index >= 0) {
       pois[index] = {
         ...pois[index]!,
@@ -288,6 +298,10 @@ try {
 } catch (error) {
   if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
 }
+const finalizedRecheckBaseIds = new Set([...acceptedReviewedIds]
+  .filter((poiId) => poiId.endsWith('-coordinate-review'))
+  .map((poiId) => poiId.slice(0, -'-coordinate-review'.length)));
+pois = pois.filter(({ poi_id: poiId }) => !finalizedRecheckBaseIds.has(poiId));
 const reviewedCoordinateFindings: Array<{
   poi_id: string;
   city_id: string;
@@ -365,6 +379,43 @@ try {
 } catch (error) {
   if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
 }
+try {
+  const overrides = JSON.parse(
+    await readFile(unreviewedCoordinateOverridesInput, 'utf8'),
+  ) as Array<{
+    poi_id: string;
+    city_id: string;
+    latitude: number;
+    longitude: number;
+    source_status: string;
+  }>;
+  for (const override of overrides) {
+    if (manuallyUpdatedPoiIds.has(override.poi_id)) continue;
+    const poi = pois.find((candidate) => candidate.poi_id === override.poi_id);
+    if (!poi || poi.city_id !== override.city_id
+      || override.source_status !== 'unreviewed_geocoding_candidate') continue;
+    poi.latitude = override.latitude;
+    poi.longitude = override.longitude;
+    poi.review_status = 'needs_review';
+  }
+} catch (error) {
+  if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+}
+try {
+  const discardedIds = new Set(JSON.parse(await readFile(discardedIdsInput, 'utf8')) as string[]);
+  const discardedRecheckBaseIds = new Set([...discardedIds]
+    .filter((poiId) => poiId.endsWith('-coordinate-review'))
+    .map((poiId) => poiId.slice(0, -'-coordinate-review'.length)));
+  pois = pois.filter(({ poi_id: poiId }) => !discardedIds.has(poiId)
+    && !discardedRecheckBaseIds.has(poiId));
+} catch (error) {
+  if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+}
+pois = pois.filter((poi) => !exposesPrivateAccommodation([
+  poi.name,
+  poi.localized_name ?? '',
+  poi.original_name ?? '',
+].join(' ')));
 const coordinateAudit = reviewedCoordinateFindings
   .filter((finding) => !manuallyUpdatedPoiIds.has(finding.poi_id))
   .sort((left, right) => right.distance_meters - left.distance_meters
@@ -399,6 +450,14 @@ pois = pruned.pois.map((poi) => {
   };
 });
 bilingualCount = pois.filter(({ localized_name: localizedName }) => Boolean(localizedName)).length;
+
+const cityContexts = JSON.parse(await readFile(cityContextInput, 'utf8')) as Array<{
+  city_id: string;
+  boundary: PoiBoundary;
+}>;
+const vaticanBoundary = cityContexts.find(({ city_id: cityId }) => cityId === 'city-vatican-city')?.boundary;
+if (!vaticanBoundary) throw new Error('Missing Vatican City administrative boundary');
+pois = assignVaticanBoundaryPoisToRome(pois, vaticanBoundary);
 
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(pois, null, 2)}\n`, 'utf8');
