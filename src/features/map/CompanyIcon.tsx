@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import sources from '../../../public/images/companies/sources.json';
+import sources from '../../assets/company-icon-sources.json';
 
 // Keep original company text unchanged; normalize only this presentation lookup.
 export function CompanyIcon({ company, category }: { company: string | null; category: string }) {

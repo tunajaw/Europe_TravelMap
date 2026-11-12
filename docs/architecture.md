@@ -198,7 +198,7 @@ or additional geocoding are accessed by these interactions.
 
 Company text is followed by a locally stored website icon when available,
 excluding only City Bus (not InterCity Bus). Download provenance is recorded in
-public/images/companies/sources.json. Icon acquisition is manual and separate
+src/assets/company-icon-sources.json. Icon acquisition is manual and separate
 from CI/build; visitors do not contact company sites or a favicon service.
 Missing icons and image-load failures retain company text. Raw company spelling
 is unchanged; only presentation lookup trims whitespace and ignores case.

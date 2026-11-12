@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useRef, useState } from 'react';
+import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import type { TravelData } from '../../domain/travel-data.ts';
 import { EuropeMap } from './EuropeMap.tsx';
 import { CityAttractionMap, type CityPoiFocusRequest } from './CityAttractionMap.tsx';
@@ -68,10 +68,11 @@ export function CountryExplorer({ data }: { data: TravelData }) {
   const [showRoutes, setShowRoutes] = useState(true);
   const [domesticOnly, setDomesticOnly] = useState(false);
   const [cityPoiFocusRequest, setCityPoiFocusRequest] = useState<CityPoiFocusRequest | null>(null);
+  const [selectedPoiId, setSelectedPoiId] = useState<string | null>(null);
   const root = useRef<HTMLDivElement>(null);
   const selected = data.countries.find((country) => country.id === navigation.selectedId);
   const activeCity = data.cities.find((city) => city.id === navigation.cityId);
-  const cityPois = (data.pois ?? []).filter((poi) => poi.cityId === activeCity?.id);
+  const cityPois = useMemo(() => (data.pois ?? []).filter((poi) => poi.cityId === activeCity?.id), [data.pois, activeCity?.id]);
   const cityContext = (data.cityContexts ?? []).find((context) => context.cityId === activeCity?.id);
   const photos = data.photos.filter((photo) => photo.countryId === selected?.id).sort((a, b) => a.displayOrder - b.displayOrder);
 
@@ -141,7 +142,7 @@ export function CountryExplorer({ data }: { data: TravelData }) {
           : <CountryList data={data} onEnter={(id) => navigate({ type: 'enter', id })} />)}
         <div className="map-canvas">
           {activeCity ? <CityAttractionMap city={activeCity} pois={cityPois} context={cityContext}
-            focusRequest={cityPoiFocusRequest} />
+            focusRequest={cityPoiFocusRequest} onSelectionChange={setSelectedPoiId} />
             : <EuropeMap countries={data.countries} cities={data.cities} segments={data.segments}
             showRoutes={showRoutes} domesticOnly={domesticOnly} selectedId={navigation.selectedId}
             hoveredId={hoveredId} focusedId={navigation.focusedId}
@@ -162,7 +163,7 @@ export function CountryExplorer({ data }: { data: TravelData }) {
       </label>}
     </section>
     <aside className="journey-dashboard" aria-label="Journey dashboard">
-      {activeCity ? <CityPoiList cityName={activeCity.name} pois={cityPois}
+      {activeCity ? <CityPoiList cityName={activeCity.name} pois={cityPois} selectedPoiId={selectedPoiId}
         onFocus={(poiId) => setCityPoiFocusRequest((current) => ({
           poiId,
           requestId: (current?.requestId ?? 0) + 1,

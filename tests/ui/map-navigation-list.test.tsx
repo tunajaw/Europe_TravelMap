@@ -2,7 +2,7 @@
 import '@testing-library/jest-dom/vitest';
 import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import source from '../../public/data/travel-data.json';
 import { TravelDataSchema } from '../../src/domain/travel-data.ts';
 import { CountryExplorer } from '../../src/features/map/CountryExplorer.tsx';
@@ -17,9 +17,36 @@ beforeEach(() => {
   window.history.replaceState(null, '', '#europe');
   Object.defineProperty(window, 'matchMedia', { configurable: true, value: () => ({ matches: true }) });
 });
-afterEach(cleanup);
+afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe('map navigation lists', () => {
+  it('scrolls only the POI list to a selected map marker and preserves the map viewport', async () => {
+    window.history.replaceState(null, '', `#city/${city.id}`);
+    const user = userEvent.setup();
+    render(<CountryExplorer data={data} />);
+    const poi = cityPois.at(-1)!;
+    const button = screen.getByRole('button', { name: `Focus ${poi.name}` });
+    const item = button.closest('.city-poi-dashboard-item') as HTMLElement;
+    const list = item.parentElement!;
+    const scroll = vi.fn();
+    Object.defineProperty(list, 'scrollTo', { configurable: true, value: scroll });
+    Object.defineProperty(list, 'clientHeight', { configurable: true, value: 200 });
+    vi.spyOn(list, 'getBoundingClientRect').mockReturnValue({ top: 100, bottom: 300 } as DOMRect);
+    vi.spyOn(item, 'getBoundingClientRect').mockReturnValue({ top: 600, bottom: 650, height: 50 } as DOMRect);
+    const map = screen.getByRole('group', { name: `${city.name} city map` });
+    const bounds = map.getAttribute('data-geo-bounds');
+    const marker = within(map).getByRole('button', { name: poi.name });
+    await user.hover(marker);
+    expect(scroll).not.toHaveBeenCalled();
+    await user.click(marker);
+    expect(scroll).toHaveBeenCalledWith({ top: 425, behavior: 'instant' });
+    expect(button).toHaveAttribute('aria-pressed', 'true');
+    expect(map).toHaveAttribute('data-geo-bounds', bounds!);
+    await user.click(marker);
+    expect(button).toHaveAttribute('aria-pressed', 'false');
+    expect(scroll).toHaveBeenCalledTimes(1);
+  });
+
   it('keeps a Country list beside Europe Map and a City list beside Country Map', async () => {
     const user = userEvent.setup();
     render(<CountryExplorer data={data} />);

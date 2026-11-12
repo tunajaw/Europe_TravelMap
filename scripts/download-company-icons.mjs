@@ -53,4 +53,6 @@ for (const batch of [Object.entries(companies).slice(0, 6), Object.entries(compa
     console.log(`${company}: no verified image; text only`);
   }));
 }
-await writeFile(new URL('sources.json', output), JSON.stringify(Object.fromEntries(Object.entries(results).sort()), null, 2) + '\n');
+const manifest = new URL('../src/assets/company-icon-sources.json', import.meta.url);
+await mkdir(new URL('.', manifest), { recursive: true });
+await writeFile(manifest, JSON.stringify(Object.fromEntries(Object.entries(results).sort()), null, 2) + '\n');

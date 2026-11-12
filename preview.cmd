@@ -12,7 +12,10 @@ if exist ".tools\node-v24.20.0-win-x64\node.exe" (
   )
 )
 
-call npm.cmd run build
-if errorlevel 1 exit /b %errorlevel%
+echo Starting the local development preview with POI image review enabled.
+echo Open http://127.0.0.1:4183/Europe_TravelMap/
+echo Image assignments are saved in this browser at this address.
+echo If port 4183 is already running, use that page or stop its server first.
 
-call npm.cmd run preview -- --host 127.0.0.1 --port 4173 --open /Europe_TravelMap/
+call npm.cmd run dev -- --host 127.0.0.1 --port 4183 --strictPort --open /Europe_TravelMap/
+exit /b %errorlevel%

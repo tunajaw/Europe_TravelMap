@@ -26,14 +26,20 @@ npm run data:build
 The generated `public/data/travel-data.json` is safe for the public application:
 it excludes exact Accommodation addresses and source Accommodation names.
 
-To build and open the production preview on Windows, run:
+To open the local development preview with POI image review on Windows, run:
 
 ```powershell
 .\preview.cmd
 ```
 
-The preview is served at `http://127.0.0.1:4173/Europe_TravelMap/`. Press
-`Ctrl+C` in the terminal to stop it.
+The preview is served at `http://127.0.0.1:4183/Europe_TravelMap/`. Press
+`Ctrl+C` in the terminal to stop it. The port is fixed so browser-local image
+assignments stay on the same origin; if it is already in use, open the existing
+page or stop the previous server first. See [POI image review](docs/poi-image-review.md)
+for automatic saving and local storage limitations.
+
+For a production-only preview without internal review tools, run `npm run build`
+and then `npm run preview -- --host 127.0.0.1 --port 4173`.
 
 The main view uses the approved Modern Cartographic design. Select a country
 marker (mouse, touch, or keyboard) to open its photos, then choose Enter to frame
@@ -55,7 +61,7 @@ CI runs type checking, domain tests (`npm run test:domain`), preprocessing tests
 validation, a production build, and desktop/mobile Chromium MVP smoke tests.
 
 For the three visual design studies, open
-`http://127.0.0.1:4173/Europe_TravelMap/?view=mockups` after starting the preview.
+`http://127.0.0.1:4183/Europe_TravelMap/?view=mockups` after starting the preview.
 The comparison supports individual enlarged views and synchronized Italy photo
 selection. It remains a design reference; the main Travel Map and Expense
 interactions are implemented in the production application.

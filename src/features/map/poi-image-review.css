@@ -1,0 +1,24 @@
+.poi-image-review-hint { color: #526273; font-size: 11px; line-height: 1.5; }
+.poi-image-status { color: #334155; font-size: 11px; overflow-wrap: anywhere; }
+.city-poi-dashboard-item { position: relative; }
+.city-poi-dashboard-item .poi-image-drop-target { padding-right: 36px; }
+.city-poi-dashboard-item--dragging .poi-image-drop-target { outline: 2px dashed #3569c8; outline-offset: -3px; filter: brightness(.92); }
+.city-poi-dashboard-item .poi-image-count { position: absolute; top: 3px; right: 36px; display: grid; place-items: center; min-width: 23px; height: 23px; padding: 1px 5px; border-radius: 12px; background: #24364b; color: white; border: 1px solid white; font-size: 11px; font-weight: 700; z-index: 1; }
+.poi-image-dialog { width: min(1000px, 90vw); max-height: 85vh; padding: 0; border: 1px solid #c2cfdb; border-radius: 14px; color: #24364b; background: #fafcff; box-shadow: 0 24px 80px #10203040; }
+.poi-image-dialog::backdrop { background: rgb(15 23 42 / 55%); }
+.poi-image-dialog-content { padding: 24px; }
+.poi-image-dialog header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+.poi-image-dialog header p { margin: 0 0 4px; font-size: 11px; color: #526273; }
+.poi-image-dialog h2 { margin: 0 0 5px; font-size: 24px; font-weight: 550; }
+.poi-image-dialog header button, .poi-image-remove { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 1px solid #b5c2d0; border-radius: 50%; background: #fff; color: #24364b; font-size: 22px; cursor: pointer; }
+.poi-image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px; }
+.poi-image-tile { position: relative; margin: 0; min-width: 0; padding: 8px; border: 1px solid #d5dfe8; border-radius: 9px; background: white; }
+.poi-image-tile img { display: block; width: 100%; height: 230px; object-fit: contain; }
+.poi-image-tile figcaption { padding: 8px 2px 2px; overflow-wrap: anywhere; font-size: 11px; }
+.poi-image-remove { position: absolute; top: 8px; right: 8px; box-shadow: 0 2px 8px #0003; }
+.poi-image-dialog button:focus-visible { outline: 2px solid #3569c8; outline-offset: 2px; }
+.poi-image-tile[draggable=true] { cursor: grab; }
+.poi-image-tile--dragging { opacity: .5; }
+.poi-image-tile--drop-target { outline: 2px dashed #3569c8; outline-offset: -2px; }
+.poi-image-tile:focus-visible { outline: 2px solid #3569c8; outline-offset: 2px; }
+.poi-image-sort-hint { color: #526273; font-size: 12px; }

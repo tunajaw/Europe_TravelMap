@@ -41,11 +41,12 @@ type CityMapPan = {
   startViewport: ReturnType<typeof cityPoiViewport>;
 };
 
-export function CityAttractionMap({ city, pois, context, focusRequest }: {
+export function CityAttractionMap({ city, pois, context, focusRequest, onSelectionChange }: {
   city: TravelData['cities'][number];
   pois: NonNullable<TravelData['pois']>;
   context?: NonNullable<TravelData['cityContexts']>[number] | undefined;
   focusRequest?: CityPoiFocusRequest | null;
+  onSelectionChange?: (poiId: string | null) => void;
 }) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -77,11 +78,17 @@ export function CityAttractionMap({ city, pois, context, focusRequest }: {
   const active = visiblePois.find((poi) => poi.id === (hoveredId ?? selectedId));
 
   useEffect(() => {
+    onSelectionChange?.(selectedId);
+  }, [selectedId, onSelectionChange]);
+
+  useEffect(() => {
     if (animationFrameRef.current !== null) cancelAnimationFrame(animationFrameRef.current);
     viewportRef.current = initialViewport;
     setViewport(initialViewport);
     setTileZoom(initialTileZoom);
     setIsZoomed(false);
+    setSelectedId(null);
+    setHoveredId(null);
     setDragBox(null);
     panDragRef.current = null;
     setIsPanning(false);

@@ -41,7 +41,17 @@ FR-MAP-10 (City Map rendering) [MVP+]: City Map 不繪製 Timeline 軌跡、Segm
 
 FR-MAP-11 (City Map POI interaction) [MVP+]: Hover 或 keyboard focus POI marker 時，marker 稍微放大，並在地圖下方固定的 metadata 區域暫時顯示 POI 名稱與類別；地圖上不顯示 tooltip 或文字標籤。移開後恢復；若已有鎖定 POI，metadata 回到該鎖定 POI。左鍵點擊 marker 或按 Enter／Space 時鎖定 POI；點擊其他 marker 時切換鎖定。鎖定時保留原本類別顏色，只放大 marker 並加粗外框。再次點擊目前 marker 或按 Escape 時解除鎖定。City Map 不提供 Box zoom mode 或啟用按鈕；在非 POI marker 的地圖區域按住滑鼠左鍵或 pointer 拖曳時平移地圖。可平移範圍以包含 City 中心點的主要 City boundary 與該 City 全部已分配 POI viewport 的聯集為準，並只保留小幅 overscroll margin；因此位於行政邊界外但已分配至該 City 的合法 POI 仍必須能由 sidebox 聚焦並完整出現在地圖內。Sidebox 聚焦使用 POI 密度自適應倍率：City 有 25 筆以上 POI 時使用初始 viewport 的 12%，且 latitude span 上限為 0.025°；其餘 City 維持 28%，避免高密度 City 聚焦後仍顯示過大範圍。按住 Shift 再拖曳至少 12px 的矩形範圍時放大，選取範圍須維持地圖原有長寬比例以避免幾何變形。滑鼠滾輪以目前游標位置為縮放中心，向上滾放大、向下滾縮小，最大縮小範圍不得超出該 City 的初始自動縮放範圍；游標位於 City Map 上時必須攔截該次 wheel event，避免頁面同時垂直捲動。框選與滾輪縮放使用約 260ms 的 ease-out viewport animation；`prefers-reduced-motion` 時立即切換。"Reset view" 或在已放大的地圖非控制項區域連點兩下，皆以相同動畫回到初始範圍；Escape 取消尚未完成的框選或平移。拖曳互動不得誤觸 POI 鎖定。所有 marker、filter、Back control、Reset view 與 metadata 控制項必須支援合理的 accessible name、可見 focus indicator 及適用的 keyboard 操作；動畫與 spider layout 必須遵守 reduced-motion 設定。
 
+點擊或以 Enter／Space 鎖定 City Map 的 POI marker 時，右側 POI list 同步標示對應項目；若該項目在清單可見範圍外，僅捲動清單至該項目。清單捲動遵守 reduced-motion 設定，保留目前頁面位置與地圖 viewport。Hover 不觸發清單捲動，解除鎖定時同步清除清單選取標示。
+
 FR-MAP-12 (City Map POI metadata) [MVP+]: 地圖下方固定的 POI metadata 區域第一版只顯示 POI 名稱與類別，不顯示 `owner_confirmed_visit` 等 preprocessing subcategory／內部註解。主名稱位置顯示 OSM `name:en`，不存在時使用經審核的原始／Google 顯示名稱；若 OSM 同時提供 `name:zh-Hant` 或 `name:zh`，在主名稱下方以清楚可讀的次標題字級顯示中文名稱。沒有可靠第二語言來源時不自行翻譯，也不重複顯示相同名稱。POI 圖片為 optional；加入圖片後，若有多張圖片，使用與 Country preview 一致的上一張／下一張控制與滑動行為；沒有圖片時只顯示文字資訊，不顯示空白 carousel。Visit ID、原始／當地造訪時間、造訪次數、Google／OSM metadata、配對距離、信心值與審核狀態均不公開顯示。
+
+## Temporary internal POI image review
+
+TEMP-IMG-01: 本機 development mode 的 City Map 右側 POI button 支援一次拖入一張或多張圖片，建立圖片與該 POI ID 的歸屬。按鈕右上角以獨立數字 badge 顯示已保存張數；相同圖片內容於同一 POI 不重複計數。點擊 badge 開啟顯示所有圖片的 modal gallery，每張圖片右上角提供移除按鈕。點擊浮窗外部、關閉按鈕或按 Escape 後回到同一 City Map；不得觸發地圖層級返回。資料保存於本機瀏覽器 IndexedDB，重新整理後可繼續，原始檔案及公開 POI dataset 不變。此功能不包含正式圖片發布流程，不得壓縮 Map panel，也不進入 production build。操作、格式與保存限制見 [Internal POI image review](poi-image-review.md)。
+
+TEMP-IMG-02: 匯入圖片時先取第一 frame，套用 EXIF orientation，再以全新 canvas 編碼為同尺寸的靜態 PNG。僅保留像素，不複製 GPS、拍攝裝置、EXIF／XMP、內嵌縮圖、後續動畫 frame 或 Motion Photo 影片。既有本機未清理圖片在載入時先轉換，轉換失敗不得顯示原圖。磁碟原始檔案保持不變。
+
+TEMP-IMG-03: 圖片浮窗支援拖曳照片至另一張照片的位置以變更順序，並提供 Alt + 方向鍵操作。排序自動保存至 IndexedDB，重新整理後還原。新圖片加入末尾，同一圖片重複匯入時保留原排序；儲存失敗顯示錯誤並保留最後成功保存的順序。
 
 FR-EXP-01 (Expense Page Selection): Expense 畫面最左上方兩個互斥按鍵: Transportation / Accommodation 代表現在 Show 的頁面是交通還是住宿相關的資訊，預設是 Transportation
 

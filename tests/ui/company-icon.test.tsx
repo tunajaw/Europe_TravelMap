@@ -4,7 +4,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, expect, it } from 'vitest';
 import { existsSync } from 'node:fs';
 import { CompanyIcon } from '../../src/features/map/CompanyIcon.tsx';
-import sources from '../../public/images/companies/sources.json';
+import sources from '../../src/assets/company-icon-sources.json';
 afterEach(cleanup);
 it('shows a local InterCity Bus icon but excludes only City Bus', () => {
   const { rerender } = render(<CompanyIcon company="Flixbus" category="InterCity Bus" />);

@@ -55,6 +55,7 @@
 .city-poi-dashboard-item button small { color: #6b7b8c; font-size: 9px; }
 .city-poi-dashboard-item button:hover { border-color: #54708e; filter: saturate(1.15) brightness(.97); }
 .city-poi-dashboard-item button:focus-visible, .city-poi-dashboard-item a:focus-visible { outline: 2px solid #3569c8; outline-offset: 1px; }
+.city-poi-dashboard-item button[aria-pressed=true] { box-shadow: inset 0 0 0 2px #315d91; font-weight: 650; }
 .city-poi-dashboard-item a { display: grid; place-items: center; border: 1px solid #c2cfdb; border-radius: 7px; background: #f8faff; color: #315d91; font-size: 12px; font-weight: 700; text-decoration: none; }
 .city-poi-dashboard-item a:hover { border-color: #54708e; background: #e8f0f7; }
 .city-poi-dashboard-empty { color: var(--muted); font-size: 12px; }
